@@ -1,17 +1,20 @@
 """BettingOS v2 Dashboard — Streamlit Cloud.
 
-Pulls live data from 4 Notion DBs and renders 8 tabs.
+Pulls live data from 4 Notion DBs via direct HTTP and renders 8 tabs.
+No notion-client dependency — just stdlib urllib + Notion REST API.
+
 Secrets configured in Streamlit Cloud → Settings → Secrets.
 """
 from __future__ import annotations
 
 import json
+import urllib.error
+import urllib.request
 from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from notion_client import Client
 
 # ─────────────────────────────────────────────────────────────────
 # Config
@@ -34,15 +37,54 @@ except KeyError as e:
     st.error(f"Missing secret: {e}. Configure in Streamlit Cloud → Settings → Secrets.")
     st.stop()
 
-notion = Client(auth=NOTION_TOKEN)
+NOTION_API = "https://api.notion.com/v1"
+NOTION_VERSION = "2022-06-28"
+HEADERS = {
+    "Authorization": f"Bearer {NOTION_TOKEN}",
+    "Notion-Version": NOTION_VERSION,
+    "Content-Type": "application/json",
+}
 
 
 # ─────────────────────────────────────────────────────────────────
-# Helpers
+# Direct Notion HTTP helpers
 # ─────────────────────────────────────────────────────────────────
+
+def _notion_post(path: str, body: dict, timeout: int = 30) -> dict:
+    req = urllib.request.Request(
+        f"{NOTION_API}{path}",
+        data=json.dumps(body).encode("utf-8"),
+        headers=HEADERS,
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def iterate_db(db_id: str, max_pages: int = 10) -> list:
+    results = []
+    cursor = None
+    for _ in range(max_pages):
+        body = {"page_size": 100}
+        if cursor:
+            body["start_cursor"] = cursor
+        try:
+            response = _notion_post(f"/databases/{db_id}/query", body)
+        except urllib.error.HTTPError as e:
+            st.error(f"Notion API {e.code} for DB {db_id[:8]}…: {e.reason}")
+            return results
+        except Exception as e:
+            st.error(f"Notion fetch failed for DB {db_id[:8]}…: {type(e).__name__}: {e}")
+            return results
+        results.extend(response.get("results", []))
+        if not response.get("has_more"):
+            break
+        cursor = response.get("next_cursor")
+    return results
+
 
 def get_prop(row, name):
-    prop = row["properties"].get(name)
+    prop = row.get("properties", {}).get(name)
     if not prop:
         return None
     t = prop.get("type")
@@ -62,22 +104,11 @@ def get_prop(row, name):
         return prop.get("checkbox")
     if t == "url":
         return prop.get("url")
+    if t == "formula":
+        f = prop.get("formula", {})
+        ft = f.get("type")
+        return f.get(ft) if ft else None
     return None
-
-
-def iterate_db(db_id, max_pages=10):
-    results = []
-    cursor = None
-    for _ in range(max_pages):
-        kwargs = {"database_id": db_id, "page_size": 100}
-        if cursor:
-            kwargs["start_cursor"] = cursor
-        response = notion.databases.query(**kwargs)
-        results.extend(response.get("results", []))
-        if not response.get("has_more"):
-            break
-        cursor = response.get("next_cursor")
-    return results
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -111,9 +142,7 @@ def fetch_daily():
     rows = iterate_db(DAILY_DB)
     daily = []
     for r in rows:
-        # Title field IS the date (per Daily DB schema)
         title = get_prop(r, "Date") or ""
-        # Extract YYYY-MM-DD from title or fall back to actual Date field if separate
         date_str = title[:10] if title and title[:4].isdigit() else ""
         daily.append({
             "date": date_str,
@@ -217,7 +246,6 @@ st.title("📊 BettingOS Live.v.2 Dashboard")
 st.caption(f"Synced from Notion · Auto-refresh every 15 min · "
            f"Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
 
-# Wellness
 total_settled = len([p for p in picks if p["result"] in ("Won", "Lost")])
 pending = len([p for p in picks if p["result"] == "Pending"])
 if pending == 0:
@@ -225,7 +253,6 @@ if pending == 0:
 else:
     st.warning(f"⚠️ {pending} picks pending settlement, {total_settled} settled")
 
-# Bankroll
 st.subheader("Bankroll")
 c1, c2, c3 = st.columns(3)
 c1.metric("LIVE Bankroll", f"${bk['live_current']:.2f}",
@@ -319,7 +346,6 @@ with tab3:
             st.metric("Record", f"{pw}W-{pt - pw}L")
             st.metric("Net P/L", f"${pnet:+.2f}")
             st.metric("Hit Rate", f"{(pw / max(1, pt)) * 100:.1f}%")
-        # By-sport ROI
         st.subheader("ROI by Sport")
         sport_agg = {}
         for p in settled:
@@ -426,8 +452,7 @@ with tab7:
         c1.metric("Settled total", len(settled))
         c2.metric("Overall hit rate", f"{overall_hit:.1f}%")
         c3.metric("Net total", f"${df['net'].sum():+.2f}")
-        st.caption("Full predicted-vs-actual bucketing returns once we wire it through the engine. "
-                   "For now: top-line hit rate and W-L distribution.")
+        st.caption("Full predicted-vs-actual bucketing returns once we wire it through the engine.")
 
 with tab8:
     st.header("Settings")
@@ -438,8 +463,8 @@ with tab8:
     st.text("PAPER Unit: 1u = $5")
     st.text(f"Active Strategies (canonical): 26")
     st.markdown("### Data Source")
-    st.text("Notion REST API · 4 production DBs")
-    st.text("Refresh cadence: 15 min cache (Streamlit @st.cache_data ttl=900)")
+    st.text("Notion REST API (direct urllib) · 4 production DBs")
+    st.text("Refresh cadence: 15 min cache (@st.cache_data ttl=900)")
     st.markdown("### Access")
     st.text(f"Public URL: this Streamlit app")
     st.text(f"Backup: http://davidslaptop:8765/dashboard.html (Tailscale private)")
