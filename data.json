@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-230205",
-  "generated_at": "2026-05-14T23:02:05.852978+00:00",
+  "build_id": "260514-230818",
+  "generated_at": "2026-05-14T23:08:18.581014+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -737,9 +737,34 @@
       "notes": "edge +9.9pp \u00b7 rae +9.8 \u00b7 factor x1.19 \u00b7 n=10"
     }
   ],
-  "daily": [],
-  "daily_wl": [],
-  "cum_pl": [],
+  "daily": [
+    {
+      "date": "2026-05-14 - Paper fire (19 picks $$122)",
+      "bankroll_end": 0,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
+      "paper_w": 0,
+      "paper_l": 0,
+      "grade": "Pending"
+    }
+  ],
+  "daily_wl": [
+    {
+      "date": "2026-05-14 - Paper fire (19 picks $$122)",
+      "live_w": 0.0,
+      "live_l": 0.0,
+      "paper_w": 0.0,
+      "paper_l": 0.0,
+      "live_pl": 0.0
+    }
+  ],
+  "cum_pl": [
+    {
+      "date": "2026-05-14 - Paper fire (19 picks $$122)",
+      "cum_pl": 0.0
+    }
+  ],
   "strategies": [
     {
       "name": "MLB Total Runs",
@@ -2493,7 +2518,7 @@
       },
       {
         "date": "2026-05-14",
-        "bankroll": null
+        "bankroll": 0.0
       }
     ],
     "insufficient_data": false,
@@ -3337,9 +3362,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 824762,
-            "status": "Warmup",
+            "status": "In Progress",
             "abstract_state": "Live",
-            "status_code": "PW",
+            "status_code": "I",
             "current_inning": 1,
             "inning_half": "Top",
             "inning_state": "Top",
