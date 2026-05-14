@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-230818",
-  "generated_at": "2026-05-14T23:08:18.581014+00:00",
+  "build_id": "260514-234756",
+  "generated_at": "2026-05-14T23:47:56.315593+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -2015,8 +2015,8 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 19:30",
-      "LastRun": "2026-05-14 19:00",
+      "NextRun": "2026-05-14 20:00",
+      "LastRun": "2026-05-14 19:30",
       "LastResult": 0,
       "WakeToRun": false
     },
@@ -3208,19 +3208,19 @@
           "park_hr_factor": 1.04,
           "weather_factor": 1.02,
           "weather_wind": null,
-          "weather_temp": 86.6,
+          "weather_temp": 87.4,
           "weather_notes": [
             "Temp 87F (+2% ball carries)"
           ],
           "park_runs_factor": 1.04,
-          "nrfi_prob": 52.1,
+          "nrfi_prob": 51.9,
           "nrfi_meta": {
             "base": 53.8,
             "min_sample": 7,
             "p_top": 71.1,
             "p_bot": 75.7,
             "park_mult": 0.996,
-            "weather_adj": -0.0172,
+            "weather_adj": -0.0188,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
@@ -3299,7 +3299,7 @@
           "game_pk": 824762,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T22:45:00Z",
-          "status": "Delayed Start",
+          "status": "In Progress",
           "home_team": "Boston Red Sox",
           "home_team_id": 111,
           "away_team": "Philadelphia Phillies",
@@ -3314,23 +3314,23 @@
           "park_hr_factor": 0.96,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 51.7,
+          "weather_temp": 53.8,
           "weather_notes": [],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 58.3,
+          "nrfi_prob": 57.9,
           "nrfi_meta": {
             "base": 56.6,
             "min_sample": 7,
             "p_top": 70.2,
             "p_bot": 80.7,
             "park_mult": 0.992,
-            "weather_adj": 0.0166,
+            "weather_adj": 0.0124,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 cold temp (52\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 cold temp (54\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Jarren Duran",
@@ -3365,19 +3365,25 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 1,
+            "current_inning": 4,
             "inning_half": "Top",
             "inning_state": "Top",
             "home_runs": 0,
-            "home_hits": 0,
+            "home_hits": 1,
             "home_errors": 0,
             "away_runs": 0,
             "away_hits": 0,
             "away_errors": 0,
             "home_innings": [
+              0,
+              0,
+              0,
               null
             ],
             "away_innings": [
+              0,
+              0,
+              0,
               null
             ],
             "scheduled_innings": 9
@@ -3387,7 +3393,7 @@
           "game_pk": 824926,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T23:15:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Atlanta Braves",
           "home_team_id": 144,
           "away_team": "Chicago Cubs",
@@ -3402,9 +3408,9 @@
           "park_hr_factor": 1.07,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 71.0,
+          "weather_temp": 70.4,
           "weather_notes": [
-            "Wind IN 12 mph (-3%)"
+            "Wind IN 11 mph (-3%)"
           ],
           "park_runs_factor": 1.02,
           "nrfi_prob": 59.4,
@@ -3454,23 +3460,25 @@
           ],
           "scoreboard": {
             "game_pk": 824926,
-            "status": "Warmup",
+            "status": "In Progress",
             "abstract_state": "Live",
-            "status_code": "PW",
-            "current_inning": 1,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "status_code": "I",
+            "current_inning": 2,
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
-            "home_hits": 0,
+            "home_hits": 1,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 0,
+            "away_hits": 4,
             "away_errors": 0,
             "home_innings": [
+              0,
               null
             ],
             "away_innings": [
-              null
+              0,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -3479,7 +3487,7 @@
           "game_pk": 824602,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T23:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Chicago White Sox",
           "home_team_id": 145,
           "away_team": "Kansas City Royals",
@@ -3494,7 +3502,7 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 53.7,
+          "weather_temp": 54.0,
           "weather_notes": [],
           "park_runs_factor": 1.03,
           "nrfi_prob": 56.4,
@@ -3504,7 +3512,7 @@
             "p_top": 71.1,
             "p_bot": 77.6,
             "park_mult": 0.997,
-            "weather_adj": 0.0126,
+            "weather_adj": 0.012,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.875,
@@ -3544,23 +3552,23 @@
           ],
           "scoreboard": {
             "game_pk": 824602,
-            "status": "Pre-Game",
-            "abstract_state": "Preview",
-            "status_code": "P",
+            "status": "In Progress",
+            "abstract_state": "Live",
+            "status_code": "I",
             "current_inning": 1,
             "inning_half": "Top",
             "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 0,
+            "away_runs": 1,
+            "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
               null
             ],
             "away_innings": [
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -4492,9 +4500,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Mart\u00edn P\u00e9rez",
+          "away_pp_id": 527048,
+          "away_pp_throws": "L",
           "venue": "loanDepot park"
         },
         {
@@ -8020,6 +8028,134 @@
       "max_drawdown": -0.0,
       "expectancy_per_pick": 0.0,
       "streak": "\u2014"
+    }
+  },
+  "risk_panel": {
+    "live": {
+      "bankroll": {
+        "start": 150.0,
+        "current": 150.0,
+        "peak": 150.0,
+        "peak_date": "2026-05-14",
+        "drawdown_dollars": 0.0,
+        "drawdown_pct": 0.0,
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_pct": 0.0
+      },
+      "today": {
+        "stake_committed": 0,
+        "daily_cap": 15.0,
+        "cap_pct_used": 0.0,
+        "daily_pl": 0,
+        "picks_fired": 0,
+        "picks_pending": 0
+      },
+      "exposure": {
+        "pending_stake": 0,
+        "pending_count": 0,
+        "max_single_event_stake": 0.0,
+        "max_single_event_pct": 0.0,
+        "max_single_allowed_pct": 10.0
+      },
+      "breakers": {
+        "hard_stop_status": "OK",
+        "hard_stop_threshold": -15.0,
+        "hard_stop_distance": 15.0,
+        "drawdown_breaker_status": "OK",
+        "drawdown_breaker_threshold_pct": 25.0,
+        "drawdown_breaker_at_bankroll": 112.5
+      },
+      "sizing": {
+        "avg_stake": 0.0,
+        "avg_stake_pct_bankroll": 0.0,
+        "per_pick_max_dollars": 6.0,
+        "oversize_picks_count": 0,
+        "unit_size": 3.0
+      },
+      "streaks": {
+        "current": "\u2014",
+        "current_n": 0,
+        "longest_winning": 0,
+        "longest_losing": 0
+      },
+      "roi_pct": 0.0,
+      "total_settled": 0
+    },
+    "paper": {
+      "bankroll": {
+        "start": 500.0,
+        "current": 500.0,
+        "peak": 500.0,
+        "peak_date": "2026-05-14",
+        "drawdown_dollars": 0.0,
+        "drawdown_pct": 0.0,
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_pct": 0.0
+      },
+      "today": {
+        "stake_committed": 122.15,
+        "daily_cap": 150.0,
+        "cap_pct_used": 81.4,
+        "daily_pl": 0,
+        "picks_fired": 19,
+        "picks_pending": 19
+      },
+      "exposure": {
+        "pending_stake": 122.15,
+        "pending_count": 19,
+        "max_single_event_stake": 15.0,
+        "max_single_event_pct": 3.0,
+        "max_single_allowed_pct": 5.0
+      },
+      "breakers": {
+        "hard_stop_status": "OK",
+        "hard_stop_threshold": -50.0,
+        "hard_stop_distance": 50.0,
+        "drawdown_breaker_status": "OK",
+        "drawdown_breaker_threshold_pct": 30.0,
+        "drawdown_breaker_at_bankroll": 350.0
+      },
+      "sizing": {
+        "avg_stake": 6.43,
+        "avg_stake_pct_bankroll": 1.29,
+        "per_pick_max_dollars": 10.0,
+        "oversize_picks_count": 4,
+        "unit_size": 5.0
+      },
+      "streaks": {
+        "current": "\u2014",
+        "current_n": 0,
+        "longest_winning": 0,
+        "longest_losing": 0
+      },
+      "roi_pct": 0.0,
+      "total_settled": 0
+    },
+    "config": {
+      "LIVE": {
+        "bankroll_start": 150.0,
+        "unit_size": 3.0,
+        "daily_cap_units": 5.0,
+        "daily_cap_dollars": 15.0,
+        "per_pick_max_units": 2.0,
+        "per_pick_max_dollars": 6.0,
+        "hard_stop_units": -5.0,
+        "hard_stop_dollars": -15.0,
+        "drawdown_breaker_pct": 0.25,
+        "max_single_event_pct": 0.1
+      },
+      "PAPER": {
+        "bankroll_start": 500.0,
+        "unit_size": 5.0,
+        "daily_cap_units": 30.0,
+        "daily_cap_dollars": 150.0,
+        "per_pick_max_units": 2.0,
+        "per_pick_max_dollars": 10.0,
+        "hard_stop_units": -10.0,
+        "hard_stop_dollars": -50.0,
+        "drawdown_breaker_pct": 0.3,
+        "max_single_event_pct": 0.05
+      }
     }
   },
   "public_url": "https://upgrades-institutional-luther-established.trycloudflare.com",
