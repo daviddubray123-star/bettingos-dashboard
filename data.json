@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-195232",
-  "generated_at": "2026-05-14T19:52:32.995425+00:00",
+  "build_id": "260514-195454",
+  "generated_at": "2026-05-14T19:54:54.372973+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -2073,9 +2073,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 823630,
-            "status": "Game Over",
+            "status": "Final",
             "abstract_state": "Final",
-            "status_code": "O",
+            "status_code": "F",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -2184,8 +2184,8 @@
             "home_runs": 6,
             "home_hits": 6,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 4,
+            "away_runs": 1,
+            "away_hits": 5,
             "away_errors": 1,
             "home_innings": [
               0,
@@ -2205,7 +2205,7 @@
               0,
               0,
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -2385,7 +2385,7 @@
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 1,
-            "home_hits": 2,
+            "home_hits": 3,
             "home_errors": 0,
             "away_runs": 7,
             "away_hits": 8,
@@ -2481,7 +2481,7 @@
             "status_code": "I",
             "current_inning": 3,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 4,
             "home_errors": 0,
@@ -2491,7 +2491,7 @@
             "home_innings": [
               1,
               0,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -7051,8 +7051,8 @@
         "side": "U",
         "odds": -106,
         "tier": "SIDE",
-        "edge_pp": 12.18,
-        "rae": 10.83,
+        "edge_pp": 7.98,
+        "rae": 6.42,
         "hit_rate": 0.6364,
         "sample": 13,
         "start_time": null,
@@ -7085,23 +7085,23 @@
       },
       {
         "rank": 2,
-        "player": "Chris Sale",
-        "team": "ATL",
+        "player": "Jesus Luzardo",
+        "team": "PHI",
         "opp": null,
         "market": "PITCHER_STRIKEOUTS",
         "strategy": "MLB Pitcher Strikeouts",
         "line": 6.5,
-        "side": "U",
-        "odds": 126,
-        "tier": null,
-        "edge_pp": 2.18,
-        "rae": 1.94,
-        "hit_rate": 0.4643,
+        "side": "O",
+        "odds": -144,
+        "tier": "WATCH",
+        "edge_pp": 7.48,
+        "rae": 3.21,
+        "hit_rate": 0.5357,
         "sample": 8,
         "start_time": null,
-        "base_prob": 0.4425,
-        "true_prob": 0.4093,
-        "hit_rate_shrunk": 0.4903,
+        "base_prob": 0.5902,
+        "true_prob": 0.665,
+        "hit_rate_shrunk": 0.5284,
         "confidence_sample": 0.5333,
         "confidence_edge": 0.5333,
         "factor_quality_score": 1.0,
@@ -7116,14 +7116,14 @@
           ],
           [
             "last10",
-            0.925
+            1.094
           ],
           [
             "player_performer",
-            1.0
+            1.03
           ]
         ],
-        "variance_adjustment": 1.2408,
+        "variance_adjustment": 1.2427,
         "edge_pp_clamped": false
       },
       {
@@ -7134,17 +7134,17 @@
         "market": "PITCHER_STRIKEOUTS",
         "strategy": "MLB Pitcher Strikeouts",
         "line": 5.5,
-        "side": "O",
-        "odds": 134,
-        "tier": null,
-        "edge_pp": 1.7,
-        "rae": 1.51,
-        "hit_rate": 0.4444,
+        "side": "U",
+        "odds": -164,
+        "tier": "WATCH",
+        "edge_pp": 8.26,
+        "rae": 3.02,
+        "hit_rate": 0.5556,
         "sample": 7,
         "start_time": null,
-        "base_prob": 0.4274,
-        "true_prob": 0.3769,
-        "hit_rate_shrunk": 0.4847,
+        "base_prob": 0.6212,
+        "true_prob": 0.7038,
+        "hit_rate_shrunk": 0.5366,
         "confidence_sample": 0.4667,
         "confidence_edge": 0.4667,
         "factor_quality_score": 1.0,
@@ -7159,11 +7159,11 @@
           ],
           [
             "last10",
-            0.9
+            1.1
           ],
           [
             "player_performer",
-            0.98
+            1.03
           ]
         ],
         "variance_adjustment": 1.2767,
@@ -7171,22 +7171,65 @@
       },
       {
         "rank": 4,
-        "player": "Anthony Kay",
-        "team": "CHW",
+        "player": "Chris Sale",
+        "team": "ATL",
         "opp": null,
         "market": "PITCHER_STRIKEOUTS",
         "strategy": "MLB Pitcher Strikeouts",
-        "line": 3.5,
+        "line": 6.5,
         "side": "O",
-        "odds": 104,
+        "odds": -154,
+        "tier": "WATCH",
+        "edge_pp": 6.5,
+        "rae": 2.79,
+        "hit_rate": 0.5357,
+        "sample": 8,
+        "start_time": null,
+        "base_prob": 0.6063,
+        "true_prob": 0.6713,
+        "hit_rate_shrunk": 0.5284,
+        "confidence_sample": 0.5333,
+        "confidence_edge": 0.5333,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            1.075
+          ],
+          [
+            "player_performer",
+            1.03
+          ]
+        ],
+        "variance_adjustment": 1.2408,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 5,
+        "player": "Kris Bubic",
+        "team": "KC",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 5.5,
+        "side": "O",
+        "odds": -108,
         "tier": null,
-        "edge_pp": 0.98,
-        "rae": 0.87,
+        "edge_pp": 4.55,
+        "rae": 1.96,
         "hit_rate": 0.5,
         "sample": 8,
         "start_time": null,
-        "base_prob": 0.4902,
-        "true_prob": 0.4627,
+        "base_prob": 0.5192,
+        "true_prob": 0.5648,
         "hit_rate_shrunk": 0.5093,
         "confidence_sample": 0.5333,
         "confidence_edge": 0.5333,
@@ -7202,7 +7245,50 @@
           ],
           [
             "last10",
-            0.944
+            1.056
+          ],
+          [
+            "player_performer",
+            1.03
+          ]
+        ],
+        "variance_adjustment": 1.2389,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 6,
+        "player": "Anthony Kay",
+        "team": "CHW",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 3.5,
+        "side": "U",
+        "odds": -128,
+        "tier": null,
+        "edge_pp": 3.14,
+        "rae": 1.35,
+        "hit_rate": 0.5,
+        "sample": 8,
+        "start_time": null,
+        "base_prob": 0.5614,
+        "true_prob": 0.5928,
+        "hit_rate_shrunk": 0.5093,
+        "confidence_sample": 0.5333,
+        "confidence_edge": 0.5333,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            1.056
           ],
           [
             "player_performer",
