@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-112506",
-  "generated_at": "2026-05-14T11:25:06.035914+00:00",
+  "build_id": "260514-113426",
+  "generated_at": "2026-05-14T11:34:26.376031+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -6485,6 +6485,153 @@
       "last_update_id": 541706786
     }
   },
+  "scout_top": {
+    "plays": [],
+    "source_file": "v2_scout_2026-05-14.json",
+    "total_in_cache": 50,
+    "is_today": true
+  },
+  "target_strategies": [
+    {
+      "strategy": "MLB Batter H+R+RBI",
+      "sport": "mlb",
+      "markets": [
+        "HITS_RUNS_RBIS",
+        "HRR"
+      ]
+    },
+    {
+      "strategy": "MLB Batter HR",
+      "sport": "mlb",
+      "markets": [
+        "HR",
+        "BATTER_HOME_RUNS",
+        "HOME_RUNS"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Hits",
+      "sport": "mlb",
+      "markets": [
+        "HITS"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Hits Alt",
+      "sport": "mlb",
+      "markets": [
+        "HITS_ALT"
+      ]
+    },
+    {
+      "strategy": "MLB Batter RBIs",
+      "sport": "mlb",
+      "markets": [
+        "RBIS",
+        "BATTER_RBIS"
+      ]
+    },
+    {
+      "strategy": "MLB Batter RBIs Alt",
+      "sport": "mlb",
+      "markets": [
+        "RBIS_ALT"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Runs",
+      "sport": "mlb",
+      "markets": [
+        "RUNS",
+        "BATTER_RUNS_SCORED",
+        "RUNS_SCORED"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Total Bases",
+      "sport": "mlb",
+      "markets": [
+        "TOTAL_BASES",
+        "TB"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Total Bases Alt",
+      "sport": "mlb",
+      "markets": [
+        "TOTAL_BASES_ALT"
+      ]
+    },
+    {
+      "strategy": "MLB Batter Walks",
+      "sport": "mlb",
+      "markets": [
+        "WALKS",
+        "BATTER_WALKS"
+      ]
+    },
+    {
+      "strategy": "MLB F5 Moneyline",
+      "sport": "mlb",
+      "markets": [
+        "F5_ML"
+      ]
+    },
+    {
+      "strategy": "MLB F5 Total",
+      "sport": "mlb",
+      "markets": [
+        "F5_TOTAL",
+        "F5_total"
+      ]
+    },
+    {
+      "strategy": "MLB Moneyline",
+      "sport": "mlb",
+      "markets": [
+        "ML"
+      ]
+    },
+    {
+      "strategy": "MLB NRFI",
+      "sport": "mlb",
+      "markets": [
+        "NRFI"
+      ]
+    },
+    {
+      "strategy": "MLB NRFI Parlay",
+      "sport": "mlb",
+      "markets": [
+        "NRFI_PARLAY"
+      ]
+    },
+    {
+      "strategy": "MLB Pitcher Strikeouts",
+      "sport": "mlb",
+      "markets": [
+        "PITCHER_STRIKEOUTS",
+        "PITCHER_KS",
+        "STRIKEOUTS"
+      ]
+    },
+    {
+      "strategy": "MLB Run Line",
+      "sport": "mlb",
+      "markets": [
+        "SPREAD",
+        "RUN_LINE"
+      ]
+    },
+    {
+      "strategy": "MLB Total Runs",
+      "sport": "mlb",
+      "markets": [
+        "TOTAL",
+        "TOTALS"
+      ]
+    }
+  ],
   "counts": {
     "picks_total": 0,
     "settled": 0,
