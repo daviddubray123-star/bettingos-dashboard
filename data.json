@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-193650",
-  "generated_at": "2026-05-14T19:36:50.903043+00:00",
+  "build_id": "260514-195232",
+  "generated_at": "2026-05-14T19:52:32.995425+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -1971,9 +1971,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 824517,
-            "status": "Game Over",
+            "status": "Final",
             "abstract_state": "Final",
-            "status_code": "O",
+            "status_code": "F",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -2073,9 +2073,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 823630,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
+            "status": "Game Over",
+            "abstract_state": "Final",
+            "status_code": "O",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -2105,7 +2105,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -2178,9 +2178,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 7,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 8,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 6,
             "home_hits": 6,
             "home_errors": 0,
@@ -2194,6 +2194,7 @@
               0,
               0,
               0,
+              0,
               null
             ],
             "away_innings": [
@@ -2203,7 +2204,8 @@
               0,
               0,
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -2278,7 +2280,7 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
+            "current_inning": 6,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 7,
@@ -2292,9 +2294,11 @@
               3,
               0,
               1,
+              0,
               null
             ],
             "away_innings": [
+              0,
               0,
               0,
               0,
@@ -2377,28 +2381,30 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
+            "current_inning": 6,
             "inning_half": "Bottom",
-            "inning_state": "End",
+            "inning_state": "Bottom",
             "home_runs": 1,
             "home_hits": 2,
             "home_errors": 0,
-            "away_runs": 5,
-            "away_hits": 6,
+            "away_runs": 7,
+            "away_hits": 8,
             "away_errors": 0,
             "home_innings": [
               0,
               0,
               1,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               3,
               0,
               0,
               2,
-              0
+              0,
+              2
             ],
             "scheduled_innings": 9
           }
@@ -2473,20 +2479,22 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 2,
+            "current_inning": 3,
             "inning_half": "Bottom",
-            "inning_state": "End",
+            "inning_state": "Bottom",
             "home_runs": 1,
             "home_hits": 4,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 0,
+            "away_hits": 1,
             "away_errors": 0,
             "home_innings": [
               1,
-              0
+              0,
+              null
             ],
             "away_innings": [
+              0,
               0,
               0
             ],
@@ -7047,7 +7055,33 @@
         "rae": 10.83,
         "hit_rate": 0.6364,
         "sample": 13,
-        "start_time": null
+        "start_time": null,
+        "base_prob": 0.5146,
+        "true_prob": 0.5943,
+        "hit_rate_shrunk": 0.6209,
+        "confidence_sample": 0.8667,
+        "confidence_edge": 0.8667,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            1.1
+          ],
+          [
+            "player_performer",
+            1.05
+          ]
+        ],
+        "variance_adjustment": 1.0767,
+        "edge_pp_clamped": false
       },
       {
         "rank": 2,
@@ -7064,7 +7098,33 @@
         "rae": 1.94,
         "hit_rate": 0.4643,
         "sample": 8,
-        "start_time": null
+        "start_time": null,
+        "base_prob": 0.4425,
+        "true_prob": 0.4093,
+        "hit_rate_shrunk": 0.4903,
+        "confidence_sample": 0.5333,
+        "confidence_edge": 0.5333,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            0.925
+          ],
+          [
+            "player_performer",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.2408,
+        "edge_pp_clamped": false
       },
       {
         "rank": 3,
@@ -7081,7 +7141,33 @@
         "rae": 1.51,
         "hit_rate": 0.4444,
         "sample": 7,
-        "start_time": null
+        "start_time": null,
+        "base_prob": 0.4274,
+        "true_prob": 0.3769,
+        "hit_rate_shrunk": 0.4847,
+        "confidence_sample": 0.4667,
+        "confidence_edge": 0.4667,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            0.9
+          ],
+          [
+            "player_performer",
+            0.98
+          ]
+        ],
+        "variance_adjustment": 1.2767,
+        "edge_pp_clamped": false
       },
       {
         "rank": 4,
@@ -7098,11 +7184,37 @@
         "rae": 0.87,
         "hit_rate": 0.5,
         "sample": 8,
-        "start_time": null
+        "start_time": null,
+        "base_prob": 0.4902,
+        "true_prob": 0.4627,
+        "hit_rate_shrunk": 0.5093,
+        "confidence_sample": 0.5333,
+        "confidence_edge": 0.5333,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "handedness",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "last10",
+            0.944
+          ],
+          [
+            "player_performer",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.2389,
+        "edge_pp_clamped": false
       }
     ],
     "source_file": "v2_scout_2026-05-14.json",
-    "total_in_cache": 16,
+    "total_in_cache": 12,
     "is_today": true
   },
   "target_strategies": [
