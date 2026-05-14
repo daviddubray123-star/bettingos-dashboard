@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-114447",
-  "generated_at": "2026-05-14T11:44:47.430736+00:00",
+  "build_id": "260514-115559",
+  "generated_at": "2026-05-14T11:55:59.727047+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -6870,6 +6870,82 @@
         "TOTAL",
         "TOTALS"
       ]
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-05-15",
+      "title": "Validation-mode + market-as-strategy",
+      "summary": "Each FanDuel market is now its own strategy. Paper opens up for under-sampled strategies. Day 1 launch.",
+      "changes": {
+        "Added": [
+          "\ud83c\udfaf Bet Builder tab \u2014 FanDuel-style parlay slip: search filter, smart suggestions (best edge / anchor / lottery), save/load slips to localStorage, mobile bottom-sheet drawer, 12-leg cap, \u00b1$ stake step buttons.",
+          "\ud83d\udd25 Most Confident Plays Today panel on Today tab \u2014 top picks from scout cache ranked by risk-adjusted edge, with strategy attribution.",
+          "\ud83c\udfaf Target Strategies card on Strategies tab \u2014 source-of-truth list of every market the engine scores (synced from code, not Notion).",
+          "\ud83d\udcca Journal tab overhaul: Daily Brief auto-summary, Strategy Attribution sparklines, Insights Panel (auto-detected patterns: tier ROI, market ROI, streaks, edge buckets), CLV Tracker scatter, Quick Reflection template composer.",
+          "Form Leaders dropdown now lists all 18 strategies (team-level shows explanatory state).",
+          "\ud83d\udce3 OS-Updates tab (this one!) \u2014 release notes following keepachangelog.com format.",
+          "Bot personality: cautious-bettor flavor lines rotated daily in lock summaries via lib/v2_telegram_voice.py.",
+          "BvP factor wired into combined_factor \u2014 career batter-vs-pitcher history influences scoring stack."
+        ],
+        "Changed": [
+          "Market = Strategy refactor: every FanDuel market is its own strategy (was 12 grouped names, now 18 individual). Pick attribution per-market so you can tell which is printing.",
+          "Validation-mode paper: daily cap 20u \u2192 30u, WATCH tier opens for paper at 0.25\u00d7 Kelly. LIVE unchanged (still WATCH-blocked, still 5u cap).",
+          "FanDuel line lock re-score: picks re-score against verified FD price at lock if the line moved since scout (no more stale-line bets).",
+          "NRFI v2 model: weighted blend (pitcher 0.65 / offense 0.35), Bayesian shrinkage toward 0.73 prior, park-runs + temp + umpire-K modifiers.",
+          "Today tab simplified: removed factor chips (park / NRFI prob / hot batters). Now just slate + most confident plays.",
+          "Form (L10) \u2192 Form Leaders. Added stale-data fallback (uses most recent v2_form_*.json when today's hasn't fired yet).",
+          "Dashboard cosmetic refresh: Inter font, JetBrains Mono for code, amber accent palette, polished cards with hover-lift, mobile horizontal-scroll tabs.",
+          "Root font-size: 16px \u2192 15px for ~95% density.",
+          "Bet Builder moved to tab position 2 (right after Today).",
+          "Notion Strategy DB synced to engine: 8 archived, 15 created."
+        ],
+        "Fixed": [
+          "Telegram bot wasn't replying to operator DMs (DM allow-list bug). Added TELEGRAM_OPERATOR_USER_IDS env var + /whoami /ping public commands.",
+          "GitHub Pages auto-deploy stuck in workflow mode (build_type=workflow). Switched to legacy 'Deploy from a branch' \u2014 auto-publishes on every commit, ~60s propagation.",
+          "NRFI ranking discrepancy: Top NRFI panel hid thin-sample games, Games to Watch didn't. Now consistent, with \u26a0 thin / \u26a0 prior-only badges.",
+          "Form tab empty when today's form-discovery hadn't fired. Now falls back to most recent file with stale-day badge.",
+          "5 .bat files had Unix LF line endings \u2014 normalized to CRLF (caught by health-check)."
+        ],
+        "Removed": [
+          "Telegram Bot dedicated tab (replaced by this OS-Updates tab; bot status moved to Settings).",
+          "Top NRFI Plays standalone section on Today tab (consolidated into Most Confident Plays).",
+          "How picks are scored decoder card from Today tab (moved to per-row tooltips)."
+        ]
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "title": "Public dashboard + bot bidirectional",
+      "summary": "Dashboard goes public via GitHub Pages. Telegram bot accepts /commands from the operator.",
+      "changes": {
+        "Added": [
+          "Public dashboard URL: https://daviddubray123-star.github.io/bettingos-dashboard/ \u2014 CDN-backed, multi-user, stable.",
+          "Auto-publish pipeline: dashboard-refresh.bat \u2192 lib/v2_gh_publish.py uses GitHub Contents API to push index.html + data.json after every rebuild.",
+          "Telegram bot listener (scripts/v2_tg_listener.py) accepts /status, /picks, /recap, /pause, /resume, /help. Runs as WTS daemon."
+        ],
+        "Changed": [
+          "Strategy Performance table now reads active list dynamically from Notion instead of hardcoded label."
+        ]
+      }
+    },
+    {
+      "date": "2026-05-13",
+      "title": "MLB-only focus + v2 simplification",
+      "summary": "Engine consolidated to MLB during the master-MLB-first phase. NBA / NHL / UFC / WNBA strategies archived.",
+      "changes": {
+        "Added": [
+          "11-factor scoring stack: statcast, park, handedness, pitcher matchup, weather, last-10, team form, player performer, BvP, umpire, bullpen.",
+          "Tier-based confidence buckets (LOCK / STRONG / SIDE / WATCH) from risk-adjusted edge."
+        ],
+        "Changed": [
+          "Sample floor for player props lowered 10 \u2192 7 (early-season accommodation)."
+        ],
+        "Removed": [
+          "PrizePicks integration (never re-introduced).",
+          "NBA / NHL / UFC / WNBA active strategies (archived in Notion)."
+        ]
+      }
     }
   ],
   "counts": {
