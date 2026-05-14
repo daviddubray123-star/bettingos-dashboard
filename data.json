@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-195454",
-  "generated_at": "2026-05-14T19:54:54.372973+00:00",
+  "build_id": "260514-202358",
+  "generated_at": "2026-05-14T20:23:58.853608+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -1266,8 +1266,8 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 16:00",
-      "LastRun": "2026-05-14 15:30",
+      "NextRun": "2026-05-14 16:30",
+      "LastRun": "2026-05-14 16:00",
       "LastResult": 0,
       "WakeToRun": false
     },
@@ -1803,7 +1803,7 @@
           "game_pk": 823383,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T16:35:00Z",
-          "status": "Game Over",
+          "status": "Final",
           "home_team": "Pittsburgh Pirates",
           "home_team_id": 134,
           "away_team": "Colorado Rockies",
@@ -1908,7 +1908,7 @@
           "game_pk": 824517,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T16:40:00Z",
-          "status": "Game Over",
+          "status": "Final",
           "home_team": "Cincinnati Reds",
           "home_team_id": 113,
           "away_team": "Washington Nationals",
@@ -2012,7 +2012,7 @@
           "game_pk": 823630,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T17:10:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "New York Mets",
           "home_team_id": 121,
           "away_team": "Detroit Tigers",
@@ -2114,7 +2114,7 @@
           "game_pk": 823709,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T17:40:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Minnesota Twins",
           "home_team_id": 142,
           "away_team": "Miami Marlins",
@@ -2127,7 +2127,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 77.8,
+          "weather_temp": 78.2,
           "weather_notes": [],
           "park_runs_factor": 1.02,
           "nrfi_prob": 49.9,
@@ -2137,7 +2137,7 @@
             "p_top": 71.1,
             "p_bot": 70.2,
             "park_mult": 0.998,
-            "weather_adj": 0.0,
+            "weather_adj": -0.0004,
             "home_sp_rate": null,
             "home_sp_sample": 0,
             "away_sp_rate": null,
@@ -2175,14 +2175,14 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 823709,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
-            "current_inning": 8,
+            "status": "Final",
+            "abstract_state": "Final",
+            "status_code": "F",
+            "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
-            "home_runs": 6,
-            "home_hits": 6,
+            "home_runs": 9,
+            "home_hits": 9,
             "home_errors": 0,
             "away_runs": 1,
             "away_hits": 5,
@@ -2195,6 +2195,7 @@
               0,
               0,
               0,
+              3,
               null
             ],
             "away_innings": [
@@ -2205,7 +2206,8 @@
               0,
               0,
               0,
-              1
+              1,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -2280,20 +2282,22 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 8,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 7,
-            "home_hits": 9,
+            "home_hits": 10,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 5,
+            "away_hits": 6,
             "away_errors": 2,
             "home_innings": [
               3,
               3,
               0,
               1,
+              0,
+              0,
               0,
               null
             ],
@@ -2303,7 +2307,9 @@
               0,
               0,
               0,
-              0
+              0,
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -2381,11 +2387,11 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
+            "current_inning": 7,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 1,
-            "home_hits": 3,
+            "home_runs": 3,
+            "home_hits": 4,
             "home_errors": 0,
             "away_runs": 7,
             "away_hits": 8,
@@ -2396,6 +2402,7 @@
               1,
               0,
               0,
+              2,
               null
             ],
             "away_innings": [
@@ -2404,7 +2411,8 @@
               0,
               2,
               0,
-              2
+              2,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -2426,7 +2434,7 @@
           "park_hr_factor": 1.04,
           "weather_factor": 1.02,
           "weather_wind": null,
-          "weather_temp": 88.3,
+          "weather_temp": 88.2,
           "weather_notes": [
             "Temp 88F (+2% ball carries)"
           ],
@@ -2479,24 +2487,28 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 3,
+            "current_inning": 5,
             "inning_half": "Bottom",
             "inning_state": "End",
             "home_runs": 1,
             "home_hits": 4,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 1,
+            "away_runs": 1,
+            "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
               1,
+              0,
+              0,
               0,
               0
             ],
             "away_innings": [
               0,
               0,
-              0
+              0,
+              0,
+              1
             ],
             "scheduled_innings": 9
           }
@@ -2518,23 +2530,23 @@
           "park_hr_factor": 0.96,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 55.5,
+          "weather_temp": 53.1,
           "weather_notes": [],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 57.6,
+          "nrfi_prob": 58.0,
           "nrfi_meta": {
             "base": 56.6,
             "min_sample": 7,
             "p_top": 70.2,
             "p_bot": 80.7,
             "park_mult": 0.992,
-            "weather_adj": 0.009,
+            "weather_adj": 0.0138,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI",
+          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 cold temp (53\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Jarren Duran",
@@ -2569,17 +2581,21 @@
             "status": "Pre-Game",
             "abstract_state": "Preview",
             "status_code": "P",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -2600,7 +2616,7 @@
           "park_hr_factor": 1.07,
           "weather_factor": 0.94,
           "weather_wind": "in",
-          "weather_temp": 70.4,
+          "weather_temp": 70.5,
           "weather_notes": [
             "Wind IN 12 mph (-6%)"
           ],
@@ -2673,7 +2689,7 @@
           "game_pk": 824602,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T23:40:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Chicago White Sox",
           "home_team_id": 145,
           "away_team": "Kansas City Royals",
@@ -2686,7 +2702,7 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 52.6,
+          "weather_temp": 53.0,
           "weather_notes": [],
           "park_runs_factor": 1.03,
           "nrfi_prob": 56.6,
@@ -2696,7 +2712,7 @@
             "p_top": 71.1,
             "p_bot": 77.6,
             "park_mult": 0.997,
-            "weather_adj": 0.0148,
+            "weather_adj": 0.014,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.875,
@@ -2739,17 +2755,21 @@
             "status": "Pre-Game",
             "abstract_state": "Preview",
             "status_code": "P",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -7049,15 +7069,15 @@
         "strategy": "MLB Pitcher Strikeouts",
         "line": 3.5,
         "side": "U",
-        "odds": -106,
-        "tier": "SIDE",
-        "edge_pp": 7.98,
-        "rae": 6.42,
+        "odds": -108,
+        "tier": "STRONG",
+        "edge_pp": 8.05,
+        "rae": 6.48,
         "hit_rate": 0.6364,
         "sample": 13,
-        "start_time": null,
-        "base_prob": 0.5146,
-        "true_prob": 0.5943,
+        "start_time": "2026-05-14T23:15:00Z",
+        "base_prob": 0.5192,
+        "true_prob": 0.5997,
         "hit_rate_shrunk": 0.6209,
         "confidence_sample": 0.8667,
         "confidence_edge": 0.8667,
@@ -7092,15 +7112,15 @@
         "strategy": "MLB Pitcher Strikeouts",
         "line": 6.5,
         "side": "O",
-        "odds": -144,
-        "tier": "WATCH",
-        "edge_pp": 7.48,
-        "rae": 3.21,
+        "odds": -140,
+        "tier": "SIDE",
+        "edge_pp": 7.4,
+        "rae": 3.18,
         "hit_rate": 0.5357,
         "sample": 8,
-        "start_time": null,
-        "base_prob": 0.5902,
-        "true_prob": 0.665,
+        "start_time": "2026-05-14T22:45:00Z",
+        "base_prob": 0.5833,
+        "true_prob": 0.6573,
         "hit_rate_shrunk": 0.5284,
         "confidence_sample": 0.5333,
         "confidence_edge": 0.5333,
@@ -7136,12 +7156,12 @@
         "line": 5.5,
         "side": "U",
         "odds": -164,
-        "tier": "WATCH",
+        "tier": "SIDE",
         "edge_pp": 8.26,
         "rae": 3.02,
         "hit_rate": 0.5556,
         "sample": 7,
-        "start_time": null,
+        "start_time": "2026-05-14T22:45:00Z",
         "base_prob": 0.6212,
         "true_prob": 0.7038,
         "hit_rate_shrunk": 0.5366,
@@ -7184,7 +7204,7 @@
         "rae": 2.79,
         "hit_rate": 0.5357,
         "sample": 8,
-        "start_time": null,
+        "start_time": "2026-05-14T23:15:00Z",
         "base_prob": 0.6063,
         "true_prob": 0.6713,
         "hit_rate_shrunk": 0.5284,
@@ -7214,6 +7234,183 @@
       },
       {
         "rank": 5,
+        "player": "Isaac Collins",
+        "team": "KC",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -150,
+        "tier": null,
+        "edge_pp": 11.98,
+        "rae": 2.64,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.6,
+        "true_prob": 0.7198,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.12
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.03
+          ],
+          [
+            "pitcher_matchup",
+            1.04
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 6,
+        "player": "Jordan Walker",
+        "team": "STL",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": 104,
+        "tier": null,
+        "edge_pp": 10.98,
+        "rae": 2.42,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T19:05:00Z",
+        "base_prob": 0.4902,
+        "true_prob": 0.6,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.07
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.36,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 7,
+        "player": "Ceddanne Rafaela",
+        "team": "BOS",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -190,
+        "tier": null,
+        "edge_pp": 10.32,
+        "rae": 2.28,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T22:45:00Z",
+        "base_prob": 0.6552,
+        "true_prob": 0.7584,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.06
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.05
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.356,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 8,
         "player": "Kris Bubic",
         "team": "KC",
         "opp": null,
@@ -7221,15 +7418,15 @@
         "strategy": "MLB Pitcher Strikeouts",
         "line": 5.5,
         "side": "O",
-        "odds": -108,
-        "tier": null,
-        "edge_pp": 4.55,
-        "rae": 1.96,
+        "odds": -112,
+        "tier": "WATCH",
+        "edge_pp": 4.63,
+        "rae": 1.99,
         "hit_rate": 0.5,
         "sample": 8,
-        "start_time": null,
-        "base_prob": 0.5192,
-        "true_prob": 0.5648,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.5283,
+        "true_prob": 0.5746,
         "hit_rate_shrunk": 0.5093,
         "confidence_sample": 0.5333,
         "confidence_edge": 0.5333,
@@ -7256,28 +7453,36 @@
         "edge_pp_clamped": false
       },
       {
-        "rank": 6,
-        "player": "Anthony Kay",
+        "rank": 9,
+        "player": "Miguel Vargas",
         "team": "CHW",
         "opp": null,
-        "market": "PITCHER_STRIKEOUTS",
-        "strategy": "MLB Pitcher Strikeouts",
-        "line": 3.5,
-        "side": "U",
-        "odds": -128,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -185,
         "tier": null,
-        "edge_pp": 3.14,
-        "rae": 1.35,
-        "hit_rate": 0.5,
-        "sample": 8,
-        "start_time": null,
-        "base_prob": 0.5614,
-        "true_prob": 0.5928,
-        "hit_rate_shrunk": 0.5093,
-        "confidence_sample": 0.5333,
-        "confidence_edge": 0.5333,
+        "edge_pp": 7.79,
+        "rae": 1.72,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.6491,
+        "true_prob": 0.727,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
         "factor_quality_score": 1.0,
         "factors_applied": [
+          [
+            "statcast",
+            1.12
+          ],
+          [
+            "park",
+            1.0
+          ],
           [
             "handedness",
             1.0
@@ -7288,19 +7493,660 @@
           ],
           [
             "last10",
-            1.056
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
           ],
           [
             "player_performer",
             1.0
+          ],
+          [
+            "bvp",
+            1.0
           ]
         ],
-        "variance_adjustment": 1.2389,
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 10,
+        "player": "Caleb Durbin",
+        "team": "BOS",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -175,
+        "tier": null,
+        "edge_pp": 7.24,
+        "rae": 1.6,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T22:45:00Z",
+        "base_prob": 0.6364,
+        "true_prob": 0.7088,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.02
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.05
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.355,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 11,
+        "player": "Masyn Winn",
+        "team": "STL",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": 120,
+        "tier": null,
+        "edge_pp": 7.15,
+        "rae": 1.58,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T19:05:00Z",
+        "base_prob": 0.4545,
+        "true_prob": 0.5261,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.04
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.07
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.357,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 12,
+        "player": "Isaac Collins",
+        "team": "KC",
+        "opp": null,
+        "market": "TOTAL_BASES_ALT",
+        "strategy": "MLB Batter Total Bases Alt",
+        "line": 1.5,
+        "side": "O",
+        "odds": 180,
+        "tier": null,
+        "edge_pp": 7.13,
+        "rae": 1.57,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.3571,
+        "true_prob": 0.4285,
+        "hit_rate_shrunk": 0.48,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.12
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.03
+          ],
+          [
+            "pitcher_matchup",
+            1.04
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 13,
+        "player": "Jordan Walker",
+        "team": "STL",
+        "opp": null,
+        "market": "TOTAL_BASES_ALT",
+        "strategy": "MLB Batter Total Bases Alt",
+        "line": 1.5,
+        "side": "O",
+        "odds": 230,
+        "tier": null,
+        "edge_pp": 6.79,
+        "rae": 1.5,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T19:05:00Z",
+        "base_prob": 0.303,
+        "true_prob": 0.3709,
+        "hit_rate_shrunk": 0.48,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.07
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.36,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 14,
+        "player": "Bobby Witt Jr.",
+        "team": "KC",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -350,
+        "tier": null,
+        "edge_pp": 6.35,
+        "rae": 1.41,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.7778,
+        "true_prob": 0.8412,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.0
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.04
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.354,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 15,
+        "player": "O7.5",
+        "team": null,
+        "opp": null,
+        "market": "total",
+        "strategy": "MLB Total Runs",
+        "line": 7.5,
+        "side": "O7.5",
+        "odds": -110,
+        "tier": "WATCH",
+        "edge_pp": 6.29,
+        "rae": 1.39,
+        "hit_rate": 0.5684,
+        "sample": 10,
+        "start_time": "2026-05-14T23:15:00Z",
+        "base_prob": 0.5238,
+        "true_prob": 0.5867,
+        "hit_rate_shrunk": 0.5684,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_record",
+            1.12
+          ],
+          [
+            "team_f5",
+            1.0
+          ],
+          [
+            "pitcher_f5",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "bullpen",
+            1.0
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "weather",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 16,
+        "player": "U7.5",
+        "team": null,
+        "opp": null,
+        "market": "total",
+        "strategy": "MLB Total Runs",
+        "line": 7.5,
+        "side": "U7.5",
+        "odds": -110,
+        "tier": "WATCH",
+        "edge_pp": 6.29,
+        "rae": 1.39,
+        "hit_rate": 0.4316,
+        "sample": 10,
+        "start_time": "2026-05-14T23:15:00Z",
+        "base_prob": 0.5238,
+        "true_prob": 0.5867,
+        "hit_rate_shrunk": 0.4316,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_record",
+            1.12
+          ],
+          [
+            "team_f5",
+            1.0
+          ],
+          [
+            "pitcher_f5",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "bullpen",
+            1.0
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "weather",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 17,
+        "player": "ATL -1.5",
+        "team": null,
+        "opp": null,
+        "market": "spread",
+        "strategy": "MLB Run Line",
+        "line": -1.5,
+        "side": "ATL -1.5",
+        "odds": -110,
+        "tier": "WATCH",
+        "edge_pp": 6.29,
+        "rae": 1.39,
+        "hit_rate": 0.5238,
+        "sample": 0,
+        "start_time": "2026-05-14T23:15:00Z",
+        "base_prob": 0.5238,
+        "true_prob": 0.5867,
+        "hit_rate_shrunk": 0.5238,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_record",
+            1.12
+          ],
+          [
+            "team_f5",
+            1.0
+          ],
+          [
+            "pitcher_f5",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "bullpen",
+            1.0
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "weather",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 18,
+        "player": "CHC +1.5",
+        "team": null,
+        "opp": null,
+        "market": "spread",
+        "strategy": "MLB Run Line",
+        "line": 1.5,
+        "side": "CHC +1.5",
+        "odds": -110,
+        "tier": "WATCH",
+        "edge_pp": 6.29,
+        "rae": 1.39,
+        "hit_rate": 0.5238,
+        "sample": 0,
+        "start_time": "2026-05-14T23:15:00Z",
+        "base_prob": 0.5238,
+        "true_prob": 0.5867,
+        "hit_rate_shrunk": 0.5238,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_record",
+            1.12
+          ],
+          [
+            "team_f5",
+            1.0
+          ],
+          [
+            "pitcher_f5",
+            1.0
+          ],
+          [
+            "pitcher_matchup",
+            1.0
+          ],
+          [
+            "bullpen",
+            1.0
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "weather",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.362,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 19,
+        "player": "Ceddanne Rafaela",
+        "team": "BOS",
+        "opp": null,
+        "market": "TOTAL_BASES_ALT",
+        "strategy": "MLB Batter Total Bases Alt",
+        "line": 1.5,
+        "side": "O",
+        "odds": 155,
+        "tier": null,
+        "edge_pp": 6.18,
+        "rae": 1.37,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T22:45:00Z",
+        "base_prob": 0.3922,
+        "true_prob": 0.4539,
+        "hit_rate_shrunk": 0.48,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.06
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            1.04
+          ],
+          [
+            "pitcher_matchup",
+            1.05
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.356,
+        "edge_pp_clamped": false
+      },
+      {
+        "rank": 20,
+        "player": "Vinnie Pasquantino",
+        "team": "KC",
+        "opp": null,
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -165,
+        "tier": null,
+        "edge_pp": 6.12,
+        "rae": 1.35,
+        "hit_rate": 0.51,
+        "sample": 0,
+        "start_time": "2026-05-14T23:40:00Z",
+        "base_prob": 0.6226,
+        "true_prob": 0.6838,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 0.3,
+        "confidence_edge": 0.3,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "park",
+            1.0
+          ],
+          [
+            "handedness",
+            0.96
+          ],
+          [
+            "pitcher_matchup",
+            1.04
+          ],
+          [
+            "last10",
+            1.0
+          ],
+          [
+            "team_form",
+            1.0
+          ],
+          [
+            "player_performer",
+            1.0
+          ],
+          [
+            "bvp",
+            1.0
+          ]
+        ],
+        "variance_adjustment": 1.36,
         "edge_pp_clamped": false
       }
     ],
     "source_file": "v2_scout_2026-05-14.json",
-    "total_in_cache": 12,
+    "total_in_cache": 50,
     "is_today": true
   },
   "target_strategies": [
