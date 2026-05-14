@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BettingOS — MLB Edge Dashboard</title>
+<script>
+  // Override default 60s refresh via ?refresh=<seconds> query param
+  (function() {
+    var p = new URLSearchParams(window.location.search);
+    var s = parseInt(p.get('refresh'));
+    if (isNaN(s)) s = 60;
+    if (s > 0) setTimeout(function() { location.reload(); }, s * 1000);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  /* ===== Palette refresh — deeper zinc/slate base + warm amber accent ===== */
+  :root {
+    --bg:        #09090f;   /* near-black, slightly cool */
+    --bg-elev:  #11131a;    /* card surface */
+    --bg-elev2: #161823;    /* hover / nested surface */
+    --border:    #1f2230;
+    --border-2:  #2a2e3f;
+    --fg:        #e7e9ee;
+    --fg-dim:    #a1a6b3;
+    --fg-mute:   #6b7180;
+    --accent:    #fbbf24;   /* amber-400 — primary accent */
+    --accent-2:  #34d399;   /* emerald-400 — positive */
+    --accent-soft: rgba(251,191,36,0.12);
+    --pos:       #34d399;
+    --neg:       #f87171;
+    --warn:      #fbbf24;
+    --info:      #60a5fa;
+  }
+  html, body { background:var(--bg); color:var(--fg); }
+  body {
+    font-family:'Inter','Segoe UI Variable Text','Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-feature-settings:'cv11','ss01','ss03';
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    letter-spacing:-0.005em;
+  }
+  h1, h2, h3, h4 { font-family:'Inter',sans-serif; letter-spacing:-0.02em; font-weight:700; }
+  code, pre, .mono { font-family:'JetBrains Mono','Menlo','Consolas',monospace; }
+
+  /* ===== Cards — tighter radius, subtle top accent on hover ===== */
+  .card {
+    background:var(--bg-elev);
+    border:1px solid var(--border);
+    border-radius:10px;
+    position:relative;
+    transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  }
+  .card:hover {
+    border-color:var(--border-2);
+    transform:translateY(-1px);
+    box-shadow:0 6px 16px -8px rgba(0,0,0,0.5);
+  }
+
+  /* ===== Tab nav — pill style with sliding active state ===== */
+  .tab-nav {
+    position:sticky; top:0; z-index:10;
+    background:linear-gradient(180deg,var(--bg) 0%,var(--bg) 70%,rgba(9,9,15,0.85) 100%);
+    padding:6px 0 4px;
+    backdrop-filter:saturate(140%) blur(6px);
+  }
+  .tab-nav > div {
+    gap:4px;
+    border-bottom:1px solid var(--border);
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scrollbar-width:thin;
+    scrollbar-color:var(--border-2) transparent;
+    -webkit-overflow-scrolling:touch;
+  }
+  .tab-nav > div::-webkit-scrollbar { height:4px; }
+  .tab-nav > div::-webkit-scrollbar-thumb { background:var(--border-2); border-radius:2px; }
+  .tab-btn {
+    padding:9px 14px;
+    border-radius:8px 8px 0 0;
+    font-weight:500;
+    font-size:13px;
+    line-height:1.2;
+    white-space:nowrap;
+    color:var(--fg-dim);
+    background:transparent;
+    border-bottom:2px solid transparent;
+    transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .tab-btn:not(.active):hover {
+    color:var(--fg);
+    background:rgba(251,191,36,0.05);
+  }
+  .tab-btn.active {
+    color:var(--accent);
+    background:var(--bg-elev);
+    border-bottom-color:var(--accent);
+    font-weight:600;
+  }
+
+  /* Tab content fade on switch */
+  section[data-pane] { animation: fadeIn 200ms cubic-bezier(.2,.7,.3,1); }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(3px); } to { opacity:1; transform:none; } }
+
+  /* ===== Pills ===== */
+  .pill {
+    display:inline-block;
+    padding:2px 9px;
+    border-radius:9999px;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    line-height:1.4;
+  }
+  .pill-won    { background:rgba(52,211,153,0.14); color:#34d399; }
+  .pill-lost   { background:rgba(248,113,113,0.14); color:#f87171; }
+  .pill-pending{ background:rgba(251,191,36,0.14); color:#fbbf24; }
+  .pill-unconf { background:rgba(148,163,184,0.14); color:#94a3b8; }
+  .pill-push   { background:rgba(168,162,158,0.14); color:#a8a29e; }
+  .pill-scratched{ background:rgba(100,116,139,0.14); color:#64748b; }
+  .pill-promote{ background:rgba(52,211,153,0.14); color:#34d399; }
+  .pill-demote { background:rgba(248,113,113,0.14); color:#f87171; }
+  .pill-insuf  { background:rgba(148,163,184,0.14); color:#94a3b8; }
+
+  /* ===== Tables ===== */
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:9px 12px; border-bottom:1px solid var(--border); text-align:left; }
+  th {
+    background:var(--bg-elev2);
+    font-size:10.5px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--fg-dim);
+    user-select:none;
+    position:sticky;
+    top:0;
+  }
+  th:hover { color:var(--fg); }
+  tr { transition: background 110ms ease; }
+  tr:hover { background:rgba(251,191,36,0.04); }
+  .positive { color:var(--pos); font-variant-numeric:tabular-nums; }
+  .negative { color:var(--neg); font-variant-numeric:tabular-nums; }
+
+  /* Charts */
+  .chart-wrap { position:relative; height:320px; }
+
+  /* Details / expanders */
+  details summary { cursor:pointer; user-select:none; padding:6px 0; transition: color 110ms ease; }
+  details summary:hover { color:var(--fg); }
+  details[open] { background:var(--bg-elev2); padding:8px 12px; border-radius:8px; }
+
+  /* Empty states */
+  .empty-state {
+    text-align:center; padding:48px 24px; color:var(--fg-mute);
+    background:rgba(31,34,48,0.35); border-radius:10px; border:1px dashed var(--border);
+  }
+  .empty-state-title { color:var(--fg-dim); font-size:14px; font-weight:600; margin-bottom:6px; }
+  .empty-state-hint  { color:var(--fg-mute); font-size:12px; }
+
+  /* Loading skeleton */
+  .skeleton {
+    background:linear-gradient(90deg, var(--bg-elev2) 25%, var(--border) 50%, var(--bg-elev2) 75%);
+    background-size:200% 100%; animation:skeleton 1.5s ease-in-out infinite; border-radius:6px;
+  }
+  @keyframes skeleton { 0%{background-position:200% 0;} 100%{background-position:-200% 0;} }
+
+  /* Mobile-friendly horizontal scroll for tables */
+  .table-wrap { overflow-x:auto; }
+
+  /* Manual trigger row hover */
+  .trigger-row { cursor:pointer; padding:6px 8px; border-radius:6px; transition: background 110ms ease; }
+  .trigger-row:hover { background:rgba(251,191,36,0.07); }
+
+  /* Sportsbook-style odds chip */
+  .odds-chip {
+    display:inline-block; padding:3px 10px; border-radius:6px;
+    font-weight:700; font-size:13px;
+    font-family:'JetBrains Mono','Menlo','Consolas',monospace;
+    letter-spacing:0.02em; min-width:48px; text-align:center;
+    font-variant-numeric:tabular-nums;
+  }
+  .odds-fav { background:rgba(52,211,153,0.12); color:#86efac; border:1px solid rgba(52,211,153,0.25); }
+  .odds-dog { background:rgba(96,165,250,0.10); color:#93c5fd; border:1px solid rgba(96,165,250,0.25); }
+
+  /* Bet-type tint left borders */
+  .bt-ml      { border-left:3px solid #60a5fa !important; }   /* moneyline = blue */
+  .bt-total   { border-left:3px solid #34d399 !important; }   /* totals = green */
+  .bt-prop    { border-left:3px solid #a78bfa !important; }   /* props = purple */
+  .bt-special { border-left:3px solid #fb923c !important; }   /* NRFI = orange */
+  .bt-parlay  { border-left:3px solid #f472b6 !important; }   /* parlays = pink */
+
+  /* Numeric values in stat blocks default to tabular */
+  .num, .tabular { font-variant-numeric:tabular-nums; }
+
+  /* Mobile polish */
+  @media (max-width: 640px) {
+    body { padding:14px !important; }
+    .tab-btn { padding:8px 11px; font-size:12.5px; }
+    h1.dash-title { font-size:1.5rem !important; }
+    .chart-wrap { height:240px; }
+  }
+</style>
+</head>
+<body class="min-h-screen p-6">
+<div class="max-w-7xl mx-auto">
+  <header class="flex items-start justify-between mb-6 flex-wrap gap-3">
+    <div>
+      <h1 class="dash-title text-2xl md:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
+        <span style="color:var(--accent-2)">⚾</span>
+        <span>BettingOS</span>
+        <span class="text-xs font-semibold uppercase tracking-widest px-2 py-0.5 rounded-md" style="background:var(--accent-soft);color:var(--accent);letter-spacing:0.14em">v2</span>
+      </h1>
+      <div class="text-sm mt-1" style="color:var(--fg-dim)">MLB Edge Engine · Live + Paper</div>
+      <p class="text-xs mt-1" style="color:var(--fg-mute)" id="genline">Loading…</p>
+    </div>
+    <div class="text-right">
+      <div class="text-[10.5px] uppercase tracking-[0.18em] font-semibold" style="color:var(--fg-mute)">Today</div>
+      <div class="text-xl md:text-2xl font-semibold text-white tabular" id="hdr-today">—</div>
+      <div class="text-xs mt-1" id="hdr-wellness-pill"></div>
+    </div>
+  </header>
+
+  <!-- Wellness card -->
+  <div class="card p-3 mb-4 flex items-center gap-3" id="wellness-card">
+    <div id="wellness-dot" style="width:12px;height:12px;border-radius:50%;background:#9ca3af"></div>
+    <div class="text-sm text-white" id="wellness-text">Health check loading…</div>
+    <div class="ml-auto text-xs text-gray-500" id="wellness-when">—</div>
+  </div>
+
+  <!-- Account Summary Card — total trades / win rate / P/L / drawdown / expectancy / streak -->
+  <!-- Rebuilds every dashboard refresh (2:30 AM post-settle + 1 PM post-lock) -->
+  <div class="card p-4 mb-3" id="summary-card">
+    <div class="flex items-center justify-between mb-3">
+      <div class="text-xs font-semibold uppercase tracking-wider text-gray-300">Account Summary</div>
+      <div class="text-xs text-gray-500">refreshes 2:30 AM (post-settle) + 1 PM (post-lock)</div>
+    </div>
+    <div class="grid grid-cols-2 gap-x-6">
+      <div>
+        <div class="text-xs uppercase tracking-wider text-green-400 mb-2 font-semibold">LIVE</div>
+        <div class="grid grid-cols-3 gap-x-3 gap-y-2 text-xs" id="summary-live"></div>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider text-blue-400 mb-2 font-semibold">PAPER</div>
+        <div class="grid grid-cols-3 gap-x-3 gap-y-2 text-xs" id="summary-paper"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Account cards: LIVE + PAPER, each one self-contained -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+    <div class="card p-4" style="border-left:3px solid #34d399">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-[11px] uppercase tracking-[0.14em] font-semibold" style="color:#34d399">LIVE Account</div>
+        <div class="text-xs" style="color:var(--fg-dim)" id="bk-live-sub">Tier 1 · 1u=$3 · 5u/day</div>
+      </div>
+      <div class="flex items-baseline gap-3 mb-3">
+        <div class="text-3xl font-bold text-white tabular" id="bk-live">—</div>
+        <div class="text-xs tabular" id="lp-live-roi">—</div>
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-xs">
+        <div>
+          <div class="text-gray-500 uppercase tracking-wider">Peak</div>
+          <div class="text-white text-base font-semibold" id="bk-peak">—</div>
+        </div>
+        <div>
+          <div class="text-gray-500 uppercase tracking-wider">Drawdown</div>
+          <div class="text-base font-semibold" id="bk-dd">—</div>
+        </div>
+      </div>
+      <div class="text-xs text-gray-400 mt-2" id="lp-live-detail">—</div>
+    </div>
+
+    <div class="card p-4" style="border-left:3px solid #60a5fa">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-[11px] uppercase tracking-[0.14em] font-semibold" style="color:#60a5fa">PAPER Account</div>
+        <div class="text-xs" style="color:var(--fg-dim)">Virtual · 1u=$5 · 20u/day</div>
+      </div>
+      <div class="flex items-baseline gap-3 mb-3">
+        <div class="text-3xl font-bold text-white tabular" id="bk-paper">—</div>
+        <div class="text-xs tabular" id="lp-paper-roi">—</div>
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-xs">
+        <div>
+          <div class="text-gray-500 uppercase tracking-wider">Peak</div>
+          <div class="text-white text-base font-semibold" id="bk-paper-peak">—</div>
+        </div>
+        <div>
+          <div class="text-gray-500 uppercase tracking-wider">Drawdown</div>
+          <div class="text-base font-semibold" id="bk-paper-dd">—</div>
+        </div>
+      </div>
+      <div class="text-xs text-gray-400 mt-2" id="lp-paper-detail">—</div>
+    </div>
+  </div>
+
+  <!-- Tab nav — sticky on scroll, full width responsive -->
+  <div class="tab-nav">
+    <div class="flex">
+      <button class="tab-btn active" data-tab="today">Today</button>
+      <button class="tab-btn" data-tab="form">Form (L10)</button>
+      <button class="tab-btn" data-tab="upcoming">Upcoming Week</button>
+      <button class="tab-btn" data-tab="picks">Picks</button>
+      <button class="tab-btn" data-tab="performance">Performance</button>
+      <button class="tab-btn" data-tab="last7d">Last 7 Days</button>
+      <button class="tab-btn" data-tab="strategies">Strategies</button>
+      <button class="tab-btn" data-tab="journal">Journal</button>
+      <button class="tab-btn" data-tab="telegram">🤖 Telegram Bot</button>
+      <button class="tab-btn" data-tab="settings">Settings</button>
+    </div>
+  </div>
+
+  <main class="mt-4">
+
+    <!-- TAB 1: TODAY -->
+    <section data-pane="today">
+      <!-- Action-needed banner (yellow, only shown when LIVE pending picks exist) -->
+      <div id="action-banner" class="hidden mb-4"></div>
+
+      <!-- LIVE picks section -->
+      <div id="today-live-section" class="mb-4"></div>
+
+      <!-- PAPER picks expander -->
+      <div id="today-paper-section" class="mb-4"></div>
+
+      <!-- How picks are scored — decoder/legend (collapsible) -->
+      <details class="card p-4 mb-4">
+        <summary class="cursor-pointer text-sm font-semibold text-white flex items-center gap-2">
+          <span>🔑 How the system scores picks — table key</span>
+          <span class="text-xs text-gray-500 font-normal">(click to expand)</span>
+        </summary>
+        <div class="mt-3 space-y-3 text-xs text-gray-300">
+          <div>
+            <div class="font-semibold text-white mb-1">Column glossary</div>
+            <ul class="list-disc list-inside space-y-1 text-gray-400">
+              <li><b>Tier</b> — final confidence bucket from risk-adjusted edge. <span class="positive">PREMIUM</span> &gt; <span class="text-orange-400">CORE</span> &gt; <span class="text-yellow-400">SECONDARY</span> &gt; <span class="text-gray-400">WATCH</span> (logged, not played).</li>
+              <li><b>Odds / Line</b> — locked at noon ET. If FanDuel's line moved between scout (9 AM) and lock, picks are re-scored against the current FD price (we never bet a stale number).</li>
+              <li><b>Stake</b> — Tier 1 = 1u = $3 LIVE / $5 PAPER. Daily cap 5u = $15 LIVE.</li>
+              <li><b>Edge pp</b> — model hit-rate minus implied probability of FD odds, in percentage points. 5pp+ is required for action.</li>
+              <li><b>RAE</b> (risk-adjusted edge) — edge tilted by confidence + variance + factor stack. Drives tier assignment.</li>
+              <li><b>Strategy</b> — which active playbook the pick belongs to (see Strategies tab).</li>
+              <li><b>Result</b> — Pending → Won / Lost / Push after settlement.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-semibold text-white mb-1">11-factor scoring stack (multiplied into combined_factor → RAE)</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1 text-gray-400">
+              <div>1. <b>Statcast</b> — xBA, barrel%, hard-hit % (L30)</div>
+              <div>2. <b>Park factor</b> — venue HR / runs factor</div>
+              <div>3. <b>Handedness</b> — batter vs L/R pitcher splits</div>
+              <div>4. <b>Pitcher matchup</b> — recent SP form (last 5 starts)</div>
+              <div>5. <b>Weather</b> — temp, wind, roof state</div>
+              <div>6. <b>Last-10</b> — recent player performance</div>
+              <div>7. <b>Team form</b> — last-10 team run-scoring</div>
+              <div>8. <b>Player performer</b> — season-long hit-rate baseline</div>
+              <div>9. <b>BvP</b> — career batter-vs-pitcher (≥10 PA gates in)</div>
+              <div>10. <b>Umpire</b> — plate ump K%/runs bias</div>
+              <div>11. <b>Bullpen</b> — opposing pen rest / fatigue index</div>
+            </div>
+          </div>
+          <div>
+            <div class="font-semibold text-white mb-1">NRFI v2 (Today tab "Top NRFI Plays" only)</div>
+            <div class="text-gray-400">
+              Pitcher 1st-inning scoreless-rate (weighted 0.65) × team 1st-inning offensive scoreless-rate (0.35), per half-inning,
+              shrunk toward 0.73 prior when sample &lt; 10 starts. Adjusted by park-runs factor and game-time temp.
+              ≥60% is the bettable floor; min_sample ≥ 5 required for confidence.
+            </div>
+          </div>
+          <div class="text-xs text-gray-500 italic border-l-2 border-gray-700 pl-2">
+            Hover any pick row or NRFI row for the full per-factor breakdown. Math cannot override research; research cannot override math.
+          </div>
+        </div>
+      </details>
+
+      <!-- Top NRFI Plays — refined model v2 -->
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-sm font-semibold text-white">🥚 Top NRFI Plays</h3>
+          <div class="text-xs text-gray-400" id="nrfi-top-meta">—</div>
+        </div>
+        <div class="text-xs text-gray-500 mb-3">
+          League-wide NRFI hits ~55%, so a calibrated model lives in the low-50s for typical games.
+          Bettable territory starts at ≥60%; ≥65% is the comfortable range. Each row below shows
+          the per-pitcher reasoning so you can see WHY a game ranked here.
+          <span class="text-yellow-400">⚠ thin</span> = min sample &lt; 5 starts (model leans on prior),
+          <span class="text-red-400">⚠ prior-only</span> = no usable data, ignore.
+        </div>
+        <div id="nrfi-top-list" class="space-y-2"></div>
+      </div>
+
+      <!-- Games to Watch — per-game research feed -->
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-sm font-semibold text-white">⚾ Games to Watch — today's research feed</h3>
+          <div class="text-xs text-gray-400" id="games-watch-meta">—</div>
+        </div>
+        <div class="text-xs text-gray-500 mb-3">
+          Sorted by NRFI probability (highest first). Each game shows probable pitchers, park HR factor,
+          weather, the engine's NRFI estimate, hot batters per side (hover for L10 detail), and BvP
+          history where a top batter has ≥10 career PAs vs the opposing starter.
+        </div>
+        <div id="games-watch-list" class="space-y-2"></div>
+      </div>
+    </section>
+
+    <!-- TAB: FORM (L10) — hot/cold batters + pitchers, rankable by strategy stat -->
+    <section data-pane="form" class="hidden">
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h2 class="text-lg font-semibold text-white">Form Leaderboard (L10)</h2>
+          <div class="text-xs text-gray-400" id="form-meta">—</div>
+        </div>
+        <div class="text-xs text-gray-500 mb-3">
+          Every starter in today's MLB slate. Rank by the stat your target strategy bets on.
+          <a href="javascript:void(0)" onclick="window.open('','_self').location.reload()" class="text-blue-400 hover:underline">Refresh data: run <code>python lib/v2_form_discovery.py</code></a>
+        </div>
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <label for="form-stat-select" class="text-xs text-gray-400">Strategy / stat:</label>
+          <select id="form-stat-select" class="bg-gray-800 text-white text-sm px-3 py-2 rounded border border-gray-700 min-w-72">
+            <optgroup label="Hitter strategies">
+              <option value="hits"     selected>Hits — MLB Elite Hitter Hits (line ~0.5)</option>
+              <option value="hrr">H+R+RBI Combo — MLB H+R+RBI Combo (line ~1.5)</option>
+              <option value="tb">Total Bases (line ~1.5)</option>
+              <option value="hr">HR (anytime, line 0.5)</option>
+              <option value="rbis">RBI (line 0.5)</option>
+              <option value="runs">Runs Scored (line 0.5)</option>
+            </optgroup>
+            <optgroup label="Pitcher strategies">
+              <option value="pitcher_ks">Pitcher Ks — MLB Pitcher K Edge</option>
+            </optgroup>
+            <optgroup label="Quality metrics">
+              <option value="statcast_batter">Hitter Statcast Quality (xBA + hard-hit%)</option>
+              <option value="statcast_pitcher">Pitcher Statcast Quality (K9 + whiff%)</option>
+            </optgroup>
+          </select>
+          <span id="form-stat-help" class="text-xs text-gray-500"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card p-3" style="border-left:3px solid #4ade80">
+            <div class="text-xs font-semibold uppercase tracking-wider text-green-400 mb-2">HOT — Top 15 <span id="form-stat-label-hot" class="text-gray-500 font-normal normal-case">— Hits</span></div>
+            <div id="form-hot-list" class="space-y-1"></div>
+          </div>
+          <div class="card p-3" style="border-left:3px solid #f87171">
+            <div class="text-xs font-semibold uppercase tracking-wider text-red-400 mb-2">COLD — Bottom 15 <span id="form-stat-label-cold" class="text-gray-500 font-normal normal-case">— Hits</span></div>
+            <div id="form-cold-list" class="space-y-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB: UPCOMING WEEK (MLB schedule + probables) -->
+    <section data-pane="upcoming" class="hidden">
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-lg font-semibold text-white">⚾ MLB Upcoming Week</h2>
+          <div class="text-xs text-gray-400" id="upcoming-meta">—</div>
+        </div>
+        <div class="text-xs text-gray-500 mb-3">
+          Pulled from MLB Stats API (official, free). Probable pitchers update as teams announce.
+          Projected lineups (next session): based on most-recent 3 games' starting lineups.
+        </div>
+        <div id="upcoming-week-list"></div>
+      </div>
+    </section>
+
+    <!-- TAB: PICKS (all-time, filterable) -->
+    <section data-pane="picks" class="hidden">
+      <div class="card p-4">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h2 class="text-lg font-semibold text-white">Picks</h2>
+          <input id="picks-filter" type="text" placeholder="Filter by text..." class="bg-gray-800 text-white text-sm px-3 py-1 rounded border border-gray-700" />
+        </div>
+        <div class="flex items-center gap-2 text-xs mb-2">
+          <span class="text-gray-400 w-16">Account:</span>
+          <button class="tab-btn account-toggle active" data-account="ALL">All</button>
+          <button class="tab-btn account-toggle" data-account="LIVE">LIVE</button>
+          <button class="tab-btn account-toggle" data-account="PAPER">PAPER</button>
+        </div>
+        <div class="flex items-center gap-2 text-xs mb-3">
+          <span class="text-gray-400 w-16">Status:</span>
+          <button class="tab-btn status-toggle active" data-status="ALL">All</button>
+          <button class="tab-btn status-toggle" data-status="OPEN">Open</button>
+          <button class="tab-btn status-toggle" data-status="SETTLED">Settled</button>
+        </div>
+        <div id="picks-table-wrap"></div>
+      </div>
+    </section>
+
+    <!-- TAB 2: PERFORMANCE -->
+    <section data-pane="performance" class="hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Bankroll over time</h3><div class="chart-wrap"><canvas id="chart-bankroll"></canvas></div></div>
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Cumulative LIVE P/L</h3><div class="chart-wrap"><canvas id="chart-cum"></canvas></div></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Daily W/L (LIVE)</h3><div class="chart-wrap"><canvas id="chart-dailywl"></canvas></div></div>
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Avg CLV (last 30d)</h3><div class="text-5xl font-bold mt-8 text-center" id="avg-clv">—</div><div class="text-center text-gray-400 mt-2 text-sm">Positive = beat closing line</div></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">ROI by Sport</h3><div class="chart-wrap"><canvas id="chart-sport"></canvas></div></div>
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">ROI by Tier</h3><div class="chart-wrap"><canvas id="chart-tier"></canvas></div></div>
+      </div>
+      <!-- WHAT WORKED / WHAT FAILED — added 2026-05-13 -->
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+          <h3 class="text-sm font-semibold text-white">What Worked / What Failed</h3>
+          <div class="flex items-center gap-1 text-xs">
+            <button class="tab-btn perf-toggle active" data-acct="ALL">ALL</button>
+            <button class="tab-btn perf-toggle" data-acct="LIVE">LIVE</button>
+            <button class="tab-btn perf-toggle" data-acct="PAPER">PAPER</button>
+          </div>
+        </div>
+        <div id="perf-summary" class="text-xs text-gray-300 mb-3"></div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-green-400 mb-1">What Worked</div>
+            <div id="perf-worked"></div>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-red-400 mb-1">What Failed</div>
+            <div id="perf-failed"></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">Strategy Performance (settled)</h3>
+          <div id="perf-by-strategy"></div>
+        </div>
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">Sport / Tier breakdown</h3>
+          <div id="perf-by-sport"></div>
+          <div id="perf-by-tier" class="mt-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB: LAST 7 DAYS -->
+    <section data-pane="last7d" class="hidden">
+      <div class="card p-4 mb-4">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h2 class="text-lg font-semibold text-white">Last 7 Days</h2>
+          <div class="text-xs text-gray-400" id="last7d-window">—</div>
+        </div>
+        <div id="last7d-summary" class="grid grid-cols-3 gap-3 text-xs"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <div class="card p-4 col-span-2">
+          <h3 class="text-sm font-semibold text-white mb-2">Daily P/L</h3>
+          <div class="chart-wrap"><canvas id="chart-7d-pl"></canvas></div>
+        </div>
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">Pick distribution by sport</h3>
+          <div class="chart-wrap"><canvas id="chart-7d-sport"></canvas></div>
+        </div>
+      </div>
+      <div class="card p-4 mb-4">
+        <h3 class="text-sm font-semibold text-white mb-2">Rolling bankroll</h3>
+        <div class="chart-wrap"><canvas id="chart-7d-bankroll"></canvas></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="last7d-cards"></div>
+    </section>
+
+    <!-- TAB 3: STRATEGIES -->
+    <section data-pane="strategies" class="hidden">
+      <div class="card p-4">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h2 class="text-lg font-semibold text-white">Strategy Performance — <span id="strat-count">—</span></h2>
+          <div class="flex items-center gap-2 text-xs">
+            <button class="tab-btn strat-toggle active" data-show="active">Active</button>
+            <button class="tab-btn strat-toggle" data-show="all">All</button>
+            <button class="tab-btn strat-toggle" data-show="archived">Archived</button>
+          </div>
+        </div>
+        <div class="text-xs text-gray-500 mb-3">
+          MLB-only focus. Non-MLB strategies archived during master-MLB-first phase.
+          Active set: <code id="strat-active-set">—</code>.
+        </div>
+        <div id="strat-table"></div>
+      </div>
+    </section>
+
+    <!-- TAB 4: JOURNAL -->
+    <section data-pane="journal" class="hidden">
+      <div class="card p-4">
+        <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+          <h2 class="text-lg font-semibold text-white">Journal — <span id="journal-count">—</span></h2>
+          <input id="journal-filter" type="text" placeholder="Filter by text…" class="bg-gray-800 text-white text-sm px-3 py-1 rounded border border-gray-700" />
+        </div>
+        <div class="flex items-center gap-2 mb-3 text-xs flex-wrap" id="journal-type-pills">
+          <button class="tab-btn jtype-toggle active" data-type="all">All</button>
+        </div>
+        <div id="journal-list"></div>
+      </div>
+    </section>
+
+    <!-- TAB 5: CALIBRATION -->
+    <section data-pane="calibration" class="hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Predicted vs Actual (bucketed)</h3><div class="chart-wrap"><canvas id="chart-calib"></canvas></div></div>
+        <div class="card p-4"><h3 class="text-sm font-semibold text-white mb-2">Calibration Delta Histogram</h3><div class="chart-wrap"><canvas id="chart-calib-hist"></canvas></div></div>
+      </div>
+      <div class="card p-4">
+        <h3 class="text-sm font-semibold text-white mb-2">Per-strategy calibration</h3>
+        <div id="strat-calib-table"></div>
+        <div class="text-xs text-gray-500 mt-2">Positive delta = strategy is underconfident · negative = overconfident</div>
+      </div>
+    </section>
+
+    <!-- TAB: TELEGRAM BOT -->
+    <section data-pane="telegram" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+
+        <!-- Bot status card -->
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-3">🤖 Bot status</h3>
+          <div class="space-y-2 text-xs">
+            <div class="flex justify-between"><span class="text-gray-400">Username:</span><a id="tg-bot-username" href="https://t.me/YarbudBot" target="_blank" class="text-blue-400 hover:underline">@YarbudBot</a></div>
+            <div class="flex justify-between"><span class="text-gray-400">Bot ID:</span><span id="tg-bot-id" class="text-white">8612150588</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Channel:</span><span id="tg-channel-id" class="text-white">—</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Listener:</span><span id="tg-listener-state" class="font-semibold">—</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Tunnel:</span><span id="tg-tunnel-state" class="font-semibold">—</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Last poll:</span><span id="tg-last-poll" class="text-gray-300">—</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Last bot message:</span><span id="tg-last-msg" class="text-gray-300">—</span></div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-gray-700">
+            <div class="text-xs text-gray-400 mb-1">How to message the bot:</div>
+            <ol class="text-xs text-gray-300 list-decimal list-inside space-y-1">
+              <li>Open Telegram, search <code>@YarbudBot</code></li>
+              <li>Tap <b>Start</b> on the bot's chat</li>
+              <li>Send <code>/whoami</code> — bot replies with your chat_id</li>
+              <li>Add it to <code>.env</code> as <code>TELEGRAM_OPERATOR_USER_IDS</code></li>
+              <li>Restart listener (button on Settings tab)</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Command reference -->
+        <div class="card p-4 lg:col-span-2">
+          <h3 class="text-sm font-semibold text-white mb-3">📋 Command reference — what the bot can &amp; can't do</h3>
+          <table class="text-xs w-full">
+            <thead>
+              <tr class="text-gray-400 border-b border-gray-700">
+                <th class="text-left py-1 pr-2">Command</th>
+                <th class="text-left py-1 pr-2">Auth?</th>
+                <th class="text-left py-1">What it does</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-300">
+              <tr><td class="py-1 pr-2"><code>/whoami</code></td><td class="py-1 pr-2"><span class="text-gray-400">public</span></td><td class="py-1">Reply with your chat_id (use this to bootstrap whitelist)</td></tr>
+              <tr><td class="py-1 pr-2"><code>/ping</code></td><td class="py-1 pr-2"><span class="text-gray-400">public</span></td><td class="py-1">Health check — bot replies <code>pong</code></td></tr>
+              <tr><td class="py-1 pr-2"><code>/start</code></td><td class="py-1 pr-2"><span class="text-gray-400">public</span></td><td class="py-1">Same as /whoami — Telegram sends this automatically on first open</td></tr>
+              <tr><td class="py-1 pr-2"><code>/status</code></td><td class="py-1 pr-2"><span class="text-yellow-400">whitelist</span></td><td class="py-1">Bankrolls, pause flag, last lock fire, dashboard build_id</td></tr>
+              <tr><td class="py-1 pr-2"><code>/picks</code></td><td class="py-1 pr-2"><span class="text-yellow-400">whitelist</span></td><td class="py-1">Today's open picks (account, pick, stake, odds)</td></tr>
+              <tr><td class="py-1 pr-2"><code>/recap</code></td><td class="py-1 pr-2"><span class="text-yellow-400">whitelist</span></td><td class="py-1">Push yesterday's recap to the channel on demand</td></tr>
+              <tr><td class="py-1 pr-2"><code>/pause</code></td><td class="py-1 pr-2"><span class="text-red-400">whitelist</span></td><td class="py-1">Block next lock fire (emergency stop — writes pause flag)</td></tr>
+              <tr><td class="py-1 pr-2"><code>/resume</code></td><td class="py-1 pr-2"><span class="text-red-400">whitelist</span></td><td class="py-1">Clear the pause flag — locks resume on schedule</td></tr>
+              <tr><td class="py-1 pr-2"><code>/help</code></td><td class="py-1 pr-2"><span class="text-yellow-400">whitelist</span></td><td class="py-1">Full command list in-app</td></tr>
+            </tbody>
+          </table>
+          <div class="mt-4 pt-3 border-t border-gray-700">
+            <div class="text-xs font-semibold text-red-300 mb-1">🚫 The bot CANNOT:</div>
+            <ul class="text-xs text-gray-400 list-disc list-inside space-y-0.5">
+              <li>Place LIVE bets (engine fires PAPER only — LIVE always needs your manual placement)</li>
+              <li>Settle picks on demand (autonomous 2 AM ET only — never override)</li>
+              <li>Change stake caps, odds windows, or daily limits</li>
+              <li>Bypass safety gates (freshness, sample-size, RAE floor)</li>
+              <li>Reach you while listener WTS task is stopped — push fails go to .bat alert</li>
+              <li>Execute arbitrary code or commands beyond this list</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compose message — generates a curl command (no public POST endpoint by design) -->
+      <div class="card p-4 mb-4">
+        <h3 class="text-sm font-semibold text-white mb-2">💬 Compose channel message</h3>
+        <div class="text-xs text-gray-500 mb-3">
+          The dashboard is publicly tunnel-exposed — adding a live send endpoint here would let anyone with the link post to your channel. Instead this generates a <code>curl</code> command you copy + run locally. Bot token never leaves your machine.
+        </div>
+        <textarea id="tg-compose-text" rows="4" placeholder="Type a message to send to the SportsPicks channel..." class="w-full bg-gray-900 border border-gray-700 rounded p-2 text-sm text-white"></textarea>
+        <div class="flex items-center gap-2 mt-2 flex-wrap">
+          <button id="tg-gen-curl" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded text-xs text-white">Generate curl</button>
+          <button id="tg-gen-ps" class="px-3 py-1.5 bg-gray-700 hover:bg-gray-600 rounded text-xs text-white">Generate PowerShell</button>
+          <span id="tg-compose-hint" class="text-xs text-gray-500"></span>
+        </div>
+        <pre id="tg-compose-output" class="mt-3 p-3 bg-gray-900 border border-gray-800 rounded text-xs text-green-300 overflow-x-auto hidden"></pre>
+      </div>
+
+      <!-- Recent bot activity log -->
+      <div class="card p-4 mb-4">
+        <h3 class="text-sm font-semibold text-white mb-2">📜 Recent bot activity</h3>
+        <div class="text-xs text-gray-500 mb-2">Last 20 entries from <code>logs/tg-listener.log</code> (refreshes on dashboard rebuild).</div>
+        <pre id="tg-activity-log" class="bg-gray-900 border border-gray-800 rounded p-3 text-xs text-gray-300 overflow-x-auto max-h-64">—</pre>
+      </div>
+
+      <!-- Public link banner -->
+      <div class="card p-4 mb-4" style="border-left:3px solid #fb923c">
+        <h3 class="text-sm font-semibold text-white mb-2">🌐 Dashboard public link</h3>
+        <div class="text-xs text-gray-400 mb-1">Tunnel URL (works on phone):</div>
+        <div class="flex items-center gap-2 mb-3">
+          <code id="tg-public-url" class="text-xs text-blue-400 break-all flex-1">—</code>
+          <button id="tg-copy-url" class="px-2 py-1 bg-gray-700 hover:bg-gray-600 rounded text-xs text-white shrink-0">copy</button>
+        </div>
+        <div class="text-xs text-yellow-300/80">⚠ No authentication — anyone with this URL sees everything. Treat it like a password.</div>
+      </div>
+    </section>
+
+    <!-- TAB: SETTINGS / SYSTEM -->
+    <section data-pane="settings" class="hidden">
+
+      <!-- ▼ SECTION 1 — Public Access -->
+      <div class="card p-4 mb-4" id="public-access-card" style="border-left:3px solid #4ade80">
+        <h3 class="text-sm font-semibold text-white mb-2">🌐 Public Access</h3>
+        <div class="text-xs text-gray-400 mb-2">
+          Anyone with the link below can view this dashboard. URL rotates whenever the tunnel restarts.
+        </div>
+        <div id="public-url-row" class="flex items-center gap-2 flex-wrap">
+          <code id="public-url" class="text-blue-300 text-sm break-all">checking…</code>
+          <button id="copy-public-url" class="tab-btn" style="font-size:11px">copy</button>
+        </div>
+        <div class="text-xs text-gray-500 mt-2" id="public-url-hint"></div>
+      </div>
+
+      <!-- ▼ SECTION 2 — Daily Schedule + Manual Triggers -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-semibold text-white">⏱ Daily Schedule</h3>
+            <div class="text-xs text-gray-400" id="schedule-meta">—</div>
+          </div>
+          <div id="today-schedule"></div>
+          <div class="flex items-center gap-3 mt-3 text-xs text-gray-500 flex-wrap">
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(74,222,128,0.15);color:#4ade80;font-size:9px">OK</span> succeeded</span>
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(248,113,113,0.15);color:#f87171;font-size:9px">FAIL</span> real failure</span>
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(251,191,36,0.15);color:#fbbf24;font-size:9px">INT</span> interrupted</span>
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(148,163,184,0.12);color:#94a3b8;font-size:9px">—</span> awaiting first run</span>
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(96,165,250,0.20);color:#60a5fa;font-size:9px">TG</span> Telegram</span>
+            <span class="flex items-center gap-1"><span class="pill" style="background:rgba(251,191,36,0.15);color:#fbbf24;font-size:9px">TG?</span> TG on alert</span>
+          </div>
+        </div>
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">▶ Manual Triggers</h3>
+          <div class="text-xs text-gray-500 mb-2">Click a row to copy the command. All run from repo root.</div>
+          <div id="manual-triggers" class="text-xs"></div>
+        </div>
+      </div>
+
+      <!-- ▼ SECTION 3 — Bankroll & Telegram -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">💰 Bankroll &amp; Caps</h3>
+          <div class="text-xs space-y-1 text-gray-300" id="settings-bankroll"></div>
+        </div>
+        <div class="card p-4">
+          <h3 class="text-sm font-semibold text-white mb-2">📱 Telegram</h3>
+          <div class="text-xs space-y-1 text-gray-300">
+            <div>Bot ID: <span class="text-yellow-300" id="settings-bot">—</span></div>
+            <div>Chat: <span class="text-yellow-300">SportsPicks channel</span></div>
+            <div>Listener daemon: <span class="text-green-400">active</span> (polls every ~25s)</div>
+            <div class="text-gray-400 mt-2 pt-2 border-t border-gray-800">Commands from your phone:</div>
+            <div class="ml-2"><code class="text-blue-300">/status</code> — bankrolls, last fire, pause state</div>
+            <div class="ml-2"><code class="text-blue-300">/picks</code> — today's open picks</div>
+            <div class="ml-2"><code class="text-blue-300">/recap</code> — push yesterday's recap</div>
+            <div class="ml-2"><code class="text-blue-300">/pause</code> — emergency stop (next lock won't fire)</div>
+            <div class="ml-2"><code class="text-blue-300">/resume</code> — clear pause</div>
+            <div class="ml-2"><code class="text-blue-300">/help</code> — list all commands</div>
+            <div class="mt-2">Last dashboard refresh: <span id="settings-refresh">—</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ▼ SECTION 4 — Advanced: WTS Task Detail + File Paths (collapsed) -->
+      <details class="card p-4 mb-4">
+        <summary class="text-sm font-semibold text-white cursor-pointer">⚙️ Advanced &mdash; WTS task detail</summary>
+        <div id="settings-tasks" class="mt-3"></div>
+      </details>
+      <details class="card p-4">
+        <summary class="text-sm font-semibold text-white cursor-pointer">📁 Advanced &mdash; File paths</summary>
+        <div class="text-xs space-y-1 text-gray-400 mt-3">
+          <div>Engine: <code class="text-blue-300">BettingOS_Migration\</code></div>
+          <div>Memory: <code class="text-blue-300">memory\*.md</code></div>
+          <div>Prompts: <code class="text-blue-300">prompts\*.md</code></div>
+          <div>Scripts: <code class="text-blue-300">scripts\*.bat</code></div>
+          <div>Lib: <code class="text-blue-300">lib\notion_api.py · telegram.py · v2_*.py</code></div>
+          <div>Logs: <code class="text-blue-300">logs\*.complete · *.log</code></div>
+        </div>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="mt-8 pt-4 border-t border-gray-800">
+    <div class="flex items-center justify-between flex-wrap gap-2 text-xs text-gray-600">
+      <div>
+        <span class="text-gray-500">BettingOS v2</span> · MLB-focused · Auto-refresh 60s
+      </div>
+      <div>
+        Generated <span id="gen-ts" class="text-gray-500">—</span>
+      </div>
+    </div>
+    <div class="mt-3 p-3 rounded text-xs leading-relaxed" style="background:rgba(248,113,113,0.05); border:1px solid rgba(248,113,113,0.15); color:#9ca3af">
+      <span style="color:#fbbf24; font-weight:600">⚠ Disclaimer:</span>
+      Outputs are engine research, not financial advice. Sports betting involves risk of total loss.
+      Past performance does not guarantee future results. All LIVE wagers are placed manually by the
+      operator at their sole discretion. Consult local laws on legality; bet only what you can afford to lose.
+      18+ / 21+ where applicable. If you have a problem, call <span class="text-gray-300">1-800-GAMBLER</span>.
+    </div>
+  </footer>
+</div>
+
+<script>
+const DATA = {"build_id": "260514-050933", "generated_at": "2026-05-14T05:09:33.585237+00:00", "today": "2026-05-14", "yesterday": "2026-05-13", "bankroll": {"live": 150.0, "paper": 500.0, "paper_peak": 500.0, "paper_drawdown_pct": 0.0, "peak": 150.0, "drawdown_pct": 0.0}, "picks": [], "today_picks": [], "daily": [], "daily_wl": [], "cum_pl": [], "strategies": [{"name": "MLB Runs Scored", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB RBIs Over", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB NRFI Parlay", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB Batter Walks", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "UFC Heavy Favorite ML", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "UFC Round Total", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "UFC Takedowns Over", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "UFC Goes Distance", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "UFC Method KO/TKO", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL ML Favorite", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "WNBA ML Favorite", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "WNBA Rebounds Edge", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "WNBA Player Threes", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "WNBA Star PRA", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "WNBA Star Points", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA ML Favorite", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA Assists Edge", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA Rebounds Edge", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA Star Points", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB H+R+RBI Combo", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "User Override (not from engine)", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "Underdog ML Cross-Sport Stack", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL Empty Net Goal", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL First Period Goal", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL Goalie Saves Over", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA First Basket", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA Player Threes", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "Stolen Base Anytime", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB Anytime HR", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB F5 Total Under", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB NRFI", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "SGP - Public Trending Test", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "SGP - Cross-Sport Stack", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "SGP - Same-Game Correlated Stack", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "Discretionary", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "I v2 baseline", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "N Alvarez Hits", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "Stable Edge Parlay", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB Elite Hitter Hits", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "J Kelly", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NBA Star PRA", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "D NHL SOG", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "B Hot Hits", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB ML Favorite", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "MLB Pitcher K Edge", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "ACTIVE", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL PP1 Anytime Goal", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "A K-NRFI", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "NHL Top-Line SOG", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "Hot Hitter Stack", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "C NBA Pts", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}, {"name": "O A+ Auto-Lock", "picks": 0, "won": 0, "lost": 0, "hit_rate": 0, "net": 0, "roi": 0, "status": "Archived", "last_fired": "", "l10_picks": 0, "l10_won": 0, "l10_lost": 0, "l10_hit_rate": 0, "l10_net": 0}], "journal": [], "sport_roi": [], "tier_roi": [], "calib_pairs": [], "calib_bins": [{"low": 0, "high": 5, "n": 0, "wins": 0, "predicted_mid": 2.5, "actual_hit": null, "delta": null}, {"low": 5, "high": 10, "n": 0, "wins": 0, "predicted_mid": 7.5, "actual_hit": null, "delta": null}, {"low": 10, "high": 15, "n": 0, "wins": 0, "predicted_mid": 12.5, "actual_hit": null, "delta": null}, {"low": 15, "high": 20, "n": 0, "wins": 0, "predicted_mid": 17.5, "actual_hit": null, "delta": null}, {"low": 20, "high": 25, "n": 0, "wins": 0, "predicted_mid": 22.5, "actual_hit": null, "delta": null}, {"low": 25, "high": 30, "n": 0, "wins": 0, "predicted_mid": 27.5, "actual_hit": null, "delta": null}, {"low": 30, "high": 35, "n": 0, "wins": 0, "predicted_mid": 32.5, "actual_hit": null, "delta": null}, {"low": 35, "high": 40, "n": 0, "wins": 0, "predicted_mid": 37.5, "actual_hit": null, "delta": null}, {"low": 40, "high": 45, "n": 0, "wins": 0, "predicted_mid": 42.5, "actual_hit": null, "delta": null}, {"low": 45, "high": 50, "n": 0, "wins": 0, "predicted_mid": 47.5, "actual_hit": null, "delta": null}, {"low": 50, "high": 55, "n": 0, "wins": 0, "predicted_mid": 52.5, "actual_hit": null, "delta": null}, {"low": 55, "high": 60, "n": 0, "wins": 0, "predicted_mid": 57.5, "actual_hit": null, "delta": null}, {"low": 60, "high": 65, "n": 0, "wins": 0, "predicted_mid": 62.5, "actual_hit": null, "delta": null}, {"low": 65, "high": 70, "n": 0, "wins": 0, "predicted_mid": 67.5, "actual_hit": null, "delta": null}, {"low": 70, "high": 75, "n": 0, "wins": 0, "predicted_mid": 72.5, "actual_hit": null, "delta": null}, {"low": 75, "high": 80, "n": 0, "wins": 0, "predicted_mid": 77.5, "actual_hit": null, "delta": null}, {"low": 80, "high": 85, "n": 0, "wins": 0, "predicted_mid": 82.5, "actual_hit": null, "delta": null}, {"low": 85, "high": 90, "n": 0, "wins": 0, "predicted_mid": 87.5, "actual_hit": null, "delta": null}, {"low": 90, "high": 95, "n": 0, "wins": 0, "predicted_mid": 92.5, "actual_hit": null, "delta": null}, {"low": 95, "high": 100, "n": 0, "wins": 0, "predicted_mid": 97.5, "actual_hit": null, "delta": null}], "strat_calib": [], "avg_clv_30d": null, "wts_tasks": [{"Name": "BettingOS - clv-capture", "State": "Ready", "NextRun": "2026-05-14 12:00", "LastRun": "2026-05-13 22:30", "LastResult": 0, "WakeToRun": false}, {"Name": "BettingOS - dashboard-post-lock", "State": "Ready", "NextRun": "2026-05-14 13:00", "LastRun": "1999-11-30 00:00", "LastResult": 267011, "WakeToRun": false}, {"Name": "BettingOS - dashboard-post-settle", "State": "Ready", "NextRun": "2026-05-14 02:30", "LastRun": "2026-05-13 23:48", "LastResult": 0, "WakeToRun": false}, {"Name": "BettingOS - dashboard-tunnel", "State": "Ready", "NextRun": "", "LastRun": "2026-05-14 00:39", "LastResult": 1, "WakeToRun": false}, {"Name": "BettingOS - evening-lock", "State": "Ready", "NextRun": "2026-05-14 18:00", "LastRun": "1999-11-30 00:00", "LastResult": 267011, "WakeToRun": false}, {"Name": "BettingOS - evening-scout", "State": "Ready", "NextRun": "2026-05-14 17:30", "LastRun": "1999-11-30 00:00", "LastResult": 267011, "WakeToRun": false}, {"Name": "BettingOS - form-discovery", "State": "Ready", "NextRun": "2026-05-14 09:30", "LastRun": "2026-05-13 23:48", "LastResult": 0, "WakeToRun": false}, {"Name": "BettingOS - health-check", "State": "Ready", "NextRun": "2026-05-15 01:00", "LastRun": "2026-05-14 01:00", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - late-slate-lock", "State": "Ready", "NextRun": "2026-05-14 15:00", "LastRun": "2026-05-13 15:00", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - mlb-noon-lock", "State": "Ready", "NextRun": "2026-05-14 12:00", "LastRun": "2026-05-13 12:00", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - morning-preview", "State": "Ready", "NextRun": "2026-05-14 09:35", "LastRun": "1999-11-30 00:00", "LastResult": 267011, "WakeToRun": false}, {"Name": "BettingOS - morning-recap", "State": "Ready", "NextRun": "2026-05-14 06:00", "LastRun": "1999-11-30 00:00", "LastResult": 267011, "WakeToRun": false}, {"Name": "BettingOS - morning-scout", "State": "Ready", "NextRun": "2026-05-14 09:00", "LastRun": "2026-05-13 09:00", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - night-settle", "State": "Ready", "NextRun": "2026-05-14 02:00", "LastRun": "2026-05-13 02:00", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - scout-stability", "State": "Ready", "NextRun": "2026-05-14 09:15", "LastRun": "2026-05-14 00:08", "LastResult": 0, "WakeToRun": true}, {"Name": "BettingOS - tg-listener", "State": "Running", "NextRun": "2026-05-15 00:01", "LastRun": "2026-05-14 01:00", "LastResult": 267009, "WakeToRun": false}], "log_completes": {"night-settle": {"yesterday": "2026-05-11", "pending_picks": "0", "note": "Live.v.1 cutover day - no picks fired - no work required", "bankroll_live": "143", "bankroll_paper": "500"}, "morning-recap-and-fire": {"mode": "REST_DAY_RECAP+DAY1_LIVEV1_FIRE", "paper_picks": "9", "live_candidates": "3", "total_stake": "57.50", "total_units": "11.5", "journal_entries": "12", "recap_msg_id": "70"}, "noon-confirm": {"live_picks_confirmed": "2", "scratched": "1", "scratched_pick": "VGK ML G5 (Stone GTD)", "telegram_msg_id": "75"}, "late-slate": {"live_picks_added": "0", "paper_picks_added": "0", "reason": "no_qualifying_candidates", "tg_msg_id": "79"}, "health-check": {"completed_at": "2026-05-14 01:00 ET", "status": "OK", "checks_passed": "6"}}, "perf_panel": {"total_settled": 0, "total_stake": 0, "total_net_pl": 0, "total_roi_pct": 0, "by_strategy": [], "by_sport": [], "by_tier": [], "what_worked": [], "what_failed": [], "insufficient_data": true}, "last_7d": {"days_desc": [{"date": "2026-05-14", "dow": "Thursday", "short": "05/14", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-13", "dow": "Wednesday", "short": "05/13", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-12", "dow": "Tuesday", "short": "05/12", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-11", "dow": "Monday", "short": "05/11", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-10", "dow": "Sunday", "short": "05/10", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-09", "dow": "Saturday", "short": "05/09", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-08", "dow": "Friday", "short": "05/08", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}], "days_asc": [{"date": "2026-05-08", "dow": "Friday", "short": "05/08", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-09", "dow": "Saturday", "short": "05/09", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-10", "dow": "Sunday", "short": "05/10", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-11", "dow": "Monday", "short": "05/11", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-12", "dow": "Tuesday", "short": "05/12", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-13", "dow": "Wednesday", "short": "05/13", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}, {"date": "2026-05-14", "dow": "Thursday", "short": "05/14", "n_total": 0, "n_settled": 0, "n_live": 0, "n_paper": 0, "won": 0, "lost": 0, "push": 0, "hit_rate": 0, "stake": 0, "pl": 0, "top_pick": null, "top_pl": null, "bot_pick": null, "bot_pl": null}], "total_picks": 0, "total_settled": 0, "total_won": 0, "total_lost": 0, "total_stake": 0, "total_pl": 0, "hit_rate": 0, "roi_pct": 0, "live_count": 0, "paper_count": 0, "best_day": {"date": "2026-05-08", "pl": 0}, "worst_day": {"date": "2026-05-08", "pl": 0}, "sport_dist": [], "bankroll_series": [{"date": "2026-05-08", "bankroll": null}, {"date": "2026-05-09", "bankroll": null}, {"date": "2026-05-10", "bankroll": null}, {"date": "2026-05-11", "bankroll": null}, {"date": "2026-05-12", "bankroll": null}, {"date": "2026-05-13", "bankroll": null}, {"date": "2026-05-14", "bankroll": null}], "insufficient_data": true, "window_start": "2026-05-08", "window_end": "2026-05-14"}, "live_paper_split": {"live": {"n": 0, "won": 0, "lost": 0, "stake": 0, "pl": 0, "hit_rate": 0, "roi_pct": 0}, "paper": {"n": 0, "won": 0, "lost": 0, "stake": 0, "pl": 0, "hit_rate": 0, "roi_pct": 0}}, "wellness": {"status": "OK", "summary": "All systems green \u2014 6/6 health checks pass", "checked_at": "2026-05-14T01:00:08"}, "mlb_week": {"by_date": {"2026-05-14": [{"game_pk": 823383, "date": "2026-05-14", "game_time_utc": "2026-05-14T16:35:00Z", "status": "Scheduled", "home_team": "Pittsburgh Pirates", "home_team_id": 134, "away_team": "Colorado Rockies", "away_team_id": 115, "home_pp_name": "Mason Montgomery", "home_pp_id": 682254, "away_pp_name": "Chase Dollander", "away_pp_id": 801403, "venue": "PNC Park", "park_hr_factor": 0.94, "weather_factor": 0.97, "weather_wind": "cross", "weather_temp": 48.8, "weather_notes": ["Temp 49F (-3% cold/dead ball)"], "park_runs_factor": 0.95, "nrfi_prob": 51.2, "nrfi_meta": {"base": 49.2, "min_sample": 2, "p_top": 72.5, "p_bot": 67.9, "park_mult": 1.005, "weather_adj": 0.02, "home_sp_rate": null, "home_sp_sample": 2, "away_sp_rate": null, "away_sp_sample": 2}, "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (49\u00b0F) boosts NRFI ~2pp", "hot_home_batters": [{"name": "Oneil Cruz", "factor": 1.1, "l10_hits": 12, "l10_per_game": 1.2}, {"name": "Konnor Griffin", "factor": 1.1, "l10_hits": 11, "l10_per_game": 1.1}], "hot_away_batters": [{"name": "Mickey Moniak", "factor": 1.06, "l10_hits": 12, "l10_per_game": 1.2}, {"name": "Troy Johnston", "factor": 1.06, "l10_hits": 9, "l10_per_game": 0.9}], "bvp_notes": []}, {"game_pk": 824517, "date": "2026-05-14", "game_time_utc": "2026-05-14T16:40:00Z", "status": "Scheduled", "home_team": "Cincinnati Reds", "home_team_id": 113, "away_team": "Washington Nationals", "away_team_id": 120, "home_pp_name": "Chase Burns", "home_pp_id": 695505, "away_pp_name": "Foster Griffin", "away_pp_id": 656492, "venue": "Great American Ball Park", "park_hr_factor": 1.15, "weather_factor": 0.97, "weather_wind": "in", "weather_temp": 61.8, "weather_notes": ["Wind IN 12 mph (-3%)"], "park_runs_factor": 1.1, "nrfi_prob": 55.7, "nrfi_meta": {"base": 55.7, "min_sample": 8, "p_top": 78.3, "p_bot": 71.2, "park_mult": 0.99, "weather_adj": 0.0, "home_sp_rate": 1.0, "home_sp_sample": 8, "away_sp_rate": 0.75, "away_sp_sample": 8}, "nrfi_reasoning": "Chase Burns 100% 1st-inning scoreless over 8 starts (elite) \u00b7 Foster Griffin 75% 1st-inning scoreless over 8 starts (average) \u00b7 hitter park (1.10 runs factor) drops NRFI", "hot_home_batters": [{"name": "JJ Bleday", "factor": 1.12, "l10_hits": 10, "l10_per_game": 1.0}, {"name": "Spencer Steer", "factor": 1.1, "l10_hits": 11, "l10_per_game": 1.1}], "hot_away_batters": [{"name": "Jos\u00e9 Tena", "factor": 1.12, "l10_hits": 8, "l10_per_game": 0.8}, {"name": "James Wood", "factor": 1.1, "l10_hits": 10, "l10_per_game": 1.0}], "bvp_notes": []}, {"game_pk": 823630, "date": "2026-05-14", "game_time_utc": "2026-05-14T17:10:00Z", "status": "Scheduled", "home_team": "New York Mets", "home_team_id": 121, "away_team": "Detroit Tigers", "away_team_id": 116, "home_pp_name": "Nolan McLean", "home_pp_id": 690997, "away_pp_name": "Keider Montero", "away_pp_id": 672456, "venue": "Citi Field", "park_hr_factor": 0.94, "weather_factor": 1.0, "weather_wind": null, "weather_temp": 64.4, "weather_notes": [], "park_runs_factor": 0.97, "nrfi_prob": 56.7, "nrfi_meta": {"base": 56.7, "min_sample": 7, "p_top": 68.0, "p_bot": 83.4, "park_mult": 1.003, "weather_adj": 0.0, "home_sp_rate": 0.625, "home_sp_sample": 8, "away_sp_rate": 1.0, "away_sp_sample": 7}, "nrfi_reasoning": "Nolan McLean 62% 1st-inning scoreless over 8 starts (weak) \u00b7 Keider Montero 100% 1st-inning scoreless over 7 starts (elite)", "hot_home_batters": [{"name": "Carson Benge", "factor": 1.1, "l10_hits": 12, "l10_per_game": 1.2}, {"name": "Mark Vientos", "factor": 1.1, "l10_hits": 10, "l10_per_game": 1.0}], "hot_away_batters": [{"name": "Dillon Dingler", "factor": 1.06, "l10_hits": 9, "l10_per_game": 0.9}, {"name": "Riley Greene", "factor": 1.06, "l10_hits": 16, "l10_per_game": 1.6}], "bvp_notes": []}, {"game_pk": 823709, "date": "2026-05-14", "game_time_utc": "2026-05-14T17:40:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Miami Marlins", "away_team_id": 146, "home_pp_name": "Zebby Matthews", "home_pp_id": 805673, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field", "park_hr_factor": 0.99, "weather_factor": 1.0, "weather_wind": "cross", "weather_temp": 77.8, "weather_notes": [], "park_runs_factor": 1.02, "nrfi_prob": null, "nrfi_meta": null, "nrfi_reasoning": null, "hot_home_batters": [{"name": "Austin Martin", "factor": 1.08, "l10_hits": 14, "l10_per_game": 1.4}, {"name": "Byron Buxton", "factor": 1.06, "l10_hits": 11, "l10_per_game": 1.1}], "hot_away_batters": [{"name": "Otto Lopez", "factor": 1.08, "l10_hits": 13, "l10_per_game": 1.3}], "bvp_notes": []}, {"game_pk": 823789, "date": "2026-05-14", "game_time_utc": "2026-05-14T17:40:00Z", "status": "Scheduled", "home_team": "Milwaukee Brewers", "home_team_id": 158, "away_team": "San Diego Padres", "away_team_id": 135, "home_pp_name": "Kyle Harrison", "home_pp_id": 690986, "away_pp_name": "Griffin Canning", "away_pp_id": 656288, "venue": "American Family Field", "park_hr_factor": 1.07, "weather_factor": 1.0, "weather_wind": null, "weather_temp": null, "weather_notes": ["Retractable roof \u2014 weather skipped"], "park_runs_factor": 1.01, "nrfi_prob": 56.2, "nrfi_meta": {"base": 56.2, "min_sample": 2, "p_top": 75.3, "p_bot": 74.7, "park_mult": 0.999, "weather_adj": 0.0, "home_sp_rate": 0.7143, "home_sp_sample": 7, "away_sp_rate": null, "away_sp_sample": 2}, "nrfi_reasoning": "Kyle Harrison 71% 1st-inning scoreless over 7 starts (average) \u00b7 Griffin Canning thin sample (2) \u2014 model leans on 0.73 prior", "hot_home_batters": [{"name": "William Contreras", "factor": 1.12, "l10_hits": 11, "l10_per_game": 1.1}, {"name": "Brice Turang", "factor": 1.08, "l10_hits": 13, "l10_per_game": 1.3}], "hot_away_batters": [{"name": "Jackson Merrill", "factor": 1.06, "l10_hits": 9, "l10_per_game": 0.9}, {"name": "Xander Bogaerts", "factor": 1.02, "l10_hits": 9, "l10_per_game": 0.9}], "bvp_notes": []}, {"game_pk": 824196, "date": "2026-05-14", "game_time_utc": "2026-05-14T18:10:00Z", "status": "Scheduled", "home_team": "Houston Astros", "home_team_id": 117, "away_team": "Seattle Mariners", "away_team_id": 136, "home_pp_name": "Mike Burrows", "home_pp_id": 681347, "away_pp_name": "Luis Castillo", "away_pp_id": 622491, "venue": "Daikin Park", "park_hr_factor": 1.05, "weather_factor": 1.0, "weather_wind": null, "weather_temp": null, "weather_notes": ["Retractable roof \u2014 weather skipped"], "park_runs_factor": 1.01, "nrfi_prob": 43.5, "nrfi_meta": {"base": 43.5, "min_sample": 8, "p_top": 65.9, "p_bot": 65.9, "park_mult": 0.999, "weather_adj": 0.0, "home_sp_rate": 0.625, "home_sp_sample": 8, "away_sp_rate": 0.625, "away_sp_sample": 8}, "nrfi_reasoning": "Mike Burrows 62% 1st-inning scoreless over 8 starts (weak) \u00b7 Luis Castillo 62% 1st-inning scoreless over 8 starts (weak)", "hot_home_batters": [{"name": "Isaac Paredes", "factor": 1.08, "l10_hits": 9, "l10_per_game": 0.9}, {"name": "Christian Walker", "factor": 1.06, "l10_hits": 6, "l10_per_game": 0.6}], "hot_away_batters": [{"name": "Josh Naylor", "factor": 1.12, "l10_hits": 14, "l10_per_game": 1.4}, {"name": "Julio Rodr\u00edguez", "factor": 1.1, "l10_hits": 11, "l10_per_game": 1.1}], "bvp_notes": ["Isaac Paredes 12-for-44 (0.273) in 46 PA vs Luis Castillo", "Josh Naylor 6-for-10 (0.600) in 10 PA vs Mike Burrows"]}, {"game_pk": 825008, "date": "2026-05-14", "game_time_utc": "2026-05-14T19:05:00Z", "status": "Scheduled", "home_team": "Athletics", "home_team_id": 133, "away_team": "St. Louis Cardinals", "away_team_id": 138, "home_pp_name": "Jacob Lopez", "home_pp_id": 682052, "away_pp_name": "Michael McGreevy", "away_pp_id": 700241, "venue": "Sutter Health Park", "park_hr_factor": 1.04, "weather_factor": 1.06, "weather_wind": "out", "weather_temp": 86.8, "weather_notes": ["Wind OUT 8 mph (+4%)", "Temp 87F (+2% ball carries)"], "park_runs_factor": 1.04, "nrfi_prob": 52.1, "nrfi_meta": {"base": 53.8, "min_sample": 7, "p_top": 71.1, "p_bot": 75.7, "park_mult": 0.996, "weather_adj": -0.0176, "home_sp_rate": 0.7143, "home_sp_sample": 7, "away_sp_rate": 0.875, "away_sp_sample": 8}, "nrfi_reasoning": "Jacob Lopez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Michael McGreevy 88% 1st-inning scoreless over 8 starts (elite) \u00b7 warm temp (87\u00b0F) drops NRFI ~2pp", "hot_home_batters": [{"name": "Shea Langeliers", "factor": 1.12, "l10_hits": 15, "l10_per_game": 1.5}, {"name": "Nick Kurtz", "factor": 1.1, "l10_hits": 14, "l10_per_game": 1.4}], "hot_away_batters": [{"name": "Jordan Walker", "factor": 1.1, "l10_hits": 8, "l10_per_game": 0.8}, {"name": "JJ Wetherholt", "factor": 1.06, "l10_hits": 10, "l10_per_game": 1.0}], "bvp_notes": []}, {"game_pk": 824762, "date": "2026-05-14", "game_time_utc": "2026-05-14T22:45:00Z", "status": "Scheduled", "home_team": "Boston Red Sox", "home_team_id": 111, "away_team": "Philadelphia Phillies", "away_team_id": 143, "home_pp_name": "Ranger Suarez", "home_pp_id": 624133, "away_pp_name": "Jes\u00fas Luzardo", "away_pp_id": 666200, "venue": "Fenway Park", "park_hr_factor": 0.96, "weather_factor": 0.97, "weather_wind": "in", "weather_temp": 51.0, "weather_notes": ["Wind IN 11 mph (-3%)"], "park_runs_factor": 1.08, "nrfi_prob": 58.5, "nrfi_meta": {"base": 56.6, "min_sample": 7, "p_top": 70.2, "p_bot": 80.7, "park_mult": 0.992, "weather_adj": 0.018, "home_sp_rate": 0.7143, "home_sp_sample": 7, "away_sp_rate": 0.875, "away_sp_sample": 8}, "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 cold temp (51\u00b0F) boosts NRFI ~2pp", "hot_home_batters": [{"name": "Jarren Duran", "factor": 1.06, "l10_hits": 9, "l10_per_game": 0.9}, {"name": "Wilyer Abreu", "factor": 1.06, "l10_hits": 12, "l10_per_game": 1.2}], "hot_away_batters": [{"name": "Bryce Harper", "factor": 1.12, "l10_hits": 10, "l10_per_game": 1.0}, {"name": "Adolis Garc\u00eda", "factor": 1.1, "l10_hits": 7, "l10_per_game": 0.7}], "bvp_notes": []}, {"game_pk": 824926, "date": "2026-05-14", "game_time_utc": "2026-05-14T23:15:00Z", "status": "Scheduled", "home_team": "Atlanta Braves", "home_team_id": 144, "away_team": "Chicago Cubs", "away_team_id": 112, "home_pp_name": "Chris Sale", "home_pp_id": 519242, "away_pp_name": "Ben Brown", "away_pp_id": 676962, "venue": "Truist Park", "park_hr_factor": 1.07, "weather_factor": 0.97, "weather_wind": "in", "weather_temp": 70.9, "weather_notes": ["Wind IN 11 mph (-3%)"], "park_runs_factor": 1.02, "nrfi_prob": 59.4, "nrfi_meta": {"base": 59.4, "min_sample": 1, "p_top": 80.4, "p_bot": 73.9, "park_mult": 0.998, "weather_adj": 0.0, "home_sp_rate": 0.875, "home_sp_sample": 8, "away_sp_rate": null, "away_sp_sample": 1}, "nrfi_reasoning": "Chris Sale 88% 1st-inning scoreless over 8 starts (elite) \u00b7 Ben Brown thin sample (1) \u2014 model leans on 0.73 prior", "hot_home_batters": [{"name": "Drake Baldwin", "factor": 1.1, "l10_hits": 11, "l10_per_game": 1.1}, {"name": "Matt Olson", "factor": 1.1, "l10_hits": 11, "l10_per_game": 1.1}], "hot_away_batters": [{"name": "Michael Busch", "factor": 1.12, "l10_hits": 10, "l10_per_game": 1.0}, {"name": "Pete Crow-Armstrong", "factor": 1.08, "l10_hits": 8, "l10_per_game": 0.8}], "bvp_notes": []}, {"game_pk": 824602, "date": "2026-05-14", "game_time_utc": "2026-05-14T23:40:00Z", "status": "Scheduled", "home_team": "Chicago White Sox", "home_team_id": 145, "away_team": "Kansas City Royals", "away_team_id": 118, "home_pp_name": "Anthony Kay", "home_pp_id": 641743, "away_pp_name": "Kris Bubic", "away_pp_id": 663460, "venue": "Rate Field", "park_hr_factor": 1.08, "weather_factor": 1.0, "weather_wind": "cross", "weather_temp": 53.3, "weather_notes": [], "park_runs_factor": 1.03, "nrfi_prob": 56.5, "nrfi_meta": {"base": 55.2, "min_sample": 6, "p_top": 71.1, "p_bot": 77.6, "park_mult": 0.997, "weather_adj": 0.0134, "home_sp_rate": 0.6667, "home_sp_sample": 6, "away_sp_rate": 0.875, "away_sp_sample": 8}, "nrfi_reasoning": "Anthony Kay 67% 1st-inning scoreless over 6 starts (weak) \u00b7 Kris Bubic 88% 1st-inning scoreless over 8 starts (elite) \u00b7 cold temp (53\u00b0F) boosts NRFI ~2pp", "hot_home_batters": [{"name": "Jarred Kelenic", "factor": 1.1, "l10_hits": 8, "l10_per_game": 0.8}, {"name": "Miguel Vargas", "factor": 1.08, "l10_hits": 11, "l10_per_game": 1.1}], "hot_away_batters": [{"name": "Vinnie Pasquantino", "factor": 1.12, "l10_hits": 12, "l10_per_game": 1.2}, {"name": "Isaac Collins", "factor": 1.1, "l10_hits": 9, "l10_per_game": 0.9}], "bvp_notes": ["Jarred Kelenic 4-for-12 (0.333) in 16 PA vs Kris Bubic"]}, {"game_pk": 823950, "date": "2026-05-14", "game_time_utc": "2026-05-15T02:10:00Z", "status": "Scheduled", "home_team": "Los Angeles Dodgers", "home_team_id": 119, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": "Emmet Sheehan", "home_pp_id": 686218, "away_pp_name": "Landen Roupp", "away_pp_id": 694738, "venue": "UNIQLO Field at Dodger Stadium", "park_hr_factor": 1.0, "weather_factor": 1.0, "weather_wind": null, "weather_temp": null, "weather_notes": [], "park_runs_factor": 1.0, "nrfi_prob": 53.4, "nrfi_meta": {"base": 53.4, "min_sample": 7, "p_top": 66.7, "p_bot": 80.0, "park_mult": 1.0, "weather_adj": 0.0, "home_sp_rate": 0.4286, "home_sp_sample": 7, "away_sp_rate": 1.0, "away_sp_sample": 8}, "nrfi_reasoning": "Emmet Sheehan 43% 1st-inning scoreless over 7 starts (weak) \u00b7 Landen Roupp 100% 1st-inning scoreless over 8 starts (elite)", "hot_home_batters": [{"name": "Kyle Tucker", "factor": 1.12, "l10_hits": 11, "l10_per_game": 1.1}, {"name": "Max Muncy", "factor": 1.1, "l10_hits": 7, "l10_per_game": 0.7}], "hot_away_batters": [{"name": "Casey Schmitt", "factor": 1.1, "l10_hits": 9, "l10_per_game": 0.9}, {"name": "Heliot Ramos", "factor": 1.06, "l10_hits": 11, "l10_per_game": 1.1}], "bvp_notes": ["Kyle Tucker 0-for-12 (0.000) in 12 PA vs Landen Roupp"]}], "2026-05-15": [{"game_pk": 823384, "date": "2026-05-15", "game_time_utc": "2026-05-15T22:40:00Z", "status": "Scheduled", "home_team": "Pittsburgh Pirates", "home_team_id": 134, "away_team": "Philadelphia Phillies", "away_team_id": 143, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "PNC Park"}, {"game_pk": 822739, "date": "2026-05-15", "game_time_utc": "2026-05-15T22:45:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Shane Baz", "away_pp_id": 669358, "venue": "Nationals Park"}, {"game_pk": 824280, "date": "2026-05-15", "game_time_utc": "2026-05-15T22:45:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Trey Yesavage", "away_pp_id": 702056, "venue": "Comerica Park"}, {"game_pk": 824439, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:10:00Z", "status": "Scheduled", "home_team": "Cleveland Guardians", "home_team_id": 114, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": "Tanner Bibee", "home_pp_id": 676440, "away_pp_name": "Andrew Abbott", "away_pp_id": 671096, "venue": "Progressive Field"}, {"game_pk": 822983, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:10:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Miami Marlins", "away_team_id": 146, "home_pp_name": "Jesse Scholtens", "home_pp_id": 669947, "away_pp_name": "Janson Junk", "away_pp_id": 676083, "venue": "Tropicana Field"}, {"game_pk": 823707, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:10:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 824925, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:15:00Z", "status": "Scheduled", "home_team": "Atlanta Braves", "home_team_id": 144, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Truist Park"}, {"game_pk": 823629, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:15:00Z", "status": "Scheduled", "home_team": "New York Mets", "home_team_id": 121, "away_team": "New York Yankees", "away_team_id": 147, "home_pp_name": "Clay Holmes", "home_pp_id": 605280, "away_pp_name": "Cam Schlittler", "away_pp_id": 693645, "venue": "Citi Field"}, {"game_pk": 824601, "date": "2026-05-15", "game_time_utc": "2026-05-15T23:40:00Z", "status": "Scheduled", "home_team": "Chicago White Sox", "home_team_id": 145, "away_team": "Chicago Cubs", "away_team_id": 112, "home_pp_name": "Sean Burke", "home_pp_id": 680732, "away_pp_name": "Edward Cabrera", "away_pp_id": 665795, "venue": "Rate Field"}, {"game_pk": 824194, "date": "2026-05-15", "game_time_utc": "2026-05-16T00:10:00Z", "status": "Scheduled", "home_team": "Houston Astros", "home_team_id": 117, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Daikin Park"}, {"game_pk": 823061, "date": "2026-05-15", "game_time_utc": "2026-05-16T00:15:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Kansas City Royals", "away_team_id": 118, "home_pp_name": "Dustin May", "home_pp_id": 669160, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 824360, "date": "2026-05-15", "game_time_utc": "2026-05-16T00:40:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Arizona Diamondbacks", "away_team_id": 109, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Merrill Kelly", "away_pp_id": 518876, "venue": "Coors Field"}, {"game_pk": 824037, "date": "2026-05-15", "game_time_utc": "2026-05-16T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": "Jack Kochanowicz", "home_pp_id": 686799, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 823140, "date": "2026-05-15", "game_time_utc": "2026-05-16T01:40:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "San Diego Padres", "away_team_id": 135, "home_pp_name": "Emerson Hancock", "home_pp_id": 676106, "away_pp_name": "Randy V\u00e1squez", "away_pp_id": 681190, "venue": "T-Mobile Park"}, {"game_pk": 825009, "date": "2026-05-15", "game_time_utc": "2026-05-16T01:40:00Z", "status": "Scheduled", "home_team": "Athletics", "home_team_id": 133, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Sutter Health Park"}], "2026-05-16": [{"game_pk": 824278, "date": "2026-05-16", "game_time_utc": "2026-05-16T17:10:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Comerica Park"}, {"game_pk": 823060, "date": "2026-05-16", "game_time_utc": "2026-05-16T18:15:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Kansas City Royals", "away_team_id": 118, "home_pp_name": "Kyle Leahy", "home_pp_id": 681517, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 824359, "date": "2026-05-16", "game_time_utc": "2026-05-16T19:10:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Arizona Diamondbacks", "away_team_id": 109, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Eduardo Rodriguez", "away_pp_id": 593958, "venue": "Coors Field"}, {"game_pk": 822737, "date": "2026-05-16", "game_time_utc": "2026-05-16T20:05:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Chris Bassitt", "away_pp_id": 605135, "venue": "Nationals Park"}, {"game_pk": 823382, "date": "2026-05-16", "game_time_utc": "2026-05-16T20:05:00Z", "status": "Scheduled", "home_team": "Pittsburgh Pirates", "home_team_id": 134, "away_team": "Philadelphia Phillies", "away_team_id": 143, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "PNC Park"}, {"game_pk": 822981, "date": "2026-05-16", "game_time_utc": "2026-05-16T20:10:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Miami Marlins", "away_team_id": 146, "home_pp_name": "Nick Martinez", "home_pp_id": 607259, "away_pp_name": null, "away_pp_id": null, "venue": "Tropicana Field"}, {"game_pk": 824435, "date": "2026-05-16", "game_time_utc": "2026-05-16T22:10:00Z", "status": "Scheduled", "home_team": "Cleveland Guardians", "home_team_id": 114, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": "Gavin Williams", "home_pp_id": 668909, "away_pp_name": "Chris Paddack", "away_pp_id": 663978, "venue": "Progressive Field"}, {"game_pk": 824193, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:10:00Z", "status": "Scheduled", "home_team": "Houston Astros", "home_team_id": 117, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Daikin Park"}, {"game_pk": 824600, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:10:00Z", "status": "Scheduled", "home_team": "Chicago White Sox", "home_team_id": 145, "away_team": "Chicago Cubs", "away_team_id": 112, "home_pp_name": "Davis Martin", "home_pp_id": 663436, "away_pp_name": "Jameson Taillon", "away_pp_id": 592791, "venue": "Rate Field"}, {"game_pk": 823706, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:10:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 823139, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:15:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "San Diego Padres", "away_team_id": 135, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "T-Mobile Park"}, {"game_pk": 824924, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:15:00Z", "status": "Scheduled", "home_team": "Atlanta Braves", "home_team_id": 144, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Truist Park"}, {"game_pk": 823627, "date": "2026-05-16", "game_time_utc": "2026-05-16T23:15:00Z", "status": "Scheduled", "home_team": "New York Mets", "home_team_id": 121, "away_team": "New York Yankees", "away_team_id": 147, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Carlos Rod\u00f3n", "away_pp_id": 607074, "venue": "Citi Field"}, {"game_pk": 824038, "date": "2026-05-16", "game_time_utc": "2026-05-17T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": "Jos\u00e9 Soriano", "home_pp_id": 667755, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 825007, "date": "2026-05-16", "game_time_utc": "2026-05-17T01:40:00Z", "status": "Scheduled", "home_team": "Athletics", "home_team_id": 133, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Sutter Health Park"}], "2026-05-17": [{"game_pk": 822982, "date": "2026-05-17", "game_time_utc": "2026-05-17T16:15:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Miami Marlins", "away_team_id": 146, "home_pp_name": "Drew Rasmussen", "home_pp_id": 656876, "away_pp_name": null, "away_pp_id": null, "venue": "Tropicana Field"}, {"game_pk": 822738, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:35:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Brandon Young", "away_pp_id": 687064, "venue": "Nationals Park"}, {"game_pk": 823381, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:35:00Z", "status": "Scheduled", "home_team": "Pittsburgh Pirates", "home_team_id": 134, "away_team": "Philadelphia Phillies", "away_team_id": 143, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "PNC Park"}, {"game_pk": 824923, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:35:00Z", "status": "Scheduled", "home_team": "Atlanta Braves", "home_team_id": 144, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Truist Park"}, {"game_pk": 824436, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:40:00Z", "status": "Scheduled", "home_team": "Cleveland Guardians", "home_team_id": 114, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": "Joey Cantillo", "home_pp_id": 676282, "away_pp_name": "Brady Singer", "away_pp_id": 663903, "venue": "Progressive Field"}, {"game_pk": 824279, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:40:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Kevin Gausman", "away_pp_id": 592332, "venue": "Comerica Park"}, {"game_pk": 823628, "date": "2026-05-17", "game_time_utc": "2026-05-17T17:40:00Z", "status": "Scheduled", "home_team": "New York Mets", "home_team_id": 121, "away_team": "New York Yankees", "away_team_id": 147, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Ryan Weathers", "away_pp_id": 677960, "venue": "Citi Field"}, {"game_pk": 824192, "date": "2026-05-17", "game_time_utc": "2026-05-17T18:10:00Z", "status": "Scheduled", "home_team": "Houston Astros", "home_team_id": 117, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Daikin Park"}, {"game_pk": 824599, "date": "2026-05-17", "game_time_utc": "2026-05-17T18:10:00Z", "status": "Scheduled", "home_team": "Chicago White Sox", "home_team_id": 145, "away_team": "Chicago Cubs", "away_team_id": 112, "home_pp_name": "Erick Fedde", "home_pp_id": 607200, "away_pp_name": "Colin Rea", "away_pp_id": 607067, "venue": "Rate Field"}, {"game_pk": 823708, "date": "2026-05-17", "game_time_utc": "2026-05-17T18:10:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 823058, "date": "2026-05-17", "game_time_utc": "2026-05-17T18:15:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Kansas City Royals", "away_team_id": 118, "home_pp_name": "Andre Pallante", "home_pp_id": 669467, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 824358, "date": "2026-05-17", "game_time_utc": "2026-05-17T19:10:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Arizona Diamondbacks", "away_team_id": 109, "home_pp_name": null, "home_pp_id": null, "away_pp_name": "Michael Soroka", "away_pp_id": 647336, "venue": "Coors Field"}, {"game_pk": 825006, "date": "2026-05-17", "game_time_utc": "2026-05-17T20:05:00Z", "status": "Scheduled", "home_team": "Athletics", "home_team_id": 133, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Sutter Health Park"}, {"game_pk": 824034, "date": "2026-05-17", "game_time_utc": "2026-05-17T20:07:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 823138, "date": "2026-05-17", "game_time_utc": "2026-05-17T23:20:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "San Diego Padres", "away_team_id": 135, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "T-Mobile Park"}], "2026-05-18": [{"game_pk": 824277, "date": "2026-05-18", "game_time_utc": "2026-05-18T22:40:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Cleveland Guardians", "away_team_id": 114, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Comerica Park"}, {"game_pk": 822980, "date": "2026-05-18", "game_time_utc": "2026-05-18T22:40:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Tropicana Field"}, {"game_pk": 823465, "date": "2026-05-18", "game_time_utc": "2026-05-18T22:40:00Z", "status": "Scheduled", "home_team": "Philadelphia Phillies", "home_team_id": 143, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Citizens Bank Park"}, {"game_pk": 823867, "date": "2026-05-18", "game_time_utc": "2026-05-18T22:40:00Z", "status": "Scheduled", "home_team": "Miami Marlins", "home_team_id": 146, "away_team": "Atlanta Braves", "away_team_id": 144, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "loanDepot park"}, {"game_pk": 822734, "date": "2026-05-18", "game_time_utc": "2026-05-18T22:45:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "New York Mets", "away_team_id": 121, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Nationals Park"}, {"game_pk": 823549, "date": "2026-05-18", "game_time_utc": "2026-05-18T23:05:00Z", "status": "Scheduled", "home_team": "New York Yankees", "home_team_id": 147, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Yankee Stadium"}, {"game_pk": 824114, "date": "2026-05-18", "game_time_utc": "2026-05-18T23:40:00Z", "status": "Scheduled", "home_team": "Kansas City Royals", "home_team_id": 118, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Kauffman Stadium"}, {"game_pk": 823705, "date": "2026-05-18", "game_time_utc": "2026-05-18T23:40:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Houston Astros", "away_team_id": 117, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 824680, "date": "2026-05-18", "game_time_utc": "2026-05-18T23:40:00Z", "status": "Scheduled", "home_team": "Chicago Cubs", "home_team_id": 112, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Wrigley Field"}, {"game_pk": 824357, "date": "2026-05-18", "game_time_utc": "2026-05-19T00:40:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Coors Field"}, {"game_pk": 824035, "date": "2026-05-18", "game_time_utc": "2026-05-19T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Athletics", "away_team_id": 133, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 823301, "date": "2026-05-18", "game_time_utc": "2026-05-19T01:40:00Z", "status": "Scheduled", "home_team": "San Diego Padres", "home_team_id": 135, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Petco Park"}, {"game_pk": 825087, "date": "2026-05-18", "game_time_utc": "2026-05-19T01:40:00Z", "status": "Scheduled", "home_team": "Arizona Diamondbacks", "home_team_id": 109, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Chase Field"}, {"game_pk": 823137, "date": "2026-05-18", "game_time_utc": "2026-05-19T01:40:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "Chicago White Sox", "away_team_id": 145, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "T-Mobile Park"}], "2026-05-19": [{"game_pk": 823865, "date": "2026-05-19", "game_time_utc": "2026-05-19T20:10:00Z", "status": "Scheduled", "home_team": "Miami Marlins", "home_team_id": 146, "away_team": "Atlanta Braves", "away_team_id": 144, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "loanDepot park"}, {"game_pk": 824276, "date": "2026-05-19", "game_time_utc": "2026-05-19T22:40:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Cleveland Guardians", "away_team_id": 114, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Comerica Park"}, {"game_pk": 822979, "date": "2026-05-19", "game_time_utc": "2026-05-19T22:40:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Tropicana Field"}, {"game_pk": 823464, "date": "2026-05-19", "game_time_utc": "2026-05-19T22:40:00Z", "status": "Scheduled", "home_team": "Philadelphia Phillies", "home_team_id": 143, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Citizens Bank Park"}, {"game_pk": 822736, "date": "2026-05-19", "game_time_utc": "2026-05-19T22:45:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "New York Mets", "away_team_id": 121, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Nationals Park"}, {"game_pk": 823548, "date": "2026-05-19", "game_time_utc": "2026-05-19T23:05:00Z", "status": "Scheduled", "home_team": "New York Yankees", "home_team_id": 147, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Yankee Stadium"}, {"game_pk": 824112, "date": "2026-05-19", "game_time_utc": "2026-05-19T23:40:00Z", "status": "Scheduled", "home_team": "Kansas City Royals", "home_team_id": 118, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Kauffman Stadium"}, {"game_pk": 823704, "date": "2026-05-19", "game_time_utc": "2026-05-19T23:40:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Houston Astros", "away_team_id": 117, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 824677, "date": "2026-05-19", "game_time_utc": "2026-05-19T23:40:00Z", "status": "Scheduled", "home_team": "Chicago Cubs", "home_team_id": 112, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Wrigley Field"}, {"game_pk": 823059, "date": "2026-05-19", "game_time_utc": "2026-05-19T23:45:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Pittsburgh Pirates", "away_team_id": 134, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 824356, "date": "2026-05-19", "game_time_utc": "2026-05-20T00:40:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Coors Field"}, {"game_pk": 824033, "date": "2026-05-19", "game_time_utc": "2026-05-20T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Athletics", "away_team_id": 133, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 823302, "date": "2026-05-19", "game_time_utc": "2026-05-20T01:40:00Z", "status": "Scheduled", "home_team": "San Diego Padres", "home_team_id": 135, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Petco Park"}, {"game_pk": 825086, "date": "2026-05-19", "game_time_utc": "2026-05-20T01:40:00Z", "status": "Scheduled", "home_team": "Arizona Diamondbacks", "home_team_id": 109, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Chase Field"}, {"game_pk": 823136, "date": "2026-05-19", "game_time_utc": "2026-05-20T01:40:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "Chicago White Sox", "away_team_id": 145, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "T-Mobile Park"}], "2026-05-20": [{"game_pk": 823462, "date": "2026-05-20", "game_time_utc": "2026-05-20T17:05:00Z", "status": "Scheduled", "home_team": "Philadelphia Phillies", "home_team_id": 143, "away_team": "Cincinnati Reds", "away_team_id": 113, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Citizens Bank Park"}, {"game_pk": 822977, "date": "2026-05-20", "game_time_utc": "2026-05-20T17:10:00Z", "status": "Scheduled", "home_team": "Tampa Bay Rays", "home_team_id": 139, "away_team": "Baltimore Orioles", "away_team_id": 110, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Tropicana Field"}, {"game_pk": 823703, "date": "2026-05-20", "game_time_utc": "2026-05-20T17:40:00Z", "status": "Scheduled", "home_team": "Minnesota Twins", "home_team_id": 142, "away_team": "Houston Astros", "away_team_id": 117, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Target Field"}, {"game_pk": 824355, "date": "2026-05-20", "game_time_utc": "2026-05-20T19:10:00Z", "status": "Scheduled", "home_team": "Colorado Rockies", "home_team_id": 115, "away_team": "Texas Rangers", "away_team_id": 140, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Coors Field"}, {"game_pk": 825084, "date": "2026-05-20", "game_time_utc": "2026-05-20T19:40:00Z", "status": "Scheduled", "home_team": "Arizona Diamondbacks", "home_team_id": 109, "away_team": "San Francisco Giants", "away_team_id": 137, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Chase Field"}, {"game_pk": 823134, "date": "2026-05-20", "game_time_utc": "2026-05-20T20:10:00Z", "status": "Scheduled", "home_team": "Seattle Mariners", "home_team_id": 136, "away_team": "Chicago White Sox", "away_team_id": 145, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "T-Mobile Park"}, {"game_pk": 824273, "date": "2026-05-20", "game_time_utc": "2026-05-20T22:40:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Cleveland Guardians", "away_team_id": 114, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Comerica Park"}, {"game_pk": 823866, "date": "2026-05-20", "game_time_utc": "2026-05-20T22:40:00Z", "status": "Scheduled", "home_team": "Miami Marlins", "home_team_id": 146, "away_team": "Atlanta Braves", "away_team_id": 144, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "loanDepot park"}, {"game_pk": 822735, "date": "2026-05-20", "game_time_utc": "2026-05-20T22:45:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "New York Mets", "away_team_id": 121, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Nationals Park"}, {"game_pk": 823547, "date": "2026-05-20", "game_time_utc": "2026-05-20T23:05:00Z", "status": "Scheduled", "home_team": "New York Yankees", "home_team_id": 147, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Yankee Stadium"}, {"game_pk": 824111, "date": "2026-05-20", "game_time_utc": "2026-05-20T23:40:00Z", "status": "Scheduled", "home_team": "Kansas City Royals", "home_team_id": 118, "away_team": "Boston Red Sox", "away_team_id": 111, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Kauffman Stadium"}, {"game_pk": 824678, "date": "2026-05-20", "game_time_utc": "2026-05-20T23:40:00Z", "status": "Scheduled", "home_team": "Chicago Cubs", "home_team_id": 112, "away_team": "Milwaukee Brewers", "away_team_id": 158, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Wrigley Field"}, {"game_pk": 823057, "date": "2026-05-20", "game_time_utc": "2026-05-20T23:45:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Pittsburgh Pirates", "away_team_id": 134, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 823299, "date": "2026-05-20", "game_time_utc": "2026-05-21T00:40:00Z", "status": "Scheduled", "home_team": "San Diego Padres", "home_team_id": 135, "away_team": "Los Angeles Dodgers", "away_team_id": 119, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Petco Park"}, {"game_pk": 824032, "date": "2026-05-20", "game_time_utc": "2026-05-21T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Athletics", "away_team_id": 133, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}], "2026-05-21": [{"game_pk": 824274, "date": "2026-05-21", "game_time_utc": "2026-05-21T17:10:00Z", "status": "Scheduled", "home_team": "Detroit Tigers", "home_team_id": 116, "away_team": "Cleveland Guardians", "away_team_id": 114, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Comerica Park"}, {"game_pk": 823056, "date": "2026-05-21", "game_time_utc": "2026-05-21T17:15:00Z", "status": "Scheduled", "home_team": "St. Louis Cardinals", "home_team_id": 138, "away_team": "Pittsburgh Pirates", "away_team_id": 134, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Busch Stadium"}, {"game_pk": 822733, "date": "2026-05-21", "game_time_utc": "2026-05-21T20:05:00Z", "status": "Scheduled", "home_team": "Washington Nationals", "home_team_id": 120, "away_team": "New York Mets", "away_team_id": 121, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Nationals Park"}, {"game_pk": 823864, "date": "2026-05-21", "game_time_utc": "2026-05-21T22:40:00Z", "status": "Scheduled", "home_team": "Miami Marlins", "home_team_id": 146, "away_team": "Atlanta Braves", "away_team_id": 144, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "loanDepot park"}, {"game_pk": 823545, "date": "2026-05-21", "game_time_utc": "2026-05-21T23:05:00Z", "status": "Scheduled", "home_team": "New York Yankees", "home_team_id": 147, "away_team": "Toronto Blue Jays", "away_team_id": 141, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Yankee Stadium"}, {"game_pk": 824031, "date": "2026-05-21", "game_time_utc": "2026-05-22T01:38:00Z", "status": "Scheduled", "home_team": "Los Angeles Angels", "home_team_id": 108, "away_team": "Athletics", "away_team_id": 133, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Angel Stadium"}, {"game_pk": 825083, "date": "2026-05-21", "game_time_utc": "2026-05-22T01:40:00Z", "status": "Scheduled", "home_team": "Arizona Diamondbacks", "home_team_id": 109, "away_team": "Colorado Rockies", "away_team_id": 115, "home_pp_name": null, "home_pp_id": null, "away_pp_name": null, "away_pp_id": null, "venue": "Chase Field"}]}, "total_games": 107}, "player_form": {"hot_batters": [], "cold_batters": [], "hot_pitchers": [], "cold_pitchers": [], "total_evaluated": 0, "source": "scout_cache"}, "account_summary": {"live": {"total_picks": 0, "settled_picks": 0, "won": 0, "lost": 0, "push": 0, "win_rate_pct": 0.0, "total_pl": 0, "max_drawdown": -0.0, "expectancy_per_pick": 0.0, "streak": "\u2014"}, "paper": {"total_picks": 0, "settled_picks": 0, "won": 0, "lost": 0, "push": 0, "win_rate_pct": 0.0, "total_pl": 0, "max_drawdown": -0.0, "expectancy_per_pick": 0.0, "streak": "\u2014"}}, "public_url": "https://upgrades-institutional-luther-established.trycloudflare.com", "telegram": {"bot_username": "YarbudBot", "bot_id": 8612150588, "channel_id": "-1003918918061", "authorized_count": 2, "listener_running": true, "listener_pid": null, "listener_last_log_line": "====== TG-LISTENER STARTED Thu 05/14/2026  1:00:48.66 ======", "tunnel_running": true, "recent_log": ["====== TG-LISTENER STARTED Thu 05/14/2026  0:11:32.88 ======", "^C", "====== TG-LISTENER STARTED Thu 05/14/2026  0:28:43.82 ======", "====== TG-LISTENER STARTED Thu 05/14/2026  0:57:35.09 ======", "[listener] started. Authorized chat_ids: ['-1003918918061']", "[listener] public-cmd /start from chat_id=7191253260 (private)", "====== TG-LISTENER STARTED Thu 05/14/2026  1:00:48.66 ======"], "state_file": {"last_update_id": 541706785}}, "counts": {"picks_total": 0, "settled": 0, "today_picks": 0}};
+
+function fmtMoney(n) { return '$' + Number(n||0).toFixed(2); }
+function fmtPct(n, d=1) { return Number(n||0).toFixed(d) + '%'; }
+function safe(s) { return (s===null||s===undefined) ? '' : String(s); }
+function escapeHtml(s) {
+  return safe(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ===== Date short format (M/D from YYYY-MM-DD) =====
+function fmtDateShort(s) {
+  if (!s) return '—';
+  // Accept "YYYY-MM-DD" or "YYYY-MM-DDTHH:MM:..." — extract leading date
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s);
+  if (!m) return s;
+  // Strip leading zeros: 5/13 instead of 05/13
+  return parseInt(m[2], 10) + '/' + parseInt(m[3], 10);
+}
+
+// ===== Time formatting (America/New_York, 12-hour) =====
+// Handles two input shapes:
+//   - ISO with timezone ("2026-05-13T18:05:00Z" or "+00:00")  -> converted UTC->ET
+//   - Naive local "YYYY-MM-DD HH:MM" (PowerShell Get-ScheduledTaskInfo, machine is on ET)  -> just reformat 24h->12h
+function fmtETTime(s, includeDate=false) {
+  if (!s) return '—';
+  // PowerShell local naive "YYYY-MM-DD HH:MM" — machine timezone (ET) already
+  const localMatch = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})$/.exec(s);
+  if (localMatch) {
+    const [_, y, mo, d, hh, mm] = localMatch;
+    const h = parseInt(hh, 10);
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    const h12 = ((h + 11) % 12) + 1;
+    return includeDate ? `${mo}/${d} ${h12}:${mm} ${ampm}` : `${h12}:${mm} ${ampm}`;
+  }
+  // ISO with timezone — parse and convert to ET
+  let d;
+  if (/[Z]|[+\-]\d{2}:?\d{2}$/.test(s)) {
+    d = new Date(s);
+  } else if (/T/.test(s)) {
+    // ISO without explicit TZ -> treat as UTC
+    d = new Date(s + 'Z');
+  } else {
+    return s;
+  }
+  if (isNaN(d.getTime())) return s;
+  const opts = {timeZone:'America/New_York', hour:'numeric', minute:'2-digit', hour12:true};
+  if (includeDate) {
+    opts.month = 'short';
+    opts.day = 'numeric';
+  }
+  return new Intl.DateTimeFormat('en-US', opts).format(d) + ' ET';
+}
+
+// ===== Header / bankroll =====
+document.getElementById('genline').textContent = 'Generated ' + fmtETTime(DATA.generated_at, true) + ' · auto-refresh 60s · build ' + (DATA.build_id || '?');
+document.getElementById('hdr-today').textContent = fmtDateShort(DATA.today);
+// ===== Account Summary Card =====
+function _renderSummaryAccount(elId, s) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  if (!s) { el.innerHTML = '<div class="col-span-3 text-gray-500 italic">No data</div>'; return; }
+  // Each stat = { label, value, className?, tip? }
+  const items = [
+    { label: 'Total picks',  value: `${s.total_picks} (${s.settled_picks} settled)`,
+      tip: 'All picks recorded in Notion for this account. (settled = graded Won/Lost/Push)' },
+    { label: 'Win rate',     value: s.settled_picks > 0 ? `${s.win_rate_pct.toFixed(1)}%` : '—',
+      tip: 'Wins / (Wins + Losses) — pushes excluded from denominator.' },
+    { label: 'Total P/L',    value: fmtMoney(s.total_pl),
+      cls: s.total_pl > 0 ? 'positive' : s.total_pl < 0 ? 'negative' : '',
+      tip: 'Cumulative net profit/loss across all settled picks.' },
+    { label: 'Max drawdown', value: s.max_drawdown === 0 ? '—' : fmtMoney(s.max_drawdown),
+      cls: s.max_drawdown < 0 ? 'negative' : '',
+      tip: 'Largest peak-to-trough decline in cumulative P/L. Measures worst losing run.' },
+    { label: 'Expectancy/pick', value: fmtMoney(s.expectancy_per_pick),
+      cls: s.expectancy_per_pick > 0 ? 'positive' : s.expectancy_per_pick < 0 ? 'negative' : '',
+      tip: 'Average P/L per pick (total P/L / total picks). Positive = profitable system.' },
+    { label: 'Streak',
+      value: s.streak !== '—' ? s.streak : '—',
+      cls: s.streak.startsWith && s.streak.startsWith('W') ? 'positive'
+           : s.streak.startsWith && s.streak.startsWith('L') ? 'negative' : '',
+      tip: 'Consecutive Won (W) or Lost (L) picks ending with the most recent settle. Pushes don\'t break streaks.' },
+  ];
+  el.innerHTML = items.map(i => `<div ${i.tip ? `title="${i.tip}"` : ''}>
+    <div class="text-gray-500 uppercase tracking-wider ${i.tip ? 'cursor-help' : ''}" style="font-size:9px">${i.label}${i.tip ? ' <span style="font-size:8px;opacity:0.5">ⓘ</span>' : ''}</div>
+    <div class="text-sm font-semibold ${i.cls || 'text-white'}">${i.value}</div>
+  </div>`).join('');
+}
+(function() {
+  const s = DATA.account_summary || {};
+  _renderSummaryAccount('summary-live', s.live);
+  _renderSummaryAccount('summary-paper', s.paper);
+})();
+
+document.getElementById('bk-live').textContent = fmtMoney(DATA.bankroll.live);
+document.getElementById('bk-live-sub').textContent = 'Tier 1 · 1u=$3 · 5u/day cap';
+document.getElementById('bk-peak').textContent = fmtMoney(DATA.bankroll.peak);
+const ddEl = document.getElementById('bk-dd');
+ddEl.textContent = '-' + DATA.bankroll.drawdown_pct.toFixed(1) + '%';
+ddEl.className = DATA.bankroll.drawdown_pct > 15 ? 'text-base font-semibold text-red-400' : 'text-base font-semibold text-white';
+document.getElementById('bk-paper').textContent = fmtMoney(DATA.bankroll.paper);
+document.getElementById('bk-paper-peak').textContent = fmtMoney(DATA.bankroll.paper_peak);
+const paperDd = DATA.bankroll.paper_drawdown_pct || 0;
+const pddEl = document.getElementById('bk-paper-dd');
+pddEl.textContent = (paperDd > 0 ? '-' : '') + paperDd.toFixed(1) + '%';
+pddEl.className = paperDd > 15 ? 'text-base font-semibold text-red-400' : (paperDd > 0 ? 'text-base font-semibold text-yellow-300' : 'text-base font-semibold text-white');
+// Wellness card (reads logs/health-check.complete via embedded state)
+(function() {
+  const w = DATA.wellness || {};
+  const dot = document.getElementById('wellness-dot');
+  const txt = document.getElementById('wellness-text');
+  const when = document.getElementById('wellness-when');
+  const status = w.status || 'unknown';
+  const color = status === 'OK' ? '#4ade80' : status === 'WARN' ? '#fbbf24' : status === 'FAIL' ? '#f87171' : '#9ca3af';
+  dot.style.background = color;
+  txt.textContent = w.summary || 'Health check not yet run';
+  // Mirror status as a small pill in the page header
+  const hdrPill = document.getElementById('hdr-wellness-pill');
+  if (hdrPill) {
+    const bg = status === 'OK' ? 'rgba(74,222,128,0.15)' : status === 'WARN' ? 'rgba(251,191,36,0.15)' : status === 'FAIL' ? 'rgba(248,113,113,0.15)' : 'rgba(148,163,184,0.15)';
+    hdrPill.innerHTML = `<span class="pill" style="background:${bg};color:${color}">● ${status}</span>`;
+  }
+  when.textContent = w.checked_at ? ('last check: ' + fmtETTime(w.checked_at, true)) : '';
+})();
+document.getElementById('gen-ts').textContent = fmtETTime(DATA.generated_at, true);
+
+// ===== Tabs =====
+document.querySelectorAll('.tab-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    const tgt = b.dataset.tab;
+    document.querySelectorAll('section[data-pane]').forEach(s => {
+      s.classList.toggle('hidden', s.dataset.pane !== tgt);
+    });
+  });
+});
+
+// ===== Status pill =====
+function pill(result) {
+  const r = (result||'').toLowerCase();
+  const cls = r === 'won' ? 'pill-won' :
+              r === 'lost' ? 'pill-lost' :
+              r === 'push' ? 'pill-push' :
+              r === 'pending-unconfirmed' ? 'pill-unconf' :
+              r === 'scratched' ? 'pill-scratched' :
+              'pill-pending';
+  return `<span class="pill ${cls}">${escapeHtml(result)}</span>`;
+}
+
+// ===== TAB 1: Today =====
+function _resultBorderColor(result) {
+  const r = (result||'').toLowerCase();
+  if (r === 'won') return '#4ade80';
+  if (r === 'lost') return '#f87171';
+  if (r === 'push' || r === 'void' || r === 'scratched') return '#fbbf24';
+  return '#6b7280'; // pending / unknown — gray
+}
+function _resultStatusLabel(result) {
+  const r = (result||'').toLowerCase();
+  if (r === 'won') return '<span class="positive">✅ WON</span>';
+  if (r === 'lost') return '<span class="negative">❌ LOST</span>';
+  if (r === 'push') return '<span class="text-yellow-300">⏸ PUSH</span>';
+  if (r === 'void' || r === 'scratched') return '<span class="text-yellow-300">⛔ VOID</span>';
+  return '<span class="text-gray-400">⏳ PENDING</span>';
+}
+function _nextFireCountdown() {
+  // Next major fire in ET today: 12:00 noon-lock, 15:00 late-lock, 16:00 cleanup, then 02:00 tomorrow settle
+  const nowUTC = new Date();
+  // ET offset (rough — doesn't matter for human display)
+  const etOffsetH = (nowUTC.getMonth() >= 2 && nowUTC.getMonth() <= 10) ? -4 : -5; // EDT vs EST
+  const etNow = new Date(nowUTC.getTime() + etOffsetH * 3600 * 1000);
+  const hh = etNow.getUTCHours();
+  const mm = etNow.getUTCMinutes();
+  const fires = [
+    {h: 12, m: 0, name: '12 PM MLB lock'},
+    {h: 15, m: 0, name: '3 PM late-slate lock'},
+    {h: 16, m: 0, name: '4 PM cleanup'},
+    {h: 26, m: 0, name: '2 AM tomorrow night-settle'},  // 26h-day rep
+  ];
+  for (const f of fires) {
+    const minsTo = (f.h - hh) * 60 + (f.m - mm);
+    if (minsTo > 0) {
+      const h = Math.floor(minsTo / 60);
+      const m = minsTo % 60;
+      return `${f.name} in ${h > 0 ? h+'h ' : ''}${m}m`;
+    }
+  }
+  return 'all today\'s fires complete — next is 9 AM tomorrow morning-scout';
+}
+function _betTypeClass(p) {
+  // Classify pick into bet-type color category from market / strategy / pick text
+  const m = (p.market || '').toLowerCase();
+  const pk = (p.pick || '').toLowerCase();
+  const strat = (p.strategy || '').toLowerCase();
+  if (m.includes('nrfi') || pk.includes('nrfi') || strat.includes('nrfi parlay')) {
+    return strat.includes('parlay') || pk.includes('parlay') ? 'bt-parlay' : 'bt-special';
+  }
+  if (m === 'ml' || m.includes('moneyline') || strat.includes('ml favorite')) return 'bt-ml';
+  if (m.includes('total') || m === 'f5_total' || m.includes('runs') || m === 'total' || m === 'spread') return 'bt-total';
+  return 'bt-prop';
+}
+
+function _oddsChip(odds) {
+  if (!odds) return '<span class="odds-chip odds-dog">—</span>';
+  const o = Number(odds);
+  const cls = o < 0 ? 'odds-fav' : 'odds-dog';
+  const s = o > 0 ? `+${o}` : `${o}`;
+  return `<span class="odds-chip ${cls}">${s}</span>`;
+}
+
+function _pickCard(p, account, stakeField) {
+  const stake = Number(p[stakeField] || p.stake || 0);
+  const edge = Number(p.edge_pp || 0);
+  const odds = Number(p.odds || 0);
+  const tier = p.tier || '';
+  const result = p.result || 'Pending';
+  const border = _resultBorderColor(result);
+  const btClass = _betTypeClass(p);
+  const acctBadge = account === 'LIVE'
+    ? '<span class="pill" style="background:rgba(74,222,128,0.15);color:#4ade80">LIVE</span>'
+    : '<span class="pill" style="background:rgba(96,165,250,0.15);color:#60a5fa">PAPER</span>';
+  const tierBadge = tier
+    ? `<span class="pill" style="background:rgba(148,163,184,0.12);color:#cbd5e1">${escapeHtml(tier)}</span>`
+    : '';
+  const sportBadge = p.sport
+    ? `<span class="pill" style="background:rgba(148,163,184,0.08);color:#94a3b8;font-size:10px">${escapeHtml(p.sport)}</span>`
+    : '';
+  const edgeStr = edge
+    ? `<span class="${edge>=0?'positive':'negative'} text-xs">edge ${edge>=0?'+':''}${edge.toFixed(1)}pp</span>`
+    : '';
+  const strat = p.strategy ? `<div class="text-xs text-gray-500 mt-2 truncate">${escapeHtml(p.strategy)}</div>` : '';
+  return `
+    <div class="card p-4 ${btClass}">
+      <div class="flex items-start justify-between gap-3 mb-2">
+        <div class="text-sm text-white font-medium leading-snug flex-1 min-w-0">${escapeHtml(p.pick || '(no pick text)')}</div>
+        <div class="text-right shrink-0 flex items-start gap-2">
+          ${_oddsChip(odds)}
+          <div>
+            <div class="text-xl font-bold text-white leading-none">$${stake.toFixed(2)}</div>
+            <div class="text-xs mt-1">${_resultStatusLabel(result)}</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 flex-wrap">
+        ${acctBadge} ${tierBadge} ${sportBadge}
+        ${edgeStr ? `<span class="text-xs text-gray-600">·</span> ${edgeStr}` : ''}
+      </div>
+      ${strat}
+    </div>`;
+}
+
+function renderToday() {
+  const tp = DATA.today_picks || [];
+  const live = tp.filter(p => (p.account||'').toUpperCase() === 'LIVE');
+  const paper = tp.filter(p => (p.account||'').toUpperCase() === 'PAPER');
+
+  // Action banner — pending LIVE picks
+  const livePending = live.filter(p => (p.result||'').toLowerCase() === 'pending');
+  const banner = document.getElementById('action-banner');
+  if (livePending.length > 0) {
+    const totalStake = livePending.reduce((s,p)=> s + Number(p.stake||0), 0);
+    banner.className = 'card p-4 mb-4';
+    banner.style.background = 'rgba(251,191,36,0.10)';
+    banner.style.borderLeft = '4px solid #fbbf24';
+    banner.innerHTML = `
+      <div class="flex items-center gap-3">
+        <div style="font-size:28px">⚡</div>
+        <div class="flex-1">
+          <div class="text-sm font-bold text-yellow-300">ACTION NEEDED: ${livePending.length} LIVE pick${livePending.length>1?'s':''} to place</div>
+          <div class="text-xs text-gray-300 mt-1">Total stake $${totalStake.toFixed(2)} · Log placement via "Place" / FD screenshot to trigger post-placement-sync</div>
+        </div>
+      </div>`;
+  } else {
+    banner.className = 'hidden';
+    banner.innerHTML = '';
+  }
+
+  // LIVE section
+  const liveSec = document.getElementById('today-live-section');
+  if (live.length === 0) {
+    // Day-0 onboarding: when there are also zero picks total, show a richer
+    // "what to expect" message instead of bare "no picks yet"
+    const totalPicks = (DATA.picks || []).length;
+    if (totalPicks === 0) {
+      liveSec.innerHTML = `
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <div style="font-size:32px">⚾</div>
+            <div>
+              <h2 class="text-lg font-bold text-white">Welcome — engine is armed</h2>
+              <div class="text-xs text-gray-400">No picks yet. Here's what'll happen automatically:</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-300 space-y-2 mt-3">
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">6 AM</span> <span>Morning recap pushes yesterday's results to Telegram</span></div>
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">9 AM</span> <span>Scout pulls today's MLB props from FanDuel + scores all 11 factors</span></div>
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">9:35 AM</span> <span>Slate preview pushes hot hitters / pitchers to Telegram</span></div>
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">12 PM</span> <span>Noon-lock fires LIVE + PAPER picks to Telegram + writes PAPER to Notion</span></div>
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">3 PM / 6 PM</span> <span>Late-slate + evening locks catch afternoon/evening games</span></div>
+            <div class="flex gap-2"><span class="text-yellow-300 w-16 shrink-0">2 AM</span> <span>Night-settle grades every pick · dashboard rebuilds at 2:30 AM</span></div>
+          </div>
+          <div class="mt-4 text-xs text-gray-500 border-t border-gray-800 pt-3">
+            Next fire: <span class="text-yellow-300 font-semibold">${_nextFireCountdown()}</span>
+          </div>
+        </div>`;
+    } else {
+      liveSec.innerHTML = `
+        <div class="card p-4">
+          <h2 class="text-lg font-semibold text-white mb-2">Today's LIVE picks</h2>
+          <div class="text-sm text-gray-400">No LIVE picks fired today yet.</div>
+          <div class="text-xs text-gray-500 mt-2">Next: <span class="text-yellow-300">${_nextFireCountdown()}</span></div>
+        </div>`;
+    }
+  } else {
+    const totalLive = live.reduce((s,p)=> s + Number(p.stake||0), 0);
+    liveSec.innerHTML = `
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-lg font-semibold text-white">Today's LIVE picks (${live.length})</h2>
+        <div class="text-sm text-gray-400">Total stake: <span class="text-white font-bold">$${totalLive.toFixed(2)}</span></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        ${live.map(p => _pickCard(p, 'LIVE', 'stake')).join('')}
+      </div>`;
+  }
+
+  // PAPER section (collapsed by default)
+  const paperSec = document.getElementById('today-paper-section');
+  if (paper.length === 0) {
+    paperSec.innerHTML = '';
+  } else {
+    const totalPaper = paper.reduce((s,p)=> s + Number(p.stake||0), 0);
+    const paperWon = paper.filter(p=>p.result==='Won').length;
+    const paperLost = paper.filter(p=>p.result==='Lost').length;
+    const paperPending = paper.filter(p=>(p.result||'').toLowerCase()==='pending').length;
+    paperSec.innerHTML = `
+      <details>
+        <summary class="cursor-pointer text-sm text-gray-300 hover:text-white py-2">
+          <span class="text-blue-400">▶ PAPER picks today (${paper.length})</span>
+          <span class="text-xs text-gray-500 ml-3">total $${totalPaper.toFixed(2)} · ${paperWon}W ${paperLost}L · ${paperPending} pending</span>
+        </summary>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+          ${paper.slice(0,10).map(p => _pickCard(p, 'PAPER', 'stake')).join('')}
+        </div>
+        ${paper.length > 10 ? `<div class="text-xs text-gray-500 mt-2">… and ${paper.length - 10} more. See Picks tab.</div>` : ''}
+      </details>`;
+  }
+
+  // v2 schedule — synced with WTS tasks 2026-05-13 PM
+  // tg='always' → routine Telegram push
+  // tg='alert'  → only pushes on failure / drift / threshold
+  // tg=false    → silent (file/cache writes only)
+  const sched = [
+    {name:'health-check',          time:'1:00 AM',  phase:'Nightly', tg:'alert',  bat:'health-check.bat',       desc:'preflight checks — TG only if any subsystem fails'},
+    {name:'night-settle',          time:'2:00 AM',  phase:'Nightly', tg:'alert',  bat:'morning-settle.bat',     desc:'grade yesterday\'s picks — TG only if settle fails'},
+    {name:'dashboard-post-settle', time:'2:30 AM',  phase:'Nightly', tg:false,    bat:'dashboard-refresh.bat',  desc:'rebuild dashboard w/ yesterday\'s results'},
+    {name:'morning-recap',         time:'6:00 AM',  phase:'Morning', tg:'always', bat:'morning-recap.bat',      desc:'TG summary of yesterday — W-L, net, bankroll, best/worst, per-strategy'},
+    {name:'morning-scout',         time:'9:00 AM',  phase:'Morning', tg:false,    bat:'morning-scout.bat',      desc:'score today\'s slate, apply 8 factors'},
+    {name:'scout-stability',       time:'9:15 AM',  phase:'Morning', tg:'alert',  bat:'morning-scout-2.bat',    desc:'re-verify key candidates — TG only if drift detected'},
+    {name:'form-discovery',        time:'9:30 AM',  phase:'Morning', tg:false,    bat:'form-discovery.bat',     desc:'compute Statcast+L10 for every MLB starter (no Odds API)'},
+    {name:'morning-preview',       time:'9:35 AM',  phase:'Morning', tg:'always', bat:'morning-preview.bat',    desc:'TG slate preview — game count, hot hitters, hot pitchers'},
+    {name:'mlb-noon-lock',         time:'12:00 PM', phase:'Fire',    tg:'always', bat:'mlb-noon-lock.bat',      desc:'fire LIVE/PAPER picks — TG pick cards'},
+    {name:'dashboard-post-lock',   time:'1:00 PM',  phase:'Fire',    tg:false,    bat:'dashboard-refresh.bat',  desc:'rebuild dashboard w/ today\'s picks'},
+    {name:'late-slate-lock',       time:'3:00 PM',  phase:'Fire',    tg:'always', bat:'late-lock.bat',          desc:'catch afternoon games — TG pick cards'},
+    {name:'evening-scout',         time:'5:30 PM',  phase:'Evening', tg:false,    bat:'evening-scout.bat',      desc:'catch FD batter props posted late'},
+    {name:'evening-lock',          time:'6:00 PM',  phase:'Evening', tg:'always', bat:'evening-lock.bat',       desc:'fire evening LIVE/PAPER — TG pick cards'},
+    {name:'clv-capture',           time:'9:00 PM',  phase:'Evening', tg:false,    bat:'clv-capture.bat',        desc:'grab closing lines for CLV'},
+  ];
+  const tasks = DATA.wts_tasks || [];
+  const taskMap = {};
+  tasks.forEach(t => { if (t.Name) taskMap[t.Name] = t; });
+
+  // Identify the next task scheduled to fire (for highlighting)
+  const now = new Date();
+  let nextTaskName = null;
+  let nextTaskWhen = null;
+  for (const s of sched) {
+    const t = taskMap['BettingOS - ' + s.name] || {};
+    if (!t.NextRun) continue;
+    const dt = _parseTaskTime(t.NextRun);
+    if (!dt) continue;
+    if (dt > now && (!nextTaskWhen || dt < nextTaskWhen)) {
+      nextTaskWhen = dt;
+      nextTaskName = s.name;
+    }
+  }
+
+  // Meta line
+  const meta = document.getElementById('schedule-meta');
+  if (meta) {
+    if (nextTaskName) {
+      const mins = Math.round((nextTaskWhen - now) / 60000);
+      const hrs = Math.floor(mins / 60);
+      const m = mins % 60;
+      const dur = hrs > 0 ? `${hrs}h ${m}m` : `${mins}m`;
+      meta.innerHTML = `next: <span class="text-yellow-300">${nextTaskName}</span> in ${dur}`;
+    } else {
+      meta.textContent = 'no upcoming tasks';
+    }
+  }
+
+  // Group by phase
+  const phases = ['Nightly', 'Morning', 'Fire', 'Evening'];
+  const phaseColor = {
+    'Nightly': '#a78bfa',  // purple
+    'Morning': '#fbbf24',  // yellow
+    'Fire':    '#f87171',  // red (firing real money)
+    'Evening': '#34d399',  // green
+  };
+
+  const out = [];
+  for (const phase of phases) {
+    const items = sched.filter(s => s.phase === phase);
+    if (!items.length) continue;
+    out.push(`<div class="mb-3">
+      <div class="text-xs uppercase tracking-wider mb-1" style="color:${phaseColor[phase]}">${phase}</div>
+      <div class="space-y-0.5">
+        ${items.map(s => _scheduleRow(s, taskMap['BettingOS - ' + s.name] || {}, nextTaskName)).join('')}
+      </div>
+    </div>`);
+  }
+  document.getElementById('today-schedule').innerHTML = out.join('');
+
+  // Manual triggers — click row to copy command
+  const triggers = document.getElementById('manual-triggers');
+  if (triggers) {
+    triggers.innerHTML = sched.map(s => {
+      const cmd = 'scripts\\' + s.bat;
+      let tgPill = '';
+      if (s.tg === 'always') tgPill = '<span class="pill ml-1" style="background:rgba(96,165,250,0.20);color:#60a5fa;font-size:9px">TG</span>';
+      else if (s.tg === 'alert') tgPill = '<span class="pill ml-1" style="background:rgba(251,191,36,0.15);color:#fbbf24;font-size:9px">TG?</span>';
+      return `<div class="trigger-row flex items-center justify-between border-b border-gray-800" onclick="navigator.clipboard.writeText('${cmd}'); this.querySelector('.copy-hint').textContent='copied'; setTimeout(()=>{this.querySelector('.copy-hint').textContent=''}, 1500)" title="Click to copy">
+        <div class="min-w-0 flex-1">
+          <div class="text-yellow-300 text-xs">${s.time}${tgPill}</div>
+          <code class="text-blue-300 text-xs">${cmd}</code>
+          <div class="text-gray-500 text-xs">${escapeHtml(s.desc)}</div>
+        </div>
+        <span class="copy-hint text-xs text-green-400 ml-2"></span>
+      </div>`;
+    }).join('');
+  }
+}
+
+// Parse the PowerShell "YYYY-MM-DD HH:MM" local string into a Date (machine is on ET)
+function _parseTaskTime(s) {
+  if (!s) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/.exec(s);
+  if (!m) return null;
+  return new Date(parseInt(m[1]), parseInt(m[2])-1, parseInt(m[3]), parseInt(m[4]), parseInt(m[5]));
+}
+
+function _relativeTime(date) {
+  if (!date) return '—';
+  const now = new Date();
+  const diffMin = Math.round((date - now) / 60000);
+  const abs = Math.abs(diffMin);
+  if (abs < 1) return 'now';
+  if (abs < 60) return `${abs}m ${diffMin < 0 ? 'ago' : ''}`.trim();
+  if (abs < 1440) {
+    const h = Math.floor(abs / 60);
+    const m = abs % 60;
+    return `${h}h ${m}m ${diffMin < 0 ? 'ago' : ''}`.trim();
+  }
+  const days = Math.floor(abs / 1440);
+  return `${days}d ${diffMin < 0 ? 'ago' : ''}`.trim();
+}
+
+function _scheduleRow(s, t, nextTaskName) {
+  const isNext = s.name === nextTaskName;
+  // Status pill from WTS LastResult. Known non-failure codes:
+  //   0          = success
+  //   267011     = task has not yet run (LastRun is epoch placeholder)
+  //   3221225786 = process terminated by Ctrl-C / reboot (NOT a real failure)
+  // Any other non-zero exit = real FAIL.
+  let statusPill;
+  const code = t.LastResult;
+  const lastRunIsEpoch = !t.LastRun || (typeof t.LastRun === 'string' && t.LastRun.startsWith('1899'));
+  if (lastRunIsEpoch || code === 267011 || code === '267011') {
+    statusPill = '<span class="pill" style="background:rgba(148,163,184,0.12);color:#94a3b8;font-size:9px" title="never run">—</span>';
+  } else if (code === 0 || code === '0') {
+    statusPill = '<span class="pill" style="background:rgba(74,222,128,0.15);color:#4ade80;font-size:9px">OK</span>';
+  } else if (code === 3221225786 || code === '3221225786') {
+    statusPill = '<span class="pill" style="background:rgba(251,191,36,0.15);color:#fbbf24;font-size:9px" title="terminated (Ctrl-C / reboot)">INT</span>';
+  } else {
+    statusPill = `<span class="pill" style="background:rgba(248,113,113,0.15);color:#f87171;font-size:9px" title="exit ${code}">FAIL</span>`;
+  }
+  let tgBadge = '';
+  if (s.tg === 'always') {
+    tgBadge = '<span class="pill" style="background:rgba(96,165,250,0.20);color:#60a5fa;font-size:9px" title="always pushes Telegram">TG</span>';
+  } else if (s.tg === 'alert') {
+    tgBadge = '<span class="pill" style="background:rgba(251,191,36,0.15);color:#fbbf24;font-size:9px" title="pushes Telegram only on failure/alert">TG?</span>';
+  }
+  // Relative times
+  const lastDt = _parseTaskTime(t.LastRun);
+  const nextDt = _parseTaskTime(t.NextRun);
+  const lastRel = lastDt ? _relativeTime(lastDt) : '—';
+  const nextRel = nextDt ? _relativeTime(nextDt) : '—';
+  const rowStyle = isNext
+    ? 'background:rgba(251,191,36,0.10);border-left:2px solid #fbbf24'
+    : 'border-left:2px solid transparent';
+  return `<div class="flex items-center gap-2 py-1 pr-2 pl-2 text-xs rounded" style="${rowStyle}">
+    <div class="text-yellow-300 w-16 shrink-0">${s.time}</div>
+    <div class="flex-1 min-w-0">
+      <div class="text-white truncate">${s.name} ${statusPill} ${tgBadge}</div>
+      <div class="text-gray-500 truncate">last ${lastRel} · next ${nextRel}</div>
+    </div>
+  </div>`;
+}
+
+// ===== TAB 2: Performance =====
+function renderPerformance() {
+  const labels = DATA.daily.map(d => d.date);
+  new Chart(document.getElementById('chart-bankroll'), {
+    type: 'line',
+    data: { labels, datasets: [{ label:'LIVE bankroll $', data:DATA.daily.map(d=>d.bankroll_end), borderColor:'#4ade80', backgroundColor:'rgba(74,222,128,0.1)', tension:0.2, fill:true }] },
+    options: chartOpts()
+  });
+  new Chart(document.getElementById('chart-cum'), {
+    type: 'line',
+    data: { labels: DATA.cum_pl.map(d=>d.date), datasets: [{ label:'Cumulative P/L $', data:DATA.cum_pl.map(d=>d.cum_pl), borderColor:'#60a5fa', backgroundColor:'rgba(96,165,250,0.1)', tension:0.2, fill:true }] },
+    options: chartOpts()
+  });
+  new Chart(document.getElementById('chart-dailywl'), {
+    type: 'bar',
+    data: { labels: DATA.daily_wl.map(d=>d.date),
+      datasets: [
+        { label:'W', data:DATA.daily_wl.map(d=>d.live_w), backgroundColor:'#4ade80' },
+        { label:'L', data:DATA.daily_wl.map(d=>-d.live_l), backgroundColor:'#f87171' }
+      ]
+    },
+    options: chartOpts({stacked:true})
+  });
+  const clv = DATA.avg_clv_30d;
+  const clvEl = document.getElementById('avg-clv');
+  if (clv === null || clv === undefined) {
+    clvEl.textContent = '—'; clvEl.className = 'text-5xl font-bold mt-8 text-center text-gray-500';
+  } else {
+    clvEl.textContent = (clv>=0?'+':'') + clv.toFixed(2) + '%';
+    clvEl.className = 'text-5xl font-bold mt-8 text-center ' + (clv>=0?'text-green-400':'text-red-400');
+  }
+  new Chart(document.getElementById('chart-sport'), {
+    type: 'bar',
+    data: { labels: DATA.sport_roi.map(s=>s.label), datasets: [{ label:'ROI %', data:DATA.sport_roi.map(s=>s.roi), backgroundColor: DATA.sport_roi.map(s=>s.roi>=0?'#4ade80':'#f87171') }] },
+    options: chartOpts({indexAxis:'y'})
+  });
+  new Chart(document.getElementById('chart-tier'), {
+    type: 'bar',
+    data: { labels: DATA.tier_roi.map(s=>s.label), datasets: [{ label:'ROI %', data:DATA.tier_roi.map(s=>s.roi), backgroundColor: DATA.tier_roi.map(s=>s.roi>=0?'#4ade80':'#f87171') }] },
+    options: chartOpts({indexAxis:'y'})
+  });
+  renderPerfPanel();
+}
+
+// ===== "What Worked / What Failed" panel (added 2026-05-13) =====
+function renderPerfPanel() {
+  const pp = DATA.perf_panel || null;
+  if (!pp) return;
+  // Summary line
+  const summary = document.getElementById('perf-summary');
+  if (summary) {
+    const dq = pp.insufficient_data ? ' <span class="text-yellow-400">(small sample — need 20+ for clean signal)</span>' : '';
+    summary.innerHTML = `<b>${pp.total_settled}</b> settled picks · <b>$${pp.total_stake.toFixed(2)}</b> staked · ` +
+      `<b class="${pp.total_net_pl>=0?'positive':'negative'}">${pp.total_net_pl>=0?'+':''}$${pp.total_net_pl.toFixed(2)}</b> net · ` +
+      `<b class="${pp.total_roi_pct>=0?'positive':'negative'}">${pp.total_roi_pct>=0?'+':''}${pp.total_roi_pct.toFixed(1)}%</b> ROI${dq}`;
+  }
+  // What worked
+  const worked = document.getElementById('perf-worked');
+  if (worked) {
+    if (!pp.what_worked || pp.what_worked.length === 0) {
+      worked.innerHTML = '<div class="text-xs text-gray-500 italic">No winning strategies yet. Need settled picks first.</div>';
+    } else {
+      worked.innerHTML = '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit%</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+        pp.what_worked.slice(0, 8).map(r => `
+          <tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td><td>${r.hit_rate.toFixed(0)}%</td>
+              <td class="positive">$${r.pl.toFixed(2)}</td><td class="positive">+${r.roi_pct.toFixed(0)}%</td></tr>`).join('')
+        + '</tbody></table>';
+    }
+  }
+  // What failed
+  const failed = document.getElementById('perf-failed');
+  if (failed) {
+    if (!pp.what_failed || pp.what_failed.length === 0) {
+      failed.innerHTML = '<div class="text-xs text-gray-500 italic">No losing strategies yet. Either all winning or no settled losses.</div>';
+    } else {
+      failed.innerHTML = '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit%</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+        pp.what_failed.slice(0, 8).map(r => `
+          <tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td><td>${r.hit_rate.toFixed(0)}%</td>
+              <td class="negative">$${r.pl.toFixed(2)}</td><td class="negative">${r.roi_pct.toFixed(0)}%</td></tr>`).join('')
+        + '</tbody></table>';
+    }
+  }
+  // Full by-strategy table
+  const stratTable = document.getElementById('perf-by-strategy');
+  if (stratTable) {
+    if (!pp.by_strategy || pp.by_strategy.length === 0) {
+      stratTable.innerHTML = '<div class="text-xs text-gray-500 italic">No settled picks yet.</div>';
+    } else {
+      stratTable.innerHTML = '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit%</th><th>Stake</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+        pp.by_strategy.map(r => `
+          <tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td><td>${r.hit_rate.toFixed(0)}%</td>
+              <td>$${r.stake.toFixed(2)}</td>
+              <td class="${r.pl>=0?'positive':'negative'}">${r.pl>=0?'+':''}$${r.pl.toFixed(2)}</td>
+              <td class="${r.roi_pct>=0?'positive':'negative'}">${r.roi_pct>=0?'+':''}${r.roi_pct.toFixed(0)}%</td></tr>`).join('')
+        + '</tbody></table>';
+    }
+  }
+  // By sport
+  const sportT = document.getElementById('perf-by-sport');
+  if (sportT) {
+    sportT.innerHTML = '<div class="text-xs uppercase tracking-wider text-gray-400 mb-1">By Sport</div>' +
+      (pp.by_sport.length ? '<table><thead><tr><th>Sport</th><th>n</th><th>W-L</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+        pp.by_sport.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td>
+          <td class="${r.pl>=0?'positive':'negative'}">${r.pl>=0?'+':''}$${r.pl.toFixed(2)}</td>
+          <td class="${r.roi_pct>=0?'positive':'negative'}">${r.roi_pct>=0?'+':''}${r.roi_pct.toFixed(0)}%</td></tr>`).join('')
+        + '</tbody></table>' : '<div class="text-xs text-gray-500">none</div>');
+  }
+  // By tier
+  const tierT = document.getElementById('perf-by-tier');
+  if (tierT) {
+    tierT.innerHTML = '<div class="text-xs uppercase tracking-wider text-gray-400 mb-1">By Tier</div>' +
+      (pp.by_tier.length ? '<table><thead><tr><th>Tier</th><th>n</th><th>W-L</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+        pp.by_tier.map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td>
+          <td class="${r.pl>=0?'positive':'negative'}">${r.pl>=0?'+':''}$${r.pl.toFixed(2)}</td>
+          <td class="${r.roi_pct>=0?'positive':'negative'}">${r.roi_pct>=0?'+':''}${r.roi_pct.toFixed(0)}%</td></tr>`).join('')
+        + '</tbody></table>' : '<div class="text-xs text-gray-500">none</div>');
+  }
+}
+
+function chartOpts(extra={}) {
+  return Object.assign({
+    responsive:true,
+    maintainAspectRatio:false,
+    plugins: { legend: { labels: { color:'#9ca3af' } } },
+    scales: {
+      x: { ticks:{ color:'#9ca3af' }, grid:{ color:'#232936' } },
+      y: { ticks:{ color:'#9ca3af' }, grid:{ color:'#232936' } }
+    }
+  }, extra);
+}
+
+// ===== TAB 3: Strategies =====
+// Data-driven promote/demote — require minimum settled sample for any badge.
+const MIN_SAMPLE_FOR_BADGE = 30;
+
+function strategyBadge(s) {
+  const n = Number(s.picks || 0);
+  if (n < MIN_SAMPLE_FOR_BADGE) {
+    return `<span class="pill pill-insuf" title="Need ${MIN_SAMPLE_FOR_BADGE}+ settled picks before promote/demote (have ${n})">—</span>`;
+  }
+  const hr = Number(s.hit_rate || 0);
+  const roi = Number(s.roi || 0);
+  if (hr > 60 && roi > 5) {
+    return '<span class="pill pill-promote" title="n>=30, hit rate >60%, ROI >+5%">PROMOTE</span>';
+  }
+  if (hr < 40 && roi < -10) {
+    return '<span class="pill pill-demote" title="n>=30, hit rate <40%, ROI <-10%">DEMOTE</span>';
+  }
+  return '<span class="pill pill-insuf">—</span>';
+}
+
+let STRAT_FILTER = 'active';
+function renderStrategies() {
+  const all = DATA.strategies || [];
+  const isActive = s => (s.status || '').toUpperCase() === 'ACTIVE';
+  const active   = all.filter(isActive);
+  const archived = all.filter(s => !isActive(s));
+
+  // Header count
+  const cnt = document.getElementById('strat-count');
+  if (cnt) cnt.textContent = `${active.length} active · ${archived.length} archived`;
+
+  // Active set label (dynamic from Notion, not hardcoded)
+  const setEl = document.getElementById('strat-active-set');
+  if (setEl) {
+    if (active.length === 0) {
+      setEl.textContent = '— (no strategies marked Active in Notion)';
+    } else {
+      const names = active.map(s => s.name).sort();
+      setEl.textContent = names.join(' · ');
+    }
+  }
+
+  // Pick rows based on filter
+  let rows;
+  if (STRAT_FILTER === 'active') rows = active;
+  else if (STRAT_FILTER === 'archived') rows = archived;
+  else rows = all;
+
+  // Sort: ACTIVE first when showing 'all', then by picks desc (fire history),
+  // then by ROI desc as tiebreaker.
+  rows = [...rows].sort((a, b) => {
+    if (STRAT_FILTER === 'all') {
+      if (isActive(a) !== isActive(b)) return isActive(a) ? -1 : 1;
+    }
+    if ((b.picks || 0) !== (a.picks || 0)) return (b.picks || 0) - (a.picks || 0);
+    return (b.roi || 0) - (a.roi || 0);
+  });
+
+  const html = rows.map(s => {
+    const dim = isActive(s) ? '' : 'opacity-50';
+    const statusPill = isActive(s)
+      ? '<span class="pill" style="background:rgba(74,222,128,0.15);color:#4ade80;font-size:10px">ACTIVE</span>'
+      : '<span class="pill" style="background:rgba(148,163,184,0.12);color:#94a3b8;font-size:10px">ARCHIVED</span>';
+    // L10 cells (new)
+    const l10n = s.l10_picks || 0;
+    const l10WL = l10n > 0 ? `${s.l10_won}-${s.l10_lost}` : '—';
+    const l10HR = l10n >= 3 ? fmtPct(s.l10_hit_rate, 0) : '—';
+    const l10Net = l10n > 0 ? fmtMoney(s.l10_net) : '—';
+    const l10NetCls = (s.l10_net > 0) ? 'positive' : (s.l10_net < 0) ? 'negative' : 'text-gray-500';
+    return `<tr class="${dim}">
+      <td>${escapeHtml(s.name)} ${strategyBadge(s)}</td>
+      <td>${s.picks || 0}</td>
+      <td>${s.won || 0}-${s.lost || 0}</td>
+      <td>${fmtPct(s.hit_rate, 0)}</td>
+      <td class="${s.net>0?'positive':s.net<0?'negative':''}">${fmtMoney(s.net)}</td>
+      <td class="${s.roi>0?'positive':s.roi<0?'negative':''}">${fmtPct(s.roi, 0)}</td>
+      <td class="text-xs">${l10WL}</td>
+      <td class="text-xs">${l10HR}</td>
+      <td class="text-xs ${l10NetCls}">${l10Net}</td>
+      <td>${statusPill}</td>
+      <td class="text-xs text-gray-500">${escapeHtml(s.last_fired || '')}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('strat-table').innerHTML =
+    '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit %</th><th>Net</th><th>ROI</th>'
+    + '<th title="Last 10 settled picks">L10 W-L</th><th>L10 Hit%</th><th>L10 Net</th>'
+    + '<th>Status</th><th>Last fired</th></tr></thead><tbody>'
+    + (html || '<tr><td colspan="11" class="text-gray-500 italic">No strategies match the filter.</td></tr>')
+    + '</tbody></table>';
+}
+
+document.querySelectorAll('.strat-toggle').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.strat-toggle').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    STRAT_FILTER = b.dataset.show;
+    renderStrategies();
+  });
+});
+
+// ===== TAB 4: Journal =====
+let JOURNAL_TYPE = 'all';
+function _buildJournalTypePills() {
+  const wrap = document.getElementById('journal-type-pills');
+  if (!wrap) return;
+  const types = Array.from(new Set((DATA.journal || []).map(j => j.type || '').filter(Boolean))).sort();
+  // Keep the "All" button, append per-type
+  wrap.innerHTML = `<button class="tab-btn jtype-toggle ${JOURNAL_TYPE==='all'?'active':''}" data-type="all">All (${(DATA.journal||[]).length})</button>` +
+    types.map(t => {
+      const n = (DATA.journal||[]).filter(j => j.type === t).length;
+      return `<button class="tab-btn jtype-toggle ${JOURNAL_TYPE===t?'active':''}" data-type="${escapeHtml(t)}">${escapeHtml(t)} (${n})</button>`;
+    }).join('');
+  wrap.querySelectorAll('.jtype-toggle').forEach(b => {
+    b.addEventListener('click', () => {
+      JOURNAL_TYPE = b.dataset.type;
+      _buildJournalTypePills();
+      renderJournal();
+    });
+  });
+}
+
+function renderJournal() {
+  const list = document.getElementById('journal-list');
+  const filter = (document.getElementById('journal-filter').value || '').toLowerCase();
+  let items = (DATA.journal || []);
+  if (JOURNAL_TYPE !== 'all') items = items.filter(j => j.type === JOURNAL_TYPE);
+  if (filter) items = items.filter(j => (j.title+j.outcome+j.what_worked+j.what_failed+j.lessons).toLowerCase().includes(filter));
+
+  const countEl = document.getElementById('journal-count');
+  if (countEl) countEl.textContent = `${items.length} entr${items.length===1?'y':'ies'}`;
+
+  if (items.length === 0) {
+    list.innerHTML = `<div class="empty-state mt-4">
+      <div class="empty-state-title">No journal entries match</div>
+      <div class="empty-state-hint">Adjust the type filter above or clear the search to see all ${(DATA.journal||[]).length} entries.</div>
+    </div>`;
+    return;
+  }
+  const TYPE_COLOR = {
+    'Pick Postmortem':         '#60a5fa',
+    'Daily Reflection':        '#a78bfa',
+    'System Change':           '#fbbf24',
+    'Self-Correction':         '#f472b6',
+    'Bankroll Reconciliation': '#34d399',
+  };
+  list.innerHTML = items.map(j => {
+    const color = TYPE_COLOR[j.type] || '#9ca3af';
+    return `<details class="mb-2 card p-3" style="border-left:3px solid ${color}">
+      <summary class="text-sm text-gray-200 cursor-pointer">
+        <span class="text-yellow-300 mr-2">${fmtDateShort(j.date)}</span>
+        <span class="pill" style="background:rgba(148,163,184,0.12);color:${color};font-size:10px">${escapeHtml(j.type)}</span>
+        <span class="ml-2">${escapeHtml(j.title)}</span>
+        ${j.outcome ? '<span class="text-gray-400 ml-2">· '+escapeHtml(j.outcome)+'</span>' : ''}
+      </summary>
+      <div class="text-xs text-gray-400 mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div><b class="text-green-400">What Worked:</b><div class="mt-1">${escapeHtml(j.what_worked)||'<i class="text-gray-600">—</i>'}</div></div>
+        <div><b class="text-red-400">What Failed:</b><div class="mt-1">${escapeHtml(j.what_failed)||'<i class="text-gray-600">—</i>'}</div></div>
+        <div><b class="text-blue-300">Lessons:</b><div class="mt-1">${escapeHtml(j.lessons)||'<i class="text-gray-600">—</i>'}</div></div>
+        <div><b class="text-purple-300">Strategy Adj:</b><div class="mt-1">${escapeHtml(j.strategy_adj)||'<i class="text-gray-600">—</i>'} ${j.calibration_delta!==null?'<br>Δ '+(j.calibration_delta>=0?'+':'')+j.calibration_delta:''}</div></div>
+      </div>
+    </details>`;
+  }).join('');
+}
+document.getElementById('journal-filter').addEventListener('input', renderJournal);
+_buildJournalTypePills();
+
+// ===== TAB 5: Calibration =====
+function renderCalibration() {
+  const bins = DATA.calib_bins.filter(b => b.n > 0);
+  // Scatter: predicted vs actual
+  new Chart(document.getElementById('chart-calib'), {
+    type:'scatter',
+    data: {
+      datasets: [
+        {
+          label:'Buckets (size = n picks)',
+          data: bins.map(b => ({ x: b.predicted_mid, y: b.actual_hit, r: Math.max(4, Math.sqrt(b.n)*3) })),
+          backgroundColor:'#60a5fa',
+        },
+        {
+          label:'Perfect calibration (y=x)',
+          data: [{x:0,y:0},{x:100,y:100}],
+          type:'line',
+          borderColor:'#4ade80', borderDash:[4,4], pointRadius:0, fill:false, tension:0
+        }
+      ]
+    },
+    options: Object.assign(chartOpts(), {
+      scales:{
+        x:{ title:{display:true,text:'Predicted prob %',color:'#9ca3af'}, min:0, max:100, ticks:{color:'#9ca3af'}, grid:{color:'#232936'} },
+        y:{ title:{display:true,text:'Actual hit %',color:'#9ca3af'}, min:0, max:100, ticks:{color:'#9ca3af'}, grid:{color:'#232936'} }
+      }
+    })
+  });
+  new Chart(document.getElementById('chart-calib-hist'), {
+    type:'bar',
+    data: {
+      labels: bins.map(b => b.predicted_mid + '%'),
+      datasets:[{
+        label:'Δ (actual − predicted)',
+        data: bins.map(b => b.delta),
+        backgroundColor: bins.map(b => b.delta>=0?'#4ade80':'#f87171')
+      }]
+    },
+    options: chartOpts()
+  });
+  // Per-strategy table
+  const rows = (DATA.strat_calib||[]).map(r => `
+    <tr>
+      <td>${escapeHtml(r.strategy)}</td>
+      <td>${r.n}</td>
+      <td>${r.predicted_avg.toFixed(0)}%</td>
+      <td>${r.actual_hit.toFixed(0)}%</td>
+      <td class="${r.delta>=0?'positive':'negative'}">${r.delta>=0?'+':''}${r.delta.toFixed(0)} pp</td>
+    </tr>`).join('');
+  document.getElementById('strat-calib-table').innerHTML = rows
+    ? '<table><thead><tr><th>Strategy</th><th>n</th><th>Avg predicted</th><th>Actual hit</th><th>Delta</th></tr></thead><tbody>' + rows + '</tbody></table>'
+    : '<div class="text-sm text-gray-500 italic">No calibration pairs yet. Calibration requires settled picks with true_prob or implied odds.</div>';
+}
+
+// ===== TAB 6: Settings =====
+function renderTelegramTab() {
+  const tg = DATA.telegram || {};
+  // Status pills
+  const set = (id, txt, cls) => { const el = document.getElementById(id); if (el) { el.textContent = txt; if (cls) el.className = cls; } };
+  set('tg-channel-id', tg.channel_id || '—', 'text-white');
+  const listenerOK = !!tg.listener_running;
+  set('tg-listener-state',
+      listenerOK ? `✓ running (PID ${tg.listener_pid || '?'})` : '✗ stopped',
+      'font-semibold ' + (listenerOK ? 'positive' : 'negative'));
+  const tunnelOK = !!tg.tunnel_running;
+  set('tg-tunnel-state', tunnelOK ? '✓ running' : '✗ stopped',
+      'font-semibold ' + (tunnelOK ? 'positive' : 'negative'));
+  // Last log line
+  set('tg-last-msg', tg.listener_last_log_line || '—', 'text-gray-300 text-xs');
+  // Last poll: derive from state file timestamp if available
+  set('tg-last-poll', tg.state_file && tg.state_file.last_update_id != null
+      ? `acked up to update_id ${tg.state_file.last_update_id}`
+      : '—',
+      'text-gray-300');
+
+  // Activity log
+  const logEl = document.getElementById('tg-activity-log');
+  if (logEl) {
+    const lines = tg.recent_log || [];
+    logEl.textContent = lines.length ? lines.join('\n') : '(no recent activity)';
+  }
+
+  // Public URL section
+  const url = DATA.public_url || '';
+  const urlEl = document.getElementById('tg-public-url');
+  if (urlEl) urlEl.textContent = url || '(tunnel offline)';
+  const copyBtn = document.getElementById('tg-copy-url');
+  if (copyBtn && url) {
+    copyBtn.onclick = () => {
+      navigator.clipboard.writeText(url).then(() => {
+        copyBtn.textContent = 'copied ✓';
+        setTimeout(() => copyBtn.textContent = 'copy', 1500);
+      });
+    };
+  }
+
+  // Compose: generate curl + PowerShell snippets (no live send — safer for public dashboard)
+  const txtEl = document.getElementById('tg-compose-text');
+  const outEl = document.getElementById('tg-compose-output');
+  const hintEl = document.getElementById('tg-compose-hint');
+  const curlBtn = document.getElementById('tg-gen-curl');
+  const psBtn = document.getElementById('tg-gen-ps');
+  function bashEscape(s) { return s.replace(/'/g, "'\\''"); }
+  function psEscape(s) { return s.replace(/'/g, "''"); }
+  if (curlBtn) curlBtn.onclick = () => {
+    const text = (txtEl.value || '').trim();
+    if (!text) { hintEl.textContent = 'Type a message first.'; return; }
+    hintEl.textContent = 'Copy + paste in bash. Token loads from local .env.';
+    outEl.classList.remove('hidden');
+    outEl.textContent = `# Loads token from .env, sends to your channel\nsource .env && curl -s -X POST \\\n  "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \\\n  -d "chat_id=$TELEGRAM_CHAT_ID" \\\n  --data-urlencode "text=${bashEscape(text)}"`;
+  };
+  if (psBtn) psBtn.onclick = () => {
+    const text = (txtEl.value || '').trim();
+    if (!text) { hintEl.textContent = 'Type a message first.'; return; }
+    hintEl.textContent = 'Copy + paste in PowerShell (from project root).';
+    outEl.classList.remove('hidden');
+    outEl.textContent = `python lib\\telegram.py '${psEscape(text)}'`;
+  };
+}
+
+function renderSettings() {
+  document.getElementById('settings-bankroll').innerHTML = `
+    <div>LIVE: <span class="text-white">${fmtMoney(DATA.bankroll.live)}</span></div>
+    <div>Peak: ${fmtMoney(DATA.bankroll.peak)}</div>
+    <div>Drawdown: ${DATA.bankroll.drawdown_pct.toFixed(1)}% from peak</div>
+    <div>PAPER: <span class="text-white">${fmtMoney(DATA.bankroll.paper)}</span></div>
+    <div>LIVE tier: 1u=$3 · 5u daily cap ($15)</div>
+    <div>PAPER tier: 1u=$5 · 20u daily cap ($100)</div>
+    <div>HARD_STOP: -5u in single day</div>
+    <div>DRAWDOWN breaker: -25% from peak</div>
+  `;
+  const tasks = DATA.wts_tasks || [];
+  document.getElementById('settings-tasks').innerHTML = tasks.length
+    ? '<table><thead><tr><th>Task</th><th>State</th><th>Last run</th><th>Last result</th><th>Next run</th><th>Wake</th></tr></thead><tbody>' +
+      tasks.map(t => `<tr>
+        <td>${escapeHtml(t.Name||'')}</td>
+        <td>${escapeHtml(t.State||'')}</td>
+        <td class="text-xs">${escapeHtml(t.LastRun ? fmtETTime(t.LastRun, true) : '—')}</td>
+        <td>${t.LastResult===0?'<span class="positive">0 (ok)</span>':escapeHtml(String(t.LastResult||'—'))}</td>
+        <td class="text-xs">${escapeHtml(t.NextRun ? fmtETTime(t.NextRun, true) : '—')}</td>
+        <td>${t.WakeToRun?'<span class="positive">✓</span>':'<span class="negative">✗</span>'}</td>
+      </tr>`).join('') + '</tbody></table>'
+    : '<div class="text-sm text-gray-500 italic">No BettingOS WTS tasks found.</div>';
+  // Public URL section
+  const urlEl = document.getElementById('public-url');
+  const hintEl = document.getElementById('public-url-hint');
+  if (urlEl) {
+    if (DATA.public_url) {
+      urlEl.textContent = DATA.public_url;
+      urlEl.href = DATA.public_url;
+      urlEl.onclick = (e) => { e.preventDefault(); window.open(DATA.public_url, '_blank'); };
+      urlEl.style.cursor = 'pointer';
+      if (hintEl) hintEl.innerHTML = 'Cloudflare quick-tunnel (no auth, rotates on tunnel restart). To stop: kill the <code class="text-blue-300">BettingOS - dashboard-tunnel</code> WTS task.';
+    } else {
+      urlEl.textContent = 'tunnel offline';
+      urlEl.style.color = '#94a3b8';
+      if (hintEl) hintEl.innerHTML = 'Start with <code class="text-blue-300">scripts\\run-dashboard-tunnel.bat</code> or the <code class="text-blue-300">BettingOS - dashboard-tunnel</code> WTS task. URL will appear here on next dashboard refresh.';
+    }
+  }
+  const copyBtn = document.getElementById('copy-public-url');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      if (!DATA.public_url) return;
+      navigator.clipboard.writeText(DATA.public_url);
+      copyBtn.textContent = 'copied';
+      setTimeout(() => { copyBtn.textContent = 'copy'; }, 1500);
+    });
+  }
+  document.getElementById('settings-bot').textContent = '8612150588';
+  document.getElementById('settings-refresh').textContent = fmtETTime(DATA.generated_at, true);
+}
+
+// ===== LIVE/PAPER mini cards =====
+function renderLivePaperCards() {
+  const lps = DATA.live_paper_split || {live:{}, paper:{}};
+  const l = lps.live || {}; const p = lps.paper || {};
+  const liveRoiSign = (l.roi_pct||0) >= 0 ? '+' : '';
+  const paperRoiSign = (p.roi_pct||0) >= 0 ? '+' : '';
+  const liveRoiCls  = (l.roi_pct||0) >= 0 ? 'positive' : 'negative';
+  const paperRoiCls = (p.roi_pct||0) >= 0 ? 'positive' : 'negative';
+  const liveRoi = document.getElementById('lp-live-roi');
+  const paperRoi = document.getElementById('lp-paper-roi');
+  if (liveRoi) liveRoi.innerHTML = `<span class="${liveRoiCls}">ROI ${liveRoiSign}${(l.roi_pct||0).toFixed(1)}%</span>`;
+  if (paperRoi) paperRoi.innerHTML = `<span class="${paperRoiCls}">ROI ${paperRoiSign}${(p.roi_pct||0).toFixed(1)}%</span>`;
+  const liveDet = document.getElementById('lp-live-detail');
+  const paperDet = document.getElementById('lp-paper-detail');
+  if (liveDet) liveDet.innerHTML = `${l.n||0} picks settled · ${l.won||0}W ${l.lost||0}L · <span class="${l.pl>=0?'positive':'negative'}">${l.pl>=0?'+':''}$${(l.pl||0).toFixed(2)}</span> net`;
+  if (paperDet) paperDet.innerHTML = `${p.n||0} picks settled · ${p.won||0}W ${p.lost||0}L · <span class="${p.pl>=0?'positive':'negative'}">${p.pl>=0?'+':''}$${(p.pl||0).toFixed(2)}</span> net`;
+}
+
+// ===== TAB: Picks (filterable by Account × Status × text) =====
+let PICKS_ACCT = 'ALL';
+let PICKS_STATUS = 'ALL';
+
+// Classify a Notion result string as OPEN vs SETTLED.
+// OPEN = anything Pending. SETTLED = Won/Lost/Push/Void.
+function _isSettled(p) {
+  const r = (p.result || '').trim();
+  return r === 'Won' || r === 'Lost' || r === 'Push' || r === 'Void';
+}
+
+function renderPicksTab() {
+  const filter = (document.getElementById('picks-filter').value || '').toLowerCase();
+  const all = (DATA.picks || []).slice();
+  all.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+
+  function _accountOk(p) {
+    return PICKS_ACCT === 'ALL' || (p.account||'').toUpperCase() === PICKS_ACCT;
+  }
+  function _statusOk(p) {
+    if (PICKS_STATUS === 'ALL') return true;
+    return PICKS_STATUS === 'SETTLED' ? _isSettled(p) : !_isSettled(p);
+  }
+  const rows = all.filter(p => {
+    if (!_accountOk(p)) return false;
+    if (!_statusOk(p)) return false;
+    if (filter && !((p.pick+' '+p.sport+' '+p.strategy+' '+p.tier).toLowerCase().includes(filter))) return false;
+    return true;
+  });
+
+  // Account counts (apply current Status filter so the counts reflect what user sees)
+  function _countAccount(acct) {
+    return all.filter(p => (acct === 'ALL' || (p.account||'').toUpperCase() === acct) && _statusOk(p)).length;
+  }
+  document.querySelectorAll('.account-toggle').forEach(b => {
+    const a = b.dataset.account;
+    const base = a === 'ALL' ? 'All' : a;
+    b.textContent = `${base} (${_countAccount(a)})`;
+  });
+  // Status counts (apply current Account filter)
+  function _countStatus(st) {
+    return all.filter(p => _accountOk(p) && (st === 'ALL' || (st === 'SETTLED' ? _isSettled(p) : !_isSettled(p)))).length;
+  }
+  document.querySelectorAll('.status-toggle').forEach(b => {
+    const s = b.dataset.status;
+    const base = s === 'ALL' ? 'All' : (s === 'OPEN' ? 'Open' : 'Settled');
+    b.textContent = `${base} (${_countStatus(s)})`;
+  });
+
+  const wrap = document.getElementById('picks-table-wrap');
+  if (!rows.length) {
+    const totalPicks = (DATA.picks || []).length;
+    wrap.innerHTML = `<div class="empty-state">
+      <div class="empty-state-title">No picks match these filters</div>
+      <div class="empty-state-hint">
+        ${totalPicks === 0
+          ? "There are no picks in Notion yet. The first PAPER picks will write tomorrow at 12 PM (noon-lock)."
+          : `Try clearing the text filter or selecting a different Account/Status. ${totalPicks} picks total available.`}
+      </div>
+    </div>`;
+    return;
+  }
+
+  // For OPEN-only view, the P/L column is meaningless and Result is always Pending.
+  // Swap to a compacted column set when status=OPEN.
+  const headerCells = (PICKS_STATUS === 'OPEN')
+    ? '<th>Date</th><th>Account</th><th>Sport</th><th>Pick</th><th>Tier</th><th>Strategy</th><th>Odds</th><th>Stake</th><th>Status</th>'
+    : '<th>Date</th><th>Account</th><th>Sport</th><th>Pick</th><th>Tier</th><th>Odds</th><th>Stake</th><th>Result</th><th>P/L</th>';
+
+  wrap.innerHTML = '<div class="text-xs text-gray-500 mb-2">Showing '+rows.length+' of '+all.length+'</div>' +
+    '<div class="table-wrap"><table><thead><tr>' + headerCells + '</tr></thead><tbody>' +
+    rows.slice(0, 200).map(p => {
+      const acctCls = (p.account||'').toUpperCase() === 'LIVE' ? 'pill-promote' : 'pill-insuf';
+      const acctStyle = (p.account||'').toUpperCase() === 'PAPER' ? ' style="background:rgba(96,165,250,0.15);color:#60a5fa"' : '';
+      if (PICKS_STATUS === 'OPEN') {
+        return `<tr>
+          <td class="text-yellow-300 text-xs">${fmtDateShort(p.date)}</td>
+          <td><span class="pill ${acctCls}"${acctStyle}>${escapeHtml(p.account||'—')}</span></td>
+          <td>${escapeHtml(p.sport)}</td>
+          <td>${escapeHtml(p.pick)}</td>
+          <td>${escapeHtml(p.tier)}</td>
+          <td class="text-xs text-gray-400">${escapeHtml(p.strategy||'')}</td>
+          <td>${p.odds>0?'+':''}${p.odds}</td>
+          <td>${fmtMoney(p.stake)}</td>
+          <td><span class="pill pill-pending">${escapeHtml(p.result||'Pending')}</span></td>
+        </tr>`;
+      }
+      return `<tr>
+        <td class="text-yellow-300 text-xs">${fmtDateShort(p.date)}</td>
+        <td><span class="pill ${acctCls}"${acctStyle}>${escapeHtml(p.account||'—')}</span></td>
+        <td>${escapeHtml(p.sport)}</td>
+        <td>${escapeHtml(p.pick)}</td>
+        <td>${escapeHtml(p.tier)}</td>
+        <td>${p.odds>0?'+':''}${p.odds}</td>
+        <td>${fmtMoney(p.stake)}</td>
+        <td>${pill(p.result)}</td>
+        <td class="${p.pl>0?'positive':p.pl<0?'negative':''}">${fmtMoney(p.pl)}</td>
+      </tr>`;
+    }).join('') +
+    '</tbody></table></div>' +
+    (rows.length > 200 ? '<div class="text-xs text-gray-500 mt-2">Showing first 200. Use filter to narrow.</div>' : '');
+}
+
+// Account toggle
+document.querySelectorAll('.account-toggle').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.account-toggle').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    PICKS_ACCT = b.dataset.account;
+    renderPicksTab();
+  });
+});
+// Status toggle
+document.querySelectorAll('.status-toggle').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.status-toggle').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    PICKS_STATUS = b.dataset.status;
+    renderPicksTab();
+  });
+});
+document.getElementById('picks-filter').addEventListener('input', renderPicksTab);
+
+// ===== TAB: Last 7 Days =====
+function renderLast7d() {
+  const w = DATA.last_7d;
+  if (!w) return;
+  document.getElementById('last7d-window').textContent = fmtDateShort(w.window_start) + ' → ' + fmtDateShort(w.window_end);
+  if (w.insufficient_data) {
+    document.getElementById('last7d-summary').innerHTML =
+      '<div class="col-span-3 text-yellow-400 italic">Less than 7 days of pick history. Building data...</div>';
+  } else {
+    document.getElementById('last7d-summary').innerHTML = `
+      <div class="card p-2"><div class="text-gray-400 uppercase tracking-wider">Total picks</div><div class="text-lg text-white">${w.total_picks}</div><div class="text-xs text-gray-500">LIVE ${w.live_count} · PAPER ${w.paper_count}</div></div>
+      <div class="card p-2"><div class="text-gray-400 uppercase tracking-wider">Hit rate</div><div class="text-lg text-white">${w.hit_rate.toFixed(1)}%</div><div class="text-xs text-gray-500">${w.total_won}-${w.total_lost} settled</div></div>
+      <div class="card p-2"><div class="text-gray-400 uppercase tracking-wider">Net P/L</div><div class="text-lg ${w.total_pl>=0?'positive':'negative'}">${w.total_pl>=0?'+':''}$${w.total_pl.toFixed(2)}</div><div class="text-xs ${w.roi_pct>=0?'positive':'negative'}">ROI ${w.roi_pct>=0?'+':''}${w.roi_pct.toFixed(1)}%</div></div>
+      <div class="card p-2 col-span-3 flex justify-between text-xs"><span>Best day: <span class="positive">${w.best_day?w.best_day.date+' (+$'+w.best_day.pl.toFixed(2)+')':'—'}</span></span><span>Worst day: <span class="negative">${w.worst_day?w.worst_day.date+' ($'+w.worst_day.pl.toFixed(2)+')':'—'}</span></span></div>
+    `;
+  }
+  // Daily P/L bars
+  new Chart(document.getElementById('chart-7d-pl'), {
+    type: 'bar',
+    data: {
+      labels: w.days_asc.map(d => d.short),
+      datasets: [{
+        label: 'Net P/L $',
+        data: w.days_asc.map(d => d.pl),
+        backgroundColor: w.days_asc.map(d => d.pl >= 0 ? '#4ade80' : '#f87171'),
+      }]
+    },
+    options: chartOpts()
+  });
+  // Sport pie
+  new Chart(document.getElementById('chart-7d-sport'), {
+    type: 'doughnut',
+    data: {
+      labels: w.sport_dist.map(s => s.sport),
+      datasets: [{
+        data: w.sport_dist.map(s => s.n),
+        backgroundColor: ['#4ade80','#60a5fa','#fbbf24','#f472b6','#a78bfa','#34d399','#fb923c'],
+      }]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ labels:{ color:'#9ca3af', font:{size:10} }, position:'bottom' } } }
+  });
+  // Rolling bankroll (interpolate gaps with previous value)
+  let prev = null;
+  const series = w.bankroll_series.map(b => {
+    if (b.bankroll !== null) prev = b.bankroll;
+    return { date: b.date, bankroll: prev };
+  });
+  new Chart(document.getElementById('chart-7d-bankroll'), {
+    type: 'line',
+    data: {
+      labels: series.map(s => s.date),
+      datasets: [{ label:'Bankroll $', data: series.map(s => s.bankroll),
+        borderColor:'#4ade80', backgroundColor:'rgba(74,222,128,0.1)', tension:0.2, fill:true,
+        spanGaps:true }]
+    },
+    options: chartOpts()
+  });
+  // Per-day cards
+  const cardsEl = document.getElementById('last7d-cards');
+  cardsEl.innerHTML = w.days_desc.map(d => {
+    const plCls = d.pl >= 0 ? 'positive' : 'negative';
+    const plSign = d.pl >= 0 ? '+' : '';
+    const top = d.top_pick ? `<div class="text-xs text-gray-400 mt-1">Top: <span class="text-white">${escapeHtml(d.top_pick).slice(0,40)}</span> <span class="positive">${d.top_pl>=0?'+':''}$${d.top_pl.toFixed(2)}</span></div>` : '';
+    const bot = d.bot_pick && d.bot_pl < 0 ? `<div class="text-xs text-gray-400">Bottom: <span class="text-white">${escapeHtml(d.bot_pick).slice(0,40)}</span> <span class="negative">$${d.bot_pl.toFixed(2)}</span></div>` : '';
+    return `<div class="card p-3">
+      <div class="flex justify-between items-baseline">
+        <div><div class="text-xs text-gray-500">${escapeHtml(d.dow)}</div><div class="text-lg font-bold text-white">${escapeHtml(d.short)}</div></div>
+        <div class="text-right"><div class="text-lg ${plCls}">${plSign}$${d.pl.toFixed(2)}</div><div class="text-xs text-gray-400">${d.hit_rate.toFixed(0)}% hit</div></div>
+      </div>
+      <div class="text-xs text-gray-400 mt-2">${d.n_total} picks · LIVE ${d.n_live} · PAPER ${d.n_paper}</div>
+      <div class="text-xs text-gray-500">${d.won}W ${d.lost}L${d.push?' '+d.push+'P':''}</div>
+      ${top}${bot}
+    </div>`;
+  }).join('');
+}
+
+// ===== Perf panel LIVE/PAPER toggle =====
+let PERF_ACCT = 'ALL';
+function _filterPerfData() {
+  const pp = DATA.perf_panel; if (!pp) return null;
+  if (PERF_ACCT === 'ALL') return pp;
+  // Recompute from picks filtered by account
+  const filtered = (DATA.picks||[]).filter(p =>
+    (p.account||'').toUpperCase() === PERF_ACCT &&
+    ['Won','Lost','Push','Void'].includes(p.result)
+  );
+  const agg = {};
+  filtered.forEach(p => {
+    const k = p.strategy || '(none)';
+    if (!agg[k]) agg[k] = {n:0,won:0,lost:0,stake:0,pl:0};
+    agg[k].n++;
+    if (p.result==='Won') agg[k].won++;
+    if (p.result==='Lost') agg[k].lost++;
+    agg[k].stake += Number(p.stake||0);
+    agg[k].pl += Number(p.pl||0);
+  });
+  const by_strategy = Object.entries(agg).map(([name,g]) => ({
+    name, n:g.n, won:g.won, lost:g.lost,
+    stake:Math.round(g.stake*100)/100, pl:Math.round(g.pl*100)/100,
+    hit_rate: g.n ? (g.won/g.n*100) : 0,
+    roi_pct: g.stake ? (g.pl/g.stake*100) : 0,
+  })).sort((a,b) => b.pl-a.pl);
+  return {
+    ...pp,
+    total_settled: filtered.length,
+    total_stake: Math.round(filtered.reduce((a,p)=>a+Number(p.stake||0),0)*100)/100,
+    total_net_pl: Math.round(filtered.reduce((a,p)=>a+Number(p.pl||0),0)*100)/100,
+    total_roi_pct: (() => {
+      const s = filtered.reduce((a,p)=>a+Number(p.stake||0),0);
+      const pl = filtered.reduce((a,p)=>a+Number(p.pl||0),0);
+      return s ? Math.round(pl/s*1000)/10 : 0;
+    })(),
+    by_strategy,
+    what_worked: by_strategy.filter(r => r.pl > 0),
+    what_failed: by_strategy.filter(r => r.pl < 0),
+  };
+}
+function renderPerfPanelToggleable() {
+  const pp = _filterPerfData(); if (!pp) return;
+  const summary = document.getElementById('perf-summary');
+  if (summary) {
+    summary.innerHTML = `<span class="text-xs text-gray-400">[${PERF_ACCT}]</span> <b>${pp.total_settled}</b> settled · <b>$${pp.total_stake.toFixed(2)}</b> staked · ` +
+      `<b class="${pp.total_net_pl>=0?'positive':'negative'}">${pp.total_net_pl>=0?'+':''}$${pp.total_net_pl.toFixed(2)}</b> net · ` +
+      `<b class="${pp.total_roi_pct>=0?'positive':'negative'}">${pp.total_roi_pct>=0?'+':''}${pp.total_roi_pct.toFixed(1)}%</b> ROI`;
+  }
+  const worked = document.getElementById('perf-worked');
+  if (worked) {
+    if (!pp.what_worked.length) worked.innerHTML = '<div class="text-xs text-gray-500 italic">No winning strategies for this filter.</div>';
+    else worked.innerHTML = '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit%</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+      pp.what_worked.slice(0,8).map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td><td>${r.hit_rate.toFixed(0)}%</td><td class="positive">$${r.pl.toFixed(2)}</td><td class="positive">+${r.roi_pct.toFixed(0)}%</td></tr>`).join('') + '</tbody></table>';
+  }
+  const failed = document.getElementById('perf-failed');
+  if (failed) {
+    if (!pp.what_failed.length) failed.innerHTML = '<div class="text-xs text-gray-500 italic">No losing strategies for this filter.</div>';
+    else failed.innerHTML = '<table><thead><tr><th>Strategy</th><th>n</th><th>W-L</th><th>Hit%</th><th>Net</th><th>ROI</th></tr></thead><tbody>' +
+      pp.what_failed.slice(0,8).map(r => `<tr><td>${escapeHtml(r.name)}</td><td>${r.n}</td><td>${r.won}-${r.lost}</td><td>${r.hit_rate.toFixed(0)}%</td><td class="negative">$${r.pl.toFixed(2)}</td><td class="negative">${r.roi_pct.toFixed(0)}%</td></tr>`).join('') + '</tbody></table>';
+  }
+  // Update toggle labels with counts
+  const liveN = (DATA.live_paper_split||{}).live?.n || 0;
+  const paperN = (DATA.live_paper_split||{}).paper?.n || 0;
+  document.querySelectorAll('.perf-toggle').forEach(b => {
+    const a = b.dataset.acct;
+    if (a === 'ALL') b.textContent = `ALL (${liveN+paperN})`;
+    else if (a === 'LIVE') b.textContent = `LIVE (${liveN})`;
+    else if (a === 'PAPER') b.textContent = `PAPER (${paperN})`;
+  });
+}
+document.querySelectorAll('.perf-toggle').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.perf-toggle').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    PERF_ACCT = b.dataset.acct;
+    renderPerfPanelToggleable();
+  });
+});
+
+function renderUpcomingWeek() {
+  const wrap = document.getElementById('upcoming-week-list');
+  const meta = document.getElementById('upcoming-meta');
+  const data = DATA.mlb_week || {by_date: {}, total_games: 0};
+  if (!data.total_games) {
+    wrap.innerHTML = `<div class="empty-state">
+      <div class="empty-state-title">No upcoming MLB games</div>
+      <div class="empty-state-hint">Either the MLB Stats API isn't reachable right now, or it's the off-season.<br>Refresh later or check <code>logs/dashboard-refresh.log</code>.</div>
+    </div>`;
+    meta.textContent = '';
+    return;
+  }
+  const dates = Object.keys(data.by_date).sort();
+  meta.textContent = `${data.total_games} games · ${dates.length} days`;
+  const today = new Date().toISOString().slice(0,10);
+  const html = dates.map(d => {
+    const games = data.by_date[d] || [];
+    const dayLabel = d === today ? `${fmtDateShort(d)} (today)` : fmtDateShort(d);
+    const isToday = d === today;
+    const rows = games.map(g => {
+      const homeP = g.home_pp_name || '<span class="text-gray-500">TBD</span>';
+      const awayP = g.away_pp_name || '<span class="text-gray-500">TBD</span>';
+      const gameTimeET = g.game_time_utc ? fmtETTime(g.game_time_utc) : '';
+      // Park + weather context (only populated for today)
+      let ctxCells = '';
+      if (isToday) {
+        const pf = g.park_hr_factor;
+        const pfStr = pf != null
+          ? `<span class="${pf>1.02?'positive':pf<0.98?'negative':'text-gray-400'}">x${pf.toFixed(2)}</span>`
+          : '<span class="text-gray-600">—</span>';
+        let wxStr = '<span class="text-gray-600">—</span>';
+        if (g.weather_wind || g.weather_temp != null) {
+          const parts = [];
+          if (g.weather_wind) parts.push(`wind ${g.weather_wind}`);
+          if (g.weather_temp != null) parts.push(`${Math.round(g.weather_temp)}°F`);
+          wxStr = `<span class="text-gray-400">${parts.join(' · ')}</span>`;
+        } else if (g.weather_factor != null && g.weather_factor === 1.0 && (g.weather_notes||[]).join('').includes('Retractable')) {
+          wxStr = '<span class="text-gray-500">roof closed</span>';
+        }
+        ctxCells = `<td class="text-xs">${pfStr}</td><td class="text-xs">${wxStr}</td>`;
+      } else {
+        ctxCells = '<td></td><td></td>';
+      }
+      return `<tr>
+        <td class="text-xs text-gray-500">${gameTimeET}</td>
+        <td>${escapeHtml(g.away_team || '?')} @ ${escapeHtml(g.home_team || '?')}</td>
+        <td class="text-xs">${awayP} <span class="text-gray-500">vs</span> ${homeP}</td>
+        <td class="text-xs text-gray-500">${escapeHtml(g.venue || '')}</td>
+        ${ctxCells}
+      </tr>`;
+    }).join('');
+    const ctxHeaders = isToday
+      ? '<th title="Park HR factor — Coors high, Oracle low">Park</th><th title="Today\'s wind direction relative to centerfield + temp at game time">Weather</th>'
+      : '<th></th><th></th>';
+    return `<details class="mb-3" ${isToday ? 'open' : ''}>
+      <summary class="text-sm text-gray-300 cursor-pointer">
+        <span class="text-yellow-300">${dayLabel}</span>
+        <span class="text-xs text-gray-500 ml-2">(${games.length} games)</span>
+      </summary>
+      <table class="mt-2">
+        <thead><tr><th>Time</th><th>Matchup</th><th>Probable Pitchers</th><th>Venue</th>${ctxHeaders}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </details>`;
+  }).join('');
+  wrap.innerHTML = html;
+}
+
+let FORM_STAT = 'hits';
+
+// Each stat option: which player pool to read from, the field to rank by,
+// formatter for the main value, formatter for the sub-line, short label.
+const FORM_STAT_DEFS = {
+  hits: {
+    pool: 'batter', field: 'l10_hits_per_game',
+    label: 'Hits',
+    help: 'Per-game rate over last 10 games. Targets: line 0.5 (over).',
+    main: p => (p.l10_hits_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_hits_total ?? '?'} hits L10`,
+  },
+  hrr: {
+    pool: 'batter', field: 'l10_hrr_per_game',
+    label: 'H+R+RBI',
+    help: 'Per-game H+R+RBI sum. Targets: line 1.5 (over).',
+    main: p => (p.l10_hrr_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_hrr_total ?? '?'} H+R+RBI L10`,
+  },
+  tb: {
+    pool: 'batter', field: 'l10_tb_per_game',
+    label: 'Total Bases',
+    help: 'Per-game TB. Targets: line 1.5 (over).',
+    main: p => (p.l10_tb_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_tb_total ?? '?'} TB L10`,
+  },
+  hr: {
+    pool: 'batter', field: 'l10_hr_per_game',
+    label: 'HR',
+    help: 'Per-game HR rate. Targets: anytime HR (line 0.5).',
+    main: p => (p.l10_hr_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_hr_total ?? '?'} HR L10`,
+  },
+  rbis: {
+    pool: 'batter', field: 'l10_rbis_per_game',
+    label: 'RBI',
+    help: 'Per-game RBI rate. Targets: line 0.5 (over).',
+    main: p => (p.l10_rbis_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_rbis_total ?? '?'} RBI L10`,
+  },
+  runs: {
+    pool: 'batter', field: 'l10_runs_per_game',
+    label: 'Runs',
+    help: 'Per-game runs scored. Targets: line 0.5 (over).',
+    main: p => (p.l10_runs_per_game ?? 0).toFixed(2),
+    sub:  p => `${p.l10_runs_total ?? '?'} runs L10`,
+  },
+  pitcher_ks: {
+    pool: 'pitcher', field: 'last10_per_game',
+    label: 'Pitcher Ks',
+    help: 'K per start over last 10 starts. Targets: PITCHER_STRIKEOUTS line.',
+    main: p => (p.last10_per_game ?? 0).toFixed(1),
+    sub:  p => `${p.last10_total ?? '?'} Ks L10 · statcast x${(p.statcast_factor || 1.0).toFixed(2)}`,
+  },
+  statcast_batter: {
+    pool: 'batter', field: 'statcast_factor',
+    label: 'Hitter Statcast Quality',
+    help: 'xBA + hard-hit% + K% over last 14 days. Lives in [0.85, 1.15].',
+    main: p => `x${(p.statcast_factor || 1.0).toFixed(2)}`,
+    sub:  p => ((p.statcast_notes || []).slice(0, 2).join(' · ') || '—'),
+  },
+  statcast_pitcher: {
+    pool: 'pitcher', field: 'statcast_factor',
+    label: 'Pitcher Statcast Quality',
+    help: 'K/9 + whiff% + velo over last 21 days. Lives in [0.85, 1.15].',
+    main: p => `x${(p.statcast_factor || 1.0).toFixed(2)}`,
+    sub:  p => ((p.statcast_notes || []).slice(0, 2).join(' · ') || '—'),
+  },
+};
+
+function renderPlayerForm() {
+  const data = DATA.player_form || {};
+  const meta = document.getElementById('form-meta');
+  if (meta) {
+    const n = data.total_evaluated || 0;
+    const src = data.source === 'form_discovery'
+      ? `${data.games_today||'?'} games · form-discovery`
+      : 'scout cache (limited)';
+    meta.textContent = n ? `${n} players · ${src}` : 'Run form-discovery: python lib/v2_form_discovery.py';
+  }
+
+  const def = FORM_STAT_DEFS[FORM_STAT] || FORM_STAT_DEFS.hits;
+  const labelHot = document.getElementById('form-stat-label-hot');
+  const labelCold = document.getElementById('form-stat-label-cold');
+  if (labelHot)  labelHot.textContent  = `— ${def.label}`;
+  if (labelCold) labelCold.textContent = `— ${def.label}`;
+  const help = document.getElementById('form-stat-help');
+  if (help) help.textContent = def.help;
+
+  // Pick the player pool (batters or pitchers) and dedupe by name
+  let pool;
+  if (def.pool === 'batter') {
+    pool = [...(data.hot_batters || []), ...(data.cold_batters || [])];
+  } else {
+    pool = [...(data.hot_pitchers || []), ...(data.cold_pitchers || [])];
+  }
+  const seen = new Set();
+  const uniq = pool.filter(p => { const k = p.name; if (seen.has(k)) return false; seen.add(k); return true; });
+
+  // Rank by selected field. Drop entries with missing values from cold side
+  // so we don't show a leaderboard of "no data".
+  const ranked = uniq
+    .filter(p => p[def.field] !== undefined && p[def.field] !== null)
+    .sort((a, b) => (b[def.field] || 0) - (a[def.field] || 0));
+
+  const hot  = ranked.slice(0, 15);
+  const cold = ranked.slice(-15).reverse();
+
+  function row(p, rank) {
+    const mainVal = def.main(p);
+    const subStr  = def.sub(p);
+    const team    = p.team ? `<span class="text-xs text-gray-500 ml-1">${escapeHtml(p.team)}</span>` : '';
+    return `<div class="flex items-center justify-between gap-2 py-1 px-2 hover:bg-gray-800/40 rounded">
+      <div class="flex items-center gap-2 min-w-0 flex-1">
+        <span class="text-xs text-gray-500 w-5 text-right">${rank}.</span>
+        <div class="min-w-0 flex-1">
+          <div class="text-sm text-white truncate">${escapeHtml(p.name)}${team}</div>
+          <div class="text-xs text-gray-400 truncate">${escapeHtml(subStr || '')}</div>
+        </div>
+      </div>
+      <div class="text-sm font-semibold text-white shrink-0">${mainVal}</div>
+    </div>`;
+  }
+
+  function fill(id, list) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (!list || list.length === 0) {
+      el.innerHTML = '<div class="text-xs text-gray-500 italic">No qualifying players</div>';
+    } else {
+      el.innerHTML = list.map((p, i) => row(p, i + 1)).join('');
+    }
+  }
+  fill('form-hot-list',  hot);
+  fill('form-cold-list', cold);
+}
+
+// Wire the dropdown
+const formSelect = document.getElementById('form-stat-select');
+if (formSelect) {
+  formSelect.addEventListener('change', () => {
+    FORM_STAT = formSelect.value;
+    renderPlayerForm();
+  });
+}
+
+function renderGamesToWatch() {
+  const data = DATA.mlb_week || {by_date: {}};
+  const today = new Date().toISOString().slice(0,10);
+  const games = data.by_date[today] || [];
+  const meta = document.getElementById('games-watch-meta');
+  const list = document.getElementById('games-watch-list');
+  if (!list) return;
+  if (meta) meta.textContent = games.length ? `${games.length} games today` : 'no games';
+  if (games.length === 0) {
+    list.innerHTML = '<div class="empty-state"><div class="empty-state-title">No MLB games today</div><div class="empty-state-hint">Off-day or schedule not yet posted.</div></div>';
+    return;
+  }
+
+  // Sort by NRFI probability desc (most interesting research targets first), then time
+  const sortedGames = [...games].sort((a, b) => {
+    const aN = a.nrfi_prob || 0;
+    const bN = b.nrfi_prob || 0;
+    if (bN !== aN) return bN - aN;
+    return (a.game_time_utc || '').localeCompare(b.game_time_utc || '');
+  });
+
+  list.innerHTML = sortedGames.map(g => {
+    const time = g.game_time_utc ? fmtETTime(g.game_time_utc) : '—';
+    const homeP = g.home_pp_name || '<span class="text-gray-500">TBD</span>';
+    const awayP = g.away_pp_name || '<span class="text-gray-500">TBD</span>';
+
+    // ─── Right column: condition chips ───
+    let parkChip = '';
+    if (g.park_hr_factor != null) {
+      const pf = g.park_hr_factor;
+      const cls = pf > 1.02 ? 'positive' : pf < 0.98 ? 'negative' : 'text-gray-400';
+      parkChip = `<span class="text-xs ${cls}" title="Park HR factor (1.00 = neutral)">park x${pf.toFixed(2)}</span>`;
+    }
+    let wxChip = '';
+    if (g.weather_wind || g.weather_temp != null) {
+      const wParts = [];
+      if (g.weather_wind) wParts.push(`wind ${g.weather_wind}`);
+      if (g.weather_temp != null) wParts.push(`${Math.round(g.weather_temp)}°F`);
+      wxChip = `<span class="text-xs text-gray-400">${wParts.join(' · ')}</span>`;
+    } else if (g.weather_factor === 1.0 && (g.weather_notes||[]).join('').includes('Retractable')) {
+      wxChip = '<span class="text-xs text-gray-500">roof closed</span>';
+    }
+    let nrfiChip = '';
+    if (g.nrfi_prob != null) {
+      const cls = g.nrfi_prob >= 60 ? 'positive' : (g.nrfi_prob < 50 ? 'negative' : 'text-gray-400');
+      nrfiChip = `<span class="text-xs ${cls}" title="Engine-estimated probability the 1st inning has 0 runs">NRFI ${g.nrfi_prob.toFixed(1)}%</span>`;
+    }
+
+    // ─── Hot batters per side ───
+    function _hotBatterLine(items, label) {
+      if (!items || items.length === 0) return '';
+      const names = items.map(b => {
+        const tip = b.l10_per_game != null
+          ? `${b.name}: ${b.l10_hits||'?'} hits L10 (avg ${b.l10_per_game.toFixed(2)}/g), statcast x${b.factor}`
+          : b.name;
+        return `<span title="${escapeHtml(tip)}" class="cursor-help">${escapeHtml(b.name)} <span class="text-xs text-gray-500">(x${b.factor})</span></span>`;
+      }).join(', ');
+      return `<div class="text-xs text-gray-400"><span class="text-gray-500">${label}:</span> ${names}</div>`;
+    }
+    const hotLines = [];
+    if (g.hot_away_batters && g.hot_away_batters.length) hotLines.push(_hotBatterLine(g.hot_away_batters, "Hot " + (g.away_team || "away")));
+    if (g.hot_home_batters && g.hot_home_batters.length) hotLines.push(_hotBatterLine(g.hot_home_batters, "Hot " + (g.home_team || "home")));
+
+    // ─── BvP notes ───
+    const bvpLines = (g.bvp_notes || []).map(n =>
+      `<div class="text-xs text-yellow-300/80" title="Career batter-vs-pitcher head-to-head"><span class="text-gray-500">BvP:</span> ${escapeHtml(n)}</div>`
+    );
+
+    const matchupCls = g.nrfi_prob != null && g.nrfi_prob >= 60 ? 'rgba(251,146,60,0.6)'
+                     : g.nrfi_prob != null && g.nrfi_prob < 45 ? 'rgba(248,113,113,0.6)'
+                     : 'rgba(74,222,128,0.4)';
+
+    return `<div class="p-3 rounded border-l-2 hover:bg-gray-800/20 transition" style="border-left-color:${matchupCls}">
+      <div class="flex items-center gap-3 mb-1">
+        <div class="text-xs text-yellow-300 w-20 shrink-0">${time}</div>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm text-white truncate">${escapeHtml(g.away_team || '?')} <span class="text-gray-500">@</span> ${escapeHtml(g.home_team || '?')}</div>
+          <div class="text-xs text-gray-400 truncate">${awayP} <span class="text-gray-600">vs</span> ${homeP}</div>
+        </div>
+        <div class="text-right shrink-0 flex flex-col items-end gap-0.5">
+          ${nrfiChip}
+          ${parkChip}
+          ${wxChip}
+          <div class="text-xs text-gray-600">${escapeHtml(g.venue || '')}</div>
+        </div>
+      </div>
+      ${(hotLines.length || bvpLines.length) ? `<div class="ml-24 mt-1 space-y-0.5">${hotLines.join('')}${bvpLines.join('')}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function renderTopNRFI() {
+  const data = DATA.mlb_week || {by_date: {}};
+  const today = new Date().toISOString().slice(0,10);
+  const games = data.by_date[today] || [];
+  const meta = document.getElementById('nrfi-top-meta');
+  const list = document.getElementById('nrfi-top-list');
+  if (!list) return;
+
+  // ALL games with computed NRFI prob, sorted desc, top 5.
+  // No min_sample filter — thin-sample games are flagged inline so the
+  // ranking matches Games to Watch (same data, same order).
+  const ranked = games
+    .filter(g => g.nrfi_prob != null)
+    .sort((a,b) => (b.nrfi_prob||0) - (a.nrfi_prob||0))
+    .slice(0, 5);
+
+  if (meta) {
+    const playable = ranked.filter(g => g.nrfi_prob >= 60).length;
+    meta.textContent = ranked.length
+      ? `${playable} ≥60% · ${ranked.length} shown · league baseline ~55%`
+      : 'no NRFI data yet';
+  }
+  if (ranked.length === 0) {
+    list.innerHTML = '<div class="text-xs text-gray-500 italic">No NRFI candidates yet — probables may not be confirmed for the slate.</div>';
+    return;
+  }
+
+  list.innerHTML = ranked.map(g => {
+    const time = g.game_time_utc ? fmtETTime(g.game_time_utc) : '—';
+    const prob = g.nrfi_prob;
+    const cls = prob >= 65 ? 'positive' : prob >= 60 ? 'text-orange-400' : prob >= 55 ? 'text-gray-300' : 'text-gray-500';
+    const m = g.nrfi_meta || {};
+    let sampleBadge = '';
+    if (m.min_sample != null) {
+      if (m.min_sample < 3) sampleBadge = ` <span class="text-xs text-red-400" title="No usable starter sample — model is essentially the 0.73 prior">⚠ prior-only</span>`;
+      else if (m.min_sample < 5) sampleBadge = ` <span class="text-xs text-yellow-400" title="Min sample &lt; 5 — model leans heavily on prior">⚠ thin</span>`;
+    }
+    const tooltip = `Top half (away off vs home SP): ${m.p_top}% scoreless · Bot half (home off vs away SP): ${m.p_bot}% scoreless · base ${m.base}% · park x${(m.park_mult||1).toFixed(3)} · weather ${m.weather_adj>=0?'+':''}${(m.weather_adj*100).toFixed(1)}pp · min_sample ${m.min_sample}`;
+    const reasoning = g.nrfi_reasoning ? `<div class="text-xs text-gray-400 mt-1 ml-19">${escapeHtml(g.nrfi_reasoning)}</div>` : '';
+    return `<div class="p-2 rounded border-l-2 hover:bg-gray-800/20" style="border-left-color: rgba(251,146,60,0.6)" title="${escapeHtml(tooltip)}">
+      <div class="flex items-center gap-3">
+        <div class="text-xs text-yellow-300 w-16 shrink-0">${time}</div>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm text-white truncate">${escapeHtml(g.away_team || '?')} <span class="text-gray-500">@</span> ${escapeHtml(g.home_team || '?')}</div>
+          <div class="text-xs text-gray-500 truncate">${escapeHtml(g.away_pp_name||'TBD')} <span class="text-gray-600">vs</span> ${escapeHtml(g.home_pp_name||'TBD')}</div>
+        </div>
+        <div class="text-right shrink-0">
+          <div class="text-sm font-semibold ${cls}">${prob.toFixed(1)}%${sampleBadge}</div>
+          <div class="text-xs text-gray-500">base ${m.base}%</div>
+        </div>
+      </div>
+      ${reasoning}
+    </div>`;
+  }).join('');
+}
+
+renderLivePaperCards();
+renderToday();
+renderPlayerForm();
+renderTopNRFI();
+renderGamesToWatch();
+renderUpcomingWeek();
+renderPicksTab();
+renderPerformance();
+// Override the existing what-worked rendering with the toggleable variant
+setTimeout(renderPerfPanelToggleable, 50);
+renderLast7d();
+renderStrategies();
+renderJournal();
+renderCalibration();
+renderSettings();
+renderTelegramTab();
+</script>
+</body>
+</html>
