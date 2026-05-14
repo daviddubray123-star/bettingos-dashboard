@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-121027",
-  "generated_at": "2026-05-14T12:10:27.260427+00:00",
+  "build_id": "260514-122546",
+  "generated_at": "2026-05-14T12:25:46.542415+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -1814,25 +1814,27 @@
           "away_pp_id": 801403,
           "venue": "PNC Park",
           "park_hr_factor": 0.94,
-          "weather_factor": 1.0,
-          "weather_wind": "cross",
-          "weather_temp": 51.7,
-          "weather_notes": [],
+          "weather_factor": 1.04,
+          "weather_wind": "out",
+          "weather_temp": 51.4,
+          "weather_notes": [
+            "Wind OUT 11 mph (+4%)"
+          ],
           "park_runs_factor": 0.95,
-          "nrfi_prob": 50.9,
+          "nrfi_prob": 51.0,
           "nrfi_meta": {
             "base": 49.2,
             "min_sample": 2,
             "p_top": 72.5,
             "p_bot": 67.9,
             "park_mult": 1.005,
-            "weather_adj": 0.0166,
+            "weather_adj": 0.0172,
             "home_sp_rate": null,
             "home_sp_sample": 2,
             "away_sp_rate": null,
             "away_sp_sample": 2
           },
-          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (52\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (51\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Oneil Cruz",
@@ -1880,9 +1882,9 @@
           "park_hr_factor": 1.15,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 61.8,
+          "weather_temp": 61.7,
           "weather_notes": [
-            "Wind IN 12 mph (-3%)"
+            "Wind IN 11 mph (-3%)"
           ],
           "park_runs_factor": 1.1,
           "nrfi_prob": 55.7,
@@ -1946,7 +1948,7 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 66.3,
+          "weather_temp": 66.7,
           "weather_notes": [],
           "park_runs_factor": 0.97,
           "nrfi_prob": 56.7,
@@ -2010,7 +2012,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 76.3,
+          "weather_temp": 76.6,
           "weather_notes": [],
           "park_runs_factor": 1.02,
           "nrfi_prob": null,
@@ -2190,28 +2192,27 @@
           "away_pp_id": 700241,
           "venue": "Sutter Health Park",
           "park_hr_factor": 1.04,
-          "weather_factor": 1.06,
-          "weather_wind": "out",
-          "weather_temp": 87.5,
+          "weather_factor": 1.02,
+          "weather_wind": null,
+          "weather_temp": 88.8,
           "weather_notes": [
-            "Wind OUT 7 mph (+4%)",
-            "Temp 88F (+2% ball carries)"
+            "Temp 89F (+2% ball carries)"
           ],
           "park_runs_factor": 1.04,
-          "nrfi_prob": 51.9,
+          "nrfi_prob": 51.8,
           "nrfi_meta": {
             "base": 53.8,
             "min_sample": 7,
             "p_top": 71.1,
             "p_bot": 75.7,
             "park_mult": 0.996,
-            "weather_adj": -0.019,
+            "weather_adj": -0.02,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Jacob Lopez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Michael McGreevy 88% 1st-inning scoreless over 8 starts (elite) \u00b7 warm temp (88\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Jacob Lopez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Michael McGreevy 88% 1st-inning scoreless over 8 starts (elite) \u00b7 warm temp (89\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Shea Langeliers",
@@ -2258,18 +2259,18 @@
           "venue": "Fenway Park",
           "park_hr_factor": 0.96,
           "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 56.0,
+          "weather_wind": "cross",
+          "weather_temp": 55.4,
           "weather_notes": [],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 57.5,
+          "nrfi_prob": 57.6,
           "nrfi_meta": {
             "base": 56.6,
             "min_sample": 7,
             "p_top": 70.2,
             "p_bot": 80.7,
             "park_mult": 0.992,
-            "weather_adj": 0.008,
+            "weather_adj": 0.0092,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
@@ -2323,7 +2324,7 @@
           "park_hr_factor": 1.07,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 71.7,
+          "weather_temp": 71.2,
           "weather_notes": [
             "Wind IN 11 mph (-3%)"
           ],
@@ -2389,23 +2390,23 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 51.8,
+          "weather_temp": 51.4,
           "weather_notes": [],
           "park_runs_factor": 1.03,
-          "nrfi_prob": 56.8,
+          "nrfi_prob": 56.9,
           "nrfi_meta": {
             "base": 55.2,
             "min_sample": 6,
             "p_top": 71.1,
             "p_bot": 77.6,
             "park_mult": 0.997,
-            "weather_adj": 0.0164,
+            "weather_adj": 0.0172,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Anthony Kay 67% 1st-inning scoreless over 6 starts (weak) \u00b7 Kris Bubic 88% 1st-inning scoreless over 8 starts (elite) \u00b7 cold temp (52\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Anthony Kay 67% 1st-inning scoreless over 6 starts (weak) \u00b7 Kris Bubic 88% 1st-inning scoreless over 8 starts (elite) \u00b7 cold temp (51\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Jarred Kelenic",
