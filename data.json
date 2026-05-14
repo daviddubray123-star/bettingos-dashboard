@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-170010",
-  "generated_at": "2026-05-14T17:00:10.306056+00:00",
+  "build_id": "260514-191441",
+  "generated_at": "2026-05-14T19:14:41.638238+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -1266,17 +1266,17 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 13:30",
-      "LastRun": "2026-05-14 13:00",
+      "NextRun": "2026-05-14 15:30",
+      "LastRun": "2026-05-14 15:00",
       "LastResult": 0,
       "WakeToRun": false
     },
     {
       "Name": "BettingOS - dashboard-post-lock",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-15 13:00",
       "LastRun": "2026-05-14 13:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -1330,8 +1330,8 @@
     {
       "Name": "BettingOS - late-slate-lock",
       "State": "Ready",
-      "NextRun": "2026-05-14 15:00",
-      "LastRun": "2026-05-13 15:00",
+      "NextRun": "2026-05-15 15:00",
+      "LastRun": "2026-05-14 15:00",
       "LastResult": 0,
       "WakeToRun": true
     },
@@ -1803,7 +1803,7 @@
           "game_pk": 823383,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T16:35:00Z",
-          "status": "In Progress",
+          "status": "Game Over",
           "home_team": "Pittsburgh Pirates",
           "home_team_id": 134,
           "away_team": "Colorado Rockies",
@@ -1814,11 +1814,12 @@
           "away_pp_id": 801403,
           "venue": "PNC Park",
           "park_hr_factor": 0.94,
-          "weather_factor": 0.97,
-          "weather_wind": "cross",
-          "weather_temp": 48.1,
+          "weather_factor": 1.01,
+          "weather_wind": "out",
+          "weather_temp": 48.6,
           "weather_notes": [
-            "Temp 48F (-3% cold/dead ball)"
+            "Wind OUT 10 mph (+4%)",
+            "Temp 49F (-3% cold/dead ball)"
           ],
           "park_runs_factor": 0.95,
           "nrfi_prob": 51.2,
@@ -1834,7 +1835,7 @@
             "away_sp_rate": null,
             "away_sp_sample": 2
           },
-          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (48\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (49\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Oneil Cruz",
@@ -1869,7 +1870,7 @@
           "game_pk": 824517,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T16:40:00Z",
-          "status": "In Progress",
+          "status": "Game Over",
           "home_team": "Cincinnati Reds",
           "home_team_id": 113,
           "away_team": "Washington Nationals",
@@ -1882,7 +1883,7 @@
           "park_hr_factor": 1.15,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 60.3,
+          "weather_temp": 60.7,
           "weather_notes": [
             "Wind IN 10 mph (-3%)"
           ],
@@ -1935,7 +1936,7 @@
           "game_pk": 823630,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T17:10:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "New York Mets",
           "home_team_id": 121,
           "away_team": "Detroit Tigers",
@@ -1948,7 +1949,7 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 64.6,
+          "weather_temp": 61.0,
           "weather_notes": [],
           "park_runs_factor": 0.97,
           "nrfi_prob": 56.7,
@@ -1999,7 +2000,7 @@
           "game_pk": 823709,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T17:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Minnesota Twins",
           "home_team_id": 142,
           "away_team": "Miami Marlins",
@@ -2012,7 +2013,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 77.4,
+          "weather_temp": 77.8,
           "weather_notes": [],
           "park_runs_factor": 1.02,
           "nrfi_prob": 49.9,
@@ -2063,7 +2064,7 @@
           "game_pk": 823789,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T17:40:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Milwaukee Brewers",
           "home_team_id": 158,
           "away_team": "San Diego Padres",
@@ -2129,7 +2130,7 @@
           "game_pk": 824196,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T18:10:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Houston Astros",
           "home_team_id": 117,
           "away_team": "Seattle Mariners",
@@ -2198,7 +2199,7 @@
           "game_pk": 825008,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T19:05:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Athletics",
           "home_team_id": 133,
           "away_team": "St. Louis Cardinals",
@@ -2211,7 +2212,7 @@
           "park_hr_factor": 1.04,
           "weather_factor": 1.02,
           "weather_wind": null,
-          "weather_temp": 88.0,
+          "weather_temp": 88.3,
           "weather_notes": [
             "Temp 88F (+2% ball carries)"
           ],
@@ -2264,7 +2265,7 @@
           "game_pk": 824762,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T22:45:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Boston Red Sox",
           "home_team_id": 111,
           "away_team": "Philadelphia Phillies",
@@ -2275,27 +2276,25 @@
           "away_pp_id": 666200,
           "venue": "Fenway Park",
           "park_hr_factor": 0.96,
-          "weather_factor": 0.97,
-          "weather_wind": "in",
-          "weather_temp": 53.4,
-          "weather_notes": [
-            "Wind IN 6 mph (-3%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": null,
+          "weather_temp": 55.5,
+          "weather_notes": [],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 58.0,
+          "nrfi_prob": 57.6,
           "nrfi_meta": {
             "base": 56.6,
             "min_sample": 7,
             "p_top": 70.2,
             "p_bot": 80.7,
             "park_mult": 0.992,
-            "weather_adj": 0.0132,
+            "weather_adj": 0.009,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 cold temp (53\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Ranger Suarez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Jes\u00fas Luzardo 88% 1st-inning scoreless over 8 starts (elite) \u00b7 hitter park (1.08 runs factor) drops NRFI",
           "hot_home_batters": [
             {
               "name": "Jarren Duran",
@@ -2330,7 +2329,7 @@
           "game_pk": 824926,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T23:15:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Atlanta Braves",
           "home_team_id": 144,
           "away_team": "Chicago Cubs",
@@ -2341,11 +2340,11 @@
           "away_pp_id": 676962,
           "venue": "Truist Park",
           "park_hr_factor": 1.07,
-          "weather_factor": 0.97,
+          "weather_factor": 0.94,
           "weather_wind": "in",
-          "weather_temp": 70.6,
+          "weather_temp": 70.4,
           "weather_notes": [
-            "Wind IN 12 mph (-3%)"
+            "Wind IN 12 mph (-6%)"
           ],
           "park_runs_factor": 1.02,
           "nrfi_prob": 59.4,
@@ -2411,7 +2410,7 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 52.9,
+          "weather_temp": 52.6,
           "weather_notes": [],
           "park_runs_factor": 1.03,
           "nrfi_prob": 56.6,
@@ -2421,7 +2420,7 @@
             "p_top": 71.1,
             "p_bot": 77.6,
             "park_mult": 0.997,
-            "weather_adj": 0.0142,
+            "weather_adj": 0.0148,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.875,
@@ -2675,8 +2674,8 @@
           "away_team_id": 140,
           "home_pp_name": "Spencer Arrighetti",
           "home_pp_id": 681293,
-          "away_pp_name": null,
-          "away_pp_id": null,
+          "away_pp_name": "Jack Leiter",
+          "away_pp_id": 683004,
           "venue": "Daikin Park"
         },
         {
@@ -2748,8 +2747,8 @@
           "home_team_id": 133,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
+          "home_pp_name": "Aaron Civale",
+          "home_pp_id": 650644,
           "away_pp_name": null,
           "away_pp_id": null,
           "venue": "Sutter Health Park"
@@ -2872,8 +2871,8 @@
           "away_team_id": 140,
           "home_pp_name": "Kai-Wei Teng",
           "home_pp_id": 678906,
-          "away_pp_name": null,
-          "away_pp_id": null,
+          "away_pp_name": "Jacob deGrom",
+          "away_pp_id": 594798,
           "venue": "Daikin Park"
         },
         {
@@ -2975,8 +2974,8 @@
           "home_team_id": 133,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
+          "home_pp_name": "Luis Severino",
+          "home_pp_id": 622663,
           "away_pp_name": null,
           "away_pp_id": null,
           "venue": "Sutter Health Park"
@@ -3172,8 +3171,8 @@
           "home_team_id": 133,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
+          "home_pp_name": "Jeffrey Springs",
+          "home_pp_id": 605488,
           "away_pp_name": null,
           "away_pp_id": null,
           "venue": "Sutter Health Park"
@@ -6724,13 +6723,82 @@
       "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>"
     ],
     "state_file": {
-      "last_update_id": 541706791
+      "last_update_id": 541706792
     }
   },
   "scout_top": {
-    "plays": [],
+    "plays": [
+      {
+        "rank": 1,
+        "player": "Ben Brown",
+        "team": "CHC",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 3.5,
+        "side": "U",
+        "odds": -106,
+        "tier": "SIDE",
+        "edge_pp": 12.18,
+        "rae": 10.83,
+        "hit_rate": 0.6364,
+        "sample": 13,
+        "start_time": null
+      },
+      {
+        "rank": 2,
+        "player": "Chris Sale",
+        "team": "ATL",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 6.5,
+        "side": "U",
+        "odds": 126,
+        "tier": null,
+        "edge_pp": 2.18,
+        "rae": 1.94,
+        "hit_rate": 0.4643,
+        "sample": 8,
+        "start_time": null
+      },
+      {
+        "rank": 3,
+        "player": "Ranger Suarez",
+        "team": "BOS",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 5.5,
+        "side": "O",
+        "odds": 134,
+        "tier": null,
+        "edge_pp": 1.7,
+        "rae": 1.51,
+        "hit_rate": 0.4444,
+        "sample": 7,
+        "start_time": null
+      },
+      {
+        "rank": 4,
+        "player": "Anthony Kay",
+        "team": "CHW",
+        "opp": null,
+        "market": "PITCHER_STRIKEOUTS",
+        "strategy": "MLB Pitcher Strikeouts",
+        "line": 3.5,
+        "side": "O",
+        "odds": 104,
+        "tier": null,
+        "edge_pp": 0.98,
+        "rae": 0.87,
+        "hit_rate": 0.5,
+        "sample": 8,
+        "start_time": null
+      }
+    ],
     "source_file": "v2_scout_2026-05-14.json",
-    "total_in_cache": 50,
+    "total_in_cache": 16,
     "is_today": true
   },
   "target_strategies": [
