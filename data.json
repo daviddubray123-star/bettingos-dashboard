@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-055809",
-  "generated_at": "2026-05-14T05:58:09.142285+00:00",
+  "build_id": "260514-063007",
+  "generated_at": "2026-05-14T06:30:07.565727+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -1041,10 +1041,10 @@
     },
     {
       "Name": "BettingOS - dashboard-post-settle",
-      "State": "Ready",
-      "NextRun": "2026-05-14 02:30",
-      "LastRun": "2026-05-13 23:48",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-15 02:30",
+      "LastRun": "2026-05-14 02:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -1130,9 +1130,9 @@
     {
       "Name": "BettingOS - night-settle",
       "State": "Ready",
-      "NextRun": "2026-05-14 02:00",
-      "LastRun": "2026-05-13 02:00",
-      "LastResult": 0,
+      "NextRun": "2026-05-15 02:00",
+      "LastRun": "2026-05-14 02:00",
+      "LastResult": 1,
       "WakeToRun": true
     },
     {
@@ -1568,9 +1568,9 @@
           "park_hr_factor": 0.94,
           "weather_factor": 0.97,
           "weather_wind": "cross",
-          "weather_temp": 48.8,
+          "weather_temp": 49.5,
           "weather_notes": [
-            "Temp 49F (-3% cold/dead ball)"
+            "Temp 50F (-3% cold/dead ball)"
           ],
           "park_runs_factor": 0.95,
           "nrfi_prob": 51.2,
@@ -1586,7 +1586,7 @@
             "away_sp_rate": null,
             "away_sp_sample": 2
           },
-          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (49\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Mason Montgomery thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Chase Dollander thin sample (2) \u2014 model leans on 0.73 prior \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 cold temp (50\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Oneil Cruz",
@@ -1634,7 +1634,7 @@
           "park_hr_factor": 1.15,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 61.8,
+          "weather_temp": 61.9,
           "weather_notes": [
             "Wind IN 12 mph (-3%)"
           ],
@@ -1698,10 +1698,12 @@
           "away_pp_id": 672456,
           "venue": "Citi Field",
           "park_hr_factor": 0.94,
-          "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 64.4,
-          "weather_notes": [],
+          "weather_factor": 0.97,
+          "weather_wind": "in",
+          "weather_temp": 69.0,
+          "weather_notes": [
+            "Wind IN 8 mph (-3%)"
+          ],
           "park_runs_factor": 0.97,
           "nrfi_prob": 56.7,
           "nrfi_meta": {
@@ -1764,7 +1766,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 77.8,
+          "weather_temp": 77.3,
           "weather_notes": [],
           "park_runs_factor": 1.02,
           "nrfi_prob": null,
@@ -1946,26 +1948,26 @@
           "park_hr_factor": 1.04,
           "weather_factor": 1.06,
           "weather_wind": "out",
-          "weather_temp": 86.8,
+          "weather_temp": 87.9,
           "weather_notes": [
             "Wind OUT 8 mph (+4%)",
-            "Temp 87F (+2% ball carries)"
+            "Temp 88F (+2% ball carries)"
           ],
           "park_runs_factor": 1.04,
-          "nrfi_prob": 52.1,
+          "nrfi_prob": 51.8,
           "nrfi_meta": {
             "base": 53.8,
             "min_sample": 7,
             "p_top": 71.1,
             "p_bot": 75.7,
             "park_mult": 0.996,
-            "weather_adj": -0.0176,
+            "weather_adj": -0.0198,
             "home_sp_rate": 0.7143,
             "home_sp_sample": 7,
             "away_sp_rate": 0.875,
             "away_sp_sample": 8
           },
-          "nrfi_reasoning": "Jacob Lopez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Michael McGreevy 88% 1st-inning scoreless over 8 starts (elite) \u00b7 warm temp (87\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Jacob Lopez 71% 1st-inning scoreless over 7 starts (average) \u00b7 Michael McGreevy 88% 1st-inning scoreless over 8 starts (elite) \u00b7 warm temp (88\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Shea Langeliers",
