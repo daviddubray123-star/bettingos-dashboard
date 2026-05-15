@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-044541",
-  "generated_at": "2026-05-15T04:45:41.138213+00:00",
+  "build_id": "260515-045328",
+  "generated_at": "2026-05-15T04:53:28.655851+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2938,7 +2938,7 @@
       "Name": "BettingOS - tg-listener",
       "State": "Ready",
       "NextRun": "2026-05-16 00:01",
-      "LastRun": "2026-05-15 00:01",
+      "LastRun": "2026-05-15 00:53",
       "LastResult": 0,
       "WakeToRun": false
     }
@@ -9214,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.9
+        "age_hours": 6.0
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 15.2
+        "age_hours": 15.3
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.9
+        "age_hours": 6.0
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.3
+        "age_hours": 2.4
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.9
+        "age_hours": 6.0
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 1.5
+        "age_hours": 1.7
       }
     ]
   },
@@ -11297,13 +11297,31 @@
     "last_run_json": "props_cache\\v2_ai_learner_2026-05-15.json"
   },
   "odds_api_monitor": {
-    "available": false
+    "available": true,
+    "checked_at": "2026-05-15T04:53:16.797218+00:00",
+    "month": "2026-05",
+    "month_used": 2370,
+    "today_used": 0,
+    "avg_daily": 1185.0,
+    "effective_daily": 800,
+    "projected_month_end": 15170,
+    "projected_naive": 21330.0,
+    "pct_used": 13.2,
+    "pct_projected": 84.3,
+    "pct_projected_naive": 118.5,
+    "days_left_in_month": 16,
+    "days_left_at_pace": 19.5,
+    "alert_severity": null,
+    "alert_reasons": [],
+    "safe_daily_target": 600,
+    "daily_cap": 800,
+    "month_cap": 18000
   },
   "settled_archive": {
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 00:45 ET",
+  "built_at_et": "2026-05-15 00:53 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
