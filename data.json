@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-034932",
-  "generated_at": "2026-05-15T03:49:32.999951+00:00",
+  "build_id": "260515-035936",
+  "generated_at": "2026-05-15T03:59:36.903584+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -3275,10 +3275,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Queued",
+      "State": "Ready",
       "NextRun": "2026-05-15 13:00",
-      "LastRun": "2026-05-14 21:27",
-      "LastResult": 0,
+      "LastRun": "2026-05-14 23:52",
+      "LastResult": 2147942402,
       "WakeToRun": false
     },
     {
@@ -3349,7 +3349,7 @@
       "Name": "BettingOS - tg-listener",
       "State": "Ready",
       "NextRun": "2026-05-15 00:01",
-      "LastRun": "2026-05-14 23:34",
+      "LastRun": "2026-05-14 23:59",
       "LastResult": 0,
       "WakeToRun": false
     }
@@ -4117,7 +4117,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 2,
+            "home_errors": 3,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -5067,8 +5067,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 6,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 2,
             "home_hits": 5,
             "home_errors": 0,
@@ -5089,7 +5089,7 @@
               0,
               0,
               2,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -9615,42 +9615,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.9
+        "age_hours": 5.1
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 14.2
+        "age_hours": 14.4
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.9
+        "age_hours": 5.1
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 1.4
+        "age_hours": 1.6
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.9
+        "age_hours": 5.1
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.6
+        "age_hours": 0.8
       }
     ]
   },
@@ -9662,10 +9662,9 @@
     "authorized_count": 2,
     "listener_running": false,
     "listener_pid": null,
-    "listener_last_log_line": "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "listener_last_log_line": "[listener] sent reply to chat=-1003918918061 ok=True len=175",
     "tunnel_running": true,
     "recent_log": [
-      "====== TG-LISTENER STARTED Thu 05/14/2026  0:11:32.88 ======",
       "^C",
       "====== TG-LISTENER STARTED Thu 05/14/2026  0:28:43.82 ======",
       "====== TG-LISTENER STARTED Thu 05/14/2026  0:57:35.09 ======",
@@ -9674,10 +9673,21 @@
       "====== TG-LISTENER STARTED Thu 05/14/2026  1:00:48.66 ======",
       "[listener] poll error: Remote end closed connection without response",
       "[listener] poll error: The read operation timed out",
-      "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+      "====== TG-LISTENER STARTED Thu 05/14/2026 23:53:28.49 ======",
+      "[listener] started. PID=10480 Authorized chat_ids: ['-1003918918061', '7191253260']",
+      "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/last', '/late', '/lock', '/pause', '/picks', '/pl', '/recap', '/refresh', '/resume', '/scout', '/settle', '/status', '/strategies', '/url']",
+      "[listener] dispatch chat=-1003918918061 cmd='/help' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=1099",
+      "[listener] dispatch chat=-1003918918061 cmd='/recap' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=13",
+      "[listener] dispatch chat=-1003918918061 cmd='/bankroll' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=91",
+      "[listener] dispatch chat=-1003918918061 cmd='/api' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=175"
     ],
     "state_file": {
-      "last_update_id": 541706793
+      "last_update_id": 541706797
     }
   },
   "scout_top": {
@@ -11652,7 +11662,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-14 23:49 ET",
+  "built_at_et": "2026-05-14 23:59 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
