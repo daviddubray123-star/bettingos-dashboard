@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-033028",
-  "generated_at": "2026-05-15T03:30:28.487440+00:00",
+  "build_id": "260515-034932",
+  "generated_at": "2026-05-15T03:49:32.999951+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -3347,10 +3347,10 @@
     },
     {
       "Name": "BettingOS - tg-listener",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-15 00:01",
-      "LastRun": "2026-05-14 01:00",
-      "LastResult": 267009,
+      "LastRun": "2026-05-14 23:34",
+      "LastResult": 0,
       "WakeToRun": false
     }
   ],
@@ -5066,18 +5066,19 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
+            "current_inning": 6,
             "inning_half": "Top",
             "inning_state": "Top",
             "home_runs": 2,
-            "home_hits": 4,
+            "home_hits": 5,
             "home_errors": 0,
             "away_runs": 2,
             "away_hits": 2,
-            "away_errors": 0,
+            "away_errors": 1,
             "home_innings": [
               1,
               1,
+              0,
               0,
               0,
               null
@@ -5087,7 +5088,8 @@
               0,
               0,
               0,
-              2
+              2,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -9613,42 +9615,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.6
+        "age_hours": 4.9
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 13.9
+        "age_hours": 14.2
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.6
+        "age_hours": 4.9
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 1.1
+        "age_hours": 1.4
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.6
+        "age_hours": 4.9
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.3
+        "age_hours": 0.6
       }
     ]
   },
@@ -9658,7 +9660,7 @@
     "bot_id": 8612150588,
     "channel_id": "-1003918918061",
     "authorized_count": 2,
-    "listener_running": true,
+    "listener_running": false,
     "listener_pid": null,
     "listener_last_log_line": "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
     "tunnel_running": true,
@@ -9675,7 +9677,7 @@
       "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>"
     ],
     "state_file": {
-      "last_update_id": 541706792
+      "last_update_id": 541706793
     }
   },
   "scout_top": {
@@ -11646,7 +11648,11 @@
     "enriched_count": 16,
     "source_file": "v2_ai_learner_2026-05-14.json"
   },
-  "built_at_et": "2026-05-14 23:30 ET",
+  "settled_archive": {
+    "days": [],
+    "available": false
+  },
+  "built_at_et": "2026-05-14 23:49 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
