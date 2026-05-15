@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-225225",
-  "generated_at": "2026-05-15T22:52:25.018160+00:00",
+  "build_id": "260515-225334",
+  "generated_at": "2026-05-15T22:53:34.725871+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -5734,8 +5734,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 1,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
@@ -5824,8 +5824,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 1,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
@@ -11536,7 +11536,7 @@
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 9.1
+        "age_hours": 9.2
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -11578,7 +11578,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 57.1
+        "age_hours": 57.2
       },
       {
         "name": "design_engine_v2.md",
@@ -11858,7 +11858,7 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 92.9
+        "age_hours": 93.0
       },
       {
         "name": "reference_runbook.md",
@@ -11928,7 +11928,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 67.1
+        "age_hours": 67.2
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -11942,14 +11942,14 @@
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 66.4
+        "age_hours": 66.5
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 53.1
+        "age_hours": 53.2
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -12030,7 +12030,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 9.3,
+        "age_hours": 9.4,
         "bytes": 342337,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T13:32:20.902346+00:00",
@@ -12043,7 +12043,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 1613354,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T22:43:33.285388+00:00",
@@ -12069,7 +12069,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 12507,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T22:43:42.261834+00:00",
@@ -16984,7 +16984,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 18:52 ET",
+  "built_at_et": "2026-05-15 18:53 ET",
   "counts": {
     "picks_total": 101,
     "settled": 21,
