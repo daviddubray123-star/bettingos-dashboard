@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-013104",
-  "generated_at": "2026-05-15T01:31:04.644468+00:00",
+  "build_id": "260515-014101",
+  "generated_at": "2026-05-15T01:41:01.085319+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -3521,7 +3521,7 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 8,
+            "current_inning": 9,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 1,
@@ -3538,7 +3538,8 @@
               0,
               0,
               0,
-              1
+              1,
+              null
             ],
             "away_innings": [
               0,
@@ -3548,7 +3549,8 @@
               0,
               0,
               0,
-              3
+              3,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -3627,7 +3629,7 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 8,
+            "current_inning": 9,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 0,
@@ -3637,6 +3639,7 @@
             "away_hits": 6,
             "away_errors": 0,
             "home_innings": [
+              0,
               0,
               0,
               0,
@@ -3654,7 +3657,8 @@
               0,
               1,
               0,
-              1
+              1,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -3731,20 +3735,21 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 7,
+            "inning_half": "Top",
+            "inning_state": "Middle",
             "home_runs": 5,
             "home_hits": 5,
             "home_errors": 0,
-            "away_runs": 1,
-            "away_hits": 5,
+            "away_runs": 2,
+            "away_hits": 6,
             "away_errors": 0,
             "home_innings": [
               2,
               0,
               2,
               1,
+              0,
               0,
               null
             ],
@@ -3754,7 +3759,8 @@
               0,
               0,
               0,
-              0
+              0,
+              1
             ],
             "scheduled_innings": 9
           }
