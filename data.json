@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-040629",
-  "generated_at": "2026-05-15T04:06:29.402999+00:00",
+  "build_id": "260515-042429",
+  "generated_at": "2026-05-15T04:24:29.491300+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2791,11 +2791,19 @@
   "avg_clv_30d": null,
   "wts_tasks": [
     {
+      "Name": "BettingOS - ai-learner-weekly",
+      "State": "Ready",
+      "NextRun": "2026-05-17 03:00",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
+      "WakeToRun": false
+    },
+    {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-15 12:00",
-      "LastRun": "2026-05-14 22:30",
-      "LastResult": 0,
+      "NextRun": "2026-05-15 23:30",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
       "WakeToRun": false
     },
     {
@@ -2873,10 +2881,10 @@
     {
       "Name": "BettingOS - lineup-check",
       "State": "Ready",
-      "NextRun": "2026-05-15 16:30",
-      "LastRun": "2026-05-14 16:30",
-      "LastResult": 0,
-      "WakeToRun": true
+      "NextRun": "2026-05-15 11:00",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
+      "WakeToRun": false
     },
     {
       "Name": "BettingOS - mlb-noon-lock",
@@ -9206,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.2
+        "age_hours": 5.5
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 14.5
+        "age_hours": 14.8
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.2
+        "age_hours": 5.5
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 1.7
+        "age_hours": 2.0
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.2
+        "age_hours": 5.5
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.9
+        "age_hours": 1.2
       }
     ]
   },
@@ -11253,7 +11261,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 00:07 ET",
+  "built_at_et": "2026-05-15 00:24 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
