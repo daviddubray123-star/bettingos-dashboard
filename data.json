@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-042554",
-  "generated_at": "2026-05-15T04:25:54.688612+00:00",
+  "build_id": "260515-043928",
+  "generated_at": "2026-05-15T04:39:28.733933+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2866,7 +2866,7 @@
       "Name": "BettingOS - intraday-settle",
       "State": "Ready",
       "NextRun": "2026-05-15 13:00",
-      "LastRun": "2026-05-15 00:00",
+      "LastRun": "2026-05-15 00:30",
       "LastResult": 2147942402,
       "WakeToRun": false
     },
@@ -9214,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.5
+        "age_hours": 5.8
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 14.8
+        "age_hours": 15.1
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.6
+        "age_hours": 5.8
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.0
+        "age_hours": 2.2
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 5.6
+        "age_hours": 5.8
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 1.2
+        "age_hours": 1.4
       }
     ]
   },
@@ -11257,11 +11257,45 @@
     "enriched_count": 16,
     "source_file": "v2_ai_learner_2026-05-14.json"
   },
+  "ai_learner_status": {
+    "state": "unknown",
+    "kill_switch": false,
+    "kill_reason": null,
+    "last_run_at": null,
+    "last_run_picks": 0,
+    "last_run_recommendations": 0,
+    "guardrails": [
+      "Never modifies engine code automatically",
+      "Requires n\u22655 (factor), n\u22658 (strategy/tier) before flagging",
+      "Below 20 total picks, all recommendations flagged HIGH VARIANCE",
+      "Operator kill switch: create props_cache/v2_ai_learner.killed to disable",
+      "Weekly TG alert on success AND on failure \u2014 never silent"
+    ],
+    "thresholds": {
+      "tier_expected_hit_rates": {
+        "LOCK": 70,
+        "STRONG": 60,
+        "SIDE": 55,
+        "WATCH": 50
+      },
+      "factor_min_samples": 5,
+      "factor_demote_lift_pp": -10,
+      "factor_promote_lift_pp": 15,
+      "strategy_promote_hit_rate_pct": 60,
+      "strategy_promote_min_roi_pct": 5,
+      "strategy_demote_hit_rate_pct": 35,
+      "strategy_min_n": 10,
+      "tier_drift_threshold_pp": -15
+    }
+  },
+  "odds_api_monitor": {
+    "available": false
+  },
   "settled_archive": {
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 00:25 ET",
+  "built_at_et": "2026-05-15 00:39 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
