@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-004225",
-  "generated_at": "2026-05-15T00:42:25.616115+00:00",
+  "build_id": "260515-005024",
+  "generated_at": "2026-05-15T00:50:24.890213+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -2851,7 +2851,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 2,
+            "home_errors": 3,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -3479,9 +3479,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 7,
+            "inning_half": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 4,
             "home_errors": 0,
@@ -3494,9 +3494,11 @@
               0,
               0,
               0,
+              0,
               null
             ],
             "away_innings": [
+              0,
               0,
               0,
               0,
@@ -3526,9 +3528,9 @@
           "park_hr_factor": 1.07,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 70.4,
+          "weather_temp": 71.6,
           "weather_notes": [
-            "Wind IN 11 mph (-3%)"
+            "Wind IN 12 mph (-3%)"
           ],
           "park_runs_factor": 1.02,
           "nrfi_prob": 59.4,
@@ -3586,8 +3588,8 @@
             "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 1,
-            "home_errors": 0,
-            "away_runs": 0,
+            "home_errors": 1,
+            "away_runs": 1,
             "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
@@ -3604,7 +3606,7 @@
               0,
               0,
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -3628,7 +3630,7 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 54.0,
+          "weather_temp": 53.9,
           "weather_notes": [],
           "park_runs_factor": 1.03,
           "nrfi_prob": 56.4,
@@ -3638,7 +3640,7 @@
             "p_top": 71.1,
             "p_bot": 77.6,
             "park_mult": 0.997,
-            "weather_adj": 0.012,
+            "weather_adj": 0.0122,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.875,
@@ -3681,9 +3683,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 3,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 4,
+            "inning_half": "Top",
+            "inning_state": "Middle",
             "home_runs": 4,
             "home_hits": 3,
             "home_errors": 0,
@@ -3693,10 +3695,12 @@
             "home_innings": [
               2,
               0,
-              2
+              2,
+              null
             ],
             "away_innings": [
               1,
+              0,
               0,
               0
             ],
@@ -4012,9 +4016,9 @@
           "home_pp_name": "Jack Kochanowicz",
           "home_pp_id": 686799,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Blake Snell",
+          "away_pp_id": 605483,
+          "away_pp_throws": "L",
           "venue": "Angel Stadium"
         },
         {
@@ -4046,9 +4050,9 @@
           "home_pp_name": "Aaron Civale",
           "home_pp_id": 650644,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Tyler Mahle",
+          "away_pp_id": 641816,
+          "away_pp_throws": "R",
           "venue": "Sutter Health Park"
         }
       ],
@@ -4286,9 +4290,9 @@
           "home_pp_name": "Jos\u00e9 Soriano",
           "home_pp_id": 667755,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Justin Wrobleski",
+          "away_pp_id": 680736,
+          "away_pp_throws": "L",
           "venue": "Angel Stadium"
         },
         {
@@ -4303,9 +4307,9 @@
           "home_pp_name": "Luis Severino",
           "home_pp_id": 622663,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Trevor McDonald",
+          "away_pp_id": 686790,
+          "away_pp_throws": "R",
           "venue": "Sutter Health Park"
         }
       ],
@@ -4526,9 +4530,9 @@
           "home_pp_name": "Jeffrey Springs",
           "home_pp_id": 605488,
           "home_pp_throws": "L",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Adrian Houser",
+          "away_pp_id": 605288,
+          "away_pp_throws": "R",
           "venue": "Sutter Health Park"
         },
         {
@@ -4543,9 +4547,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Roki Sasaki",
+          "away_pp_id": 808963,
+          "away_pp_throws": "R",
           "venue": "Angel Stadium"
         },
         {
@@ -8286,6 +8290,25 @@
         "drawdown_breaker_pct": 0.3,
         "max_single_event_pct": 0.05
       }
+    }
+  },
+  "memory_index": {
+    "available": true,
+    "entries": [
+      {
+        "title": "BettingOS v2 deferred roadmap",
+        "file": "project_roadmap_2026-05-13.md",
+        "hook": "items to ship after BvP/Umpire/Bullpen/NRFI-parlay land (lineup confirm, strategy lifecycle, per-factor calibration, weekly CLV digest, tier-based staking, placement automation)"
+      }
+    ],
+    "raw_path": "C:\\Users\\david\\.claude\\projects\\C--Users-david\\memory\\MEMORY.md",
+    "facts": {
+      "live_bankroll_note": "149",
+      "tier1_unit": "3",
+      "daily_cap": "5u = $15",
+      "hard_stop": "-5u",
+      "drawdown_breaker": "-25%",
+      "paper_bankroll": "13,000"
     }
   },
   "public_url": "https://upgrades-institutional-luther-established.trycloudflare.com",
