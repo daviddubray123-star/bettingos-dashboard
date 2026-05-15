@@ -1,15 +1,15 @@
 {
-  "build_id": "260515-023133",
-  "generated_at": "2026-05-15T02:31:33.281536+00:00",
+  "build_id": "260515-023930",
+  "generated_at": "2026-05-15T02:39:30.721383+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
-    "live": 150.0,
-    "paper": 500.0,
+    "live": 145.5,
+    "paper": 480.44,
     "paper_peak": 500.0,
-    "paper_drawdown_pct": 0.0,
+    "paper_drawdown_pct": 3.9120000000000004,
     "peak": 150.0,
-    "drawdown_pct": 0.0
+    "drawdown_pct": 3.0
   },
   "picks": [
     {
@@ -874,6 +874,16 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "bankroll_end": 155,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
+      "paper_w": 8,
+      "paper_l": 11,
+      "grade": "B"
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "bankroll_end": 150.94,
       "live_pl": -4.06,
       "live_w": 1,
@@ -932,6 +942,14 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "live_w": 0.0,
+      "live_l": 0.0,
+      "paper_w": 8.0,
+      "paper_l": 11.0,
+      "live_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "live_w": 1.0,
       "live_l": 2.0,
       "paper_w": 0.0,
@@ -974,6 +992,10 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "cum_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "cum_pl": -4.06
     },
     {
@@ -992,9 +1014,9 @@
   "strategies": [
     {
       "name": "MLB Total Runs",
-      "picks": 0,
-      "won": 0,
-      "lost": 0,
+      "picks": 2,
+      "won": 1,
+      "lost": 1,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1008,9 +1030,9 @@
     },
     {
       "name": "MLB Run Line",
-      "picks": 0,
+      "picks": 1,
       "won": 0,
-      "lost": 0,
+      "lost": 1,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1024,9 +1046,9 @@
     },
     {
       "name": "MLB Pitcher Strikeouts",
-      "picks": 0,
-      "won": 0,
-      "lost": 0,
+      "picks": 3,
+      "won": 1,
+      "lost": 2,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1088,9 +1110,9 @@
     },
     {
       "name": "MLB Batter Total Bases Alt",
-      "picks": 0,
+      "picks": 3,
       "won": 0,
-      "lost": 0,
+      "lost": 3,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1168,9 +1190,9 @@
     },
     {
       "name": "MLB Batter Hits Alt",
-      "picks": 0,
-      "won": 0,
-      "lost": 0,
+      "picks": 10,
+      "won": 6,
+      "lost": 4,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -2048,6 +2070,215 @@
     }
   ],
   "journal": [
+    {
+      "title": "[PAPER] spread Over -1.5 @ -110 (Chicago Cubs @ Atlanta Braves) \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "LOCK tier pick. Strategy: MLB Run Line.",
+      "what_failed": "Result: Lost. P/L: $-10.00.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (Kansas City Royals @ Ch \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$4.41.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @  \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$9.09.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Miguel Vargas O0.5 HITS_ALT @ -185 (Kansas City Royals @ Chi \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$8.11.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ceddanne Rafaela O0.5 HITS_ALT @ -180 (Philadelphia Phillies \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-14.65.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Vinnie Pasquantino O0.5 HITS_ALT @ -160 (Kansas City Royals  \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-5.00.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Alec Bohm O0.5 HITS_ALT @ -210 (Philadelphia Phillies @ Bost \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$2.38.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Bobby Witt Jr. O1.5 TOTAL_BASES_ALT @ -150 (Kansas City Roya \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Total Bases Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] total Over 7.5 @ -110 (Chicago Cubs @ Atlanta Braves) \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "SIDE tier pick. Strategy: MLB Total Runs.",
+      "what_failed": "Result: Lost. P/L: $-5.00.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Maikel Garcia O0.5 HITS_ALT @ -280 (Kansas City Royals @ Chi \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$1.79.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Emmet Sheehan O5.5 PITCHER_STRIKEOUTS @ -130 (San Francisco  \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Chris Sale O6.5 PITCHER_STRIKEOUTS @ -162 (Chicago Cubs @ At \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Won. P/L: +$3.09.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] total Under 7.5 @ -110 (Chicago Cubs @ Atlanta Braves) \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Total Runs.",
+      "what_failed": "Result: Won. P/L: +$4.55.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Trevor Story O0.5 HITS_ALT @ -160 (Philadelphia Phillies @ B \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-5.00.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Isaac Collins O0.5 HITS_ALT @ -145 (Kansas City Royals @ Chi \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Kyle Schwarber O0.5 HITS_ALT @ -150 (Philadelphia Phillies @ \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$1.67.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Landen Roupp O5.5 PITCHER_STRIKEOUTS @ +106 (San Francisco G \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ceddanne Rafaela O1.5 TOTAL_BASES_ALT @ +160 (Philadelphia P \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Total Bases Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Bobby Witt Jr. O2.5 TOTAL_BASES_ALT @ +150 (Kansas City Roya \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Total Bases Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
     {
       "title": "[PAPER] [PAPER] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (Kansas City Roy \u2014 Won",
       "date": "2026-05-14",
@@ -4605,10 +4836,10 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 2,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 1,
-            "home_hits": 1,
+            "home_hits": 2,
             "home_errors": 0,
             "away_runs": 0,
             "away_hits": 0,
@@ -4619,7 +4850,7 @@
             ],
             "away_innings": [
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -9145,42 +9376,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.6
+        "age_hours": 3.8
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 12.9
+        "age_hours": 13.1
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.6
+        "age_hours": 3.8
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.1
+        "age_hours": 0.2
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.6
+        "age_hours": 3.8
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.1
+        "age_hours": 0.0
       }
     ]
   },
