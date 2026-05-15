@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-014707",
-  "generated_at": "2026-05-15T01:47:07.826062+00:00",
+  "build_id": "260515-015221",
+  "generated_at": "2026-05-15T01:52:21.638600+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -3455,7 +3455,7 @@
           "game_pk": 824762,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T22:45:00Z",
-          "status": "In Progress",
+          "status": "Game Over",
           "home_team": "Boston Red Sox",
           "home_team_id": 111,
           "away_team": "Philadelphia Phillies",
@@ -3518,12 +3518,12 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 824762,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
+            "status": "Game Over",
+            "abstract_state": "Final",
+            "status_code": "O",
             "current_inning": 9,
             "inning_half": "Bottom",
-            "inning_state": "End",
+            "inning_state": "Bottom",
             "home_runs": 1,
             "home_hits": 7,
             "home_errors": 1,
@@ -3559,7 +3559,7 @@
           "game_pk": 824926,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-14T23:15:00Z",
-          "status": "In Progress",
+          "status": "Game Over",
           "home_team": "Atlanta Braves",
           "home_team_id": 144,
           "away_team": "Chicago Cubs",
@@ -3576,7 +3576,7 @@
           "weather_wind": "in",
           "weather_temp": 71.6,
           "weather_notes": [
-            "Wind IN 12 mph (-3%)"
+            "Wind IN 11 mph (-3%)"
           ],
           "park_runs_factor": 1.02,
           "nrfi_prob": 59.4,
@@ -3626,12 +3626,12 @@
           ],
           "scoreboard": {
             "game_pk": 824926,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
+            "status": "Game Over",
+            "abstract_state": "Final",
+            "status_code": "O",
             "current_inning": 9,
             "inning_half": "Bottom",
-            "inning_state": "End",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 5,
             "home_errors": 1,
@@ -3735,14 +3735,14 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 7,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 8,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 5,
             "home_hits": 6,
             "home_errors": 0,
             "away_runs": 2,
-            "away_hits": 6,
+            "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
               2,
@@ -3751,7 +3751,8 @@
               1,
               0,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               1,
@@ -3760,7 +3761,8 @@
               0,
               0,
               0,
-              1
+              1,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -3769,7 +3771,7 @@
           "game_pk": 823950,
           "date": "2026-05-14",
           "game_time_utc": "2026-05-15T02:10:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "home_team": "Los Angeles Dodgers",
           "home_team_id": 119,
           "away_team": "San Francisco Giants",
@@ -8377,42 +8379,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.9
+        "age_hours": 3.0
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 12.2
+        "age_hours": 12.3
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.9
+        "age_hours": 3.0
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.9
+        "age_hours": 3.0
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.3
+        "age_hours": 0.4
       }
     ]
   },
