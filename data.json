@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-060121",
-  "generated_at": "2026-05-15T06:01:21.166366+00:00",
+  "build_id": "260515-060629",
+  "generated_at": "2026-05-15T06:06:29.315218+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -9246,42 +9246,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.1
+        "age_hours": 7.2
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 16.4
+        "age_hours": 16.5
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.1
+        "age_hours": 7.2
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.1
+        "age_hours": 7.2
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.0
+        "age_hours": 0.1
       }
     ]
   },
@@ -11677,6 +11677,80 @@
     "archive_picks_count": 0,
     "source_file": "v2_ai_learner_2026-05-15.json"
   },
+  "activity_feed": [
+    {
+      "timestamp_utc": "2026-05-15T06:00:10.503438+00:00",
+      "type": "archive",
+      "icon": "\ud83d\udce6",
+      "title": "archive written: 2026-05-14",
+      "detail": "0 picks \u00b7 LIVE P/L +0.00 \u00b7 PAPER P/L +0.00",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-15T05:48:19.153655+00:00",
+      "type": "ai-learner",
+      "icon": "\ud83e\udde0",
+      "title": "learner: idle",
+      "detail": "55 picks analyzed \u00b7 5 recommendations",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-15T05:44:17+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] sent reply to chat=7191253260 ok=True len=101",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-15T04:53:16.797218+00:00",
+      "type": "api-monitor",
+      "icon": "\ud83d\udd11",
+      "title": "api monitor: healthy",
+      "detail": "MTD 2,370 / 18,000 (13.2%) \u00b7 projected end 84.3%",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-15T03:53:28+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] dispatch chat=7191253260 cmd='/learner' handler=NO",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-14T05:00:48+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+      "success": false
+    },
+    {
+      "timestamp_utc": "2026-05-14T04:57:35+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] public-cmd /start from chat_id=7191253260 (private)",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-14T04:28:43+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-14T04:11:32+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "^C",
+      "success": true
+    }
+  ],
   "ai_learner_status": {
     "state": "idle",
     "kill_switch": false,
@@ -11757,7 +11831,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 02:01 ET",
+  "built_at_et": "2026-05-15 02:06 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
