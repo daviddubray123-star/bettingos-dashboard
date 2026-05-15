@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-011218",
-  "generated_at": "2026-05-15T01:12:18.007492+00:00",
+  "build_id": "260515-013104",
+  "generated_at": "2026-05-15T01:31:04.644468+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -861,6 +861,16 @@
       "paper_w": 0,
       "paper_l": 0,
       "grade": "Pending"
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "bankroll_end": 155,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
+      "paper_w": 0,
+      "paper_l": 0,
+      "grade": "B"
     }
   ],
   "daily_wl": [
@@ -871,11 +881,23 @@
       "paper_w": 0.0,
       "paper_l": 0.0,
       "live_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "live_w": 0.0,
+      "live_l": 0.0,
+      "paper_w": 0.0,
+      "paper_l": 0.0,
+      "live_pl": 0.0
     }
   ],
   "cum_pl": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
+      "cum_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "cum_pl": 0.0
     }
   ],
@@ -1937,7 +1959,19 @@
       "l10_net": 0
     }
   ],
-  "journal": [],
+  "journal": [
+    {
+      "title": "[NIGHT-SETTLE] 2026-05-14 \u2014 0W-0L net $+0.00",
+      "date": "2026-05-14",
+      "type": "Daily Reflection",
+      "outcome": "Push",
+      "what_worked": "No wins on the slate \u2014 every pick lost.",
+      "what_failed": "No losses today \u2014 clean slate.",
+      "lessons": "No picks settled. No data to analyze.",
+      "calibration_delta": null,
+      "strategy_adj": "No data \u2014 no adjustment."
+    }
+  ],
   "sport_roi": [],
   "tier_roi": [],
   "calib_pairs": [],
@@ -2129,8 +2163,8 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 21:30",
-      "LastRun": "2026-05-14 21:00",
+      "NextRun": "2026-05-14 22:00",
+      "LastRun": "2026-05-14 21:30",
       "LastResult": 0,
       "WakeToRun": false
     },
@@ -2189,6 +2223,14 @@
       "LastRun": "2026-05-14 01:00",
       "LastResult": 0,
       "WakeToRun": true
+    },
+    {
+      "Name": "BettingOS - intraday-settle",
+      "State": "Queued",
+      "NextRun": "2026-05-14 22:00",
+      "LastRun": "2026-05-14 21:27",
+      "LastResult": 0,
+      "WakeToRun": false
     },
     {
       "Name": "BettingOS - late-slate-lock",
@@ -2632,7 +2674,7 @@
       },
       {
         "date": "2026-05-14",
-        "bankroll": 0.0
+        "bankroll": 155.0
       }
     ],
     "insufficient_data": false,
@@ -3480,13 +3522,13 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 8,
-            "inning_half": "Top",
-            "inning_state": "Top",
-            "home_runs": 0,
-            "home_hits": 5,
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
+            "home_runs": 1,
+            "home_hits": 7,
             "home_errors": 1,
-            "away_runs": 2,
-            "away_hits": 8,
+            "away_runs": 3,
+            "away_hits": 9,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -3496,7 +3538,7 @@
               0,
               0,
               0,
-              null
+              1
             ],
             "away_innings": [
               0,
@@ -3506,7 +3548,7 @@
               0,
               0,
               0,
-              2
+              3
             ],
             "scheduled_innings": 9
           }
@@ -3585,16 +3627,17 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 7,
+            "current_inning": 8,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 0,
-            "home_hits": 3,
+            "home_hits": 4,
             "home_errors": 1,
-            "away_runs": 1,
-            "away_hits": 5,
+            "away_runs": 2,
+            "away_hits": 6,
             "away_errors": 0,
             "home_innings": [
+              0,
               0,
               0,
               0,
@@ -3610,7 +3653,8 @@
               0,
               0,
               1,
-              0
+              0,
+              1
             ],
             "scheduled_innings": 9
           }
@@ -3687,24 +3731,26 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
+            "current_inning": 6,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 5,
             "home_hits": 5,
             "home_errors": 0,
             "away_runs": 1,
-            "away_hits": 4,
+            "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
               2,
               0,
               2,
               1,
+              0,
               null
             ],
             "away_innings": [
               1,
+              0,
               0,
               0,
               0,
