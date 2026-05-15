@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-054054",
-  "generated_at": "2026-05-15T05:40:54.976958+00:00",
+  "build_id": "260515-054631",
+  "generated_at": "2026-05-15T05:46:31.660087+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2936,10 +2936,10 @@
     },
     {
       "Name": "BettingOS - tg-listener",
-      "State": "Ready",
+      "State": "Running",
       "NextRun": "2026-05-16 00:01",
-      "LastRun": "2026-05-15 00:53",
-      "LastResult": 0,
+      "LastRun": "2026-05-15 01:44",
+      "LastResult": 267009,
       "WakeToRun": false
     }
   ],
@@ -9214,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.8
+        "age_hours": 6.9
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 16.1
+        "age_hours": 16.2
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.8
+        "age_hours": 6.9
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.2
+        "age_hours": 3.3
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.8
+        "age_hours": 6.9
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 2.4
+        "age_hours": 2.5
       }
     ]
   },
@@ -9259,14 +9259,11 @@
     "bot_id": 8612150588,
     "channel_id": "-1003918918061",
     "authorized_count": 2,
-    "listener_running": false,
+    "listener_running": true,
     "listener_pid": null,
-    "listener_last_log_line": "[listener] dispatch chat=7191253260 cmd='/learner' handler=NO",
+    "listener_last_log_line": "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/killlearner', '/last', '/late', '/learner', '/lock', '/pause', '/picks', '/pl', '/recap', '/recapday', '/refresh', '/resume', '/revivelearner', '/runlearner', '/scout', '/settle', '/status', '/strategies', '/url']",
     "tunnel_running": true,
     "recent_log": [
-      "====== TG-LISTENER STARTED Thu 05/14/2026  1:00:48.66 ======",
-      "[listener] poll error: Remote end closed connection without response",
-      "[listener] poll error: The read operation timed out",
       "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
       "====== TG-LISTENER STARTED Thu 05/14/2026 23:53:28.49 ======",
       "[listener] started. PID=10480 Authorized chat_ids: ['-1003918918061', '7191253260']",
@@ -9283,7 +9280,10 @@
       "[listener] sent reply to chat=-1003918918061 ok=True len=28",
       "[listener] dispatch chat=-1003918918061 cmd='/recap' handler=YES",
       "[listener] sent reply to chat=-1003918918061 ok=True len=13",
-      "[listener] dispatch chat=7191253260 cmd='/learner' handler=NO"
+      "[listener] dispatch chat=7191253260 cmd='/learner' handler=NO",
+      "====== TG-LISTENER STARTED Fri 05/15/2026  1:44:17.76 ======",
+      "[listener] started. PID=23008 Authorized chat_ids: ['-1003918918061', '7191253260']",
+      "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/killlearner', '/last', '/late', '/learner', '/lock', '/pause', '/picks', '/pl', '/recap', '/recapday', '/refresh', '/resume', '/revivelearner', '/runlearner', '/scout', '/settle', '/status', '/strategies', '/url']"
     ],
     "state_file": {
       "last_update_id": 541706801
@@ -11666,7 +11666,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 01:40 ET",
+  "built_at_et": "2026-05-15 01:46 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
