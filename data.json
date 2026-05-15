@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-014101",
-  "generated_at": "2026-05-15T01:41:01.085319+00:00",
+  "build_id": "260515-014707",
+  "generated_at": "2026-05-15T01:47:07.826062+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -2893,7 +2893,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 3,
+            "home_errors": 2,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -3523,7 +3523,7 @@
             "status_code": "I",
             "current_inning": 9,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 7,
             "home_errors": 1,
@@ -3539,7 +3539,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -3631,9 +3631,9 @@
             "status_code": "I",
             "current_inning": 9,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 0,
-            "home_hits": 4,
+            "home_hits": 5,
             "home_errors": 1,
             "away_runs": 2,
             "away_hits": 6,
@@ -3647,7 +3647,7 @@
               0,
               0,
               0,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -3736,10 +3736,10 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 7,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "End",
             "home_runs": 5,
-            "home_hits": 5,
+            "home_hits": 6,
             "home_errors": 0,
             "away_runs": 2,
             "away_hits": 6,
@@ -3751,7 +3751,7 @@
               1,
               0,
               0,
-              null
+              0
             ],
             "away_innings": [
               1,
@@ -3835,9 +3835,9 @@
           ],
           "scoreboard": {
             "game_pk": 823950,
-            "status": "Pre-Game",
-            "abstract_state": "Preview",
-            "status_code": "P",
+            "status": "Warmup",
+            "abstract_state": "Live",
+            "status_code": "PW",
             "current_inning": 1,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -8368,6 +8368,53 @@
       "drawdown_breaker": "-25%",
       "paper_bankroll": "13,000"
     }
+  },
+  "data_freshness": {
+    "today_et": "2026-05-14",
+    "sources": [
+      {
+        "label": "Scout cache",
+        "status": "fresh",
+        "latest_file": "v2_scout_2026-05-14.json",
+        "latest_date": "2026-05-14",
+        "age_hours": 2.9
+      },
+      {
+        "label": "Form discovery",
+        "status": "fresh",
+        "latest_file": "v2_form_2026-05-14.json",
+        "latest_date": "2026-05-14",
+        "age_hours": 12.2
+      },
+      {
+        "label": "Layer-1 candidates",
+        "status": "fresh",
+        "latest_file": "v2_candidates_2026-05-14.json",
+        "latest_date": "2026-05-14",
+        "age_hours": 2.9
+      },
+      {
+        "label": "Settle summary",
+        "status": "fresh",
+        "latest_file": "v2_settle_summary_2026-05-14.json",
+        "latest_date": "2026-05-14",
+        "age_hours": 0.3
+      },
+      {
+        "label": "Line snapshots",
+        "status": "fresh",
+        "latest_file": "v2_line_snapshots_2026-05-14.json",
+        "latest_date": "2026-05-14",
+        "age_hours": 2.9
+      },
+      {
+        "label": "Learning journal",
+        "status": "fresh",
+        "latest_file": "learning_journal_2026-05-14.md",
+        "latest_date": "2026-05-14",
+        "age_hours": 0.3
+      }
+    ]
   },
   "public_url": "https://upgrades-institutional-luther-established.trycloudflare.com",
   "telegram": {
