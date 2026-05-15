@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-021927",
-  "generated_at": "2026-05-15T02:19:27.598246+00:00",
+  "build_id": "260515-022653",
+  "generated_at": "2026-05-15T02:26:53.726104+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -77,8 +77,8 @@
       "odds": 150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -86,7 +86,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.7pp \u00b7 rae +2.8 \u00b7 factor x1.09 \u00b7 32 totalBases L10 (avg 3.20 vs O2.5 line, gap +0.70) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. TOTAL_BASES_ALT 1 O2.5 -> LOST. Net -$2.50 at 150."
     },
     {
       "id": "360315a3-aab3-8129-aa80-de83a85e3cd2",
@@ -96,8 +96,8 @@
       "odds": 160,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -105,7 +105,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Ceddanne Rafaela TOTAL_BASES_ALT 0 O1.5 -> LOST. Net -$2.50 at 160."
     },
     {
       "id": "360315a3-aab3-81c5-ad20-dd8ca446c44a",
@@ -115,8 +115,8 @@
       "odds": 106,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -124,7 +124,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.9pp \u00b7 rae +2.9 \u00b7 factor x1.08 \u00b7 51 strikeOuts L8 (avg 6.38 vs O5.5 line, gap +0.88)"
+      "notes": "Landen Roupp PITCHER_STRIKEOUTS 1 O5.5 -> LOST. Net -$2.50 at 106."
     },
     {
       "id": "360315a3-aab3-8151-a41b-cef43ba33f7e",
@@ -134,8 +134,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.67,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -143,7 +143,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Kyle Schwarber HITS_ALT 1 O0.5 -> WON. Net +$1.67 at -150."
     },
     {
       "id": "360315a3-aab3-8156-8029-edce1921633a",
@@ -153,8 +153,8 @@
       "odds": -145,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -162,7 +162,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.0pp \u00b7 rae +2.9 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Anthony Kay"
+      "notes": "Isaac Collins HITS_ALT 0 O0.5 -> LOST. Net -$2.50 at -145."
     },
     {
       "id": "360315a3-aab3-8118-a51a-cdb97ee53ce9",
@@ -172,8 +172,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -181,7 +181,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Trevor Story HITS_ALT 0 O0.5 -> LOST. Net -$5.00 at -160."
     },
     {
       "id": "360315a3-aab3-81e2-af22-fcca1e282aca",
@@ -191,8 +191,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 4.55,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -200,7 +200,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "total 2 (CHC 2, ATL 0) UNDER 7.5 -> WON. Net +$4.55 at -110."
     },
     {
       "id": "360315a3-aab3-81a8-8d9b-c9a85a0f8ef9",
@@ -210,8 +210,8 @@
       "odds": -162,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 3.09,
       "tier": "SIDE",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -219,7 +219,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Chris Sale PITCHER_STRIKEOUTS 8 O6.5 -> WON. Net +$3.09 at -162."
     },
     {
       "id": "360315a3-aab3-812c-8578-ec7dd38a57e4",
@@ -229,8 +229,8 @@
       "odds": -130,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -238,7 +238,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +5.4pp \u00b7 rae +4.0 \u00b7 factor x1.10 \u00b7 43 strikeOuts L7 (avg 6.14 vs O5.5 line, gap +0.64)"
+      "notes": "Emmet Sheehan PITCHER_STRIKEOUTS 1 O5.5 -> LOST. Net -$2.50 at -130."
     },
     {
       "id": "360315a3-aab3-81d5-985c-c2871315184f",
@@ -248,8 +248,8 @@
       "odds": -280,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.79,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -257,7 +257,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +4.1pp \u00b7 rae +4.1 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Anthony Kay"
+      "notes": "Maikel Garcia HITS_ALT 1 O0.5 -> WON. Net +$1.79 at -280."
     },
     {
       "id": "360315a3-aab3-8173-89f7-fae2197def9a",
@@ -267,8 +267,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -276,7 +276,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "total 2 (CHC 2, ATL 0) OVER 7.5 -> LOST. Net -$5.00 at -110."
     },
     {
       "id": "360315a3-aab3-81f0-a20b-c06f4a65bace",
@@ -286,8 +286,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -295,7 +295,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +5.6pp \u00b7 rae +4.1 \u00b7 factor x1.09 \u00b7 32 totalBases L10 (avg 3.20 vs O1.5 line, gap +1.70) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. TOTAL_BASES_ALT 1 O1.5 -> LOST. Net -$2.50 at -150."
     },
     {
       "id": "360315a3-aab3-81ec-bdde-ff1da1c89a2d",
@@ -305,8 +305,8 @@
       "odds": -210,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 2.38,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -314,7 +314,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Alec Bohm HITS_ALT 2 O0.5 -> WON. Net +$2.38 at -210."
     },
     {
       "id": "360315a3-aab3-8161-a91a-e642908c594f",
@@ -324,8 +324,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -333,7 +333,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +4.7pp \u00b7 rae +4.7 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Anthony Kay"
+      "notes": "Vinnie Pasquantino HITS_ALT 0 O0.5 -> LOST. Net -$5.00 at -160."
     },
     {
       "id": "360315a3-aab3-8156-99ec-ea69a1b4af16",
@@ -343,8 +343,8 @@
       "odds": -180,
       "stake": 14.65,
       "stake_u": 2.93,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -14.65,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -352,7 +352,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Ceddanne Rafaela HITS_ALT 0 O0.5 -> LOST. Net -$14.65 at -180."
     },
     {
       "id": "360315a3-aab3-81d6-890b-f4bdf17a1616",
@@ -362,8 +362,8 @@
       "odds": -185,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 8.11,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -371,7 +371,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +6.6pp \u00b7 rae +6.5 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60)"
+      "notes": "Miguel Vargas HITS_ALT 1 O0.5 -> WON. Net +$8.11 at -185."
     },
     {
       "id": "360315a3-aab3-818f-88e2-d365ad7f302d",
@@ -381,8 +381,8 @@
       "odds": -165,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 9.09,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -390,7 +390,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Brandon Marsh HITS_ALT 1 O0.5 -> WON. Net +$9.09 at -165."
     },
     {
       "id": "360315a3-aab3-8180-9abc-f39c0653ad43",
@@ -400,8 +400,8 @@
       "odds": -340,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 4.41,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -409,7 +409,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +8.0pp \u00b7 rae +7.9 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 15 hits L10 (avg 1.50 vs O0.5 line, gap +1.00) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. HITS_ALT 1 O0.5 -> WON. Net +$4.41 at -340."
     },
     {
       "id": "360315a3-aab3-81be-be5e-d5121ac4aea9",
@@ -419,8 +419,8 @@
       "odds": -110,
       "stake": 10,
       "stake_u": 2,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -10,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-14",
@@ -428,7 +428,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "ATL 0 vs opp 2 (spread -1.5, adj -1.5) -> NOT COVERED. Net -$10.00 at -110."
     }
   ],
   "today_picks": [
@@ -497,8 +497,8 @@
       "odds": 150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -506,7 +506,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.7pp \u00b7 rae +2.8 \u00b7 factor x1.09 \u00b7 32 totalBases L10 (avg 3.20 vs O2.5 line, gap +0.70) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. TOTAL_BASES_ALT 1 O2.5 -> LOST. Net -$2.50 at 150."
     },
     {
       "id": "360315a3-aab3-8129-aa80-de83a85e3cd2",
@@ -516,8 +516,8 @@
       "odds": 160,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -525,7 +525,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Ceddanne Rafaela TOTAL_BASES_ALT 0 O1.5 -> LOST. Net -$2.50 at 160."
     },
     {
       "id": "360315a3-aab3-81c5-ad20-dd8ca446c44a",
@@ -535,8 +535,8 @@
       "odds": 106,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -544,7 +544,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.9pp \u00b7 rae +2.9 \u00b7 factor x1.08 \u00b7 51 strikeOuts L8 (avg 6.38 vs O5.5 line, gap +0.88)"
+      "notes": "Landen Roupp PITCHER_STRIKEOUTS 1 O5.5 -> LOST. Net -$2.50 at 106."
     },
     {
       "id": "360315a3-aab3-8151-a41b-cef43ba33f7e",
@@ -554,8 +554,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.67,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -563,7 +563,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Kyle Schwarber HITS_ALT 1 O0.5 -> WON. Net +$1.67 at -150."
     },
     {
       "id": "360315a3-aab3-8156-8029-edce1921633a",
@@ -573,8 +573,8 @@
       "odds": -145,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -582,7 +582,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +3.0pp \u00b7 rae +2.9 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Anthony Kay"
+      "notes": "Isaac Collins HITS_ALT 0 O0.5 -> LOST. Net -$2.50 at -145."
     },
     {
       "id": "360315a3-aab3-8118-a51a-cdb97ee53ce9",
@@ -592,8 +592,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -601,7 +601,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Trevor Story HITS_ALT 0 O0.5 -> LOST. Net -$5.00 at -160."
     },
     {
       "id": "360315a3-aab3-81e2-af22-fcca1e282aca",
@@ -611,8 +611,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 4.55,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -620,7 +620,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "total 2 (CHC 2, ATL 0) UNDER 7.5 -> WON. Net +$4.55 at -110."
     },
     {
       "id": "360315a3-aab3-81a8-8d9b-c9a85a0f8ef9",
@@ -630,8 +630,8 @@
       "odds": -162,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 3.09,
       "tier": "SIDE",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -639,7 +639,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Chris Sale PITCHER_STRIKEOUTS 8 O6.5 -> WON. Net +$3.09 at -162."
     },
     {
       "id": "360315a3-aab3-812c-8578-ec7dd38a57e4",
@@ -649,8 +649,8 @@
       "odds": -130,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -658,7 +658,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +5.4pp \u00b7 rae +4.0 \u00b7 factor x1.10 \u00b7 43 strikeOuts L7 (avg 6.14 vs O5.5 line, gap +0.64)"
+      "notes": "Emmet Sheehan PITCHER_STRIKEOUTS 1 O5.5 -> LOST. Net -$2.50 at -130."
     },
     {
       "id": "360315a3-aab3-81d5-985c-c2871315184f",
@@ -668,8 +668,8 @@
       "odds": -280,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.79,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -677,7 +677,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +4.1pp \u00b7 rae +4.1 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Anthony Kay"
+      "notes": "Maikel Garcia HITS_ALT 1 O0.5 -> WON. Net +$1.79 at -280."
     },
     {
       "id": "360315a3-aab3-8173-89f7-fae2197def9a",
@@ -687,8 +687,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -696,7 +696,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "total 2 (CHC 2, ATL 0) OVER 7.5 -> LOST. Net -$5.00 at -110."
     },
     {
       "id": "360315a3-aab3-81f0-a20b-c06f4a65bace",
@@ -706,8 +706,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -2.5,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -715,7 +715,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +5.6pp \u00b7 rae +4.1 \u00b7 factor x1.09 \u00b7 32 totalBases L10 (avg 3.20 vs O1.5 line, gap +1.70) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. TOTAL_BASES_ALT 1 O1.5 -> LOST. Net -$2.50 at -150."
     },
     {
       "id": "360315a3-aab3-81ec-bdde-ff1da1c89a2d",
@@ -725,8 +725,8 @@
       "odds": -210,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 2.38,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -734,7 +734,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Alec Bohm HITS_ALT 2 O0.5 -> WON. Net +$2.38 at -210."
     },
     {
       "id": "360315a3-aab3-8161-a91a-e642908c594f",
@@ -744,8 +744,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -5,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -753,7 +753,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +4.7pp \u00b7 rae +4.7 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Anthony Kay"
+      "notes": "Vinnie Pasquantino HITS_ALT 0 O0.5 -> LOST. Net -$5.00 at -160."
     },
     {
       "id": "360315a3-aab3-8156-99ec-ea69a1b4af16",
@@ -763,8 +763,8 @@
       "odds": -180,
       "stake": 14.65,
       "stake_u": 2.93,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -14.65,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -772,7 +772,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Ceddanne Rafaela HITS_ALT 0 O0.5 -> LOST. Net -$14.65 at -180."
     },
     {
       "id": "360315a3-aab3-81d6-890b-f4bdf17a1616",
@@ -782,8 +782,8 @@
       "odds": -185,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 8.11,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -791,7 +791,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +6.6pp \u00b7 rae +6.5 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60)"
+      "notes": "Miguel Vargas HITS_ALT 1 O0.5 -> WON. Net +$8.11 at -185."
     },
     {
       "id": "360315a3-aab3-818f-88e2-d365ad7f302d",
@@ -801,8 +801,8 @@
       "odds": -165,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 9.09,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -810,7 +810,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "Brandon Marsh HITS_ALT 1 O0.5 -> WON. Net +$9.09 at -165."
     },
     {
       "id": "360315a3-aab3-8180-9abc-f39c0653ad43",
@@ -820,8 +820,8 @@
       "odds": -340,
       "stake": 15,
       "stake_u": 3,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 4.41,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -829,7 +829,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "edge +8.0pp \u00b7 rae +7.9 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 15 hits L10 (avg 1.50 vs O0.5 line, gap +1.00) \u00b7 vs Anthony Kay"
+      "notes": "Bobby Witt Jr. HITS_ALT 1 O0.5 -> WON. Net +$4.41 at -340."
     },
     {
       "id": "360315a3-aab3-81be-be5e-d5121ac4aea9",
@@ -839,8 +839,8 @@
       "odds": -110,
       "stake": 10,
       "stake_u": 2,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -10,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-14",
@@ -848,7 +848,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
+      "notes": "ATL 0 vs opp 2 (spread -1.5, adj -1.5) -> NOT COVERED. Net -$10.00 at -110."
     }
   ],
   "daily": [
@@ -861,6 +861,16 @@
       "paper_w": 0,
       "paper_l": 0,
       "grade": "Pending"
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "bankroll_end": 155,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
+      "paper_w": 8,
+      "paper_l": 11,
+      "grade": "B"
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
@@ -914,6 +924,14 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "live_w": 0.0,
+      "live_l": 0.0,
+      "paper_w": 8.0,
+      "paper_l": 11.0,
+      "live_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "live_w": 1.0,
       "live_l": 2.0,
       "paper_w": 0.0,
@@ -952,6 +970,10 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "cum_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "cum_pl": -4.06
     },
     {
@@ -978,11 +1000,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 0,
-      "l10_won": 0,
-      "l10_lost": 0,
-      "l10_hit_rate": 0,
-      "l10_net": 0
+      "l10_picks": 2,
+      "l10_won": 1,
+      "l10_lost": 1,
+      "l10_hit_rate": 50.0,
+      "l10_net": -0.45
     },
     {
       "name": "MLB Run Line",
@@ -994,11 +1016,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 1,
+      "l10_picks": 2,
       "l10_won": 0,
-      "l10_lost": 1,
+      "l10_lost": 2,
       "l10_hit_rate": 0.0,
-      "l10_net": -1.5
+      "l10_net": -11.5
     },
     {
       "name": "MLB Pitcher Strikeouts",
@@ -1010,11 +1032,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 0,
-      "l10_won": 0,
-      "l10_lost": 0,
-      "l10_hit_rate": 0,
-      "l10_net": 0
+      "l10_picks": 3,
+      "l10_won": 1,
+      "l10_lost": 2,
+      "l10_hit_rate": 33.3,
+      "l10_net": -1.91
     },
     {
       "name": "MLB Moneyline",
@@ -1074,11 +1096,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 0,
+      "l10_picks": 3,
       "l10_won": 0,
-      "l10_lost": 0,
-      "l10_hit_rate": 0,
-      "l10_net": 0
+      "l10_lost": 3,
+      "l10_hit_rate": 0.0,
+      "l10_net": -7.5
     },
     {
       "name": "MLB Batter Total Bases",
@@ -1154,11 +1176,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 0,
-      "l10_won": 0,
-      "l10_lost": 0,
-      "l10_hit_rate": 0,
-      "l10_net": 0
+      "l10_picks": 10,
+      "l10_won": 6,
+      "l10_lost": 4,
+      "l10_hit_rate": 60.0,
+      "l10_net": 0.3
     },
     {
       "name": "MLB Batter Hits",
@@ -2027,6 +2049,160 @@
   ],
   "journal": [
     {
+      "title": "[PAPER] [PAPER] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (Kansas City Roy \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$4.41.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phi \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$9.09.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Miguel Vargas O0.5 HITS_ALT @ -185 (Kansas City Roya \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "STRONG tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$8.11.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Vinnie Pasquantino O0.5 HITS_ALT @ -160 (Kansas City \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-5.00.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Alec Bohm O0.5 HITS_ALT @ -210 (Philadelphia Phillie \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$2.38.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Bobby Witt Jr. O1.5 TOTAL_BASES_ALT @ -150 (Kansas C \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Total Bases Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Maikel Garcia O0.5 HITS_ALT @ -280 (Kansas City Roya \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$1.79.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Emmet Sheehan O5.5 PITCHER_STRIKEOUTS @ -130 (San Fr \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Chris Sale O6.5 PITCHER_STRIKEOUTS @ -162 (Chicago C \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Won. P/L: +$3.09.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] total Under 7.5 @ -110 (Chicago Cubs @ Atlanta Brave \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "SIDE tier pick. Strategy: MLB Total Runs.",
+      "what_failed": "Result: Won. P/L: +$4.55.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Isaac Collins O0.5 HITS_ALT @ -145 (Kansas City Roya \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Kyle Schwarber O0.5 HITS_ALT @ -150 (Philadelphia Ph \u2014 Won",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Hits Alt.",
+      "what_failed": "Result: Won. P/L: +$1.67.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Landen Roupp O5.5 PITCHER_STRIKEOUTS @ +106 (San Fra \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Pitcher Strikeouts.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] [PAPER] Bobby Witt Jr. O2.5 TOTAL_BASES_ALT @ +150 (Kansas C \u2014 Lost",
+      "date": "2026-05-14",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "WATCH tier pick. Strategy: MLB Batter Total Bases Alt.",
+      "what_failed": "Result: Lost. P/L: $-2.50.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
       "title": "[PAPER] [PAPER] spread Over -1.5 @ -110 (Chicago Cubs @ Atlanta Brav \u2014 Lost",
       "date": "2026-05-14",
       "type": "Pick Postmortem",
@@ -2170,31 +2346,49 @@
       "strategy_adj": ""
     },
     {
-      "title": "[NIGHT-SETTLE] 2026-05-14 \u2014 1W-12L net $-73.71",
+      "title": "[NIGHT-SETTLE] 2026-05-14 \u2014 8W-11L net $-19.56",
       "date": "2026-05-14",
       "type": "Daily Reflection",
       "outcome": "Lost",
-      "what_worked": "1 of 13 picks hit (7%). Biggest winner: [LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (KC @ STL) +$0.44. LIVE wins: 1 totaling +$0.44.",
-      "what_failed": "12 losses totaling -$74.15. Biggest miss: [PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red S $-15.00. Parlay correlation hit us: 3 parlay(s) lost (when one leg dies, the parlay dies). LIVE losses: 2 totaling -$4.50 \u2014 review research depth.",
-      "lessons": "Hit rate 8% below 40% threshold \u2014 review strategy triggers and edge calibration for tomorrow. Parlays all lost \u2014 correlation risk biting. Consider singles-only until edge sample stabilizes. Repeat losses on: MLB Run Line (2), MLB Batter Hits Alt (5), MLB Total Runs (2). Watch sample, may not be a real signal.",
+      "what_worked": "8 of 19 picks hit (42%). Biggest winner: [PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red S +$9.09. PAPER wins: 8 totaling +$35.09.",
+      "what_failed": "11 losses totaling -$54.65. Biggest miss: [PAPER] Ceddanne Rafaela O0.5 HITS_ALT @ -180 (Philadelphia Phillies @ Boston Re $-14.65. Parlay correlation hit us: 3 parlay(s) lost (when one leg dies, the parlay dies).",
+      "lessons": "Hit rate 42% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Parlays all lost \u2014 correlation risk biting. Consider singles-only until edge sample stabilizes. Repeat losses on: MLB Batter Total Bases Alt (3), MLB Pitcher Strikeouts (2), MLB Batter Hits Alt (4). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (6).",
       "calibration_delta": null,
-      "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears. Player props worked better than team markets today \u2014 lean toward props if pattern holds 3+ days."
+      "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears. Tilt toward team markets next slate \u2014 player props had higher variance today. Player props worked better than team markets today \u2014 lean toward props if pattern holds 3+ days."
     }
   ],
   "sport_roi": [
     {
       "label": "MLB",
-      "roi": -100.0,
-      "n": 2,
-      "pl": -4.5
+      "roi": -18.997236478484012,
+      "n": 21,
+      "pl": -24.060000000000002
     }
   ],
   "tier_roi": [
     {
       "label": "LOCK",
       "roi": -100.0,
-      "n": 2,
-      "pl": -4.5
+      "n": 3,
+      "pl": -14.5
+    },
+    {
+      "label": "WATCH",
+      "roi": -76.17142857142856,
+      "n": 7,
+      "pl": -13.33
+    },
+    {
+      "label": "SIDE",
+      "roi": -9.114285714285716,
+      "n": 7,
+      "pl": -3.1900000000000004
+    },
+    {
+      "label": "STRONG",
+      "roi": 11.668063704945514,
+      "n": 4,
+      "pl": 6.959999999999999
     }
   ],
   "calib_pairs": [
@@ -2209,6 +2403,120 @@
       "outcome": 0,
       "strategy": "Stable Edge Parlay",
       "pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay "
+    },
+    {
+      "prob": 0.4,
+      "outcome": 0,
+      "strategy": "MLB Batter Total Bases Alt",
+      "pick": "[PAPER] Bobby Witt Jr. O2.5 TOTAL_BASES_"
+    },
+    {
+      "prob": 0.38461538461538464,
+      "outcome": 0,
+      "strategy": "MLB Batter Total Bases Alt",
+      "pick": "[PAPER] Ceddanne Rafaela O1.5 TOTAL_BASE"
+    },
+    {
+      "prob": 0.4854368932038835,
+      "outcome": 0,
+      "strategy": "MLB Pitcher Strikeouts",
+      "pick": "[PAPER] Landen Roupp O5.5 PITCHER_STRIKE"
+    },
+    {
+      "prob": 0.6,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Kyle Schwarber O0.5 HITS_ALT @ -"
+    },
+    {
+      "prob": 0.5918367346938775,
+      "outcome": 0,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Isaac Collins O0.5 HITS_ALT @ -1"
+    },
+    {
+      "prob": 0.6153846153846154,
+      "outcome": 0,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Trevor Story O0.5 HITS_ALT @ -16"
+    },
+    {
+      "prob": 0.5238095238095238,
+      "outcome": 1,
+      "strategy": "MLB Total Runs",
+      "pick": "[PAPER] total Under 7.5 @ -110 (Chicago "
+    },
+    {
+      "prob": 0.6183206106870229,
+      "outcome": 1,
+      "strategy": "MLB Pitcher Strikeouts",
+      "pick": "[PAPER] Chris Sale O6.5 PITCHER_STRIKEOU"
+    },
+    {
+      "prob": 0.5652173913043478,
+      "outcome": 0,
+      "strategy": "MLB Pitcher Strikeouts",
+      "pick": "[PAPER] Emmet Sheehan O5.5 PITCHER_STRIK"
+    },
+    {
+      "prob": 0.7368421052631579,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Maikel Garcia O0.5 HITS_ALT @ -2"
+    },
+    {
+      "prob": 0.5238095238095238,
+      "outcome": 0,
+      "strategy": "MLB Total Runs",
+      "pick": "[PAPER] total Over 7.5 @ -110 (Chicago C"
+    },
+    {
+      "prob": 0.6,
+      "outcome": 0,
+      "strategy": "MLB Batter Total Bases Alt",
+      "pick": "[PAPER] Bobby Witt Jr. O1.5 TOTAL_BASES_"
+    },
+    {
+      "prob": 0.6774193548387096,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Alec Bohm O0.5 HITS_ALT @ -210 ("
+    },
+    {
+      "prob": 0.6153846153846154,
+      "outcome": 0,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Vinnie Pasquantino O0.5 HITS_ALT"
+    },
+    {
+      "prob": 0.6428571428571429,
+      "outcome": 0,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Ceddanne Rafaela O0.5 HITS_ALT @"
+    },
+    {
+      "prob": 0.6491228070175439,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Miguel Vargas O0.5 HITS_ALT @ -1"
+    },
+    {
+      "prob": 0.6226415094339622,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -1"
+    },
+    {
+      "prob": 0.7727272727272727,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Bobby Witt Jr. O0.5 HITS_ALT @ -"
+    },
+    {
+      "prob": 0.5238095238095238,
+      "outcome": 0,
+      "strategy": "MLB Run Line",
+      "pick": "[PAPER] spread Over -1.5 @ -110 (Chicago"
     }
   ],
   "calib_bins": [
@@ -2278,25 +2586,25 @@
     {
       "low": 35,
       "high": 40,
-      "n": 0,
+      "n": 1,
       "wins": 0,
       "predicted_mid": 37.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 0.0,
+      "delta": -37.5
     },
     {
       "low": 40,
       "high": 45,
-      "n": 0,
+      "n": 1,
       "wins": 0,
       "predicted_mid": 42.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 0.0,
+      "delta": -42.5
     },
     {
       "low": 45,
       "high": 50,
-      "n": 1,
+      "n": 2,
       "wins": 0,
       "predicted_mid": 47.5,
       "actual_hit": 0.0,
@@ -2305,56 +2613,56 @@
     {
       "low": 50,
       "high": 55,
-      "n": 0,
-      "wins": 0,
+      "n": 3,
+      "wins": 1,
       "predicted_mid": 52.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 33.33333333333333,
+      "delta": -19.16666666666667
     },
     {
       "low": 55,
       "high": 60,
-      "n": 0,
+      "n": 2,
       "wins": 0,
       "predicted_mid": 57.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 0.0,
+      "delta": -57.5
     },
     {
       "low": 60,
       "high": 65,
-      "n": 0,
-      "wins": 0,
+      "n": 8,
+      "wins": 4,
       "predicted_mid": 62.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 50.0,
+      "delta": -12.5
     },
     {
       "low": 65,
       "high": 70,
-      "n": 0,
-      "wins": 0,
+      "n": 1,
+      "wins": 1,
       "predicted_mid": 67.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 100.0,
+      "delta": 32.5
     },
     {
       "low": 70,
       "high": 75,
-      "n": 0,
-      "wins": 0,
+      "n": 1,
+      "wins": 1,
       "predicted_mid": 72.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 100.0,
+      "delta": 27.5
     },
     {
       "low": 75,
       "high": 80,
-      "n": 0,
-      "wins": 0,
+      "n": 1,
+      "wins": 1,
       "predicted_mid": 77.5,
-      "actual_hit": null,
-      "delta": null
+      "actual_hit": 100.0,
+      "delta": 22.5
     },
     {
       "low": 80,
@@ -2395,11 +2703,39 @@
   ],
   "strat_calib": [
     {
-      "strategy": "MLB Run Line",
-      "n": 1,
-      "predicted_avg": 46.2962962962963,
+      "strategy": "MLB Batter Hits Alt",
+      "n": 10,
+      "predicted_avg": 65.24216157600897,
+      "actual_hit": 60.0,
+      "delta": -5.242161576008968
+    },
+    {
+      "strategy": "MLB Batter Total Bases Alt",
+      "n": 3,
+      "predicted_avg": 46.15384615384615,
       "actual_hit": 0.0,
-      "delta": -46.2962962962963
+      "delta": -46.15384615384615
+    },
+    {
+      "strategy": "MLB Pitcher Strikeouts",
+      "n": 3,
+      "predicted_avg": 55.632496506508474,
+      "actual_hit": 33.33333333333333,
+      "delta": -22.299163173175145
+    },
+    {
+      "strategy": "MLB Run Line",
+      "n": 2,
+      "predicted_avg": 49.338624338624335,
+      "actual_hit": 0.0,
+      "delta": -49.338624338624335
+    },
+    {
+      "strategy": "MLB Total Runs",
+      "n": 2,
+      "predicted_avg": 52.38095238095239,
+      "actual_hit": 50.0,
+      "delta": -2.3809523809523867
     },
     {
       "strategy": "Stable Edge Parlay",
@@ -2592,20 +2928,40 @@
     }
   },
   "perf_panel": {
-    "total_settled": 2,
-    "total_stake": 4.5,
-    "total_net_pl": -4.5,
-    "total_roi_pct": -100.0,
+    "total_settled": 21,
+    "total_stake": 126.65,
+    "total_net_pl": -24.06,
+    "total_roi_pct": -19.0,
     "by_strategy": [
       {
-        "name": "MLB Run Line",
-        "n": 1,
-        "won": 0,
+        "name": "MLB Batter Hits Alt",
+        "n": 10,
+        "won": 6,
+        "lost": 4,
+        "stake": 84.65,
+        "pl": 0.3,
+        "hit_rate": 60.0,
+        "roi_pct": 0.4
+      },
+      {
+        "name": "MLB Total Runs",
+        "n": 2,
+        "won": 1,
         "lost": 1,
-        "stake": 1.5,
-        "pl": -1.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
+        "stake": 10.0,
+        "pl": -0.45,
+        "hit_rate": 50.0,
+        "roi_pct": -4.5
+      },
+      {
+        "name": "MLB Pitcher Strikeouts",
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "stake": 10.0,
+        "pl": -1.91,
+        "hit_rate": 33.3,
+        "roi_pct": -19.1
       },
       {
         "name": "Stable Edge Parlay",
@@ -2614,6 +2970,26 @@
         "lost": 1,
         "stake": 3.0,
         "pl": -3.0,
+        "hit_rate": 0.0,
+        "roi_pct": -100.0
+      },
+      {
+        "name": "MLB Batter Total Bases Alt",
+        "n": 3,
+        "won": 0,
+        "lost": 3,
+        "stake": 7.5,
+        "pl": -7.5,
+        "hit_rate": 0.0,
+        "roi_pct": -100.0
+      },
+      {
+        "name": "MLB Run Line",
+        "n": 2,
+        "won": 0,
+        "lost": 2,
+        "stake": 11.5,
+        "pl": -11.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
@@ -2621,38 +2997,89 @@
     "by_sport": [
       {
         "name": "MLB",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 4.5,
-        "pl": -4.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
+        "n": 21,
+        "won": 8,
+        "lost": 13,
+        "stake": 126.65,
+        "pl": -24.06,
+        "hit_rate": 38.1,
+        "roi_pct": -19.0
       }
     ],
     "by_tier": [
       {
+        "name": "STRONG",
+        "n": 4,
+        "won": 3,
+        "lost": 1,
+        "stake": 59.65,
+        "pl": 6.96,
+        "hit_rate": 75.0,
+        "roi_pct": 11.7
+      },
+      {
+        "name": "SIDE",
+        "n": 7,
+        "won": 4,
+        "lost": 3,
+        "stake": 35.0,
+        "pl": -3.19,
+        "hit_rate": 57.1,
+        "roi_pct": -9.1
+      },
+      {
+        "name": "WATCH",
+        "n": 7,
+        "won": 1,
+        "lost": 6,
+        "stake": 17.5,
+        "pl": -13.33,
+        "hit_rate": 14.3,
+        "roi_pct": -76.2
+      },
+      {
         "name": "LOCK",
-        "n": 2,
+        "n": 3,
         "won": 0,
-        "lost": 2,
-        "stake": 4.5,
-        "pl": -4.5,
+        "lost": 3,
+        "stake": 14.5,
+        "pl": -14.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
     ],
-    "what_worked": [],
+    "what_worked": [
+      {
+        "name": "MLB Batter Hits Alt",
+        "n": 10,
+        "won": 6,
+        "lost": 4,
+        "stake": 84.65,
+        "pl": 0.3,
+        "hit_rate": 60.0,
+        "roi_pct": 0.4
+      }
+    ],
     "what_failed": [
       {
-        "name": "MLB Run Line",
-        "n": 1,
-        "won": 0,
+        "name": "MLB Total Runs",
+        "n": 2,
+        "won": 1,
         "lost": 1,
-        "stake": 1.5,
-        "pl": -1.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
+        "stake": 10.0,
+        "pl": -0.45,
+        "hit_rate": 50.0,
+        "roi_pct": -4.5
+      },
+      {
+        "name": "MLB Pitcher Strikeouts",
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "stake": 10.0,
+        "pl": -1.91,
+        "hit_rate": 33.3,
+        "roi_pct": -19.1
       },
       {
         "name": "Stable Edge Parlay",
@@ -2663,9 +3090,29 @@
         "pl": -3.0,
         "hit_rate": 0.0,
         "roi_pct": -100.0
+      },
+      {
+        "name": "MLB Batter Total Bases Alt",
+        "n": 3,
+        "won": 0,
+        "lost": 3,
+        "stake": 7.5,
+        "pl": -7.5,
+        "hit_rate": 0.0,
+        "roi_pct": -100.0
+      },
+      {
+        "name": "MLB Run Line",
+        "n": 2,
+        "won": 0,
+        "lost": 2,
+        "stake": 11.5,
+        "pl": -11.5,
+        "hit_rate": 0.0,
+        "roi_pct": -100.0
       }
     ],
-    "insufficient_data": true
+    "insufficient_data": false
   },
   "last_7d": {
     "days_desc": [
@@ -2674,19 +3121,19 @@
         "dow": "Thursday",
         "short": "05/14",
         "n_total": 22,
-        "n_settled": 2,
+        "n_settled": 21,
         "n_live": 3,
         "n_paper": 19,
-        "won": 0,
-        "lost": 2,
+        "won": 8,
+        "lost": 13,
         "push": 0,
-        "hit_rate": 0.0,
-        "stake": 4.5,
-        "pl": -4.5,
-        "top_pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
-        "top_pl": -1.5,
-        "bot_pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
-        "bot_pl": -3.0
+        "hit_rate": 38.1,
+        "stake": 126.65,
+        "pl": -24.06,
+        "top_pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red Sox)",
+        "top_pl": 9.09,
+        "bot_pick": "[PAPER] Ceddanne Rafaela O0.5 HITS_ALT @ -180 (Philadelphia Phillies @ Boston Red Sox)",
+        "bot_pl": -14.65
       },
       {
         "date": "2026-05-13",
@@ -2923,29 +3370,29 @@
         "dow": "Thursday",
         "short": "05/14",
         "n_total": 22,
-        "n_settled": 2,
+        "n_settled": 21,
         "n_live": 3,
         "n_paper": 19,
-        "won": 0,
-        "lost": 2,
+        "won": 8,
+        "lost": 13,
         "push": 0,
-        "hit_rate": 0.0,
-        "stake": 4.5,
-        "pl": -4.5,
-        "top_pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
-        "top_pl": -1.5,
-        "bot_pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
-        "bot_pl": -3.0
+        "hit_rate": 38.1,
+        "stake": 126.65,
+        "pl": -24.06,
+        "top_pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red Sox)",
+        "top_pl": 9.09,
+        "bot_pick": "[PAPER] Ceddanne Rafaela O0.5 HITS_ALT @ -180 (Philadelphia Phillies @ Boston Red Sox)",
+        "bot_pl": -14.65
       }
     ],
     "total_picks": 22,
-    "total_settled": 2,
-    "total_won": 0,
-    "total_lost": 2,
-    "total_stake": 4.5,
-    "total_pl": -4.5,
-    "hit_rate": 0.0,
-    "roi_pct": -100.0,
+    "total_settled": 21,
+    "total_won": 8,
+    "total_lost": 13,
+    "total_stake": 126.65,
+    "total_pl": -24.06,
+    "hit_rate": 38.1,
+    "roi_pct": -19.0,
     "live_count": 3,
     "paper_count": 19,
     "best_day": {
@@ -2954,7 +3401,7 @@
     },
     "worst_day": {
       "date": "2026-05-14",
-      "pl": -4.5
+      "pl": -24.06
     },
     "sport_dist": [
       {
@@ -3007,13 +3454,13 @@
       "roi_pct": -100.0
     },
     "paper": {
-      "n": 0,
-      "won": 0,
-      "lost": 0,
-      "stake": 0,
-      "pl": 0,
-      "hit_rate": 0,
-      "roi_pct": 0
+      "n": 19,
+      "won": 8,
+      "lost": 11,
+      "stake": 122.15,
+      "pl": -19.56,
+      "hit_rate": 42.1,
+      "roi_pct": -16.0
     }
   },
   "wellness": {
@@ -3208,7 +3655,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 2,
+            "home_errors": 3,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -4047,9 +4494,9 @@
           ],
           "scoreboard": {
             "game_pk": 824602,
-            "status": "Game Over",
+            "status": "Final",
             "abstract_state": "Final",
-            "status_code": "O",
+            "status_code": "F",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -4157,9 +4604,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 1,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 2,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 1,
             "home_hits": 1,
             "home_errors": 0,
@@ -4167,10 +4614,12 @@
             "away_hits": 0,
             "away_errors": 0,
             "home_innings": [
-              1
+              1,
+              null
             ],
             "away_innings": [
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -8530,15 +8979,15 @@
     },
     "paper": {
       "total_picks": 19,
-      "settled_picks": 0,
-      "won": 0,
-      "lost": 0,
+      "settled_picks": 19,
+      "won": 8,
+      "lost": 11,
       "push": 0,
-      "win_rate_pct": 0.0,
-      "total_pl": 0,
-      "max_drawdown": -0.0,
-      "expectancy_per_pick": 0.0,
-      "streak": "\u2014"
+      "win_rate_pct": 42.1,
+      "total_pl": -19.56,
+      "max_drawdown": -31.17,
+      "expectancy_per_pick": -1.03,
+      "streak": "L3"
     }
   },
   "risk_panel": {
@@ -8595,52 +9044,52 @@
     "paper": {
       "bankroll": {
         "start": 500.0,
-        "current": 500.0,
+        "current": 480.44,
         "peak": 500.0,
         "peak_date": "2026-05-14",
-        "drawdown_dollars": 0.0,
-        "drawdown_pct": 0.0,
-        "max_drawdown_dollars": 0.0,
-        "max_drawdown_pct": 0.0
+        "drawdown_dollars": 19.56,
+        "drawdown_pct": 3.9,
+        "max_drawdown_dollars": 31.17,
+        "max_drawdown_pct": 6.2
       },
       "today": {
         "stake_committed": 122.15,
         "daily_cap": 150.0,
         "cap_pct_used": 81.4,
-        "daily_pl": 0,
+        "daily_pl": -19.56,
         "picks_fired": 19,
-        "picks_pending": 19
+        "picks_pending": 0
       },
       "exposure": {
-        "pending_stake": 122.15,
-        "pending_count": 19,
-        "max_single_event_stake": 15.0,
-        "max_single_event_pct": 3.0,
+        "pending_stake": 0,
+        "pending_count": 0,
+        "max_single_event_stake": 0.0,
+        "max_single_event_pct": 0.0,
         "max_single_allowed_pct": 5.0
       },
       "breakers": {
         "hard_stop_status": "OK",
         "hard_stop_threshold": -50.0,
-        "hard_stop_distance": 50.0,
+        "hard_stop_distance": 30.44,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 30.0,
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
         "avg_stake": 6.43,
-        "avg_stake_pct_bankroll": 1.29,
+        "avg_stake_pct_bankroll": 1.34,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
       },
       "streaks": {
-        "current": "\u2014",
-        "current_n": 0,
-        "longest_winning": 0,
-        "longest_losing": 0
+        "current": "L3",
+        "current_n": 3,
+        "longest_winning": 3,
+        "longest_losing": 3
       },
-      "roi_pct": 0.0,
-      "total_settled": 0
+      "roi_pct": -16.01,
+      "total_settled": 19
     },
     "config": {
       "LIVE": {
@@ -8696,35 +9145,35 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.4
+        "age_hours": 3.6
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 12.7
+        "age_hours": 12.9
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.4
+        "age_hours": 3.6
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.2
+        "age_hours": 0.0
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.4
+        "age_hours": 3.6
       },
       {
         "label": "Learning journal",
@@ -10203,7 +10652,7 @@
   ],
   "counts": {
     "picks_total": 22,
-    "settled": 2,
+    "settled": 21,
     "today_picks": 22
   }
 }
