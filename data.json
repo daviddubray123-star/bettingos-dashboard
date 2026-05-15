@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-063010",
-  "generated_at": "2026-05-15T06:30:10.027526+00:00",
+  "build_id": "260515-063444",
+  "generated_at": "2026-05-15T06:34:44.177053+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2846,10 +2846,10 @@
     },
     {
       "Name": "BettingOS - dashboard-post-settle",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 02:30",
       "LastRun": "2026-05-15 02:30",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -9246,42 +9246,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.6
+        "age_hours": 7.7
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 16.9
+        "age_hours": 17.0
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.6
+        "age_hours": 7.7
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.5
+        "age_hours": 0.6
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.6
+        "age_hours": 7.7
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.5
+        "age_hours": 0.6
       }
     ]
   },
@@ -11831,7 +11831,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 02:30 ET",
+  "built_at_et": "2026-05-15 02:34 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
