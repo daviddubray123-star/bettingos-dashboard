@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-005840",
-  "generated_at": "2026-05-15T00:58:40.473338+00:00",
+  "build_id": "260515-010355",
+  "generated_at": "2026-05-15T01:03:55.322085+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -2129,8 +2129,8 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 21:00",
-      "LastRun": "2026-05-14 20:30",
+      "NextRun": "2026-05-14 21:30",
+      "LastRun": "2026-05-14 21:00",
       "LastResult": 0,
       "WakeToRun": false
     },
@@ -3479,14 +3479,14 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 7,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 8,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 5,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 5,
+            "away_runs": 2,
+            "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -3495,7 +3495,8 @@
               0,
               0,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               0,
@@ -3504,7 +3505,8 @@
               0,
               0,
               0,
-              0
+              0,
+              2
             ],
             "scheduled_innings": 9
           }
@@ -3583,9 +3585,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 7,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 2,
             "home_errors": 1,
@@ -3598,7 +3600,8 @@
               0,
               0,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               0,
@@ -3606,7 +3609,8 @@
               0,
               0,
               0,
-              1
+              1,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -3683,9 +3687,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 4,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 5,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 5,
             "home_hits": 5,
             "home_errors": 0,
@@ -3696,13 +3700,15 @@
               2,
               0,
               2,
-              1
+              1,
+              null
             ],
             "away_innings": [
               1,
               0,
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
