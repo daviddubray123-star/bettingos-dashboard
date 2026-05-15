@@ -1,6 +1,6 @@
 {
-  "build_id": "260514-234756",
-  "generated_at": "2026-05-14T23:47:56.315593+00:00",
+  "build_id": "260515-001543",
+  "generated_at": "2026-05-15T00:15:43.089300+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -12,6 +12,63 @@
     "drawdown_pct": 0.0
   },
   "picks": [
+    {
+      "id": "361315a3-aab3-8141-a2d5-d7617e7453f3",
+      "pick": "[LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (KC @ STL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -340,
+      "stake": 1.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "STRONG",
+      "strategy": "MLB Batter Hits",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME NOT-YET-AVAILABLE 2026-05-14 19:57 ET: KC@STL is 2026-05-15 20:16 ET (24h away), FD prop not yet posted. Cache odds -340 from odds_api_starter. OPERATOR INSTRUCTION TO LOG. Place tomorrow when FD opens market; verify odds first."
+    },
+    {
+      "id": "361315a3-aab3-813c-96f7-ced71e5cdb25",
+      "pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": 116,
+      "stake": 1.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME VERIFIED 2026-05-14 19:57 ET on FD at +116 (better than cache -110). Game commence 19:16 ET (already started ~41min). Operator placed/logging-live. Engine edge: +9.89pp (LOCK tier, rae 9.75). Settles tonight."
+    },
+    {
+      "id": "361315a3-aab3-816c-aaa7-d1409f9c254c",
+      "pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": 270,
+      "stake": 3,
+      "stake_u": 1,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "Stable Edge Parlay",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME VERIFICATION 2026-05-14 19:57 ET: ATL -1.5 FD +116 OK (game started 19:16); Witt HITS_ALT O0.5 cache -340 (game tomorrow 20:16 ET, FD market not yet posted). OPERATOR INSTRUCTION TO LOG REGARDLESS. Place when both markets active or skip."
+    },
     {
       "id": "360315a3-aab3-818d-9cc8-ea64531e9d6c",
       "pick": "[PAPER] Bobby Witt Jr. O2.5 TOTAL_BASES_ALT @ +150 (Kansas City Royals @ Chicago White Sox)",
@@ -375,6 +432,63 @@
     }
   ],
   "today_picks": [
+    {
+      "id": "361315a3-aab3-8141-a2d5-d7617e7453f3",
+      "pick": "[LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (KC @ STL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -340,
+      "stake": 1.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "STRONG",
+      "strategy": "MLB Batter Hits",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME NOT-YET-AVAILABLE 2026-05-14 19:57 ET: KC@STL is 2026-05-15 20:16 ET (24h away), FD prop not yet posted. Cache odds -340 from odds_api_starter. OPERATOR INSTRUCTION TO LOG. Place tomorrow when FD opens market; verify odds first."
+    },
+    {
+      "id": "361315a3-aab3-813c-96f7-ced71e5cdb25",
+      "pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": 116,
+      "stake": 1.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME VERIFIED 2026-05-14 19:57 ET on FD at +116 (better than cache -110). Game commence 19:16 ET (already started ~41min). Operator placed/logging-live. Engine edge: +9.89pp (LOCK tier, rae 9.75). Settles tonight."
+    },
+    {
+      "id": "361315a3-aab3-816c-aaa7-d1409f9c254c",
+      "pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": 270,
+      "stake": 3,
+      "stake_u": 1,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "Stable Edge Parlay",
+      "date": "2026-05-14",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "PREGAME VERIFICATION 2026-05-14 19:57 ET: ATL -1.5 FD +116 OK (game started 19:16); Witt HITS_ALT O0.5 cache -340 (game tomorrow 20:16 ET, FD market not yet posted). OPERATOR INSTRUCTION TO LOG REGARDLESS. Place when both markets active or skip."
+    },
     {
       "id": "360315a3-aab3-818d-9cc8-ea64531e9d6c",
       "pick": "[PAPER] Bobby Witt Jr. O2.5 TOTAL_BASES_ALT @ +150 (Kansas City Royals @ Chicago White Sox)",
@@ -2015,8 +2129,8 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-14 20:00",
-      "LastRun": "2026-05-14 19:30",
+      "NextRun": "2026-05-14 20:30",
+      "LastRun": "2026-05-14 20:00",
       "LastResult": 0,
       "WakeToRun": false
     },
@@ -2202,9 +2316,9 @@
         "date": "2026-05-14",
         "dow": "Thursday",
         "short": "05/14",
-        "n_total": 19,
+        "n_total": 22,
         "n_settled": 0,
-        "n_live": 0,
+        "n_live": 3,
         "n_paper": 19,
         "won": 0,
         "lost": 0,
@@ -2451,9 +2565,9 @@
         "date": "2026-05-14",
         "dow": "Thursday",
         "short": "05/14",
-        "n_total": 19,
+        "n_total": 22,
         "n_settled": 0,
-        "n_live": 0,
+        "n_live": 3,
         "n_paper": 19,
         "won": 0,
         "lost": 0,
@@ -2467,7 +2581,7 @@
         "bot_pl": null
       }
     ],
-    "total_picks": 19,
+    "total_picks": 22,
     "total_settled": 0,
     "total_won": 0,
     "total_lost": 0,
@@ -2475,7 +2589,7 @@
     "total_pl": 0,
     "hit_rate": 0,
     "roi_pct": 0,
-    "live_count": 0,
+    "live_count": 3,
     "paper_count": 19,
     "best_day": {
       "date": "2026-05-08",
@@ -2488,7 +2602,7 @@
     "sport_dist": [
       {
         "sport": "MLB",
-        "n": 19
+        "n": 22
       }
     ],
     "bankroll_series": [
@@ -2737,7 +2851,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 3,
+            "home_errors": 2,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -3365,16 +3479,17 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 4,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "current_inning": 5,
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
-            "home_hits": 1,
+            "home_hits": 3,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 0,
+            "away_hits": 3,
             "away_errors": 0,
             "home_innings": [
+              0,
               0,
               0,
               0,
@@ -3384,7 +3499,8 @@
               0,
               0,
               0,
-              null
+              0,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -3463,22 +3579,26 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 2,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 4,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 4,
+            "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
+              0,
+              0,
               0,
               null
             ],
             "away_innings": [
               0,
-              0
+              0,
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -3555,20 +3675,22 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 1,
+            "current_inning": 2,
             "inning_half": "Top",
-            "inning_state": "Top",
-            "home_runs": 0,
-            "home_hits": 0,
+            "inning_state": "Middle",
+            "home_runs": 2,
+            "home_hits": 1,
             "home_errors": 0,
             "away_runs": 1,
             "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
+              2,
               null
             ],
             "away_innings": [
-              1
+              1,
+              0
             ],
             "scheduled_innings": 9
           }
@@ -8006,7 +8128,7 @@
   },
   "account_summary": {
     "live": {
-      "total_picks": 0,
+      "total_picks": 3,
       "settled_picks": 0,
       "won": 0,
       "lost": 0,
@@ -8043,18 +8165,18 @@
         "max_drawdown_pct": 0.0
       },
       "today": {
-        "stake_committed": 0,
+        "stake_committed": 6.0,
         "daily_cap": 15.0,
-        "cap_pct_used": 0.0,
+        "cap_pct_used": 40.0,
         "daily_pl": 0,
-        "picks_fired": 0,
-        "picks_pending": 0
+        "picks_fired": 3,
+        "picks_pending": 3
       },
       "exposure": {
-        "pending_stake": 0,
-        "pending_count": 0,
-        "max_single_event_stake": 0.0,
-        "max_single_event_pct": 0.0,
+        "pending_stake": 6.0,
+        "pending_count": 3,
+        "max_single_event_stake": 3.0,
+        "max_single_event_pct": 2.0,
         "max_single_allowed_pct": 10.0
       },
       "breakers": {
@@ -8066,8 +8188,8 @@
         "drawdown_breaker_at_bankroll": 112.5
       },
       "sizing": {
-        "avg_stake": 0.0,
-        "avg_stake_pct_bankroll": 0.0,
+        "avg_stake": 2.0,
+        "avg_stake_pct_bankroll": 1.33,
         "per_pick_max_dollars": 6.0,
         "oversize_picks_count": 0,
         "unit_size": 3.0
@@ -9625,8 +9747,8 @@
     }
   ],
   "counts": {
-    "picks_total": 19,
+    "picks_total": 22,
     "settled": 0,
-    "today_picks": 19
+    "today_picks": 22
   }
 }
