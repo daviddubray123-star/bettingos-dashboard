@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-043928",
-  "generated_at": "2026-05-15T04:39:28.733933+00:00",
+  "build_id": "260515-044050",
+  "generated_at": "2026-05-15T04:40:50.328369+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -10772,7 +10772,7 @@
   },
   "ai_learner": {
     "available": true,
-    "generated_at": "2026-05-15T03:30:04.047167+00:00",
+    "generated_at": "2026-05-15T04:40:13.768377+00:00",
     "recommendations": [
       {
         "type": "tier_drift",
@@ -11252,18 +11252,18 @@
       }
     },
     "total_settled_picks": 55,
-    "date": "2026-05-14",
+    "date": "2026-05-15",
     "since_date": null,
     "enriched_count": 16,
-    "source_file": "v2_ai_learner_2026-05-14.json"
+    "source_file": "v2_ai_learner_2026-05-15.json"
   },
   "ai_learner_status": {
-    "state": "unknown",
+    "state": "idle",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": null,
-    "last_run_picks": 0,
-    "last_run_recommendations": 0,
+    "last_run_at": "2026-05-15T04:40:13.771237+00:00",
+    "last_run_picks": 55,
+    "last_run_recommendations": 5,
     "guardrails": [
       "Never modifies engine code automatically",
       "Requires n\u22655 (factor), n\u22658 (strategy/tier) before flagging",
@@ -11286,7 +11286,15 @@
       "strategy_demote_hit_rate_pct": 35,
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
-    }
+    },
+    "updated_at": "2026-05-15T04:40:13.772463+00:00",
+    "last_run_severity": {
+      "high": 2,
+      "med": 1,
+      "low": 2
+    },
+    "last_run_md": "memory\\ai_learner_2026-05-15.md",
+    "last_run_json": "props_cache\\v2_ai_learner_2026-05-15.json"
   },
   "odds_api_monitor": {
     "available": false
@@ -11295,7 +11303,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 00:39 ET",
+  "built_at_et": "2026-05-15 00:40 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
