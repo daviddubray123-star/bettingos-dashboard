@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-215614",
-  "generated_at": "2026-05-15T21:56:14.753753+00:00",
+  "build_id": "260515-220023",
+  "generated_at": "2026-05-15T22:00:23.371307+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -12,6 +12,82 @@
     "drawdown_pct": 3.0
   },
   "picks": [
+    {
+      "id": "361315a3-aab3-81d9-bc94-e6745fb5a27f",
+      "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 7.5,
+      "stake_u": 1.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #4 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-81d6-b793-cbf40be30442",
+      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-817a-9537-ee4ef07fbd2f",
+      "pick": "[PAPER] Samuel Basallo O2.5 TOTAL_BASES_ALT @ +210 (Baltimore Orioles @ Washington Nationals)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": 210,
+      "stake": 2.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "GOOD",
+      "strategy": "MLB Batter Total Bases Alt",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 49% (neutral) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O2.5 line, gap -0.50) \u00b7 vs Zack Littell"
+    },
+    {
+      "id": "361315a3-aab3-81ef-b5dd-d23b3ab2e0e8",
+      "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 10,
+      "stake_u": 2,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+    },
     {
       "id": "361315a3-aab3-81f5-a41a-e5a0642c6b5d",
       "pick": "[LIVE-PENDING] Samuel Basallo O1.5 TOTAL_BASES_ALT @ +100 (Baltimore Orioles @ Washington Nationals)",
@@ -48,7 +124,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 49% (neutral) \u00b7 edge +3.6pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.12 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Zack Littell"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81d7-b090-d0119d8eae65",
@@ -124,14 +200,14 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #12 \u00b7 factor x1.12 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-8174-ab8f-fbfdbe9790f6",
-      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +105 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +110 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 105,
+      "odds": 110,
       "stake": 5,
       "stake_u": 1,
       "result": "Pending",
@@ -143,7 +219,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.2pp \u00b7 rae +5.1 \u00b7 rank #12 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.1pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-813f-9539-f3c0d7c80046",
@@ -210,7 +286,7 @@
       "odds": -220,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
@@ -219,7 +295,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.8pp \u00b7 rae +6.7 \u00b7 rank #6 \u00b7 factor x1.10 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8107-8102-fb7d8d1f13d3",
@@ -261,10 +337,10 @@
     },
     {
       "id": "361315a3-aab3-81b6-a2ed-ef19f02e90e8",
-      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "pick": "[LIVE-PENDING] ML Over None @ -120 (Miami Marlins @ Tampa Bay Rays)",
       "account": "LIVE",
       "sport": "MLB",
-      "odds": -154,
+      "odds": -120,
       "stake": 4.5,
       "stake_u": 1.5,
       "result": "Pending-Unconfirmed",
@@ -276,7 +352,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-818a-b591-fdc59a75b649",
@@ -375,10 +451,10 @@
     },
     {
       "id": "361315a3-aab3-8137-a233-c80bb324afe4",
-      "pick": "[PAPER] Luis Garcia Jr. O0.5 HITS_ALT @ -260 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] Luis Garcia Jr. O0.5 HITS_ALT @ -250 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": -260,
+      "odds": -250,
       "stake": 5,
       "stake_u": 1,
       "result": "Pending",
@@ -428,7 +504,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 100% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #3 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8101-be0b-f15538ec744b",
@@ -438,7 +514,7 @@
       "odds": -210,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
@@ -447,7 +523,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-818c-a2c6-e1e2f9c15f55",
@@ -476,7 +552,7 @@
       "odds": -110,
       "stake": 3,
       "stake_u": 1,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "GOOD",
       "strategy": "MLB Total Runs",
@@ -485,7 +561,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 67% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +1.4pp \u00b7 rae +1.4 \u00b7 rank #13 \u00b7 factor x1.03 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-813a-946c-dce5ad984adc",
@@ -514,7 +590,7 @@
       "odds": -110,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Total Runs",
@@ -523,7 +599,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 77% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +3.4pp \u00b7 rae +3.4 \u00b7 rank #6 \u00b7 factor x1.06 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8177-be83-c565e42472d4",
@@ -533,7 +609,7 @@
       "odds": -110,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
@@ -542,7 +618,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-81c7-ad31-f1a94a24759b",
@@ -668,14 +744,14 @@
       "stake_u": 2,
       "result": "Pending",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8111-9d50-d69912b53ec7",
@@ -755,22 +831,22 @@
     },
     {
       "id": "361315a3-aab3-81fc-b34b-f00d2c941af8",
-      "pick": "[PAPER] spread Over -1.5 @ +158 (Milwaukee Brewers @ Minnesota Twins)",
+      "pick": "[PAPER] spread Over -1.5 @ -110 (Miami Marlins @ Tampa Bay Rays)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 158,
-      "stake": 2.5,
-      "stake_u": 0.5,
+      "odds": -110,
+      "stake": 7.5,
+      "stake_u": 1.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "STRONG",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
+      "notes": "heat 99% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #5 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8184-88cf-f4e5dffc1040",
@@ -827,7 +903,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
+      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
     },
     {
       "id": "361315a3-aab3-8190-94e6-d30fac49ef58",
@@ -865,7 +941,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #1 \u00b7 factor x1.16 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs Zack Littell"
+      "notes": "heat 89% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #2 \u00b7 factor x1.16 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-8141-a2d5-d7617e7453f3",
@@ -1288,6 +1364,82 @@
   ],
   "today_picks": [
     {
+      "id": "361315a3-aab3-81d9-bc94-e6745fb5a27f",
+      "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 7.5,
+      "stake_u": 1.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #4 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-81d6-b793-cbf40be30442",
+      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-817a-9537-ee4ef07fbd2f",
+      "pick": "[PAPER] Samuel Basallo O2.5 TOTAL_BASES_ALT @ +210 (Baltimore Orioles @ Washington Nationals)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": 210,
+      "stake": 2.5,
+      "stake_u": 0.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "GOOD",
+      "strategy": "MLB Batter Total Bases Alt",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 49% (neutral) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O2.5 line, gap -0.50) \u00b7 vs Zack Littell"
+    },
+    {
+      "id": "361315a3-aab3-81ef-b5dd-d23b3ab2e0e8",
+      "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 10,
+      "stake_u": 2,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
       "id": "361315a3-aab3-81f5-a41a-e5a0642c6b5d",
       "pick": "[LIVE-PENDING] Samuel Basallo O1.5 TOTAL_BASES_ALT @ +100 (Baltimore Orioles @ Washington Nationals)",
       "account": "LIVE",
@@ -1323,7 +1475,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 49% (neutral) \u00b7 edge +3.6pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.12 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Zack Littell"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81d7-b090-d0119d8eae65",
@@ -1399,14 +1551,14 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #12 \u00b7 factor x1.12 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-8174-ab8f-fbfdbe9790f6",
-      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +105 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +110 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 105,
+      "odds": 110,
       "stake": 5,
       "stake_u": 1,
       "result": "Pending",
@@ -1418,7 +1570,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.2pp \u00b7 rae +5.1 \u00b7 rank #12 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.1pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-813f-9539-f3c0d7c80046",
@@ -1485,7 +1637,7 @@
       "odds": -220,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
@@ -1494,7 +1646,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.8pp \u00b7 rae +6.7 \u00b7 rank #6 \u00b7 factor x1.10 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8107-8102-fb7d8d1f13d3",
@@ -1536,10 +1688,10 @@
     },
     {
       "id": "361315a3-aab3-81b6-a2ed-ef19f02e90e8",
-      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "pick": "[LIVE-PENDING] ML Over None @ -120 (Miami Marlins @ Tampa Bay Rays)",
       "account": "LIVE",
       "sport": "MLB",
-      "odds": -154,
+      "odds": -120,
       "stake": 4.5,
       "stake_u": 1.5,
       "result": "Pending-Unconfirmed",
@@ -1551,7 +1703,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #3 \u00b7 factor x1.17 \u00b7 n=10"
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-818a-b591-fdc59a75b649",
@@ -1650,10 +1802,10 @@
     },
     {
       "id": "361315a3-aab3-8137-a233-c80bb324afe4",
-      "pick": "[PAPER] Luis Garcia Jr. O0.5 HITS_ALT @ -260 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] Luis Garcia Jr. O0.5 HITS_ALT @ -250 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": -260,
+      "odds": -250,
       "stake": 5,
       "stake_u": 1,
       "result": "Pending",
@@ -1703,7 +1855,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 100% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #3 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8101-be0b-f15538ec744b",
@@ -1713,7 +1865,7 @@
       "odds": -210,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
@@ -1722,7 +1874,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-818c-a2c6-e1e2f9c15f55",
@@ -1751,7 +1903,7 @@
       "odds": -110,
       "stake": 3,
       "stake_u": 1,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "GOOD",
       "strategy": "MLB Total Runs",
@@ -1760,7 +1912,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 67% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +1.4pp \u00b7 rae +1.4 \u00b7 rank #13 \u00b7 factor x1.03 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-813a-946c-dce5ad984adc",
@@ -1789,7 +1941,7 @@
       "odds": -110,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Total Runs",
@@ -1798,7 +1950,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 77% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +3.4pp \u00b7 rae +3.4 \u00b7 rank #6 \u00b7 factor x1.06 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8177-be83-c565e42472d4",
@@ -1808,7 +1960,7 @@
       "odds": -110,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
@@ -1817,7 +1969,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-81c7-ad31-f1a94a24759b",
@@ -1943,14 +2095,14 @@
       "stake_u": 2,
       "result": "Pending",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
+      "notes": "heat 100% (LOCK-grade) \u00b7 edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8111-9d50-d69912b53ec7",
@@ -2030,22 +2182,22 @@
     },
     {
       "id": "361315a3-aab3-81fc-b34b-f00d2c941af8",
-      "pick": "[PAPER] spread Over -1.5 @ +158 (Milwaukee Brewers @ Minnesota Twins)",
+      "pick": "[PAPER] spread Over -1.5 @ -110 (Miami Marlins @ Tampa Bay Rays)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 158,
-      "stake": 2.5,
-      "stake_u": 0.5,
+      "odds": -110,
+      "stake": 7.5,
+      "stake_u": 1.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "STRONG",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
+      "notes": "heat 99% (LOCK-grade) \u00b7 edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #5 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8184-88cf-f4e5dffc1040",
@@ -2102,7 +2254,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
+      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
     },
     {
       "id": "361315a3-aab3-8190-94e6-d30fac49ef58",
@@ -2140,7 +2292,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #1 \u00b7 factor x1.16 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs Zack Littell"
+      "notes": "heat 89% (LOCK-grade) \u00b7 edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #2 \u00b7 factor x1.16 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs Zack Littell"
     }
   ],
   "daily": [
@@ -4592,10 +4744,10 @@
     },
     {
       "Name": "BettingOS - evening-lock",
-      "State": "Ready",
-      "NextRun": "2026-05-15 18:00",
-      "LastRun": "2026-05-14 18:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 18:00",
+      "LastRun": "2026-05-15 18:00",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -4625,8 +4777,8 @@
     {
       "Name": "BettingOS - intraday-settle",
       "State": "Ready",
-      "NextRun": "2026-05-15 18:00",
-      "LastRun": "2026-05-15 17:30",
+      "NextRun": "2026-05-15 18:30",
+      "LastRun": "2026-05-15 18:00",
       "LastResult": 2147942402,
       "WakeToRun": false
     },
@@ -4933,10 +5085,10 @@
         "date": "2026-05-15",
         "dow": "Friday",
         "short": "05\\15",
-        "n_total": 45,
+        "n_total": 49,
         "n_settled": 0,
-        "n_live": 12,
-        "n_paper": 33,
+        "n_live": 13,
+        "n_paper": 36,
         "won": 0,
         "lost": 0,
         "push": 0,
@@ -5182,10 +5334,10 @@
         "date": "2026-05-15",
         "dow": "Friday",
         "short": "05\\15",
-        "n_total": 45,
+        "n_total": 49,
         "n_settled": 0,
-        "n_live": 12,
-        "n_paper": 33,
+        "n_live": 13,
+        "n_paper": 36,
         "won": 0,
         "lost": 0,
         "push": 0,
@@ -5198,7 +5350,7 @@
         "bot_pl": null
       }
     ],
-    "total_picks": 67,
+    "total_picks": 71,
     "total_settled": 21,
     "total_won": 8,
     "total_lost": 13,
@@ -5206,8 +5358,8 @@
     "total_pl": -24.06,
     "hit_rate": 38.1,
     "roi_pct": -19.0,
-    "live_count": 15,
-    "paper_count": 52,
+    "live_count": 16,
+    "paper_count": 55,
     "best_day": {
       "date": "2026-05-09",
       "pl": 0
@@ -5219,7 +5371,7 @@
     "sport_dist": [
       {
         "sport": "MLB",
-        "n": 67
+        "n": 71
       }
     ],
     "bankroll_series": [
@@ -11023,7 +11175,7 @@
   },
   "account_summary": {
     "live": {
-      "total_picks": 15,
+      "total_picks": 16,
       "settled_picks": 2,
       "won": 0,
       "lost": 2,
@@ -11031,11 +11183,11 @@
       "win_rate_pct": 0.0,
       "total_pl": -4.5,
       "max_drawdown": -4.5,
-      "expectancy_per_pick": -0.3,
+      "expectancy_per_pick": -0.28,
       "streak": "L2"
     },
     "paper": {
-      "total_picks": 52,
+      "total_picks": 55,
       "settled_picks": 19,
       "won": 8,
       "lost": 11,
@@ -11043,7 +11195,7 @@
       "win_rate_pct": 42.1,
       "total_pl": -19.56,
       "max_drawdown": -31.17,
-      "expectancy_per_pick": -0.38,
+      "expectancy_per_pick": -0.36,
       "streak": "L3"
     }
   },
@@ -11060,11 +11212,11 @@
         "max_drawdown_pct": 3.0
       },
       "today": {
-        "stake_committed": 49.5,
+        "stake_committed": 54.0,
         "daily_cap": 15.0,
-        "cap_pct_used": 330.0,
+        "cap_pct_used": 360.0,
         "daily_pl": 0,
-        "picks_fired": 12,
+        "picks_fired": 13,
         "picks_pending": 0
       },
       "exposure": {
@@ -11083,8 +11235,8 @@
         "drawdown_breaker_at_bankroll": 112.5
       },
       "sizing": {
-        "avg_stake": 3.7,
-        "avg_stake_pct_bankroll": 2.54,
+        "avg_stake": 3.75,
+        "avg_stake_pct_bankroll": 2.58,
         "per_pick_max_dollars": 6.0,
         "oversize_picks_count": 0,
         "unit_size": 3.0
@@ -11110,16 +11262,16 @@
         "max_drawdown_pct": 6.2
       },
       "today": {
-        "stake_committed": 182.19,
+        "stake_committed": 207.19,
         "daily_cap": 150.0,
-        "cap_pct_used": 121.5,
+        "cap_pct_used": 138.1,
         "daily_pl": 0,
-        "picks_fired": 33,
-        "picks_pending": 33
+        "picks_fired": 36,
+        "picks_pending": 36
       },
       "exposure": {
-        "pending_stake": 182.19,
-        "pending_count": 33,
+        "pending_stake": 207.19,
+        "pending_count": 36,
         "max_single_event_stake": 10.0,
         "max_single_event_pct": 2.1,
         "max_single_allowed_pct": 5.0
@@ -11133,8 +11285,8 @@
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
-        "avg_stake": 5.85,
-        "avg_stake_pct_bankroll": 1.22,
+        "avg_stake": 5.99,
+        "avg_stake_pct_bankroll": 1.25,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
@@ -11199,14 +11351,14 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 18.4
+        "age_hours": 18.5
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 16.1
+        "age_hours": 16.2
       },
       {
         "name": "audit_2026-05-12.md",
@@ -11227,28 +11379,28 @@
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 8.8
+        "age_hours": 8.9
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 8.4
+        "age_hours": 8.5
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 8.2
+        "age_hours": 8.3
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 4.0
+        "age_hours": 4.1
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -11262,28 +11414,28 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 65.2
+        "age_hours": 65.3
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 7.2
+        "age_hours": 7.3
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 51.3
+        "age_hours": 51.4
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 56.2
+        "age_hours": 56.3
       },
       {
         "name": "design_engine_v2.md",
@@ -11332,7 +11484,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 47.5
+        "age_hours": 47.6
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -11346,7 +11498,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 82.1
+        "age_hours": 82.2
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -11430,35 +11582,35 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 65.3
+        "age_hours": 65.4
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 57.6
+        "age_hours": 57.7
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 43964,
         "mtime": 1778824810.5034382,
-        "age_hours": 15.9
+        "age_hours": 16.0
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 42.4
+        "age_hours": 42.5
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 83.0
+        "age_hours": 83.1
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -11563,14 +11715,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 92.0
+        "age_hours": 92.1
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 91.1
+        "age_hours": 91.2
       },
       {
         "name": "reference_sport_calendar.md",
@@ -11598,7 +11750,7 @@
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 96.2
+        "age_hours": 96.3
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -11633,56 +11785,56 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 66.2
+        "age_hours": 66.3
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 65.3
+        "age_hours": 65.4
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 65.5
+        "age_hours": 65.6
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 52.2
+        "age_hours": 52.3
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 52.4
+        "age_hours": 52.5
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 58.7
+        "age_hours": 58.8
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 65.8
+        "age_hours": 65.9
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 56.0
+        "age_hours": 56.1
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -11696,7 +11848,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 51.3
+        "age_hours": 51.4
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -11710,7 +11862,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 50.7
+        "age_hours": 50.8
       }
     ]
   },
@@ -11723,9 +11875,9 @@
         "latest_file": "v2_scout_2026-05-15.json",
         "latest_date": "2026-05-15",
         "age_hours": 0.0,
-        "bytes": 593128,
+        "bytes": 593150,
         "row_count": 50,
-        "last_refresh_iso": "2026-05-15T21:55:22.431650+00:00",
+        "last_refresh_iso": "2026-05-15T21:59:21.722673+00:00",
         "issue": null,
         "min_bytes": 10000,
         "min_count": 30
@@ -11735,7 +11887,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 8.4,
+        "age_hours": 8.5,
         "bytes": 342337,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T13:32:20.902346+00:00",
@@ -11749,9 +11901,9 @@
         "latest_file": "v2_candidates_2026-05-15.json",
         "latest_date": "2026-05-15",
         "age_hours": 0.0,
-        "bytes": 1668776,
+        "bytes": 1669301,
         "row_count": null,
-        "last_refresh_iso": "2026-05-15T21:54:09.529197+00:00",
+        "last_refresh_iso": "2026-05-15T21:57:47.053208+00:00",
         "issue": null,
         "min_bytes": 100000,
         "min_count": null
@@ -11761,7 +11913,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 15.9,
+        "age_hours": 16.0,
         "bytes": 383,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T06:00:08.323751+00:00",
@@ -11787,7 +11939,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 15.9,
+        "age_hours": 16.0,
         "bytes": 43964,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T06:00:10.503438+00:00",
@@ -11800,7 +11952,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 5.7,
+        "age_hours": 5.8,
         "bytes": 37206,
         "row_count": 151,
         "last_refresh_iso": "2026-05-15T16:14:56.191878+00:00",
@@ -11813,7 +11965,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 24.8,
+        "age_hours": 24.9,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -11826,7 +11978,7 @@
         "status": "fresh",
         "latest_file": "wx_ATH_2026-05-16T01.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 212,
         "row_count": 28,
         "last_refresh_iso": "2026-05-15T21:43:16.126409+00:00",
@@ -12861,99 +13013,6 @@
       },
       {
         "rank": 12,
-        "player": "James Wood",
-        "team": "WSH",
-        "opp": null,
-        "market": "TOTAL_BASES_ALT",
-        "strategy": "MLB Batter Total Bases Alt",
-        "line": 1.5,
-        "side": "O",
-        "odds": 105,
-        "tier": "GOOD",
-        "edge_pp": 5.2,
-        "rae": 5.1,
-        "hit_rate": 0.5,
-        "sample": 30,
-        "start_time": "2026-05-15T22:45:00Z",
-        "base_prob": 0.4878,
-        "tier_by_rae": "STRONG",
-        "true_prob": 0.5398,
-        "hit_rate_shrunk": 0.5,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.1
-          ],
-          [
-            "pitcher_matchup",
-            1.07
-          ],
-          [
-            "park",
-            1.016
-          ],
-          [
-            "handedness",
-            1.06
-          ],
-          [
-            "player_performer",
-            0.95
-          ],
-          [
-            "bullpen",
-            1.014
-          ],
-          [
-            "home_away",
-            1.02
-          ]
-        ],
-        "variance_adjustment": 1.02,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "historical_real",
-        "low_sample": false,
-        "low_sample_n": null,
-        "correlated_group": null,
-        "park_cluster_size": null,
-        "park_cluster_penalty": null,
-        "edge_raw": 5.2,
-        "display_edge": 5.2,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 6,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.6,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for James Wood\\TOTAL_BASES_ALT\\1.5 \u2014 heat signal idle"
-        ],
-        "system_heat": 79.3,
-        "system_heat_breakdown": {
-          "base_from_edge": 67.3,
-          "tier_boost": 2.0,
-          "conf_boost": 10.0,
-          "penalties": {
-            "low_sample": 0,
-            "baseline_phantom": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          }
-        }
-      },
-      {
-        "rank": 13,
         "player": "U8.0 Total (MIA@TB)",
         "team": null,
         "opp": null,
@@ -13023,6 +13082,99 @@
           "base_from_edge": 71.2,
           "tier_boost": 2.0,
           "conf_boost": 8.0,
+          "penalties": {
+            "low_sample": 0,
+            "baseline_phantom": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          }
+        }
+      },
+      {
+        "rank": 13,
+        "player": "James Wood",
+        "team": "WSH",
+        "opp": null,
+        "market": "TOTAL_BASES_ALT",
+        "strategy": "MLB Batter Total Bases Alt",
+        "line": 1.5,
+        "side": "O",
+        "odds": 110,
+        "tier": "GOOD",
+        "edge_pp": 5.08,
+        "rae": 4.98,
+        "hit_rate": 0.5,
+        "sample": 30,
+        "start_time": "2026-05-15T22:45:00Z",
+        "base_prob": 0.4762,
+        "tier_by_rae": "SIDE",
+        "true_prob": 0.527,
+        "hit_rate_shrunk": 0.5,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            1.07
+          ],
+          [
+            "park",
+            1.016
+          ],
+          [
+            "handedness",
+            1.06
+          ],
+          [
+            "player_performer",
+            0.95
+          ],
+          [
+            "bullpen",
+            1.014
+          ],
+          [
+            "home_away",
+            1.02
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "historical_real",
+        "low_sample": false,
+        "low_sample_n": null,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 5.08,
+        "display_edge": 5.08,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 6,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.6,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for James Wood\\TOTAL_BASES_ALT\\1.5 \u2014 heat signal idle"
+        ],
+        "system_heat": 78.9,
+        "system_heat_breakdown": {
+          "base_from_edge": 66.9,
+          "tier_boost": 2.0,
+          "conf_boost": 10.0,
           "penalties": {
             "low_sample": 0,
             "baseline_phantom": 0,
@@ -13768,16 +13920,16 @@
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -260,
+        "odds": -250,
         "tier": "WATCH",
-        "edge_pp": 3.89,
-        "rae": 3.84,
+        "edge_pp": 3.85,
+        "rae": 3.8,
         "hit_rate": 0.48,
         "sample": 30,
         "start_time": "2026-05-15T22:45:00Z",
-        "base_prob": 0.7222,
+        "base_prob": 0.7143,
         "tier_by_rae": "SIDE",
-        "true_prob": 0.7612,
+        "true_prob": 0.7528,
         "hit_rate_shrunk": 0.48,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -13818,8 +13970,8 @@
         "correlated_group": null,
         "park_cluster_size": null,
         "park_cluster_penalty": null,
-        "edge_raw": 3.89,
-        "display_edge": 3.89,
+        "edge_raw": 3.85,
+        "display_edge": 3.85,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -13835,9 +13987,9 @@
         "heat_l10_notes": [
           "no L30 baseline in historical_hit_rates cache for Luis Garcia Jr.\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "system_heat": 70.0,
+        "system_heat": 69.8,
         "system_heat_breakdown": {
-          "base_from_edge": 63.0,
+          "base_from_edge": 62.8,
           "tier_boost": -3.0,
           "conf_boost": 10.0,
           "penalties": {
@@ -13943,6 +14095,107 @@
       },
       {
         "rank": 24,
+        "player": "Samuel Basallo",
+        "team": "BAL",
+        "opp": null,
+        "market": "TOTAL_BASES_ALT",
+        "strategy": "MLB Batter Total Bases Alt",
+        "line": 2.5,
+        "side": "O",
+        "odds": 210,
+        "tier": "WATCH",
+        "edge_pp": 3.69,
+        "rae": 3.62,
+        "hit_rate": 0.36,
+        "sample": 30,
+        "start_time": "2026-05-15T22:45:00Z",
+        "base_prob": 0.3226,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.3595,
+        "hit_rate_shrunk": 0.36,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            1.07
+          ],
+          [
+            "park",
+            1.016
+          ],
+          [
+            "handedness",
+            1.06
+          ],
+          [
+            "recency_woba",
+            1.01
+          ],
+          [
+            "player_performer",
+            0.95
+          ],
+          [
+            "bullpen",
+            1.05
+          ],
+          [
+            "home_away",
+            0.98
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 3.69,
+        "display_edge": 3.69,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 2,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.2,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for Samuel Basallo\\TOTAL_BASES_ALT\\2.5 \u2014 heat signal idle"
+        ],
+        "system_heat": 49.3,
+        "system_heat_breakdown": {
+          "base_from_edge": 62.3,
+          "tier_boost": -3.0,
+          "conf_boost": 10.0,
+          "penalties": {
+            "low_sample": -8,
+            "baseline_phantom": -12,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          }
+        }
+      },
+      {
+        "rank": 25,
         "player": "Riley Greene",
         "team": "DET",
         "opp": null,
@@ -14037,103 +14290,6 @@
           "penalties": {
             "low_sample": 0,
             "baseline_phantom": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          }
-        }
-      },
-      {
-        "rank": 25,
-        "player": "Samuel Basallo",
-        "team": "BAL",
-        "opp": null,
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 1.5,
-        "side": "O",
-        "odds": 220,
-        "tier": "WATCH",
-        "edge_pp": 3.64,
-        "rae": 3.57,
-        "hit_rate": 0.38,
-        "sample": 30,
-        "start_time": "2026-05-15T22:45:00Z",
-        "base_prob": 0.3125,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.3489,
-        "hit_rate_shrunk": 0.38,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.1
-          ],
-          [
-            "pitcher_matchup",
-            1.07
-          ],
-          [
-            "handedness",
-            1.06
-          ],
-          [
-            "recency_woba",
-            1.01
-          ],
-          [
-            "player_performer",
-            0.97
-          ],
-          [
-            "bullpen",
-            1.05
-          ],
-          [
-            "home_away",
-            0.98
-          ],
-          [
-            "player_rest",
-            1.01
-          ]
-        ],
-        "variance_adjustment": 1.02,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
-        "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": null,
-        "park_cluster_size": null,
-        "park_cluster_penalty": null,
-        "edge_raw": 3.64,
-        "display_edge": 3.64,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 3,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.3,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Samuel Basallo\\HITS_ALT\\1.5 \u2014 heat signal idle"
-        ],
-        "system_heat": 49.1,
-        "system_heat_breakdown": {
-          "base_from_edge": 62.1,
-          "tier_boost": -3.0,
-          "conf_boost": 10.0,
-          "penalties": {
-            "low_sample": -8,
-            "baseline_phantom": -12,
             "lineup_unconfirmed": 0,
             "experimental_blocked": 0
           }
@@ -14612,11 +14768,11 @@
     {
       "date": "2026-05-15",
       "title": "Lock fire \u2014 2026-05-15 \u00b7 0 LIVE \u00b7 19 PAPER",
-      "summary": "props_cache\\v2_lock_mlb_2026-05-15.json",
+      "summary": "props_cache\\v2_lock_mlb_2026-05-15_evening.json",
       "changes": {
         "Lock outcome": [
           "playable 20 (0 LIVE \u00b7 19 PAPER)",
-          "blocked 8 \u2014 {'stale_data': 3, 'odds_outside_window': 2, 'stake_below_min': 3}",
+          "blocked 9 \u2014 {'stale_data': 2, 'odds_outside_window': 2, 'stake_below_min': 5}",
           "Odds API credits: 165"
         ],
         "PAPER picks fired": [
@@ -14638,23 +14794,23 @@
     },
     {
       "date": "2026-05-15",
-      "title": "Lock fire \u2014 2026-05-15 \u00b7 0 LIVE \u00b7 10 PAPER",
-      "summary": "props_cache\\v2_lock_mlb_2026-05-15_evening.json",
+      "title": "Lock fire \u2014 2026-05-15 \u00b7 0 LIVE \u00b7 19 PAPER",
+      "summary": "props_cache\\v2_lock_mlb_2026-05-15.json",
       "changes": {
         "Lock outcome": [
-          "playable 11 (0 LIVE \u00b7 10 PAPER)",
-          "blocked 9 \u2014 {'stale_data': 2, 'odds_outside_window': 2, 'stake_below_min': 5}",
+          "playable 20 (0 LIVE \u00b7 19 PAPER)",
+          "blocked 8 \u2014 {'stale_data': 3, 'odds_outside_window': 2, 'stake_below_min': 3}",
           "Odds API credits: 165"
         ],
         "PAPER picks fired": [
           "Samuel Basallo HITS_ALT @ -250",
           "Brandon Marsh HITS_ALT @ -210",
-          "James Wood HITS_ALT @ -210",
+          "James Wood HITS_ALT @ -220",
           "Spencer Horwitz HITS_ALT @ -180",
           "Ryan O'Hearn HITS_ALT @ -220",
           "Daylen Lile HITS_ALT @ -260",
           "Oneil Cruz HITS_ALT @ -210",
-          "Brady House HITS_ALT @ -200"
+          "Brady House HITS_ALT @ -210"
         ],
         "Correlation collapse": [
           "30 picks demoted to redundant_correlated bucket (MP-1 same-game\\player\\park rules)"
@@ -15749,8 +15905,8 @@
     }
   ],
   "odds_api_usage": {
-    "month_used": 330,
-    "day_used": 330,
+    "month_used": 495,
+    "day_used": 495,
     "last_remaining": null,
     "last_check": null,
     "month_cap": 18000,
@@ -15760,13 +15916,13 @@
     "current_month": "2026-05",
     "today": "2026-05-15",
     "day_history": {
-      "2026-05-15": 330
+      "2026-05-15": 495
     },
     "month_history": {
-      "2026-05": 330
+      "2026-05": 495
     },
-    "pct_month_used": 1.8,
-    "pct_plan_used": 1.7,
+    "pct_month_used": 2.8,
+    "pct_plan_used": 2.5,
     "utilization_status": "under-utilized",
     "recommendations": [
       "Expand engine to use 2-3x current rate \u2014 you're paying for capacity you're not using.",
@@ -15775,11 +15931,11 @@
       "Add a second daily scout-with-odds (~9:30 AM verify) so morning candidates reflect fresh odds, not yesterday's close.",
       "Pull pre-close odds capture at 30\\15\\5 min before first pitch for CLV \u2014 costs ~3 credits per game but huge data value."
     ],
-    "avg_daily": 330.0,
+    "avg_daily": 495.0,
     "days_in_month": 31,
     "days_left_in_month": 16,
-    "projected_month_end": 5610.0,
-    "projected_pct": 31.2
+    "projected_month_end": 8415.0,
+    "projected_pct": 46.8
   },
   "claude_code_usage": {
     "available": true,
@@ -16691,10 +16847,10 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 17:56 ET",
+  "built_at_et": "2026-05-15 18:00 ET",
   "counts": {
-    "picks_total": 67,
+    "picks_total": 71,
     "settled": 21,
-    "today_picks": 45
+    "today_picks": 49
   }
 }
