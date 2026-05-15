@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-020947",
-  "generated_at": "2026-05-15T02:09:47.748707+00:00",
+  "build_id": "260515-021742",
+  "generated_at": "2026-05-15T02:17:42.138495+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -20,8 +20,8 @@
       "odds": -340,
       "stake": 1.5,
       "stake_u": 0.5,
-      "result": "Won",
-      "pl": 0.44,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits",
       "date": "2026-05-14",
@@ -29,7 +29,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "STL won (STL 5, ATH 4). Net +$0.44 at -340."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "361315a3-aab3-813c-96f7-ced71e5cdb25",
@@ -48,7 +48,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$1.50 at 116."
+      "notes": "ATL 0 vs opp 2 (spread -1.5, adj -1.5) -> NOT COVERED. Net -$1.50 at 116."
     },
     {
       "id": "361315a3-aab3-816c-aaa7-d1409f9c254c",
@@ -96,8 +96,8 @@
       "odds": 160,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Lost",
-      "pl": -2.5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -105,7 +105,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$2.50 at 160."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81c5-ad20-dd8ca446c44a",
@@ -134,8 +134,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Lost",
-      "pl": -2.5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -143,7 +143,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$2.50 at -150."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8156-8029-edce1921633a",
@@ -172,8 +172,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -181,7 +181,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$5.00 at -160."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81e2-af22-fcca1e282aca",
@@ -191,8 +191,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -200,7 +200,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81a8-8d9b-c9a85a0f8ef9",
@@ -210,8 +210,8 @@
       "odds": -162,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -219,7 +219,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -162."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-812c-8578-ec7dd38a57e4",
@@ -267,8 +267,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -276,7 +276,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81f0-a20b-c06f4a65bace",
@@ -305,8 +305,8 @@
       "odds": -210,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -314,7 +314,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$5.00 at -210."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8161-a91a-e642908c594f",
@@ -343,8 +343,8 @@
       "odds": -180,
       "stake": 14.65,
       "stake_u": 2.93,
-      "result": "Lost",
-      "pl": -14.65,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -352,7 +352,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$14.65 at -180."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81d6-890b-f4bdf17a1616",
@@ -381,8 +381,8 @@
       "odds": -165,
       "stake": 15,
       "stake_u": 3,
-      "result": "Lost",
-      "pl": -15,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -390,7 +390,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$15.00 at -165."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8180-9abc-f39c0653ad43",
@@ -419,8 +419,8 @@
       "odds": -110,
       "stake": 10,
       "stake_u": 2,
-      "result": "Lost",
-      "pl": -10,
+      "result": "Pending",
+      "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-14",
@@ -428,7 +428,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$10.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     }
   ],
   "today_picks": [
@@ -440,8 +440,8 @@
       "odds": -340,
       "stake": 1.5,
       "stake_u": 0.5,
-      "result": "Won",
-      "pl": 0.44,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits",
       "date": "2026-05-14",
@@ -449,7 +449,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "STL won (STL 5, ATH 4). Net +$0.44 at -340."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "361315a3-aab3-813c-96f7-ced71e5cdb25",
@@ -468,7 +468,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$1.50 at 116."
+      "notes": "ATL 0 vs opp 2 (spread -1.5, adj -1.5) -> NOT COVERED. Net -$1.50 at 116."
     },
     {
       "id": "361315a3-aab3-816c-aaa7-d1409f9c254c",
@@ -516,8 +516,8 @@
       "odds": 160,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Lost",
-      "pl": -2.5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "WATCH",
       "strategy": "MLB Batter Total Bases Alt",
       "date": "2026-05-14",
@@ -525,7 +525,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$2.50 at 160."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81c5-ad20-dd8ca446c44a",
@@ -554,8 +554,8 @@
       "odds": -150,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Lost",
-      "pl": -2.5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "WATCH",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -563,7 +563,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$2.50 at -150."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8156-8029-edce1921633a",
@@ -592,8 +592,8 @@
       "odds": -160,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -601,7 +601,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$5.00 at -160."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81e2-af22-fcca1e282aca",
@@ -611,8 +611,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -620,7 +620,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81a8-8d9b-c9a85a0f8ef9",
@@ -630,8 +630,8 @@
       "odds": -162,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Pitcher Strikeouts",
       "date": "2026-05-14",
@@ -639,7 +639,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -162."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-812c-8578-ec7dd38a57e4",
@@ -687,8 +687,8 @@
       "odds": -110,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Total Runs",
       "date": "2026-05-14",
@@ -696,7 +696,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$5.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81f0-a20b-c06f4a65bace",
@@ -725,8 +725,8 @@
       "odds": -210,
       "stake": 5,
       "stake_u": 1,
-      "result": "Lost",
-      "pl": -5,
+      "result": "Pending",
+      "pl": 0,
       "tier": "SIDE",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -734,7 +734,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$5.00 at -210."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8161-a91a-e642908c594f",
@@ -763,8 +763,8 @@
       "odds": -180,
       "stake": 14.65,
       "stake_u": 2.93,
-      "result": "Lost",
-      "pl": -14.65,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -772,7 +772,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$14.65 at -180."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-81d6-890b-f4bdf17a1616",
@@ -801,8 +801,8 @@
       "odds": -165,
       "stake": 15,
       "stake_u": 3,
-      "result": "Lost",
-      "pl": -15,
+      "result": "Pending",
+      "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-14",
@@ -810,7 +810,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "BOS lost (BOS 1, PHI 3). Net -$15.00 at -165."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     },
     {
       "id": "360315a3-aab3-8180-9abc-f39c0653ad43",
@@ -839,8 +839,8 @@
       "odds": -110,
       "stake": 10,
       "stake_u": 2,
-      "result": "Lost",
-      "pl": -10,
+      "result": "Pending",
+      "pl": 0,
       "tier": "LOCK",
       "strategy": "MLB Run Line",
       "date": "2026-05-14",
@@ -848,7 +848,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "ATL lost (ATL 0, CHC 2). Net -$10.00 at -110."
+      "notes": "[ROLLBACK 2026-05-14 22:00 ET] Previous settle used bad team-W/L logic. Reset to Pending for re-grade with proper player-prop/spread/total settlers."
     }
   ],
   "daily": [
@@ -861,6 +861,16 @@
       "paper_w": 0,
       "paper_l": 0,
       "grade": "Pending"
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "bankroll_end": 150.94,
+      "live_pl": -4.06,
+      "live_w": 1,
+      "live_l": 2,
+      "paper_w": 0,
+      "paper_l": 10,
+      "grade": "B"
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
@@ -902,6 +912,14 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "live_w": 1.0,
+      "live_l": 2.0,
+      "paper_w": 0.0,
+      "paper_l": 10.0,
+      "live_pl": -4.06
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "live_w": 0.0,
       "live_l": 0.0,
       "paper_w": 0.0,
@@ -920,7 +938,11 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
-      "cum_pl": -4.06
+      "cum_pl": -8.12
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "cum_pl": -8.12
     }
   ],
   "strategies": [
@@ -934,30 +956,14 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 2,
+      "l10_picks": 0,
       "l10_won": 0,
-      "l10_lost": 2,
-      "l10_hit_rate": 0.0,
-      "l10_net": -10.0
+      "l10_lost": 0,
+      "l10_hit_rate": 0,
+      "l10_net": 0
     },
     {
       "name": "MLB Run Line",
-      "picks": 0,
-      "won": 0,
-      "lost": 0,
-      "hit_rate": 0,
-      "net": 0,
-      "roi": 0,
-      "status": "ACTIVE",
-      "last_fired": "",
-      "l10_picks": 2,
-      "l10_won": 0,
-      "l10_lost": 2,
-      "l10_hit_rate": 0.0,
-      "l10_net": -11.5
-    },
-    {
-      "name": "MLB Pitcher Strikeouts",
       "picks": 0,
       "won": 0,
       "lost": 0,
@@ -970,7 +976,23 @@
       "l10_won": 0,
       "l10_lost": 1,
       "l10_hit_rate": 0.0,
-      "l10_net": -5.0
+      "l10_net": -1.5
+    },
+    {
+      "name": "MLB Pitcher Strikeouts",
+      "picks": 0,
+      "won": 0,
+      "lost": 0,
+      "hit_rate": 0,
+      "net": 0,
+      "roi": 0,
+      "status": "ACTIVE",
+      "last_fired": "",
+      "l10_picks": 0,
+      "l10_won": 0,
+      "l10_lost": 0,
+      "l10_hit_rate": 0,
+      "l10_net": 0
     },
     {
       "name": "MLB Moneyline",
@@ -1030,11 +1052,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 1,
+      "l10_picks": 0,
       "l10_won": 0,
-      "l10_lost": 1,
-      "l10_hit_rate": 0.0,
-      "l10_net": -2.5
+      "l10_lost": 0,
+      "l10_hit_rate": 0,
+      "l10_net": 0
     },
     {
       "name": "MLB Batter Total Bases",
@@ -1110,11 +1132,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 5,
+      "l10_picks": 0,
       "l10_won": 0,
-      "l10_lost": 5,
-      "l10_hit_rate": 0.0,
-      "l10_net": -42.15
+      "l10_lost": 0,
+      "l10_hit_rate": 0,
+      "l10_net": 0
     },
     {
       "name": "MLB Batter Hits",
@@ -1126,11 +1148,11 @@
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 1,
-      "l10_won": 1,
+      "l10_picks": 0,
+      "l10_won": 0,
       "l10_lost": 0,
-      "l10_hit_rate": 100.0,
-      "l10_net": 0.44
+      "l10_hit_rate": 0,
+      "l10_net": 0
     },
     {
       "name": "MLB Batter HR",
@@ -2140,44 +2162,20 @@
   "sport_roi": [
     {
       "label": "MLB",
-      "roi": -97.43555849306014,
-      "n": 13,
-      "pl": -73.71000000000001
+      "roi": -100.0,
+      "n": 2,
+      "pl": -4.5
     }
   ],
   "tier_roi": [
     {
-      "label": "STRONG",
-      "roi": -93.77207062600321,
-      "n": 3,
-      "pl": -29.21
-    },
-    {
       "label": "LOCK",
       "roi": -100.0,
-      "n": 3,
-      "pl": -14.5
-    },
-    {
-      "label": "WATCH",
-      "roi": -100.0,
       "n": 2,
-      "pl": -5.0
-    },
-    {
-      "label": "SIDE",
-      "roi": -100.0,
-      "n": 5,
-      "pl": -25.0
+      "pl": -4.5
     }
   ],
   "calib_pairs": [
-    {
-      "prob": 0.7727272727272727,
-      "outcome": 1,
-      "strategy": "MLB Batter Hits",
-      "pick": "[LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -3"
-    },
     {
       "prob": 0.46296296296296297,
       "outcome": 0,
@@ -2189,66 +2187,6 @@
       "outcome": 0,
       "strategy": "Stable Edge Parlay",
       "pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay "
-    },
-    {
-      "prob": 0.38461538461538464,
-      "outcome": 0,
-      "strategy": "MLB Batter Total Bases Alt",
-      "pick": "[PAPER] Ceddanne Rafaela O1.5 TOTAL_BASE"
-    },
-    {
-      "prob": 0.6,
-      "outcome": 0,
-      "strategy": "MLB Batter Hits Alt",
-      "pick": "[PAPER] Kyle Schwarber O0.5 HITS_ALT @ -"
-    },
-    {
-      "prob": 0.6153846153846154,
-      "outcome": 0,
-      "strategy": "MLB Batter Hits Alt",
-      "pick": "[PAPER] Trevor Story O0.5 HITS_ALT @ -16"
-    },
-    {
-      "prob": 0.5238095238095238,
-      "outcome": 0,
-      "strategy": "MLB Total Runs",
-      "pick": "[PAPER] total Under 7.5 @ -110 (Chicago "
-    },
-    {
-      "prob": 0.6183206106870229,
-      "outcome": 0,
-      "strategy": "MLB Pitcher Strikeouts",
-      "pick": "[PAPER] Chris Sale O6.5 PITCHER_STRIKEOU"
-    },
-    {
-      "prob": 0.5238095238095238,
-      "outcome": 0,
-      "strategy": "MLB Total Runs",
-      "pick": "[PAPER] total Over 7.5 @ -110 (Chicago C"
-    },
-    {
-      "prob": 0.6774193548387096,
-      "outcome": 0,
-      "strategy": "MLB Batter Hits Alt",
-      "pick": "[PAPER] Alec Bohm O0.5 HITS_ALT @ -210 ("
-    },
-    {
-      "prob": 0.6428571428571429,
-      "outcome": 0,
-      "strategy": "MLB Batter Hits Alt",
-      "pick": "[PAPER] Ceddanne Rafaela O0.5 HITS_ALT @"
-    },
-    {
-      "prob": 0.6226415094339622,
-      "outcome": 0,
-      "strategy": "MLB Batter Hits Alt",
-      "pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -1"
-    },
-    {
-      "prob": 0.5238095238095238,
-      "outcome": 0,
-      "strategy": "MLB Run Line",
-      "pick": "[PAPER] spread Over -1.5 @ -110 (Chicago"
     }
   ],
   "calib_bins": [
@@ -2318,11 +2256,11 @@
     {
       "low": 35,
       "high": 40,
-      "n": 1,
+      "n": 0,
       "wins": 0,
       "predicted_mid": 37.5,
-      "actual_hit": 0.0,
-      "delta": -37.5
+      "actual_hit": null,
+      "delta": null
     },
     {
       "low": 40,
@@ -2345,11 +2283,11 @@
     {
       "low": 50,
       "high": 55,
-      "n": 3,
+      "n": 0,
       "wins": 0,
       "predicted_mid": 52.5,
-      "actual_hit": 0.0,
-      "delta": -52.5
+      "actual_hit": null,
+      "delta": null
     },
     {
       "low": 55,
@@ -2363,20 +2301,20 @@
     {
       "low": 60,
       "high": 65,
-      "n": 5,
+      "n": 0,
       "wins": 0,
       "predicted_mid": 62.5,
-      "actual_hit": 0.0,
-      "delta": -62.5
+      "actual_hit": null,
+      "delta": null
     },
     {
       "low": 65,
       "high": 70,
-      "n": 1,
+      "n": 0,
       "wins": 0,
       "predicted_mid": 67.5,
-      "actual_hit": 0.0,
-      "delta": -67.5
+      "actual_hit": null,
+      "delta": null
     },
     {
       "low": 70,
@@ -2390,11 +2328,11 @@
     {
       "low": 75,
       "high": 80,
-      "n": 1,
-      "wins": 1,
+      "n": 0,
+      "wins": 0,
       "predicted_mid": 77.5,
-      "actual_hit": 100.0,
-      "delta": 22.5
+      "actual_hit": null,
+      "delta": null
     },
     {
       "low": 80,
@@ -2435,32 +2373,11 @@
   ],
   "strat_calib": [
     {
-      "strategy": "MLB Batter Hits Alt",
-      "n": 5,
-      "predicted_avg": 63.1660524502886,
-      "actual_hit": 0.0,
-      "delta": -63.1660524502886
-    },
-    {
       "strategy": "MLB Run Line",
-      "n": 2,
-      "predicted_avg": 49.338624338624335,
-      "actual_hit": 0.0,
-      "delta": -49.338624338624335
-    },
-    {
-      "strategy": "MLB Total Runs",
-      "n": 2,
-      "predicted_avg": 52.38095238095239,
-      "actual_hit": 0.0,
-      "delta": -52.38095238095239
-    },
-    {
-      "strategy": "MLB Batter Hits",
       "n": 1,
-      "predicted_avg": 77.27272727272727,
-      "actual_hit": 100.0,
-      "delta": 22.727272727272734
+      "predicted_avg": 46.2962962962963,
+      "actual_hit": 0.0,
+      "delta": -46.2962962962963
     },
     {
       "strategy": "Stable Edge Parlay",
@@ -2468,20 +2385,6 @@
       "predicted_avg": 27.027027027027028,
       "actual_hit": 0.0,
       "delta": -27.027027027027028
-    },
-    {
-      "strategy": "MLB Batter Total Bases Alt",
-      "n": 1,
-      "predicted_avg": 38.46153846153847,
-      "actual_hit": 0.0,
-      "delta": -38.46153846153847
-    },
-    {
-      "strategy": "MLB Pitcher Strikeouts",
-      "n": 1,
-      "predicted_avg": 61.832061068702295,
-      "actual_hit": 0.0,
-      "delta": -61.832061068702295
     }
   ],
   "avg_clv_30d": null,
@@ -2667,28 +2570,18 @@
     }
   },
   "perf_panel": {
-    "total_settled": 13,
-    "total_stake": 75.65,
-    "total_net_pl": -73.71,
-    "total_roi_pct": -97.4,
+    "total_settled": 2,
+    "total_stake": 4.5,
+    "total_net_pl": -4.5,
+    "total_roi_pct": -100.0,
     "by_strategy": [
       {
-        "name": "MLB Batter Hits",
-        "n": 1,
-        "won": 1,
-        "lost": 0,
-        "stake": 1.5,
-        "pl": 0.44,
-        "hit_rate": 100.0,
-        "roi_pct": 29.3
-      },
-      {
-        "name": "MLB Batter Total Bases Alt",
+        "name": "MLB Run Line",
         "n": 1,
         "won": 0,
         "lost": 1,
-        "stake": 2.5,
-        "pl": -2.5,
+        "stake": 1.5,
+        "pl": -1.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       },
@@ -2699,46 +2592,6 @@
         "lost": 1,
         "stake": 3.0,
         "pl": -3.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Pitcher Strikeouts",
-        "n": 1,
-        "won": 0,
-        "lost": 1,
-        "stake": 5.0,
-        "pl": -5.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Total Runs",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 10.0,
-        "pl": -10.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Run Line",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 11.5,
-        "pl": -11.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Batter Hits Alt",
-        "n": 5,
-        "won": 0,
-        "lost": 5,
-        "stake": 42.15,
-        "pl": -42.15,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
@@ -2746,77 +2599,36 @@
     "by_sport": [
       {
         "name": "MLB",
-        "n": 13,
-        "won": 1,
-        "lost": 12,
-        "stake": 75.65,
-        "pl": -73.71,
-        "hit_rate": 7.7,
-        "roi_pct": -97.4
+        "n": 2,
+        "won": 0,
+        "lost": 2,
+        "stake": 4.5,
+        "pl": -4.5,
+        "hit_rate": 0.0,
+        "roi_pct": -100.0
       }
     ],
     "by_tier": [
       {
-        "name": "WATCH",
+        "name": "LOCK",
         "n": 2,
         "won": 0,
         "lost": 2,
-        "stake": 5.0,
-        "pl": -5.0,
+        "stake": 4.5,
+        "pl": -4.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
-      },
-      {
-        "name": "LOCK",
-        "n": 3,
-        "won": 0,
-        "lost": 3,
-        "stake": 14.5,
-        "pl": -14.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "SIDE",
-        "n": 5,
-        "won": 0,
-        "lost": 5,
-        "stake": 25.0,
-        "pl": -25.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "STRONG",
-        "n": 3,
-        "won": 1,
-        "lost": 2,
-        "stake": 31.15,
-        "pl": -29.21,
-        "hit_rate": 33.3,
-        "roi_pct": -93.8
       }
     ],
-    "what_worked": [
-      {
-        "name": "MLB Batter Hits",
-        "n": 1,
-        "won": 1,
-        "lost": 0,
-        "stake": 1.5,
-        "pl": 0.44,
-        "hit_rate": 100.0,
-        "roi_pct": 29.3
-      }
-    ],
+    "what_worked": [],
     "what_failed": [
       {
-        "name": "MLB Batter Total Bases Alt",
+        "name": "MLB Run Line",
         "n": 1,
         "won": 0,
         "lost": 1,
-        "stake": 2.5,
-        "pl": -2.5,
+        "stake": 1.5,
+        "pl": -1.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       },
@@ -2827,46 +2639,6 @@
         "lost": 1,
         "stake": 3.0,
         "pl": -3.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Pitcher Strikeouts",
-        "n": 1,
-        "won": 0,
-        "lost": 1,
-        "stake": 5.0,
-        "pl": -5.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Total Runs",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 10.0,
-        "pl": -10.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Run Line",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 11.5,
-        "pl": -11.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Batter Hits Alt",
-        "n": 5,
-        "won": 0,
-        "lost": 5,
-        "stake": 42.15,
-        "pl": -42.15,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
@@ -2880,19 +2652,19 @@
         "dow": "Thursday",
         "short": "05/14",
         "n_total": 22,
-        "n_settled": 13,
+        "n_settled": 2,
         "n_live": 3,
         "n_paper": 19,
-        "won": 1,
-        "lost": 12,
+        "won": 0,
+        "lost": 2,
         "push": 0,
-        "hit_rate": 7.7,
-        "stake": 75.65,
-        "pl": -73.71,
-        "top_pick": "[LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (KC @ STL)",
-        "top_pl": 0.44,
-        "bot_pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red Sox)",
-        "bot_pl": -15.0
+        "hit_rate": 0.0,
+        "stake": 4.5,
+        "pl": -4.5,
+        "top_pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
+        "top_pl": -1.5,
+        "bot_pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
+        "bot_pl": -3.0
       },
       {
         "date": "2026-05-13",
@@ -3129,29 +2901,29 @@
         "dow": "Thursday",
         "short": "05/14",
         "n_total": 22,
-        "n_settled": 13,
+        "n_settled": 2,
         "n_live": 3,
         "n_paper": 19,
-        "won": 1,
-        "lost": 12,
+        "won": 0,
+        "lost": 2,
         "push": 0,
-        "hit_rate": 7.7,
-        "stake": 75.65,
-        "pl": -73.71,
-        "top_pick": "[LIVE] Bobby Witt Jr. O0.5 HITS_ALT @ -340 (KC @ STL)",
-        "top_pl": 0.44,
-        "bot_pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red Sox)",
-        "bot_pl": -15.0
+        "hit_rate": 0.0,
+        "stake": 4.5,
+        "pl": -4.5,
+        "top_pick": "[LIVE] ATL -1.5 spread @ +116 (CHC @ ATL)",
+        "top_pl": -1.5,
+        "bot_pick": "[LIVE] ATL -1.5 + Witt O0.5 Hits Parlay (CHC@ATL / KC@STL)",
+        "bot_pl": -3.0
       }
     ],
     "total_picks": 22,
-    "total_settled": 13,
-    "total_won": 1,
-    "total_lost": 12,
-    "total_stake": 75.65,
-    "total_pl": -73.71,
-    "hit_rate": 7.7,
-    "roi_pct": -97.4,
+    "total_settled": 2,
+    "total_won": 0,
+    "total_lost": 2,
+    "total_stake": 4.5,
+    "total_pl": -4.5,
+    "hit_rate": 0.0,
+    "roi_pct": -100.0,
     "live_count": 3,
     "paper_count": 19,
     "best_day": {
@@ -3160,7 +2932,7 @@
     },
     "worst_day": {
       "date": "2026-05-14",
-      "pl": -73.71
+      "pl": -4.5
     },
     "sport_dist": [
       {
@@ -3204,22 +2976,22 @@
   },
   "live_paper_split": {
     "live": {
-      "n": 3,
-      "won": 1,
-      "lost": 2,
-      "stake": 6.0,
-      "pl": -4.06,
-      "hit_rate": 33.3,
-      "roi_pct": -67.7
-    },
-    "paper": {
-      "n": 10,
+      "n": 2,
       "won": 0,
-      "lost": 10,
-      "stake": 69.65,
-      "pl": -69.65,
+      "lost": 2,
+      "stake": 4.5,
+      "pl": -4.5,
       "hit_rate": 0.0,
       "roi_pct": -100.0
+    },
+    "paper": {
+      "n": 0,
+      "won": 0,
+      "lost": 0,
+      "stake": 0,
+      "pl": 0,
+      "hit_rate": 0,
+      "roi_pct": 0
     }
   },
   "wellness": {
@@ -3414,7 +3186,7 @@
             "inning_state": "Top",
             "home_runs": 15,
             "home_hits": 14,
-            "home_errors": 2,
+            "home_errors": 3,
             "away_runs": 1,
             "away_hits": 3,
             "away_errors": 0,
@@ -4253,9 +4025,9 @@
           ],
           "scoreboard": {
             "game_pk": 824602,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
+            "status": "Game Over",
+            "abstract_state": "Final",
+            "status_code": "O",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -4285,7 +4057,7 @@
               0,
               1,
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -4364,8 +4136,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 1,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
@@ -4376,7 +4148,7 @@
               null
             ],
             "away_innings": [
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -8724,35 +8496,35 @@
   "account_summary": {
     "live": {
       "total_picks": 3,
-      "settled_picks": 3,
-      "won": 1,
+      "settled_picks": 2,
+      "won": 0,
       "lost": 2,
       "push": 0,
-      "win_rate_pct": 33.3,
-      "total_pl": -4.06,
+      "win_rate_pct": 0.0,
+      "total_pl": -4.5,
       "max_drawdown": -4.5,
-      "expectancy_per_pick": -1.35,
-      "streak": "W1"
+      "expectancy_per_pick": -1.5,
+      "streak": "L2"
     },
     "paper": {
       "total_picks": 19,
-      "settled_picks": 10,
+      "settled_picks": 0,
       "won": 0,
-      "lost": 10,
+      "lost": 0,
       "push": 0,
       "win_rate_pct": 0.0,
-      "total_pl": -69.65,
-      "max_drawdown": -69.65,
-      "expectancy_per_pick": -3.67,
-      "streak": "L10"
+      "total_pl": 0,
+      "max_drawdown": -0.0,
+      "expectancy_per_pick": 0.0,
+      "streak": "\u2014"
     }
   },
   "risk_panel": {
     "live": {
       "bankroll": {
         "start": 150.0,
-        "current": 145.94,
-        "peak": 150.44,
+        "current": 145.5,
+        "peak": 150.0,
         "peak_date": "2026-05-14",
         "drawdown_dollars": 4.5,
         "drawdown_pct": 3.0,
@@ -8763,24 +8535,24 @@
         "stake_committed": 6.0,
         "daily_cap": 15.0,
         "cap_pct_used": 40.0,
-        "daily_pl": -4.06,
+        "daily_pl": -4.5,
         "picks_fired": 3,
-        "picks_pending": 0
+        "picks_pending": 1
       },
       "exposure": {
-        "pending_stake": 0,
-        "pending_count": 0,
-        "max_single_event_stake": 0.0,
-        "max_single_event_pct": 0.0,
+        "pending_stake": 1.5,
+        "pending_count": 1,
+        "max_single_event_stake": 1.5,
+        "max_single_event_pct": 1.0,
         "max_single_allowed_pct": 10.0
       },
       "breakers": {
         "hard_stop_status": "OK",
         "hard_stop_threshold": -15.0,
-        "hard_stop_distance": 10.94,
+        "hard_stop_distance": 10.5,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 25.0,
-        "drawdown_breaker_at_bankroll": 112.83
+        "drawdown_breaker_at_bankroll": 112.5
       },
       "sizing": {
         "avg_stake": 2.0,
@@ -8790,63 +8562,63 @@
         "unit_size": 3.0
       },
       "streaks": {
-        "current": "W1",
-        "current_n": 1,
-        "longest_winning": 1,
+        "current": "L2",
+        "current_n": 2,
+        "longest_winning": 0,
         "longest_losing": 2
       },
-      "roi_pct": -67.67,
-      "total_settled": 3
+      "roi_pct": -100.0,
+      "total_settled": 2
     },
     "paper": {
       "bankroll": {
         "start": 500.0,
-        "current": 430.35,
+        "current": 500.0,
         "peak": 500.0,
         "peak_date": "2026-05-14",
-        "drawdown_dollars": 69.65,
-        "drawdown_pct": 13.9,
-        "max_drawdown_dollars": 69.65,
-        "max_drawdown_pct": 13.9
+        "drawdown_dollars": 0.0,
+        "drawdown_pct": 0.0,
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_pct": 0.0
       },
       "today": {
         "stake_committed": 122.15,
         "daily_cap": 150.0,
         "cap_pct_used": 81.4,
-        "daily_pl": -69.65,
+        "daily_pl": 0,
         "picks_fired": 19,
-        "picks_pending": 9
+        "picks_pending": 19
       },
       "exposure": {
-        "pending_stake": 52.5,
-        "pending_count": 9,
+        "pending_stake": 122.15,
+        "pending_count": 19,
         "max_single_event_stake": 15.0,
-        "max_single_event_pct": 3.5,
+        "max_single_event_pct": 3.0,
         "max_single_allowed_pct": 5.0
       },
       "breakers": {
-        "hard_stop_status": "TRIGGERED",
+        "hard_stop_status": "OK",
         "hard_stop_threshold": -50.0,
-        "hard_stop_distance": -19.65,
+        "hard_stop_distance": 50.0,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 30.0,
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
         "avg_stake": 6.43,
-        "avg_stake_pct_bankroll": 1.49,
+        "avg_stake_pct_bankroll": 1.29,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
       },
       "streaks": {
-        "current": "L10",
-        "current_n": 10,
+        "current": "\u2014",
+        "current_n": 0,
         "longest_winning": 0,
-        "longest_losing": 10
+        "longest_losing": 0
       },
-      "roi_pct": -100.0,
-      "total_settled": 10
+      "roi_pct": 0.0,
+      "total_settled": 0
     },
     "config": {
       "LIVE": {
@@ -8902,35 +8674,35 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.3
+        "age_hours": 3.4
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 12.6
+        "age_hours": 12.7
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.3
+        "age_hours": 3.4
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.3
+        "age_hours": 3.4
       },
       {
         "label": "Learning journal",
@@ -10409,7 +10181,7 @@
   ],
   "counts": {
     "picks_total": 22,
-    "settled": 13,
+    "settled": 2,
     "today_picks": 22
   }
 }
