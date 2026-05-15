@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-055459",
-  "generated_at": "2026-05-15T05:54:59.372751+00:00",
+  "build_id": "260515-060102",
+  "generated_at": "2026-05-15T06:01:02.307087+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -449,6 +449,16 @@
       "live_pl": 0,
       "live_w": 0,
       "live_l": 0,
+      "paper_w": 0,
+      "paper_l": 0,
+      "grade": "B"
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "bankroll_end": 155,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
       "paper_w": 8,
       "paper_l": 11,
       "grade": "B"
@@ -527,6 +537,14 @@
       "date": "2026-05-14 - retroactive settle 2026-05-13",
       "live_w": 0.0,
       "live_l": 0.0,
+      "paper_w": 0.0,
+      "paper_l": 0.0,
+      "live_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "live_w": 0.0,
+      "live_l": 0.0,
       "paper_w": 8.0,
       "paper_l": 11.0,
       "live_pl": 0.0
@@ -583,6 +601,10 @@
   "cum_pl": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
+      "cum_pl": 0.0
+    },
+    {
+      "date": "2026-05-14 - retroactive settle 2026-05-13",
       "cum_pl": 0.0
     },
     {
@@ -2389,15 +2411,15 @@
       "strategy_adj": ""
     },
     {
-      "title": "[NIGHT-SETTLE] 2026-05-14 \u2014 8W-11L net $-19.56",
+      "title": "[NIGHT-SETTLE] 2026-05-14 \u2014 0W-0L net $+0.00",
       "date": "2026-05-14",
       "type": "Daily Reflection",
-      "outcome": "Lost",
-      "what_worked": "8 of 19 picks hit (42%). Biggest winner: [PAPER] Brandon Marsh O0.5 HITS_ALT @ -165 (Philadelphia Phillies @ Boston Red S +$9.09. PAPER wins: 8 totaling +$35.09.",
-      "what_failed": "11 losses totaling -$54.65. Biggest miss: [PAPER] Ceddanne Rafaela O0.5 HITS_ALT @ -180 (Philadelphia Phillies @ Boston Re $-14.65. Parlay correlation hit us: 3 parlay(s) lost (when one leg dies, the parlay dies).",
-      "lessons": "Hit rate 42% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Parlays all lost \u2014 correlation risk biting. Consider singles-only until edge sample stabilizes. Repeat losses on: MLB Batter Total Bases Alt (3), MLB Pitcher Strikeouts (2), MLB Batter Hits Alt (4). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (6).",
+      "outcome": "Push",
+      "what_worked": "No wins on the slate \u2014 every pick lost.",
+      "what_failed": "No losses today \u2014 clean slate.",
+      "lessons": "No picks settled. No data to analyze.",
       "calibration_delta": null,
-      "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears. Tilt toward team markets next slate \u2014 player props had higher variance today. Player props worked better than team markets today \u2014 lean toward props if pattern holds 3+ days."
+      "strategy_adj": "No data \u2014 no adjustment."
     }
   ],
   "sport_roi": [
@@ -2799,6 +2821,14 @@
       "WakeToRun": false
     },
     {
+      "Name": "BettingOS - auto-confirm-paper",
+      "State": "Ready",
+      "NextRun": "2026-05-15 13:00",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
+      "WakeToRun": false
+    },
+    {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
       "NextRun": "2026-05-15 23:30",
@@ -2921,10 +2951,18 @@
     {
       "Name": "BettingOS - night-settle",
       "State": "Ready",
-      "NextRun": "2026-05-15 02:00",
-      "LastRun": "2026-05-14 02:00",
-      "LastResult": 1,
+      "NextRun": "2026-05-16 02:00",
+      "LastRun": "2026-05-15 02:00",
+      "LastResult": 0,
       "WakeToRun": true
+    },
+    {
+      "Name": "BettingOS - odds-api-monitor",
+      "State": "Ready",
+      "NextRun": "2026-05-15 20:00",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
+      "WakeToRun": false
     },
     {
       "Name": "BettingOS - scout-stability",
@@ -2944,13 +2982,7 @@
     }
   ],
   "log_completes": {
-    "night-settle": {
-      "yesterday": "2026-05-11",
-      "pending_picks": "0",
-      "note": "Live.v.1 cutover day - no picks fired - no work required",
-      "bankroll_live": "143",
-      "bankroll_paper": "500"
-    },
+    "night-settle": {},
     "morning-recap-and-fire": {
       "mode": "REST_DAY_RECAP+DAY1_LIVEV1_FIRE",
       "paper_picks": "9",
@@ -9214,42 +9246,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.0
+        "age_hours": 7.1
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 16.3
+        "age_hours": 16.4
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.0
+        "age_hours": 7.1
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.5
+        "age_hours": 0.0
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 7.0
+        "age_hours": 7.1
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 2.7
+        "age_hours": 0.0
       }
     ]
   },
@@ -11706,10 +11738,26 @@
     "month_cap": 18000
   },
   "settled_archive": {
-    "days": [],
-    "available": false
+    "days": [
+      {
+        "date": "2026-05-14",
+        "totals": {
+          "n_settled": 0,
+          "live_n": 0,
+          "paper_n": 0,
+          "live_net_pl": 0,
+          "paper_net_pl": 0,
+          "live_won": 0,
+          "live_lost": 0,
+          "paper_won": 0,
+          "paper_lost": 0
+        },
+        "picks": []
+      }
+    ],
+    "available": true
   },
-  "built_at_et": "2026-05-15 01:55 ET",
+  "built_at_et": "2026-05-15 02:01 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
