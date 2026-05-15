@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-220023",
-  "generated_at": "2026-05-15T22:00:23.371307+00:00",
+  "build_id": "260515-220056",
+  "generated_at": "2026-05-15T22:00:56.483893+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -12,6 +12,63 @@
     "drawdown_pct": 3.0
   },
   "picks": [
+    {
+      "id": "361315a3-aab3-810b-8b26-f8a6511816a2",
+      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #4 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-810b-9ada-e9511a91099f",
+      "pick": "[LIVE-PENDING] SPREAD Over 1.5 @ -210 (Miami Marlins @ Tampa Bay Rays)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -210,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-819c-b0e0-c9c0b3545b82",
+      "pick": "[PAPER] spread Over -1.5 @ -110 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -110,
+      "stake": 7.5,
+      "stake_u": 1.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "STRONG",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 94% (LOCK-grade) \u00b7 edge +8.5pp \u00b7 rae +8.3 \u00b7 rank #6 \u00b7 factor x1.16 \u00b7 n=10"
+    },
     {
       "id": "361315a3-aab3-81d9-bc94-e6745fb5a27f",
       "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
@@ -67,7 +124,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 49% (neutral) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O2.5 line, gap -0.50) \u00b7 vs Zack Littell"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81ef-b5dd-d23b3ab2e0e8",
@@ -96,7 +153,7 @@
       "odds": 100,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Total Bases Alt",
@@ -105,7 +162,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 69% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #5 \u00b7 factor x1.14 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8137-aff6-ee642a13f892",
@@ -143,7 +200,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.1pp \u00b7 rae +4.0 \u00b7 rank #21 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 7 rbi L10 (avg 0.70 vs O0.5 line, gap +0.20) \u00b7 vs Zack Littell"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.1pp \u00b7 rae +4.0 \u00b7 rank #23 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 7 rbi L10 (avg 0.70 vs O0.5 line, gap +0.20) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-816f-a083-f0f386e610bb",
@@ -162,7 +219,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 80% (real-edge) \u00b7 edge +6.1pp \u00b7 rae +4.8 \u00b7 rank #17 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81d9-b6af-e836d9247b83",
@@ -170,8 +227,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -181,7 +238,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #15 \u00b7 factor x1.10 \u00b7 n=10"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #17 \u00b7 factor x1.10 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-819c-bf01-f331a67f9874",
@@ -189,8 +246,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -200,16 +257,16 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #12 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #15 \u00b7 factor x1.12 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-8174-ab8f-fbfdbe9790f6",
-      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +110 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +105 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 110,
-      "stake": 5,
-      "stake_u": 1,
+      "odds": 105,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -219,7 +276,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.1pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.2pp \u00b7 rae +5.1 \u00b7 rank #14 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-813f-9539-f3c0d7c80046",
@@ -231,14 +288,14 @@
       "stake_u": 1.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Total Runs",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +7.5pp \u00b7 rae +5.8 \u00b7 rank #7 \u00b7 factor x1.14 \u00b7 n=9"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-814a-b84f-fbb17ca612b9",
@@ -257,7 +314,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #5 \u00b7 factor x1.14 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O1.5 line, gap +0.50) \u00b7 vs Zack Littell"
+      "notes": "heat 69% (cautious) \u00b7 edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #8 \u00b7 factor x1.14 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O1.5 line, gap +0.50) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-81d5-aa63-f006072a03ef",
@@ -305,7 +362,7 @@
       "odds": -210,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
@@ -314,7 +371,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 83% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #4 \u00b7 factor x1.11 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8192-be77-d4b10db5f507",
@@ -352,7 +409,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #3 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-818a-b591-fdc59a75b649",
@@ -371,7 +428,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #1 \u00b7 factor x1.16 \u00b7 n=30"
+      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #2 \u00b7 factor x1.16 \u00b7 n=30"
     },
     {
       "id": "361315a3-aab3-81c4-acab-de1013dd189f",
@@ -398,8 +455,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -409,7 +466,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +7.1pp \u00b7 rae +5.6 \u00b7 rank #9 \u00b7 factor x1.14 \u00b7 n=9"
+      "notes": "heat 84% (real-edge) \u00b7 edge +7.1pp \u00b7 rae +5.6 \u00b7 rank #11 \u00b7 factor x1.14 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-81a5-aa8d-df149de5a81a",
@@ -447,7 +504,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 74% (real-edge) \u00b7 edge +3.8pp \u00b7 rae +3.7 \u00b7 rank #23 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
+      "notes": "heat 74% (real-edge) \u00b7 edge +3.8pp \u00b7 rae +3.7 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8137-a233-c80bb324afe4",
@@ -466,7 +523,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 75% (real-edge) \u00b7 edge +3.9pp \u00b7 rae +3.8 \u00b7 rank #22 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
+      "notes": "heat 75% (real-edge) \u00b7 edge +3.9pp \u00b7 rae +3.8 \u00b7 rank #24 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81a2-9c56-fbf5a963f95b",
@@ -474,8 +531,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -300,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -485,7 +542,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #20 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Zack Littell"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #22 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-814d-8372-edd7d3a7091b",
@@ -565,22 +622,22 @@
     },
     {
       "id": "361315a3-aab3-813a-946c-dce5ad984adc",
-      "pick": "[LIVE-PENDING] spread Over -1.5 @ -110 (Los Angeles Dodgers @ Los Angeles Angels)",
+      "pick": "[LIVE-PENDING] spread Over -1.5 @ -110 (Miami Marlins @ Tampa Bay Rays)",
       "account": "LIVE",
       "sport": "MLB",
       "odds": -110,
-      "stake": 3,
-      "stake_u": 1,
+      "stake": 4.5,
+      "stake_u": 1.5,
       "result": "Pending-Unconfirmed",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "STRONG",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 68% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +1.8pp \u00b7 rae +1.8 \u00b7 rank #10 \u00b7 factor x1.03 \u00b7 n=10"
+      "notes": "HEAT: 99% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #5 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8175-8daa-f989e4e5ab0f",
@@ -626,8 +683,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -637,7 +694,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #19 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 6 hits L10 (avg 0.60 vs O0.5 line, gap +0.10) \u00b7 vs Shane Baz"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #21 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 6 hits L10 (avg 0.60 vs O0.5 line, gap +0.10) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81be-8c9a-d9705537a284",
@@ -645,8 +702,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -250,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -656,7 +713,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 76% (real-edge) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #18 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
+      "notes": "heat 76% (real-edge) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #20 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81e1-98ef-d4942aaaed2c",
@@ -664,8 +721,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -675,7 +732,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 78% (real-edge) \u00b7 edge +4.9pp \u00b7 rae +4.8 \u00b7 rank #16 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 78% (real-edge) \u00b7 edge +4.9pp \u00b7 rae +4.8 \u00b7 rank #18 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-8162-a56b-c27991ac63f1",
@@ -683,8 +740,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -694,7 +751,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #14 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #16 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8187-9773-d550cd990087",
@@ -702,8 +759,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -260,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "STRONG",
@@ -713,7 +770,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +5.3pp \u00b7 rae +5.2 \u00b7 rank #11 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Shane Baz"
+      "notes": "heat 84% (real-edge) \u00b7 edge +5.3pp \u00b7 rae +5.2 \u00b7 rank #13 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81e2-a305-e3f96388eaf4",
@@ -721,8 +778,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -220,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "STRONG",
@@ -732,7 +789,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +5.5pp \u00b7 rae +5.5 \u00b7 rank #10 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
+      "notes": "heat 84% (real-edge) \u00b7 edge +5.5pp \u00b7 rae +5.5 \u00b7 rank #12 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8111-80a2-ffb607918eb5",
@@ -854,18 +911,18 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -180,
-      "stake": 7.5,
-      "stake_u": 1.5,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 85% (LOCK-grade) \u00b7 edge +5.8pp \u00b7 rae +5.7 \u00b7 rank #8 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
+      "notes": "heat 81% (real-edge) \u00b7 edge +5.8pp \u00b7 rae +5.7 \u00b7 rank #10 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-81ab-9eac-e161c52b13e3",
@@ -884,7 +941,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 83% (real-edge) \u00b7 edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #4 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Braxton Ashcraft"
+      "notes": "heat 83% (real-edge) \u00b7 edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #7 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Braxton Ashcraft"
     },
     {
       "id": "361315a3-aab3-81e1-b672-f8e48bbfe6bb",
@@ -903,26 +960,26 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
+      "notes": "heat 77% (real-edge) \u00b7 edge +4.6pp \u00b7 rae +4.5 \u00b7 rank #19 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
     },
     {
       "id": "361315a3-aab3-8190-94e6-d30fac49ef58",
-      "pick": "[PAPER] James Wood O0.5 HITS_ALT @ -220 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O0.5 HITS_ALT @ -210 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": -220,
-      "stake": 7.5,
-      "stake_u": 1.5,
+      "odds": -210,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +6.8pp \u00b7 rae +6.7 \u00b7 rank #6 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 84% (real-edge) \u00b7 edge +6.7pp \u00b7 rae +6.6 \u00b7 rank #9 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-816e-a185-eeb31d0e9208",
@@ -1364,6 +1421,63 @@
   ],
   "today_picks": [
     {
+      "id": "361315a3-aab3-810b-8b26-f8a6511816a2",
+      "pick": "[LIVE-PENDING] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -154,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Moneyline",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.8 \u00b7 rank #4 \u00b7 factor x1.17 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-810b-9ada-e9511a91099f",
+      "pick": "[LIVE-PENDING] SPREAD Over 1.5 @ -210 (Miami Marlins @ Tampa Bay Rays)",
+      "account": "LIVE",
+      "sport": "MLB",
+      "odds": -210,
+      "stake": 4.5,
+      "stake_u": 1.5,
+      "result": "Pending-Unconfirmed",
+      "pl": 0,
+      "tier": "LOCK",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-15",
+      "era": "Live.v.2",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +12.9pp \u00b7 rae +12.4 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
+    },
+    {
+      "id": "361315a3-aab3-819c-b0e0-c9c0b3545b82",
+      "pick": "[PAPER] spread Over -1.5 @ -110 (Boston Red Sox @ Atlanta Braves)",
+      "account": "PAPER",
+      "sport": "MLB",
+      "odds": -110,
+      "stake": 7.5,
+      "stake_u": 1.5,
+      "result": "Pending",
+      "pl": 0,
+      "tier": "STRONG",
+      "strategy": "MLB Run Line",
+      "date": "2026-05-15",
+      "era": "Live.v.2-paper",
+      "ccs": null,
+      "clv": null,
+      "true_prob": null,
+      "notes": "heat 94% (LOCK-grade) \u00b7 edge +8.5pp \u00b7 rae +8.3 \u00b7 rank #6 \u00b7 factor x1.16 \u00b7 n=10"
+    },
+    {
       "id": "361315a3-aab3-81d9-bc94-e6745fb5a27f",
       "pick": "[PAPER] ML Over None @ -154 (Boston Red Sox @ Atlanta Braves)",
       "account": "PAPER",
@@ -1418,7 +1532,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 49% (neutral) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #24 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O2.5 line, gap -0.50) \u00b7 vs Zack Littell"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81ef-b5dd-d23b3ab2e0e8",
@@ -1447,7 +1561,7 @@
       "odds": 100,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Total Bases Alt",
@@ -1456,7 +1570,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 69% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #5 \u00b7 factor x1.14 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8137-aff6-ee642a13f892",
@@ -1494,7 +1608,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.1pp \u00b7 rae +4.0 \u00b7 rank #21 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 7 rbi L10 (avg 0.70 vs O0.5 line, gap +0.20) \u00b7 vs Zack Littell"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.1pp \u00b7 rae +4.0 \u00b7 rank #23 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 7 rbi L10 (avg 0.70 vs O0.5 line, gap +0.20) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-816f-a083-f0f386e610bb",
@@ -1513,7 +1627,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 80% (real-edge) \u00b7 edge +6.1pp \u00b7 rae +4.8 \u00b7 rank #17 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-81d9-b6af-e836d9247b83",
@@ -1521,8 +1635,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1532,7 +1646,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #15 \u00b7 factor x1.10 \u00b7 n=10"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #17 \u00b7 factor x1.10 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-819c-bf01-f331a67f9874",
@@ -1540,8 +1654,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1551,16 +1665,16 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #12 \u00b7 factor x1.12 \u00b7 n=9"
+      "notes": "heat 81% (real-edge) \u00b7 edge +6.4pp \u00b7 rae +5.0 \u00b7 rank #15 \u00b7 factor x1.12 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-8174-ab8f-fbfdbe9790f6",
-      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +110 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O1.5 TOTAL_BASES_ALT @ +105 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": 110,
-      "stake": 5,
-      "stake_u": 1,
+      "odds": 105,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1570,7 +1684,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.1pp \u00b7 rae +5.0 \u00b7 rank #13 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.2pp \u00b7 rae +5.1 \u00b7 rank #14 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 18 totalBases L10 (avg 1.80 vs O1.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-813f-9539-f3c0d7c80046",
@@ -1582,14 +1696,14 @@
       "stake_u": 1.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Total Runs",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +7.5pp \u00b7 rae +5.8 \u00b7 rank #7 \u00b7 factor x1.14 \u00b7 n=9"
+      "notes": "[AUTO-ARCHIVED] No longer in engine's top 20 \u2014 re-run \\scout to refresh"
     },
     {
       "id": "361315a3-aab3-814a-b84f-fbb17ca612b9",
@@ -1608,7 +1722,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #5 \u00b7 factor x1.14 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O1.5 line, gap +0.50) \u00b7 vs Zack Littell"
+      "notes": "heat 69% (cautious) \u00b7 edge +7.0pp \u00b7 rae +6.9 \u00b7 rank #8 \u00b7 factor x1.14 \u00b7 n=30 \u00b7 20 totalBases L10 (avg 2.00 vs O1.5 line, gap +0.50) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-81d5-aa63-f006072a03ef",
@@ -1656,7 +1770,7 @@
       "odds": -210,
       "stake": 4.5,
       "stake_u": 1.5,
-      "result": "Pending-Unconfirmed",
+      "result": "Auto-Archived",
       "pl": 0,
       "tier": "STRONG",
       "strategy": "MLB Batter Hits Alt",
@@ -1665,7 +1779,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 83% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #4 \u00b7 factor x1.11 \u00b7 n=30"
+      "notes": "[AUTO-ARCHIVED] No longer in current top 5 \u2014 re-run \\scout"
     },
     {
       "id": "361315a3-aab3-8192-be77-d4b10db5f507",
@@ -1703,7 +1817,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #2 \u00b7 factor x1.21 \u00b7 n=10"
+      "notes": "HEAT: 100% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +10.8 \u00b7 rank #3 \u00b7 factor x1.21 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-818a-b591-fdc59a75b649",
@@ -1722,7 +1836,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #1 \u00b7 factor x1.16 \u00b7 n=30"
+      "notes": "HEAT: 89% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +11.2pp \u00b7 rae +11.0 \u00b7 rank #2 \u00b7 factor x1.16 \u00b7 n=30"
     },
     {
       "id": "361315a3-aab3-81c4-acab-de1013dd189f",
@@ -1749,8 +1863,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -110,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1760,7 +1874,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +7.1pp \u00b7 rae +5.6 \u00b7 rank #9 \u00b7 factor x1.14 \u00b7 n=9"
+      "notes": "heat 84% (real-edge) \u00b7 edge +7.1pp \u00b7 rae +5.6 \u00b7 rank #11 \u00b7 factor x1.14 \u00b7 n=9"
     },
     {
       "id": "361315a3-aab3-81a5-aa8d-df149de5a81a",
@@ -1798,7 +1912,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 74% (real-edge) \u00b7 edge +3.8pp \u00b7 rae +3.7 \u00b7 rank #23 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
+      "notes": "heat 74% (real-edge) \u00b7 edge +3.8pp \u00b7 rae +3.7 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8137-a233-c80bb324afe4",
@@ -1817,7 +1931,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 75% (real-edge) \u00b7 edge +3.9pp \u00b7 rae +3.8 \u00b7 rank #22 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
+      "notes": "heat 75% (real-edge) \u00b7 edge +3.9pp \u00b7 rae +3.8 \u00b7 rank #24 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81a2-9c56-fbf5a963f95b",
@@ -1825,8 +1939,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -300,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1836,7 +1950,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #20 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Zack Littell"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #22 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Zack Littell"
     },
     {
       "id": "361315a3-aab3-814d-8372-edd7d3a7091b",
@@ -1916,22 +2030,22 @@
     },
     {
       "id": "361315a3-aab3-813a-946c-dce5ad984adc",
-      "pick": "[LIVE-PENDING] spread Over -1.5 @ -110 (Los Angeles Dodgers @ Los Angeles Angels)",
+      "pick": "[LIVE-PENDING] spread Over -1.5 @ -110 (Miami Marlins @ Tampa Bay Rays)",
       "account": "LIVE",
       "sport": "MLB",
       "odds": -110,
-      "stake": 3,
-      "stake_u": 1,
+      "stake": 4.5,
+      "stake_u": 1.5,
       "result": "Pending-Unconfirmed",
       "pl": 0,
-      "tier": "GOOD",
+      "tier": "STRONG",
       "strategy": "MLB Run Line",
       "date": "2026-05-15",
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "HEAT: 68% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +1.8pp \u00b7 rae +1.8 \u00b7 rank #10 \u00b7 factor x1.03 \u00b7 n=10"
+      "notes": "HEAT: 99% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +10.0pp \u00b7 rae +9.6 \u00b7 rank #5 \u00b7 factor x1.19 \u00b7 n=10"
     },
     {
       "id": "361315a3-aab3-8175-8daa-f989e4e5ab0f",
@@ -1977,8 +2091,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -1988,7 +2102,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #19 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 6 hits L10 (avg 0.60 vs O0.5 line, gap +0.10) \u00b7 vs Shane Baz"
+      "notes": "heat 51% (neutral) \u00b7 edge +4.2pp \u00b7 rae +4.1 \u00b7 rank #21 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 6 hits L10 (avg 0.60 vs O0.5 line, gap +0.10) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81be-8c9a-d9705537a284",
@@ -1996,8 +2110,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -250,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -2007,7 +2121,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 76% (real-edge) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #18 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
+      "notes": "heat 76% (real-edge) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #20 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 12 hits L10 (avg 1.20 vs O0.5 line, gap +0.70) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81e1-98ef-d4942aaaed2c",
@@ -2015,8 +2129,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -2026,7 +2140,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 78% (real-edge) \u00b7 edge +4.9pp \u00b7 rae +4.8 \u00b7 rank #16 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 78% (real-edge) \u00b7 edge +4.9pp \u00b7 rae +4.8 \u00b7 rank #18 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-8162-a56b-c27991ac63f1",
@@ -2034,8 +2148,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -210,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "GOOD",
@@ -2045,7 +2159,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #14 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
+      "notes": "heat 79% (real-edge) \u00b7 edge +5.0pp \u00b7 rae +4.9 \u00b7 rank #16 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8187-9773-d550cd990087",
@@ -2053,8 +2167,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -260,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "STRONG",
@@ -2064,7 +2178,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +5.3pp \u00b7 rae +5.2 \u00b7 rank #11 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Shane Baz"
+      "notes": "heat 84% (real-edge) \u00b7 edge +5.3pp \u00b7 rae +5.2 \u00b7 rank #13 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-81e2-a305-e3f96388eaf4",
@@ -2072,8 +2186,8 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -220,
-      "stake": 5,
-      "stake_u": 1,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
       "tier": "STRONG",
@@ -2083,7 +2197,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 84% (real-edge) \u00b7 edge +5.5pp \u00b7 rae +5.5 \u00b7 rank #10 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
+      "notes": "heat 84% (real-edge) \u00b7 edge +5.5pp \u00b7 rae +5.5 \u00b7 rank #12 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 9 hits L10 (avg 0.90 vs O0.5 line, gap +0.40) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-8111-80a2-ffb607918eb5",
@@ -2205,18 +2319,18 @@
       "account": "PAPER",
       "sport": "MLB",
       "odds": -180,
-      "stake": 7.5,
-      "stake_u": 1.5,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 85% (LOCK-grade) \u00b7 edge +5.8pp \u00b7 rae +5.7 \u00b7 rank #8 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
+      "notes": "heat 81% (real-edge) \u00b7 edge +5.8pp \u00b7 rae +5.7 \u00b7 rank #10 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 11 hits L10 (avg 1.10 vs O0.5 line, gap +0.60) \u00b7 vs Aaron Nola"
     },
     {
       "id": "361315a3-aab3-81ab-9eac-e161c52b13e3",
@@ -2235,7 +2349,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 83% (real-edge) \u00b7 edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #4 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Braxton Ashcraft"
+      "notes": "heat 83% (real-edge) \u00b7 edge +7.5pp \u00b7 rae +7.3 \u00b7 rank #7 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Braxton Ashcraft"
     },
     {
       "id": "361315a3-aab3-81e1-b672-f8e48bbfe6bb",
@@ -2254,26 +2368,26 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 69% (cautious) \u00b7 edge +3.7pp \u00b7 rae +3.6 \u00b7 rank #25 \u00b7 factor x1.06 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
+      "notes": "heat 77% (real-edge) \u00b7 edge +4.6pp \u00b7 rae +4.5 \u00b7 rank #19 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O0.5 line, gap +1.10) \u00b7 vs Trey Yesavage"
     },
     {
       "id": "361315a3-aab3-8190-94e6-d30fac49ef58",
-      "pick": "[PAPER] James Wood O0.5 HITS_ALT @ -220 (Baltimore Orioles @ Washington Nationals)",
+      "pick": "[PAPER] James Wood O0.5 HITS_ALT @ -210 (Baltimore Orioles @ Washington Nationals)",
       "account": "PAPER",
       "sport": "MLB",
-      "odds": -220,
-      "stake": 7.5,
-      "stake_u": 1.5,
+      "odds": -210,
+      "stake": 2.5,
+      "stake_u": 0.5,
       "result": "Pending",
       "pl": 0,
-      "tier": "STRONG",
+      "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 89% (LOCK-grade) \u00b7 edge +6.8pp \u00b7 rae +6.7 \u00b7 rank #6 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
+      "notes": "heat 84% (real-edge) \u00b7 edge +6.7pp \u00b7 rae +6.6 \u00b7 rank #9 \u00b7 factor x1.10 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O0.5 line, gap +0.30) \u00b7 vs Shane Baz"
     },
     {
       "id": "361315a3-aab3-816e-a185-eeb31d0e9208",
@@ -5085,10 +5199,10 @@
         "date": "2026-05-15",
         "dow": "Friday",
         "short": "05\\15",
-        "n_total": 49,
+        "n_total": 52,
         "n_settled": 0,
-        "n_live": 13,
-        "n_paper": 36,
+        "n_live": 15,
+        "n_paper": 37,
         "won": 0,
         "lost": 0,
         "push": 0,
@@ -5334,10 +5448,10 @@
         "date": "2026-05-15",
         "dow": "Friday",
         "short": "05\\15",
-        "n_total": 49,
+        "n_total": 52,
         "n_settled": 0,
-        "n_live": 13,
-        "n_paper": 36,
+        "n_live": 15,
+        "n_paper": 37,
         "won": 0,
         "lost": 0,
         "push": 0,
@@ -5350,7 +5464,7 @@
         "bot_pl": null
       }
     ],
-    "total_picks": 71,
+    "total_picks": 74,
     "total_settled": 21,
     "total_won": 8,
     "total_lost": 13,
@@ -5358,8 +5472,8 @@
     "total_pl": -24.06,
     "hit_rate": 38.1,
     "roi_pct": -19.0,
-    "live_count": 16,
-    "paper_count": 55,
+    "live_count": 18,
+    "paper_count": 56,
     "best_day": {
       "date": "2026-05-09",
       "pl": 0
@@ -5371,7 +5485,7 @@
     "sport_dist": [
       {
         "sport": "MLB",
-        "n": 71
+        "n": 74
       }
     ],
     "bankroll_series": [
@@ -11175,7 +11289,7 @@
   },
   "account_summary": {
     "live": {
-      "total_picks": 16,
+      "total_picks": 18,
       "settled_picks": 2,
       "won": 0,
       "lost": 2,
@@ -11183,11 +11297,11 @@
       "win_rate_pct": 0.0,
       "total_pl": -4.5,
       "max_drawdown": -4.5,
-      "expectancy_per_pick": -0.28,
+      "expectancy_per_pick": -0.25,
       "streak": "L2"
     },
     "paper": {
-      "total_picks": 55,
+      "total_picks": 56,
       "settled_picks": 19,
       "won": 8,
       "lost": 11,
@@ -11195,7 +11309,7 @@
       "win_rate_pct": 42.1,
       "total_pl": -19.56,
       "max_drawdown": -31.17,
-      "expectancy_per_pick": -0.36,
+      "expectancy_per_pick": -0.35,
       "streak": "L3"
     }
   },
@@ -11212,11 +11326,11 @@
         "max_drawdown_pct": 3.0
       },
       "today": {
-        "stake_committed": 54.0,
+        "stake_committed": 64.5,
         "daily_cap": 15.0,
-        "cap_pct_used": 360.0,
+        "cap_pct_used": 430.0,
         "daily_pl": 0,
-        "picks_fired": 13,
+        "picks_fired": 15,
         "picks_pending": 0
       },
       "exposure": {
@@ -11235,8 +11349,8 @@
         "drawdown_breaker_at_bankroll": 112.5
       },
       "sizing": {
-        "avg_stake": 3.75,
-        "avg_stake_pct_bankroll": 2.58,
+        "avg_stake": 3.92,
+        "avg_stake_pct_bankroll": 2.69,
         "per_pick_max_dollars": 6.0,
         "oversize_picks_count": 0,
         "unit_size": 3.0
@@ -11262,16 +11376,16 @@
         "max_drawdown_pct": 6.2
       },
       "today": {
-        "stake_committed": 207.19,
+        "stake_committed": 177.19,
         "daily_cap": 150.0,
-        "cap_pct_used": 138.1,
+        "cap_pct_used": 118.1,
         "daily_pl": 0,
-        "picks_fired": 36,
-        "picks_pending": 36
+        "picks_fired": 37,
+        "picks_pending": 37
       },
       "exposure": {
-        "pending_stake": 207.19,
-        "pending_count": 36,
+        "pending_stake": 177.19,
+        "pending_count": 37,
         "max_single_event_stake": 10.0,
         "max_single_event_pct": 2.1,
         "max_single_allowed_pct": 5.0
@@ -11285,8 +11399,8 @@
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
-        "avg_stake": 5.99,
-        "avg_stake_pct_bankroll": 1.25,
+        "avg_stake": 5.35,
+        "avg_stake_pct_bankroll": 1.11,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
@@ -11645,7 +11759,7 @@
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 15.2
+        "age_hours": 15.3
       },
       {
         "name": "reference_calibration_table.md",
@@ -11900,7 +12014,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 1669301,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T21:57:47.053208+00:00",
@@ -11926,7 +12040,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 12039,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T21:51:33.226454+00:00",
@@ -16849,8 +16963,8 @@
   },
   "built_at_et": "2026-05-15 18:00 ET",
   "counts": {
-    "picks_total": 71,
+    "picks_total": 74,
     "settled": 21,
-    "today_picks": 49
+    "today_picks": 52
   }
 }
