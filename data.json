@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-054631",
-  "generated_at": "2026-05-15T05:46:31.660087+00:00",
+  "build_id": "260515-054825",
+  "generated_at": "2026-05-15T05:48:25.827196+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -9235,7 +9235,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 3.3
+        "age_hours": 3.4
       },
       {
         "label": "Line snapshots",
@@ -9249,7 +9249,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 2.5
+        "age_hours": 2.6
       }
     ]
   },
@@ -9261,11 +9261,9 @@
     "authorized_count": 2,
     "listener_running": true,
     "listener_pid": null,
-    "listener_last_log_line": "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/killlearner', '/last', '/late', '/learner', '/lock', '/pause', '/picks', '/pl', '/recap', '/recapday', '/refresh', '/resume', '/revivelearner', '/runlearner', '/scout', '/settle', '/status', '/strategies', '/url']",
+    "listener_last_log_line": "[listener] sent reply to chat=7191253260 ok=True len=101",
     "tunnel_running": true,
     "recent_log": [
-      "[listener] poll error: <urlopen error _ssl.c:1063: The handshake operation timed out>",
-      "====== TG-LISTENER STARTED Thu 05/14/2026 23:53:28.49 ======",
       "[listener] started. PID=10480 Authorized chat_ids: ['-1003918918061', '7191253260']",
       "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/last', '/late', '/lock', '/pause', '/picks', '/pl', '/recap', '/refresh', '/resume', '/scout', '/settle', '/status', '/strategies', '/url']",
       "[listener] dispatch chat=-1003918918061 cmd='/help' handler=YES",
@@ -9283,10 +9281,12 @@
       "[listener] dispatch chat=7191253260 cmd='/learner' handler=NO",
       "====== TG-LISTENER STARTED Fri 05/15/2026  1:44:17.76 ======",
       "[listener] started. PID=23008 Authorized chat_ids: ['-1003918918061', '7191253260']",
-      "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/killlearner', '/last', '/late', '/learner', '/lock', '/pause', '/picks', '/pl', '/recap', '/recapday', '/refresh', '/resume', '/revivelearner', '/runlearner', '/scout', '/settle', '/status', '/strategies', '/url']"
+      "[listener] HANDLERS registered: ['/api', '/bankroll', '/evening', '/freshness', '/help', '/killlearner', '/last', '/late', '/learner', '/lock', '/pause', '/picks', '/pl', '/recap', '/recapday', '/refresh', '/resume', '/revivelearner', '/runlearner', '/scout', '/settle', '/status', '/strategies', '/url']",
+      "[listener] dispatch chat=7191253260 cmd='/runlearner' handler=YES",
+      "[listener] sent reply to chat=7191253260 ok=True len=101"
     ],
     "state_file": {
-      "last_update_id": 541706801
+      "last_update_id": 541706802
     }
   },
   "scout_top": {
@@ -11117,7 +11117,7 @@
   },
   "ai_learner": {
     "available": true,
-    "generated_at": "2026-05-15T04:40:13.768377+00:00",
+    "generated_at": "2026-05-15T05:48:19.149995+00:00",
     "recommendations": [
       {
         "type": "tier_drift",
@@ -11600,13 +11600,56 @@
     "date": "2026-05-15",
     "since_date": null,
     "enriched_count": 16,
+    "knowledge_index": {
+      "data_sources_read": [
+        "Notion Picks DB (55 settled picks)",
+        "Scout caches (16 picks enriched)",
+        "Settled archives (0 picks)",
+        "Journal postmortems (83 entries)",
+        "CLV history (avg 0.0%)"
+      ],
+      "guardrails_active": [
+        "Reads restricted to props_cache/, memory/, dashboard/data.json",
+        "Denies any file with TOKEN/KEY/PASSWORD/SECRET in name",
+        "Writes ONLY to memory/ai_learner_* and props_cache/v2_ai_learner_*",
+        "Refuses output containing secret-like substrings",
+        "Operator kill-switch: props_cache/v2_ai_learner.killed"
+      ],
+      "what_engine_knows": {
+        "active_factors": "see lib/v2_factor_registry.py FACTORS list",
+        "tier_thresholds": {
+          "LOCK": 70,
+          "STRONG": 60,
+          "SIDE": 55,
+          "WATCH": 50
+        },
+        "softening_weight": 0.45,
+        "edge_clamp_pp": "\u00b115"
+      }
+    },
+    "clv_summary": {
+      "avg_clv_pct": 0.0,
+      "n_picks_with_clv": 8,
+      "recent": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "postmortem_count": 83,
+    "archive_picks_count": 0,
     "source_file": "v2_ai_learner_2026-05-15.json"
   },
   "ai_learner_status": {
     "state": "idle",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": "2026-05-15T04:40:13.771237+00:00",
+    "last_run_at": "2026-05-15T05:48:19.153513+00:00",
     "last_run_picks": 55,
     "last_run_recommendations": 5,
     "guardrails": [
@@ -11632,7 +11675,7 @@
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
     },
-    "updated_at": "2026-05-15T04:40:13.772463+00:00",
+    "updated_at": "2026-05-15T05:48:19.153655+00:00",
     "last_run_severity": {
       "high": 2,
       "med": 1,
@@ -11666,7 +11709,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 01:46 ET",
+  "built_at_et": "2026-05-15 01:48 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
