@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-045328",
-  "generated_at": "2026-05-15T04:53:28.655851+00:00",
+  "build_id": "260515-050316",
+  "generated_at": "2026-05-15T05:03:16.248758+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -2857,8 +2857,8 @@
     {
       "Name": "BettingOS - health-check",
       "State": "Ready",
-      "NextRun": "2026-05-15 01:00",
-      "LastRun": "2026-05-14 01:00",
+      "NextRun": "2026-05-16 01:00",
+      "LastRun": "2026-05-15 01:00",
       "LastResult": 0,
       "WakeToRun": true
     },
@@ -2866,7 +2866,7 @@
       "Name": "BettingOS - intraday-settle",
       "State": "Ready",
       "NextRun": "2026-05-15 13:00",
-      "LastRun": "2026-05-15 00:30",
+      "LastRun": "2026-05-15 01:00",
       "LastResult": 2147942402,
       "WakeToRun": false
     },
@@ -2973,7 +2973,7 @@
       "tg_msg_id": "79"
     },
     "health-check": {
-      "completed_at": "2026-05-14 01:00 ET",
+      "completed_at": "2026-05-15 01:00 ET",
       "status": "OK",
       "checks_passed": "6"
     }
@@ -3517,7 +3517,7 @@
   "wellness": {
     "status": "OK",
     "summary": "All systems green \u2014 6/6 health checks pass",
-    "checked_at": "2026-05-14T01:00:08"
+    "checked_at": "2026-05-15T01:00:24"
   },
   "mlb_week": {
     "by_date": {
@@ -9214,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.0
+        "age_hours": 6.2
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 15.3
+        "age_hours": 15.5
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.0
+        "age_hours": 6.2
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.4
+        "age_hours": 2.6
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.0
+        "age_hours": 6.2
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 1.7
+        "age_hours": 1.8
       }
     ]
   },
@@ -10736,6 +10736,239 @@
     "total_factors": 0,
     "by_status": {}
   },
+  "team_form": [
+    {
+      "name": "Philadelphia Phillies",
+      "team": "PHI",
+      "team_id": 143,
+      "l10_wins": 7,
+      "l10_losses": 3,
+      "l10_win_pct": 0.7,
+      "l10_run_diff": 15.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Atlanta Braves",
+      "team": "ATL",
+      "team_id": 144,
+      "l10_wins": 7,
+      "l10_losses": 3,
+      "l10_win_pct": 0.7,
+      "l10_run_diff": 25.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 4,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Chicago Cubs",
+      "team": "CHC",
+      "team_id": 112,
+      "l10_wins": 6,
+      "l10_losses": 4,
+      "l10_win_pct": 0.6,
+      "l10_run_diff": 3.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -4,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Baltimore Orioles",
+      "team": "BAL",
+      "team_id": 110,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": -7.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Boston Red Sox",
+      "team": "BOS",
+      "team_id": 111,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": 6.7,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Kansas City Royals",
+      "team": "KC",
+      "team_id": 118,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": 4.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -3,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Los Angeles Dodgers",
+      "team": "LAD",
+      "team_id": 119,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": 3.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "Athletics",
+      "team": "ATH",
+      "team_id": 133,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": 4.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "San Francisco Giants",
+      "team": "SF",
+      "team_id": 137,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": -9.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "St. Louis Cardinals",
+      "team": "STL",
+      "team_id": 138,
+      "l10_wins": 4,
+      "l10_losses": 6,
+      "l10_win_pct": 0.4,
+      "l10_run_diff": -2.2,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "New York Yankees",
+      "team": "NYY",
+      "team_id": 147,
+      "l10_wins": 4,
+      "l10_losses": 6,
+      "l10_win_pct": 0.4,
+      "l10_run_diff": 4.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -1,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    }
+  ],
   "odds_api_usage": {
     "month_used": 2370,
     "day_used": 0,
@@ -11321,7 +11554,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 00:53 ET",
+  "built_at_et": "2026-05-15 01:03 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
