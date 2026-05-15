@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-031428",
-  "generated_at": "2026-05-15T03:14:28.712571+00:00",
+  "build_id": "260515-032007",
+  "generated_at": "2026-05-15T03:20:07.236677+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -5066,9 +5066,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 4,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 5,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 2,
             "home_hits": 4,
             "home_errors": 0,
@@ -5079,13 +5079,15 @@
               1,
               1,
               0,
+              0,
               null
             ],
             "away_innings": [
               0,
               0,
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -9611,42 +9613,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.4
+        "age_hours": 4.5
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 13.6
+        "age_hours": 13.7
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.4
+        "age_hours": 4.5
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.8
+        "age_hours": 0.9
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.4
+        "age_hours": 4.5
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.0
+        "age_hours": 0.1
       }
     ]
   },
@@ -11123,7 +11125,7 @@
     "total_factors": 0,
     "by_status": {}
   },
-  "built_at_et": "2026-05-14 23:14 ET",
+  "built_at_et": "2026-05-14 23:20 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
