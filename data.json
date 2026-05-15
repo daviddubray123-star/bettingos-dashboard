@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-050316",
-  "generated_at": "2026-05-15T05:03:16.248758+00:00",
+  "build_id": "260515-051354",
+  "generated_at": "2026-05-15T05:13:54.543386+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -9214,42 +9214,42 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.2
+        "age_hours": 6.3
       },
       {
         "label": "Form discovery",
         "status": "stale",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 15.5
+        "age_hours": 15.6
       },
       {
         "label": "Layer-1 candidates",
         "status": "stale",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.2
+        "age_hours": 6.4
       },
       {
         "label": "Settle summary",
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 2.6
+        "age_hours": 2.8
       },
       {
         "label": "Line snapshots",
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 6.2
+        "age_hours": 6.4
       },
       {
         "label": "Learning journal",
         "status": "stale",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 1.8
+        "age_hours": 2.0
       }
     ]
   },
@@ -9261,13 +9261,9 @@
     "authorized_count": 2,
     "listener_running": false,
     "listener_pid": null,
-    "listener_last_log_line": "[listener] sent reply to chat=-1003918918061 ok=True len=175",
+    "listener_last_log_line": "[listener] sent reply to chat=-1003918918061 ok=True len=13",
     "tunnel_running": true,
     "recent_log": [
-      "^C",
-      "====== TG-LISTENER STARTED Thu 05/14/2026  0:28:43.82 ======",
-      "====== TG-LISTENER STARTED Thu 05/14/2026  0:57:35.09 ======",
-      "[listener] started. Authorized chat_ids: ['-1003918918061']",
       "[listener] public-cmd /start from chat_id=7191253260 (private)",
       "====== TG-LISTENER STARTED Thu 05/14/2026  1:00:48.66 ======",
       "[listener] poll error: Remote end closed connection without response",
@@ -9283,10 +9279,14 @@
       "[listener] dispatch chat=-1003918918061 cmd='/bankroll' handler=YES",
       "[listener] sent reply to chat=-1003918918061 ok=True len=91",
       "[listener] dispatch chat=-1003918918061 cmd='/api' handler=YES",
-      "[listener] sent reply to chat=-1003918918061 ok=True len=175"
+      "[listener] sent reply to chat=-1003918918061 ok=True len=175",
+      "[listener] dispatch chat=-1003918918061 cmd='/pl' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=28",
+      "[listener] dispatch chat=-1003918918061 cmd='/recap' handler=YES",
+      "[listener] sent reply to chat=-1003918918061 ok=True len=13"
     ],
     "state_file": {
-      "last_update_id": 541706797
+      "last_update_id": 541706800
     }
   },
   "scout_top": {
@@ -11554,7 +11554,7 @@
     "days": [],
     "available": false
   },
-  "built_at_et": "2026-05-15 01:03 ET",
+  "built_at_et": "2026-05-15 01:14 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
