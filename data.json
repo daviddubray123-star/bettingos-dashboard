@@ -1,6 +1,6 @@
 {
-  "build_id": "260515-032007",
-  "generated_at": "2026-05-15T03:20:07.236677+00:00",
+  "build_id": "260515-033028",
+  "generated_at": "2026-05-15T03:30:28.487440+00:00",
   "today": "2026-05-14",
   "yesterday": "2026-05-13",
   "bankroll": {
@@ -5072,8 +5072,8 @@
             "home_runs": 2,
             "home_hits": 4,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 1,
+            "away_runs": 2,
+            "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
               1,
@@ -5087,7 +5087,7 @@
               0,
               0,
               0,
-              null
+              2
             ],
             "scheduled_innings": 9
           }
@@ -9613,42 +9613,42 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.5
+        "age_hours": 4.6
       },
       {
         "label": "Form discovery",
         "status": "fresh",
         "latest_file": "v2_form_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 13.7
+        "age_hours": 13.9
       },
       {
         "label": "Layer-1 candidates",
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.5
+        "age_hours": 4.6
       },
       {
         "label": "Settle summary",
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 0.9
+        "age_hours": 1.1
       },
       {
         "label": "Line snapshots",
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-14.json",
         "latest_date": "2026-05-14",
-        "age_hours": 4.5
+        "age_hours": 4.6
       },
       {
         "label": "Learning journal",
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-14.md",
         "latest_date": "2026-05-14",
-        "age_hours": 0.1
+        "age_hours": 0.3
       }
     ]
   },
@@ -11125,7 +11125,528 @@
     "total_factors": 0,
     "by_status": {}
   },
-  "built_at_et": "2026-05-14 23:20 ET",
+  "odds_api_usage": {
+    "month_used": 2370,
+    "day_used": 1347,
+    "last_remaining": 17584,
+    "last_check": "2026-05-14T23:56:45.827099+00:00",
+    "month_cap": 18000,
+    "plan_total": 20000,
+    "plan_dollar_cost": 30,
+    "safe_daily": 600,
+    "current_month": "2026-05",
+    "today": "2026-05-14",
+    "day_history": {
+      "2026-05-13": 1023,
+      "2026-05-14": 1347
+    },
+    "month_history": {
+      "2026-05": 2370
+    },
+    "pct_month_used": 13.2,
+    "pct_plan_used": 11.8,
+    "utilization_status": "under-utilized",
+    "recommendations": [
+      "Expand engine to use 2-3x current rate \u2014 you're paying for capacity you're not using.",
+      "Enable NBA team markets (h2h, spreads, totals) \u2014 currently only player props pulled.",
+      "Pull NHL team markets \u2014 currently only player props.",
+      "Add a second daily scout-with-odds (~9:30 AM verify) so morning candidates reflect fresh odds, not yesterday's close.",
+      "Pull pre-close odds capture at 30/15/5 min before first pitch for CLV \u2014 costs ~3 credits per game but huge data value."
+    ],
+    "avg_daily": 1185.0,
+    "days_in_month": 31,
+    "days_left_in_month": 17,
+    "projected_month_end": 22515.0,
+    "projected_pct": 125.1
+  },
+  "ai_learner": {
+    "available": true,
+    "generated_at": "2026-05-15T03:30:04.047167+00:00",
+    "recommendations": [
+      {
+        "type": "tier_drift",
+        "severity": "high",
+        "text": "Tier STRONG CALIBRATION DRIFT: hit rate 37.5% vs expected 60% (delta -22.5pp on n=16). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.",
+        "tier": "STRONG",
+        "n": 16
+      },
+      {
+        "type": "factor_overweight",
+        "severity": "high",
+        "text": "Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 37.5% vs neutral 50.0% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+        "factor": "handedness",
+        "n": 8
+      },
+      {
+        "type": "strategy_promote",
+        "severity": "med",
+        "text": "Strategy 'Boring Lock' PROMOTE candidate: 71.4% hit rate and +37.7% ROI on n=14. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).",
+        "strategy": "Boring Lock",
+        "n": 14
+      },
+      {
+        "type": "tier_slack",
+        "severity": "low",
+        "text": "Tier LOCK SLACK: hit rate 82.4% beats expected 70% by +12.4pp on n=17. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
+        "tier": "LOCK",
+        "n": 17
+      },
+      {
+        "type": "tier_slack",
+        "severity": "low",
+        "text": "Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
+        "tier": "SIDE",
+        "n": 14
+      }
+    ],
+    "factor_perf": {
+      "pitcher_matchup": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 12,
+        "neutral_won": 5,
+        "neutral_lost": 7,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 41.7,
+        "bullish_lift_pp": null
+      },
+      "park": {
+        "bullish_n": 5,
+        "bullish_won": 3,
+        "bullish_lost": 2,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 10,
+        "neutral_won": 3,
+        "neutral_lost": 7,
+        "bullish_hr": 60.0,
+        "bearish_hr": null,
+        "neutral_hr": 30.0,
+        "bullish_lift_pp": 30.0
+      },
+      "handedness": {
+        "bullish_n": 8,
+        "bullish_won": 3,
+        "bullish_lost": 5,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 4,
+        "neutral_won": 2,
+        "neutral_lost": 2,
+        "bullish_hr": 37.5,
+        "bearish_hr": null,
+        "neutral_hr": 50.0,
+        "bullish_lift_pp": -12.5
+      },
+      "recency_woba": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 12,
+        "neutral_won": 6,
+        "neutral_lost": 6,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 50.0,
+        "bullish_lift_pp": null
+      },
+      "implied_total_player": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 13,
+        "neutral_won": 6,
+        "neutral_lost": 7,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 46.2,
+        "bullish_lift_pp": null
+      },
+      "player_performer": {
+        "bullish_n": 7,
+        "bullish_won": 3,
+        "bullish_lost": 4,
+        "bearish_n": 1,
+        "bearish_won": 0,
+        "bearish_lost": 1,
+        "neutral_n": 2,
+        "neutral_won": 1,
+        "neutral_lost": 1,
+        "bullish_hr": 42.9,
+        "bearish_hr": 0.0,
+        "neutral_hr": 50.0,
+        "bullish_lift_pp": -7.1
+      },
+      "home_away": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 16,
+        "neutral_won": 7,
+        "neutral_lost": 9,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 43.8,
+        "bullish_lift_pp": null
+      },
+      "series_game": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 13,
+        "neutral_won": 6,
+        "neutral_lost": 7,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 46.2,
+        "bullish_lift_pp": null
+      },
+      "player_rest": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 13,
+        "neutral_won": 6,
+        "neutral_lost": 7,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 46.2,
+        "bullish_lift_pp": null
+      },
+      "statcast": {
+        "bullish_n": 9,
+        "bullish_won": 4,
+        "bullish_lost": 5,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 3,
+        "neutral_won": 1,
+        "neutral_lost": 2,
+        "bullish_hr": 44.4,
+        "bearish_hr": null,
+        "neutral_hr": 33.3,
+        "bullish_lift_pp": 11.1
+      },
+      "pitcher_rest": {
+        "bullish_n": 2,
+        "bullish_won": 1,
+        "bullish_lost": 1,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 1,
+        "neutral_won": 0,
+        "neutral_lost": 1,
+        "bullish_hr": 50.0,
+        "bearish_hr": null,
+        "neutral_hr": 0.0,
+        "bullish_lift_pp": 50.0
+      },
+      "umpire": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 2,
+        "neutral_won": 0,
+        "neutral_lost": 2,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 0.0,
+        "bullish_lift_pp": null
+      },
+      "bullpen": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 4,
+        "neutral_won": 4,
+        "neutral_lost": 0,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 100.0,
+        "bullish_lift_pp": null
+      },
+      "bvp": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 1,
+        "neutral_won": 0,
+        "neutral_lost": 1,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 0.0,
+        "bullish_lift_pp": null
+      }
+    },
+    "strategy_perf": {
+      "MLB Run Line": {
+        "n": 2,
+        "won": 0,
+        "lost": 2,
+        "push": 0,
+        "stake": 11.5,
+        "pl": -11.5,
+        "hit_rate": 0.0,
+        "roi": -100.0
+      },
+      "Stable Edge Parlay": {
+        "n": 6,
+        "won": 4,
+        "lost": 2,
+        "push": 0,
+        "stake": 41.5,
+        "pl": 26.47,
+        "hit_rate": 66.7,
+        "roi": 63.8
+      },
+      "MLB Batter Total Bases Alt": {
+        "n": 3,
+        "won": 0,
+        "lost": 3,
+        "push": 0,
+        "stake": 7.5,
+        "pl": -7.5,
+        "hit_rate": 0.0,
+        "roi": -100.0
+      },
+      "MLB Pitcher Strikeouts": {
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "push": 0,
+        "stake": 10.0,
+        "pl": -1.9100000000000001,
+        "hit_rate": 33.3,
+        "roi": -19.1
+      },
+      "MLB Batter Hits Alt": {
+        "n": 10,
+        "won": 6,
+        "lost": 4,
+        "push": 0,
+        "stake": 84.65,
+        "pl": 0.29999999999999716,
+        "hit_rate": 60.0,
+        "roi": 0.4
+      },
+      "MLB Total Runs": {
+        "n": 2,
+        "won": 1,
+        "lost": 1,
+        "push": 0,
+        "stake": 10.0,
+        "pl": -0.4500000000000002,
+        "hit_rate": 50.0,
+        "roi": -4.5
+      },
+      "User Override (not from engine)": {
+        "n": 1,
+        "won": 0,
+        "lost": 1,
+        "push": 0,
+        "stake": 5.0,
+        "pl": -5.0,
+        "hit_rate": 0.0,
+        "roi": -100.0
+      },
+      "Boring Lock": {
+        "n": 14,
+        "won": 10,
+        "lost": 4,
+        "push": 0,
+        "stake": 140.0,
+        "pl": 52.79,
+        "hit_rate": 71.4,
+        "roi": 37.7
+      },
+      "I v2 baseline": {
+        "n": 1,
+        "won": 1,
+        "lost": 0,
+        "push": 0,
+        "stake": 50.0,
+        "pl": 30.12,
+        "hit_rate": 100.0,
+        "roi": 60.2
+      },
+      "J Kelly": {
+        "n": 1,
+        "won": 1,
+        "lost": 0,
+        "push": 0,
+        "stake": 90.0,
+        "pl": 54.22,
+        "hit_rate": 100.0,
+        "roi": 60.2
+      },
+      "O A+ Auto-Lock": {
+        "n": 4,
+        "won": 2,
+        "lost": 2,
+        "push": 0,
+        "stake": 59.0,
+        "pl": -48.86,
+        "hit_rate": 50.0,
+        "roi": -82.8
+      },
+      "C NBA Pts": {
+        "n": 1,
+        "won": 0,
+        "lost": 1,
+        "push": 0,
+        "stake": 50.0,
+        "pl": -50.0,
+        "hit_rate": 0.0,
+        "roi": -100.0
+      },
+      "D NHL SOG": {
+        "n": 1,
+        "won": 0,
+        "lost": 1,
+        "push": 0,
+        "stake": 50.0,
+        "pl": -50.0,
+        "hit_rate": 0.0,
+        "roi": -100.0
+      },
+      "N Alvarez Hits": {
+        "n": 1,
+        "won": 1,
+        "lost": 0,
+        "push": 0,
+        "stake": 50.0,
+        "pl": 27.78,
+        "hit_rate": 100.0,
+        "roi": 55.6
+      },
+      "B Hot Hits": {
+        "n": 1,
+        "won": 1,
+        "lost": 0,
+        "push": 0,
+        "stake": 50.0,
+        "pl": 14.71,
+        "hit_rate": 100.0,
+        "roi": 29.4
+      },
+      "Discretionary": {
+        "n": 3,
+        "won": 2,
+        "lost": 1,
+        "push": 0,
+        "stake": 8.25,
+        "pl": 2.92,
+        "hit_rate": 66.7,
+        "roi": 35.4
+      },
+      "A K-NRFI": {
+        "n": 1,
+        "won": 1,
+        "lost": 0,
+        "push": 0,
+        "stake": 0.75,
+        "pl": 0.74,
+        "hit_rate": 100.0,
+        "roi": 98.7
+      }
+    },
+    "tier_perf": {
+      "LOCK": {
+        "n": 17,
+        "won": 14,
+        "lost": 3,
+        "stake": 341.5,
+        "pl": 187.64000000000001,
+        "hit_rate": 82.4,
+        "roi": 54.9,
+        "expected_hr": 70,
+        "delta_hr": 12.4
+      },
+      "WATCH": {
+        "n": 7,
+        "won": 1,
+        "lost": 6,
+        "stake": 17.5,
+        "pl": -13.33,
+        "hit_rate": 14.3,
+        "roi": -76.2,
+        "expected_hr": 50,
+        "delta_hr": -35.7
+      },
+      "SIDE": {
+        "n": 14,
+        "won": 10,
+        "lost": 4,
+        "stake": 62.25,
+        "pl": 8.099999999999998,
+        "hit_rate": 71.4,
+        "roi": 13.0,
+        "expected_hr": 55,
+        "delta_hr": 16.4
+      },
+      "STRONG": {
+        "n": 16,
+        "won": 6,
+        "lost": 10,
+        "stake": 291.9,
+        "pl": -142.58,
+        "hit_rate": 37.5,
+        "roi": -48.8,
+        "expected_hr": 60,
+        "delta_hr": -22.5
+      },
+      "USER_OVERRIDE": {
+        "n": 1,
+        "won": 0,
+        "lost": 1,
+        "stake": 5.0,
+        "pl": -5.0,
+        "hit_rate": 0.0,
+        "roi": -100.0,
+        "expected_hr": 50,
+        "delta_hr": -50
+      }
+    },
+    "total_settled_picks": 55,
+    "date": "2026-05-14",
+    "since_date": null,
+    "enriched_count": 16,
+    "source_file": "v2_ai_learner_2026-05-14.json"
+  },
+  "built_at_et": "2026-05-14 23:30 ET",
   "counts": {
     "picks_total": 22,
     "settled": 21,
