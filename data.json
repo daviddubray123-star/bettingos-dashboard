@@ -1,13 +1,13 @@
 {
-  "build_id": "260516-031508",
-  "generated_at": "2026-05-16T03:15:08.150193+00:00",
+  "build_id": "260516-031530",
+  "generated_at": "2026-05-16T03:15:30.924007+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
     "live": 154.4,
-    "paper": 490.43,
+    "paper": 444.51,
     "paper_peak": 500.0,
-    "paper_drawdown_pct": 1.9139999999999986,
+    "paper_drawdown_pct": 11.098000000000003,
     "peak": 154.4,
     "drawdown_pct": 0.0
   },
@@ -552,8 +552,8 @@
       "odds": -300,
       "stake": 10,
       "stake_u": 2,
-      "result": "Pending-Unconfirmed",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -10,
       "tier": "LOCK",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
@@ -561,7 +561,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 100% (LOCK-grade) \u00b7 edge +13.0pp \u00b7 rae +12.7 \u00b7 rank #2 \u00b7 factor x1.17 \u00b7 n=30 \u00b7 10 hits L10 (avg 1.00 vs O0.5 line, gap +0.50) \u00b7 vs Merrill Kelly"
+      "notes": "Troy Johnston HITS_ALT 0 O0.5 -> LOST. Net -$10.00 at -300."
     },
     {
       "id": "361315a3-aab3-81d1-bf7c-e729748e78b0",
@@ -1485,8 +1485,8 @@
       "odds": -300,
       "stake": 10,
       "stake_u": 2,
-      "result": "Pending-Unconfirmed",
-      "pl": 0,
+      "result": "Lost",
+      "pl": -10,
       "tier": "LOCK",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-15",
@@ -1494,7 +1494,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "heat 100% (LOCK-grade) \u00b7 edge +13.0pp \u00b7 rae +12.7 \u00b7 rank #2 \u00b7 factor x1.17 \u00b7 n=30 \u00b7 10 hits L10 (avg 1.00 vs O0.5 line, gap +0.50) \u00b7 vs Merrill Kelly"
+      "notes": "Troy Johnston HITS_ALT 0 O0.5 -> LOST. Net -$10.00 at -300."
     },
     {
       "id": "361315a3-aab3-81d1-bf7c-e729748e78b0",
@@ -1516,7 +1516,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +13.4pp \u00b7 rae +13.1 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=30 \u00b7 14 hits L10 (avg 1.40 vs O0.5 line, gap +0.90) \u00b7 vs Tyler Mahle"
     }
   ],
-  "built_at": "2026-05-16T03:15:08.150211+00:00",
+  "built_at": "2026-05-16T03:15:30.924023+00:00",
   "daily": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
@@ -1606,6 +1606,16 @@
       "live_l": 0,
       "paper_w": 0,
       "paper_l": 0,
+      "grade": "B"
+    },
+    {
+      "date": "2026-05-15 - retroactive settle 2026-05-13",
+      "bankroll_end": 154.4,
+      "live_pl": 0,
+      "live_w": 0,
+      "live_l": 0,
+      "paper_w": 5,
+      "paper_l": 10,
       "grade": "B"
     },
     {
@@ -1704,6 +1714,14 @@
     },
     {
       "date": "2026-05-15 - retroactive settle 2026-05-13",
+      "live_w": 0.0,
+      "live_l": 0.0,
+      "paper_w": 5.0,
+      "paper_l": 10.0,
+      "live_pl": 0.0
+    },
+    {
+      "date": "2026-05-15 - retroactive settle 2026-05-13",
       "live_w": 2.0,
       "live_l": 0.0,
       "paper_w": 0.0,
@@ -1754,6 +1772,10 @@
     },
     {
       "date": "2026-05-14 - retroactive settle 2026-05-13",
+      "cum_pl": -12.18
+    },
+    {
+      "date": "2026-05-15 - retroactive settle 2026-05-13",
       "cum_pl": -12.18
     },
     {
@@ -1864,9 +1886,9 @@
     },
     {
       "name": "MLB Batter Total Bases Alt",
-      "picks": 6,
+      "picks": 9,
       "won": 0,
-      "lost": 6,
+      "lost": 9,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1912,9 +1934,9 @@
     },
     {
       "name": "MLB Batter RBIs Alt",
-      "picks": 0,
+      "picks": 2,
       "won": 0,
-      "lost": 0,
+      "lost": 2,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
@@ -1944,19 +1966,19 @@
     },
     {
       "name": "MLB Batter Hits Alt",
-      "picks": 20,
-      "won": 12,
-      "lost": 8,
+      "picks": 30,
+      "won": 17,
+      "lost": 13,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
       "l10_picks": 10,
-      "l10_won": 6,
-      "l10_lost": 4,
-      "l10_hit_rate": 60.0,
-      "l10_net": -14.25
+      "l10_won": 5,
+      "l10_lost": 5,
+      "l10_hit_rate": 50.0,
+      "l10_net": -25.92
     },
     {
       "name": "MLB Batter Hits",
@@ -2825,6 +2847,171 @@
   ],
   "journal": [
     {
+      "title": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ C \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] engine edge +12.97pp on MLB Batter Hits Alt. engine 88.0% vs market 75.0% (implied from -300). historical hit-rate 64% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, statcast +6.0%. factor-quality 1.00. RAE +12.72.",
+      "what_failed": "Lost -$10.00 on LOCK tier. Engine called 88% (HIGH conviction) and missed \u2014 flag for calibration drift. A 70%+ loss means inputs went stale or a factor is overcooked. Pre-fire edge was +13.0pp. Top supporter park (+10.0%) failed to translate \u2014 watch for repeat misses on this factor. FORWARD ACTION: lost a high-edge 13.0pp LOCK \u2014 add to calibration drift watchlist. If 3 of these miss in a row, downweight the top supporter.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Col \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] engine edge +12.45pp on MLB Batter Hits Alt. engine 90.2% vs market 77.8% (implied from -350). historical hit-rate 60% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, statcast +6.0%. factor-quality 1.00. RAE +12.21.",
+      "what_failed": "Lost -$10.00 on LOCK tier. Engine called 90% (HIGH conviction) and missed \u2014 flag for calibration drift. A 70%+ loss means inputs went stale or a factor is overcooked. Pre-fire edge was +12.4pp. Top supporter park (+10.0%) failed to translate \u2014 watch for repeat misses on this factor. FORWARD ACTION: lost a high-edge 12.4pp LOCK \u2014 add to calibration drift watchlist. If 3 of these miss in a row, downweight the top supporter.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O1.5 TOTAL_BASES_ALT @ -125 (Arizona Diamondback \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +8.90pp on MLB Batter Total Bases Alt. engine 64.5% vs market 55.6% (implied from -125). historical hit-rate 29% on n=30. Supported by: park +13.2%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -3.0%. factor-quality 1.00. RAE +8.67.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 64% \u2014 moderate-conviction loss inside expected variance, but log for sample. Pre-fire edge was +8.9pp. Top supporter park (+13.2%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-3.0%) was right \u2014 engine should have weighted heavier. FORWARD ACTION: lost a high-edge 8.9pp GOOD \u2014 add to calibration drift watchlist. If 3 of these miss in a row, downweight the top supporter.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Troy Johnston O1.5 TOTAL_BASES_ALT @ -110 (Arizona Diamondba \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +7.71pp on MLB Batter Total Bases Alt. engine 60.1% vs market 52.4% (implied from -110). historical hit-rate 38% on n=30. Supported by: park +13.2%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -3.0%. factor-quality 1.00. RAE +7.51.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 60% \u2014 moderate-conviction loss inside expected variance, but log for sample. Pre-fire edge was +7.7pp. Top supporter park (+13.2%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-3.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O0.5 RBIS_ALT @ +125 (Arizona Diamondbacks @ Col \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +6.33pp on MLB Batter RBIs Alt. engine 50.8% vs market 44.4% (implied from +125). historical hit-rate 38% on n=30. Supported by: park +15.0%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -8.0%. factor-quality 1.00. RAE +6.15.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 51% \u2014 low-conviction loss, fully expected. No alarm. Pre-fire edge was +6.3pp. Top supporter park (+15.0%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-8.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O1.5 HITS_ALT @ +155 (Arizona Diamondbacks @ Col \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +5.66pp on MLB Batter Hits Alt. engine 44.9% vs market 39.2% (implied from +155). historical hit-rate 34% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -3.0%. factor-quality 1.00. RAE +5.55.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 45% \u2014 low-conviction loss, fully expected. No alarm. Pre-fire edge was +5.7pp. Top supporter park (+10.0%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-3.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O2.5 TOTAL_BASES_ALT @ +185 (Arizona Diamondback \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +5.62pp on MLB Batter Total Bases Alt. engine 40.7% vs market 35.1% (implied from +185). historical hit-rate 29% on n=30. Supported by: park +13.2%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -3.0%. factor-quality 1.00. RAE +5.48.",
+      "what_failed": "Lost -$2.50 on GOOD tier. Engine called 41% \u2014 low-conviction loss, fully expected. No alarm. Pre-fire edge was +5.6pp. Top supporter park (+13.2%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-3.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Troy Johnston O0.5 RBIS_ALT @ +140 (Arizona Diamondbacks @ C \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +5.40pp on MLB Batter RBIs Alt. engine 47.1% vs market 41.7% (implied from +140). historical hit-rate 38% on n=30. Supported by: park +15.0%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: player_performer -8.0%. factor-quality 1.00. RAE +5.24.",
+      "what_failed": "Lost -$2.50 on GOOD tier. Engine called 47% \u2014 low-conviction loss, fully expected. No alarm. Pre-fire edge was +5.4pp. Top supporter park (+15.0%) failed to translate \u2014 watch for repeat misses on this factor. Headwind player_performer (-8.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Nolan Arenado O0.5 HITS_ALT @ -380 (Arizona Diamondbacks @ C \u2014 Won",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] engine edge +9.88pp on MLB Batter Hits Alt. engine 89.0% vs market 79.2% (implied from -380). historical hit-rate 56% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, statcast +6.0%. Drag from: home_away -2.0%, recency_woba -1.0%. factor-quality 1.00. RAE +9.69.",
+      "what_failed": "Won +$1.97 on GOOD tier. Engine called 89% (high conviction) and hit \u2014 model and market agreed direction, model nailed magnitude. Pre-fire edge was +9.9pp. Top supporter park (+10.0%) confirmed \u2014 keep weighting.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Mickey Moniak O0.5 HITS_ALT @ -380 (Arizona Diamondbacks @ C \u2014 Won",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] engine edge +9.70pp on MLB Batter Hits Alt. engine 88.9% vs market 79.2% (implied from -380). historical hit-rate 64% on n=30. Supported by: statcast +10.0%, park +10.0%, pitcher_matchup +7.0%. Drag from: bvp -8.0%, recency_woba -2.5%. factor-quality 1.00. RAE +9.51.",
+      "what_failed": "Won +$1.97 on GOOD tier. Engine called 89% (high conviction) and hit \u2014 model and market agreed direction, model nailed magnitude. Pre-fire edge was +9.7pp. Top supporter statcast (+10.0%) confirmed \u2014 keep weighting. Headwind bvp (-8.0%) didn't matter \u2014 possible overweight here.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ildemaro Vargas O0.5 HITS_ALT @ -450 (Arizona Diamondbacks @ \u2014 Won",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] engine edge +7.81pp on MLB Batter Hits Alt. engine 89.6% vs market 81.8% (implied from -450). historical hit-rate 72% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, bullpen +4.2%. Drag from: recency_woba -2.5%, statcast -2.0%. factor-quality 1.00. RAE +7.66.",
+      "what_failed": "Won +$1.11 on GOOD tier. Engine called 90% (high conviction) and hit \u2014 model and market agreed direction, model nailed magnitude. Pre-fire edge was +7.8pp. Top supporter park (+10.0%) confirmed \u2014 keep weighting.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Jake McCarthy O0.5 HITS_ALT @ -250 (Arizona Diamondbacks @ C \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +7.66pp on MLB Batter Hits Alt. engine 79.1% vs market 71.4% (implied from -250). historical hit-rate 56% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, handedness +4.0%. Drag from: recency_woba -1.0%. factor-quality 1.00. RAE +7.51.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 79% (HIGH conviction) and missed \u2014 flag for calibration drift. A 70%+ loss means inputs went stale or a factor is overcooked. Pre-fire edge was +7.6pp. Top supporter park (+10.0%) failed to translate \u2014 watch for repeat misses on this factor.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Kyle Karros O0.5 HITS_ALT @ -195 (Arizona Diamondbacks @ Col \u2014 Won",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] engine edge +7.40pp on MLB Batter Hits Alt. engine 73.5% vs market 66.1% (implied from -195). historical hit-rate 52% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, player_performer +5.0%. Drag from: handedness -2.0%, recency_woba -1.0%. factor-quality 1.00. RAE +7.25.",
+      "what_failed": "Won +$2.56 on GOOD tier. Engine called 74% (high conviction) and hit \u2014 model and market agreed direction, model nailed magnitude. Pre-fire edge was +7.4pp. Top supporter park (+10.0%) confirmed \u2014 keep weighting.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ketel Marte O0.5 HITS_ALT @ -500 (Arizona Diamondbacks @ Col \u2014 Lost",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] engine edge +6.24pp on MLB Batter Hits Alt. engine 89.6% vs market 83.3% (implied from -500). historical hit-rate 58% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, bullpen +4.2%. Drag from: bvp -8.0%, player_performer -5.0%. factor-quality 1.00. RAE +6.12.",
+      "what_failed": "Lost -$5.00 on GOOD tier. Engine called 90% (HIGH conviction) and missed \u2014 flag for calibration drift. A 70%+ loss means inputs went stale or a factor is overcooked. Pre-fire edge was +6.2pp. Top supporter park (+10.0%) failed to translate \u2014 watch for repeat misses on this factor. Headwind bvp (-8.0%) was right \u2014 engine should have weighted heavier.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Geraldo Perdomo O0.5 HITS_ALT @ -340 (Arizona Diamondbacks @ \u2014 Won",
+      "date": "2026-05-15",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] engine edge +5.81pp on MLB Batter Hits Alt. engine 83.1% vs market 77.3% (implied from -340). historical hit-rate 50% on n=30. Supported by: park +10.0%, pitcher_matchup +7.0%, bullpen +4.2%. Drag from: player_performer -8.0%, recency_woba -2.5%. factor-quality 1.00. RAE +5.70.",
+      "what_failed": "Won +$1.47 on GOOD tier. Engine called 83% (high conviction) and hit \u2014 model and market agreed direction, model nailed magnitude. Pre-fire edge was +5.8pp. Top supporter park (+10.0%) confirmed \u2014 keep weighting. Headwind player_performer (-8.0%) didn't matter \u2014 possible overweight here.",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
       "title": "[LIVE] [LIVE-PENDING] ML TB [MIA@TB] @ -120 (Miami Marlins @ Tampa  \u2014 Won",
       "date": "2026-05-15",
       "type": "Pick Postmortem",
@@ -2847,15 +3034,15 @@
       "strategy_adj": ""
     },
     {
-      "title": "[NIGHT-SETTLE] 2026-05-15 \u2014 2W-0L net $+6.71",
+      "title": "[NIGHT-SETTLE] 2026-05-15 \u2014 5W-10L net $-45.92",
       "date": "2026-05-15",
       "type": "Daily Reflection",
-      "outcome": "Won",
-      "what_worked": "2 of 2 picks hit (100%). Biggest winner: [LIVE-PENDING] ML TB [MIA@TB] @ -120 (Miami Marlins @ Tampa Bay Rays) +$5.00. LIVE wins: 2 totaling +$6.71.",
-      "what_failed": "No losses today \u2014 clean slate.",
-      "lessons": "Hit rate 100% well above breakeven \u2014 top picks deserve confidence (but small sample, hold steady on sizing).",
+      "outcome": "Lost",
+      "what_worked": "5 of 15 picks hit (33%). Biggest winner: [PAPER] Kyle Karros O0.5 HITS_ALT @ -195 (Arizona Diamondbacks @ Colorado Rockie +$2.56. PAPER wins: 5 totaling +$9.08.",
+      "what_failed": "10 losses totaling -$55.00. Biggest miss: [PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Colorado Rockie $-10.00. Parlay correlation hit us: 4 parlay(s) lost (when one leg dies, the parlay dies).",
+      "lessons": "Hit rate 33% below 40% threshold \u2014 review strategy triggers and edge calibration for tomorrow. Parlays all lost \u2014 correlation risk biting. Consider singles-only until edge sample stabilizes. Repeat losses on: MLB Batter Hits Alt (5), MLB Batter RBIs Alt (2), MLB Batter Total Bases Alt (3). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (5).",
       "calibration_delta": null,
-      "strategy_adj": "Hold sizing and strategy weights \u2014 no statistically significant adjustment from one day."
+      "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears. Player props worked better than team markets today \u2014 lean toward props if pattern holds 3+ days."
     },
     {
       "title": "[PAPER] spread Over -1.5 @ -110 (Chicago Cubs @ Atlanta Braves) \u2014 Lost",
@@ -3587,9 +3774,9 @@
   "sport_roi": [
     {
       "label": "MLB",
-      "roi": -18.327334321405885,
-      "n": 41,
-      "pl": -43.28
+      "roi": -21.645338208409505,
+      "n": 42,
+      "pl": -53.28
     }
   ],
   "tier_roi": [
@@ -3608,8 +3795,8 @@
     {
       "label": "LOCK",
       "roi": -100.0,
-      "n": 4,
-      "pl": -24.5
+      "n": 5,
+      "pl": -34.5
     },
     {
       "label": "WATCH",
@@ -3738,6 +3925,12 @@
       "outcome": 0,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350"
+    },
+    {
+      "prob": 0.75,
+      "outcome": 0,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -3"
     },
     {
       "prob": 0.46296296296296297,
@@ -4005,11 +4198,11 @@
     {
       "low": 75,
       "high": 80,
-      "n": 7,
+      "n": 8,
       "wins": 6,
       "predicted_mid": 77.5,
-      "actual_hit": 85.71428571428571,
-      "delta": 8.214285714285708
+      "actual_hit": 75.0,
+      "delta": -2.5
     },
     {
       "low": 80,
@@ -4051,10 +4244,10 @@
   "strat_calib": [
     {
       "strategy": "MLB Batter Hits Alt",
-      "n": 19,
-      "predicted_avg": 68.8264695744094,
-      "actual_hit": 57.89473684210527,
-      "delta": -10.931732732304134
+      "n": 20,
+      "predicted_avg": 69.13514609568894,
+      "actual_hit": 55.00000000000001,
+      "delta": -14.135146095688931
     },
     {
       "strategy": "MLB Batter Total Bases Alt",
@@ -4153,10 +4346,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-15 23:20",
       "LastRun": "2026-05-15 23:15",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -4286,10 +4479,10 @@
     }
   },
   "perf_panel": {
-    "total_settled": 41,
-    "total_stake": 236.15,
-    "total_net_pl": -43.28,
-    "total_roi_pct": -18.3,
+    "total_settled": 42,
+    "total_stake": 246.15,
+    "total_net_pl": -53.28,
+    "total_roi_pct": -21.6,
     "by_strategy": [
       {
         "name": "MLB Moneyline",
@@ -4313,13 +4506,13 @@
       },
       {
         "name": "MLB Batter Hits Alt",
-        "n": 19,
+        "n": 20,
         "won": 11,
-        "lost": 8,
-        "stake": 139.65,
-        "pl": -15.62,
-        "hit_rate": 57.9,
-        "roi_pct": -11.2
+        "lost": 9,
+        "stake": 149.65,
+        "pl": -25.62,
+        "hit_rate": 55.0,
+        "roi_pct": -17.1
       },
       {
         "name": "MLB Pitcher Strikeouts",
@@ -4375,13 +4568,13 @@
     "by_sport": [
       {
         "name": "MLB",
-        "n": 41,
+        "n": 42,
         "won": 18,
-        "lost": 23,
-        "stake": 236.15,
-        "pl": -43.28,
-        "hit_rate": 43.9,
-        "roi_pct": -18.3
+        "lost": 24,
+        "stake": 246.15,
+        "pl": -53.28,
+        "hit_rate": 42.9,
+        "roi_pct": -21.6
       }
     ],
     "by_tier": [
@@ -4417,11 +4610,11 @@
       },
       {
         "name": "LOCK",
-        "n": 4,
+        "n": 5,
         "won": 0,
-        "lost": 4,
-        "stake": 24.5,
-        "pl": -24.5,
+        "lost": 5,
+        "stake": 34.5,
+        "pl": -34.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
@@ -4451,13 +4644,13 @@
     "what_failed": [
       {
         "name": "MLB Batter Hits Alt",
-        "n": 19,
+        "n": 20,
         "won": 11,
-        "lost": 8,
-        "stake": 139.65,
-        "pl": -15.62,
-        "hit_rate": 57.9,
-        "roi_pct": -11.2
+        "lost": 9,
+        "stake": 149.65,
+        "pl": -25.62,
+        "hit_rate": 55.0,
+        "roi_pct": -17.1
       },
       {
         "name": "MLB Pitcher Strikeouts",
@@ -4519,18 +4712,18 @@
         "dow": "Friday",
         "short": "05\\15",
         "n_total": 30,
-        "n_settled": 20,
+        "n_settled": 21,
         "n_live": 5,
         "n_paper": 25,
         "won": 10,
-        "lost": 10,
+        "lost": 11,
         "push": 0,
-        "hit_rate": 50.0,
-        "stake": 109.5,
-        "pl": -19.22,
+        "hit_rate": 47.6,
+        "stake": 119.5,
+        "pl": -29.22,
         "top_pick": "[PAPER] ML TB [MIA@TB] @ -120 (Miami Marlins @ Tampa Bay Rays)",
         "top_pl": 6.25,
-        "bot_pick": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Colorado Rockies)",
+        "bot_pick": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Colorado Rockies)",
         "bot_pl": -10.0
       },
       {
@@ -4768,29 +4961,29 @@
         "dow": "Friday",
         "short": "05\\15",
         "n_total": 30,
-        "n_settled": 20,
+        "n_settled": 21,
         "n_live": 5,
         "n_paper": 25,
         "won": 10,
-        "lost": 10,
+        "lost": 11,
         "push": 0,
-        "hit_rate": 50.0,
-        "stake": 109.5,
-        "pl": -19.22,
+        "hit_rate": 47.6,
+        "stake": 119.5,
+        "pl": -29.22,
         "top_pick": "[PAPER] ML TB [MIA@TB] @ -120 (Miami Marlins @ Tampa Bay Rays)",
         "top_pl": 6.25,
-        "bot_pick": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Colorado Rockies)",
+        "bot_pick": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Colorado Rockies)",
         "bot_pl": -10.0
       }
     ],
     "total_picks": 52,
-    "total_settled": 41,
+    "total_settled": 42,
     "total_won": 18,
-    "total_lost": 23,
-    "total_stake": 236.15,
-    "total_pl": -43.28,
-    "hit_rate": 43.9,
-    "roi_pct": -18.3,
+    "total_lost": 24,
+    "total_stake": 246.15,
+    "total_pl": -53.28,
+    "hit_rate": 42.9,
+    "roi_pct": -21.6,
     "live_count": 8,
     "paper_count": 44,
     "best_day": {
@@ -4798,8 +4991,8 @@
       "pl": 0
     },
     "worst_day": {
-      "date": "2026-05-14",
-      "pl": -24.06
+      "date": "2026-05-15",
+      "pl": -29.22
     },
     "sport_dist": [
       {
@@ -4852,13 +5045,13 @@
       "roi_pct": 13.4
     },
     "paper": {
-      "n": 37,
+      "n": 38,
       "won": 16,
-      "lost": 21,
-      "stake": 219.65,
-      "pl": -45.49,
-      "hit_rate": 43.2,
-      "roi_pct": -20.7
+      "lost": 22,
+      "stake": 229.65,
+      "pl": -55.49,
+      "hit_rate": 42.1,
+      "roi_pct": -24.2
     }
   },
   "wellness": {
@@ -6328,7 +6521,7 @@
             "home_runs": 0,
             "home_hits": 4,
             "home_errors": 0,
-            "away_runs": 1,
+            "away_runs": 2,
             "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
@@ -6347,7 +6540,7 @@
               1,
               0,
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -10867,14 +11060,14 @@
     },
     "paper": {
       "total_picks": 44,
-      "settled_picks": 37,
+      "settled_picks": 38,
       "won": 16,
-      "lost": 21,
+      "lost": 22,
       "push": 0,
-      "win_rate_pct": 43.2,
-      "total_pl": -45.49,
-      "max_drawdown": -45.49,
-      "expectancy_per_pick": -1.03,
+      "win_rate_pct": 42.1,
+      "total_pl": -55.49,
+      "max_drawdown": -55.49,
+      "expectancy_per_pick": -1.26,
       "streak": "L1"
     }
   },
@@ -10932,19 +11125,19 @@
     "paper": {
       "bankroll": {
         "start": 500.0,
-        "current": 454.51,
+        "current": 444.51,
         "peak": 500.0,
         "peak_date": "2026-05-15",
-        "drawdown_dollars": 45.49,
-        "drawdown_pct": 9.1,
-        "max_drawdown_dollars": 45.49,
-        "max_drawdown_pct": 9.1
+        "drawdown_dollars": 55.49,
+        "drawdown_pct": 11.1,
+        "max_drawdown_dollars": 55.49,
+        "max_drawdown_pct": 11.1
       },
       "today": {
         "stake_committed": 140.0,
         "daily_cap": 150.0,
         "cap_pct_used": 93.3,
-        "daily_pl": -25.93,
+        "daily_pl": -35.93,
         "picks_fired": 25,
         "picks_pending": 0
       },
@@ -10956,16 +11149,16 @@
         "max_single_allowed_pct": 5.0
       },
       "breakers": {
-        "hard_stop_status": "OK",
+        "hard_stop_status": "WARN",
         "hard_stop_threshold": -50.0,
-        "hard_stop_distance": 24.07,
+        "hard_stop_distance": 14.07,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 30.0,
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
         "avg_stake": 5.96,
-        "avg_stake_pct_bankroll": 1.31,
+        "avg_stake_pct_bankroll": 1.34,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
@@ -10974,10 +11167,10 @@
         "current": "L1",
         "current_n": 1,
         "longest_winning": 5,
-        "longest_losing": 7
+        "longest_losing": 8
       },
-      "roi_pct": -20.71,
-      "total_settled": 37
+      "roi_pct": -24.16,
+      "total_settled": 38
     },
     "config": {
       "LIVE": {
@@ -11037,7 +11230,7 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 21.4
+        "age_hours": 21.5
       },
       {
         "name": "audit_2026-05-12.md",
@@ -11107,7 +11300,7 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 56.6
+        "age_hours": 56.7
       },
       {
         "name": "dashboard_url_2026-05-13.md",
@@ -11275,14 +11468,14 @@
         "tier": "learner",
         "bytes": 43964,
         "mtime": 1778824810.5034382,
-        "age_hours": 21.2
+        "age_hours": 21.3
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
-        "bytes": 1073,
-        "mtime": 1778898380.443594,
-        "age_hours": 0.8
+        "bytes": 7830,
+        "mtime": 1778901325.5106611,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
@@ -11625,10 +11818,10 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-15.md",
         "latest_date": "2026-05-15",
-        "age_hours": 0.8,
-        "bytes": 1073,
+        "age_hours": 0.0,
+        "bytes": 7830,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T02:26:20.443594+00:00",
+        "last_refresh_iso": "2026-05-16T03:15:25.510661+00:00",
         "issue": null,
         "min_bytes": 200,
         "min_count": null
@@ -11651,7 +11844,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 30.1,
+        "age_hours": 30.2,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -16498,11 +16691,11 @@
   },
   "activity_feed": [
     {
-      "timestamp_utc": "2026-05-16T02:26:20.444591+00:00",
+      "timestamp_utc": "2026-05-16T03:15:25.512675+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-15",
-      "detail": "2 picks \u00b7 LIVE P\\L +6.71 \u00b7 PAPER P\\L +0.00",
+      "detail": "15 picks \u00b7 LIVE P\\L +0.00 \u00b7 PAPER P\\L -45.92",
       "success": true
     },
     {
@@ -16611,50 +16804,271 @@
       {
         "date": "2026-05-15",
         "totals": {
-          "n_settled": 2,
-          "live_n": 2,
-          "paper_n": 0,
-          "live_net_pl": 6.71,
-          "paper_net_pl": 0,
-          "live_won": 2,
+          "n_settled": 15,
+          "live_n": 0,
+          "paper_n": 15,
+          "live_net_pl": 0,
+          "paper_net_pl": -45.92,
+          "live_won": 0,
           "live_lost": 0,
-          "paper_won": 0,
-          "paper_lost": 0
+          "paper_won": 5,
+          "paper_lost": 10
         },
         "picks": [
           {
             "date": "2026-05-15",
-            "pick": "[LIVE-PENDING] ML ATL [BOS@ATL] @ -350 (Boston Red Sox @ Atlanta Braves)",
-            "account": "LIVE",
+            "pick": "[PAPER] Geraldo Perdomo O0.5 HITS_ALT @ -340 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
             "result": "Won",
-            "pl": 1.71,
-            "stake": 6.0,
-            "odds": -350,
+            "pl": 1.47,
+            "stake": 5.0,
+            "odds": -340,
             "tier": "GOOD",
-            "strategy": "MLB Moneyline",
+            "strategy": "MLB Batter Hits Alt",
             "sport": "MLB",
-            "market": "ML",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
+            "market": "HITS_ALT",
+            "edge_pp": 5.81,
+            "true_prob": 0.8308,
+            "base_prob": 0.7727,
+            "factor_quality_score": 1.0
           },
           {
             "date": "2026-05-15",
-            "pick": "[LIVE-PENDING] ML TB [MIA@TB] @ -120 (Miami Marlins @ Tampa Bay Rays)",
-            "account": "LIVE",
-            "result": "Won",
-            "pl": 5.0,
-            "stake": 6.0,
-            "odds": -120,
-            "tier": "STRONG",
-            "strategy": "MLB Moneyline",
+            "pick": "[PAPER] Ketel Marte O0.5 HITS_ALT @ -500 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": -500,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
             "sport": "MLB",
-            "market": "ML",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
+            "market": "HITS_ALT",
+            "edge_pp": 6.24,
+            "true_prob": 0.8957,
+            "base_prob": 0.8333,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Kyle Karros O0.5 HITS_ALT @ -195 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 2.56,
+            "stake": 5.0,
+            "odds": -195,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 7.4,
+            "true_prob": 0.735,
+            "base_prob": 0.661,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Jake McCarthy O0.5 HITS_ALT @ -250 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": -250,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 7.66,
+            "true_prob": 0.7908,
+            "base_prob": 0.7143,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Ildemaro Vargas O0.5 HITS_ALT @ -450 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 1.11,
+            "stake": 5.0,
+            "odds": -450,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 7.81,
+            "true_prob": 0.8963,
+            "base_prob": 0.8182,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Mickey Moniak O0.5 HITS_ALT @ -380 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 1.97,
+            "stake": 7.5,
+            "odds": -380,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 9.7,
+            "true_prob": 0.8887,
+            "base_prob": 0.7917,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Nolan Arenado O0.5 HITS_ALT @ -380 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 1.97,
+            "stake": 7.5,
+            "odds": -380,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 9.88,
+            "true_prob": 0.8905,
+            "base_prob": 0.7917,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Troy Johnston O0.5 RBIS_ALT @ +140 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -2.5,
+            "stake": 2.5,
+            "odds": 140,
+            "tier": "GOOD",
+            "strategy": "MLB Batter RBIs Alt",
+            "sport": "MLB",
+            "market": "RBIS_ALT",
+            "edge_pp": 5.4,
+            "true_prob": 0.4707,
+            "base_prob": 0.4167,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] TJ Rumfield O2.5 TOTAL_BASES_ALT @ +185 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -2.5,
+            "stake": 2.5,
+            "odds": 185,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Total Bases Alt",
+            "sport": "MLB",
+            "market": "TOTAL_BASES_ALT",
+            "edge_pp": 5.62,
+            "true_prob": 0.4071,
+            "base_prob": 0.3509,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] TJ Rumfield O1.5 HITS_ALT @ +155 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": 155,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 5.66,
+            "true_prob": 0.4488,
+            "base_prob": 0.3922,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] TJ Rumfield O0.5 RBIS_ALT @ +125 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": 125,
+            "tier": "GOOD",
+            "strategy": "MLB Batter RBIs Alt",
+            "sport": "MLB",
+            "market": "RBIS_ALT",
+            "edge_pp": 6.33,
+            "true_prob": 0.5077,
+            "base_prob": 0.4444,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Troy Johnston O1.5 TOTAL_BASES_ALT @ -110 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": -110,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Total Bases Alt",
+            "sport": "MLB",
+            "market": "TOTAL_BASES_ALT",
+            "edge_pp": 7.71,
+            "true_prob": 0.6009,
+            "base_prob": 0.5238,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] TJ Rumfield O1.5 TOTAL_BASES_ALT @ -125 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": -125,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Total Bases Alt",
+            "sport": "MLB",
+            "market": "TOTAL_BASES_ALT",
+            "edge_pp": 8.9,
+            "true_prob": 0.6445,
+            "base_prob": 0.5556,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -10.0,
+            "stake": 10.0,
+            "odds": -350,
+            "tier": "LOCK",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 12.45,
+            "true_prob": 0.9023,
+            "base_prob": 0.7778,
+            "factor_quality_score": 1.0
+          },
+          {
+            "date": "2026-05-15",
+            "pick": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Colorado Rockies)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -10.0,
+            "stake": 10.0,
+            "odds": -300,
+            "tier": "LOCK",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": 12.97,
+            "true_prob": 0.8797,
+            "base_prob": 0.75,
+            "factor_quality_score": 1.0
           }
         ]
       },
@@ -16679,7 +17093,7 @@
   "built_at_et": "2026-05-15 23:15 ET",
   "counts": {
     "picks_total": 52,
-    "settled": 41,
+    "settled": 42,
     "today_picks": 30
   }
 }
