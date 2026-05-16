@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-193016",
-  "generated_at": "2026-05-16T19:30:16.794348+00:00",
+  "build_id": "260516-193057",
+  "generated_at": "2026-05-16T19:30:57.407960+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3046,7 +3046,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.4pp \u00b7 rae +10.0 \u00b7 rank #1 \u00b7 factor x1.20 \u00b7 n=10"
     }
   ],
-  "built_at": "2026-05-16T19:30:16.794419+00:00",
+  "built_at": "2026-05-16T19:30:57.408030+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8490,10 +8490,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 15:35",
       "LastRun": "2026-05-16 15:30",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -9390,7 +9390,7 @@
             "status_code": "I",
             "current_inning": 2,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 2,
             "home_errors": 0,
@@ -9399,7 +9399,7 @@
             "away_errors": 0,
             "home_innings": [
               1,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -15157,7 +15157,7 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 28.7
+        "age_hours": 28.8
       },
       {
         "name": "BettingOS_System_Bible.md",
@@ -15344,9 +15344,9 @@
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
-        "bytes": 630,
-        "mtime": 1778958032.3429716,
-        "age_hours": 0.5
+        "bytes": 756,
+        "mtime": 1778959846.5056727,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
@@ -15360,7 +15360,7 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 104.5
+        "age_hours": 104.6
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -15395,7 +15395,7 @@
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 36.7
+        "age_hours": 36.8
       },
       {
         "name": "reference_calibration_table.md",
@@ -15689,10 +15689,10 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.5,
-        "bytes": 630,
+        "age_hours": 0.0,
+        "bytes": 756,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T19:00:32.342972+00:00",
+        "last_refresh_iso": "2026-05-16T19:30:46.505673+00:00",
         "issue": null,
         "min_bytes": 200,
         "min_count": null
@@ -20204,7 +20204,7 @@
   },
   "activity_feed": [
     {
-      "timestamp_utc": "2026-05-16T19:00:33.154164+00:00",
+      "timestamp_utc": "2026-05-16T19:30:47.288393+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-16",
