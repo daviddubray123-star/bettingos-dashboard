@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-190018",
-  "generated_at": "2026-05-16T19:00:19.171491+00:00",
+  "build_id": "260516-190042",
+  "generated_at": "2026-05-16T19:00:43.182133+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3502,7 +3502,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +12.4pp \u00b7 rae +11.9 \u00b7 rank #1 \u00b7 factor x1.21 \u00b7 n=10"
     }
   ],
-  "built_at": "2026-05-16T19:00:19.171565+00:00",
+  "built_at": "2026-05-16T19:00:43.182217+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8946,10 +8946,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 15:05",
       "LastRun": "2026-05-16 15:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -10725,17 +10725,21 @@
             "status": "Pre-Game",
             "abstract_state": "Preview",
             "status_code": "P",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -15790,9 +15794,9 @@
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
-        "bytes": 504,
-        "mtime": 1778956238.0554295,
-        "age_hours": 0.5
+        "bytes": 630,
+        "mtime": 1778958032.3429716,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
@@ -16070,7 +16074,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.4,
+        "age_hours": 2.5,
         "bytes": 589333,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T16:33:37.769590+00:00",
@@ -16093,14 +16097,14 @@
       },
       {
         "label": "Layer-1 candidates",
-        "status": "fresh",
+        "status": "degraded",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.5,
-        "bytes": 1491144,
+        "age_hours": 0.0,
+        "bytes": 25929,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T16:32:06.378699+00:00",
-        "issue": null,
+        "last_refresh_iso": "2026-05-16T19:00:38.804892+00:00",
+        "issue": "size 25929B < min 100000B",
         "min_bytes": 100000,
         "min_count": null
       },
@@ -16135,10 +16139,10 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.5,
-        "bytes": 504,
+        "age_hours": 0.0,
+        "bytes": 630,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T18:30:38.055429+00:00",
+        "last_refresh_iso": "2026-05-16T19:00:32.342972+00:00",
         "issue": null,
         "min_bytes": 200,
         "min_count": null
@@ -22000,7 +22004,7 @@
   },
   "activity_feed": [
     {
-      "timestamp_utc": "2026-05-16T18:30:38.865053+00:00",
+      "timestamp_utc": "2026-05-16T19:00:33.154164+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-16",
