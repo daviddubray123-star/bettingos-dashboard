@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-025007",
-  "generated_at": "2026-05-16T02:50:07.818417+00:00",
+  "build_id": "260516-025139",
+  "generated_at": "2026-05-16T02:51:39.996402+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
@@ -1516,7 +1516,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +13.4pp \u00b7 rae +13.1 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=30 \u00b7 14 hits L10 (avg 1.40 vs O0.5 line, gap +0.90) \u00b7 vs Tyler Mahle"
     }
   ],
-  "built_at": "2026-05-16T02:50:07.818435+00:00",
+  "built_at": "2026-05-16T02:51:39.996421+00:00",
   "daily": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
@@ -4062,10 +4062,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-15 22:55",
       "LastRun": "2026-05-15 22:50",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -5359,9 +5359,9 @@
           ],
           "scoreboard": {
             "game_pk": 823707,
-            "status": "Game Over",
+            "status": "Final",
             "abstract_state": "Final",
-            "status_code": "O",
+            "status_code": "F",
             "current_inning": 9,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
@@ -6001,7 +6001,7 @@
             "status_code": "I",
             "current_inning": 8,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 3,
             "home_errors": 1,
@@ -6016,7 +6016,7 @@
               0,
               0,
               0,
-              null
+              0
             ],
             "away_innings": [
               6,
@@ -6201,7 +6201,7 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 2,
             "home_errors": 0,
@@ -6220,7 +6220,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -6302,7 +6302,7 @@
             "home_hits": 4,
             "home_errors": 0,
             "away_runs": 2,
-            "away_hits": 5,
+            "away_hits": 6,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -10899,14 +10899,14 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 23.3
+        "age_hours": 23.4
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 21.0
+        "age_hours": 21.1
       },
       {
         "name": "audit_2026-05-12.md",
@@ -10927,7 +10927,7 @@
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 13.7
+        "age_hours": 13.8
       },
       {
         "name": "audit_round3_2026-05-15.md",
@@ -10948,7 +10948,7 @@
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 8.9
+        "age_hours": 9.0
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -10962,7 +10962,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 70.1
+        "age_hours": 70.2
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -10976,7 +10976,7 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 56.2
+        "age_hours": 56.3
       },
       {
         "name": "dashboard_url_2026-05-13.md",
@@ -11032,7 +11032,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 52.4
+        "age_hours": 52.5
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -11046,7 +11046,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 87.0
+        "age_hours": 87.1
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -11109,7 +11109,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 96.8
+        "age_hours": 96.9
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -11137,14 +11137,14 @@
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 62.5
+        "age_hours": 62.6
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 43964,
         "mtime": 1778824810.5034382,
-        "age_hours": 20.8
+        "age_hours": 20.9
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -11158,7 +11158,7 @@
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 47.3
+        "age_hours": 47.4
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -11277,7 +11277,7 @@
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 96.0
+        "age_hours": 96.1
       },
       {
         "name": "reference_sport_calendar.md",
@@ -11305,7 +11305,7 @@
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 101.1
+        "age_hours": 101.2
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -11333,7 +11333,7 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 47.3
+        "age_hours": 47.4
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
@@ -11368,14 +11368,14 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 57.3
+        "age_hours": 57.4
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 63.6
+        "age_hours": 63.7
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
@@ -11507,7 +11507,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 3.4,
+        "age_hours": 3.5,
         "bytes": 39799,
         "row_count": 161,
         "last_refresh_iso": "2026-05-15T23:23:34.455090+00:00",
@@ -11520,7 +11520,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 29.7,
+        "age_hours": 29.8,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -16545,7 +16545,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 22:50 ET",
+  "built_at_et": "2026-05-15 22:51 ET",
   "counts": {
     "picks_total": 52,
     "settled": 27,
