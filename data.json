@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-203332",
-  "generated_at": "2026-05-16T20:33:33.226648+00:00",
+  "build_id": "260516-203512",
+  "generated_at": "2026-05-16T20:35:12.638956+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3312,7 +3312,7 @@
       "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
     }
   ],
-  "built_at": "2026-05-16T20:33:33.226726+00:00",
+  "built_at": "2026-05-16T20:35:12.639027+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8787,10 +8787,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-16 16:35",
-      "LastRun": "2026-05-16 16:30",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 16:40",
+      "LastRun": "2026-05-16 16:35",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -15479,14 +15479,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 31.0
+        "age_hours": 31.1
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 30.8
+        "age_hours": 30.9
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -15675,7 +15675,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 87.9
+        "age_hours": 88.0
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -15703,14 +15703,14 @@
         "tier": "learner",
         "bytes": 882,
         "mtime": 1778961647.9332871,
-        "age_hours": 0.5
+        "age_hours": 0.6
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 65.0
+        "age_hours": 65.1
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -15892,7 +15892,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 88.8
+        "age_hours": 88.9
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -15913,7 +15913,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 74.8
+        "age_hours": 74.9
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -15934,7 +15934,7 @@
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 88.4
+        "age_hours": 88.5
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -15955,7 +15955,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 73.9
+        "age_hours": 74.0
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -15981,7 +15981,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16_evening.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 341393,
         "row_count": 36,
         "last_refresh_iso": "2026-05-16T20:31:11.608367+00:00",
@@ -15994,7 +15994,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 6.9,
+        "age_hours": 7.0,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -16033,7 +16033,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 11984,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T20:30:58.973860+00:00",
@@ -16046,7 +16046,7 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.5,
+        "age_hours": 0.6,
         "bytes": 882,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T20:00:47.933287+00:00",
@@ -21612,7 +21612,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 16:33 ET",
+  "built_at_et": "2026-05-16 16:35 ET",
   "counts": {
     "picks_total": 143,
     "settled": 52,
