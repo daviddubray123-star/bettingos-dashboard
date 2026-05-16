@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-234512",
-  "generated_at": "2026-05-16T23:45:12.774143+00:00",
+  "build_id": "260516-234659",
+  "generated_at": "2026-05-16T23:46:59.968414+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-16T23:45:12.774237+00:00",
+  "built_at": "2026-05-16T23:46:59.968502+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -10058,10 +10058,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 19:50",
       "LastRun": "2026-05-16 19:45",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -11514,12 +11514,12 @@
             "status_code": "I",
             "current_inning": 6,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 2,
             "home_hits": 6,
             "home_errors": 0,
             "away_runs": 4,
-            "away_hits": 4,
+            "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -11535,7 +11535,7 @@
               1,
               0,
               3,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -11614,7 +11614,7 @@
             "status_code": "I",
             "current_inning": 2,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 2,
             "home_hits": 3,
             "home_errors": 0,
@@ -11623,7 +11623,7 @@
             "away_errors": 0,
             "home_innings": [
               2,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -11798,9 +11798,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 2,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 3,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 3,
             "home_errors": 0,
@@ -11809,11 +11809,13 @@
             "away_errors": 0,
             "home_innings": [
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -11986,7 +11988,7 @@
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 1,
-            "home_hits": 1,
+            "home_hits": 2,
             "home_errors": 0,
             "away_runs": 0,
             "away_hits": 1,
@@ -12079,7 +12081,7 @@
             "status_code": "I",
             "current_inning": 2,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 0,
@@ -16817,7 +16819,7 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 41.9
+        "age_hours": 42.0
       },
       {
         "name": "audit_2026-05-12.md",
@@ -16845,7 +16847,7 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 34.2
+        "age_hours": 34.3
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
@@ -17041,7 +17043,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 91.1
+        "age_hours": 91.2
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -17062,21 +17064,21 @@
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 10.2
+        "age_hours": 10.3
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 30645,
         "mtime": 1778974263.191076,
-        "age_hours": 0.2
+        "age_hours": 0.3
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 68.2
+        "age_hours": 68.3
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -17258,7 +17260,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 92.0
+        "age_hours": 92.1
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -17279,7 +17281,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 78.0
+        "age_hours": 78.1
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -17300,7 +17302,7 @@
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 91.6
+        "age_hours": 91.7
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -17321,7 +17323,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 77.1
+        "age_hours": 77.2
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -17347,7 +17349,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.0,
+        "age_hours": 2.1,
         "bytes": 580158,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T21:43:48.889737+00:00",
@@ -17360,7 +17362,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 10.1,
+        "age_hours": 10.2,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -17373,7 +17375,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.1,
+        "age_hours": 2.2,
         "bytes": 1000406,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:37:50.473900+00:00",
@@ -17386,10 +17388,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
-        "bytes": 3391,
+        "age_hours": 0.0,
+        "bytes": 2395,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T23:30:11.406737+00:00",
+        "last_refresh_iso": "2026-05-16T23:46:32.311190+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -17412,7 +17414,7 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 30645,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T23:31:03.191076+00:00",
@@ -17425,7 +17427,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 9.2,
+        "age_hours": 9.3,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -17438,7 +17440,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 50.6,
+        "age_hours": 50.7,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -17451,7 +17453,7 @@
         "status": "fresh",
         "latest_file": "wx_SEA_2026-05-16T23.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 217,
         "row_count": 33,
         "last_refresh_iso": "2026-05-16T23:25:25.414649+00:00",
@@ -20679,13 +20681,13 @@
   "changelog": [
     {
       "date": "2026-05-16",
-      "title": "Daily settle \u2014 2026-05-16 \u00b7 3 graded \u00b7 $-11.45 total P\\L",
+      "title": "Daily settle \u2014 2026-05-16 \u00b7 0 graded \u00b7 $+0.00 total P\\L",
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 3 picks (0 grading failures)",
-          "LIVE: 0W-1L on $6.00 stake \u2192 P\\L $-6.00",
-          "PAPER: 1W-1L on $15.00 stake \u2192 P\\L $-5.45"
+          "graded 0 picks (0 grading failures)",
+          "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
+          "PAPER: 0W-0L on $0.00 stake \u2192 P\\L $+0.00"
         ]
       },
       "_auto": true,
@@ -26250,7 +26252,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 19:45 ET",
+  "built_at_et": "2026-05-16 19:47 ET",
   "counts": {
     "picks_total": 159,
     "settled": 65,
