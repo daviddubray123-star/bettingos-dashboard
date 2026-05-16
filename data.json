@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-194517",
-  "generated_at": "2026-05-16T19:45:17.709617+00:00",
+  "build_id": "260516-194710",
+  "generated_at": "2026-05-16T19:47:11.018360+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3046,7 +3046,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +10.4pp \u00b7 rae +10.0 \u00b7 rank #1 \u00b7 factor x1.20 \u00b7 n=10"
     }
   ],
-  "built_at": "2026-05-16T19:45:17.709698+00:00",
+  "built_at": "2026-05-16T19:47:11.018442+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8490,10 +8490,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 15:50",
       "LastRun": "2026-05-16 15:45",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -9390,9 +9390,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 3,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 4,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 1,
             "home_hits": 3,
             "home_errors": 0,
@@ -9402,12 +9402,14 @@
             "home_innings": [
               1,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               0,
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -9488,7 +9490,7 @@
             "home_runs": 2,
             "home_hits": 4,
             "home_errors": 0,
-            "away_runs": 0,
+            "away_runs": 1,
             "away_hits": 4,
             "away_errors": 0,
             "home_innings": [
@@ -9497,7 +9499,7 @@
             ],
             "away_innings": [
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -15100,7 +15102,7 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 37.9
+        "age_hours": 38.0
       },
       {
         "name": "audit_2026-05-12.md",
@@ -15128,14 +15130,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 30.2
+        "age_hours": 30.3
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 30.0
+        "age_hours": 30.1
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -15324,7 +15326,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 87.1
+        "age_hours": 87.2
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -15352,14 +15354,14 @@
         "tier": "learner",
         "bytes": 756,
         "mtime": 1778959846.5056727,
-        "age_hours": 0.2
+        "age_hours": 0.3
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 64.2
+        "age_hours": 64.3
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -15541,7 +15543,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 88.0
+        "age_hours": 88.1
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -15562,7 +15564,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 74.0
+        "age_hours": 74.1
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -15583,7 +15585,7 @@
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 87.6
+        "age_hours": 87.7
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -15604,7 +15606,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 73.1
+        "age_hours": 73.2
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -15630,7 +15632,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.7,
+        "age_hours": 0.8,
         "bytes": 473854,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T19:01:37.837535+00:00",
@@ -15643,7 +15645,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 6.1,
+        "age_hours": 6.2,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -15656,7 +15658,7 @@
         "status": "degraded",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.7,
+        "age_hours": 0.8,
         "bytes": 25929,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T19:00:38.804892+00:00",
@@ -15682,7 +15684,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.7,
+        "age_hours": 0.8,
         "bytes": 11827,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T19:01:19.156034+00:00",
@@ -15695,7 +15697,7 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 756,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T19:30:46.505673+00:00",
@@ -15708,7 +15710,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 5.2,
+        "age_hours": 5.3,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -15721,7 +15723,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 46.6,
+        "age_hours": 46.7,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -22438,7 +22440,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 15:45 ET",
+  "built_at_et": "2026-05-16 15:47 ET",
   "counts": {
     "picks_total": 141,
     "settled": 48,
