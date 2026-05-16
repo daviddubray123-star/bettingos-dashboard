@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-210517",
-  "generated_at": "2026-05-16T21:05:18.544190+00:00",
+  "build_id": "260516-210717",
+  "generated_at": "2026-05-16T21:07:17.585500+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3312,7 +3312,7 @@
       "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
     }
   ],
-  "built_at": "2026-05-16T21:05:18.544306+00:00",
+  "built_at": "2026-05-16T21:07:17.585581+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8787,10 +8787,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 17:10",
       "LastRun": "2026-05-16 17:05",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -9714,7 +9714,7 @@
             "home_hits": 8,
             "home_errors": 0,
             "away_runs": 2,
-            "away_hits": 7,
+            "away_hits": 8,
             "away_errors": 1,
             "home_innings": [
               1,
@@ -9812,8 +9812,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 6,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 3,
             "home_hits": 9,
             "home_errors": 0,
@@ -9914,7 +9914,7 @@
             "status_code": "I",
             "current_inning": 4,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 4,
             "home_hits": 4,
             "home_errors": 0,
@@ -9931,7 +9931,7 @@
               0,
               0,
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -10113,7 +10113,7 @@
             "home_hits": 3,
             "home_errors": 1,
             "away_runs": 0,
-            "away_hits": 3,
+            "away_hits": 4,
             "away_errors": 1,
             "home_innings": [
               0,
@@ -15524,7 +15524,7 @@
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 25.7
+        "age_hours": 25.8
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
@@ -15538,7 +15538,7 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 30.3
+        "age_hours": 30.4
       },
       {
         "name": "BettingOS_System_Bible.md",
@@ -15566,35 +15566,35 @@
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_last10_strategies.md",
@@ -15608,7 +15608,7 @@
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
@@ -15622,56 +15622,56 @@
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
@@ -15685,7 +15685,7 @@
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "full_audit_2026-05-15.md",
@@ -15713,7 +15713,7 @@
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 7.7
+        "age_hours": 7.8
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -15741,63 +15741,63 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 106.1
+        "age_hours": 106.2
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 39.6
+        "age_hours": 39.7
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 38.3
+        "age_hours": 38.4
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_daily_workflow_explained.md",
@@ -15811,42 +15811,42 @@
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 115.1
+        "age_hours": 115.2
       },
       {
         "name": "reference_runbook.md",
@@ -15860,14 +15860,14 @@
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "reference_strategy_definitions.md",
@@ -15888,7 +15888,7 @@
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 120.1
+        "age_hours": 120.2
       },
       {
         "name": "roadmap.md",
@@ -15902,7 +15902,7 @@
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 38.2
+        "age_hours": 38.3
       },
       {
         "name": "state_snapshot_2026-05-13.md",
@@ -15923,14 +15923,14 @@
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 88.4
+        "age_hours": 88.5
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 88.6
+        "age_hours": 88.7
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
@@ -15965,7 +15965,7 @@
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 79.1
+        "age_hours": 79.2
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -15993,7 +15993,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 73.8
+        "age_hours": 73.9
       }
     ]
   },
@@ -16044,10 +16044,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.1,
-        "bytes": 4963,
+        "age_hours": 0.0,
+        "bytes": 4795,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T21:00:16.423084+00:00",
+        "last_refresh_iso": "2026-05-16T21:06:53.581978+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -17129,14 +17129,9 @@
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 0 picks (3 grading failures)",
+          "graded 0 picks (0 grading failures)",
           "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
           "PAPER: 0W-0L on $0.00 stake \u2192 P\\L $+0.00"
-        ],
-        "Grading failures": [
-          "[PAPER] SPREAD LAD -1.5 [LAD@LAA] @ -110 (Los Angeles Dodger \u2014 could not parse spread fields from: [PAPER] SPREAD LAD -1.5 [LAD@LAA] @ -110 (Los Angeles Dodgers @ ",
-          "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ S \u2014 could not parse spread fields from: [PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ Seatt",
-          "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blu \u2014 player not found in boxscore: Yohendrick Pinango"
         ]
       },
       "_auto": true,
@@ -21636,7 +21631,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 17:05 ET",
+  "built_at_et": "2026-05-16 17:07 ET",
   "counts": {
     "picks_total": 143,
     "settled": 52,
