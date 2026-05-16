@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-202826",
-  "generated_at": "2026-05-16T20:28:26.547887+00:00",
+  "build_id": "260516-203018",
+  "generated_at": "2026-05-16T20:30:18.983618+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3312,7 +3312,7 @@
       "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
     }
   ],
-  "built_at": "2026-05-16T20:28:26.547958+00:00",
+  "built_at": "2026-05-16T20:30:18.983691+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8749,17 +8749,17 @@
     {
       "Name": "BettingOS - clv-capture",
       "State": "Ready",
-      "NextRun": "2026-05-16 16:30",
-      "LastRun": "2026-05-16 16:00",
+      "NextRun": "2026-05-16 17:00",
+      "LastRun": "2026-05-16 16:30",
       "LastResult": 0,
       "WakeToRun": false
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-16 16:30",
-      "LastRun": "2026-05-16 16:25",
-      "LastResult": 3221225786,
+      "State": "Running",
+      "NextRun": "2026-05-16 16:35",
+      "LastRun": "2026-05-16 16:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -8772,10 +8772,10 @@
     },
     {
       "Name": "BettingOS - evening-scout",
-      "State": "Ready",
-      "NextRun": "2026-05-16 16:30",
-      "LastRun": "2026-05-15 17:30",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-17 16:30",
+      "LastRun": "2026-05-16 16:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -8804,10 +8804,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Ready",
-      "NextRun": "2026-05-16 16:30",
-      "LastRun": "2026-05-16 16:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 17:00",
+      "LastRun": "2026-05-16 16:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -9761,7 +9761,7 @@
             "home_hits": 9,
             "home_errors": 0,
             "away_runs": 1,
-            "away_hits": 4,
+            "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
               2,
@@ -9858,7 +9858,7 @@
             "home_hits": 0,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 3,
+            "away_hits": 4,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -10039,7 +10039,7 @@
             "status_code": "I",
             "current_inning": 2,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 1,
@@ -10052,7 +10052,7 @@
             ],
             "away_innings": [
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -15433,7 +15433,7 @@
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 30.7
+        "age_hours": 30.8
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -15461,7 +15461,7 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 29.7
+        "age_hours": 29.8
       },
       {
         "name": "BettingOS_System_Bible.md",
@@ -15475,7 +15475,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 78.7
+        "age_hours": 78.8
       },
       {
         "name": "design_engine_v2.md",
@@ -15636,7 +15636,7 @@
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 7.1
+        "age_hours": 7.2
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -15664,7 +15664,7 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 105.5
+        "age_hours": 105.6
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -15769,7 +15769,7 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 114.5
+        "age_hours": 114.6
       },
       {
         "name": "reference_runbook.md",
@@ -15839,28 +15839,28 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 88.7
+        "age_hours": 88.8
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 87.8
+        "age_hours": 87.9
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 88.0
+        "age_hours": 88.1
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 74.7
+        "age_hours": 74.8
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -15888,7 +15888,7 @@
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 78.5
+        "age_hours": 78.6
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -15916,7 +15916,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 73.2
+        "age_hours": 73.3
       }
     ]
   },
@@ -15928,7 +15928,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 1.4,
+        "age_hours": 1.5,
         "bytes": 473854,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T19:01:37.837535+00:00",
@@ -15941,7 +15941,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 6.8,
+        "age_hours": 6.9,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -15964,14 +15964,14 @@
       },
       {
         "label": "Settle summary",
-        "status": "degraded",
+        "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.5,
-        "bytes": 272,
+        "age_hours": 0.0,
+        "bytes": 6624,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T20:00:12.537774+00:00",
-        "issue": "size 272B < min 500B",
+        "last_refresh_iso": "2026-05-16T20:30:17.794199+00:00",
+        "issue": null,
         "min_bytes": 500,
         "min_count": null
       },
@@ -17448,13 +17448,18 @@
   "changelog": [
     {
       "date": "2026-05-16",
-      "title": "Daily settle \u2014 2026-05-16 \u00b7 0 graded \u00b7 $+0.00 total P\\L",
+      "title": "Daily settle \u2014 2026-05-16 \u00b7 4 graded \u00b7 $-3.25 total P\\L",
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 0 picks (0 grading failures)",
-          "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
-          "PAPER: 0W-0L on $0.00 stake \u2192 P\\L $+0.00"
+          "graded 4 picks (3 grading failures)",
+          "LIVE: 1W-0L on $3.00 stake \u2192 P\\L $+1.62",
+          "PAPER: 1W-2L on $12.50 stake \u2192 P\\L $-4.87"
+        ],
+        "Grading failures": [
+          "[PAPER] SPREAD LAD -1.5 [LAD@LAA] @ -110 (Los Angeles Dodger \u2014 could not parse spread fields from: [PAPER] SPREAD LAD -1.5 [LAD@LAA] @ -110 (Los Angeles Dodgers @ ",
+          "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ S \u2014 could not parse spread fields from: [PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ Seatt",
+          "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blu \u2014 player not found in boxscore: Yohendrick Pinango"
         ]
       },
       "_auto": true,
@@ -18769,6 +18774,15 @@
       "l20_games": 20
     },
     {
+      "name": "Detroit Tigers",
+      "team": "DET",
+      "team_id": 116,
+      "nrfi_count": 11,
+      "yrfi_count": 9,
+      "l20_nrfi_pct": 0.55,
+      "l20_games": 20
+    },
+    {
       "name": "Washington Nationals",
       "team": "WSH",
       "team_id": 120,
@@ -18790,15 +18804,6 @@
       "name": "Cincinnati Reds",
       "team": "CIN",
       "team_id": 113,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
-      "l20_games": 20
-    },
-    {
-      "name": "Detroit Tigers",
-      "team": "DET",
-      "team_id": 116,
       "nrfi_count": 10,
       "yrfi_count": 10,
       "l20_nrfi_pct": 0.5,
@@ -19376,6 +19381,30 @@
       "missing_pitcher_data": false
     },
     {
+      "matchup": "TOR @ DET",
+      "away_abbr": "TOR",
+      "home_abbr": "DET",
+      "home_pp_name": "Casey Mize",
+      "away_pp_name": "Mason Fluharty",
+      "home_nrfi": 0.55,
+      "away_nrfi": 0.5,
+      "home_pp_shrunk": 0.82,
+      "away_pp_shrunk": null,
+      "home_pp_baseline": 0.76,
+      "away_pp_baseline": null,
+      "home_pp_recent": 1.0,
+      "away_pp_recent": null,
+      "home_pp_trend": "STABLE",
+      "away_pp_trend": null,
+      "team_signal": 0.75,
+      "pitcher_signal": 6.75,
+      "confidence": 57.5,
+      "side": "none",
+      "band": "mild_nrfi",
+      "recommendation": "Mild NRFI tilt \u2014 no bet",
+      "missing_pitcher_data": true
+    },
+    {
       "matchup": "CHC @ CWS",
       "away_abbr": "CHC",
       "home_abbr": "CWS",
@@ -19422,30 +19451,6 @@
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
       "missing_pitcher_data": false
-    },
-    {
-      "matchup": "TOR @ DET",
-      "away_abbr": "TOR",
-      "home_abbr": "DET",
-      "home_pp_name": "Casey Mize",
-      "away_pp_name": "Mason Fluharty",
-      "home_nrfi": 0.5,
-      "away_nrfi": 0.5,
-      "home_pp_shrunk": 0.82,
-      "away_pp_shrunk": null,
-      "home_pp_baseline": 0.76,
-      "away_pp_baseline": null,
-      "home_pp_recent": 1.0,
-      "away_pp_recent": null,
-      "home_pp_trend": "STABLE",
-      "away_pp_trend": null,
-      "team_signal": 0.0,
-      "pitcher_signal": 6.75,
-      "confidence": 56.8,
-      "side": "none",
-      "band": "mild_nrfi",
-      "recommendation": "Mild NRFI tilt \u2014 no bet",
-      "missing_pitcher_data": true
     },
     {
       "matchup": "BOS @ ATL",
@@ -21954,7 +21959,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 16:28 ET",
+  "built_at_et": "2026-05-16 16:30 ET",
   "counts": {
     "picks_total": 143,
     "settled": 48,
