@@ -1,15 +1,15 @@
 {
-  "build_id": "260516-025512",
-  "generated_at": "2026-05-16T02:55:12.060765+00:00",
+  "build_id": "260516-025827",
+  "generated_at": "2026-05-16T02:58:27.468815+00:00",
   "today": "2026-05-15",
   "yesterday": "2026-05-14",
   "bankroll": {
     "live": 154.4,
     "paper": 530.3,
-    "paper_peak": 500.0,
-    "paper_drawdown_pct": -6.059999999999991,
-    "peak": 152.21,
-    "drawdown_pct": -1.4388016556073828
+    "paper_peak": 530.3,
+    "paper_drawdown_pct": 0.0,
+    "peak": 154.4,
+    "drawdown_pct": 0.0
   },
   "picks": [
     {
@@ -1516,7 +1516,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +13.4pp \u00b7 rae +13.1 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=30 \u00b7 14 hits L10 (avg 1.40 vs O0.5 line, gap +0.90) \u00b7 vs Tyler Mahle"
     }
   ],
-  "built_at": "2026-05-16T02:55:12.060783+00:00",
+  "built_at": "2026-05-16T02:58:27.468839+00:00",
   "daily": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
@@ -4062,10 +4062,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-15 23:00",
       "LastRun": "2026-05-15 22:55",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -4762,7 +4762,7 @@
           "game_pk": 823384,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T22:40:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Pittsburgh Pirates",
           "home_team_id": 134,
           "away_team": "Philadelphia Phillies",
@@ -5082,7 +5082,7 @@
           "game_pk": 824439,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T23:10:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Cleveland Guardians",
           "home_team_id": 114,
           "away_team": "Cincinnati Reds",
@@ -5292,7 +5292,7 @@
           "game_pk": 823707,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T23:10:00Z",
-          "status": "Game Over",
+          "status": "Final",
           "home_team": "Minnesota Twins",
           "home_team_id": 142,
           "away_team": "Milwaukee Brewers",
@@ -5307,7 +5307,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 81.7,
+          "weather_temp": 81.9,
           "weather_notes": [
             "Wind OUT 7 mph (+4%)"
           ],
@@ -5319,7 +5319,7 @@
             "p_top": 75.3,
             "p_bot": 71.1,
             "park_mult": 0.998,
-            "weather_adj": -0.0074,
+            "weather_adj": -0.0078,
             "home_sp_rate": 0.7778,
             "home_sp_sample": 9,
             "away_sp_rate": null,
@@ -5400,7 +5400,7 @@
           "game_pk": 824925,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T23:15:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Atlanta Braves",
           "home_team_id": 144,
           "away_team": "Boston Red Sox",
@@ -5506,7 +5506,7 @@
           "game_pk": 823629,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T23:15:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "New York Mets",
           "home_team_id": 121,
           "away_team": "New York Yankees",
@@ -5612,7 +5612,7 @@
           "game_pk": 824601,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-15T23:40:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Chicago White Sox",
           "home_team_id": 145,
           "away_team": "Chicago Cubs",
@@ -5627,9 +5627,9 @@
           "park_hr_factor": 1.08,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 66.7,
+          "weather_temp": 67.8,
           "weather_notes": [
-            "Wind OUT 9 mph (+4%)"
+            "Wind OUT 8 mph (+4%)"
           ],
           "park_runs_factor": 1.03,
           "nrfi_prob": 63.3,
@@ -5718,7 +5718,7 @@
           "game_pk": 824194,
           "date": "2026-05-15",
           "game_time_utc": "2026-05-16T00:10:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Houston Astros",
           "home_team_id": 117,
           "away_team": "Texas Rangers",
@@ -5841,17 +5841,17 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 76.9,
+          "weather_temp": 78.8,
           "weather_notes": [],
           "park_runs_factor": 0.95,
-          "nrfi_prob": 50.1,
+          "nrfi_prob": 49.9,
           "nrfi_meta": {
             "base": 50.1,
             "min_sample": 8,
             "p_top": 65.0,
             "p_bot": 77.0,
             "park_mult": 1.005,
-            "weather_adj": 0.0,
+            "weather_adj": -0.0016,
             "home_sp_rate": 0.5,
             "home_sp_sample": 8,
             "away_sp_rate": 0.875,
@@ -5892,14 +5892,14 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 9,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 10,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 3,
             "home_hits": 9,
             "home_errors": 0,
-            "away_runs": 3,
-            "away_hits": 6,
+            "away_runs": 4,
+            "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -5907,6 +5907,7 @@
               0,
               2,
               1,
+              0,
               0,
               0,
               0,
@@ -5921,7 +5922,8 @@
               1,
               0,
               0,
-              0
+              0,
+              1
             ],
             "scheduled_innings": 9
           }
@@ -5943,10 +5945,12 @@
           "away_pp_throws": "R",
           "venue": "Coors Field",
           "park_hr_factor": 1.15,
-          "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 71.8,
-          "weather_notes": [],
+          "weather_factor": 1.04,
+          "weather_wind": "out",
+          "weather_temp": 73.8,
+          "weather_notes": [
+            "Wind OUT 7 mph (+4%)"
+          ],
           "park_runs_factor": 1.15,
           "nrfi_prob": 55.1,
           "nrfi_meta": {
@@ -6052,7 +6056,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 62.2,
+          "weather_temp": 62.4,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 54.2,
@@ -6104,8 +6108,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 5,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 0,
@@ -6124,7 +6128,7 @@
               0,
               0,
               4,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -6203,16 +6207,17 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "current_inning": 6,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 0,
-            "home_hits": 2,
+            "home_hits": 3,
             "home_errors": 0,
             "away_runs": 1,
             "away_hits": 5,
             "away_errors": 0,
             "home_innings": [
+              0,
               0,
               0,
               0,
@@ -6224,7 +6229,8 @@
               0,
               0,
               1,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -6246,10 +6252,12 @@
           "away_pp_throws": "R",
           "venue": "Sutter Health Park",
           "park_hr_factor": 1.04,
-          "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 69.5,
-          "weather_notes": [],
+          "weather_factor": 1.04,
+          "weather_wind": "out",
+          "weather_temp": 68.8,
+          "weather_notes": [
+            "Wind OUT 7 mph (+4%)"
+          ],
           "park_runs_factor": 1.04,
           "nrfi_prob": 48.1,
           "nrfi_meta": {
@@ -6300,8 +6308,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 5,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 1,
             "home_hits": 4,
             "home_errors": 0,
@@ -10903,42 +10911,42 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 23.4
+        "age_hours": 23.5
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 21.1
+        "age_hours": 21.2
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 71.3
+        "age_hours": 71.4
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 20.0
+        "age_hours": 20.1
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 13.8
+        "age_hours": 13.9
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 13.4
+        "age_hours": 13.5
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
@@ -10952,7 +10960,7 @@
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 9.0
+        "age_hours": 9.1
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -10966,7 +10974,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 70.2
+        "age_hours": 70.3
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -10980,7 +10988,7 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 56.3
+        "age_hours": 56.4
       },
       {
         "name": "dashboard_url_2026-05-13.md",
@@ -10994,7 +11002,7 @@
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 75.4
+        "age_hours": 75.5
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -11036,7 +11044,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 52.5
+        "age_hours": 52.6
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -11050,7 +11058,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 87.1
+        "age_hours": 87.2
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -11113,7 +11121,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 96.9
+        "age_hours": 97.0
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -11127,28 +11135,28 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 19.3
+        "age_hours": 19.4
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 70.3
+        "age_hours": 70.4
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 62.6
+        "age_hours": 62.7
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 43964,
         "mtime": 1778824810.5034382,
-        "age_hours": 20.9
+        "age_hours": 21.0
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -11162,7 +11170,7 @@
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 47.4
+        "age_hours": 47.5
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -11232,7 +11240,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 95.9
+        "age_hours": 96.0
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -11281,7 +11289,7 @@
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 96.1
+        "age_hours": 96.2
       },
       {
         "name": "reference_sport_calendar.md",
@@ -11302,14 +11310,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 71.2
+        "age_hours": 71.3
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 101.2
+        "age_hours": 101.3
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -11323,7 +11331,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 71.9
+        "age_hours": 72.0
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -11337,14 +11345,14 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 47.4
+        "age_hours": 47.5
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 71.2
+        "age_hours": 71.3
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -11372,21 +11380,21 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 57.4
+        "age_hours": 57.5
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 63.7
+        "age_hours": 63.8
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 70.8
+        "age_hours": 70.9
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -11400,21 +11408,21 @@
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 64.0
+        "age_hours": 64.1
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 56.3
+        "age_hours": 56.4
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 55.2
+        "age_hours": 55.3
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
@@ -11459,7 +11467,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 3.1,
+        "age_hours": 3.2,
         "bytes": 717653,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T23:49:14.172773+00:00",
@@ -11511,7 +11519,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 3.5,
+        "age_hours": 3.6,
         "bytes": 39799,
         "row_count": 161,
         "last_refresh_iso": "2026-05-15T23:23:34.455090+00:00",
@@ -11524,7 +11532,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 29.8,
+        "age_hours": 29.9,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -11537,10 +11545,10 @@
         "status": "fresh",
         "latest_file": "wx_ATH_2026-05-16T01.json",
         "latest_date": "2026-05-16",
-        "age_hours": 1.0,
+        "age_hours": 0.0,
         "bytes": 213,
         "row_count": 28,
-        "last_refresh_iso": "2026-05-16T01:55:22.931924+00:00",
+        "last_refresh_iso": "2026-05-16T02:58:35.477933+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -16549,7 +16557,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-15 22:55 ET",
+  "built_at_et": "2026-05-15 22:58 ET",
   "counts": {
     "picks_total": 52,
     "settled": 27,
