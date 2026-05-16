@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-213435",
-  "generated_at": "2026-05-16T21:34:36.053156+00:00",
+  "build_id": "260516-213514",
+  "generated_at": "2026-05-16T21:35:14.553297+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3426,7 +3426,7 @@
       "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
     }
   ],
-  "built_at": "2026-05-16T21:34:36.053232+00:00",
+  "built_at": "2026-05-16T21:35:14.553367+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -9047,10 +9047,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-16 17:35",
-      "LastRun": "2026-05-16 17:30",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 17:40",
+      "LastRun": "2026-05-16 17:35",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -10075,7 +10075,7 @@
             "status_code": "I",
             "current_inning": 7,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 3,
             "home_hits": 10,
             "home_errors": 0,
@@ -10089,7 +10089,7 @@
               0,
               0,
               0,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -10280,7 +10280,7 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 0,
             "home_hits": 2,
             "home_errors": 1,
@@ -10292,7 +10292,7 @@
               0,
               0,
               0,
-              null
+              0
             ],
             "away_innings": [
               3,
@@ -10376,9 +10376,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 5,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 6,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 1,
             "home_hits": 5,
             "home_errors": 1,
@@ -10390,14 +10390,16 @@
               0,
               1,
               0,
-              0
+              0,
+              null
             ],
             "away_innings": [
               0,
               0,
               0,
               0,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -15790,7 +15792,7 @@
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 31.8
+        "age_hours": 31.9
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -16217,7 +16219,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 75.8
+        "age_hours": 75.9
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -16298,7 +16300,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 7.9,
+        "age_hours": 8.0,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -22704,7 +22706,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 17:34 ET",
+  "built_at_et": "2026-05-16 17:35 ET",
   "counts": {
     "picks_total": 146,
     "settled": 58,
