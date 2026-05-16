@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-043507",
-  "generated_at": "2026-05-16T04:35:07.360421+00:00",
+  "build_id": "260516-043701",
+  "generated_at": "2026-05-16T04:37:01.917150+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -1012,7 +1012,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-05-16T04:35:07.360437+00:00",
+  "built_at": "2026-05-16T04:37:01.917165+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -3914,10 +3914,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 00:40",
       "LastRun": "2026-05-16 00:35",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -10577,7 +10577,7 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 13.8
+        "age_hours": 13.9
       },
       {
         "name": "BettingOS_System_Bible.md",
@@ -10591,7 +10591,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 62.8
+        "age_hours": 62.9
       },
       {
         "name": "design_engine_v2.md",
@@ -10759,7 +10759,7 @@
         "tier": "learner",
         "bytes": 7830,
         "mtime": 1778901325.5106611,
-        "age_hours": 1.3
+        "age_hours": 1.4
       },
       {
         "name": "project_current_state.md",
@@ -10773,7 +10773,7 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 89.6
+        "age_hours": 89.7
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -10808,7 +10808,7 @@
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 21.8
+        "age_hours": 21.9
       },
       {
         "name": "reference_calibration_table.md",
@@ -10878,7 +10878,7 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 98.6
+        "age_hours": 98.7
       },
       {
         "name": "reference_runbook.md",
@@ -10955,14 +10955,14 @@
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 71.9
+        "age_hours": 72.0
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 72.1
+        "age_hours": 72.2
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
@@ -10997,7 +10997,7 @@
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 62.6
+        "age_hours": 62.7
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -11025,7 +11025,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 57.3
+        "age_hours": 57.4
       }
     ]
   },
@@ -11037,7 +11037,7 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 4.7,
+        "age_hours": 4.8,
         "bytes": 602720,
         "row_count": 50,
         "last_refresh_iso": "2026-05-15T23:50:39.673471+00:00",
@@ -11050,7 +11050,7 @@
         "status": "stale",
         "latest_file": "v2_form_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 15.0,
+        "age_hours": 15.1,
         "bytes": 342337,
         "row_count": null,
         "last_refresh_iso": "2026-05-15T13:32:20.902346+00:00",
@@ -11076,7 +11076,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 1.3,
+        "age_hours": 1.4,
         "bytes": 7558,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T03:15:04.660637+00:00",
@@ -11102,7 +11102,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-15.md",
         "latest_date": "2026-05-15",
-        "age_hours": 1.3,
+        "age_hours": 1.4,
         "bytes": 7830,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T03:15:25.510661+00:00",
@@ -15177,7 +15177,7 @@
     }
   ],
   "odds_api_usage": {
-    "month_used": 148,
+    "month_used": 8865,
     "day_used": 0,
     "last_remaining": 9135,
     "last_check": "2026-05-15T23:50:40.027481+00:00",
@@ -15188,26 +15188,22 @@
     "current_month": "2026-05",
     "today": "2026-05-16",
     "day_history": {
-      "2026-05-15": 148
+      "2026-05-15": 8865
     },
     "month_history": {
-      "2026-05": 148
+      "2026-05": 8865
     },
-    "pct_month_used": 0.8,
-    "pct_plan_used": 0.7,
-    "utilization_status": "under-utilized",
+    "pct_month_used": 49.2,
+    "pct_plan_used": 44.3,
+    "utilization_status": "healthy",
     "recommendations": [
-      "Expand engine to use 2-3x current rate \u2014 you're paying for capacity you're not using.",
-      "Enable NBA team markets (h2h, spreads, totals) \u2014 currently only player props pulled.",
-      "Pull NHL team markets \u2014 currently only player props.",
-      "Add a second daily scout-with-odds (~9:30 AM verify) so morning candidates reflect fresh odds, not yesterday's close.",
-      "Pull pre-close odds capture at 30\\15\\5 min before first pitch for CLV \u2014 costs ~3 credits per game but huge data value."
+      "Utilization on track \u2014 keep current schedule. Consider adding live-odds re-verify before each lock."
     ],
-    "avg_daily": 148.0,
+    "avg_daily": 8865.0,
     "days_in_month": 31,
     "days_left_in_month": 15,
-    "projected_month_end": 2368.0,
-    "projected_pct": 13.2
+    "projected_month_end": 141840.0,
+    "projected_pct": 788.0
   },
   "claude_code_usage": {
     "available": true,
@@ -16398,7 +16394,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 00:35 ET",
+  "built_at_et": "2026-05-16 00:37 ET",
   "counts": {
     "picks_total": 52,
     "settled": 42,
