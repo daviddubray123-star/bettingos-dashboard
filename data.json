@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-232953",
-  "generated_at": "2026-05-16T23:29:54.175806+00:00",
+  "build_id": "260516-233014",
+  "generated_at": "2026-05-16T23:30:14.888958+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
     }
   ],
-  "built_at": "2026-05-16T23:29:54.175885+00:00",
+  "built_at": "2026-05-16T23:30:14.889037+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -9848,10 +9848,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-16 19:30",
-      "LastRun": "2026-05-16 19:25",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 19:35",
+      "LastRun": "2026-05-16 19:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -9896,10 +9896,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Ready",
-      "NextRun": "2026-05-16 19:30",
-      "LastRun": "2026-05-16 19:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 20:00",
+      "LastRun": "2026-05-16 19:30",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -11585,8 +11585,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 2,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 0,
@@ -16835,7 +16835,7 @@
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 10.1
+        "age_hours": 10.2
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -17045,7 +17045,7 @@
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 90.8
+        "age_hours": 90.9
       },
       {
         "name": "v1_disabled_2026-05-13.md",
@@ -17087,7 +17087,7 @@
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 81.5
+        "age_hours": 81.6
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -17115,7 +17115,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 76.2
+        "age_hours": 76.3
       }
     ]
   },
@@ -17166,10 +17166,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.5,
-        "bytes": 3086,
+        "age_hours": 0.0,
+        "bytes": 3391,
         "row_count": null,
-        "last_refresh_iso": "2026-05-16T23:00:06.778411+00:00",
+        "last_refresh_iso": "2026-05-16T23:30:11.406737+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -20370,13 +20370,13 @@
   "changelog": [
     {
       "date": "2026-05-16",
-      "title": "Daily settle \u2014 2026-05-16 \u00b7 1 graded \u00b7 $+4.55 total P\\L",
+      "title": "Daily settle \u2014 2026-05-16 \u00b7 3 graded \u00b7 $-11.45 total P\\L",
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 1 picks (0 grading failures)",
-          "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
-          "PAPER: 1W-0L on $5.00 stake \u2192 P\\L $+4.55"
+          "graded 3 picks (0 grading failures)",
+          "LIVE: 0W-1L on $6.00 stake \u2192 P\\L $-6.00",
+          "PAPER: 1W-1L on $15.00 stake \u2192 P\\L $-5.45"
         ]
       },
       "_auto": true,
@@ -25890,7 +25890,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 19:29 ET",
+  "built_at_et": "2026-05-16 19:30 ET",
   "counts": {
     "picks_total": 159,
     "settled": 63,
