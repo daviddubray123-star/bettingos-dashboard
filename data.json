@@ -1,6 +1,6 @@
 {
-  "build_id": "260516-042508",
-  "generated_at": "2026-05-16T04:25:08.508102+00:00",
+  "build_id": "260516-042656",
+  "generated_at": "2026-05-16T04:26:56.807932+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -1012,7 +1012,79 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-05-16T04:25:08.508116+00:00",
+  "built_at": "2026-05-16T04:26:56.807949+00:00",
+  "lock_demote_watchlist": [
+    {
+      "strategy": "MLB Batter Hits Alt",
+      "tier": "LOCK",
+      "caveat_profile": [
+        "low_sample",
+        "phantom_baseline"
+      ],
+      "loss_count": 2,
+      "total_loss": -20.0,
+      "picks": [
+        "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -350 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] Troy Johnston O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Colorado Rockies)"
+      ],
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-05-15",
+      "severity": 20.0
+    },
+    {
+      "strategy": "MLB Batter Hits Alt",
+      "tier": "GOOD",
+      "caveat_profile": [
+        "low_sample",
+        "phantom_baseline"
+      ],
+      "loss_count": 3,
+      "total_loss": -15.0,
+      "picks": [
+        "[PAPER] Ketel Marte O0.5 HITS_ALT @ -500 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] Jake McCarthy O0.5 HITS_ALT @ -250 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] TJ Rumfield O1.5 HITS_ALT @ +155 (Arizona Diamondbacks @ Colorado Rockies)"
+      ],
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-05-15",
+      "severity": 15.0
+    },
+    {
+      "strategy": "MLB Batter Total Bases Alt",
+      "tier": "GOOD",
+      "caveat_profile": [
+        "low_sample",
+        "phantom_baseline"
+      ],
+      "loss_count": 3,
+      "total_loss": -12.5,
+      "picks": [
+        "[PAPER] TJ Rumfield O2.5 TOTAL_BASES_ALT @ +185 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] Troy Johnston O1.5 TOTAL_BASES_ALT @ -110 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] TJ Rumfield O1.5 TOTAL_BASES_ALT @ -125 (Arizona Diamondbacks @ Colorado Rockies)"
+      ],
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-05-15",
+      "severity": 12.5
+    },
+    {
+      "strategy": "MLB Batter RBIs Alt",
+      "tier": "GOOD",
+      "caveat_profile": [
+        "low_sample",
+        "phantom_baseline"
+      ],
+      "loss_count": 2,
+      "total_loss": -7.5,
+      "picks": [
+        "[PAPER] Troy Johnston O0.5 RBIS_ALT @ +140 (Arizona Diamondbacks @ Colorado Rockies)",
+        "[PAPER] TJ Rumfield O0.5 RBIS_ALT @ +125 (Arizona Diamondbacks @ Colorado Rockies)"
+      ],
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-05-15",
+      "severity": 7.5
+    }
+  ],
   "daily": [
     {
       "date": "2026-05-14 - Paper fire (19 picks $$122)",
@@ -3842,10 +3914,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 00:30",
       "LastRun": "2026-05-16 00:25",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -3892,8 +3964,8 @@
       "Name": "BettingOS - intraday-settle",
       "State": "Ready",
       "NextRun": "2026-05-16 13:00",
-      "LastRun": "2026-05-16 00:22",
-      "LastResult": 3221225786,
+      "LastRun": "2026-05-16 00:25",
+      "LastResult": 1,
       "WakeToRun": false
     },
     {
@@ -10449,21 +10521,21 @@
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 72.8
+        "age_hours": 72.9
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 21.5
+        "age_hours": 21.6
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 15.3
+        "age_hours": 15.4
       },
       {
         "name": "audit_round3_2026-05-15.md",
@@ -10484,7 +10556,7 @@
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 10.5
+        "age_hours": 10.6
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -10498,7 +10570,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 71.7
+        "age_hours": 71.8
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -10526,7 +10598,7 @@
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 76.9
+        "age_hours": 77.0
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -10568,7 +10640,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 54.0
+        "age_hours": 54.1
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -10582,7 +10654,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 88.6
+        "age_hours": 88.7
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -10645,7 +10717,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 98.4
+        "age_hours": 98.5
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -10659,7 +10731,7 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 20.8
+        "age_hours": 20.9
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
@@ -10764,7 +10836,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 97.4
+        "age_hours": 97.5
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -10813,7 +10885,7 @@
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 97.6
+        "age_hours": 97.7
       },
       {
         "name": "reference_sport_calendar.md",
@@ -10834,14 +10906,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 72.7
+        "age_hours": 72.8
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 102.7
+        "age_hours": 102.8
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -10855,7 +10927,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 73.4
+        "age_hours": 73.5
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -10869,7 +10941,7 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 48.9
+        "age_hours": 49.0
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
@@ -10904,14 +10976,14 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 58.9
+        "age_hours": 59.0
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 65.2
+        "age_hours": 65.3
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
@@ -10932,7 +11004,7 @@
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 65.5
+        "age_hours": 65.6
       },
       {
         "name": "v2_simplification_2026-05-13.md",
@@ -10946,7 +11018,7 @@
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 56.7
+        "age_hours": 56.8
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
@@ -11043,7 +11115,7 @@
         "status": "stale",
         "latest_file": "historical_hit_rates_2026-05-15.json",
         "latest_date": "2026-05-15",
-        "age_hours": 5.0,
+        "age_hours": 5.1,
         "bytes": 39799,
         "row_count": 161,
         "last_refresh_iso": "2026-05-15T23:23:34.455090+00:00",
@@ -16328,7 +16400,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 00:25 ET",
+  "built_at_et": "2026-05-16 00:26 ET",
   "counts": {
     "picks_total": 52,
     "settled": 42,
