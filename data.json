@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-190343",
-  "generated_at": "2026-05-17T19:03:43.592927+00:00",
+  "build_id": "260517-190518",
+  "generated_at": "2026-05-17T19:05:18.731102+00:00",
   "today": "2026-05-17",
   "yesterday": "2026-05-16",
   "bankroll": {
@@ -5801,7 +5801,7 @@
       "notes": "edge +13.5pp"
     }
   ],
-  "built_at": "2026-05-17T19:03:43.593030+00:00",
+  "built_at": "2026-05-17T19:05:18.731205+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -16949,10 +16949,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-17 15:05",
-      "LastRun": "2026-05-17 15:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-17 15:10",
+      "LastRun": "2026-05-17 15:05",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -17005,10 +17005,10 @@
     },
     {
       "Name": "BettingOS - late-slate-lock",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-18 15:00",
       "LastRun": "2026-05-17 15:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": true
     },
     {
@@ -17879,10 +17879,10 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 2,
             "home_hits": 5,
-            "home_errors": 0,
+            "home_errors": 1,
             "away_runs": 6,
             "away_hits": 7,
             "away_errors": 0,
@@ -17898,7 +17898,7 @@
               2,
               1,
               2,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -18378,7 +18378,7 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 6,
             "home_errors": 0,
@@ -18390,7 +18390,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -23700,14 +23700,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 53.5
+        "age_hours": 53.6
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 53.3
+        "age_hours": 53.4
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -23749,7 +23749,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 101.3
+        "age_hours": 101.4
       },
       {
         "name": "design_engine_v2.md",
@@ -23896,7 +23896,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 110.4
+        "age_hours": 110.5
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -23924,7 +23924,7 @@
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 13.0
+        "age_hours": 13.1
       },
       {
         "name": "project_current_state.md",
@@ -24113,7 +24113,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 111.3
+        "age_hours": 111.4
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -24134,7 +24134,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 97.3
+        "age_hours": 97.4
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -24155,7 +24155,7 @@
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 110.9
+        "age_hours": 111.0
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -24215,7 +24215,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 5.4,
+        "age_hours": 5.5,
         "bytes": 343271,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T13:38:03.300509+00:00",
@@ -24254,7 +24254,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 20539,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T19:01:42.649455+00:00",
@@ -24267,7 +24267,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 13.0,
+        "age_hours": 13.1,
         "bytes": 222200,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T06:01:24.764903+00:00",
@@ -36495,7 +36495,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-17 15:03 ET",
+  "built_at_et": "2026-05-17 15:05 ET",
   "counts": {
     "picks_total": 291,
     "settled": 86,
