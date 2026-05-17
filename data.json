@@ -1,23 +1,23 @@
 {
-  "build_id": "260517-024521",
-  "generated_at": "2026-05-17T02:45:22.589851+00:00",
+  "build_id": "260517-024559",
+  "generated_at": "2026-05-17T02:45:59.450402+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
-    "live": 154.4,
+    "live": 145.45,
     "paper": 463.28,
     "paper_peak": 500.0,
     "paper_drawdown_pct": 7.3440000000000065,
     "peak": 160.1,
-    "drawdown_pct": 3.560274828232348,
+    "drawdown_pct": 9.150530918176143,
     "live_start": 150.0,
     "paper_start": 500.0,
     "last_manual_correction": {
-      "ts": "2026-05-16T14:17:59.261176+00:00",
-      "old": 154.5,
-      "new": 154.4,
-      "delta": -0.1,
-      "pct_drift": 0.06,
+      "ts": "2026-05-17T02:45:42.599431+00:00",
+      "old": 145.5,
+      "new": 145.45,
+      "delta": -0.05,
+      "pct_drift": 0.03,
       "source": "tg_operator"
     }
   },
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T02:45:22.589991+00:00",
+  "built_at": "2026-05-17T02:45:59.450491+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -3876,7 +3876,7 @@
     },
     {
       "date": "2026-05-16 - retroactive settle 2026-05-13",
-      "bankroll_end": 148.1,
+      "bankroll_end": 145.45,
       "live_pl": -4.11,
       "live_w": 5,
       "live_l": 3,
@@ -13708,10 +13708,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 22:50",
       "LastRun": "2026-05-16 22:45",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -14417,7 +14417,7 @@
       },
       {
         "date": "2026-05-16",
-        "bankroll": 148.1
+        "bankroll": 145.45
       }
     ],
     "insufficient_data": false,
@@ -15908,8 +15908,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 5,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 3,
             "home_errors": 0,
@@ -16011,8 +16011,8 @@
             "home_runs": 0,
             "home_hits": 3,
             "home_errors": 0,
-            "away_runs": 3,
-            "away_hits": 6,
+            "away_runs": 5,
+            "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -16026,7 +16026,7 @@
               0,
               2,
               0,
-              null
+              2
             ],
             "scheduled_innings": 9
           }
@@ -20580,7 +20580,7 @@
         "tier": "learner",
         "bytes": 5287,
         "mtime": 1778985396.140942,
-        "age_hours": 0.1
+        "age_hours": 0.2
       },
       {
         "name": "audit_2026-05-12.md",
@@ -20839,7 +20839,7 @@
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 71.2
+        "age_hours": 71.3
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -21063,7 +21063,7 @@
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 94.6
+        "age_hours": 94.7
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -21084,7 +21084,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 80.1
+        "age_hours": 80.2
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -21188,7 +21188,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 12.2,
+        "age_hours": 12.3,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -21214,7 +21214,7 @@
         "status": "fresh",
         "latest_file": "wx_SEA_2026-05-16T23.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 217,
         "row_count": 33,
         "last_refresh_iso": "2026-05-17T02:30:30.176972+00:00",
@@ -31110,7 +31110,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 22:45 ET",
+  "built_at_et": "2026-05-16 22:46 ET",
   "counts": {
     "picks_total": 159,
     "settled": 83,
