@@ -1,15 +1,15 @@
 {
-  "build_id": "260517-022036",
-  "generated_at": "2026-05-17T02:20:51.465969+00:00",
+  "build_id": "260517-022327",
+  "generated_at": "2026-05-17T02:23:27.748459+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
     "live": 154.4,
-    "paper": 451.79,
+    "paper": 454.06,
     "paper_peak": 500.0,
-    "paper_drawdown_pct": 9.641999999999996,
-    "peak": 158.33,
-    "drawdown_pct": 2.4821575191056695,
+    "paper_drawdown_pct": 9.187999999999999,
+    "peak": 154.4,
+    "drawdown_pct": 0.0,
     "live_start": 150.0,
     "paper_start": 500.0,
     "last_manual_correction": {
@@ -334,8 +334,8 @@
       "odds": -106,
       "stake": 3,
       "stake_u": 1,
-      "result": "Won",
-      "pl": 2.83,
+      "result": "Lost",
+      "pl": -3,
       "tier": "GOOD",
       "strategy": "User Override (not from engine)",
       "date": "2026-05-16",
@@ -343,7 +343,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] CHW won (CHW 8, CHC 3). Net +$2.83 at -106."
+      "notes": "[CORRECTED 2026-05-16: parse_team bug \u2014 settled wrong side] CHW won (CHW 8, CHC 3). Bet was on CHC (lost). Net -$3.00 at -106."
     },
     {
       "id": "362315a3-aab3-814d-a2fd-c4284dc9fa6a",
@@ -885,8 +885,8 @@
       "odds": -110,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 2.27,
       "tier": "GOOD",
       "strategy": "MLB Run Line",
       "date": "2026-05-16",
@@ -894,7 +894,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
+      "notes": "[auto-confirmed] SD 7 vs opp 4 (spread +1.5, adj 8.5) -> COVERED. Net +$2.27 at -110."
     },
     {
       "id": "362315a3-aab3-817b-bd2a-fe40385a9166",
@@ -3205,8 +3205,8 @@
       "odds": -106,
       "stake": 3,
       "stake_u": 1,
-      "result": "Won",
-      "pl": 2.83,
+      "result": "Lost",
+      "pl": -3,
       "tier": "GOOD",
       "strategy": "User Override (not from engine)",
       "date": "2026-05-16",
@@ -3214,7 +3214,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] CHW won (CHW 8, CHC 3). Net +$2.83 at -106."
+      "notes": "[CORRECTED 2026-05-16: parse_team bug \u2014 settled wrong side] CHW won (CHW 8, CHC 3). Bet was on CHC (lost). Net -$3.00 at -106."
     },
     {
       "id": "362315a3-aab3-814d-a2fd-c4284dc9fa6a",
@@ -3357,8 +3357,8 @@
       "odds": -110,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Pending",
-      "pl": 0,
+      "result": "Won",
+      "pl": 2.27,
       "tier": "GOOD",
       "strategy": "MLB Run Line",
       "date": "2026-05-16",
@@ -3366,7 +3366,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed 2026-05-16 \u2014 operator placed]\nOperator-confirmed PAPER pick (morning slate 2026-05-16). Will settle tonight."
+      "notes": "[auto-confirmed] SD 7 vs opp 4 (spread +1.5, adj 8.5) -> COVERED. Net +$2.27 at -110."
     },
     {
       "id": "362315a3-aab3-817b-bd2a-fe40385a9166",
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T02:20:51.466323+00:00",
+  "built_at": "2026-05-17T02:23:27.748535+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -3876,11 +3876,11 @@
     },
     {
       "date": "2026-05-16 - retroactive settle 2026-05-13",
-      "bankroll_end": 146.33,
-      "live_pl": -5.88,
-      "live_w": 3,
-      "live_l": 2,
-      "paper_w": 12,
+      "bankroll_end": 140.5,
+      "live_pl": -11.71,
+      "live_w": 2,
+      "live_l": 3,
+      "paper_w": 13,
       "paper_l": 9,
       "grade": "B"
     }
@@ -3904,11 +3904,11 @@
     },
     {
       "date": "2026-05-16 - retroactive settle 2026-05-13",
-      "live_w": 3.0,
-      "live_l": 2.0,
-      "paper_w": 12.0,
+      "live_w": 2.0,
+      "live_l": 3.0,
+      "paper_w": 13.0,
       "paper_l": 9.0,
-      "live_pl": -5.88
+      "live_pl": -11.71
     }
   ],
   "cum_pl": [
@@ -3922,7 +3922,7 @@
     },
     {
       "date": "2026-05-16 - retroactive settle 2026-05-13",
-      "cum_pl": -3.67
+      "cum_pl": -9.5
     }
   ],
   "strategies": [
@@ -3960,19 +3960,19 @@
     },
     {
       "name": "MLB Run Line",
-      "picks": 2,
-      "won": 0,
+      "picks": 3,
+      "won": 1,
       "lost": 2,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
-      "l10_picks": 2,
-      "l10_won": 0,
+      "l10_picks": 3,
+      "l10_won": 1,
       "l10_lost": 2,
-      "l10_hit_rate": 0.0,
-      "l10_net": -11.5
+      "l10_hit_rate": 33.3,
+      "l10_net": -9.23
     },
     {
       "name": "MLB Pitcher Strikeouts",
@@ -4505,18 +4505,18 @@
     {
       "name": "User Override (not from engine)",
       "picks": 3,
-      "won": 2,
-      "lost": 1,
+      "won": 1,
+      "lost": 2,
       "hit_rate": 0,
       "net": 0,
       "roi": 0,
       "status": "ACTIVE",
       "last_fired": "",
       "l10_picks": 2,
-      "l10_won": 2,
-      "l10_lost": 0,
-      "l10_hit_rate": 100.0,
-      "l10_net": 4.45
+      "l10_won": 1,
+      "l10_lost": 1,
+      "l10_hit_rate": 50.0,
+      "l10_net": -1.38
     },
     {
       "name": "Underdog ML Cross-Sport Stack",
@@ -5000,6 +5000,303 @@
     }
   ],
   "journal": [
+    {
+      "title": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays) \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Jordan Walker O0.5 HITS_ALT @ -270 (Kansas City Royals @ St. \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[STRONG] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] ML ATL [BOS@ATL] @ -126 (Boston Red Sox @ Atlanta Braves) \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Masyn Winn O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. Lo \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Riley Greene O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ Detro \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Alec Burleson O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Vinnie Pasquantino O0.5 HITS_ALT @ -240 (Kansas City Royals  \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -260 (Kansas City Royals @ St.  \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Geraldo Perdomo O0.5 HITS_ALT @ -310 (Arizona Diamondbacks @ \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Corbin Carroll O1.5 HITS_ALT @ +130 (Arizona Diamondbacks @  \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Dillon Dingler O1.5 TOTAL_BASES_ALT @ +110 (Toronto Blue Jay \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Total Bases Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ketel Marte O1.5 HITS_ALT @ +115 (Arizona Diamondbacks @ Col \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Under 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Clevelan \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washin \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Over 8.5 [MIL@MIN] @ -110 (Milwaukee Brewers @ Minneso \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Over 8.5 [CHC@CHW] @ -110 (Chicago Cubs @ Chicago Whit \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ Seattle M \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Run Line.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Jordan Walker O1.5 TOTAL_BASES_ALT @ -120 (Kansas City Royal \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Total Bases Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Col \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Dillon Dingler O0.5 HITS_ALT @ -250 (Toronto Blue Jays @ Det \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[STRONG] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa  \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] ML ATL [BOS@ATL] @ -134 (Boston Red Sox @ Atl \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] Jordan Walker O0.5 HITS_ALT @ -270 (Kansas Ci \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[STRONG] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] Riley Greene O0.5 HITS_ALT @ -185 (Toronto Bl \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] User Override (not from engine).",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] ML CHC [CHC@CHW] @ -106 (Chicago Cubs @ Chica \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] User Override (not from engine).",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
     {
       "title": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays) \u2014 Lost",
       "date": "2026-05-16",
@@ -7322,13 +7619,13 @@
       "strategy_adj": ""
     },
     {
-      "title": "[NIGHT-SETTLE] 2026-05-16 \u2014 15W-11L net $-26.97",
+      "title": "[NIGHT-SETTLE] 2026-05-16 \u2014 15W-12L net $-30.53",
       "date": "2026-05-16",
       "type": "Daily Reflection",
       "outcome": "Lost",
-      "what_worked": "15 of 26 picks hit (57%). Biggest winner: [PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland Guardians) +$6.82. LIVE wins: 3 totaling +$6.12. PAPER wins: 12 totaling +$31.41.",
-      "what_failed": "11 losses totaling -$64.50. Biggest miss: [PAPER] ML ATL [BOS@ATL] @ -126 (Boston Red Sox @ Atlanta Braves) $-10.00. Parlay correlation hit us: 2 parlay(s) lost (when one leg dies, the parlay dies). LIVE losses: 2 totaling -$12.00 \u2014 review research depth.",
-      "lessons": "Hit rate 58% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Repeat losses on: MLB Moneyline (4), MLB Total Runs (2), MLB Batter Hits Alt (3), MLB Batter Total Bases Alt (2). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (10), MLB Total Runs (3).",
+      "what_worked": "15 of 27 picks hit (55%). Biggest winner: [PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland Guardians) +$6.82. LIVE wins: 2 totaling +$3.29. PAPER wins: 13 totaling +$33.68.",
+      "what_failed": "12 losses totaling -$67.50. Biggest miss: [PAPER] ML ATL [BOS@ATL] @ -126 (Boston Red Sox @ Atlanta Braves) $-10.00. Parlay correlation hit us: 2 parlay(s) lost (when one leg dies, the parlay dies). LIVE losses: 3 totaling -$15.00 \u2014 review research depth.",
+      "lessons": "Hit rate 56% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Repeat losses on: MLB Moneyline (4), MLB Batter Hits Alt (3), MLB Batter Total Bases Alt (2), MLB Total Runs (2). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (10), MLB Total Runs (3).",
       "calibration_delta": null,
       "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears."
     },
@@ -10933,17 +11230,17 @@
   "sport_roi": [
     {
       "label": "MLB",
-      "roi": -12.695460663159185,
-      "n": 74,
-      "pl": -51.88000000000001
+      "roi": -13.484129879605986,
+      "n": 75,
+      "pl": -55.44000000000001
     }
   ],
   "tier_roi": [
     {
       "label": "GOOD",
-      "roi": -5.780885780885782,
-      "n": 47,
-      "pl": -12.400000000000002
+      "roi": -7.354838709677419,
+      "n": 48,
+      "pl": -15.96
     },
     {
       "label": "STRONG",
@@ -10967,7 +11264,7 @@
   "calib_pairs": [
     {
       "prob": 0.5145631067961165,
-      "outcome": 1,
+      "outcome": 0,
       "strategy": "User Override (not from engine)",
       "pick": "[LIVE-PENDING] ML CHC [CHC@CHW] @ -106 ("
     },
@@ -11000,6 +11297,12 @@
       "outcome": 0,
       "strategy": "MLB Batter Total Bases Alt",
       "pick": "[PAPER] Jordan Walker O1.5 TOTAL_BASES_A"
+    },
+    {
+      "prob": 0.5238095238095238,
+      "outcome": 1,
+      "strategy": "MLB Run Line",
+      "pick": "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 ("
     },
     {
       "prob": 0.5238095238095238,
@@ -11504,11 +11807,11 @@
     {
       "low": 50,
       "high": 55,
-      "n": 16,
+      "n": 17,
       "wins": 9,
       "predicted_mid": 52.5,
-      "actual_hit": 56.25,
-      "delta": 3.75
+      "actual_hit": 52.94117647058824,
+      "delta": 0.44117647058823906
     },
     {
       "low": 55,
@@ -11622,6 +11925,13 @@
       "delta": -11.703752606928028
     },
     {
+      "strategy": "MLB Run Line",
+      "n": 3,
+      "predicted_avg": 50.35273368606702,
+      "actual_hit": 33.33333333333333,
+      "delta": -17.01940035273369
+    },
+    {
       "strategy": "MLB Batter RBIs Alt",
       "n": 3,
       "predicted_avg": 42.88810086682427,
@@ -11639,15 +11949,8 @@
       "strategy": "User Override (not from engine)",
       "n": 2,
       "predicted_avg": 58.184295690683015,
-      "actual_hit": 100.0,
-      "delta": 41.815704309316985
-    },
-    {
-      "strategy": "MLB Run Line",
-      "n": 2,
-      "predicted_avg": 49.338624338624335,
-      "actual_hit": 0.0,
-      "delta": -49.338624338624335
+      "actual_hit": 50.0,
+      "delta": -8.184295690683015
     },
     {
       "strategy": "Stable Edge Parlay",
@@ -11671,7 +11974,140 @@
   },
   "wts_tasks": [
     {
-      "error": "Command '['powershell', '-NoProfile', '-NonInteractive', '-Command', 'Get-ScheduledTask -TaskName \"BettingOS*\" -ErrorAction SilentlyContinue | ForEach-Object {   $info = Get-ScheduledTaskInfo $_;   [PSCustomObject]@{     Name = $_.TaskName;     State = $_.State.ToString();     NextRun = if ($info.NextRunTime) { $info.NextRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastRun = if ($info.LastRunTime) { $info.LastRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastResult = $info.LastTaskResult;     WakeToRun = $_.Settings.WakeToRun   } } | ConvertTo-Json -Compress']' timed out after 15 seconds"
+      "Name": "BettingOS - ai-learner-weekly",
+      "State": "Ready",
+      "NextRun": "2026-05-17 03:00",
+      "LastRun": "1999-11-30 00:00",
+      "LastResult": 267011,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - bankroll-check",
+      "State": "Ready",
+      "NextRun": "2026-05-17 08:30",
+      "LastRun": "2026-05-16 08:30",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - clv-capture",
+      "State": "Ready",
+      "NextRun": "",
+      "LastRun": "2026-05-16 18:30",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - dashboard-refresh",
+      "State": "Ready",
+      "NextRun": "2026-05-16 22:25",
+      "LastRun": "2026-05-16 22:20",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - eod-reconcile",
+      "State": "Ready",
+      "NextRun": "2026-05-16 23:55",
+      "LastRun": "2026-05-15 23:55",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - evening-scout",
+      "State": "Ready",
+      "NextRun": "2026-05-17 16:30",
+      "LastRun": "2026-05-16 16:30",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - evening-verify-and-fire",
+      "State": "Ready",
+      "NextRun": "2026-05-17 17:30",
+      "LastRun": "2026-05-16 17:30",
+      "LastResult": 1,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - form-discovery",
+      "State": "Ready",
+      "NextRun": "2026-05-17 09:30",
+      "LastRun": "2026-05-16 09:30",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - health-check",
+      "State": "Ready",
+      "NextRun": "2026-05-17 01:00",
+      "LastRun": "2026-05-16 01:42",
+      "LastResult": 0,
+      "WakeToRun": true
+    },
+    {
+      "Name": "BettingOS - intraday-settle",
+      "State": "Ready",
+      "NextRun": "2026-05-16 22:30",
+      "LastRun": "2026-05-16 22:00",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - late-slate-lock",
+      "State": "Ready",
+      "NextRun": "2026-05-17 15:00",
+      "LastRun": "2026-05-16 15:00",
+      "LastResult": 0,
+      "WakeToRun": true
+    },
+    {
+      "Name": "BettingOS - morning-recap",
+      "State": "Ready",
+      "NextRun": "2026-05-17 06:00",
+      "LastRun": "2026-05-16 06:00",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - morning-scout",
+      "State": "Ready",
+      "NextRun": "2026-05-17 10:30",
+      "LastRun": "2026-05-16 10:30",
+      "LastResult": 267014,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - night-settle",
+      "State": "Ready",
+      "NextRun": "2026-05-17 02:00",
+      "LastRun": "2026-05-16 02:00",
+      "LastResult": 0,
+      "WakeToRun": true
+    },
+    {
+      "Name": "BettingOS - odds-api-monitor",
+      "State": "Ready",
+      "NextRun": "2026-05-17 06:00",
+      "LastRun": "2026-05-16 22:00",
+      "LastResult": 1,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - tg-listener",
+      "State": "Ready",
+      "NextRun": "2026-05-17 00:01",
+      "LastRun": "2026-05-16 00:01",
+      "LastResult": 0,
+      "WakeToRun": false
+    },
+    {
+      "Name": "BettingOS - verify-and-fire",
+      "State": "Ready",
+      "NextRun": "2026-05-17 11:30",
+      "LastRun": "2026-05-16 11:30",
+      "LastResult": 1,
+      "WakeToRun": false
     }
   ],
   "log_completes": {
@@ -11704,21 +12140,11 @@
     }
   },
   "perf_panel": {
-    "total_settled": 74,
-    "total_stake": 408.65,
-    "total_net_pl": -51.88,
-    "total_roi_pct": -12.7,
+    "total_settled": 75,
+    "total_stake": 411.15,
+    "total_net_pl": -55.44,
+    "total_roi_pct": -13.5,
     "by_strategy": [
-      {
-        "name": "User Override (not from engine)",
-        "n": 2,
-        "won": 2,
-        "lost": 0,
-        "stake": 6.0,
-        "pl": 4.45,
-        "hit_rate": 100.0,
-        "roi_pct": 74.2
-      },
       {
         "name": "MLB Total Runs",
         "n": 9,
@@ -11770,6 +12196,16 @@
         "roi_pct": -22.7
       },
       {
+        "name": "User Override (not from engine)",
+        "n": 2,
+        "won": 1,
+        "lost": 1,
+        "stake": 6.0,
+        "pl": -1.38,
+        "hit_rate": 50.0,
+        "roi_pct": -23.0
+      },
+      {
         "name": "MLB Moneyline",
         "n": 8,
         "won": 4,
@@ -11780,6 +12216,16 @@
         "roi_pct": -28.6
       },
       {
+        "name": "MLB Run Line",
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "stake": 14.0,
+        "pl": -9.23,
+        "hit_rate": 33.3,
+        "roi_pct": -65.9
+      },
+      {
         "name": "Stable Edge Parlay",
         "n": 1,
         "won": 0,
@@ -11788,28 +12234,18 @@
         "pl": -3.0,
         "hit_rate": 0.0,
         "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Run Line",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 11.5,
-        "pl": -11.5,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
       }
     ],
     "by_sport": [
       {
         "name": "MLB",
-        "n": 74,
+        "n": 75,
         "won": 38,
-        "lost": 36,
-        "stake": 408.65,
-        "pl": -51.88,
-        "hit_rate": 51.4,
-        "roi_pct": -12.7
+        "lost": 37,
+        "stake": 411.15,
+        "pl": -55.44,
+        "hit_rate": 50.7,
+        "roi_pct": -13.5
       }
     ],
     "by_tier": [
@@ -11825,13 +12261,13 @@
       },
       {
         "name": "GOOD",
-        "n": 47,
+        "n": 48,
         "won": 27,
-        "lost": 20,
-        "stake": 214.5,
-        "pl": -12.4,
-        "hit_rate": 57.4,
-        "roi_pct": -5.8
+        "lost": 21,
+        "stake": 217.0,
+        "pl": -15.96,
+        "hit_rate": 56.2,
+        "roi_pct": -7.4
       },
       {
         "name": "WATCH",
@@ -11855,16 +12291,6 @@
       }
     ],
     "what_worked": [
-      {
-        "name": "User Override (not from engine)",
-        "n": 2,
-        "won": 2,
-        "lost": 0,
-        "stake": 6.0,
-        "pl": 4.45,
-        "hit_rate": 100.0,
-        "roi_pct": 74.2
-      },
       {
         "name": "MLB Total Runs",
         "n": 9,
@@ -11918,6 +12344,16 @@
         "roi_pct": -22.7
       },
       {
+        "name": "User Override (not from engine)",
+        "n": 2,
+        "won": 1,
+        "lost": 1,
+        "stake": 6.0,
+        "pl": -1.38,
+        "hit_rate": 50.0,
+        "roi_pct": -23.0
+      },
+      {
         "name": "MLB Moneyline",
         "n": 8,
         "won": 4,
@@ -11928,22 +12364,22 @@
         "roi_pct": -28.6
       },
       {
+        "name": "MLB Run Line",
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "stake": 14.0,
+        "pl": -9.23,
+        "hit_rate": 33.3,
+        "roi_pct": -65.9
+      },
+      {
         "name": "Stable Edge Parlay",
         "n": 1,
         "won": 0,
         "lost": 1,
         "stake": 3.0,
         "pl": -3.0,
-        "hit_rate": 0.0,
-        "roi_pct": -100.0
-      },
-      {
-        "name": "MLB Run Line",
-        "n": 2,
-        "won": 0,
-        "lost": 2,
-        "stake": 11.5,
-        "pl": -11.5,
         "hit_rate": 0.0,
         "roi_pct": -100.0
       }
@@ -11957,15 +12393,15 @@
         "dow": "Saturday",
         "short": "05\\16",
         "n_total": 107,
-        "n_settled": 26,
+        "n_settled": 27,
         "n_live": 24,
         "n_paper": 83,
         "won": 15,
-        "lost": 11,
+        "lost": 12,
         "push": 0,
-        "hit_rate": 57.7,
-        "stake": 130.0,
-        "pl": -26.97,
+        "hit_rate": 55.6,
+        "stake": 132.5,
+        "pl": -30.53,
         "top_pick": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland Guardians)",
         "top_pl": 6.82,
         "bot_pick": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays)",
@@ -12206,15 +12642,15 @@
         "dow": "Saturday",
         "short": "05\\16",
         "n_total": 107,
-        "n_settled": 26,
+        "n_settled": 27,
         "n_live": 24,
         "n_paper": 83,
         "won": 15,
-        "lost": 11,
+        "lost": 12,
         "push": 0,
-        "hit_rate": 57.7,
-        "stake": 130.0,
-        "pl": -26.97,
+        "hit_rate": 55.6,
+        "stake": 132.5,
+        "pl": -30.53,
         "top_pick": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland Guardians)",
         "top_pl": 6.82,
         "bot_pick": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays)",
@@ -12222,13 +12658,13 @@
       }
     ],
     "total_picks": 159,
-    "total_settled": 74,
+    "total_settled": 75,
     "total_won": 38,
-    "total_lost": 36,
-    "total_stake": 408.65,
-    "total_pl": -51.88,
-    "hit_rate": 51.4,
-    "roi_pct": -12.7,
+    "total_lost": 37,
+    "total_stake": 411.15,
+    "total_pl": -55.44,
+    "hit_rate": 50.7,
+    "roi_pct": -13.5,
     "live_count": 32,
     "paper_count": 127,
     "best_day": {
@@ -12237,7 +12673,7 @@
     },
     "worst_day": {
       "date": "2026-05-16",
-      "pl": -26.97
+      "pl": -30.53
     },
     "sport_dist": [
       {
@@ -12272,7 +12708,7 @@
       },
       {
         "date": "2026-05-16",
-        "bankroll": 146.33
+        "bankroll": 140.5
       }
     ],
     "insufficient_data": false,
@@ -12282,21 +12718,21 @@
   "live_paper_split": {
     "live": {
       "n": 9,
-      "won": 5,
-      "lost": 4,
+      "won": 4,
+      "lost": 5,
       "stake": 39.0,
-      "pl": -3.67,
-      "hit_rate": 55.6,
-      "roi_pct": -9.4
+      "pl": -9.5,
+      "hit_rate": 44.4,
+      "roi_pct": -24.4
     },
     "paper": {
-      "n": 65,
-      "won": 33,
+      "n": 66,
+      "won": 34,
       "lost": 32,
-      "stake": 369.65,
-      "pl": -48.21,
-      "hit_rate": 50.8,
-      "roi_pct": -13.0
+      "stake": 372.15,
+      "pl": -45.94,
+      "hit_rate": 51.5,
+      "roi_pct": -12.3
     }
   },
   "wellness": {
@@ -13660,7 +14096,7 @@
             "status_code": "I",
             "current_inning": 8,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 6,
             "home_hits": 8,
             "home_errors": 1,
@@ -13675,7 +14111,7 @@
               2,
               0,
               1,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -13761,8 +14197,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 3,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 2,
             "home_errors": 0,
@@ -18237,25 +18673,25 @@
     "live": {
       "total_picks": 32,
       "settled_picks": 9,
-      "won": 5,
-      "lost": 4,
+      "won": 4,
+      "lost": 5,
       "push": 0,
-      "win_rate_pct": 55.6,
-      "total_pl": -3.67,
+      "win_rate_pct": 44.4,
+      "total_pl": -9.5,
       "max_drawdown": -12.0,
-      "expectancy_per_pick": -0.11,
-      "streak": "W3"
+      "expectancy_per_pick": -0.3,
+      "streak": "L1"
     },
     "paper": {
       "total_picks": 127,
-      "settled_picks": 65,
-      "won": 33,
+      "settled_picks": 66,
+      "won": 34,
       "lost": 32,
       "push": 0,
-      "win_rate_pct": 50.8,
-      "total_pl": -48.21,
-      "max_drawdown": -48.21,
-      "expectancy_per_pick": -0.38,
+      "win_rate_pct": 51.5,
+      "total_pl": -45.94,
+      "max_drawdown": -45.94,
+      "expectancy_per_pick": -0.36,
       "streak": "W1"
     }
   },
@@ -18263,19 +18699,19 @@
     "live": {
       "bankroll": {
         "start": 150.0,
-        "current": 146.33,
-        "peak": 158.33,
+        "current": 140.5,
+        "peak": 152.5,
         "peak_date": "2026-05-16",
         "drawdown_dollars": 12.0,
-        "drawdown_pct": 7.6,
+        "drawdown_pct": 7.9,
         "max_drawdown_dollars": 12.0,
-        "max_drawdown_pct": 7.6
+        "max_drawdown_pct": 7.9
       },
       "today": {
         "stake_committed": 112.5,
         "daily_cap": 15.0,
         "cap_pct_used": 750.0,
-        "daily_pl": -5.88,
+        "daily_pl": -11.71,
         "picks_fired": 24,
         "picks_pending": 0
       },
@@ -18287,51 +18723,51 @@
         "max_single_allowed_pct": 10.0
       },
       "breakers": {
-        "hard_stop_status": "OK",
+        "hard_stop_status": "WARN",
         "hard_stop_threshold": -15.0,
-        "hard_stop_distance": 9.12,
+        "hard_stop_distance": 3.29,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 25.0,
-        "drawdown_breaker_at_bankroll": 118.75
+        "drawdown_breaker_at_bankroll": 114.38
       },
       "sizing": {
         "avg_stake": 4.64,
-        "avg_stake_pct_bankroll": 3.17,
+        "avg_stake_pct_bankroll": 3.3,
         "per_pick_max_dollars": 6.0,
         "oversize_picks_count": 0,
         "unit_size": 3.0
       },
       "streaks": {
-        "current": "W3",
-        "current_n": 3,
-        "longest_winning": 5,
+        "current": "L1",
+        "current_n": 1,
+        "longest_winning": 2,
         "longest_losing": 2
       },
-      "roi_pct": -9.41,
+      "roi_pct": -24.36,
       "total_settled": 9
     },
     "paper": {
       "bankroll": {
         "start": 500.0,
-        "current": 451.79,
+        "current": 454.06,
         "peak": 500.0,
         "peak_date": "2026-05-16",
-        "drawdown_dollars": 48.21,
-        "drawdown_pct": 9.6,
-        "max_drawdown_dollars": 48.21,
-        "max_drawdown_pct": 9.6
+        "drawdown_dollars": 45.94,
+        "drawdown_pct": 9.2,
+        "max_drawdown_dollars": 45.94,
+        "max_drawdown_pct": 9.2
       },
       "today": {
         "stake_committed": 442.5,
         "daily_cap": 150.0,
         "cap_pct_used": 295.0,
-        "daily_pl": -21.09,
+        "daily_pl": -18.82,
         "picks_fired": 83,
-        "picks_pending": 4
+        "picks_pending": 3
       },
       "exposure": {
-        "pending_stake": 17.5,
-        "pending_count": 4,
+        "pending_stake": 15.0,
+        "pending_count": 3,
         "max_single_event_stake": 7.5,
         "max_single_event_pct": 1.7,
         "max_single_allowed_pct": 5.0
@@ -18339,14 +18775,14 @@
       "breakers": {
         "hard_stop_status": "OK",
         "hard_stop_threshold": -50.0,
-        "hard_stop_distance": 28.91,
+        "hard_stop_distance": 31.18,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 30.0,
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
         "avg_stake": 5.55,
-        "avg_stake_pct_bankroll": 1.23,
+        "avg_stake_pct_bankroll": 1.22,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
@@ -18357,8 +18793,8 @@
         "longest_winning": 5,
         "longest_losing": 3
       },
-      "roi_pct": -13.04,
-      "total_settled": 65
+      "roi_pct": -12.34,
+      "total_settled": 66
     },
     "config": {
       "LIVE": {
@@ -18411,21 +18847,21 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 46.8
+        "age_hours": 46.9
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 44.5
+        "age_hours": 44.6
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
-        "bytes": 4889,
-        "mtime": 1778983304.3893313,
-        "age_hours": 0.3
+        "bytes": 4890,
+        "mtime": 1778984594.7422178,
+        "age_hours": 0.0
       },
       {
         "name": "audit_2026-05-12.md",
@@ -18453,14 +18889,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 36.8
+        "age_hours": 36.9
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 36.6
+        "age_hours": 36.7
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -18495,14 +18931,14 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 79.7
+        "age_hours": 79.8
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 84.6
+        "age_hours": 84.7
       },
       {
         "name": "design_engine_v2.md",
@@ -18565,7 +19001,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 110.5
+        "age_hours": 110.6
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -18649,14 +19085,14 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 93.7
+        "age_hours": 93.8
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 86.0
+        "age_hours": 86.1
       },
       {
         "name": "learning_journal_2026-05-14.md",
@@ -18670,21 +19106,21 @@
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 12.8
+        "age_hours": 12.9
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
-        "bytes": 95531,
-        "mtime": 1778983283.6142783,
-        "age_hours": 0.3
+        "bytes": 107615,
+        "mtime": 1778984581.7435484,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 70.8
+        "age_hours": 70.9
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -18866,7 +19302,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 94.6
+        "age_hours": 94.7
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -18887,7 +19323,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 80.6
+        "age_hours": 80.7
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -18901,14 +19337,14 @@
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 87.1
+        "age_hours": 87.2
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 94.2
+        "age_hours": 94.3
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -18929,7 +19365,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 79.7
+        "age_hours": 79.8
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -18955,7 +19391,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 4.6,
+        "age_hours": 4.7,
         "bytes": 580158,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T21:43:48.889737+00:00",
@@ -18968,7 +19404,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 12.7,
+        "age_hours": 12.8,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -18981,7 +19417,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 4.7,
+        "age_hours": 4.8,
         "bytes": 1000406,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:37:50.473900+00:00",
@@ -18994,10 +19430,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
-        "bytes": 2117,
+        "age_hours": 0.0,
+        "bytes": 763,
         "row_count": null,
-        "last_refresh_iso": "2026-05-17T02:00:12.477076+00:00",
+        "last_refresh_iso": "2026-05-17T02:21:47.624036+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -19020,10 +19456,10 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
-        "bytes": 95531,
+        "age_hours": 0.0,
+        "bytes": 107615,
         "row_count": null,
-        "last_refresh_iso": "2026-05-17T02:01:23.614278+00:00",
+        "last_refresh_iso": "2026-05-17T02:23:01.743548+00:00",
         "issue": null,
         "min_bytes": 200,
         "min_count": null
@@ -19033,7 +19469,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 11.8,
+        "age_hours": 11.9,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -19046,7 +19482,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 53.2,
+        "age_hours": 53.3,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -21590,7 +22026,7 @@
     "daily_brief": "24 picks across 7 games today. Tier mix: 3 LOCK, 5 STRONG, 6 GOOD, 10 WATCH. Market mix: 16\u00d7 PROP, 5\u00d7 TOTAL, 3\u00d7 ML. \u26a0 Caveats: 16 picks on phantom baseline (no real history); 17 picks with thin n<20 sample."
   },
   "lens_backtest": {
-    "generated_at": "2026-05-17T02:01:25.266752Z",
+    "generated_at": "2026-05-17T02:23:03.027608Z",
     "phase": 1,
     "today": "2026-05-16",
     "lens_weights": {
@@ -21973,7 +22409,7 @@
       {
         "date": "2026-05-16",
         "status": "ok",
-        "settled_total": 26,
+        "settled_total": 27,
         "matched": 6,
         "by_edge": {
           "top5": {
@@ -21987,30 +22423,30 @@
           },
           "top10": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           },
           "top25": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           },
           "all": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           }
         },
         "by_lens": {
@@ -22025,30 +22461,30 @@
           },
           "top10": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           },
           "top25": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           },
           "all": {
             "n": 6,
-            "W": 4,
-            "L": 2,
+            "W": 3,
+            "L": 3,
             "P": 0,
             "stake": 28.0,
-            "net": 6.47,
-            "roi_pct": 23.11
+            "net": 0.64,
+            "roi_pct": 2.29
           }
         },
         "movers": [
@@ -22057,8 +22493,18 @@
             "edge": 3.12,
             "lens": 3.12,
             "delta": 0.0,
+            "result": "Lost",
+            "net": -3.0,
+            "form_adj": 0,
+            "situ_adj": 0
+          },
+          {
+            "pick": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ C",
+            "edge": 4.9,
+            "lens": 4.9,
+            "delta": 0.0,
             "result": "Won",
-            "net": 2.83,
+            "net": 6.82,
             "form_adj": 0,
             "situ_adj": 0
           },
@@ -22079,16 +22525,6 @@
             "delta": 0.0,
             "result": "Lost",
             "net": -5.0,
-            "form_adj": 0,
-            "situ_adj": 0
-          },
-          {
-            "pick": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ C",
-            "edge": 4.9,
-            "lens": 4.9,
-            "delta": 0.0,
-            "result": "Won",
-            "net": 6.82,
             "form_adj": 0,
             "situ_adj": 0
           },
@@ -22137,58 +22573,58 @@
       },
       "top10": {
         "edge": {
-          "W": 15,
-          "L": 11,
+          "W": 14,
+          "L": 12,
           "P": 0,
           "stake": 188.65,
-          "net": -2.3100000000000014,
-          "roi_pct": -1.22
+          "net": -8.14,
+          "roi_pct": -4.31
         },
         "lens": {
-          "W": 15,
-          "L": 11,
+          "W": 14,
+          "L": 12,
           "P": 0,
           "stake": 165.5,
-          "net": 16.09,
-          "roi_pct": 9.72
+          "net": 10.26,
+          "roi_pct": 6.2
         },
-        "delta_roi_pp": 10.95
+        "delta_roi_pp": 10.51
       },
       "top25": {
         "edge": {
-          "W": 25,
-          "L": 25,
+          "W": 24,
+          "L": 26,
           "P": 0,
           "stake": 288.65,
-          "net": -17.79,
-          "roi_pct": -6.16
+          "net": -23.619999999999997,
+          "roi_pct": -8.18
         },
         "lens": {
-          "W": 25,
-          "L": 25,
+          "W": 24,
+          "L": 26,
           "P": 0,
           "stake": 288.65,
-          "net": -17.79,
-          "roi_pct": -6.16
+          "net": -23.619999999999997,
+          "roi_pct": -8.18
         },
         "delta_roi_pp": 0.0
       },
       "all": {
         "edge": {
-          "W": 25,
-          "L": 25,
+          "W": 24,
+          "L": 26,
           "P": 0,
           "stake": 288.65,
-          "net": -17.79,
-          "roi_pct": -6.16
+          "net": -23.619999999999997,
+          "roi_pct": -8.18
         },
         "lens": {
-          "W": 25,
-          "L": 25,
+          "W": 24,
+          "L": 26,
           "P": 0,
           "stake": 288.65,
-          "net": -17.79,
-          "roi_pct": -6.16
+          "net": -23.619999999999997,
+          "roi_pct": -8.18
         },
         "delta_roi_pp": 0.0
       }
@@ -22335,20 +22771,6 @@
         "stake": 7.5,
         "odds": -110,
         "tier": "STRONG",
-        "edge": null,
-        "form_adj": 0,
-        "situ_adj": 0,
-        "lens_score": null,
-        "lens_verdict": "no scout data",
-        "matched": false
-      },
-      {
-        "pick": "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ Seattle Mariners)",
-        "account": "PAPER",
-        "result": "Pending",
-        "stake": 2.5,
-        "odds": -110,
-        "tier": "GOOD",
         "edge": null,
         "form_adj": 0,
         "situ_adj": 0,
@@ -22750,9 +23172,9 @@
   "ai_learner_reports": {
     "latest": {
       "date": "2026-05-16",
-      "generated_at": "2026-05-17T02:01:44.388189+00:00",
+      "generated_at": "2026-05-17T02:23:14.751154+00:00",
       "since_date": null,
-      "total_settled_picks": 182,
+      "total_settled_picks": 184,
       "enriched_count": 37,
       "factor_perf": {
         "statcast": {
@@ -22893,6 +23315,16 @@
             "hit_rate": 27.3,
             "roi": -11.4
           },
+          "MLB Run Line": {
+            "n": 6,
+            "won": 2,
+            "lost": 4,
+            "push": 0,
+            "stake": 28.0,
+            "pl": -9.23,
+            "hit_rate": 33.3,
+            "roi": -33.0
+          },
           "MLB Moneyline": {
             "n": 16,
             "won": 8,
@@ -22912,16 +23344,6 @@
             "pl": -0.75,
             "hit_rate": 33.3,
             "roi": -3.0
-          },
-          "MLB Run Line": {
-            "n": 4,
-            "won": 0,
-            "lost": 4,
-            "push": 0,
-            "stake": 23.0,
-            "pl": -11.5,
-            "hit_rate": 0.0,
-            "roi": -50.0
           },
           "MLB Pitcher Strikeouts": {
             "n": 6,
@@ -22979,15 +23401,15 @@
       },
       "tier_perf": {
         "GOOD": {
-          "n": 80,
+          "n": 82,
           "won": 46,
-          "lost": 34,
-          "stake": 359.0,
-          "pl": -9.21,
-          "hit_rate": 57.5,
-          "roi": -2.6,
+          "lost": 36,
+          "stake": 364.0,
+          "pl": -12.77,
+          "hit_rate": 56.1,
+          "roi": -3.5,
           "expected_hr": 55,
-          "delta_hr": 2.5
+          "delta_hr": 1.1
         },
         "STRONG": {
           "n": 32,
@@ -23237,10 +23659,10 @@
       ],
       "knowledge_index": {
         "data_sources_read": [
-          "Notion Picks DB (182 settled picks)",
+          "Notion Picks DB (184 settled picks)",
           "Scout caches (37 picks enriched)",
-          "Settled archives (147 picks)",
-          "Journal postmortems (554 entries)",
+          "Settled archives (148 picks)",
+          "Journal postmortems (581 entries)",
           "CLV history (avg 0.0%)"
         ],
         "guardrails_active": [
@@ -23276,14 +23698,14 @@
           0.0
         ]
       },
-      "postmortem_count": 554,
-      "archive_picks_count": 147
+      "postmortem_count": 581,
+      "archive_picks_count": 148
     },
     "history": [
       {
         "date": "2026-05-16",
-        "settled": 182,
-        "postmortems": 554,
+        "settled": 184,
+        "postmortems": 581,
         "recs_high": 7,
         "recs_med": 2,
         "recs_low": 2,
@@ -23311,12 +23733,12 @@
         "filename": "v2_ai_learner_2026-05-14.json"
       }
     ],
-    "markdown_latest": "# AI Learner Report \u2014 2026-05-16\n\n**Sample:** 182 settled picks since None\n**Generated:** 2026-05-17T02:01:44.388189+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **factor_overweight** (severity: high, n=50)\n   Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=50). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=46)\n   Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=46). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **factor_overweight** (severity: high, n=40)\n   Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=40). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n4. \ud83d\udd34 **tier_drift** (severity: high, n=34)\n   Tier LOCK CALIBRATION DRIFT: hit rate 47.1% vs expected 70% (delta -22.9pp on n=34). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.\n\n5. \ud83d\udd34 **strategy_demote** (severity: high, n=22)\n   Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n6. \ud83d\udd34 **tier_drift** (severity: high, n=14)\n   Tier WATCH CALIBRATION DRIFT: hit rate 14.3% vs expected 45% (delta -30.7pp on n=14). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.\n\n7. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n8. \ud83d\udfe1 **player_weak** (severity: med, n=12)\n   Player TJ Rumfield WEAK track record: 17% hit rate \\ -39.7% ROI on n=12. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n9. \ud83d\udfe1 **player_weak** (severity: med, n=6)\n   Player Troy Johnston WEAK track record: 0% hit rate \\ -50.0% ROI on n=6. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n10. \ud83d\udfe2 **tier_slack** (severity: low, n=21)\n   Tier SIDE SLACK: hit rate 66.7% beats expected 50% by +16.7pp on n=21. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.\n\n11. \ud83d\udfe2 **player_strong** (severity: low, n=12)\n   Player Nick Kurtz STRONG track record: 83% hit rate \\ +43.6% ROI on n=12. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 44.0% (n=50) | \u2014 | 57.1% (n=14) | -13.1pp |\n| handedness | 39.1% (n=46) | \u2014 | 60.0% (n=20) | -20.9pp |\n| pitcher_matchup | 47.6% (n=42) | \u2014 | 41.7% (n=24) | +5.9pp |\n| park | 40.0% (n=40) | \u2014 | 50.0% (n=32) | -10.0pp |\n| player_performer | 50.0% (n=20) | 33.3% (n=12) | 44.4% (n=18) | +5.6pp |\n| pitcher_rest | 50.0% (n=4) | \u2014 | 0.0% (n=2) | +50.0pp |\n| bvp | \u2014 | 50.0% (n=4) | 50.0% (n=4) | \u2014 |\n\n## Strategy Performance \u2014 engine-reproducible\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 70 | 44-26 | 62.9% | -3.8% |\n| MLB Batter Total Bases Alt | 22 | 6-16 | 27.3% | -11.4% |\n| MLB Total Runs | 18 | 10-8 | 55.6% | +5.6% |\n| MLB Moneyline | 16 | 8-8 | 50.0% | -14.3% |\n| MLB Batter RBIs Alt | 6 | 2-4 | 33.3% | -3.0% |\n| MLB Pitcher Strikeouts | 6 | 2-4 | 33.3% | -9.6% |\n| MLB Run Line | 4 | 0-4 | 0.0% | -50.0% |\n\n## Strategy Performance \u2014 legacy \\ manually-tagged\n\n_These strategies exist only as historical Notion labels \u2014 current engine cannot reproduce them. Promote\\demote recommendations DO NOT operate on this table._\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| Stable Edge Parlay | 7 | 4-3 | 57.1% | +59.5% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 34 | 47.1% | 70% | -22.9pp | +29.2% |\n| STRONG | 32 | 65.6% | 60% | +5.6pp | -26.2% |\n| SIDE | 21 | 66.7% | 50% | +16.7pp | +8.3% |\n| WATCH | 14 | 14.3% | 45% | -30.7pp | -38.1% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
+    "markdown_latest": "# AI Learner Report \u2014 2026-05-16\n\n**Sample:** 184 settled picks since None\n**Generated:** 2026-05-17T02:23:14.751154+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **factor_overweight** (severity: high, n=50)\n   Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=50). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=46)\n   Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=46). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **factor_overweight** (severity: high, n=40)\n   Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=40). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n4. \ud83d\udd34 **tier_drift** (severity: high, n=34)\n   Tier LOCK CALIBRATION DRIFT: hit rate 47.1% vs expected 70% (delta -22.9pp on n=34). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.\n\n5. \ud83d\udd34 **strategy_demote** (severity: high, n=22)\n   Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n6. \ud83d\udd34 **tier_drift** (severity: high, n=14)\n   Tier WATCH CALIBRATION DRIFT: hit rate 14.3% vs expected 45% (delta -30.7pp on n=14). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.\n\n7. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n8. \ud83d\udfe1 **player_weak** (severity: med, n=12)\n   Player TJ Rumfield WEAK track record: 17% hit rate \\ -39.7% ROI on n=12. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n9. \ud83d\udfe1 **player_weak** (severity: med, n=6)\n   Player Troy Johnston WEAK track record: 0% hit rate \\ -50.0% ROI on n=6. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n10. \ud83d\udfe2 **tier_slack** (severity: low, n=21)\n   Tier SIDE SLACK: hit rate 66.7% beats expected 50% by +16.7pp on n=21. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.\n\n11. \ud83d\udfe2 **player_strong** (severity: low, n=12)\n   Player Nick Kurtz STRONG track record: 83% hit rate \\ +43.6% ROI on n=12. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 44.0% (n=50) | \u2014 | 57.1% (n=14) | -13.1pp |\n| handedness | 39.1% (n=46) | \u2014 | 60.0% (n=20) | -20.9pp |\n| pitcher_matchup | 47.6% (n=42) | \u2014 | 41.7% (n=24) | +5.9pp |\n| park | 40.0% (n=40) | \u2014 | 50.0% (n=32) | -10.0pp |\n| player_performer | 50.0% (n=20) | 33.3% (n=12) | 44.4% (n=18) | +5.6pp |\n| pitcher_rest | 50.0% (n=4) | \u2014 | 0.0% (n=2) | +50.0pp |\n| bvp | \u2014 | 50.0% (n=4) | 50.0% (n=4) | \u2014 |\n\n## Strategy Performance \u2014 engine-reproducible\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 70 | 44-26 | 62.9% | -3.8% |\n| MLB Batter Total Bases Alt | 22 | 6-16 | 27.3% | -11.4% |\n| MLB Total Runs | 18 | 10-8 | 55.6% | +5.6% |\n| MLB Moneyline | 16 | 8-8 | 50.0% | -14.3% |\n| MLB Run Line | 6 | 2-4 | 33.3% | -33.0% |\n| MLB Batter RBIs Alt | 6 | 2-4 | 33.3% | -3.0% |\n| MLB Pitcher Strikeouts | 6 | 2-4 | 33.3% | -9.6% |\n\n## Strategy Performance \u2014 legacy \\ manually-tagged\n\n_These strategies exist only as historical Notion labels \u2014 current engine cannot reproduce them. Promote\\demote recommendations DO NOT operate on this table._\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| Stable Edge Parlay | 7 | 4-3 | 57.1% | +59.5% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 34 | 47.1% | 70% | -22.9pp | +29.2% |\n| STRONG | 32 | 65.6% | 60% | +5.6pp | -26.2% |\n| SIDE | 21 | 66.7% | 50% | +16.7pp | +8.3% |\n| WATCH | 14 | 14.3% | 45% | -30.7pp | -38.1% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
     "status": {
       "state": "idle",
-      "updated_at": "2026-05-17T02:01:44.392309+00:00",
-      "last_run_at": "2026-05-17T02:01:44.392152+00:00",
-      "last_run_picks": 182,
+      "updated_at": "2026-05-17T02:23:14.756369+00:00",
+      "last_run_at": "2026-05-17T02:23:14.756246+00:00",
+      "last_run_picks": 184,
       "last_run_recommendations": 11,
       "last_run_severity": {
         "high": 7,
@@ -23471,11 +23893,11 @@
   "changelog": [
     {
       "date": "2026-05-16",
-      "title": "AI Learner run \u2014 182 picks \u00b7 11 recommendations",
+      "title": "AI Learner run \u2014 184 picks \u00b7 11 recommendations",
       "summary": "props_cache\\v2_ai_learner_2026-05-16.json",
       "changes": {
         "Learner run": [
-          "analyzed 182 settled picks",
+          "analyzed 184 settled picks",
           "produced 11 recommendations (7 HIGH \u00b7 2 MED \u00b7 2 LOW)"
         ],
         "Recommendations": [
@@ -23510,13 +23932,13 @@
     },
     {
       "date": "2026-05-16",
-      "title": "Daily settle \u2014 2026-05-16 \u00b7 3 graded \u00b7 $+0.10 total P\\L",
+      "title": "Daily settle \u2014 2026-05-16 \u00b7 0 graded \u00b7 $+0.00 total P\\L",
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 3 picks (0 grading failures)",
-          "LIVE: 1W-0L on $3.00 stake \u2192 P\\L $+2.83",
-          "PAPER: 1W-1L on $7.50 stake \u2192 P\\L $-2.73"
+          "graded 0 picks (0 grading failures)",
+          "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
+          "PAPER: 0W-0L on $0.00 stake \u2192 P\\L $+0.00"
         ]
       },
       "_auto": true,
@@ -26016,9 +26438,9 @@
     "tier_perf": {},
     "total_settled_picks": 0,
     "state": "idle",
-    "updated_at": "2026-05-17T02:01:44.392309+00:00",
-    "last_run_at": "2026-05-17T02:01:44.392152+00:00",
-    "last_run_picks": 182,
+    "updated_at": "2026-05-17T02:23:14.756369+00:00",
+    "last_run_at": "2026-05-17T02:23:14.756246+00:00",
+    "last_run_picks": 184,
     "last_run_recommendations": 11,
     "last_run_severity": {
       "high": 7,
@@ -26034,8 +26456,8 @@
     "builds": [
       {
         "date": "2026-05-16",
-        "generated_at": "2026-05-17T02:01:44.388189+00:00",
-        "picks_analyzed": 182,
+        "generated_at": "2026-05-17T02:23:14.751154+00:00",
+        "picks_analyzed": 184,
         "recommendations_total": 11,
         "severity": {
           "high": 7,
@@ -26091,19 +26513,19 @@
   },
   "activity_feed": [
     {
-      "timestamp_utc": "2026-05-17T02:01:44.392309+00:00",
+      "timestamp_utc": "2026-05-17T02:23:14.756369+00:00",
       "type": "ai-learner",
       "icon": "\ud83e\udde0",
       "title": "learner: idle",
-      "detail": "182 picks analyzed \u00b7 11 recommendations",
+      "detail": "184 picks analyzed \u00b7 11 recommendations",
       "success": true
     },
     {
-      "timestamp_utc": "2026-05-17T02:01:24.649513+00:00",
+      "timestamp_utc": "2026-05-17T02:23:02.495069+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-16",
-      "detail": "26 picks \u00b7 LIVE P\\L -5.88 \u00b7 PAPER P\\L -21.09",
+      "detail": "27 picks \u00b7 LIVE P\\L -11.71 \u00b7 PAPER P\\L -18.82",
       "success": true
     },
     {
@@ -26127,8 +26549,8 @@
     "state": "idle",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": "2026-05-17T02:01:44.392152+00:00",
-    "last_run_picks": 182,
+    "last_run_at": "2026-05-17T02:23:14.756246+00:00",
+    "last_run_picks": 184,
     "last_run_recommendations": 11,
     "guardrails": [
       "Never modifies engine code automatically",
@@ -26153,7 +26575,7 @@
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
     },
-    "updated_at": "2026-05-17T02:01:44.392309+00:00",
+    "updated_at": "2026-05-17T02:23:14.756369+00:00",
     "last_run_severity": {
       "high": 7,
       "med": 2,
@@ -26188,14 +26610,14 @@
       {
         "date": "2026-05-16",
         "totals": {
-          "n_settled": 26,
+          "n_settled": 27,
           "live_n": 5,
-          "paper_n": 21,
-          "live_net_pl": -5.88,
-          "paper_net_pl": -21.09,
-          "live_won": 3,
-          "live_lost": 2,
-          "paper_won": 12,
+          "paper_n": 22,
+          "live_net_pl": -11.71,
+          "paper_net_pl": -18.82,
+          "live_won": 2,
+          "live_lost": 3,
+          "paper_won": 13,
           "paper_lost": 9
         },
         "picks": [
@@ -26203,8 +26625,8 @@
             "date": "2026-05-16",
             "pick": "[LIVE-PENDING] ML CHC [CHC@CHW] @ -106 (Chicago Cubs @ Chicago White Sox)",
             "account": "LIVE",
-            "result": "Won",
-            "pl": 2.83,
+            "result": "Lost",
+            "pl": -3.0,
             "stake": 3.0,
             "odds": -106,
             "tier": "GOOD",
@@ -26286,40 +26708,6 @@
           },
           {
             "date": "2026-05-16",
-            "pick": "[PAPER] TOTAL Over 8.5 [CHC@CHW] @ -110 (Chicago Cubs @ Chicago White Sox)",
-            "account": "PAPER",
-            "result": "Won",
-            "pl": 2.27,
-            "stake": 2.5,
-            "odds": -110,
-            "tier": "GOOD",
-            "strategy": "MLB Total Runs",
-            "sport": "MLB",
-            "market": "Total",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
-          },
-          {
-            "date": "2026-05-16",
-            "pick": "[PAPER] TOTAL Over 8.5 [MIL@MIN] @ -110 (Milwaukee Brewers @ Minnesota Twins)",
-            "account": "PAPER",
-            "result": "Lost",
-            "pl": -5.0,
-            "stake": 5.0,
-            "odds": -110,
-            "tier": "GOOD",
-            "strategy": "MLB Total Runs",
-            "sport": "MLB",
-            "market": "Total",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
-          },
-          {
-            "date": "2026-05-16",
             "pick": "[PAPER] TOTAL Over 8.5 [CIN@CLE] @ -110 (Cincinnati Reds @ Cleveland Guardians)",
             "account": "PAPER",
             "result": "Won",
@@ -26381,6 +26769,57 @@
             "strategy": "MLB Batter Total Bases Alt",
             "sport": "MLB",
             "market": "TOTAL_BASES_ALT",
+            "edge_pp": null,
+            "true_prob": null,
+            "base_prob": null,
+            "factor_quality_score": null
+          },
+          {
+            "date": "2026-05-16",
+            "pick": "[PAPER] SPREAD SD +1.5 [SD@SEA] @ -110 (San Diego Padres @ Seattle Mariners)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 2.27,
+            "stake": 2.5,
+            "odds": -110,
+            "tier": "GOOD",
+            "strategy": "MLB Run Line",
+            "sport": "MLB",
+            "market": "SPREAD",
+            "edge_pp": null,
+            "true_prob": null,
+            "base_prob": null,
+            "factor_quality_score": null
+          },
+          {
+            "date": "2026-05-16",
+            "pick": "[PAPER] TOTAL Over 8.5 [CHC@CHW] @ -110 (Chicago Cubs @ Chicago White Sox)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 2.27,
+            "stake": 2.5,
+            "odds": -110,
+            "tier": "GOOD",
+            "strategy": "MLB Total Runs",
+            "sport": "MLB",
+            "market": "TOTAL",
+            "edge_pp": null,
+            "true_prob": null,
+            "base_prob": null,
+            "factor_quality_score": null
+          },
+          {
+            "date": "2026-05-16",
+            "pick": "[PAPER] TOTAL Over 8.5 [MIL@MIN] @ -110 (Milwaukee Brewers @ Minnesota Twins)",
+            "account": "PAPER",
+            "result": "Lost",
+            "pl": -5.0,
+            "stake": 5.0,
+            "odds": -110,
+            "tier": "GOOD",
+            "strategy": "MLB Total Runs",
+            "sport": "MLB",
+            "market": "TOTAL",
             "edge_pp": null,
             "true_prob": null,
             "base_prob": null,
@@ -28735,10 +29174,10 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 22:20 ET",
+  "built_at_et": "2026-05-16 22:23 ET",
   "counts": {
     "picks_total": 159,
-    "settled": 74,
+    "settled": 75,
     "today_picks": 107
   }
 }
