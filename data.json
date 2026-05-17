@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-003117",
-  "generated_at": "2026-05-17T00:31:18.251944+00:00",
+  "build_id": "260517-003402",
+  "generated_at": "2026-05-17T00:34:02.842372+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T00:31:18.252026+00:00",
+  "built_at": "2026-05-17T00:34:02.842452+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -10954,10 +10954,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 21:00",
       "LastRun": "2026-05-16 20:30",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -12565,8 +12565,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 5,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 5,
             "home_hits": 5,
             "home_errors": 1,
@@ -12664,7 +12664,7 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 1,
             "home_hits": 6,
             "home_errors": 1,
@@ -12676,7 +12676,7 @@
               0,
               1,
               0,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -12765,8 +12765,8 @@
             "current_inning": 4,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 0,
-            "home_hits": 2,
+            "home_runs": 1,
+            "home_hits": 3,
             "home_errors": 0,
             "away_runs": 5,
             "away_hits": 3,
@@ -12775,7 +12775,7 @@
               0,
               0,
               0,
-              null
+              1
             ],
             "away_innings": [
               0,
@@ -12857,8 +12857,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 6,
-            "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 2,
             "home_hits": 4,
             "home_errors": 1,
@@ -12879,7 +12879,7 @@
               0,
               1,
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -12960,8 +12960,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 4,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 2,
             "home_hits": 2,
             "home_errors": 0,
@@ -17696,35 +17696,42 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 45.0
+        "age_hours": 45.1
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 42.7
+        "age_hours": 42.8
+      },
+      {
+        "name": "ai_learner_2026-05-16.md",
+        "tier": "learner",
+        "bytes": 4462,
+        "mtime": 1778977987.0632277,
+        "age_hours": 0.0
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 92.9
+        "age_hours": 93.0
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 41.6
+        "age_hours": 41.7
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 35.4
+        "age_hours": 35.5
       },
       {
         "name": "audit_round3_2026-05-15.md",
@@ -17745,7 +17752,7 @@
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 30.6
+        "age_hours": 30.7
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -17759,7 +17766,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 91.8
+        "age_hours": 91.9
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -17773,7 +17780,7 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 77.9
+        "age_hours": 78.0
       },
       {
         "name": "dashboard_url_2026-05-13.md",
@@ -17787,7 +17794,7 @@
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 97.0
+        "age_hours": 97.1
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -17829,7 +17836,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 74.1
+        "age_hours": 74.2
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -17843,7 +17850,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 108.7
+        "age_hours": 108.8
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -17906,7 +17913,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 118.5
+        "age_hours": 118.6
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -17920,7 +17927,7 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 40.9
+        "age_hours": 41.0
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
@@ -17934,7 +17941,7 @@
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 84.2
+        "age_hours": 84.3
       },
       {
         "name": "learning_journal_2026-05-14.md",
@@ -17948,21 +17955,21 @@
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 11.0
+        "age_hours": 11.1
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 64817,
         "mtime": 1778977859.4711113,
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 69.0
+        "age_hours": 69.1
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -18032,7 +18039,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 117.5
+        "age_hours": 117.6
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -18081,7 +18088,7 @@
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 117.7
+        "age_hours": 117.8
       },
       {
         "name": "reference_sport_calendar.md",
@@ -18102,14 +18109,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 92.8
+        "age_hours": 92.9
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 122.8
+        "age_hours": 122.9
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -18123,7 +18130,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 93.5
+        "age_hours": 93.6
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -18137,7 +18144,7 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 69.0
+        "age_hours": 69.1
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
@@ -18172,21 +18179,21 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 79.0
+        "age_hours": 79.1
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 85.3
+        "age_hours": 85.4
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 92.4
+        "age_hours": 92.5
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -18200,21 +18207,21 @@
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 85.6
+        "age_hours": 85.7
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 77.9
+        "age_hours": 78.0
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 76.8
+        "age_hours": 76.9
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
@@ -18272,7 +18279,7 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 2029,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T00:30:05.241679+00:00",
@@ -18298,7 +18305,7 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 64817,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T00:30:59.471111+00:00",
@@ -18311,7 +18318,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 10.0,
+        "age_hours": 10.1,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -18324,7 +18331,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 51.4,
+        "age_hours": 51.5,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -22075,56 +22082,71 @@
   },
   "ai_learner_reports": {
     "latest": {
-      "date": "2026-05-15",
-      "generated_at": "2026-05-15T05:48:19.149995+00:00",
+      "date": "2026-05-16",
+      "generated_at": "2026-05-17T00:33:07.060187+00:00",
       "since_date": null,
-      "total_settled_picks": 55,
-      "enriched_count": 16,
+      "total_settled_picks": 101,
+      "enriched_count": 37,
       "factor_perf": {
+        "statcast": {
+          "bullish_n": 25,
+          "bullish_won": 11,
+          "bullish_lost": 14,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 7,
+          "neutral_won": 4,
+          "neutral_lost": 3,
+          "bullish_hr": 44.0,
+          "bearish_hr": null,
+          "neutral_hr": 57.1,
+          "bullish_lift_pp": -13.1
+        },
         "pitcher_matchup": {
-          "bullish_n": 0,
-          "bullish_won": 0,
-          "bullish_lost": 0,
+          "bullish_n": 21,
+          "bullish_won": 10,
+          "bullish_lost": 11,
           "bearish_n": 0,
           "bearish_won": 0,
           "bearish_lost": 0,
           "neutral_n": 12,
           "neutral_won": 5,
           "neutral_lost": 7,
-          "bullish_hr": null,
+          "bullish_hr": 47.6,
           "bearish_hr": null,
           "neutral_hr": 41.7,
-          "bullish_lift_pp": null
+          "bullish_lift_pp": 5.9
         },
         "park": {
-          "bullish_n": 5,
-          "bullish_won": 3,
-          "bullish_lost": 2,
+          "bullish_n": 20,
+          "bullish_won": 8,
+          "bullish_lost": 12,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 16,
+          "neutral_won": 8,
+          "neutral_lost": 8,
+          "bullish_hr": 40.0,
+          "bearish_hr": null,
+          "neutral_hr": 50.0,
+          "bullish_lift_pp": -10.0
+        },
+        "handedness": {
+          "bullish_n": 23,
+          "bullish_won": 9,
+          "bullish_lost": 14,
           "bearish_n": 0,
           "bearish_won": 0,
           "bearish_lost": 0,
           "neutral_n": 10,
-          "neutral_won": 3,
-          "neutral_lost": 7,
-          "bullish_hr": 60.0,
+          "neutral_won": 6,
+          "neutral_lost": 4,
+          "bullish_hr": 39.1,
           "bearish_hr": null,
-          "neutral_hr": 30.0,
-          "bullish_lift_pp": 30.0
-        },
-        "handedness": {
-          "bullish_n": 8,
-          "bullish_won": 3,
-          "bullish_lost": 5,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 4,
-          "neutral_won": 2,
-          "neutral_lost": 2,
-          "bullish_hr": 37.5,
-          "bearish_hr": null,
-          "neutral_hr": 50.0,
-          "bullish_lift_pp": -12.5
+          "neutral_hr": 60.0,
+          "bullish_lift_pp": -20.9
         },
         "recency_woba": {
           "bullish_n": 0,
@@ -22133,12 +22155,117 @@
           "bearish_n": 0,
           "bearish_won": 0,
           "bearish_lost": 0,
-          "neutral_n": 12,
-          "neutral_won": 6,
-          "neutral_lost": 6,
+          "neutral_n": 30,
+          "neutral_won": 16,
+          "neutral_lost": 14,
           "bullish_hr": null,
           "bearish_hr": null,
+          "neutral_hr": 53.3,
+          "bullish_lift_pp": null
+        },
+        "player_performer": {
+          "bullish_n": 10,
+          "bullish_won": 5,
+          "bullish_lost": 5,
+          "bearish_n": 6,
+          "bearish_won": 2,
+          "bearish_lost": 4,
+          "neutral_n": 9,
+          "neutral_won": 4,
+          "neutral_lost": 5,
+          "bullish_hr": 50.0,
+          "bearish_hr": 33.3,
+          "neutral_hr": 44.4,
+          "bullish_lift_pp": 5.6
+        },
+        "bullpen": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 8,
+          "neutral_won": 7,
+          "neutral_lost": 1,
+          "bullish_hr": null,
+          "bearish_hr": null,
+          "neutral_hr": 87.5,
+          "bullish_lift_pp": null
+        },
+        "home_away": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 37,
+          "neutral_won": 17,
+          "neutral_lost": 20,
+          "bullish_hr": null,
+          "bearish_hr": null,
+          "neutral_hr": 45.9,
+          "bullish_lift_pp": null
+        },
+        "player_rest": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 19,
+          "neutral_won": 10,
+          "neutral_lost": 9,
+          "bullish_hr": null,
+          "bearish_hr": null,
+          "neutral_hr": 52.6,
+          "bullish_lift_pp": null
+        },
+        "bvp": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 2,
+          "bearish_won": 1,
+          "bearish_lost": 1,
+          "neutral_n": 2,
+          "neutral_won": 1,
+          "neutral_lost": 1,
+          "bullish_hr": null,
+          "bearish_hr": 50.0,
           "neutral_hr": 50.0,
+          "bullish_lift_pp": null
+        },
+        "weather": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 6,
+          "neutral_won": 5,
+          "neutral_lost": 1,
+          "bullish_hr": null,
+          "bearish_hr": null,
+          "neutral_hr": 83.3,
+          "bullish_lift_pp": null
+        },
+        "player_park_weather_composite": {
+          "bullish_n": 0,
+          "bullish_won": 0,
+          "bullish_lost": 0,
+          "bearish_n": 0,
+          "bearish_won": 0,
+          "bearish_lost": 0,
+          "neutral_n": 3,
+          "neutral_won": 3,
+          "neutral_lost": 0,
+          "bullish_hr": null,
+          "bearish_hr": null,
+          "neutral_hr": 100.0,
           "bullish_lift_pp": null
         },
         "implied_total_player": {
@@ -22156,36 +22283,6 @@
           "neutral_hr": 46.2,
           "bullish_lift_pp": null
         },
-        "player_performer": {
-          "bullish_n": 7,
-          "bullish_won": 3,
-          "bullish_lost": 4,
-          "bearish_n": 1,
-          "bearish_won": 0,
-          "bearish_lost": 1,
-          "neutral_n": 2,
-          "neutral_won": 1,
-          "neutral_lost": 1,
-          "bullish_hr": 42.9,
-          "bearish_hr": 0.0,
-          "neutral_hr": 50.0,
-          "bullish_lift_pp": -7.1
-        },
-        "home_away": {
-          "bullish_n": 0,
-          "bullish_won": 0,
-          "bullish_lost": 0,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 16,
-          "neutral_won": 7,
-          "neutral_lost": 9,
-          "bullish_hr": null,
-          "bearish_hr": null,
-          "neutral_hr": 43.8,
-          "bullish_lift_pp": null
-        },
         "series_game": {
           "bullish_n": 0,
           "bullish_won": 0,
@@ -22200,36 +22297,6 @@
           "bearish_hr": null,
           "neutral_hr": 46.2,
           "bullish_lift_pp": null
-        },
-        "player_rest": {
-          "bullish_n": 0,
-          "bullish_won": 0,
-          "bullish_lost": 0,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 13,
-          "neutral_won": 6,
-          "neutral_lost": 7,
-          "bullish_hr": null,
-          "bearish_hr": null,
-          "neutral_hr": 46.2,
-          "bullish_lift_pp": null
-        },
-        "statcast": {
-          "bullish_n": 9,
-          "bullish_won": 4,
-          "bullish_lost": 5,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 3,
-          "neutral_won": 1,
-          "neutral_lost": 2,
-          "bullish_hr": 44.4,
-          "bearish_hr": null,
-          "neutral_hr": 33.3,
-          "bullish_lift_pp": 11.1
         },
         "pitcher_rest": {
           "bullish_n": 2,
@@ -22260,39 +22327,69 @@
           "bearish_hr": null,
           "neutral_hr": 0.0,
           "bullish_lift_pp": null
-        },
-        "bullpen": {
-          "bullish_n": 0,
-          "bullish_won": 0,
-          "bullish_lost": 0,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 4,
-          "neutral_won": 4,
-          "neutral_lost": 0,
-          "bullish_hr": null,
-          "bearish_hr": null,
-          "neutral_hr": 100.0,
-          "bullish_lift_pp": null
-        },
-        "bvp": {
-          "bullish_n": 0,
-          "bullish_won": 0,
-          "bullish_lost": 0,
-          "bearish_n": 0,
-          "bearish_won": 0,
-          "bearish_lost": 0,
-          "neutral_n": 1,
-          "neutral_won": 0,
-          "neutral_lost": 1,
-          "bullish_hr": null,
-          "bearish_hr": null,
-          "neutral_hr": 0.0,
-          "bullish_lift_pp": null
         }
       },
       "strategy_perf": {
+        "User Override (not from engine)": {
+          "n": 2,
+          "won": 1,
+          "lost": 1,
+          "push": 0,
+          "stake": 8.0,
+          "pl": -3.38,
+          "hit_rate": 50.0,
+          "roi": -42.2
+        },
+        "MLB Batter Hits Alt": {
+          "n": 35,
+          "won": 22,
+          "lost": 13,
+          "push": 0,
+          "stake": 219.15,
+          "pl": -16.830000000000005,
+          "hit_rate": 62.9,
+          "roi": -7.7
+        },
+        "MLB Batter Total Bases Alt": {
+          "n": 11,
+          "won": 3,
+          "lost": 8,
+          "push": 0,
+          "stake": 45.0,
+          "pl": -10.23,
+          "hit_rate": 27.3,
+          "roi": -22.7
+        },
+        "MLB Total Runs": {
+          "n": 5,
+          "won": 3,
+          "lost": 2,
+          "push": 0,
+          "stake": 22.5,
+          "pl": 5.699999999999999,
+          "hit_rate": 60.0,
+          "roi": 25.3
+        },
+        "MLB Moneyline": {
+          "n": 6,
+          "won": 4,
+          "lost": 2,
+          "push": 0,
+          "stake": 43.0,
+          "pl": -0.899999999999999,
+          "hit_rate": 66.7,
+          "roi": -2.1
+        },
+        "MLB Batter RBIs Alt": {
+          "n": 3,
+          "won": 1,
+          "lost": 2,
+          "push": 0,
+          "stake": 12.5,
+          "pl": -0.75,
+          "hit_rate": 33.3,
+          "roi": -6.0
+        },
         "MLB Run Line": {
           "n": 2,
           "won": 0,
@@ -22313,16 +22410,6 @@
           "hit_rate": 66.7,
           "roi": 63.8
         },
-        "MLB Batter Total Bases Alt": {
-          "n": 3,
-          "won": 0,
-          "lost": 3,
-          "push": 0,
-          "stake": 7.5,
-          "pl": -7.5,
-          "hit_rate": 0.0,
-          "roi": -100.0
-        },
         "MLB Pitcher Strikeouts": {
           "n": 3,
           "won": 1,
@@ -22332,36 +22419,6 @@
           "pl": -1.9100000000000001,
           "hit_rate": 33.3,
           "roi": -19.1
-        },
-        "MLB Batter Hits Alt": {
-          "n": 10,
-          "won": 6,
-          "lost": 4,
-          "push": 0,
-          "stake": 84.65,
-          "pl": 0.29999999999999716,
-          "hit_rate": 60.0,
-          "roi": 0.4
-        },
-        "MLB Total Runs": {
-          "n": 2,
-          "won": 1,
-          "lost": 1,
-          "push": 0,
-          "stake": 10.0,
-          "pl": -0.4500000000000002,
-          "hit_rate": 50.0,
-          "roi": -4.5
-        },
-        "User Override (not from engine)": {
-          "n": 1,
-          "won": 0,
-          "lost": 1,
-          "push": 0,
-          "stake": 5.0,
-          "pl": -5.0,
-          "hit_rate": 0.0,
-          "roi": -100.0
         },
         "Boring Lock": {
           "n": 14,
@@ -22465,16 +22522,38 @@
         }
       },
       "tier_perf": {
+        "GOOD": {
+          "n": 36,
+          "won": 21,
+          "lost": 15,
+          "stake": 164.0,
+          "pl": -4.309999999999999,
+          "hit_rate": 58.3,
+          "roi": -2.6,
+          "expected_hr": 50,
+          "delta_hr": 8.3
+        },
+        "STRONG": {
+          "n": 21,
+          "won": 11,
+          "lost": 10,
+          "stake": 324.9,
+          "pl": -120.35999999999999,
+          "hit_rate": 52.4,
+          "roi": -37.0,
+          "expected_hr": 60,
+          "delta_hr": -7.6
+        },
         "LOCK": {
-          "n": 17,
-          "won": 14,
-          "lost": 3,
-          "stake": 341.5,
-          "pl": 187.64000000000001,
-          "hit_rate": 82.4,
-          "roi": 54.9,
+          "n": 22,
+          "won": 15,
+          "lost": 7,
+          "stake": 387.5,
+          "pl": 155.99,
+          "hit_rate": 68.2,
+          "roi": 40.3,
           "expected_hr": 70,
-          "delta_hr": 12.4
+          "delta_hr": -1.8
         },
         "WATCH": {
           "n": 7,
@@ -22498,17 +22577,6 @@
           "expected_hr": 55,
           "delta_hr": 16.4
         },
-        "STRONG": {
-          "n": 16,
-          "won": 6,
-          "lost": 10,
-          "stake": 291.9,
-          "pl": -142.58,
-          "hit_rate": 37.5,
-          "roi": -48.8,
-          "expected_hr": 60,
-          "delta_hr": -22.5
-        },
         "USER_OVERRIDE": {
           "n": 1,
           "won": 0,
@@ -22523,18 +22591,38 @@
       },
       "recommendations": [
         {
-          "type": "tier_drift",
+          "type": "factor_overweight",
           "severity": "high",
-          "text": "Tier STRONG CALIBRATION DRIFT: hit rate 37.5% vs expected 60% (delta -22.5pp on n=16). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.",
-          "tier": "STRONG",
-          "n": 16
+          "text": "Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=25). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+          "factor": "statcast",
+          "n": 25
         },
         {
           "type": "factor_overweight",
           "severity": "high",
-          "text": "Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 37.5% vs neutral 50.0% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+          "text": "Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=23). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
           "factor": "handedness",
-          "n": 8
+          "n": 23
+        },
+        {
+          "type": "factor_overweight",
+          "severity": "high",
+          "text": "Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=20). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+          "factor": "park",
+          "n": 20
+        },
+        {
+          "type": "strategy_demote",
+          "severity": "high",
+          "text": "Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=11. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.",
+          "strategy": "MLB Batter Total Bases Alt",
+          "n": 11
+        },
+        {
+          "type": "calibration_overconfidence",
+          "severity": "high",
+          "text": "6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.",
+          "n": 6
         },
         {
           "type": "strategy_promote",
@@ -22546,13 +22634,6 @@
         {
           "type": "tier_slack",
           "severity": "low",
-          "text": "Tier LOCK SLACK: hit rate 82.4% beats expected 70% by +12.4pp on n=17. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
-          "tier": "LOCK",
-          "n": 17
-        },
-        {
-          "type": "tier_slack",
-          "severity": "low",
           "text": "Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
           "tier": "SIDE",
           "n": 14
@@ -22560,10 +22641,10 @@
       ],
       "knowledge_index": {
         "data_sources_read": [
-          "Notion Picks DB (55 settled picks)",
-          "Scout caches (16 picks enriched)",
-          "Settled archives (0 picks)",
-          "Journal postmortems (83 entries)",
+          "Notion Picks DB (101 settled picks)",
+          "Scout caches (37 picks enriched)",
+          "Settled archives (140 picks)",
+          "Journal postmortems (486 entries)",
           "CLV history (avg 0.0%)"
         ],
         "guardrails_active": [
@@ -22599,10 +22680,20 @@
           0.0
         ]
       },
-      "postmortem_count": 83,
-      "archive_picks_count": 0
+      "postmortem_count": 486,
+      "archive_picks_count": 140
     },
     "history": [
+      {
+        "date": "2026-05-16",
+        "settled": 101,
+        "postmortems": 486,
+        "recs_high": 5,
+        "recs_med": 1,
+        "recs_low": 1,
+        "recs_total": 7,
+        "filename": "v2_ai_learner_2026-05-16.json"
+      },
       {
         "date": "2026-05-15",
         "settled": 55,
@@ -22624,20 +22715,20 @@
         "filename": "v2_ai_learner_2026-05-14.json"
       }
     ],
-    "markdown_latest": "# AI Learner Report \u2014 2026-05-15\n\n**Sample:** 55 settled picks since None\n**Generated:** 2026-05-15T05:48:19.149995+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **tier_drift** (severity: high, n=16)\n   Tier STRONG CALIBRATION DRIFT: hit rate 37.5% vs expected 60% (delta -22.5pp on n=16). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=8)\n   Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 37.5% vs neutral 50.0% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udfe1 **strategy_promote** (severity: med, n=14)\n   Strategy 'Boring Lock' PROMOTE candidate: 71.4% hit rate and +37.7% ROI on n=14. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n4. \ud83d\udfe2 **tier_slack** (severity: low, n=17)\n   Tier LOCK SLACK: hit rate 82.4% beats expected 70% by +12.4pp on n=17. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.\n\n5. \ud83d\udfe2 **tier_slack** (severity: low, n=14)\n   Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 44.4% (n=9) | \u2014 | 33.3% (n=3) | +11.1pp |\n| handedness | 37.5% (n=8) | \u2014 | 50.0% (n=4) | -12.5pp |\n| player_performer | 42.9% (n=7) | 0.0% (n=1) | 50.0% (n=2) | -7.1pp |\n| park | 60.0% (n=5) | \u2014 | 30.0% (n=10) | +30.0pp |\n| pitcher_rest | 50.0% (n=2) | \u2014 | 0.0% (n=1) | +50.0pp |\n| pitcher_matchup | \u2014 | \u2014 | 41.7% (n=12) | \u2014 |\n| recency_woba | \u2014 | \u2014 | 50.0% (n=12) | \u2014 |\n| implied_total_player | \u2014 | \u2014 | 46.2% (n=13) | \u2014 |\n| home_away | \u2014 | \u2014 | 43.8% (n=16) | \u2014 |\n| series_game | \u2014 | \u2014 | 46.2% (n=13) | \u2014 |\n| player_rest | \u2014 | \u2014 | 46.2% (n=13) | \u2014 |\n| umpire | \u2014 | \u2014 | 0.0% (n=2) | \u2014 |\n| bullpen | \u2014 | \u2014 | 100.0% (n=4) | \u2014 |\n| bvp | \u2014 | \u2014 | 0.0% (n=1) | \u2014 |\n\n## Strategy Performance\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| MLB Batter Hits Alt | 10 | 6-4 | 60.0% | +0.4% |\n| Stable Edge Parlay | 6 | 4-2 | 66.7% | +63.8% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| MLB Batter Total Bases Alt | 3 | 0-3 | 0.0% | -100.0% |\n| MLB Pitcher Strikeouts | 3 | 1-2 | 33.3% | -19.1% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n| MLB Run Line | 2 | 0-2 | 0.0% | -100.0% |\n| MLB Total Runs | 2 | 1-1 | 50.0% | -4.5% |\n| User Override (not from engine) | 1 | 0-1 | 0.0% | -100.0% |\n| I v2 baseline | 1 | 1-0 | 100.0% | +60.2% |\n| J Kelly | 1 | 1-0 | 100.0% | +60.2% |\n| C NBA Pts | 1 | 0-1 | 0.0% | -100.0% |\n| D NHL SOG | 1 | 0-1 | 0.0% | -100.0% |\n| N Alvarez Hits | 1 | 1-0 | 100.0% | +55.6% |\n| B Hot Hits | 1 | 1-0 | 100.0% | +29.4% |\n| A K-NRFI | 1 | 1-0 | 100.0% | +98.7% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 17 | 82.4% | 70% | +12.4pp | +54.9% |\n| STRONG | 16 | 37.5% | 60% | -22.5pp | -48.8% |\n| SIDE | 14 | 71.4% | 55% | +16.4pp | +13.0% |\n| WATCH | 7 | 14.3% | 50% | -35.7pp | -76.2% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
+    "markdown_latest": "# AI Learner Report \u2014 2026-05-16\n\n**Sample:** 101 settled picks since None\n**Generated:** 2026-05-17T00:33:07.060187+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **factor_overweight** (severity: high, n=25)\n   Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=25). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=23)\n   Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=23). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **factor_overweight** (severity: high, n=20)\n   Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=20). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n4. \ud83d\udd34 **strategy_demote** (severity: high, n=11)\n   Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=11. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n5. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n6. \ud83d\udfe1 **strategy_promote** (severity: med, n=14)\n   Strategy 'Boring Lock' PROMOTE candidate: 71.4% hit rate and +37.7% ROI on n=14. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n7. \ud83d\udfe2 **tier_slack** (severity: low, n=14)\n   Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 44.0% (n=25) | \u2014 | 57.1% (n=7) | -13.1pp |\n| handedness | 39.1% (n=23) | \u2014 | 60.0% (n=10) | -20.9pp |\n| pitcher_matchup | 47.6% (n=21) | \u2014 | 41.7% (n=12) | +5.9pp |\n| park | 40.0% (n=20) | \u2014 | 50.0% (n=16) | -10.0pp |\n| player_performer | 50.0% (n=10) | 33.3% (n=6) | 44.4% (n=9) | +5.6pp |\n| pitcher_rest | 50.0% (n=2) | \u2014 | 0.0% (n=1) | +50.0pp |\n| recency_woba | \u2014 | \u2014 | 53.3% (n=30) | \u2014 |\n| bullpen | \u2014 | \u2014 | 87.5% (n=8) | \u2014 |\n| home_away | \u2014 | \u2014 | 45.9% (n=37) | \u2014 |\n| player_rest | \u2014 | \u2014 | 52.6% (n=19) | \u2014 |\n| bvp | \u2014 | 50.0% (n=2) | 50.0% (n=2) | \u2014 |\n| weather | \u2014 | \u2014 | 83.3% (n=6) | \u2014 |\n| player_park_weather_composite | \u2014 | \u2014 | 100.0% (n=3) | \u2014 |\n| implied_total_player | \u2014 | \u2014 | 46.2% (n=13) | \u2014 |\n| series_game | \u2014 | \u2014 | 46.2% (n=13) | \u2014 |\n| umpire | \u2014 | \u2014 | 0.0% (n=2) | \u2014 |\n\n## Strategy Performance\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 35 | 22-13 | 62.9% | -7.7% |\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| MLB Batter Total Bases Alt | 11 | 3-8 | 27.3% | -22.7% |\n| MLB Moneyline | 6 | 4-2 | 66.7% | -2.1% |\n| Stable Edge Parlay | 6 | 4-2 | 66.7% | +63.8% |\n| MLB Total Runs | 5 | 3-2 | 60.0% | +25.3% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| MLB Batter RBIs Alt | 3 | 1-2 | 33.3% | -6.0% |\n| MLB Pitcher Strikeouts | 3 | 1-2 | 33.3% | -19.1% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n| User Override (not from engine) | 2 | 1-1 | 50.0% | -42.2% |\n| MLB Run Line | 2 | 0-2 | 0.0% | -100.0% |\n| I v2 baseline | 1 | 1-0 | 100.0% | +60.2% |\n| J Kelly | 1 | 1-0 | 100.0% | +60.2% |\n| C NBA Pts | 1 | 0-1 | 0.0% | -100.0% |\n| D NHL SOG | 1 | 0-1 | 0.0% | -100.0% |\n| N Alvarez Hits | 1 | 1-0 | 100.0% | +55.6% |\n| B Hot Hits | 1 | 1-0 | 100.0% | +29.4% |\n| A K-NRFI | 1 | 1-0 | 100.0% | +98.7% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 22 | 68.2% | 70% | -1.8pp | +40.3% |\n| STRONG | 21 | 52.4% | 60% | -7.6pp | -37.0% |\n| SIDE | 14 | 71.4% | 55% | +16.4pp | +13.0% |\n| WATCH | 7 | 14.3% | 50% | -35.7pp | -76.2% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
     "status": {
       "state": "idle",
-      "updated_at": "2026-05-15T05:48:19.153655+00:00",
-      "last_run_at": "2026-05-15T05:48:19.153513+00:00",
-      "last_run_picks": 55,
-      "last_run_recommendations": 5,
+      "updated_at": "2026-05-17T00:33:07.067614+00:00",
+      "last_run_at": "2026-05-17T00:33:07.067447+00:00",
+      "last_run_picks": 101,
+      "last_run_recommendations": 7,
       "last_run_severity": {
-        "high": 2,
+        "high": 5,
         "med": 1,
-        "low": 2
+        "low": 1
       },
-      "last_run_md": "memory\\ai_learner_2026-05-15.md",
-      "last_run_json": "props_cache\\v2_ai_learner_2026-05-15.json"
+      "last_run_md": "memory\\ai_learner_2026-05-16.md",
+      "last_run_json": "props_cache\\v2_ai_learner_2026-05-16.json"
     }
   },
   "target_strategies": [
@@ -22782,6 +22873,41 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-05-16",
+      "title": "AI Learner run \u2014 101 picks \u00b7 7 recommendations",
+      "summary": "props_cache\\v2_ai_learner_2026-05-16.json",
+      "changes": {
+        "Learner run": [
+          "analyzed 101 settled picks",
+          "produced 7 recommendations (5 HIGH \u00b7 1 MED \u00b7 1 LOW)"
+        ],
+        "Recommendations": [
+          "[HIGH] factor_overweight (n=25): Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=25). This factor is currently anti-predictive \u2014 consider halv",
+          "[HIGH] factor_overweight (n=23): Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=23). This factor is currently anti-predictive \u2014 consider ha",
+          "[HIGH] factor_overweight (n=20): Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=20). This factor is currently anti-predictive \u2014 consider halving ",
+          "[HIGH] strategy_demote (n=11): Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=11. Either model assumptions are wrong on this market or book has tightened. Pause a",
+          "[HIGH] calibration_overconfidence (n=6): 6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge",
+          "[MED] strategy_promote (n=14): Strategy 'Boring Lock' PROMOTE candidate: 71.4% hit rate and +37.7% ROI on n=14. If pattern holds another week, consider unlocking LIVE access (currently paper-",
+          "[LOW] tier_slack (n=14): Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate."
+        ],
+        "Top factor signals": [
+          "pitcher_rest: bullish lift +50.0pp on n=2",
+          "handedness: bullish lift -20.9pp on n=23",
+          "statcast: bullish lift -13.1pp on n=25",
+          "park: bullish lift -10.0pp on n=20",
+          "pitcher_matchup: bullish lift +5.9pp on n=21"
+        ],
+        "Tier calibration": [
+          "LOCK: n=22, hit 68.2% vs expected 70% (\u0394 -1.8pp)",
+          "STRONG: n=21, hit 52.4% vs expected 60% (\u0394 -7.6pp)",
+          "SIDE: n=14, hit 71.4% vs expected 55% (\u0394 +16.4pp)",
+          "WATCH: n=7, hit 14.3% vs expected 50% (\u0394 -35.7pp)"
+        ]
+      },
+      "_auto": true,
+      "_kind": "learner"
+    },
     {
       "date": "2026-05-16",
       "title": "Daily settle \u2014 2026-05-16 \u00b7 0 graded \u00b7 $+0.00 total P\\L",
@@ -25283,21 +25409,41 @@
   },
   "ai_learner": {
     "available": true,
-    "generated_at": "2026-05-15T05:48:19.149995+00:00",
+    "generated_at": "2026-05-17T00:33:07.060187+00:00",
     "recommendations": [
       {
-        "type": "tier_drift",
+        "type": "factor_overweight",
         "severity": "high",
-        "text": "Tier STRONG CALIBRATION DRIFT: hit rate 37.5% vs expected 60% (delta -22.5pp on n=16). Either the tier thresholds are too loose or upstream factors are over-confident. Tighten the edge_pp gate for this tier.",
-        "tier": "STRONG",
-        "n": 16
+        "text": "Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 44.0% vs neutral 57.1% (lift -13.1pp on n=25). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+        "factor": "statcast",
+        "n": 25
       },
       {
         "type": "factor_overweight",
         "severity": "high",
-        "text": "Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 37.5% vs neutral 50.0% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+        "text": "Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 39.1% vs neutral 60.0% (lift -20.9pp on n=23). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
         "factor": "handedness",
-        "n": 8
+        "n": 23
+      },
+      {
+        "type": "factor_overweight",
+        "severity": "high",
+        "text": "Factor 'park' DEMOTE: when bullish (>1.05), hit-rate 40.0% vs neutral 50.0% (lift -10.0pp on n=20). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.",
+        "factor": "park",
+        "n": 20
+      },
+      {
+        "type": "strategy_demote",
+        "severity": "high",
+        "text": "Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=11. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.",
+        "strategy": "MLB Batter Total Bases Alt",
+        "n": 11
+      },
+      {
+        "type": "calibration_overconfidence",
+        "severity": "high",
+        "text": "6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.",
+        "n": 6
       },
       {
         "type": "strategy_promote",
@@ -25309,63 +25455,71 @@
       {
         "type": "tier_slack",
         "severity": "low",
-        "text": "Tier LOCK SLACK: hit rate 82.4% beats expected 70% by +12.4pp on n=17. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
-        "tier": "LOCK",
-        "n": 17
-      },
-      {
-        "type": "tier_slack",
-        "severity": "low",
         "text": "Tier SIDE SLACK: hit rate 71.4% beats expected 55% by +16.4pp on n=14. You may be under-shipping picks at this tier \u2014 consider loosening the edge gate.",
         "tier": "SIDE",
         "n": 14
       }
     ],
     "factor_perf": {
+      "statcast": {
+        "bullish_n": 25,
+        "bullish_won": 11,
+        "bullish_lost": 14,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 7,
+        "neutral_won": 4,
+        "neutral_lost": 3,
+        "bullish_hr": 44.0,
+        "bearish_hr": null,
+        "neutral_hr": 57.1,
+        "bullish_lift_pp": -13.1
+      },
       "pitcher_matchup": {
-        "bullish_n": 0,
-        "bullish_won": 0,
-        "bullish_lost": 0,
+        "bullish_n": 21,
+        "bullish_won": 10,
+        "bullish_lost": 11,
         "bearish_n": 0,
         "bearish_won": 0,
         "bearish_lost": 0,
         "neutral_n": 12,
         "neutral_won": 5,
         "neutral_lost": 7,
-        "bullish_hr": null,
+        "bullish_hr": 47.6,
         "bearish_hr": null,
         "neutral_hr": 41.7,
-        "bullish_lift_pp": null
+        "bullish_lift_pp": 5.9
       },
       "park": {
-        "bullish_n": 5,
-        "bullish_won": 3,
-        "bullish_lost": 2,
+        "bullish_n": 20,
+        "bullish_won": 8,
+        "bullish_lost": 12,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 16,
+        "neutral_won": 8,
+        "neutral_lost": 8,
+        "bullish_hr": 40.0,
+        "bearish_hr": null,
+        "neutral_hr": 50.0,
+        "bullish_lift_pp": -10.0
+      },
+      "handedness": {
+        "bullish_n": 23,
+        "bullish_won": 9,
+        "bullish_lost": 14,
         "bearish_n": 0,
         "bearish_won": 0,
         "bearish_lost": 0,
         "neutral_n": 10,
-        "neutral_won": 3,
-        "neutral_lost": 7,
-        "bullish_hr": 60.0,
+        "neutral_won": 6,
+        "neutral_lost": 4,
+        "bullish_hr": 39.1,
         "bearish_hr": null,
-        "neutral_hr": 30.0,
-        "bullish_lift_pp": 30.0
-      },
-      "handedness": {
-        "bullish_n": 8,
-        "bullish_won": 3,
-        "bullish_lost": 5,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 4,
-        "neutral_won": 2,
-        "neutral_lost": 2,
-        "bullish_hr": 37.5,
-        "bearish_hr": null,
-        "neutral_hr": 50.0,
-        "bullish_lift_pp": -12.5
+        "neutral_hr": 60.0,
+        "bullish_lift_pp": -20.9
       },
       "recency_woba": {
         "bullish_n": 0,
@@ -25374,12 +25528,117 @@
         "bearish_n": 0,
         "bearish_won": 0,
         "bearish_lost": 0,
-        "neutral_n": 12,
-        "neutral_won": 6,
-        "neutral_lost": 6,
+        "neutral_n": 30,
+        "neutral_won": 16,
+        "neutral_lost": 14,
         "bullish_hr": null,
         "bearish_hr": null,
+        "neutral_hr": 53.3,
+        "bullish_lift_pp": null
+      },
+      "player_performer": {
+        "bullish_n": 10,
+        "bullish_won": 5,
+        "bullish_lost": 5,
+        "bearish_n": 6,
+        "bearish_won": 2,
+        "bearish_lost": 4,
+        "neutral_n": 9,
+        "neutral_won": 4,
+        "neutral_lost": 5,
+        "bullish_hr": 50.0,
+        "bearish_hr": 33.3,
+        "neutral_hr": 44.4,
+        "bullish_lift_pp": 5.6
+      },
+      "bullpen": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 8,
+        "neutral_won": 7,
+        "neutral_lost": 1,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 87.5,
+        "bullish_lift_pp": null
+      },
+      "home_away": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 37,
+        "neutral_won": 17,
+        "neutral_lost": 20,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 45.9,
+        "bullish_lift_pp": null
+      },
+      "player_rest": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 19,
+        "neutral_won": 10,
+        "neutral_lost": 9,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 52.6,
+        "bullish_lift_pp": null
+      },
+      "bvp": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 2,
+        "bearish_won": 1,
+        "bearish_lost": 1,
+        "neutral_n": 2,
+        "neutral_won": 1,
+        "neutral_lost": 1,
+        "bullish_hr": null,
+        "bearish_hr": 50.0,
         "neutral_hr": 50.0,
+        "bullish_lift_pp": null
+      },
+      "weather": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 6,
+        "neutral_won": 5,
+        "neutral_lost": 1,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 83.3,
+        "bullish_lift_pp": null
+      },
+      "player_park_weather_composite": {
+        "bullish_n": 0,
+        "bullish_won": 0,
+        "bullish_lost": 0,
+        "bearish_n": 0,
+        "bearish_won": 0,
+        "bearish_lost": 0,
+        "neutral_n": 3,
+        "neutral_won": 3,
+        "neutral_lost": 0,
+        "bullish_hr": null,
+        "bearish_hr": null,
+        "neutral_hr": 100.0,
         "bullish_lift_pp": null
       },
       "implied_total_player": {
@@ -25397,36 +25656,6 @@
         "neutral_hr": 46.2,
         "bullish_lift_pp": null
       },
-      "player_performer": {
-        "bullish_n": 7,
-        "bullish_won": 3,
-        "bullish_lost": 4,
-        "bearish_n": 1,
-        "bearish_won": 0,
-        "bearish_lost": 1,
-        "neutral_n": 2,
-        "neutral_won": 1,
-        "neutral_lost": 1,
-        "bullish_hr": 42.9,
-        "bearish_hr": 0.0,
-        "neutral_hr": 50.0,
-        "bullish_lift_pp": -7.1
-      },
-      "home_away": {
-        "bullish_n": 0,
-        "bullish_won": 0,
-        "bullish_lost": 0,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 16,
-        "neutral_won": 7,
-        "neutral_lost": 9,
-        "bullish_hr": null,
-        "bearish_hr": null,
-        "neutral_hr": 43.8,
-        "bullish_lift_pp": null
-      },
       "series_game": {
         "bullish_n": 0,
         "bullish_won": 0,
@@ -25441,36 +25670,6 @@
         "bearish_hr": null,
         "neutral_hr": 46.2,
         "bullish_lift_pp": null
-      },
-      "player_rest": {
-        "bullish_n": 0,
-        "bullish_won": 0,
-        "bullish_lost": 0,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 13,
-        "neutral_won": 6,
-        "neutral_lost": 7,
-        "bullish_hr": null,
-        "bearish_hr": null,
-        "neutral_hr": 46.2,
-        "bullish_lift_pp": null
-      },
-      "statcast": {
-        "bullish_n": 9,
-        "bullish_won": 4,
-        "bullish_lost": 5,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 3,
-        "neutral_won": 1,
-        "neutral_lost": 2,
-        "bullish_hr": 44.4,
-        "bearish_hr": null,
-        "neutral_hr": 33.3,
-        "bullish_lift_pp": 11.1
       },
       "pitcher_rest": {
         "bullish_n": 2,
@@ -25501,39 +25700,69 @@
         "bearish_hr": null,
         "neutral_hr": 0.0,
         "bullish_lift_pp": null
-      },
-      "bullpen": {
-        "bullish_n": 0,
-        "bullish_won": 0,
-        "bullish_lost": 0,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 4,
-        "neutral_won": 4,
-        "neutral_lost": 0,
-        "bullish_hr": null,
-        "bearish_hr": null,
-        "neutral_hr": 100.0,
-        "bullish_lift_pp": null
-      },
-      "bvp": {
-        "bullish_n": 0,
-        "bullish_won": 0,
-        "bullish_lost": 0,
-        "bearish_n": 0,
-        "bearish_won": 0,
-        "bearish_lost": 0,
-        "neutral_n": 1,
-        "neutral_won": 0,
-        "neutral_lost": 1,
-        "bullish_hr": null,
-        "bearish_hr": null,
-        "neutral_hr": 0.0,
-        "bullish_lift_pp": null
       }
     },
     "strategy_perf": {
+      "User Override (not from engine)": {
+        "n": 2,
+        "won": 1,
+        "lost": 1,
+        "push": 0,
+        "stake": 8.0,
+        "pl": -3.38,
+        "hit_rate": 50.0,
+        "roi": -42.2
+      },
+      "MLB Batter Hits Alt": {
+        "n": 35,
+        "won": 22,
+        "lost": 13,
+        "push": 0,
+        "stake": 219.15,
+        "pl": -16.830000000000005,
+        "hit_rate": 62.9,
+        "roi": -7.7
+      },
+      "MLB Batter Total Bases Alt": {
+        "n": 11,
+        "won": 3,
+        "lost": 8,
+        "push": 0,
+        "stake": 45.0,
+        "pl": -10.23,
+        "hit_rate": 27.3,
+        "roi": -22.7
+      },
+      "MLB Total Runs": {
+        "n": 5,
+        "won": 3,
+        "lost": 2,
+        "push": 0,
+        "stake": 22.5,
+        "pl": 5.699999999999999,
+        "hit_rate": 60.0,
+        "roi": 25.3
+      },
+      "MLB Moneyline": {
+        "n": 6,
+        "won": 4,
+        "lost": 2,
+        "push": 0,
+        "stake": 43.0,
+        "pl": -0.899999999999999,
+        "hit_rate": 66.7,
+        "roi": -2.1
+      },
+      "MLB Batter RBIs Alt": {
+        "n": 3,
+        "won": 1,
+        "lost": 2,
+        "push": 0,
+        "stake": 12.5,
+        "pl": -0.75,
+        "hit_rate": 33.3,
+        "roi": -6.0
+      },
       "MLB Run Line": {
         "n": 2,
         "won": 0,
@@ -25554,16 +25783,6 @@
         "hit_rate": 66.7,
         "roi": 63.8
       },
-      "MLB Batter Total Bases Alt": {
-        "n": 3,
-        "won": 0,
-        "lost": 3,
-        "push": 0,
-        "stake": 7.5,
-        "pl": -7.5,
-        "hit_rate": 0.0,
-        "roi": -100.0
-      },
       "MLB Pitcher Strikeouts": {
         "n": 3,
         "won": 1,
@@ -25573,36 +25792,6 @@
         "pl": -1.9100000000000001,
         "hit_rate": 33.3,
         "roi": -19.1
-      },
-      "MLB Batter Hits Alt": {
-        "n": 10,
-        "won": 6,
-        "lost": 4,
-        "push": 0,
-        "stake": 84.65,
-        "pl": 0.29999999999999716,
-        "hit_rate": 60.0,
-        "roi": 0.4
-      },
-      "MLB Total Runs": {
-        "n": 2,
-        "won": 1,
-        "lost": 1,
-        "push": 0,
-        "stake": 10.0,
-        "pl": -0.4500000000000002,
-        "hit_rate": 50.0,
-        "roi": -4.5
-      },
-      "User Override (not from engine)": {
-        "n": 1,
-        "won": 0,
-        "lost": 1,
-        "push": 0,
-        "stake": 5.0,
-        "pl": -5.0,
-        "hit_rate": 0.0,
-        "roi": -100.0
       },
       "Boring Lock": {
         "n": 14,
@@ -25706,16 +25895,38 @@
       }
     },
     "tier_perf": {
+      "GOOD": {
+        "n": 36,
+        "won": 21,
+        "lost": 15,
+        "stake": 164.0,
+        "pl": -4.309999999999999,
+        "hit_rate": 58.3,
+        "roi": -2.6,
+        "expected_hr": 50,
+        "delta_hr": 8.3
+      },
+      "STRONG": {
+        "n": 21,
+        "won": 11,
+        "lost": 10,
+        "stake": 324.9,
+        "pl": -120.35999999999999,
+        "hit_rate": 52.4,
+        "roi": -37.0,
+        "expected_hr": 60,
+        "delta_hr": -7.6
+      },
       "LOCK": {
-        "n": 17,
-        "won": 14,
-        "lost": 3,
-        "stake": 341.5,
-        "pl": 187.64000000000001,
-        "hit_rate": 82.4,
-        "roi": 54.9,
+        "n": 22,
+        "won": 15,
+        "lost": 7,
+        "stake": 387.5,
+        "pl": 155.99,
+        "hit_rate": 68.2,
+        "roi": 40.3,
         "expected_hr": 70,
-        "delta_hr": 12.4
+        "delta_hr": -1.8
       },
       "WATCH": {
         "n": 7,
@@ -25739,17 +25950,6 @@
         "expected_hr": 55,
         "delta_hr": 16.4
       },
-      "STRONG": {
-        "n": 16,
-        "won": 6,
-        "lost": 10,
-        "stake": 291.9,
-        "pl": -142.58,
-        "hit_rate": 37.5,
-        "roi": -48.8,
-        "expected_hr": 60,
-        "delta_hr": -22.5
-      },
       "USER_OVERRIDE": {
         "n": 1,
         "won": 0,
@@ -25762,16 +25962,16 @@
         "delta_hr": -50
       }
     },
-    "total_settled_picks": 55,
-    "date": "2026-05-15",
+    "total_settled_picks": 101,
+    "date": "2026-05-16",
     "since_date": null,
-    "enriched_count": 16,
+    "enriched_count": 37,
     "knowledge_index": {
       "data_sources_read": [
-        "Notion Picks DB (55 settled picks)",
-        "Scout caches (16 picks enriched)",
-        "Settled archives (0 picks)",
-        "Journal postmortems (83 entries)",
+        "Notion Picks DB (101 settled picks)",
+        "Scout caches (37 picks enriched)",
+        "Settled archives (140 picks)",
+        "Journal postmortems (486 entries)",
         "CLV history (avg 0.0%)"
       ],
       "guardrails_active": [
@@ -25807,13 +26007,31 @@
         0.0
       ]
     },
-    "postmortem_count": 83,
-    "archive_picks_count": 0,
-    "source_file": "v2_ai_learner_2026-05-15.json"
+    "postmortem_count": 486,
+    "archive_picks_count": 140,
+    "source_file": "v2_ai_learner_2026-05-16.json"
   },
   "ai_learner_builds": {
     "available": true,
     "builds": [
+      {
+        "date": "2026-05-16",
+        "generated_at": "2026-05-17T00:33:07.060187+00:00",
+        "picks_analyzed": 101,
+        "recommendations_total": 7,
+        "severity": {
+          "high": 5,
+          "med": 1,
+          "low": 1
+        },
+        "top_recommendation": {
+          "severity": "high",
+          "category": null,
+          "summary": null
+        },
+        "json_file": "v2_ai_learner_2026-05-16.json",
+        "md_file": "ai_learner_2026-05-16.md"
+      },
       {
         "date": "2026-05-15",
         "generated_at": "2026-05-15T05:48:19.149995+00:00",
@@ -25851,9 +26069,17 @@
         "md_file": "ai_learner_2026-05-14.md"
       }
     ],
-    "count": 2
+    "count": 3
   },
   "activity_feed": [
+    {
+      "timestamp_utc": "2026-05-17T00:33:07.067614+00:00",
+      "type": "ai-learner",
+      "icon": "\ud83e\udde0",
+      "title": "learner: idle",
+      "detail": "101 picks analyzed \u00b7 7 recommendations",
+      "success": true
+    },
     {
       "timestamp_utc": "2026-05-17T00:31:00.697343+00:00",
       "type": "archive",
@@ -25883,9 +26109,9 @@
     "state": "idle",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": "2026-05-15T05:48:19.153513+00:00",
-    "last_run_picks": 55,
-    "last_run_recommendations": 5,
+    "last_run_at": "2026-05-17T00:33:07.067447+00:00",
+    "last_run_picks": 101,
+    "last_run_recommendations": 7,
     "guardrails": [
       "Never modifies engine code automatically",
       "Requires n\u22655 (factor), n\u22658 (strategy\\tier) before flagging",
@@ -25909,14 +26135,14 @@
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
     },
-    "updated_at": "2026-05-15T05:48:19.153655+00:00",
+    "updated_at": "2026-05-17T00:33:07.067614+00:00",
     "last_run_severity": {
-      "high": 2,
+      "high": 5,
       "med": 1,
-      "low": 2
+      "low": 1
     },
-    "last_run_md": "memory\\ai_learner_2026-05-15.md",
-    "last_run_json": "props_cache\\v2_ai_learner_2026-05-15.json"
+    "last_run_md": "memory\\ai_learner_2026-05-16.md",
+    "last_run_json": "props_cache\\v2_ai_learner_2026-05-16.json"
   },
   "odds_api_monitor": {
     "available": true,
@@ -28372,7 +28598,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 20:31 ET",
+  "built_at_et": "2026-05-16 20:34 ET",
   "counts": {
     "picks_total": 159,
     "settled": 67,
