@@ -1,13 +1,13 @@
 {
-  "build_id": "260517-000521",
-  "generated_at": "2026-05-17T00:05:22.902068+00:00",
+  "build_id": "260517-000830",
+  "generated_at": "2026-05-17T00:08:30.589165+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
     "live": 154.4,
-    "paper": 459.46,
+    "paper": 462.7,
     "paper_peak": 500.0,
-    "paper_drawdown_pct": 8.108000000000004,
+    "paper_drawdown_pct": 7.460000000000003,
     "peak": 155.5,
     "drawdown_pct": 0.7073954983922793,
     "live_start": 150.0,
@@ -1303,8 +1303,8 @@
       "odds": -190,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Push",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.32,
       "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-16",
@@ -1312,7 +1312,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] VOID\\DNP \u2014 Yohendrick Pinango did not appear in boxscore for Toronto Blue Jays @ Detroit Tigers. Stake returned."
+      "notes": "[auto-confirmed] Yohendrick Pi\u00f1ango HITS_ALT 2 O0.5 -> WON. Net +$1.32 at -190."
     },
     {
       "id": "362315a3-aab3-8174-bd79-dc4275bd9589",
@@ -1702,8 +1702,8 @@
       "odds": -260,
       "stake": 5,
       "stake_u": 1,
-      "result": "Push",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.92,
       "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-16",
@@ -1711,7 +1711,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] VOID\\DNP \u2014 Ivan Herrera did not appear in boxscore for Kansas City Royals @ St. Louis Cardinals. Stake returned."
+      "notes": "[auto-confirmed] Iv\u00e1n Herrera HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260."
     },
     {
       "id": "362315a3-aab3-81f0-919b-c6f5e687aa7e",
@@ -3490,8 +3490,8 @@
       "odds": -190,
       "stake": 2.5,
       "stake_u": 0.5,
-      "result": "Push",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.32,
       "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-16",
@@ -3499,7 +3499,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] VOID\\DNP \u2014 Yohendrick Pinango did not appear in boxscore for Toronto Blue Jays @ Detroit Tigers. Stake returned."
+      "notes": "[auto-confirmed] Yohendrick Pi\u00f1ango HITS_ALT 2 O0.5 -> WON. Net +$1.32 at -190."
     },
     {
       "id": "362315a3-aab3-81c7-b145-cf78f06ed8ff",
@@ -3623,8 +3623,8 @@
       "odds": -260,
       "stake": 5,
       "stake_u": 1,
-      "result": "Push",
-      "pl": 0,
+      "result": "Won",
+      "pl": 1.92,
       "tier": "GOOD",
       "strategy": "MLB Batter Hits Alt",
       "date": "2026-05-16",
@@ -3632,7 +3632,7 @@
       "ccs": null,
       "clv": null,
       "true_prob": null,
-      "notes": "[auto-confirmed] VOID\\DNP \u2014 Ivan Herrera did not appear in boxscore for Kansas City Royals @ St. Louis Cardinals. Stake returned."
+      "notes": "[auto-confirmed] Iv\u00e1n Herrera HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260."
     },
     {
       "id": "362315a3-aab3-8182-bf92-d5c066c62e9e",
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T00:05:22.902209+00:00",
+  "built_at": "2026-05-17T00:08:30.589249+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -3880,7 +3880,7 @@
       "live_pl": -2.71,
       "live_w": 2,
       "live_l": 1,
-      "paper_w": 8,
+      "paper_w": 10,
       "paper_l": 6,
       "grade": "B"
     }
@@ -3906,7 +3906,7 @@
       "date": "2026-05-16 - retroactive settle 2026-05-13",
       "live_w": 2.0,
       "live_l": 1.0,
-      "paper_w": 8.0,
+      "paper_w": 10.0,
       "paper_l": 6.0,
       "live_pl": -2.71
     }
@@ -4121,7 +4121,7 @@
     {
       "name": "MLB Batter Hits Alt",
       "picks": 35,
-      "won": 20,
+      "won": 22,
       "lost": 13,
       "hit_rate": 0,
       "net": 0,
@@ -4129,10 +4129,10 @@
       "status": "ACTIVE",
       "last_fired": "",
       "l10_picks": 10,
-      "l10_won": 6,
+      "l10_won": 8,
       "l10_lost": 2,
-      "l10_hit_rate": 75.0,
-      "l10_net": 3.29
+      "l10_hit_rate": 80.0,
+      "l10_net": 6.53
     },
     {
       "name": "MLB Batter Hits",
@@ -5067,6 +5067,215 @@
       "strategy_adj": ""
     },
     {
+      "title": "[PAPER] Geraldo Perdomo O0.5 HITS_ALT @ -310 (Arizona Diamondbacks @ \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Corbin Carroll O1.5 HITS_ALT @ +130 (Arizona Diamondbacks @  \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Dillon Dingler O1.5 TOTAL_BASES_ALT @ +110 (Toronto Blue Jay \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Total Bases Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ketel Marte O1.5 HITS_ALT @ +115 (Arizona Diamondbacks @ Col \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washin \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Total Runs.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Jordan Walker O1.5 TOTAL_BASES_ALT @ -120 (Kansas City Royal \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Total Bases Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] TJ Rumfield O0.5 HITS_ALT @ -300 (Arizona Diamondbacks @ Col \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Dillon Dingler O0.5 HITS_ALT @ -250 (Toronto Blue Jays @ Det \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -260 (Kansas City Royals @ St.  \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa  \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] Jordan Walker O0.5 HITS_ALT @ -270 (Kansas Ci \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[STRONG] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[LIVE] [LIVE-PENDING] Riley Greene O0.5 HITS_ALT @ -185 (Toronto Bl \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] User Override (not from engine).",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays) \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[LOCK] MLB Moneyline.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Jordan Walker O0.5 HITS_ALT @ -270 (Kansas City Royals @ St. \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[STRONG] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Masyn Winn O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. Lo \u2014 Lost",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Lost",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Riley Greene O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ Detro \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Alec Burleson O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
+      "title": "[PAPER] Vinnie Pasquantino O0.5 HITS_ALT @ -240 (Kansas City Royals  \u2014 Won",
+      "date": "2026-05-16",
+      "type": "Pick Postmortem",
+      "outcome": "Won",
+      "what_worked": "[GOOD] MLB Batter Hits Alt.",
+      "what_failed": "",
+      "lessons": "",
+      "calibration_delta": null,
+      "strategy_adj": ""
+    },
+    {
       "title": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -260 (Kansas City Royals @ St.  \u2014 Push",
       "date": "2026-05-16",
       "type": "Pick Postmortem",
@@ -6156,13 +6365,13 @@
       "strategy_adj": ""
     },
     {
-      "title": "[NIGHT-SETTLE] 2026-05-16 \u2014 10W-7L net $-16.13",
+      "title": "[NIGHT-SETTLE] 2026-05-16 \u2014 12W-7L net $-12.89",
       "date": "2026-05-16",
       "type": "Daily Reflection",
       "outcome": "Lost",
-      "what_worked": "10 of 19 picks hit (52%). Biggest winner: [PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washington Nationa +$4.55. LIVE wins: 2 totaling +$3.29. PAPER wins: 8 totaling +$19.08.",
+      "what_worked": "12 of 19 picks hit (63%). Biggest winner: [PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washington Nationa +$4.55. LIVE wins: 2 totaling +$3.29. PAPER wins: 10 totaling +$22.32.",
       "what_failed": "7 losses totaling -$38.50. Biggest miss: [PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays) $-10.00. Parlay correlation hit us: 2 parlay(s) lost (when one leg dies, the parlay dies). LIVE losses: 1 totaling -$6.00 \u2014 review research depth.",
-      "lessons": "Hit rate 53% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Repeat losses on: MLB Moneyline (2), MLB Batter Hits Alt (3), MLB Batter Total Bases Alt (2). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (8).",
+      "lessons": "Hit rate 63% near breakeven \u2014 Kelly sizing absorbs this fine, no adjustment needed. Repeat losses on: MLB Moneyline (2), MLB Batter Hits Alt (3), MLB Batter Total Bases Alt (2). Watch sample, may not be a real signal. Strategies clicking: MLB Batter Hits Alt (10).",
       "calibration_delta": null,
       "strategy_adj": "Cut parlay stake by 50% tomorrow. Singles preferred until correlation risk clears."
     },
@@ -9767,17 +9976,17 @@
   "sport_roi": [
     {
       "label": "MLB",
-      "roi": -11.102394156634652,
+      "roi": -10.225889354795079,
       "n": 67,
-      "pl": -41.03999999999999
+      "pl": -37.80000000000001
     }
   ],
   "tier_roi": [
     {
       "label": "GOOD",
-      "roi": -5.3969849246231165,
+      "roi": -3.7688442211055273,
       "n": 43,
-      "pl": -10.740000000000002
+      "pl": -7.499999999999999
     },
     {
       "label": "STRONG",
@@ -9836,6 +10045,12 @@
       "pick": "[PAPER] Ketel Marte O1.5 HITS_ALT @ +115"
     },
     {
+      "prob": 0.6551724137931034,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Yohendrick Pinango O0.5 HITS_ALT"
+    },
+    {
       "prob": 0.47619047619047616,
       "outcome": 0,
       "strategy": "MLB Batter Total Bases Alt",
@@ -9864,6 +10079,12 @@
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Geraldo Perdomo O0.5 HITS_ALT @ "
+    },
+    {
+      "prob": 0.7222222222222222,
+      "outcome": 1,
+      "strategy": "MLB Batter Hits Alt",
+      "pick": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -26"
     },
     {
       "prob": 0.7058823529411765,
@@ -10311,8 +10532,8 @@
     {
       "low": 65,
       "high": 70,
-      "n": 4,
-      "wins": 4,
+      "n": 5,
+      "wins": 5,
       "predicted_mid": 67.5,
       "actual_hit": 100.0,
       "delta": 32.5
@@ -10320,11 +10541,11 @@
     {
       "low": 70,
       "high": 75,
-      "n": 8,
-      "wins": 5,
+      "n": 9,
+      "wins": 6,
       "predicted_mid": 72.5,
-      "actual_hit": 62.5,
-      "delta": -10.0
+      "actual_hit": 66.66666666666666,
+      "delta": -5.833333333333343
     },
     {
       "low": 75,
@@ -10375,10 +10596,10 @@
   "strat_calib": [
     {
       "strategy": "MLB Batter Hits Alt",
-      "n": 33,
-      "predicted_avg": 67.30990925091731,
-      "actual_hit": 60.60606060606061,
-      "delta": -6.703848644856706
+      "n": 35,
+      "predicted_avg": 67.39904196805155,
+      "actual_hit": 62.857142857142854,
+      "delta": -4.541899110908695
     },
     {
       "strategy": "MLB Batter Total Bases Alt",
@@ -10476,10 +10697,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 20:10",
       "LastRun": "2026-05-16 20:05",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -10619,8 +10840,8 @@
   "perf_panel": {
     "total_settled": 67,
     "total_stake": 369.65,
-    "total_net_pl": -41.04,
-    "total_roi_pct": -11.1,
+    "total_net_pl": -37.8,
+    "total_roi_pct": -10.2,
     "by_strategy": [
       {
         "name": "User Override (not from engine)",
@@ -10665,12 +10886,12 @@
       {
         "name": "MLB Batter Hits Alt",
         "n": 35,
-        "won": 20,
+        "won": 22,
         "lost": 13,
         "stake": 219.15,
-        "pl": -20.07,
-        "hit_rate": 57.1,
-        "roi_pct": -9.2
+        "pl": -16.83,
+        "hit_rate": 62.9,
+        "roi_pct": -7.7
       },
       {
         "name": "MLB Pitcher Strikeouts",
@@ -10717,12 +10938,12 @@
       {
         "name": "MLB",
         "n": 67,
-        "won": 33,
+        "won": 35,
         "lost": 32,
         "stake": 369.65,
-        "pl": -41.04,
-        "hit_rate": 49.3,
-        "roi_pct": -11.1
+        "pl": -37.8,
+        "hit_rate": 52.2,
+        "roi_pct": -10.2
       }
     ],
     "by_tier": [
@@ -10739,12 +10960,12 @@
       {
         "name": "GOOD",
         "n": 43,
-        "won": 23,
+        "won": 25,
         "lost": 18,
         "stake": 199.0,
-        "pl": -10.74,
-        "hit_rate": 53.5,
-        "roi_pct": -5.4
+        "pl": -7.5,
+        "hit_rate": 58.1,
+        "roi_pct": -3.8
       },
       {
         "name": "WATCH",
@@ -10813,12 +11034,12 @@
       {
         "name": "MLB Batter Hits Alt",
         "n": 35,
-        "won": 20,
+        "won": 22,
         "lost": 13,
         "stake": 219.15,
-        "pl": -20.07,
-        "hit_rate": 57.1,
-        "roi_pct": -9.2
+        "pl": -16.83,
+        "hit_rate": 62.9,
+        "roi_pct": -7.7
       },
       {
         "name": "MLB Pitcher Strikeouts",
@@ -10873,12 +11094,12 @@
         "n_settled": 19,
         "n_live": 24,
         "n_paper": 83,
-        "won": 10,
+        "won": 12,
         "lost": 7,
-        "push": 2,
-        "hit_rate": 52.6,
+        "push": 0,
+        "hit_rate": 63.2,
         "stake": 91.0,
-        "pl": -16.13,
+        "pl": -12.89,
         "top_pick": "[PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washington Nationals)",
         "top_pl": 4.55,
         "bot_pick": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays)",
@@ -11122,12 +11343,12 @@
         "n_settled": 19,
         "n_live": 24,
         "n_paper": 83,
-        "won": 10,
+        "won": 12,
         "lost": 7,
-        "push": 2,
-        "hit_rate": 52.6,
+        "push": 0,
+        "hit_rate": 63.2,
         "stake": 91.0,
-        "pl": -16.13,
+        "pl": -12.89,
         "top_pick": "[PAPER] TOTAL Over 10.0 [BAL@WSH] @ -110 (Baltimore Orioles @ Washington Nationals)",
         "top_pl": 4.55,
         "bot_pick": "[PAPER] ML TB [MIA@TB] @ -138 (Miami Marlins @ Tampa Bay Rays)",
@@ -11136,12 +11357,12 @@
     ],
     "total_picks": 159,
     "total_settled": 67,
-    "total_won": 33,
+    "total_won": 35,
     "total_lost": 32,
     "total_stake": 369.65,
-    "total_pl": -41.04,
-    "hit_rate": 49.3,
-    "roi_pct": -11.1,
+    "total_pl": -37.8,
+    "hit_rate": 52.2,
+    "roi_pct": -10.2,
     "live_count": 32,
     "paper_count": 127,
     "best_day": {
@@ -11204,12 +11425,12 @@
     },
     "paper": {
       "n": 60,
-      "won": 29,
+      "won": 31,
       "lost": 29,
       "stake": 339.65,
-      "pl": -40.54,
-      "hit_rate": 48.3,
-      "roi_pct": -11.9
+      "pl": -37.3,
+      "hit_rate": 51.7,
+      "roi_pct": -11.0
     }
   },
   "wellness": {
@@ -11930,9 +12151,9 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 6,
-            "inning_half": "Bottom",
-            "inning_state": "End",
+            "current_inning": 7,
+            "inning_half": "Top",
+            "inning_state": "Top",
             "home_runs": 4,
             "home_hits": 7,
             "home_errors": 0,
@@ -11945,7 +12166,8 @@
               0,
               0,
               0,
-              2
+              2,
+              null
             ],
             "away_innings": [
               0,
@@ -11953,7 +12175,8 @@
               1,
               0,
               3,
-              0
+              0,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -12037,7 +12260,7 @@
             "home_hits": 3,
             "home_errors": 0,
             "away_runs": 0,
-            "away_hits": 1,
+            "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
               2,
@@ -12227,8 +12450,8 @@
             "inning_state": "Top",
             "home_runs": 1,
             "home_hits": 4,
-            "home_errors": 0,
-            "away_runs": 0,
+            "home_errors": 1,
+            "away_runs": 1,
             "away_hits": 1,
             "away_errors": 0,
             "home_innings": [
@@ -12241,7 +12464,7 @@
               0,
               0,
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -12415,8 +12638,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 4,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 1,
             "home_hits": 2,
             "home_errors": 1,
@@ -17084,13 +17307,13 @@
     "paper": {
       "total_picks": 127,
       "settled_picks": 60,
-      "won": 29,
+      "won": 31,
       "lost": 29,
-      "push": 2,
-      "win_rate_pct": 50.0,
-      "total_pl": -40.54,
-      "max_drawdown": -40.54,
-      "expectancy_per_pick": -0.32,
+      "push": 0,
+      "win_rate_pct": 51.7,
+      "total_pl": -37.3,
+      "max_drawdown": -37.3,
+      "expectancy_per_pick": -0.29,
       "streak": "L1"
     }
   },
@@ -17148,19 +17371,19 @@
     "paper": {
       "bankroll": {
         "start": 500.0,
-        "current": 459.46,
+        "current": 462.7,
         "peak": 500.0,
         "peak_date": "2026-05-16",
-        "drawdown_dollars": 40.54,
-        "drawdown_pct": 8.1,
-        "max_drawdown_dollars": 40.54,
-        "max_drawdown_pct": 8.1
+        "drawdown_dollars": 37.3,
+        "drawdown_pct": 7.5,
+        "max_drawdown_dollars": 37.3,
+        "max_drawdown_pct": 7.5
       },
       "today": {
         "stake_committed": 442.5,
         "daily_cap": 150.0,
         "cap_pct_used": 295.0,
-        "daily_pl": -13.42,
+        "daily_pl": -10.18,
         "picks_fired": 83,
         "picks_pending": 9
       },
@@ -17174,14 +17397,14 @@
       "breakers": {
         "hard_stop_status": "OK",
         "hard_stop_threshold": -50.0,
-        "hard_stop_distance": 36.58,
+        "hard_stop_distance": 39.82,
         "drawdown_breaker_status": "OK",
         "drawdown_breaker_threshold_pct": 30.0,
         "drawdown_breaker_at_bankroll": 350.0
       },
       "sizing": {
         "avg_stake": 5.55,
-        "avg_stake_pct_bankroll": 1.21,
+        "avg_stake_pct_bankroll": 1.2,
         "per_pick_max_dollars": 10.0,
         "oversize_picks_count": 4,
         "unit_size": 5.0
@@ -17192,7 +17415,7 @@
         "longest_winning": 5,
         "longest_losing": 3
       },
-      "roi_pct": -11.94,
+      "roi_pct": -10.98,
       "total_settled": 60
     },
     "config": {
@@ -17260,21 +17483,21 @@
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 92.5
+        "age_hours": 92.6
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 41.2
+        "age_hours": 41.3
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 35.0
+        "age_hours": 35.1
       },
       {
         "name": "audit_round3_2026-05-15.md",
@@ -17302,7 +17525,7 @@
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 28.7
+        "age_hours": 28.8
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
@@ -17316,7 +17539,7 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 33.3
+        "age_hours": 33.4
       },
       {
         "name": "BettingOS_System_Bible.md",
@@ -17337,56 +17560,56 @@
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 96.6
+        "age_hours": 96.7
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_last10_strategies.md",
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 73.7
+        "age_hours": 73.8
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
@@ -17400,77 +17623,77 @@
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 118.1
+        "age_hours": 118.2
       },
       {
         "name": "feedback_v8_research_layer.md",
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "full_audit_2026-05-15.md",
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 40.5
+        "age_hours": 40.6
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
@@ -17491,7 +17714,7 @@
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 10.7
+        "age_hours": 10.8
       },
       {
         "name": "learning_journal_2026-05-15.md",
@@ -17503,9 +17726,9 @@
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
-        "bytes": 47627,
-        "mtime": 1778976065.5505896,
-        "age_hours": 0.1
+        "bytes": 56222,
+        "mtime": 1778976497.3683574,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
@@ -17519,175 +17742,175 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 109.1
+        "age_hours": 109.2
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 42.6
+        "age_hours": 42.7
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 41.3
+        "age_hours": 41.4
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_daily_workflow_explained.md",
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 117.1
+        "age_hours": 117.2
       },
       {
         "name": "reference_deep_research_workflow.md",
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 118.1
+        "age_hours": 118.2
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 117.3
+        "age_hours": 117.4
       },
       {
         "name": "reference_sport_calendar.md",
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "reference_strategy_definitions.md",
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 92.4
+        "age_hours": 92.5
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 122.4
+        "age_hours": 122.5
       },
       {
         "name": "reference_working_scrape_sources.md",
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 123.1
+        "age_hours": 123.2
       },
       {
         "name": "roadmap.md",
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 93.1
+        "age_hours": 93.2
       },
       {
         "name": "silent_killers_2026-05-15.md",
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 41.2
+        "age_hours": 41.3
       },
       {
         "name": "state_snapshot_2026-05-13.md",
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 68.6
+        "age_hours": 68.7
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
@@ -17701,14 +17924,14 @@
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 91.4
+        "age_hours": 91.5
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 91.6
+        "age_hours": 91.7
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
@@ -17722,7 +17945,7 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 78.6
+        "age_hours": 78.7
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
@@ -17743,14 +17966,14 @@
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 82.1
+        "age_hours": 82.2
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 85.2
+        "age_hours": 85.3
       },
       {
         "name": "v2_simplification_2026-05-13.md",
@@ -17764,14 +17987,14 @@
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 76.4
+        "age_hours": 76.5
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 76.8
+        "age_hours": 76.9
       }
     ]
   },
@@ -17822,10 +18045,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.1,
-        "bytes": 2029,
+        "age_hours": 0.0,
+        "bytes": 2847,
         "row_count": null,
-        "last_refresh_iso": "2026-05-17T00:00:07.855529+00:00",
+        "last_refresh_iso": "2026-05-17T00:07:10.090583+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -17835,7 +18058,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.4,
+        "age_hours": 2.5,
         "bytes": 14905,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:39:42.993074+00:00",
@@ -17848,10 +18071,10 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.1,
-        "bytes": 47627,
+        "age_hours": 0.0,
+        "bytes": 56222,
         "row_count": null,
-        "last_refresh_iso": "2026-05-17T00:01:05.550590+00:00",
+        "last_refresh_iso": "2026-05-17T00:08:17.368357+00:00",
         "issue": null,
         "min_bytes": 200,
         "min_count": null
@@ -20418,7 +20641,7 @@
     "daily_brief": "24 picks across 7 games today. Tier mix: 3 LOCK, 5 STRONG, 6 GOOD, 10 WATCH. Market mix: 16\u00d7 PROP, 5\u00d7 TOTAL, 3\u00d7 ML. \u26a0 Caveats: 16 picks on phantom baseline (no real history); 17 picks with thin n<20 sample."
   },
   "lens_backtest": {
-    "generated_at": "2026-05-17T00:01:07.260785Z",
+    "generated_at": "2026-05-17T00:08:18.703243Z",
     "phase": 1,
     "lens_weights": {
       "form_top10_bonus": 20,
@@ -21115,13 +21338,13 @@
   "changelog": [
     {
       "date": "2026-05-16",
-      "title": "Daily settle \u2014 2026-05-16 \u00b7 0 graded \u00b7 $+0.00 total P\\L",
+      "title": "Daily settle \u2014 2026-05-16 \u00b7 2 graded \u00b7 $+3.24 total P\\L",
       "summary": "props_cache\\v2_settle_summary_2026-05-16.json",
       "changes": {
         "Settle outcome": [
-          "graded 0 picks (0 grading failures)",
+          "graded 2 picks (0 grading failures)",
           "LIVE: 0W-0L on $0.00 stake \u2192 P\\L $+0.00",
-          "PAPER: 0W-0L on $0.00 stake \u2192 P\\L $+0.00"
+          "PAPER: 2W-0L on $7.50 stake \u2192 P\\L $+3.24"
         ]
       },
       "_auto": true,
@@ -24186,11 +24409,11 @@
   },
   "activity_feed": [
     {
-      "timestamp_utc": "2026-05-17T00:01:06.577021+00:00",
+      "timestamp_utc": "2026-05-17T00:08:18.209197+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-16",
-      "detail": "19 picks \u00b7 LIVE P\\L -2.71 \u00b7 PAPER P\\L -13.42",
+      "detail": "19 picks \u00b7 LIVE P\\L -2.71 \u00b7 PAPER P\\L -10.18",
       "success": true
     },
     {
@@ -24279,10 +24502,10 @@
           "live_n": 3,
           "paper_n": 16,
           "live_net_pl": -2.71,
-          "paper_net_pl": -13.42,
+          "paper_net_pl": -10.18,
           "live_won": 2,
           "live_lost": 1,
-          "paper_won": 8,
+          "paper_won": 10,
           "paper_lost": 6
         },
         "picks": [
@@ -24332,6 +24555,40 @@
             "strategy": "MLB Moneyline",
             "sport": "MLB",
             "market": "ML",
+            "edge_pp": null,
+            "true_prob": null,
+            "base_prob": null,
+            "factor_quality_score": null
+          },
+          {
+            "date": "2026-05-16",
+            "pick": "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ Detroit Tigers)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 1.32,
+            "stake": 2.5,
+            "odds": -190,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
+            "edge_pp": null,
+            "true_prob": null,
+            "base_prob": null,
+            "factor_quality_score": null
+          },
+          {
+            "date": "2026-05-16",
+            "pick": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. Louis Cardinals)",
+            "account": "PAPER",
+            "result": "Won",
+            "pl": 1.92,
+            "stake": 5.0,
+            "odds": -260,
+            "tier": "GOOD",
+            "strategy": "MLB Batter Hits Alt",
+            "sport": "MLB",
+            "market": "HITS_ALT",
             "edge_pp": null,
             "true_prob": null,
             "base_prob": null,
@@ -24424,23 +24681,6 @@
           },
           {
             "date": "2026-05-16",
-            "pick": "[PAPER] Yohendrick Pinango O0.5 HITS_ALT @ -190 (Toronto Blue Jays @ Detroit Tigers)",
-            "account": "PAPER",
-            "result": "Push",
-            "pl": 0.0,
-            "stake": 2.5,
-            "odds": -190,
-            "tier": "GOOD",
-            "strategy": "MLB Batter Hits Alt",
-            "sport": "MLB",
-            "market": "HITS_ALT",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
-          },
-          {
-            "date": "2026-05-16",
             "pick": "[PAPER] Dillon Dingler O1.5 TOTAL_BASES_ALT @ +110 (Toronto Blue Jays @ Detroit Tigers)",
             "account": "PAPER",
             "result": "Lost",
@@ -24481,23 +24721,6 @@
             "pl": 1.61,
             "stake": 5.0,
             "odds": -310,
-            "tier": "GOOD",
-            "strategy": "MLB Batter Hits Alt",
-            "sport": "MLB",
-            "market": "HITS_ALT",
-            "edge_pp": null,
-            "true_prob": null,
-            "base_prob": null,
-            "factor_quality_score": null
-          },
-          {
-            "date": "2026-05-16",
-            "pick": "[PAPER] Ivan Herrera O0.5 HITS_ALT @ -260 (Kansas City Royals @ St. Louis Cardinals)",
-            "account": "PAPER",
-            "result": "Push",
-            "pl": 0.0,
-            "stake": 5.0,
-            "odds": -260,
             "tier": "GOOD",
             "strategy": "MLB Batter Hits Alt",
             "sport": "MLB",
@@ -26703,7 +26926,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 20:05 ET",
+  "built_at_et": "2026-05-16 20:08 ET",
   "counts": {
     "picks_total": 159,
     "settled": 67,
