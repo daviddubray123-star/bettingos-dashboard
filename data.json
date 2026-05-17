@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-012017",
-  "generated_at": "2026-05-17T01:20:28.990749+00:00",
+  "build_id": "260517-012110",
+  "generated_at": "2026-05-17T01:21:10.910968+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T01:20:28.990844+00:00",
+  "built_at": "2026-05-17T01:21:10.911051+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -11115,10 +11115,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-16 21:25",
       "LastRun": "2026-05-16 21:20",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": false
     },
     {
@@ -12677,7 +12677,7 @@
             "status_code": "I",
             "current_inning": 8,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 4,
             "home_hits": 5,
             "home_errors": 0,
@@ -12702,7 +12702,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -12782,8 +12782,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 7,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 8,
             "home_hits": 8,
             "home_errors": 1,
@@ -17939,7 +17939,7 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 45.8
+        "age_hours": 45.9
       },
       {
         "name": "ai_learner_2026-05-15.md",
@@ -17995,7 +17995,7 @@
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 31.4
+        "age_hours": 31.5
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -18009,7 +18009,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 92.6
+        "age_hours": 92.7
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -18093,7 +18093,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 109.5
+        "age_hours": 109.6
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -18184,7 +18184,7 @@
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 85.0
+        "age_hours": 85.1
       },
       {
         "name": "learning_journal_2026-05-14.md",
@@ -18429,7 +18429,7 @@
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 86.1
+        "age_hours": 86.2
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
@@ -18522,7 +18522,7 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 2029,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T01:00:04.824214+00:00",
@@ -28841,7 +28841,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 21:20 ET",
+  "built_at_et": "2026-05-16 21:21 ET",
   "counts": {
     "picks_total": 159,
     "settled": 67,
