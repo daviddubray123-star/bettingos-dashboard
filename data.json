@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-032022",
-  "generated_at": "2026-05-17T03:20:22.773458+00:00",
+  "build_id": "260517-032517",
+  "generated_at": "2026-05-17T03:25:26.345864+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T03:20:22.773536+00:00",
+  "built_at": "2026-05-17T03:25:26.345943+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -14094,8 +14094,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-05-16 23:25",
-      "LastRun": "2026-05-16 23:20",
+      "NextRun": "2026-05-16 23:30",
+      "LastRun": "2026-05-16 23:25",
       "LastResult": 267009,
       "WakeToRun": false
     },
@@ -16117,7 +16117,7 @@
           "game_pk": 823627,
           "date": "2026-05-16",
           "game_time_utc": "2026-05-16T23:15:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "New York Mets",
           "home_team_id": 121,
           "away_team": "New York Yankees",
@@ -16241,7 +16241,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 60.7,
+          "weather_temp": 61.6,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 48.7,
@@ -16295,8 +16295,8 @@
             "current_inning": 6,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 0,
-            "home_hits": 6,
+            "home_runs": 2,
+            "home_hits": 7,
             "home_errors": 0,
             "away_runs": 6,
             "away_hits": 2,
@@ -16307,7 +16307,7 @@
               0,
               0,
               0,
-              null
+              2
             ],
             "away_innings": [
               1,
@@ -16338,8 +16338,8 @@
           "venue": "Sutter Health Park",
           "park_hr_factor": 1.04,
           "weather_factor": 1.0,
-          "weather_wind": "cross",
-          "weather_temp": 66.1,
+          "weather_wind": null,
+          "weather_temp": 65.4,
           "weather_notes": [],
           "park_runs_factor": 1.04,
           "nrfi_prob": 51.4,
@@ -16394,7 +16394,7 @@
             "status_code": "I",
             "current_inning": 7,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 1,
             "home_hits": 4,
             "home_errors": 2,
@@ -16589,9 +16589,9 @@
           "home_pp_name": "Bailey Ober",
           "home_pp_id": 641927,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Robert Gasser",
+          "away_pp_id": 688107,
+          "away_pp_throws": "L",
           "venue": "Target Field"
         },
         {
@@ -16744,9 +16744,9 @@
           "home_pp_name": "Max Meyer",
           "home_pp_id": 676974,
           "home_pp_throws": "R",
-          "away_pp_name": "Mart\u00edn P\u00e9rez",
-          "away_pp_id": 527048,
-          "away_pp_throws": "L",
+          "away_pp_name": null,
+          "away_pp_id": null,
+          "away_pp_throws": null,
           "venue": "loanDepot park"
         },
         {
@@ -20957,28 +20957,28 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 47.8
+        "age_hours": 47.9
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 45.5
+        "age_hours": 45.6
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 6288,
         "mtime": 1778986920.2314296,
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 95.8
+        "age_hours": 95.9
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
@@ -20992,63 +20992,63 @@
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 38.2
+        "age_hours": 38.3
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 37.8
+        "age_hours": 37.9
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 37.6
+        "age_hours": 37.7
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 33.4
+        "age_hours": 33.5
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 32.0
+        "age_hours": 32.1
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 94.6
+        "age_hours": 94.7
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 36.6
+        "age_hours": 36.7
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 80.7
+        "age_hours": 80.8
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 85.6
+        "age_hours": 85.7
       },
       {
         "name": "design_engine_v2.md",
@@ -21062,35 +21062,35 @@
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_last10_strategies.md",
@@ -21104,70 +21104,70 @@
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 111.5
+        "age_hours": 111.6
       },
       {
         "name": "feedback_no_skipping_research.md",
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
@@ -21181,7 +21181,7 @@
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "full_audit_2026-05-15.md",
@@ -21195,105 +21195,105 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 94.7
+        "age_hours": 94.8
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 87.0
+        "age_hours": 87.1
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 14.0
+        "age_hours": 14.1
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 13.8
+        "age_hours": 13.9
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 190106,
         "mtime": 1778986902.3339455,
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 71.8
+        "age_hours": 71.9
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 112.4
+        "age_hours": 112.5
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 45.9
+        "age_hours": 46.0
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 44.6
+        "age_hours": 44.7
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_daily_workflow_explained.md",
@@ -21307,63 +21307,63 @@
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 121.4
+        "age_hours": 121.5
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 120.5
+        "age_hours": 120.6
       },
       {
         "name": "reference_sport_calendar.md",
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "reference_strategy_definitions.md",
@@ -21384,7 +21384,7 @@
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 126.4
+        "age_hours": 126.5
       },
       {
         "name": "roadmap.md",
@@ -21398,7 +21398,7 @@
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 44.5
+        "age_hours": 44.6
       },
       {
         "name": "state_snapshot_2026-05-13.md",
@@ -21412,28 +21412,28 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 95.6
+        "age_hours": 95.7
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 94.7
+        "age_hours": 94.8
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 94.9
+        "age_hours": 95.0
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 81.6
+        "age_hours": 81.7
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -21447,35 +21447,35 @@
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 88.1
+        "age_hours": 88.2
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 95.2
+        "age_hours": 95.3
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 85.4
+        "age_hours": 85.5
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 88.5
+        "age_hours": 88.6
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 80.7
+        "age_hours": 80.8
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -21489,7 +21489,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 80.1
+        "age_hours": 80.2
       }
     ]
   },
@@ -21501,7 +21501,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 5.6,
+        "age_hours": 5.7,
         "bytes": 580158,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T21:43:48.889737+00:00",
@@ -21514,7 +21514,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 13.7,
+        "age_hours": 13.8,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -21527,7 +21527,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 5.7,
+        "age_hours": 5.8,
         "bytes": 1000406,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:37:50.473900+00:00",
@@ -21540,7 +21540,7 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 763,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T03:00:08.328379+00:00",
@@ -21553,7 +21553,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 5.7,
+        "age_hours": 5.8,
         "bytes": 14905,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:39:42.993074+00:00",
@@ -21566,7 +21566,7 @@
         "status": "fresh",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 190106,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T03:01:42.333946+00:00",
@@ -21579,7 +21579,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 12.8,
+        "age_hours": 12.9,
         "bytes": 12876,
         "row_count": 42,
         "last_refresh_iso": "2026-05-16T14:30:27.426931+00:00",
@@ -21592,7 +21592,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 54.2,
+        "age_hours": 54.3,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -21603,12 +21603,12 @@
       {
         "label": "Weather snapshots",
         "status": "fresh",
-        "latest_file": "wx_SEA_2026-05-16T23.json",
-        "latest_date": "2026-05-16",
-        "age_hours": 0.8,
-        "bytes": 217,
+        "latest_file": "wx_ATH_2026-05-17T01.json",
+        "latest_date": "2026-05-17",
+        "age_hours": 0.0,
+        "bytes": 213,
         "row_count": 25,
-        "last_refresh_iso": "2026-05-17T02:30:30.176972+00:00",
+        "last_refresh_iso": "2026-05-17T03:25:25.967624+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -32005,7 +32005,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 23:20 ET",
+  "built_at_et": "2026-05-16 23:25 ET",
   "counts": {
     "picks_total": 159,
     "settled": 83,
