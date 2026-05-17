@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-162516",
-  "generated_at": "2026-05-17T16:25:16.693997+00:00",
+  "build_id": "260517-163017",
+  "generated_at": "2026-05-17T16:30:18.274810+00:00",
   "today": "2026-05-17",
   "yesterday": "2026-05-16",
   "bankroll": {
@@ -3045,7 +3045,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-05-17T16:25:16.694126+00:00",
+  "built_at": "2026-05-17T16:30:18.274867+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -14194,8 +14194,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-05-17 12:30",
-      "LastRun": "2026-05-17 12:25",
+      "NextRun": "2026-05-17 12:35",
+      "LastRun": "2026-05-17 12:30",
       "LastResult": 267009,
       "WakeToRun": false
     },
@@ -14298,8 +14298,8 @@
     {
       "Name": "BettingOS - tripwire",
       "State": "Ready",
-      "NextRun": "2026-05-17 12:30",
-      "LastRun": "2026-05-17 12:15",
+      "NextRun": "2026-05-17 12:45",
+      "LastRun": "2026-05-17 12:30",
       "LastResult": 2147942402,
       "WakeToRun": false
     },
@@ -14949,7 +14949,7 @@
           "game_pk": 822982,
           "date": "2026-05-17",
           "game_time_utc": "2026-05-17T16:15:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Tampa Bay Rays",
           "home_team_id": 139,
           "away_team": "Miami Marlins",
@@ -15018,14 +15018,14 @@
             "current_inning": 1,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 0,
-            "home_hits": 0,
+            "home_runs": 1,
+            "home_hits": 1,
             "home_errors": 0,
             "away_runs": 0,
             "away_hits": 0,
             "away_errors": 0,
             "home_innings": [
-              null
+              1
             ],
             "away_innings": [
               0
@@ -15585,7 +15585,7 @@
           "game_pk": 824192,
           "date": "2026-05-17",
           "game_time_utc": "2026-05-17T18:10:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Houston Astros",
           "home_team_id": 117,
           "away_team": "Texas Rangers",
@@ -15952,7 +15952,7 @@
           "game_pk": 824358,
           "date": "2026-05-17",
           "game_time_utc": "2026-05-17T19:10:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Colorado Rockies",
           "home_team_id": 115,
           "away_team": "Arizona Diamondbacks",
@@ -16325,9 +16325,9 @@
           "home_pp_name": "Shane McClanahan",
           "home_pp_id": 663556,
           "home_pp_throws": "L",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Trevor Rogers",
+          "away_pp_id": 669432,
+          "away_pp_throws": "L",
           "venue": "Tropicana Field"
         },
         {
@@ -16339,9 +16339,9 @@
           "home_team_id": 143,
           "away_team": "Cincinnati Reds",
           "away_team_id": 113,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Andrew Painter",
+          "home_pp_id": 691725,
+          "home_pp_throws": "R",
           "away_pp_name": "Nick Lodolo",
           "away_pp_id": 666157,
           "away_pp_throws": "L",
@@ -16359,9 +16359,9 @@
           "home_pp_name": "Max Meyer",
           "home_pp_id": 676974,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "JR Ritchie",
+          "away_pp_id": 702275,
+          "away_pp_throws": "R",
           "venue": "loanDepot park"
         },
         {
@@ -16444,9 +16444,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Brandon Sproat",
+          "away_pp_id": 687075,
+          "away_pp_throws": "R",
           "venue": "Wrigley Field"
         },
         {
@@ -16509,9 +16509,9 @@
           "home_team_id": 109,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Zac Gallen",
+          "home_pp_id": 668678,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -16548,9 +16548,9 @@
           "home_pp_name": "Braxton Garrett",
           "home_pp_id": 666129,
           "home_pp_throws": "L",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Mart\u00edn P\u00e9rez",
+          "away_pp_id": 527048,
+          "away_pp_throws": "L",
           "venue": "loanDepot park"
         },
         {
@@ -16582,9 +16582,9 @@
           "home_pp_name": "Griffin Jax",
           "home_pp_id": 643377,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Kyle Bradish",
+          "away_pp_id": 680694,
+          "away_pp_throws": "R",
           "venue": "Tropicana Field"
         },
         {
@@ -16596,9 +16596,9 @@
           "home_team_id": 143,
           "away_team": "Cincinnati Reds",
           "away_team_id": 113,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Jes\u00fas Luzardo",
+          "home_pp_id": 666200,
+          "home_pp_throws": "L",
           "away_pp_name": "Chase Burns",
           "away_pp_id": 695505,
           "away_pp_throws": "R",
@@ -16664,9 +16664,9 @@
           "home_team_id": 142,
           "away_team": "Houston Astros",
           "away_team_id": 117,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Zebby Matthews",
+          "home_pp_id": 805673,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -16684,9 +16684,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Jacob Misiorowski",
+          "away_pp_id": 694819,
+          "away_pp_throws": "R",
           "venue": "Wrigley Field"
         },
         {
@@ -16766,9 +16766,9 @@
           "home_team_id": 109,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Ryne Nelson",
+          "home_pp_id": 669194,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -16802,9 +16802,9 @@
           "home_team_id": 143,
           "away_team": "Cincinnati Reds",
           "away_team_id": 113,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Aaron Nola",
+          "home_pp_id": 605400,
+          "home_pp_throws": "R",
           "away_pp_name": "Andrew Abbott",
           "away_pp_id": 671096,
           "away_pp_throws": "L",
@@ -16822,9 +16822,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Shane Baz",
+          "away_pp_id": 669358,
+          "away_pp_throws": "R",
           "venue": "Tropicana Field"
         },
         {
@@ -16836,9 +16836,9 @@
           "home_team_id": 142,
           "away_team": "Houston Astros",
           "away_team_id": 117,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Joe Ryan",
+          "home_pp_id": 657746,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -16870,9 +16870,9 @@
           "home_team_id": 109,
           "away_team": "San Francisco Giants",
           "away_team_id": 137,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Merrill Kelly",
+          "home_pp_id": 518876,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -16924,9 +16924,9 @@
           "home_pp_name": "Janson Junk",
           "home_pp_id": 676083,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Chris Sale",
+          "away_pp_id": 519242,
+          "away_pp_throws": "L",
           "venue": "loanDepot park"
         },
         {
@@ -16992,9 +16992,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Kyle Harrison",
+          "away_pp_id": 690986,
+          "away_pp_throws": "L",
           "venue": "Wrigley Field"
         },
         {
@@ -17006,9 +17006,9 @@
           "home_team_id": 138,
           "away_team": "Pittsburgh Pirates",
           "away_team_id": 134,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Michael McGreevy",
+          "home_pp_id": 700241,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -17062,9 +17062,9 @@
           "home_pp_name": "Casey Mize",
           "home_pp_id": 663554,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Joey Cantillo",
+          "away_pp_id": 676282,
+          "away_pp_throws": "L",
           "venue": "Comerica Park"
         },
         {
@@ -17076,9 +17076,9 @@
           "home_team_id": 138,
           "away_team": "Pittsburgh Pirates",
           "away_team_id": 134,
-          "home_pp_name": null,
-          "home_pp_id": null,
-          "home_pp_throws": null,
+          "home_pp_name": "Dustin May",
+          "home_pp_id": 669160,
+          "home_pp_throws": "R",
           "away_pp_name": null,
           "away_pp_id": null,
           "away_pp_throws": null,
@@ -17113,9 +17113,9 @@
           "home_pp_name": "Sandy Alcantara",
           "home_pp_id": 645261,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Spencer Strider",
+          "away_pp_id": 675911,
+          "away_pp_throws": "R",
           "venue": "loanDepot park"
         },
         {
@@ -20804,70 +20804,70 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 60.9
+        "age_hours": 61.0
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 58.6
+        "age_hours": 58.7
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 12.6
+        "age_hours": 12.7
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 12994,
         "mtime": 1779001217.2490046,
-        "age_hours": 9.4
+        "age_hours": 9.5
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 108.8
+        "age_hours": 108.9
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 57.5
+        "age_hours": 57.6
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 51.3
+        "age_hours": 51.4
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 50.9
+        "age_hours": 51.0
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 50.7
+        "age_hours": 50.8
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 46.5
+        "age_hours": 46.6
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -20881,35 +20881,35 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 107.7
+        "age_hours": 107.8
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 49.7
+        "age_hours": 49.8
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 93.8
+        "age_hours": 93.9
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 98.7
+        "age_hours": 98.8
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 112.9
+        "age_hours": 113.0
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -20951,7 +20951,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 90.0
+        "age_hours": 90.1
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -20965,7 +20965,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 124.6
+        "age_hours": 124.7
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -21028,7 +21028,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 134.4
+        "age_hours": 134.5
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -21042,49 +21042,49 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 56.8
+        "age_hours": 56.9
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 107.8
+        "age_hours": 107.9
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 100.1
+        "age_hours": 100.2
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 27.1
+        "age_hours": 27.2
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 26.9
+        "age_hours": 27.0
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 10.4
+        "age_hours": 10.5
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12704,
         "mtime": 1778729435.4316351,
-        "age_hours": 84.9
+        "age_hours": 85.0
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -21154,7 +21154,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 133.4
+        "age_hours": 133.5
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -21196,14 +21196,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 134.5
+        "age_hours": 134.6
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 133.6
+        "age_hours": 133.7
       },
       {
         "name": "reference_sport_calendar.md",
@@ -21224,14 +21224,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 108.7
+        "age_hours": 108.8
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 138.7
+        "age_hours": 138.8
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -21245,7 +21245,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 109.4
+        "age_hours": 109.5
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -21259,91 +21259,91 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 84.9
+        "age_hours": 85.0
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 108.7
+        "age_hours": 108.8
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 107.8
+        "age_hours": 107.9
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 108.0
+        "age_hours": 108.1
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 94.7
+        "age_hours": 94.8
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 94.9
+        "age_hours": 95.0
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 101.2
+        "age_hours": 101.3
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 108.3
+        "age_hours": 108.4
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 98.5
+        "age_hours": 98.6
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 101.5
+        "age_hours": 101.6
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 93.8
+        "age_hours": 93.9
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 92.7
+        "age_hours": 92.8
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 93.2
+        "age_hours": 93.3
       }
     ]
   },
@@ -21355,7 +21355,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 1.7,
+        "age_hours": 1.8,
         "bytes": 598782,
         "row_count": 50,
         "last_refresh_iso": "2026-05-17T14:40:52.750298+00:00",
@@ -21368,7 +21368,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 2.8,
+        "age_hours": 2.9,
         "bytes": 343271,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T13:38:03.300509+00:00",
@@ -21381,7 +21381,7 @@
         "status": "degraded",
         "latest_file": "v2_candidates_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 23918,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T16:24:51.328326+00:00",
@@ -21394,7 +21394,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 10.4,
+        "age_hours": 10.5,
         "bytes": 1455,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T06:00:09.054590+00:00",
@@ -21407,10 +21407,10 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 1.9,
-        "bytes": 9964,
+        "age_hours": 0.0,
+        "bytes": 10635,
         "row_count": null,
-        "last_refresh_iso": "2026-05-17T14:33:43.521069+00:00",
+        "last_refresh_iso": "2026-05-17T16:28:37.469709+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -21420,7 +21420,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-16.md",
         "latest_date": "2026-05-16",
-        "age_hours": 10.4,
+        "age_hours": 10.5,
         "bytes": 222200,
         "row_count": null,
         "last_refresh_iso": "2026-05-17T06:01:24.764903+00:00",
@@ -21433,7 +21433,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-17.json",
         "latest_date": "2026-05-17",
-        "age_hours": 1.7,
+        "age_hours": 1.8,
         "bytes": 59723,
         "row_count": 235,
         "last_refresh_iso": "2026-05-17T14:41:17.656717+00:00",
@@ -21446,7 +21446,7 @@
         "status": "unknown",
         "latest_file": "lineup_824517.json",
         "latest_date": null,
-        "age_hours": 67.3,
+        "age_hours": 67.4,
         "bytes": 452,
         "row_count": 2,
         "last_refresh_iso": "2026-05-14T21:06:20.404967+00:00",
@@ -21459,7 +21459,7 @@
         "status": "fresh",
         "latest_file": "wx_SEA_2026-05-17T23.json",
         "latest_date": "2026-05-17",
-        "age_hours": 0.7,
+        "age_hours": 0.8,
         "bytes": 216,
         "row_count": 33,
         "last_refresh_iso": "2026-05-17T15:40:39.904414+00:00",
@@ -33743,7 +33743,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-17 12:25 ET",
+  "built_at_et": "2026-05-17 12:30 ET",
   "counts": {
     "picks_total": 159,
     "settled": 86,
