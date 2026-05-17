@@ -1,6 +1,6 @@
 {
-  "build_id": "260517-003402",
-  "generated_at": "2026-05-17T00:34:02.842372+00:00",
+  "build_id": "260517-003512",
+  "generated_at": "2026-05-17T00:35:12.547783+00:00",
   "today": "2026-05-16",
   "yesterday": "2026-05-15",
   "bankroll": {
@@ -3768,7 +3768,7 @@
       "notes": "[auto-confirmed] TB lost (TB 5, MIA 10). Net -$10.00 at -138."
     }
   ],
-  "built_at": "2026-05-17T00:34:02.842452+00:00",
+  "built_at": "2026-05-17T00:35:12.547860+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -10906,10 +10906,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-16 20:35",
-      "LastRun": "2026-05-16 20:30",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-16 20:40",
+      "LastRun": "2026-05-16 20:35",
+      "LastResult": 267009,
       "WakeToRun": false
     },
     {
@@ -12466,7 +12466,7 @@
             "status_code": "I",
             "current_inning": 5,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 4,
             "home_hits": 5,
             "home_errors": 0,
@@ -12478,7 +12478,7 @@
               0,
               0,
               2,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -12568,7 +12568,7 @@
             "inning_half": "Bottom",
             "inning_state": "Bottom",
             "home_runs": 5,
-            "home_hits": 5,
+            "home_hits": 6,
             "home_errors": 1,
             "away_runs": 0,
             "away_hits": 2,
@@ -17738,14 +17738,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 35.0
+        "age_hours": 35.1
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 34.8
+        "age_hours": 34.9
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -17934,7 +17934,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 91.9
+        "age_hours": 92.0
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -18151,7 +18151,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 92.8
+        "age_hours": 92.9
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -18172,7 +18172,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 78.8
+        "age_hours": 78.9
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -18240,7 +18240,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.8,
+        "age_hours": 2.9,
         "bytes": 580158,
         "row_count": 50,
         "last_refresh_iso": "2026-05-16T21:43:48.889737+00:00",
@@ -18253,7 +18253,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 10.9,
+        "age_hours": 11.0,
         "bytes": 344395,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T13:37:48.087471+00:00",
@@ -18266,7 +18266,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-16.json",
         "latest_date": "2026-05-16",
-        "age_hours": 2.9,
+        "age_hours": 3.0,
         "bytes": 1000406,
         "row_count": null,
         "last_refresh_iso": "2026-05-16T21:37:50.473900+00:00",
@@ -28598,7 +28598,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-16 20:34 ET",
+  "built_at_et": "2026-05-16 20:35 ET",
   "counts": {
     "picks_total": 159,
     "settled": 67,
