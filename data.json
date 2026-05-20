@@ -1,6 +1,6 @@
 {
-  "build_id": "260520-230407",
-  "generated_at": "2026-05-20T23:04:08.664262+00:00",
+  "build_id": "260520-230528",
+  "generated_at": "2026-05-20T23:05:28.846525+00:00",
   "today": "2026-05-20",
   "yesterday": "2026-05-19",
   "bankroll": {
@@ -8774,7 +8774,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +12.3pp \u00b7 rae +12.0 \u00b7 rank #1 \u00b7 factor x1.19 \u00b7 n=10"
     }
   ],
-  "built_at": "2026-05-20T23:04:08.664385+00:00",
+  "built_at": "2026-05-20T23:05:28.846667+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -24329,10 +24329,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-20 19:05",
-      "LastRun": "2026-05-20 19:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-20 19:10",
+      "LastRun": "2026-05-20 19:05",
+      "LastResult": 267009,
       "WakeToRun": true
     },
     {
@@ -24377,10 +24377,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-20 19:30",
       "LastRun": "2026-05-20 19:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": true
     },
     {
@@ -25882,8 +25882,8 @@
             "home_runs": 1,
             "home_hits": 2,
             "home_errors": 0,
-            "away_runs": 0,
-            "away_hits": 1,
+            "away_runs": 3,
+            "away_hits": 3,
             "away_errors": 0,
             "home_innings": [
               1,
@@ -25891,7 +25891,7 @@
             ],
             "away_innings": [
               0,
-              null
+              3
             ],
             "scheduled_innings": 9
           }
@@ -31118,14 +31118,14 @@
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 67.5
+        "age_hours": 67.6
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 65.0
+        "age_hours": 65.1
       },
       {
         "name": "ai_learner_2026-05-19.md",
@@ -31167,14 +31167,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 129.5
+        "age_hours": 129.6
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 129.3
+        "age_hours": 129.4
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -31216,7 +31216,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 177.3
+        "age_hours": 177.4
       },
       {
         "name": "design_engine_v2.md",
@@ -31363,7 +31363,7 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 186.4
+        "age_hours": 186.5
       },
       {
         "name": "learning_journal_2026-05-12.md",
@@ -31391,28 +31391,28 @@
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 89.0
+        "age_hours": 89.1
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 65.0
+        "age_hours": 65.1
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 17.0
+        "age_hours": 17.1
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1779318138.5957315,
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "name": "project_current_state.md",
@@ -31440,7 +31440,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 21.0
+        "age_hours": 21.1
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -31608,7 +31608,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 187.3
+        "age_hours": 187.4
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -31629,7 +31629,7 @@
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 173.3
+        "age_hours": 173.4
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -31697,7 +31697,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-20_evening.json",
         "latest_date": "2026-05-20",
-        "age_hours": 1.5,
+        "age_hours": 1.6,
         "bytes": 637784,
         "row_count": 50,
         "last_refresh_iso": "2026-05-20T21:32:13.257333+00:00",
@@ -31723,7 +31723,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-20.json",
         "latest_date": "2026-05-20",
-        "age_hours": 2.5,
+        "age_hours": 2.6,
         "bytes": 963629,
         "row_count": null,
         "last_refresh_iso": "2026-05-20T20:31:52.685712+00:00",
@@ -31762,7 +31762,7 @@
         "status": "degraded",
         "latest_file": "learning_journal_2026-05-20.md",
         "latest_date": "2026-05-20",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 131,
         "row_count": null,
         "last_refresh_iso": "2026-05-20T23:02:18.595731+00:00",
@@ -50227,7 +50227,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-20 19:04 ET",
+  "built_at_et": "2026-05-20 19:05 ET",
   "counts": {
     "picks_total": 425,
     "settled": 135,
