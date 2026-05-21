@@ -1,6 +1,6 @@
 {
-  "build_id": "260521-143116",
-  "generated_at": "2026-05-21T14:31:18.950914+00:00",
+  "build_id": "260521-143608",
+  "generated_at": "2026-05-21T14:36:15.240300+00:00",
   "today": "2026-05-21",
   "yesterday": "2026-05-20",
   "bankroll": {
@@ -8127,7 +8127,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-05-21T14:31:18.951048+00:00",
+  "built_at": "2026-05-21T14:36:15.241536+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -8203,15 +8203,15 @@
   "odds_api_budget": {
     "status": "OK",
     "reason": null,
-    "month_used": 14667,
+    "month_used": 14742,
     "month_cap": 18000,
-    "day_used": 0,
+    "day_used": 75,
     "day_cap": 1800,
     "effective_day_cap": 1800,
     "clv_reserve": 0,
     "days_elapsed": 21,
     "days_remaining": 11,
-    "daily_average": 698.4,
+    "daily_average": 702.0,
     "safe_daily_rate": 580.6
   },
   "daily": [
@@ -25573,8 +25573,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-05-21 10:35",
-      "LastRun": "2026-05-21 10:30",
+      "NextRun": "2026-05-21 10:40",
+      "LastRun": "2026-05-21 10:35",
       "LastResult": 267009,
       "WakeToRun": true
     },
@@ -26340,7 +26340,7 @@
           "game_pk": 824274,
           "date": "2026-05-21",
           "game_time_utc": "2026-05-21T17:10:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Detroit Tigers",
           "home_team_id": 116,
           "away_team": "Cleveland Guardians",
@@ -26430,7 +26430,7 @@
           "game_pk": 823056,
           "date": "2026-05-21",
           "game_time_utc": "2026-05-21T17:15:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "St. Louis Cardinals",
           "home_team_id": 138,
           "away_team": "Pittsburgh Pirates",
@@ -26445,9 +26445,9 @@
           "park_hr_factor": 0.94,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 63.0,
+          "weather_temp": 63.6,
           "weather_notes": [
-            "Wind IN 9 mph (-3%)"
+            "Wind IN 8 mph (-3%)"
           ],
           "park_runs_factor": 0.95,
           "nrfi_prob": 53.2,
@@ -26495,20 +26495,24 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 823056,
-            "status": "Scheduled",
+            "status": "Pre-Game",
             "abstract_state": "Preview",
-            "status_code": "S",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "status_code": "P",
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -26529,11 +26533,11 @@
           "away_pp_throws": "L",
           "venue": "Nationals Park",
           "park_hr_factor": 1.04,
-          "weather_factor": 0.94,
+          "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 63.0,
+          "weather_temp": 61.7,
           "weather_notes": [
-            "Wind IN 13 mph (-6%)"
+            "Wind IN 12 mph (-3%)"
           ],
           "park_runs_factor": 1.01,
           "nrfi_prob": 45.4,
@@ -26701,7 +26705,7 @@
           "park_hr_factor": 1.1,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 59.8,
+          "weather_temp": 61.1,
           "weather_notes": [],
           "park_runs_factor": 1.05,
           "nrfi_prob": 50.2,
@@ -26711,7 +26715,7 @@
             "p_top": 73.6,
             "p_bot": 68.2,
             "park_mult": 0.995,
-            "weather_adj": 0.0004,
+            "weather_adj": 0.0,
             "home_sp_rate": null,
             "home_sp_sample": 2,
             "away_sp_rate": null,
@@ -26787,7 +26791,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 61.9,
+          "weather_temp": 61.8,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 45.6,
@@ -27025,9 +27029,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Bubba Chandler",
+          "away_pp_id": 696149,
+          "away_pp_throws": "R",
           "venue": "Rogers Centre"
         },
         {
@@ -27248,9 +27252,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Paul Skenes",
+          "away_pp_id": 694973,
+          "away_pp_throws": "R",
           "venue": "Rogers Centre"
         },
         {
@@ -27471,9 +27475,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Mitch Keller",
+          "away_pp_id": 656605,
+          "away_pp_throws": "R",
           "venue": "Rogers Centre"
         },
         {
@@ -31228,98 +31232,98 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 155.0
+        "age_hours": 155.1
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 152.7
+        "age_hours": 152.8
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 106.7
+        "age_hours": 106.8
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 83.0
+        "age_hours": 83.1
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 80.5
+        "age_hours": 80.6
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 35.0
+        "age_hours": 35.1
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 11.0
+        "age_hours": 11.1
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 14788,
         "mtime": 1779343320.785707,
-        "age_hours": 8.5
+        "age_hours": 8.6
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 202.9
+        "age_hours": 203.0
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 151.6
+        "age_hours": 151.7
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 145.4
+        "age_hours": 145.5
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 145.0
+        "age_hours": 145.1
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 144.8
+        "age_hours": 144.9
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 140.6
+        "age_hours": 140.7
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -31333,7 +31337,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 201.8
+        "age_hours": 201.9
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -31347,21 +31351,21 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 187.9
+        "age_hours": 188.0
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 192.8
+        "age_hours": 192.9
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 207.0
+        "age_hours": 207.1
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -31403,7 +31407,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 184.1
+        "age_hours": 184.2
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -31417,7 +31421,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 218.7
+        "age_hours": 218.8
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -31480,7 +31484,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 228.5
+        "age_hours": 228.6
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -31494,70 +31498,70 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 150.9
+        "age_hours": 151.0
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 201.9
+        "age_hours": 202.0
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 194.2
+        "age_hours": 194.3
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 121.2
+        "age_hours": 121.3
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 121.0
+        "age_hours": 121.1
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 104.5
+        "age_hours": 104.6
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 80.5
+        "age_hours": 80.6
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 32.5
+        "age_hours": 32.6
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 8.5
+        "age_hours": 8.6
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 10.5
+        "age_hours": 10.6
       },
       {
         "name": "project_engine_spec_live_v1.md",
@@ -31578,7 +31582,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 36.5
+        "age_hours": 36.6
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -31634,7 +31638,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 227.5
+        "age_hours": 227.6
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -31676,14 +31680,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 228.6
+        "age_hours": 228.7
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 227.7
+        "age_hours": 227.8
       },
       {
         "name": "reference_sport_calendar.md",
@@ -31704,14 +31708,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 202.8
+        "age_hours": 202.9
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 232.8
+        "age_hours": 232.9
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -31725,7 +31729,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 203.5
+        "age_hours": 203.6
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -31739,91 +31743,91 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 179.0
+        "age_hours": 179.1
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 202.8
+        "age_hours": 202.9
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 201.9
+        "age_hours": 202.0
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 202.1
+        "age_hours": 202.2
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 188.8
+        "age_hours": 188.9
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 189.0
+        "age_hours": 189.1
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 195.3
+        "age_hours": 195.4
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 202.4
+        "age_hours": 202.5
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 192.6
+        "age_hours": 192.7
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 195.6
+        "age_hours": 195.7
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 187.9
+        "age_hours": 188.0
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 186.8
+        "age_hours": 186.9
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 187.3
+        "age_hours": 187.4
       }
     ]
   },
@@ -31835,7 +31839,7 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-05-20_evening.json",
         "latest_date": "2026-05-20",
-        "age_hours": 17.0,
+        "age_hours": 17.1,
         "bytes": 637784,
         "row_count": 50,
         "last_refresh_iso": "2026-05-20T21:32:13.257333+00:00",
@@ -31848,7 +31852,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-21.json",
         "latest_date": "2026-05-21",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 158595,
         "row_count": null,
         "last_refresh_iso": "2026-05-21T14:27:10.340261+00:00",
@@ -31858,14 +31862,14 @@
       },
       {
         "label": "Layer-1 candidates",
-        "status": "stale",
-        "latest_file": "v2_candidates_2026-05-20.json",
-        "latest_date": "2026-05-20",
-        "age_hours": 18.0,
-        "bytes": 963629,
+        "status": "fresh",
+        "latest_file": "v2_candidates_2026-05-21.json",
+        "latest_date": "2026-05-21",
+        "age_hours": 0.0,
+        "bytes": 689979,
         "row_count": null,
-        "last_refresh_iso": "2026-05-20T20:31:52.685712+00:00",
-        "issue": "latest is 2026-05-20, expected 2026-05-21",
+        "last_refresh_iso": "2026-05-21T14:33:46.633938+00:00",
+        "issue": null,
         "min_bytes": 100000,
         "min_count": null
       },
@@ -31874,7 +31878,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-20.json",
         "latest_date": "2026-05-20",
-        "age_hours": 8.5,
+        "age_hours": 8.6,
         "bytes": 1058,
         "row_count": null,
         "last_refresh_iso": "2026-05-21T06:00:11.309657+00:00",
@@ -31884,14 +31888,14 @@
       },
       {
         "label": "Line snapshots",
-        "status": "stale",
-        "latest_file": "v2_line_snapshots_2026-05-20.json",
-        "latest_date": "2026-05-20",
-        "age_hours": 17.9,
-        "bytes": 16447,
+        "status": "fresh",
+        "latest_file": "v2_line_snapshots_2026-05-21.json",
+        "latest_date": "2026-05-21",
+        "age_hours": 0.0,
+        "bytes": 1226,
         "row_count": null,
-        "last_refresh_iso": "2026-05-20T20:35:02.622470+00:00",
-        "issue": "latest is 2026-05-20, expected 2026-05-21",
+        "last_refresh_iso": "2026-05-21T14:36:13.147921+00:00",
+        "issue": null,
         "min_bytes": 500,
         "min_count": null
       },
@@ -31900,7 +31904,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-20.md",
         "latest_date": "2026-05-20",
-        "age_hours": 8.5,
+        "age_hours": 8.6,
         "bytes": 255,
         "row_count": null,
         "last_refresh_iso": "2026-05-21T06:01:30.473531+00:00",
@@ -31910,14 +31914,14 @@
       },
       {
         "label": "L30 hit-rate baseline",
-        "status": "stale",
-        "latest_file": "historical_hit_rates_2026-05-20.json",
-        "latest_date": "2026-05-20",
-        "age_hours": 24.0,
-        "bytes": 18964,
-        "row_count": 62,
-        "last_refresh_iso": "2026-05-20T14:30:58.997320+00:00",
-        "issue": "latest is 2026-05-20, expected 2026-05-21",
+        "status": "fresh",
+        "latest_file": "historical_hit_rates_2026-05-21.json",
+        "latest_date": "2026-05-21",
+        "age_hours": 0.1,
+        "bytes": 23244,
+        "row_count": 76,
+        "last_refresh_iso": "2026-05-21T14:32:37.221018+00:00",
+        "issue": null,
         "min_bytes": 500,
         "min_count": 10
       },
@@ -31926,7 +31930,7 @@
         "status": "unknown",
         "latest_file": "lineup_823708.json",
         "latest_date": null,
-        "age_hours": 93.5,
+        "age_hours": 93.6,
         "bytes": 468,
         "row_count": 12,
         "last_refresh_iso": "2026-05-17T16:59:22.442710+00:00",
@@ -31939,10 +31943,10 @@
         "status": "fresh",
         "latest_file": "wx_ARI_2026-05-22T01.json",
         "latest_date": "2026-05-22",
-        "age_hours": 1.0,
+        "age_hours": 0.0,
         "bytes": 213,
         "row_count": 23,
-        "last_refresh_iso": "2026-05-21T13:32:15.195743+00:00",
+        "last_refresh_iso": "2026-05-21T14:36:14.387757+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -31956,7 +31960,7 @@
     "bot_id": null,
     "channel_id": null,
     "authorized_count": 2,
-    "listener_running": false,
+    "listener_running": true,
     "listener_pid": null,
     "listener_last_log_line": null,
     "tunnel_running": false,
@@ -32365,8 +32369,8 @@
         "heat_l10_notes": [
           "no L30 baseline in historical_hit_rates cache for Nolan Gorman\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.45,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.5,
         "hot_player_l10_hits_per_game": 0.9,
         "hot_player_l10_hrr_per_game": 1.6,
         "hot_player_l10_tb_per_game": 1.2,
@@ -32667,8 +32671,8 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.45,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.5,
         "system_heat": 71.9,
         "system_heat_breakdown": {
           "base_from_rae": 65.9,
@@ -32989,8 +32993,8 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.5,
+        "home_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.45,
         "system_heat": 75.2,
         "system_heat_breakdown": {
           "base_from_rae": 63.2,
@@ -33676,7 +33680,7 @@
           "7\\10 covered O0.5 (70%) vs L30 baseline 50% \u2014 heat +20.0pp (HOT)"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.55,
+        "away_l20_nrfi_pct": 0.5,
         "hot_player_l10_hits_per_game": 1.1,
         "hot_player_l10_hrr_per_game": 3.6,
         "hot_player_l10_tb_per_game": 2.3,
@@ -34326,8 +34330,8 @@
         "heat_l10_notes": [
           "no L30 baseline in historical_hit_rates cache for JJ Wetherholt\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.45,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.5,
         "system_heat": 11.1,
         "system_heat_breakdown": {
           "base_from_rae": 22.1,
@@ -34438,7 +34442,7 @@
           "no L30 baseline in historical_hit_rates cache for Zack Gelof\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.55,
+        "away_l20_nrfi_pct": 0.5,
         "system_heat": 7.8,
         "system_heat_breakdown": {
           "base_from_rae": 18.8,
@@ -34552,8 +34556,8 @@
         "heat_l10_notes": [
           "8\\10 covered O0.5 (80%) vs L30 baseline 62% \u2014 heat +17.5pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.45,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.5,
         "system_heat": 11.7,
         "system_heat_breakdown": {
           "base_from_rae": 17.7,
@@ -34653,8 +34657,8 @@
         "heat_l10_notes": [
           "no L30 baseline in historical_hit_rates cache for Shohei Ohtani\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.65,
-        "away_l20_nrfi_pct": 0.55,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.5,
         "system_heat": 5.1,
         "system_heat_breakdown": {
           "base_from_rae": 16.1,
@@ -38827,6 +38831,27 @@
   },
   "team_form": [
     {
+      "name": "Cleveland Guardians",
+      "team": "CLE",
+      "team_id": 114,
+      "l10_wins": 8,
+      "l10_losses": 2,
+      "l10_win_pct": 0.8,
+      "l10_run_diff": 24.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": 5,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
       "name": "Philadelphia Phillies",
       "team": "PHI",
       "team_id": 143,
@@ -38882,27 +38907,6 @@
       "l10_runs_allowed": null,
       "l10_games": 10,
       "streak": 3,
-      "l10_ats_pct": null,
-      "l10_ats_covers": null,
-      "l10_ats_n": null,
-      "l10_over_pct": null,
-      "l10_overs": null,
-      "l10_games_with_total": null
-    },
-    {
-      "name": "Cleveland Guardians",
-      "team": "CLE",
-      "team_id": 114,
-      "l10_wins": 7,
-      "l10_losses": 3,
-      "l10_win_pct": 0.7,
-      "l10_run_diff": 22.0,
-      "l10_rs_per_game": null,
-      "l10_ra_per_game": null,
-      "l10_runs_scored": null,
-      "l10_runs_allowed": null,
-      "l10_games": 10,
-      "streak": 4,
       "l10_ats_pct": null,
       "l10_ats_covers": null,
       "l10_ats_n": null,
@@ -39016,27 +39020,6 @@
       "l10_games_with_total": null
     },
     {
-      "name": "St. Louis Cardinals",
-      "team": "STL",
-      "team_id": 138,
-      "l10_wins": 6,
-      "l10_losses": 4,
-      "l10_win_pct": 0.6,
-      "l10_run_diff": 6.0,
-      "l10_rs_per_game": null,
-      "l10_ra_per_game": null,
-      "l10_runs_scored": null,
-      "l10_runs_allowed": null,
-      "l10_games": 10,
-      "streak": 1,
-      "l10_ats_pct": null,
-      "l10_ats_covers": null,
-      "l10_ats_n": null,
-      "l10_over_pct": null,
-      "l10_overs": null,
-      "l10_games_with_total": null
-    },
-    {
       "name": "Texas Rangers",
       "team": "TEX",
       "team_id": 140,
@@ -39134,6 +39117,27 @@
       "l10_runs_allowed": null,
       "l10_games": 10,
       "streak": -2,
+      "l10_ats_pct": null,
+      "l10_ats_covers": null,
+      "l10_ats_n": null,
+      "l10_over_pct": null,
+      "l10_overs": null,
+      "l10_games_with_total": null
+    },
+    {
+      "name": "St. Louis Cardinals",
+      "team": "STL",
+      "team_id": 138,
+      "l10_wins": 5,
+      "l10_losses": 5,
+      "l10_win_pct": 0.5,
+      "l10_run_diff": -7.0,
+      "l10_rs_per_game": null,
+      "l10_ra_per_game": null,
+      "l10_runs_scored": null,
+      "l10_runs_allowed": null,
+      "l10_games": 10,
+      "streak": -1,
       "l10_ats_pct": null,
       "l10_ats_covers": null,
       "l10_ats_n": null,
@@ -39400,13 +39404,13 @@
       "l10_wins": 2,
       "l10_losses": 8,
       "l10_win_pct": 0.2,
-      "l10_run_diff": -25.0,
+      "l10_run_diff": -22.0,
       "l10_rs_per_game": null,
       "l10_ra_per_game": null,
       "l10_runs_scored": null,
       "l10_runs_allowed": null,
       "l10_games": 10,
-      "streak": -4,
+      "streak": -5,
       "l10_ats_pct": null,
       "l10_ats_covers": null,
       "l10_ats_n": null,
@@ -39447,15 +39451,6 @@
       "l20_games": 20
     },
     {
-      "name": "San Diego Padres",
-      "team": "SD",
-      "team_id": 135,
-      "nrfi_count": 13,
-      "yrfi_count": 7,
-      "l20_nrfi_pct": 0.65,
-      "l20_games": 20
-    },
-    {
       "name": "Chicago Cubs",
       "team": "CHC",
       "team_id": 112,
@@ -39468,6 +39463,24 @@
       "name": "New York Mets",
       "team": "NYM",
       "team_id": 121,
+      "nrfi_count": 12,
+      "yrfi_count": 8,
+      "l20_nrfi_pct": 0.6,
+      "l20_games": 20
+    },
+    {
+      "name": "San Diego Padres",
+      "team": "SD",
+      "team_id": 135,
+      "nrfi_count": 12,
+      "yrfi_count": 8,
+      "l20_nrfi_pct": 0.6,
+      "l20_games": 20
+    },
+    {
+      "name": "St. Louis Cardinals",
+      "team": "STL",
+      "team_id": 138,
       "nrfi_count": 12,
       "yrfi_count": 8,
       "l20_nrfi_pct": 0.6,
@@ -39510,33 +39523,6 @@
       "l20_games": 20
     },
     {
-      "name": "Los Angeles Dodgers",
-      "team": "LAD",
-      "team_id": 119,
-      "nrfi_count": 11,
-      "yrfi_count": 9,
-      "l20_nrfi_pct": 0.55,
-      "l20_games": 20
-    },
-    {
-      "name": "Athletics",
-      "team": "ATH",
-      "team_id": 133,
-      "nrfi_count": 11,
-      "yrfi_count": 9,
-      "l20_nrfi_pct": 0.55,
-      "l20_games": 20
-    },
-    {
-      "name": "St. Louis Cardinals",
-      "team": "STL",
-      "team_id": 138,
-      "nrfi_count": 11,
-      "yrfi_count": 9,
-      "l20_nrfi_pct": 0.55,
-      "l20_games": 20
-    },
-    {
       "name": "Minnesota Twins",
       "team": "MIN",
       "team_id": 142,
@@ -39555,9 +39541,36 @@
       "l20_games": 20
     },
     {
+      "name": "Los Angeles Dodgers",
+      "team": "LAD",
+      "team_id": 119,
+      "nrfi_count": 10,
+      "yrfi_count": 10,
+      "l20_nrfi_pct": 0.5,
+      "l20_games": 20
+    },
+    {
       "name": "Washington Nationals",
       "team": "WSH",
       "team_id": 120,
+      "nrfi_count": 10,
+      "yrfi_count": 10,
+      "l20_nrfi_pct": 0.5,
+      "l20_games": 20
+    },
+    {
+      "name": "Athletics",
+      "team": "ATH",
+      "team_id": 133,
+      "nrfi_count": 10,
+      "yrfi_count": 10,
+      "l20_nrfi_pct": 0.5,
+      "l20_games": 20
+    },
+    {
+      "name": "Pittsburgh Pirates",
+      "team": "PIT",
+      "team_id": 134,
       "nrfi_count": 10,
       "yrfi_count": 10,
       "l20_nrfi_pct": 0.5,
@@ -39591,27 +39604,9 @@
       "l20_games": 20
     },
     {
-      "name": "Atlanta Braves",
-      "team": "ATL",
-      "team_id": 144,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
-      "l20_games": 20
-    },
-    {
       "name": "Baltimore Orioles",
       "team": "BAL",
       "team_id": 110,
-      "nrfi_count": 9,
-      "yrfi_count": 11,
-      "l20_nrfi_pct": 0.45,
-      "l20_games": 20
-    },
-    {
-      "name": "Pittsburgh Pirates",
-      "team": "PIT",
-      "team_id": 134,
       "nrfi_count": 9,
       "yrfi_count": 11,
       "l20_nrfi_pct": 0.45,
@@ -39636,9 +39631,9 @@
       "l20_games": 20
     },
     {
-      "name": "Miami Marlins",
-      "team": "MIA",
-      "team_id": 146,
+      "name": "Atlanta Braves",
+      "team": "ATL",
+      "team_id": 144,
       "nrfi_count": 9,
       "yrfi_count": 11,
       "l20_nrfi_pct": 0.45,
@@ -39672,9 +39667,18 @@
       "l20_games": 20
     },
     {
-      "name": "Texas Rangers",
-      "team": "TEX",
-      "team_id": 140,
+      "name": "Chicago White Sox",
+      "team": "CWS",
+      "team_id": 145,
+      "nrfi_count": 8,
+      "yrfi_count": 12,
+      "l20_nrfi_pct": 0.4,
+      "l20_games": 20
+    },
+    {
+      "name": "Miami Marlins",
+      "team": "MIA",
+      "team_id": 146,
       "nrfi_count": 8,
       "yrfi_count": 12,
       "l20_nrfi_pct": 0.4,
@@ -39690,9 +39694,9 @@
       "l20_games": 20
     },
     {
-      "name": "Chicago White Sox",
-      "team": "CWS",
-      "team_id": 145,
+      "name": "Texas Rangers",
+      "team": "TEX",
+      "team_id": 140,
       "nrfi_count": 7,
       "yrfi_count": 13,
       "l20_nrfi_pct": 0.35,
@@ -39906,8 +39910,8 @@
       "home_abbr": "STL",
       "home_pp_name": "Dustin May",
       "away_pp_name": "Braxton Ashcraft",
-      "home_nrfi": 0.55,
-      "away_nrfi": 0.45,
+      "home_nrfi": 0.6,
+      "away_nrfi": 0.5,
       "home_pp_shrunk": 0.5705,
       "away_pp_shrunk": 0.8364,
       "home_pp_baseline": 0.553,
@@ -39916,9 +39920,9 @@
       "away_pp_recent": 1.0,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": 0.0,
+      "team_signal": 1.5,
       "pitcher_signal": 7.67,
-      "confidence": 57.7,
+      "confidence": 59.2,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -39954,8 +39958,8 @@
       "home_abbr": "MIA",
       "home_pp_name": "Sandy Alcantara",
       "away_pp_name": "Spencer Strider",
-      "home_nrfi": 0.45,
-      "away_nrfi": 0.5,
+      "home_nrfi": 0.4,
+      "away_nrfi": 0.45,
       "home_pp_shrunk": 0.713,
       "away_pp_shrunk": 0.6,
       "home_pp_baseline": 0.6889,
@@ -39964,9 +39968,9 @@
       "away_pp_recent": 0.6667,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": -0.75,
+      "team_signal": -2.25,
       "pitcher_signal": 5.32,
-      "confidence": 54.6,
+      "confidence": 53.1,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -39997,30 +40001,6 @@
       "missing_pitcher_data": false
     },
     {
-      "matchup": "ATH @ LAA",
-      "away_abbr": "ATH",
-      "home_abbr": "LAA",
-      "home_pp_name": "Jos\u00e9 Soriano",
-      "away_pp_name": "Luis Severino",
-      "home_nrfi": 0.55,
-      "away_nrfi": 0.55,
-      "home_pp_shrunk": 0.5043,
-      "away_pp_shrunk": 0.5826,
-      "home_pp_baseline": 0.5778,
-      "away_pp_baseline": 0.5778,
-      "home_pp_recent": 0.4,
-      "away_pp_recent": 0.6,
-      "home_pp_trend": "COOLING",
-      "away_pp_trend": "STABLE",
-      "team_signal": 1.5,
-      "pitcher_signal": -0.33,
-      "confidence": 51.2,
-      "side": "none",
-      "band": "no_edge",
-      "recommendation": "No edge",
-      "missing_pitcher_data": false
-    },
-    {
       "matchup": "TOR @ NYY",
       "away_abbr": "TOR",
       "home_abbr": "NYY",
@@ -40043,13 +40023,37 @@
       "band": "no_edge",
       "recommendation": "No edge",
       "missing_pitcher_data": true
+    },
+    {
+      "matchup": "ATH @ LAA",
+      "away_abbr": "ATH",
+      "home_abbr": "LAA",
+      "home_pp_name": "Jos\u00e9 Soriano",
+      "away_pp_name": "Luis Severino",
+      "home_nrfi": 0.55,
+      "away_nrfi": 0.5,
+      "home_pp_shrunk": 0.5043,
+      "away_pp_shrunk": 0.5826,
+      "home_pp_baseline": 0.5778,
+      "away_pp_baseline": 0.5778,
+      "home_pp_recent": 0.4,
+      "away_pp_recent": 0.6,
+      "home_pp_trend": "COOLING",
+      "away_pp_trend": "STABLE",
+      "team_signal": 0.75,
+      "pitcher_signal": -0.33,
+      "confidence": 50.4,
+      "side": "none",
+      "band": "no_edge",
+      "recommendation": "No edge",
+      "missing_pitcher_data": false
     }
   ],
   "odds_api_usage": {
-    "month_used": 14667,
-    "day_used": 0,
-    "last_remaining": 3429,
-    "last_check": "2026-05-20T20:35:02.209240+00:00",
+    "month_used": 14742,
+    "day_used": 75,
+    "last_remaining": 3258,
+    "last_check": "2026-05-21T14:33:45.710832+00:00",
     "month_cap": 18000,
     "plan_total": 20000,
     "plan_dollar_cost": 30,
@@ -40062,22 +40066,23 @@
       "2026-05-17": 1748,
       "2026-05-18": 464,
       "2026-05-19": 953,
-      "2026-05-20": 654
+      "2026-05-20": 654,
+      "2026-05-21": 75
     },
     "month_history": {
-      "2026-05": 14667
+      "2026-05": 14742
     },
-    "pct_month_used": 81.5,
-    "pct_plan_used": 73.3,
+    "pct_month_used": 81.9,
+    "pct_plan_used": 73.7,
     "utilization_status": "near-cap",
     "recommendations": [
       "Approaching monthly cap \u2014 tighten scout-only-MLB until rollover or pause non-essential sports."
     ],
-    "avg_daily": 2433.0,
+    "avg_daily": 2096.0,
     "days_in_month": 31,
     "days_left_in_month": 10,
-    "projected_month_end": 38997.0,
-    "projected_pct": 216.7
+    "projected_month_end": 35702.0,
+    "projected_pct": 198.3
   },
   "claude_code_usage": {
     "available": true,
@@ -49873,7 +49878,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-21 10:31 ET",
+  "built_at_et": "2026-05-21 10:36 ET",
   "counts": {
     "picks_total": 425,
     "settled": 153,
