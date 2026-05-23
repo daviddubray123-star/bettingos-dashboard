@@ -1,6 +1,6 @@
 {
-  "build_id": "260523-210234",
-  "generated_at": "2026-05-23T21:02:35.529553+00:00",
+  "build_id": "260523-210533",
+  "generated_at": "2026-05-23T21:05:51.789068+00:00",
   "today": "2026-05-23",
   "yesterday": "2026-05-22",
   "bankroll": {
@@ -9344,7 +9344,7 @@
       "notes": "heat 100% (LOCK-grade) \u00b7 edge +15.0pp \u00b7 rae +13.7 \u00b7 rank #1 \u00b7 factor x1.31 \u00b7 n=10"
     }
   ],
-  "built_at": "2026-05-23T21:02:35.529741+00:00",
+  "built_at": "2026-05-23T21:05:51.789421+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -27398,10 +27398,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-23 17:05",
-      "LastRun": "2026-05-23 17:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-23 17:10",
+      "LastRun": "2026-05-23 17:05",
+      "LastResult": 267009,
       "WakeToRun": true
     },
     {
@@ -27446,10 +27446,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-23 17:30",
       "LastRun": "2026-05-23 17:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": true
     },
     {
@@ -28268,7 +28268,7 @@
           "game_pk": 824516,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T23:15:00Z",
-          "status": "Scheduled",
+          "status": "Pre-Game",
           "home_team": "Cincinnati Reds",
           "home_team_id": 113,
           "away_team": "St. Louis Cardinals",
@@ -28282,8 +28282,8 @@
           "venue": "Great American Ball Park",
           "park_hr_factor": 1.15,
           "weather_factor": 1.0,
-          "weather_wind": "cross",
-          "weather_temp": 72.5,
+          "weather_wind": null,
+          "weather_temp": 72.0,
           "weather_notes": [],
           "park_runs_factor": 1.1,
           "nrfi_prob": 57.2,
@@ -28356,7 +28356,7 @@
           "game_pk": 824674,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T18:20:00Z",
-          "status": "In Progress",
+          "status": "Final",
           "home_team": "Chicago Cubs",
           "home_team_id": 112,
           "away_team": "Houston Astros",
@@ -28371,9 +28371,9 @@
           "park_hr_factor": 1.04,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 63.5,
+          "weather_temp": 61.1,
           "weather_notes": [
-            "Wind IN 6 mph (-3%)"
+            "Wind IN 10 mph (-3%)"
           ],
           "park_runs_factor": 1.06,
           "nrfi_prob": 54.1,
@@ -28456,7 +28456,7 @@
           "game_pk": 822814,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T19:07:00Z",
-          "status": "Manager challenge",
+          "status": "In Progress",
           "home_team": "Toronto Blue Jays",
           "home_team_id": 141,
           "away_team": "Pittsburgh Pirates",
@@ -28526,7 +28526,7 @@
             "status_code": "I",
             "current_inning": 7,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 4,
             "home_hits": 9,
             "home_errors": 0,
@@ -28549,7 +28549,7 @@
               0,
               0,
               1,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -28572,8 +28572,8 @@
           "venue": "Citizens Bank Park",
           "park_hr_factor": 1.11,
           "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 51.6,
+          "weather_wind": "cross",
+          "weather_temp": 51.4,
           "weather_notes": [],
           "park_runs_factor": 1.06,
           "nrfi_prob": 51.5,
@@ -28583,13 +28583,13 @@
             "p_top": 75.3,
             "p_bot": 66.2,
             "park_mult": 0.994,
-            "weather_adj": 0.0168,
+            "weather_adj": 0.0172,
             "home_sp_rate": 0.8,
             "home_sp_sample": 5,
             "away_sp_rate": 0.6,
             "away_sp_sample": 10
           },
-          "nrfi_reasoning": "Zack Wheeler 80% 1st-inning scoreless over 5 starts (strong) \u00b7 Slade Cecconi 60% 1st-inning scoreless over 10 starts (weak) \u00b7 hitter park (1.06 runs factor) drops NRFI \u00b7 cold temp (52\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Zack Wheeler 80% 1st-inning scoreless over 5 starts (strong) \u00b7 Slade Cecconi 60% 1st-inning scoreless over 10 starts (weak) \u00b7 hitter park (1.06 runs factor) drops NRFI \u00b7 cold temp (51\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Kyle Schwarber",
@@ -28648,7 +28648,7 @@
           "game_pk": 823222,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T20:05:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "San Francisco Giants",
           "home_team_id": 137,
           "away_team": "Chicago White Sox",
@@ -28663,9 +28663,9 @@
           "park_hr_factor": 0.89,
           "weather_factor": 1.08,
           "weather_wind": "out",
-          "weather_temp": 61.6,
+          "weather_temp": 61.5,
           "weather_notes": [
-            "Wind OUT 14 mph (+8% HR\\runs)"
+            "Wind OUT 13 mph (+8% HR\\runs)"
           ],
           "park_runs_factor": 0.93,
           "nrfi_prob": 43.9,
@@ -28717,10 +28717,10 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 4,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
-            "home_hits": 2,
+            "home_hits": 3,
             "home_errors": 0,
             "away_runs": 0,
             "away_hits": 3,
@@ -28744,7 +28744,7 @@
           "game_pk": 824109,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T20:10:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "Kansas City Royals",
           "home_team_id": 118,
           "away_team": "Seattle Mariners",
@@ -28759,7 +28759,7 @@
           "park_hr_factor": 0.95,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 79.2,
+          "weather_temp": 79.3,
           "weather_notes": [],
           "park_runs_factor": 0.98,
           "nrfi_prob": 52.0,
@@ -28769,7 +28769,7 @@
             "p_top": 75.3,
             "p_bot": 69.4,
             "park_mult": 1.002,
-            "weather_adj": -0.0024,
+            "weather_adj": -0.0026,
             "home_sp_rate": 1.0,
             "home_sp_sample": 3,
             "away_sp_rate": 0.7,
@@ -28838,7 +28838,7 @@
           "game_pk": 824760,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T20:10:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "Boston Red Sox",
           "home_team_id": 111,
           "away_team": "Minnesota Twins",
@@ -28853,19 +28853,19 @@
           "park_hr_factor": 0.96,
           "weather_factor": 0.97,
           "weather_wind": "in",
-          "weather_temp": 60.2,
+          "weather_temp": 57.9,
           "weather_notes": [
-            "Wind IN 9 mph (-3%)"
+            "Wind IN 8 mph (-3%)"
           ],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 53.3,
+          "nrfi_prob": 53.7,
           "nrfi_meta": {
             "base": 53.3,
             "min_sample": 2,
             "p_top": 73.4,
             "p_bot": 72.6,
             "park_mult": 0.992,
-            "weather_adj": 0.0,
+            "weather_adj": 0.0042,
             "home_sp_rate": null,
             "home_sp_sample": 2,
             "away_sp_rate": 0.625,
@@ -28913,7 +28913,7 @@
             "home_hits": 0,
             "home_errors": 0,
             "away_runs": 2,
-            "away_hits": 6,
+            "away_hits": 7,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -28934,7 +28934,7 @@
           "game_pk": 824920,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T20:10:00Z",
-          "status": "Warmup",
+          "status": "Delayed",
           "home_team": "Atlanta Braves",
           "home_team_id": 144,
           "away_team": "Washington Nationals",
@@ -28948,18 +28948,18 @@
           "venue": "Truist Park",
           "park_hr_factor": 1.07,
           "weather_factor": 1.0,
-          "weather_wind": "cross",
-          "weather_temp": 79.1,
+          "weather_wind": null,
+          "weather_temp": 77.8,
           "weather_notes": [],
           "park_runs_factor": 1.02,
-          "nrfi_prob": 45.4,
+          "nrfi_prob": 45.6,
           "nrfi_meta": {
             "base": 45.6,
             "min_sample": 9,
             "p_top": 73.7,
             "p_bot": 61.9,
             "park_mult": 0.998,
-            "weather_adj": -0.0022,
+            "weather_adj": 0.0,
             "home_sp_rate": 0.7778,
             "home_sp_sample": 9,
             "away_sp_rate": 0.5,
@@ -29026,7 +29026,7 @@
           "game_pk": 823862,
           "date": "2026-05-23",
           "game_time_utc": "2026-05-23T20:10:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "Miami Marlins",
           "home_team_id": 146,
           "away_team": "New York Mets",
@@ -29227,7 +29227,7 @@
           "park_hr_factor": 0.96,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 62.8,
+          "weather_temp": 62.5,
           "weather_notes": [],
           "park_runs_factor": 0.92,
           "nrfi_prob": 54.9,
@@ -29311,7 +29311,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 62.5,
+          "weather_temp": 61.6,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 54.5,
@@ -29570,25 +29570,27 @@
           "away_pp_throws": "L",
           "venue": "Oriole Park at Camden Yards",
           "park_hr_factor": 0.92,
-          "weather_factor": 1.0,
-          "weather_wind": "cross",
-          "weather_temp": 54.5,
-          "weather_notes": [],
+          "weather_factor": 0.97,
+          "weather_wind": "in",
+          "weather_temp": 53.3,
+          "weather_notes": [
+            "Wind IN 6 mph (-3%)"
+          ],
           "park_runs_factor": 0.99,
-          "nrfi_prob": 52.5,
+          "nrfi_prob": 52.8,
           "nrfi_meta": {
             "base": 51.4,
             "min_sample": 6,
             "p_top": 70.5,
             "p_bot": 73.0,
             "park_mult": 1.001,
-            "weather_adj": 0.011,
+            "weather_adj": 0.0134,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.7,
             "away_sp_sample": 10
           },
-          "nrfi_reasoning": "Brandon Young 67% 1st-inning scoreless over 6 starts (weak) \u00b7 Framber Valdez 70% 1st-inning scoreless over 10 starts (average) \u00b7 cold temp (54\u00b0F) boosts NRFI ~2pp",
+          "nrfi_reasoning": "Brandon Young 67% 1st-inning scoreless over 6 starts (weak) \u00b7 Framber Valdez 70% 1st-inning scoreless over 10 starts (average) \u00b7 cold temp (53\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Gunnar Henderson",
@@ -34176,14 +34178,14 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 209.5
+        "age_hours": 209.6
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 207.2
+        "age_hours": 207.3
       },
       {
         "name": "ai_learner_2026-05-16.md",
@@ -34197,49 +34199,49 @@
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 137.5
+        "age_hours": 137.6
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 135.0
+        "age_hours": 135.1
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 89.5
+        "age_hours": 89.6
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 65.5
+        "age_hours": 65.6
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 41.5
+        "age_hours": 41.6
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 39.0
+        "age_hours": 39.1
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11661,
         "mtime": 1779570119.4438765,
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "name": "audit_2026-05-12.md",
@@ -34267,21 +34269,21 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 199.5
+        "age_hours": 199.6
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 199.3
+        "age_hours": 199.4
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 195.1
+        "age_hours": 195.2
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -34295,7 +34297,7 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 256.3
+        "age_hours": 256.4
       },
       {
         "name": "before_after_2026-05-15.md",
@@ -34309,14 +34311,14 @@
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 242.4
+        "age_hours": 242.5
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 247.3
+        "age_hours": 247.4
       },
       {
         "name": "design_engine_v2.md",
@@ -34386,7 +34388,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 273.2
+        "age_hours": 273.3
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -34470,14 +34472,14 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 256.4
+        "age_hours": 256.5
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 248.7
+        "age_hours": 248.8
       },
       {
         "name": "learning_journal_2026-05-14.md",
@@ -34491,56 +34493,56 @@
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 175.5
+        "age_hours": 175.6
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 159.0
+        "age_hours": 159.1
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 135.0
+        "age_hours": 135.1
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 87.0
+        "age_hours": 87.1
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 63.0
+        "age_hours": 63.1
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 39.0
+        "age_hours": 39.1
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 8.1
+        "age_hours": 8.2
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779570049.333946,
-        "age_hours": 0.0
+        "age_hours": 0.1
       },
       {
         "name": "project_current_state.md",
@@ -34568,7 +34570,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 91.0
+        "age_hours": 91.1
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -34666,7 +34668,7 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 283.1
+        "age_hours": 283.2
       },
       {
         "name": "reference_runbook.md",
@@ -34736,7 +34738,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 257.3
+        "age_hours": 257.4
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -34750,14 +34752,14 @@
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 256.6
+        "age_hours": 256.7
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 243.3
+        "age_hours": 243.4
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -34771,14 +34773,14 @@
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 249.8
+        "age_hours": 249.9
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 256.9
+        "age_hours": 257.0
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
@@ -34799,7 +34801,7 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 242.4
+        "age_hours": 242.5
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -34825,7 +34827,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-23_evening.json",
         "latest_date": "2026-05-23",
-        "age_hours": 0.4,
+        "age_hours": 0.5,
         "bytes": 653151,
         "row_count": 52,
         "last_refresh_iso": "2026-05-23T20:36:09.481581+00:00",
@@ -34838,7 +34840,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 6.0,
+        "age_hours": 6.1,
         "bytes": 343373,
         "row_count": null,
         "last_refresh_iso": "2026-05-23T15:02:07.211818+00:00",
@@ -34851,7 +34853,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 0.5,
+        "age_hours": 0.6,
         "bytes": 647306,
         "row_count": null,
         "last_refresh_iso": "2026-05-23T20:30:57.299483+00:00",
@@ -34864,7 +34866,7 @@
         "status": "degraded",
         "latest_file": "v2_settle_summary_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 272,
         "row_count": null,
         "last_refresh_iso": "2026-05-23T21:00:06.065324+00:00",
@@ -34890,7 +34892,7 @@
         "status": "degraded",
         "latest_file": "learning_journal_2026-05-23.md",
         "latest_date": "2026-05-23",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 126,
         "row_count": null,
         "last_refresh_iso": "2026-05-23T21:00:49.333946+00:00",
@@ -34903,7 +34905,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 6.5,
+        "age_hours": 6.6,
         "bytes": 26329,
         "row_count": 86,
         "last_refresh_iso": "2026-05-23T14:31:11.315780+00:00",
@@ -34929,10 +34931,10 @@
         "status": "fresh",
         "latest_file": "wx_BAL_2026-05-23T20.json",
         "latest_date": "2026-05-23",
-        "age_hours": 0.9,
-        "bytes": 223,
+        "age_hours": 0.0,
+        "bytes": 222,
         "row_count": 25,
-        "last_refresh_iso": "2026-05-23T20:05:43.347342+00:00",
+        "last_refresh_iso": "2026-05-23T21:05:45.068021+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -43485,12 +43487,43 @@
       "pitcher_signal": 6.19,
       "park_nrfi_mult": 1.08,
       "park_signal": 2.0,
-      "temp_f": 62.8,
+      "temp_f": 62.5,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
       "confidence": 58.9,
+      "side": "none",
+      "band": "mild_nrfi",
+      "recommendation": "Mild NRFI tilt \u2014 no bet",
+      "missing_pitcher_data": true
+    },
+    {
+      "matchup": "STL @ CIN",
+      "away_abbr": "STL",
+      "home_abbr": "CIN",
+      "home_pp_name": "Chase Petty",
+      "away_pp_name": "Kyle Leahy",
+      "home_nrfi": 0.65,
+      "away_nrfi": 0.6,
+      "home_pp_shrunk": null,
+      "away_pp_shrunk": 0.8081,
+      "home_pp_baseline": null,
+      "away_pp_baseline": 0.7294,
+      "home_pp_recent": null,
+      "away_pp_recent": 1.0,
+      "home_pp_trend": null,
+      "away_pp_trend": "STABLE",
+      "team_signal": 3.75,
+      "pitcher_signal": 6.45,
+      "park_nrfi_mult": 0.92,
+      "park_signal": -2.0,
+      "temp_f": 72.0,
+      "temp_signal": 0.0,
+      "ump_name": "John Tumpane",
+      "ump_k_pct_bias": 0.4,
+      "ump_signal": 0.6,
+      "confidence": 58.8,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -43516,7 +43549,7 @@
       "pitcher_signal": 5.34,
       "park_nrfi_mult": 0.96,
       "park_signal": -1.0,
-      "temp_f": 63.5,
+      "temp_f": 61.1,
       "temp_signal": 0.0,
       "ump_name": "Chad Whitson",
       "ump_k_pct_bias": 0.2,
@@ -43526,37 +43559,6 @@
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
       "missing_pitcher_data": false
-    },
-    {
-      "matchup": "STL @ CIN",
-      "away_abbr": "STL",
-      "home_abbr": "CIN",
-      "home_pp_name": "Chase Petty",
-      "away_pp_name": "Kyle Leahy",
-      "home_nrfi": 0.65,
-      "away_nrfi": 0.6,
-      "home_pp_shrunk": null,
-      "away_pp_shrunk": 0.8081,
-      "home_pp_baseline": null,
-      "away_pp_baseline": 0.7294,
-      "home_pp_recent": null,
-      "away_pp_recent": 1.0,
-      "home_pp_trend": null,
-      "away_pp_trend": "STABLE",
-      "team_signal": 3.75,
-      "pitcher_signal": 6.45,
-      "park_nrfi_mult": 0.92,
-      "park_signal": -2.0,
-      "temp_f": 72.5,
-      "temp_signal": 0.0,
-      "ump_name": null,
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 58.2,
-      "side": "none",
-      "band": "mild_nrfi",
-      "recommendation": "Mild NRFI tilt \u2014 no bet",
-      "missing_pitcher_data": true
     },
     {
       "matchup": "CLE @ PHI",
@@ -43578,43 +43580,12 @@
       "pitcher_signal": 2.33,
       "park_nrfi_mult": 0.93,
       "park_signal": -1.75,
-      "temp_f": 51.6,
-      "temp_signal": 4.2,
+      "temp_f": 51.4,
+      "temp_signal": 4.3,
       "ump_name": "Jordan Baker",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 57.0,
-      "side": "none",
-      "band": "mild_nrfi",
-      "recommendation": "Mild NRFI tilt \u2014 no bet",
-      "missing_pitcher_data": false
-    },
-    {
-      "matchup": "SEA @ KC",
-      "away_abbr": "SEA",
-      "home_abbr": "KC",
-      "home_pp_name": "Stephen Kolek",
-      "away_pp_name": "George Kirby",
-      "home_nrfi": 0.45,
-      "away_nrfi": 0.45,
-      "home_pp_shrunk": 0.7429,
-      "away_pp_shrunk": 0.687,
-      "home_pp_baseline": 0.6727,
-      "away_pp_baseline": 0.6333,
-      "home_pp_recent": 1.0,
-      "away_pp_recent": 0.8,
-      "home_pp_trend": "STABLE",
-      "away_pp_trend": "STABLE",
-      "team_signal": -1.5,
-      "pitcher_signal": 8.25,
-      "park_nrfi_mult": 1.01,
-      "park_signal": 0.25,
-      "temp_f": 79.2,
-      "temp_signal": -0.6,
-      "ump_name": "Todd Tichenor",
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 56.4,
+      "confidence": 57.1,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -43640,12 +43611,43 @@
       "pitcher_signal": 4.54,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
-      "temp_f": 54.5,
-      "temp_signal": 2.75,
+      "temp_f": 53.3,
+      "temp_signal": 3.35,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 56.0,
+      "confidence": 56.6,
+      "side": "none",
+      "band": "mild_nrfi",
+      "recommendation": "Mild NRFI tilt \u2014 no bet",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "SEA @ KC",
+      "away_abbr": "SEA",
+      "home_abbr": "KC",
+      "home_pp_name": "Stephen Kolek",
+      "away_pp_name": "George Kirby",
+      "home_nrfi": 0.45,
+      "away_nrfi": 0.45,
+      "home_pp_shrunk": 0.7429,
+      "away_pp_shrunk": 0.687,
+      "home_pp_baseline": 0.6727,
+      "away_pp_baseline": 0.6333,
+      "home_pp_recent": 1.0,
+      "away_pp_recent": 0.8,
+      "home_pp_trend": "STABLE",
+      "away_pp_trend": "STABLE",
+      "team_signal": -1.5,
+      "pitcher_signal": 8.25,
+      "park_nrfi_mult": 1.01,
+      "park_signal": 0.25,
+      "temp_f": 79.3,
+      "temp_signal": -0.65,
+      "ump_name": "Todd Tichenor",
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 56.3,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -43702,7 +43704,7 @@
       "pitcher_signal": 7.02,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 62.5,
+      "temp_f": 61.6,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -43733,7 +43735,7 @@
       "pitcher_signal": -2.81,
       "park_nrfi_mult": 1.07,
       "park_signal": 1.75,
-      "temp_f": 61.6,
+      "temp_f": 61.5,
       "temp_signal": 0.0,
       "ump_name": "Louie Krupa",
       "ump_k_pct_bias": null,
@@ -43795,12 +43797,12 @@
       "pitcher_signal": -0.93,
       "park_nrfi_mult": 0.97,
       "park_signal": -0.75,
-      "temp_f": 60.2,
-      "temp_signal": 0.0,
+      "temp_f": 57.9,
+      "temp_signal": 1.05,
       "ump_name": "Jen Pawol",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 47.6,
+      "confidence": 48.6,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -43826,12 +43828,12 @@
       "pitcher_signal": 2.09,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
-      "temp_f": 79.1,
-      "temp_signal": -0.55,
+      "temp_f": 77.8,
+      "temp_signal": 0.0,
       "ump_name": "Ron Kulpa",
       "ump_k_pct_bias": -1.5,
       "ump_signal": -2.25,
-      "confidence": 48.8,
+      "confidence": 49.3,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -54474,7 +54476,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-23 17:03 ET",
+  "built_at_et": "2026-05-23 17:07 ET",
   "counts": {
     "picks_total": 477,
     "settled": 183,
