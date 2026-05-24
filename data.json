@@ -1,6 +1,6 @@
 {
-  "build_id": "260524-180031",
-  "generated_at": "2026-05-24T18:00:31.606131+00:00",
+  "build_id": "260524-180217",
+  "generated_at": "2026-05-24T18:02:18.099592+00:00",
   "today": "2026-05-24",
   "yesterday": "2026-05-23",
   "bankroll": {
@@ -10522,7 +10522,7 @@
       "notes": "[AUTO-ARCHIVED] Stale, duplicate, or beyond top 25"
     }
   ],
-  "built_at": "2026-05-24T18:00:31.606281+00:00",
+  "built_at": "2026-05-24T18:02:18.099731+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -28868,10 +28868,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-24 14:05",
       "LastRun": "2026-05-24 14:00",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": true
     },
     {
@@ -29805,7 +29805,7 @@
             "status_code": "I",
             "current_inning": 6,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 1,
@@ -29826,7 +29826,7 @@
               0,
               2,
               0,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -29986,7 +29986,7 @@
             "home_hits": 1,
             "home_errors": 1,
             "away_runs": 1,
-            "away_hits": 1,
+            "away_hits": 2,
             "away_errors": 1,
             "home_innings": [
               0,
@@ -30073,7 +30073,7 @@
             "status_code": "I",
             "current_inning": 2,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 0,
             "home_hits": 2,
             "home_errors": 0,
@@ -30082,7 +30082,7 @@
             "away_errors": 0,
             "home_innings": [
               0,
-              null
+              0
             ],
             "away_innings": [
               0,
@@ -30164,8 +30164,8 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 2,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 0,
             "home_hits": 1,
             "home_errors": 0,
@@ -30350,7 +30350,7 @@
             "inning_state": "Top",
             "home_runs": 0,
             "home_hits": 1,
-            "home_errors": 0,
+            "home_errors": 1,
             "away_runs": 0,
             "away_hits": 1,
             "away_errors": 0,
@@ -35659,22 +35659,22 @@
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 12073,
-        "mtime": 1779643899.0776289,
-        "age_hours": 0.5
+        "mtime": 1779645707.2583425,
+        "age_hours": 0.0
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 278.4
+        "age_hours": 278.5
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 227.1
+        "age_hours": 227.2
       },
       {
         "name": "audit_round2_2026-05-15.md",
@@ -35709,7 +35709,7 @@
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 214.6
+        "age_hours": 214.7
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
@@ -35744,7 +35744,7 @@
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 282.5
+        "age_hours": 282.6
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
@@ -35758,35 +35758,35 @@
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_last10_strategies.md",
@@ -35800,7 +35800,7 @@
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
@@ -35814,77 +35814,77 @@
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 304.0
+        "age_hours": 304.1
       },
       {
         "name": "feedback_v8_research_layer.md",
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "full_audit_2026-05-15.md",
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 226.4
+        "age_hours": 226.5
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
@@ -35967,8 +35967,8 @@
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
-        "mtime": 1779643843.298947,
-        "age_hours": 0.5
+        "mtime": 1779645649.470548,
+        "age_hours": 0.0
       },
       {
         "name": "project_current_state.md",
@@ -35989,7 +35989,7 @@
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "project_factor_redesign_2026-05-19.md",
@@ -36003,91 +36003,91 @@
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 228.5
+        "age_hours": 228.6
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 227.2
+        "age_hours": 227.3
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_daily_workflow_explained.md",
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 303.0
+        "age_hours": 303.1
       },
       {
         "name": "reference_deep_research_workflow.md",
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_prop_catalog.md",
@@ -36108,21 +36108,21 @@
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "reference_strategy_definitions.md",
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 278.3
+        "age_hours": 278.4
       },
       {
         "name": "reference_trigger_prompts.md",
@@ -36136,28 +36136,28 @@
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "roadmap.md",
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 279.0
+        "age_hours": 279.1
       },
       {
         "name": "silent_killers_2026-05-15.md",
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 227.1
+        "age_hours": 227.2
       },
       {
         "name": "state_snapshot_2026-05-13.md",
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 254.5
+        "age_hours": 254.6
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
@@ -36192,7 +36192,7 @@
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 264.5
+        "age_hours": 264.6
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
@@ -36220,7 +36220,7 @@
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 271.1
+        "age_hours": 271.2
       },
       {
         "name": "v2_simplification_2026-05-13.md",
@@ -36234,7 +36234,7 @@
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 262.3
+        "age_hours": 262.4
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
@@ -36253,7 +36253,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-05-24.json",
         "latest_date": "2026-05-24",
-        "age_hours": 3.0,
+        "age_hours": 3.1,
         "bytes": 651139,
         "row_count": 52,
         "last_refresh_iso": "2026-05-24T14:58:58.473237+00:00",
@@ -36318,10 +36318,10 @@
         "status": "degraded",
         "latest_file": "learning_journal_2026-05-24.md",
         "latest_date": "2026-05-24",
-        "age_hours": 0.5,
+        "age_hours": 0.0,
         "bytes": 126,
         "row_count": null,
-        "last_refresh_iso": "2026-05-24T17:30:43.298947+00:00",
+        "last_refresh_iso": "2026-05-24T18:00:49.470548+00:00",
         "issue": "size 126B < min 200B",
         "min_bytes": 200,
         "min_count": null
@@ -36357,7 +36357,7 @@
         "status": "fresh",
         "latest_file": "wx_LAA_2026-05-24T23.json",
         "latest_date": "2026-05-24",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 208,
         "row_count": 37,
         "last_refresh_iso": "2026-05-24T17:40:37.596620+00:00",
@@ -39341,7 +39341,7 @@
     "daily_brief": "25 picks across 12 games today. Tier mix: 3 LOCK, 2 STRONG, 4 GOOD, 16 WATCH. Market mix: 18\u00d7 PROP, 6\u00d7 ML, 1\u00d7 SPREAD. \u26a0 Caveats: 11 picks on phantom baseline (no real history); 18 picks with thin n<20 sample."
   },
   "lens_backtest": {
-    "generated_at": "2026-05-24T17:30:45.219683Z",
+    "generated_at": "2026-05-24T18:00:51.132607Z",
     "phase": 1,
     "today": "2026-05-24",
     "lens_weights": {
@@ -40418,7 +40418,7 @@
   "ai_learner_reports": {
     "latest": {
       "date": "2026-05-24",
-      "generated_at": "2026-05-24T17:31:39.080166+00:00",
+      "generated_at": "2026-05-24T18:01:47.231101+00:00",
       "since_date": null,
       "total_settled_picks": 416,
       "enriched_count": 53,
@@ -42180,8 +42180,8 @@
           "type": "wiring_diagnostic",
           "subtype": "pipeline_stale",
           "severity": "high",
-          "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 168.5h old (threshold 36h). Upstream task may have failed.",
-          "n": 168,
+          "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 169.0h old (threshold 36h). Upstream task may have failed.",
+          "n": 169,
           "persistence_runs": 9
         },
         {
@@ -42266,7 +42266,7 @@
           "type": "wiring_diagnostic",
           "subtype": "pipeline_stale",
           "severity": "high",
-          "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 26.5h old (threshold 24h). Upstream task may have failed.",
+          "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 27.0h old (threshold 24h). Upstream task may have failed.",
           "n": 26,
           "persistence_runs": 9,
           "severity_escalated": true
@@ -42585,11 +42585,11 @@
         "filename": "v2_ai_learner_2026-05-14.json"
       }
     ],
-    "markdown_latest": "# AI Learner Report \u2014 2026-05-24\n\n**Sample:** 416 settled picks since None\n**Generated:** 2026-05-24T17:31:39.080166+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=168)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 168.5h old (threshold 36h). Upstream task may have failed.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=125)\n   [PERSISTED 9 RUNS] Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 47.2% vs neutral 72.7% (lift -25.5pp on n=125). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **tier_stakes_too_big** (severity: high, n=75)\n   [PERSISTED 6 RUNS] Tier STRONG STAKES TOO BIG: hit rate 74.7% looks healthy (expected 60%) but ROI -10.3% on n=75 means losses outsize wins. Reduce stake size for this tier \u2014 realized edge is smaller than the stake table assumes.\n\n4. \ud83d\udd34 **tier_underdog_paying** (severity: high, n=61)\n   [PERSISTED 10 RUNS] Tier LOCK UNDERDOG-PAYS: hit rate 54.1% below expected 70% (delta -15.9pp) BUT ROI +18.9% on n=61. Bigger underdogs are landing \u2014 don't tighten this gate. Lens working as intended; the calibration table just expects too high a hit rate for this tier's odds mix.\n\n5. \ud83d\udd34 **factor_strong_signal** (severity: high, n=48)\n   [PERSISTED 3 RUNS] Factor 'park' PROMOTE: bullish picks hit 62.5% vs 36.1% neutral (lift +26.4pp, n=48). Consider bumping strength weight 10% \u2014 this is doing more work than the calibration assumes.\n\n6. \ud83d\udd34 **factor_overweight** (severity: high, n=39)\n   [PERSISTED 10 RUNS] Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 38.5% vs neutral 53.1% (lift -14.6pp on n=39). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n7. \ud83d\udd34 **strategy_promote** (severity: high, n=38)\n   [PERSISTED 6 RUNS] Strategy 'MLB Total Runs' PROMOTE candidate: 63.2% hit rate and +11.5% ROI on n=38. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n8. \ud83d\udd34 **accountant_finding** (severity: high, n=29)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 29 LIVE pick(s) staked off-table. Example: STRONG tier @ $3.00 vs table expects $4.50. Likely operator manually adjusted stake at FD \u2014 track in \\bankroll correction notes.\n\n9. \ud83d\udd34 **factor_strong_signal** (severity: high, n=28)\n   [PERSISTED 3 RUNS] Factor 'bullpen' PROMOTE: bullish picks hit 78.6% vs 52.1% neutral (lift +26.5pp, n=28). Consider bumping strength weight 10% \u2014 this is doing more work than the calibration assumes.\n\n10. \ud83d\udd34 **strategy_promote** (severity: high, n=27)\n   [PERSISTED 9 RUNS] Strategy 'MLB Run Line' PROMOTE candidate: 85.2% hit rate and +22.5% ROI on n=27. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n11. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=26)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 26.5h old (threshold 24h). Upstream task may have failed.\n\n12. \ud83d\udd34 **tier_broken** (severity: high, n=24)\n   [PERSISTED 10 RUNS] Tier WATCH BROKEN: hit rate 16.7% (expected 45%, delta -28.3pp) AND ROI -34.2% on n=24. Both metrics negative \u2014 tier is structurally losing. Tighten the edge_pp gate or kill the tier entirely.\n\n13. \ud83d\udd34 **strategy_demote** (severity: high, n=22)\n   [PERSISTED 10 RUNS] Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n14. \ud83d\udd34 **tier_slack** (severity: high, n=21)\n   [PERSISTED 10 RUNS] Tier SIDE TRUE SLACK: hit rate 66.7% AND ROI +8.3% both beat expectations on n=21. Loosening the edge_pp gate here would likely ship more profitable picks.\n\n15. \ud83d\udd34 **strategy_demote** (severity: high, n=12)\n   [PERSISTED 6 RUNS] Strategy 'MLB Batter RBIs Alt' DEMOTE candidate: 33.3% hit rate on n=12. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n16. \ud83d\udd34 **player_weak** (severity: high, n=12)\n   [PERSISTED 10 RUNS] Player TJ Rumfield WEAK track record: 17% hit (shrunk to 31.8% w\\ prior) \\ -39.7% ROI on n=12. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n17. \ud83d\udd34 **coverage_gaps** (severity: high, n=11)\n   [PERSISTED 10 RUNS] COVERAGE GAPS: 11 engine strategies have ZERO picks since the 5\\14 reset. team-markets: MLB F5 Moneyline, MLB F5 Total, MLB NRFI \u00b7 batter-props: MLB Batter H+R+RBI, MLB Batter HR, MLB Batter Hits, MLB Batter RBIs, MLB Batter Runs, MLB Batter Total Bases, MLB Batter Walks \u00b7 parlays: MLB NRFI Parlay. Either the strategy_match table is mis-wired (engine code can't actually fire these), or upstream gates (\u00a7111 demand, edge_pp, sample) are too tight. Audit lib\\v2_scorer.py STRATEGY_BY_SPORT_MARKET vs what's reaching the lock.\n\n18. \ud83d\udd34 **clv_pipeline_dead** (severity: high, n=10)\n   [PERSISTED 10 RUNS] CLV PIPELINE DEAD: every one of the last 10 picks has CLV exactly 0.0%. Real CLV is always noisy \u00b12-5%; uniform 0 means the closing-line lookup isn't writing back to picks. Per CLAUDE.md, CLV+ is our PRIMARY edge signal \u2014 without it we can't tell good picks from lucky ones. Check noon-confirm or settle CLV write step.\n\n19. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=10)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] 10 Odds API market(s) have no engine strategy mapping in STRATEGY_BY_SPORT_MARKET: (nba, ASSISTS), (nba, POINTS), (nba, REBOUNDS), (nba, THREES_MADE), (nhl, ASSISTS)... +5 more. Candidates from these markets get scored but get strategy_match=None and may be filtered out downstream.\n\n20. \ud83d\udd34 **factor_overweight** (severity: high, n=8)\n   [PERSISTED 6 RUNS] Factor 'weather' DEMOTE: when bullish (>1.05), hit-rate 50.0% vs neutral 62.5% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n21. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   [PERSISTED 10 RUNS] 6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n22. \ud83d\udd34 **player_weak** (severity: high, n=6)\n   [PERSISTED 3 RUNS] Player Ceddanne Rafaela WEAK track record: 0% hit (shrunk to 31.2% w\\ prior) \\ -50.0% ROI on n=6. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n23. \ud83d\udd34 **player_strong** (severity: high, n=6)\n   [PERSISTED 10 RUNS] Player Miguel Vargas STRONG track record: 100% hit (shrunk to 68.8% w\\ prior) \\ +24.8% ROI on n=6. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n24. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=5)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] Operator has overridden bankroll 5 times in past 7 days. Chronic engine-vs-FD drift suggests stake sizing or settle math is off. Audit average drift magnitude in logs\\bankroll_corrections.jsonl.\n\n25. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] verify-and-fire.log has recent exception: UnicodeEncodeError: 'charmap' codec can't encode character '\\u2713'. Likely wiring bug \u2014 variable rename, missing import, or config drift. Tail full log to root-cause.\n\n26. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] Bankroll moved 11.1% in one update on 2026-05-21T03:59:33.175747+00:00: $152.83 \u2192 $169.77. Could be operator fat-finger or a real reset \u2014 verify intent.\n\n27. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-16: engine running $167.12, operator confirmed $154.40, gap $-12.72. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n28. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-19: engine running $167.12, operator confirmed $145.45, gap $-21.67. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n29. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-20: engine running $190.98, operator confirmed $152.83, gap $-38.15. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n## Bankroll Context\n\n| Account | Start | Current | Change | Tier-1u stake |\n|---------|-------|---------|--------|---------------|\n| LIVE  | $150.00 | $151.77 | +1.18% | $3.00 |\n| PAPER | $500.00 | $412.99 | -17.40% | $5.00 |\n\n_Reset baseline: 2026-05-14_\n\n## Per-Account Tier Performance\n\n### LIVE (72 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 25 | 60.0% | 70% | -10.0pp | +13.7% |\n| STRONG | 20 | 85.0% | 60% | +25.0pp | +23.0% |\n| GOOD | 24 | 41.7% | 55% | -13.3pp | -9.4% |\n| SIDE | 2 | 100.0% | 50% | +50.0pp | +94.7% |\n\n### PAPER (344 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 36 | 50.0% | 70% | -20.0pp | +19.9% |\n| STRONG | 55 | 70.9% | 60% | +10.9pp | -14.7% |\n| GOOD | 210 | 55.2% | 55% | +0.2pp | -7.0% |\n| SIDE | 19 | 63.2% | 50% | +13.2pp | +6.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 47.2% (n=125) | \u2014 | 72.7% (n=11) | -25.5pp |\n| pitcher_matchup | 48.0% (n=75) | \u2014 | 54.8% (n=42) | -6.8pp |\n| player_performer | 38.0% (n=50) | 60.0% (n=20) | 31.6% (n=19) | +6.4pp |\n| park | 62.5% (n=48) | 33.3% (n=6) | 36.1% (n=72) | +26.4pp |\n| handedness | 38.5% (n=39) | 0.0% (n=2) | 53.1% (n=98) | -14.6pp |\n| bullpen | 78.6% (n=28) | \u2014 | 52.1% (n=48) | +26.5pp |\n| weather | 50.0% (n=8) | 100.0% (n=4) | 62.5% (n=40) | -12.5pp |\n| bvp | 66.7% (n=6) | 62.5% (n=8) | 25.0% (n=4) | +41.7pp |\n| pitcher_rest | 50.0% (n=2) | \u2014 | 0.0% (n=1) | +50.0pp |\n\n## Strategy Performance \u2014 engine-reproducible\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 216 | 118-98 | 54.6% | -8.7% |\n| MLB Moneyline | 55 | 31-24 | 56.4% | -6.6% |\n| MLB Total Runs | 38 | 24-14 | 63.2% | +11.5% |\n| MLB Run Line | 27 | 23-4 | 85.2% | +22.5% |\n| MLB Batter Total Bases Alt | 22 | 6-16 | 27.3% | -11.4% |\n| MLB Batter RBIs Alt | 12 | 4-8 | 33.3% | +1.1% |\n| MLB Pitcher Strikeouts | 6 | 2-4 | 33.3% | -9.6% |\n\n## Strategy Performance \u2014 legacy \\ manually-tagged\n\n_These strategies exist only as historical Notion labels \u2014 current engine cannot reproduce them. Promote\\demote recommendations DO NOT operate on this table._\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| Stable Edge Parlay | 7 | 4-3 | 57.1% | +59.5% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n| I v2 baseline | 1 | 1-0 | 100.0% | +60.2% |\n| J Kelly | 1 | 1-0 | 100.0% | +60.2% |\n| C NBA Pts | 1 | 0-1 | 0.0% | -100.0% |\n| D NHL SOG | 1 | 0-1 | 0.0% | -100.0% |\n| N Alvarez Hits | 1 | 1-0 | 100.0% | +55.6% |\n| B Hot Hits | 1 | 1-0 | 100.0% | +29.4% |\n| A K-NRFI | 1 | 1-0 | 100.0% | +98.7% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 61 | 54.1% | 70% | -15.9pp | +18.9% |\n| STRONG | 75 | 74.7% | 60% | +14.7pp | -10.3% |\n| SIDE | 21 | 66.7% | 50% | +16.7pp | +8.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
+    "markdown_latest": "# AI Learner Report \u2014 2026-05-24\n\n**Sample:** 416 settled picks since None\n**Generated:** 2026-05-24T18:01:47.231101+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=169)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 169.0h old (threshold 36h). Upstream task may have failed.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=125)\n   [PERSISTED 9 RUNS] Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 47.2% vs neutral 72.7% (lift -25.5pp on n=125). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **tier_stakes_too_big** (severity: high, n=75)\n   [PERSISTED 6 RUNS] Tier STRONG STAKES TOO BIG: hit rate 74.7% looks healthy (expected 60%) but ROI -10.3% on n=75 means losses outsize wins. Reduce stake size for this tier \u2014 realized edge is smaller than the stake table assumes.\n\n4. \ud83d\udd34 **tier_underdog_paying** (severity: high, n=61)\n   [PERSISTED 10 RUNS] Tier LOCK UNDERDOG-PAYS: hit rate 54.1% below expected 70% (delta -15.9pp) BUT ROI +18.9% on n=61. Bigger underdogs are landing \u2014 don't tighten this gate. Lens working as intended; the calibration table just expects too high a hit rate for this tier's odds mix.\n\n5. \ud83d\udd34 **factor_strong_signal** (severity: high, n=48)\n   [PERSISTED 3 RUNS] Factor 'park' PROMOTE: bullish picks hit 62.5% vs 36.1% neutral (lift +26.4pp, n=48). Consider bumping strength weight 10% \u2014 this is doing more work than the calibration assumes.\n\n6. \ud83d\udd34 **factor_overweight** (severity: high, n=39)\n   [PERSISTED 10 RUNS] Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 38.5% vs neutral 53.1% (lift -14.6pp on n=39). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n7. \ud83d\udd34 **strategy_promote** (severity: high, n=38)\n   [PERSISTED 6 RUNS] Strategy 'MLB Total Runs' PROMOTE candidate: 63.2% hit rate and +11.5% ROI on n=38. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n8. \ud83d\udd34 **accountant_finding** (severity: high, n=29)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 29 LIVE pick(s) staked off-table. Example: STRONG tier @ $3.00 vs table expects $4.50. Likely operator manually adjusted stake at FD \u2014 track in \\bankroll correction notes.\n\n9. \ud83d\udd34 **factor_strong_signal** (severity: high, n=28)\n   [PERSISTED 3 RUNS] Factor 'bullpen' PROMOTE: bullish picks hit 78.6% vs 52.1% neutral (lift +26.5pp, n=28). Consider bumping strength weight 10% \u2014 this is doing more work than the calibration assumes.\n\n10. \ud83d\udd34 **strategy_promote** (severity: high, n=27)\n   [PERSISTED 9 RUNS] Strategy 'MLB Run Line' PROMOTE candidate: 85.2% hit rate and +22.5% ROI on n=27. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n11. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=26)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 27.0h old (threshold 24h). Upstream task may have failed.\n\n12. \ud83d\udd34 **tier_broken** (severity: high, n=24)\n   [PERSISTED 10 RUNS] Tier WATCH BROKEN: hit rate 16.7% (expected 45%, delta -28.3pp) AND ROI -34.2% on n=24. Both metrics negative \u2014 tier is structurally losing. Tighten the edge_pp gate or kill the tier entirely.\n\n13. \ud83d\udd34 **strategy_demote** (severity: high, n=22)\n   [PERSISTED 10 RUNS] Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n14. \ud83d\udd34 **tier_slack** (severity: high, n=21)\n   [PERSISTED 10 RUNS] Tier SIDE TRUE SLACK: hit rate 66.7% AND ROI +8.3% both beat expectations on n=21. Loosening the edge_pp gate here would likely ship more profitable picks.\n\n15. \ud83d\udd34 **strategy_demote** (severity: high, n=12)\n   [PERSISTED 6 RUNS] Strategy 'MLB Batter RBIs Alt' DEMOTE candidate: 33.3% hit rate on n=12. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n16. \ud83d\udd34 **player_weak** (severity: high, n=12)\n   [PERSISTED 10 RUNS] Player TJ Rumfield WEAK track record: 17% hit (shrunk to 31.8% w\\ prior) \\ -39.7% ROI on n=12. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n17. \ud83d\udd34 **coverage_gaps** (severity: high, n=11)\n   [PERSISTED 10 RUNS] COVERAGE GAPS: 11 engine strategies have ZERO picks since the 5\\14 reset. team-markets: MLB F5 Moneyline, MLB F5 Total, MLB NRFI \u00b7 batter-props: MLB Batter H+R+RBI, MLB Batter HR, MLB Batter Hits, MLB Batter RBIs, MLB Batter Runs, MLB Batter Total Bases, MLB Batter Walks \u00b7 parlays: MLB NRFI Parlay. Either the strategy_match table is mis-wired (engine code can't actually fire these), or upstream gates (\u00a7111 demand, edge_pp, sample) are too tight. Audit lib\\v2_scorer.py STRATEGY_BY_SPORT_MARKET vs what's reaching the lock.\n\n18. \ud83d\udd34 **clv_pipeline_dead** (severity: high, n=10)\n   [PERSISTED 10 RUNS] CLV PIPELINE DEAD: every one of the last 10 picks has CLV exactly 0.0%. Real CLV is always noisy \u00b12-5%; uniform 0 means the closing-line lookup isn't writing back to picks. Per CLAUDE.md, CLV+ is our PRIMARY edge signal \u2014 without it we can't tell good picks from lucky ones. Check noon-confirm or settle CLV write step.\n\n19. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=10)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] 10 Odds API market(s) have no engine strategy mapping in STRATEGY_BY_SPORT_MARKET: (nba, ASSISTS), (nba, POINTS), (nba, REBOUNDS), (nba, THREES_MADE), (nhl, ASSISTS)... +5 more. Candidates from these markets get scored but get strategy_match=None and may be filtered out downstream.\n\n20. \ud83d\udd34 **factor_overweight** (severity: high, n=8)\n   [PERSISTED 6 RUNS] Factor 'weather' DEMOTE: when bullish (>1.05), hit-rate 50.0% vs neutral 62.5% (lift -12.5pp on n=8). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n21. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   [PERSISTED 10 RUNS] 6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n22. \ud83d\udd34 **player_weak** (severity: high, n=6)\n   [PERSISTED 3 RUNS] Player Ceddanne Rafaela WEAK track record: 0% hit (shrunk to 31.2% w\\ prior) \\ -50.0% ROI on n=6. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n23. \ud83d\udd34 **player_strong** (severity: high, n=6)\n   [PERSISTED 10 RUNS] Player Miguel Vargas STRONG track record: 100% hit (shrunk to 68.8% w\\ prior) \\ +24.8% ROI on n=6. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n24. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=5)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] Operator has overridden bankroll 5 times in past 7 days. Chronic engine-vs-FD drift suggests stake sizing or settle math is off. Audit average drift magnitude in logs\\bankroll_corrections.jsonl.\n\n25. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] verify-and-fire.log has recent exception: UnicodeEncodeError: 'charmap' codec can't encode character '\\u2713'. Likely wiring bug \u2014 variable rename, missing import, or config drift. Tail full log to root-cause.\n\n26. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ELECTRICIAN] Bankroll moved 11.1% in one update on 2026-05-21T03:59:33.175747+00:00: $152.83 \u2192 $169.77. Could be operator fat-finger or a real reset \u2014 verify intent.\n\n27. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-16: engine running $167.12, operator confirmed $154.40, gap $-12.72. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n28. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-19: engine running $167.12, operator confirmed $145.45, gap $-21.67. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n29. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 9 RUNS] [ACCOUNTANT] 2026-05-20: engine running $190.98, operator confirmed $152.83, gap $-38.15. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n## Bankroll Context\n\n| Account | Start | Current | Change | Tier-1u stake |\n|---------|-------|---------|--------|---------------|\n| LIVE  | $150.00 | $151.77 | +1.18% | $3.00 |\n| PAPER | $500.00 | $412.99 | -17.40% | $5.00 |\n\n_Reset baseline: 2026-05-14_\n\n## Per-Account Tier Performance\n\n### LIVE (72 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 25 | 60.0% | 70% | -10.0pp | +13.7% |\n| STRONG | 20 | 85.0% | 60% | +25.0pp | +23.0% |\n| GOOD | 24 | 41.7% | 55% | -13.3pp | -9.4% |\n| SIDE | 2 | 100.0% | 50% | +50.0pp | +94.7% |\n\n### PAPER (344 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 36 | 50.0% | 70% | -20.0pp | +19.9% |\n| STRONG | 55 | 70.9% | 60% | +10.9pp | -14.7% |\n| GOOD | 210 | 55.2% | 55% | +0.2pp | -7.0% |\n| SIDE | 19 | 63.2% | 50% | +13.2pp | +6.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| statcast | 47.2% (n=125) | \u2014 | 72.7% (n=11) | -25.5pp |\n| pitcher_matchup | 48.0% (n=75) | \u2014 | 54.8% (n=42) | -6.8pp |\n| player_performer | 38.0% (n=50) | 60.0% (n=20) | 31.6% (n=19) | +6.4pp |\n| park | 62.5% (n=48) | 33.3% (n=6) | 36.1% (n=72) | +26.4pp |\n| handedness | 38.5% (n=39) | 0.0% (n=2) | 53.1% (n=98) | -14.6pp |\n| bullpen | 78.6% (n=28) | \u2014 | 52.1% (n=48) | +26.5pp |\n| weather | 50.0% (n=8) | 100.0% (n=4) | 62.5% (n=40) | -12.5pp |\n| bvp | 66.7% (n=6) | 62.5% (n=8) | 25.0% (n=4) | +41.7pp |\n| pitcher_rest | 50.0% (n=2) | \u2014 | 0.0% (n=1) | +50.0pp |\n\n## Strategy Performance \u2014 engine-reproducible\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 216 | 118-98 | 54.6% | -8.7% |\n| MLB Moneyline | 55 | 31-24 | 56.4% | -6.6% |\n| MLB Total Runs | 38 | 24-14 | 63.2% | +11.5% |\n| MLB Run Line | 27 | 23-4 | 85.2% | +22.5% |\n| MLB Batter Total Bases Alt | 22 | 6-16 | 27.3% | -11.4% |\n| MLB Batter RBIs Alt | 12 | 4-8 | 33.3% | +1.1% |\n| MLB Pitcher Strikeouts | 6 | 2-4 | 33.3% | -9.6% |\n\n## Strategy Performance \u2014 legacy \\ manually-tagged\n\n_These strategies exist only as historical Notion labels \u2014 current engine cannot reproduce them. Promote\\demote recommendations DO NOT operate on this table._\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| Stable Edge Parlay | 7 | 4-3 | 57.1% | +59.5% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n| I v2 baseline | 1 | 1-0 | 100.0% | +60.2% |\n| J Kelly | 1 | 1-0 | 100.0% | +60.2% |\n| C NBA Pts | 1 | 0-1 | 0.0% | -100.0% |\n| D NHL SOG | 1 | 0-1 | 0.0% | -100.0% |\n| N Alvarez Hits | 1 | 1-0 | 100.0% | +55.6% |\n| B Hot Hits | 1 | 1-0 | 100.0% | +29.4% |\n| A K-NRFI | 1 | 1-0 | 100.0% | +98.7% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 61 | 54.1% | 70% | -15.9pp | +18.9% |\n| STRONG | 75 | 74.7% | 60% | +14.7pp | -10.3% |\n| SIDE | 21 | 66.7% | 50% | +16.7pp | +8.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
     "status": {
       "state": "idle",
-      "updated_at": "2026-05-24T17:31:39.109145+00:00",
-      "last_run_at": "2026-05-24T17:31:39.109007+00:00",
+      "updated_at": "2026-05-24T18:01:47.280575+00:00",
+      "last_run_at": "2026-05-24T18:01:47.280464+00:00",
       "last_run_picks": 416,
       "last_run_recommendations": 29,
       "last_run_severity": {
@@ -42753,7 +42753,7 @@
           "produced 29 recommendations (29 HIGH)"
         ],
         "Recommendations": [
-          "[HIGH] wiring_diagnostic (n=168): [PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 168.5h old (threshold 36h). Upstream task may have failed.",
+          "[HIGH] wiring_diagnostic (n=169): [PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 169.0h old (threshold 36h). Upstream task may have failed.",
           "[HIGH] factor_overweight (n=125): [PERSISTED 9 RUNS] Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 47.2% vs neutral 72.7% (lift -25.5pp on n=125). This factor is currently anti-predic",
           "[HIGH] tier_stakes_too_big (n=75): [PERSISTED 6 RUNS] Tier STRONG STAKES TOO BIG: hit rate 74.7% looks healthy (expected 60%) but ROI -10.3% on n=75 means losses outsize wins. Reduce stake size f",
           "[HIGH] tier_underdog_paying (n=61): [PERSISTED 10 RUNS] Tier LOCK UNDERDOG-PAYS: hit rate 54.1% below expected 70% (delta -15.9pp) BUT ROI +18.9% on n=61. Bigger underdogs are landing \u2014 don't tigh",
@@ -42763,7 +42763,7 @@
           "[HIGH] accountant_finding (n=29): [PERSISTED 9 RUNS] [ACCOUNTANT] 29 LIVE pick(s) staked off-table. Example: STRONG tier @ $3.00 vs table expects $4.50. Likely operator manually adjusted stake a",
           "[HIGH] factor_strong_signal (n=28): [PERSISTED 3 RUNS] Factor 'bullpen' PROMOTE: bullish picks hit 78.6% vs 52.1% neutral (lift +26.5pp, n=28). Consider bumping strength weight 10% \u2014 this is doing",
           "[HIGH] strategy_promote (n=27): [PERSISTED 9 RUNS] Strategy 'MLB Run Line' PROMOTE candidate: 85.2% hit rate and +22.5% ROI on n=27. If pattern holds another week, consider unlocking LIVE acce",
-          "[HIGH] wiring_diagnostic (n=26): [PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 26.5h old (threshold 24h). Upstream task may have failed.",
+          "[HIGH] wiring_diagnostic (n=26): [PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 27.0h old (threshold 24h). Upstream task may have failed.",
           "[HIGH] tier_broken (n=24): [PERSISTED 10 RUNS] Tier WATCH BROKEN: hit rate 16.7% (expected 45%, delta -28.3pp) AND ROI -34.2% on n=24. Both metrics negative \u2014 tier is structurally losing.",
           "[HIGH] strategy_demote (n=22): [PERSISTED 10 RUNS] Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book ha",
           "[HIGH] tier_slack (n=21): [PERSISTED 10 RUNS] Tier SIDE TRUE SLACK: hit rate 66.7% AND ROI +8.3% both beat expectations on n=21. Loosening the edge_pp gate here would likely ship more pr",
@@ -45832,14 +45832,14 @@
   },
   "ai_learner": {
     "available": true,
-    "generated_at": "2026-05-24T17:31:39.080166+00:00",
+    "generated_at": "2026-05-24T18:01:47.231101+00:00",
     "recommendations": [
       {
         "type": "wiring_diagnostic",
         "subtype": "pipeline_stale",
         "severity": "high",
-        "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 168.5h old (threshold 36h). Upstream task may have failed.",
-        "n": 168,
+        "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] MLB lineup cache (lineup_823708.json) is 169.0h old (threshold 36h). Upstream task may have failed.",
+        "n": 169,
         "persistence_runs": 9
       },
       {
@@ -45924,7 +45924,7 @@
         "type": "wiring_diagnostic",
         "subtype": "pipeline_stale",
         "severity": "high",
-        "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 26.5h old (threshold 24h). Upstream task may have failed.",
+        "text": "[PERSISTED 9 RUNS] [ELECTRICIAN] form discovery cache (v2_form_2026-05-23.json) is 27.0h old (threshold 24h). Upstream task may have failed.",
         "n": 26,
         "persistence_runs": 9,
         "severity_escalated": true
@@ -47894,7 +47894,7 @@
     "builds": [
       {
         "date": "2026-05-24",
-        "generated_at": "2026-05-24T17:31:39.080166+00:00",
+        "generated_at": "2026-05-24T18:01:47.231101+00:00",
         "picks_analyzed": 416,
         "recommendations_total": 29,
         "severity": {
@@ -48095,6 +48095,22 @@
   },
   "activity_feed": [
     {
+      "timestamp_utc": "2026-05-24T18:01:47.280575+00:00",
+      "type": "ai-learner",
+      "icon": "\ud83e\udde0",
+      "title": "learner: idle",
+      "detail": "416 picks analyzed \u00b7 29 recommendations",
+      "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-24T18:00:50.547676+00:00",
+      "type": "archive",
+      "icon": "\ud83d\udce6",
+      "title": "archive written: 2026-05-24",
+      "detail": "0 picks \u00b7 LIVE P\\L +0.00 \u00b7 PAPER P\\L +0.00",
+      "success": true
+    },
+    {
       "timestamp_utc": "2026-05-24T18:00:03.158436+00:00",
       "type": "api-monitor",
       "icon": "\ud83d\udd11",
@@ -48103,28 +48119,28 @@
       "success": false
     },
     {
-      "timestamp_utc": "2026-05-24T17:31:39.109145+00:00",
-      "type": "ai-learner",
-      "icon": "\ud83e\udde0",
-      "title": "learner: idle",
-      "detail": "416 picks analyzed \u00b7 29 recommendations",
-      "success": true
-    },
-    {
-      "timestamp_utc": "2026-05-24T17:30:44.189264+00:00",
-      "type": "archive",
-      "icon": "\ud83d\udce6",
-      "title": "archive written: 2026-05-24",
-      "detail": "0 picks \u00b7 LIVE P\\L +0.00 \u00b7 PAPER P\\L +0.00",
-      "success": true
-    },
-    {
       "timestamp_utc": "2026-05-24T16:33:15.138736+00:00",
       "type": "archive",
       "icon": "\ud83d\udce6",
       "title": "archive written: 2026-05-23",
       "detail": "12 picks \u00b7 LIVE P\\L -18.00 \u00b7 PAPER P\\L -21.12",
       "success": true
+    },
+    {
+      "timestamp_utc": "2026-05-23T19:34:30+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] poll error: The read operation timed out",
+      "success": false
+    },
+    {
+      "timestamp_utc": "2026-05-23T14:39:03+00:00",
+      "type": "tg-listener-restart",
+      "icon": "\ud83d\udce1",
+      "title": "tg-listener",
+      "detail": "[listener] poll error: <urlopen error [Errno 11001] getaddrinfo failed>",
+      "success": false
     },
     {
       "timestamp_utc": "2026-05-23T12:54:24.713832+00:00",
@@ -48139,7 +48155,7 @@
     "state": "idle",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": "2026-05-24T17:31:39.109007+00:00",
+    "last_run_at": "2026-05-24T18:01:47.280464+00:00",
     "last_run_picks": 416,
     "last_run_recommendations": 29,
     "guardrails": [
@@ -48165,7 +48181,7 @@
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
     },
-    "updated_at": "2026-05-24T17:31:39.109145+00:00",
+    "updated_at": "2026-05-24T18:01:47.280575+00:00",
     "last_run_severity": {
       "high": 29,
       "med": 0,
@@ -56334,7 +56350,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-24 14:00 ET",
+  "built_at_et": "2026-05-24 14:02 ET",
   "counts": {
     "picks_total": 518,
     "settled": 195,
