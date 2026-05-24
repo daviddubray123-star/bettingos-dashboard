@@ -1,6 +1,6 @@
 {
-  "build_id": "260524-145526",
-  "generated_at": "2026-05-24T14:55:27.311140+00:00",
+  "build_id": "260524-150027",
+  "generated_at": "2026-05-24T15:00:27.741942+00:00",
   "today": "2026-05-24",
   "yesterday": "2026-05-23",
   "bankroll": {
@@ -9134,7 +9134,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-05-24T14:55:27.311266+00:00",
+  "built_at": "2026-05-24T15:00:27.742080+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -27274,8 +27274,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-05-24 11:00",
-      "LastRun": "2026-05-24 10:55",
+      "NextRun": "2026-05-24 11:05",
+      "LastRun": "2026-05-24 11:00",
       "LastResult": 267009,
       "WakeToRun": true
     },
@@ -27323,7 +27323,7 @@
       "Name": "BettingOS - intraday-settle",
       "State": "Ready",
       "NextRun": "2026-05-24 13:00",
-      "LastRun": "2026-05-24 10:30",
+      "LastRun": "2026-05-24 11:00",
       "LastResult": 1,
       "WakeToRun": true
     },
@@ -28710,17 +28710,21 @@
             "status": "Pre-Game",
             "abstract_state": "Preview",
             "status_code": "P",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -33929,77 +33933,77 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 227.4
+        "age_hours": 227.5
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 225.1
+        "age_hours": 225.2
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 179.1
+        "age_hours": 179.2
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 155.4
+        "age_hours": 155.5
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 152.9
+        "age_hours": 153.0
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 107.4
+        "age_hours": 107.5
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 83.4
+        "age_hours": 83.5
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 59.4
+        "age_hours": 59.5
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 56.9
+        "age_hours": 57.0
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 16.9
+        "age_hours": 17.0
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 11955,
         "mtime": 1779634114.8136282,
-        "age_hours": 0.1
+        "age_hours": 0.2
       },
       {
         "name": "audit_2026-05-12.md",
@@ -34013,35 +34017,35 @@
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 224.0
+        "age_hours": 224.1
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 217.8
+        "age_hours": 217.9
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 217.4
+        "age_hours": 217.5
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 217.2
+        "age_hours": 217.3
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 213.0
+        "age_hours": 213.1
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -34055,42 +34059,42 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 274.2
+        "age_hours": 274.3
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 216.2
+        "age_hours": 216.3
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 260.3
+        "age_hours": 260.4
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 265.2
+        "age_hours": 265.3
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 279.4
+        "age_hours": 279.5
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 24.8
+        "age_hours": 24.9
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -34132,7 +34136,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 256.5
+        "age_hours": 256.6
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -34146,7 +34150,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 291.1
+        "age_hours": 291.2
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -34209,7 +34213,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 300.9
+        "age_hours": 301.0
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -34223,98 +34227,98 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 223.3
+        "age_hours": 223.4
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 274.3
+        "age_hours": 274.4
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 266.6
+        "age_hours": 266.7
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 193.6
+        "age_hours": 193.7
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 193.4
+        "age_hours": 193.5
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 176.9
+        "age_hours": 177.0
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 152.9
+        "age_hours": 153.0
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 104.9
+        "age_hours": 105.0
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 80.9
+        "age_hours": 81.0
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 56.9
+        "age_hours": 57.0
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 26.0
+        "age_hours": 26.1
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 347,
         "mtime": 1779634072.9063888,
-        "age_hours": 0.1
+        "age_hours": 0.2
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 82.9
+        "age_hours": 83.0
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 292.0
+        "age_hours": 292.1
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -34328,7 +34332,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 108.9
+        "age_hours": 109.0
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -34384,7 +34388,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 299.9
+        "age_hours": 300.0
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -34426,14 +34430,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 301.0
+        "age_hours": 301.1
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 300.1
+        "age_hours": 300.2
       },
       {
         "name": "reference_sport_calendar.md",
@@ -34454,14 +34458,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 275.2
+        "age_hours": 275.3
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 305.2
+        "age_hours": 305.3
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -34475,7 +34479,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 275.9
+        "age_hours": 276.0
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -34489,63 +34493,63 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 251.4
+        "age_hours": 251.5
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 275.2
+        "age_hours": 275.3
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 274.3
+        "age_hours": 274.4
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 274.5
+        "age_hours": 274.6
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 261.2
+        "age_hours": 261.3
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 261.4
+        "age_hours": 261.5
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 267.7
+        "age_hours": 267.8
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 274.8
+        "age_hours": 274.9
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 265.0
+        "age_hours": 265.1
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -34559,21 +34563,21 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 260.3
+        "age_hours": 260.4
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 259.2
+        "age_hours": 259.3
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 259.7
+        "age_hours": 259.8
       }
     ]
   },
@@ -34582,14 +34586,14 @@
     "sources": [
       {
         "label": "Scout cache",
-        "status": "stale",
-        "latest_file": "v2_scout_2026-05-23_evening.json",
-        "latest_date": "2026-05-23",
-        "age_hours": 18.3,
-        "bytes": 653151,
+        "status": "fresh",
+        "latest_file": "v2_scout_2026-05-24.json",
+        "latest_date": "2026-05-24",
+        "age_hours": 0.0,
+        "bytes": 651139,
         "row_count": 52,
-        "last_refresh_iso": "2026-05-23T20:36:09.481581+00:00",
-        "issue": "latest is 2026-05-23, expected 2026-05-24",
+        "last_refresh_iso": "2026-05-24T14:58:58.473237+00:00",
+        "issue": null,
         "min_bytes": 10000,
         "min_count": 30
       },
@@ -34598,7 +34602,7 @@
         "status": "stale",
         "latest_file": "v2_form_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 23.9,
+        "age_hours": 24.0,
         "bytes": 343373,
         "row_count": null,
         "last_refresh_iso": "2026-05-23T15:02:07.211818+00:00",
@@ -34611,7 +34615,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-05-24.json",
         "latest_date": "2026-05-24",
-        "age_hours": 0.4,
+        "age_hours": 0.5,
         "bytes": 1566523,
         "row_count": null,
         "last_refresh_iso": "2026-05-24T14:33:24.429509+00:00",
@@ -34624,7 +34628,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-05-23.json",
         "latest_date": "2026-05-23",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 2345,
         "row_count": null,
         "last_refresh_iso": "2026-05-24T14:46:56.391576+00:00",
@@ -34637,7 +34641,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-24.json",
         "latest_date": "2026-05-24",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 12417,
         "row_count": null,
         "last_refresh_iso": "2026-05-24T14:43:26.121843+00:00",
@@ -34650,7 +34654,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-05-23.md",
         "latest_date": "2026-05-23",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 347,
         "row_count": null,
         "last_refresh_iso": "2026-05-24T14:47:52.906389+00:00",
@@ -34663,7 +34667,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-05-24.json",
         "latest_date": "2026-05-24",
-        "age_hours": 0.4,
+        "age_hours": 0.5,
         "bytes": 26329,
         "row_count": 86,
         "last_refresh_iso": "2026-05-24T14:31:06.893743+00:00",
@@ -34676,7 +34680,7 @@
         "status": "unknown",
         "latest_file": "lineup_823708.json",
         "latest_date": null,
-        "age_hours": 165.9,
+        "age_hours": 166.0,
         "bytes": 468,
         "row_count": 12,
         "last_refresh_iso": "2026-05-17T16:59:22.442710+00:00",
@@ -34689,7 +34693,7 @@
         "status": "fresh",
         "latest_file": "wx_LAA_2026-05-24T23.json",
         "latest_date": "2026-05-24",
-        "age_hours": 0.4,
+        "age_hours": 0.5,
         "bytes": 208,
         "row_count": 37,
         "last_refresh_iso": "2026-05-24T14:31:47.172659+00:00",
@@ -34716,22 +34720,22 @@
   "scout_top": {
     "plays": [
       {
-        "rank": 1,
+        "rank": 3,
         "player": "ATL ML (WSH@ATL)",
         "team": null,
         "opp": null,
         "home_abbr": "ATL",
         "away_abbr": "WSH",
-        "home_pp_name": "Grant Holmes",
-        "away_pp_name": "Jake Irvin",
+        "home_pp_name": "Mart\u00edn P\u00e9rez",
+        "away_pp_name": "Foster Griffin",
         "market": "ML",
         "strategy": "MLB Moneyline",
         "line": null,
         "side": "ATL",
-        "odds": -184,
+        "odds": -164,
         "tier": "LOCK",
-        "edge_pp": 15.0,
-        "rae": 20.6,
+        "edge_pp": 11.35,
+        "rae": 11.17,
         "v3_hot_boost": null,
         "v3_final_boost": null,
         "v3_combined_factor": null,
@@ -34740,69 +34744,73 @@
         "v3_elevation_pp": null,
         "v3_hot_status": null,
         "v3_contribution": 0.0,
-        "combined_score": 20.6,
-        "combined_rank": 1,
-        "v2_rank_orig": 1,
+        "combined_score": 11.17,
+        "combined_rank": 3,
+        "v2_rank_orig": 3,
         "live_eligible": true,
         "paper_eligible": true,
-        "hit_rate": 0.7,
+        "hit_rate": 0.6,
         "sample": 10,
-        "start_time": "2026-05-23T20:10:00Z",
-        "base_prob": 0.6479,
+        "start_time": "2026-05-24T20:10:00Z",
+        "base_prob": 0.6212,
         "tier_by_rae": "STRONG",
-        "true_prob": 0.8601,
-        "hit_rate_shrunk": 0.7,
+        "true_prob": 0.7347,
+        "hit_rate_shrunk": 0.6,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "team_handedness",
-            1.06
+            1.035
           ],
           [
             "team_form",
-            1.11
+            1.07
           ],
           [
             "team_record",
-            1.079
+            1.054
           ],
           [
             "team_home_road",
-            1.12
+            1.076
+          ],
+          [
+            "bullpen_fatigue",
+            0.988
+          ],
+          [
+            "bullpen_quality",
+            1.02
           ],
           [
             "team_scoring_trend",
-            1.15
+            1.08
           ],
           [
             "head_to_head",
-            1.08
+            1.04
           ],
           [
             "team_defense",
             1.015
-          ],
-          [
-            "line_movement",
-            1.03
           ]
         ],
-        "variance_adjustment": 1.03,
-        "edge_pp_clamped": true,
+        "variance_adjustment": 1.016,
+        "edge_pp_clamped": false,
         "historical_source": "team_record_l10",
         "lineup_unconfirmed": false,
         "hit_rate_source": null,
         "low_sample": false,
         "low_sample_n": null,
         "correlated_group": [
-          "same_game:pk:824920:winner_of_3"
+          "same_game:pk:824921:winner_of_3"
         ],
         "park_cluster_size": null,
         "park_cluster_penalty": null,
-        "edge_raw": 21.22,
-        "display_edge": 15.0,
+        "edge_raw": 11.35,
+        "display_edge": 11.35,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -34820,7 +34828,7 @@
         "away_l20_nrfi_pct": 0.6,
         "system_heat": 100.0,
         "system_heat_breakdown": {
-          "base_from_rae": 132.4,
+          "base_from_rae": 94.7,
           "tier_boost": 12.0,
           "caveats_individual": {
             "low_sample": 0,
@@ -34831,25 +34839,25 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": 0
         },
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +15.0pp, RAE +20.6). Driving factors: team momentum supports (+11%)."
+        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +11.3pp, RAE +11.2). Driving factors: team momentum supports (+7%)."
       },
       {
-        "rank": 2,
-        "player": "MIL ML (LAD@MIL)",
+        "rank": 4,
+        "player": "LAD ML (LAD@MIL)",
         "team": null,
         "opp": null,
         "home_abbr": "MIL",
         "away_abbr": "LAD",
-        "home_pp_name": "Robert Gasser",
-        "away_pp_name": "Roki Sasaki",
+        "home_pp_name": "Brandon Sproat",
+        "away_pp_name": "Yoshinobu Yamamoto",
         "market": "ML",
         "strategy": "MLB Moneyline",
         "line": null,
-        "side": "MIL",
-        "odds": 100,
-        "tier": "LOCK",
-        "edge_pp": 13.94,
-        "rae": 10.72,
+        "side": "LAD",
+        "odds": -172,
+        "tier": "STRONG",
+        "edge_pp": 9.06,
+        "rae": 8.001,
         "v3_hot_boost": null,
         "v3_final_boost": null,
         "v3_combined_factor": null,
@@ -34858,17 +34866,17 @@
         "v3_elevation_pp": null,
         "v3_hot_status": null,
         "v3_contribution": 0.0,
-        "combined_score": 13.4,
-        "combined_rank": 3,
-        "v2_rank_orig": 2,
+        "combined_score": 8.89,
+        "combined_rank": 5,
+        "v2_rank_orig": 4,
         "live_eligible": true,
         "paper_eligible": true,
         "hit_rate": 0.8,
         "sample": 10,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.5,
+        "start_time": "2026-05-24T18:10:00Z",
+        "base_prob": 0.6324,
         "tier_by_rae": "STRONG",
-        "true_prob": 0.6394,
+        "true_prob": 0.723,
         "hit_rate_shrunk": 0.8,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -34876,38 +34884,34 @@
         "factors_applied": [
           [
             "team_handedness",
-            1.013
+            1.055
           ],
           [
             "team_form",
-            1.2
+            1.07
           ],
           [
             "team_record",
-            1.097
+            1.093
           ],
           [
             "team_home_road",
-            1.12
-          ],
-          [
-            "bullpen_fatigue",
-            0.992
+            1.08
           ],
           [
             "bullpen_quality",
             1.02
           ],
           [
-            "team_scoring_trend",
-            1.08
+            "travel",
+            0.97
           ],
           [
-            "head_to_head",
-            1.04
+            "team_defense",
+            1.015
           ]
         ],
-        "variance_adjustment": 1.04,
+        "variance_adjustment": 1.0186,
         "edge_pp_clamped": false,
         "historical_source": "team_record_l10",
         "lineup_unconfirmed": false,
@@ -34915,13 +34919,13 @@
         "low_sample": false,
         "low_sample_n": null,
         "correlated_group": [
-          "same_game:pk:823787:winner_of_6",
-          "park_cluster:American Family Field:5@0.8"
+          "same_game:pk:823786:winner_of_6",
+          "park_cluster:American Family Field:3@0.9"
         ],
-        "park_cluster_size": 5,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 13.94,
-        "display_edge": 13.94,
+        "park_cluster_size": 3,
+        "park_cluster_penalty": 0.9,
+        "edge_raw": 9.06,
+        "display_edge": 9.06,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -34937,10 +34941,10 @@
         "heat_l10_notes": null,
         "home_l20_nrfi_pct": 0.4,
         "away_l20_nrfi_pct": 0.4,
-        "system_heat": 100.0,
+        "system_heat": 88.0,
         "system_heat_breakdown": {
-          "base_from_rae": 92.9,
-          "tier_boost": 12.0,
+          "base_from_rae": 82.0,
+          "tier_boost": 6.0,
           "caveats_individual": {
             "low_sample": 0,
             "baseline_fallback": 0,
@@ -34950,162 +34954,270 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": 0
         },
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +13.9pp, RAE +10.7). Driving factors: team momentum supports (+20%)."
+        "ai_reasoning": "Engine reads this as strong-conviction (edge +9.1pp, RAE +8.0). Driving factors: team momentum supports (+7%)."
       },
       {
-        "rank": 8,
-        "player": "Jake Bauers",
-        "team": "MIL",
+        "rank": 12,
+        "player": "ARI ML (COL@ARI)",
+        "team": null,
         "opp": null,
-        "home_abbr": "MIL",
-        "away_abbr": "LAD",
-        "home_pp_name": "Robert Gasser",
-        "away_pp_name": "Roki Sasaki",
+        "home_abbr": "ARI",
+        "away_abbr": "COL",
+        "home_pp_name": "Ryne Nelson",
+        "away_pp_name": "Jose Quintana",
+        "market": "ML",
+        "strategy": "MLB Moneyline",
+        "line": null,
+        "side": "ARI",
+        "odds": -190,
+        "tier": "GOOD",
+        "edge_pp": 7.53,
+        "rae": 7.42,
+        "v3_hot_boost": null,
+        "v3_final_boost": null,
+        "v3_combined_factor": null,
+        "v3_route": "team_market_unscored",
+        "v3_rationale": null,
+        "v3_elevation_pp": null,
+        "v3_hot_status": null,
+        "v3_contribution": 0.0,
+        "combined_score": 7.42,
+        "combined_rank": 16,
+        "v2_rank_orig": 12,
+        "live_eligible": true,
+        "paper_eligible": true,
+        "hit_rate": 0.7,
+        "sample": 10,
+        "start_time": "2026-05-24T20:10:00Z",
+        "base_prob": 0.6552,
+        "tier_by_rae": "STRONG",
+        "true_prob": 0.7304,
+        "hit_rate_shrunk": 0.7,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_handedness",
+            1.06
+          ],
+          [
+            "team_form",
+            1.04
+          ],
+          [
+            "team_record",
+            1.074
+          ],
+          [
+            "team_home_road",
+            1.064
+          ],
+          [
+            "bullpen_fatigue",
+            0.992
+          ],
+          [
+            "team_defense",
+            1.015
+          ]
+        ],
+        "variance_adjustment": 1.0148,
+        "edge_pp_clamped": false,
+        "historical_source": "team_record_l10",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": null,
+        "low_sample": false,
+        "low_sample_n": null,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 7.53,
+        "display_edge": 7.53,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": null,
+        "heat_l10_raw_factor": null,
+        "heat_l10_strength": null,
+        "heat_l10_covers": null,
+        "heat_l10_games": null,
+        "heat_l10_cover_rate": null,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": null,
+        "heat_l10_notes": null,
+        "home_l20_nrfi_pct": 0.5,
+        "away_l20_nrfi_pct": 0.45,
+        "system_heat": 81.7,
+        "system_heat_breakdown": {
+          "base_from_rae": 79.7,
+          "tier_boost": 2.0,
+          "caveats_individual": {
+            "low_sample": 0,
+            "baseline_fallback": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": 0
+        },
+        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +7.5pp, RAE +7.4). No standout factor \u2014 pure market-vs-engine edge."
+      },
+      {
+        "rank": 19,
+        "player": "Alex Bregman",
+        "team": "CHC",
+        "opp": null,
+        "home_abbr": "CHC",
+        "away_abbr": "HOU",
+        "home_pp_name": "Shota Imanaga",
+        "away_pp_name": "Peter Lambert",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -145,
-        "tier": "LOCK",
-        "edge_pp": 9.82,
-        "rae": 7.704,
-        "v3_hot_boost": 0.4643,
-        "v3_final_boost": 0.4271,
-        "v3_combined_factor": 0.92,
+        "odds": -210,
+        "tier": "SIDE",
+        "edge_pp": 6.11,
+        "rae": 5.97,
+        "v3_hot_boost": 0.124,
+        "v3_final_boost": 0.1212,
+        "v3_combined_factor": 0.9778,
         "v3_route": "paper",
-        "v3_rationale": "context_failed_gate",
-        "v3_elevation_pp": 30.95,
-        "v3_hot_status": "hot",
-        "v3_contribution": 2.563,
-        "combined_score": 12.193,
-        "combined_rank": 4,
-        "v2_rank_orig": 8,
+        "v3_rationale": "paper_only_modest_boost",
+        "v3_elevation_pp": 8.27,
+        "v3_hot_status": "neutral",
+        "v3_contribution": 0.727,
+        "combined_score": 6.697,
+        "combined_rank": 20,
+        "v2_rank_orig": 19,
         "live_eligible": true,
         "paper_eligible": true,
-        "hit_rate": 0.66,
+        "hit_rate": 0.64,
         "sample": 30,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.5918,
+        "start_time": "2026-05-24T18:20:00Z",
+        "base_prob": 0.6774,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.6901,
-        "hit_rate_shrunk": 0.66,
+        "true_prob": 0.7385,
+        "hit_rate_shrunk": 0.64,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "statcast",
-            1.1
+            1.12
           ],
           [
-            "pitcher_matchup",
-            1.07
+            "park",
+            1.03
           ],
           [
             "handedness",
-            1.02
+            0.98
           ],
           [
-            "player_performer",
-            1.1
-          ],
-          [
-            "bullpen",
-            1.027
+            "recency_woba",
+            0.99
           ],
           [
             "home_away",
             1.02
           ],
           [
+            "series_game",
+            0.995
+          ],
+          [
             "player_rest",
             1.01
+          ],
+          [
+            "bvp",
+            1.051
           ]
         ],
-        "variance_adjustment": 1.02,
+        "variance_adjustment": 1.024,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
-        "hit_rate_source": "historical_real",
+        "hit_rate_source": "baseline_fallback",
         "low_sample": true,
-        "low_sample_n": 1,
-        "correlated_group": [
-          "same_player:jake bauers@pk:823787:winner_of_2",
-          "park_cluster:American Family Field:5@0.8"
-        ],
-        "park_cluster_size": 5,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 9.82,
-        "display_edge": 9.82,
+        "low_sample_n": 0,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 6.11,
+        "display_edge": 6.11,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0045,
-        "heat_l10_raw_factor": 1.1,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 10,
+        "heat_l10_covers": 8,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 1.0,
-        "heat_l10_l30_baseline": 0.625,
-        "heat_l10_delta_pp": 37.5,
-        "heat_l10_verdict": "HOT",
+        "heat_l10_cover_rate": 0.8,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
         "heat_l10_notes": [
-          "10\\10 covered O0.5 (100%) vs L30 baseline 62% \u2014 heat +37.5pp (HOT)"
+          "no L30 baseline in historical_hit_rates cache for Alex Bregman\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.4,
-        "away_l20_nrfi_pct": 0.4,
-        "system_heat": 79.8,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.6,
+        "system_heat": 67.9,
         "system_heat_breakdown": {
-          "base_from_rae": 80.8,
+          "base_from_rae": 73.9,
           "tier_boost": 2.0,
           "caveats_individual": {
             "low_sample": -3,
-            "baseline_fallback": 0,
+            "baseline_fallback": -5,
             "lineup_unconfirmed": 0,
             "experimental_blocked": 0
           },
           "caveats_capped_at": -10.0,
-          "caveats_applied": -3
+          "caveats_applied": -8
         },
-        "nrfi_extreme_matchup": "YRFI",
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +9.8pp, RAE +7.7). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
+        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +6.1pp, RAE +6.0). Driving factors: statcast trend supports (+12%) \u00b7 strong career vs this pitcher (+5%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
-        "rank": 12,
+        "rank": 22,
         "player": "Alec Bohm",
         "team": "PHI",
         "opp": null,
         "home_abbr": "PHI",
         "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
+        "home_pp_name": "Andrew Painter",
+        "away_pp_name": "Parker Messick",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -200,
-        "tier": "SIDE",
-        "edge_pp": 8.33,
-        "rae": 6.56,
-        "v3_hot_boost": 0.4581,
-        "v3_final_boost": 0.4479,
-        "v3_combined_factor": 0.9778,
+        "odds": -190,
+        "tier": "WATCH",
+        "edge_pp": 6.0,
+        "rae": 5.86,
+        "v3_hot_boost": 0.4611,
+        "v3_final_boost": 0.4242,
+        "v3_combined_factor": 0.92,
         "v3_route": "paper",
         "v3_rationale": "context_failed_gate",
-        "v3_elevation_pp": 30.54,
+        "v3_elevation_pp": 30.74,
         "v3_hot_status": "hot",
-        "v3_contribution": 2.687,
-        "combined_score": 10.887,
-        "combined_rank": 8,
-        "v2_rank_orig": 12,
+        "v3_contribution": 2.545,
+        "combined_score": 8.405,
+        "combined_rank": 7,
+        "v2_rank_orig": 22,
         "live_eligible": true,
         "paper_eligible": true,
         "hit_rate": 0.58,
         "sample": 30,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.6667,
+        "start_time": "2026-05-24T17:35:00Z",
+        "base_prob": 0.6552,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.75,
+        "true_prob": 0.7151,
         "hit_rate_shrunk": 0.58,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -35113,11 +35225,11 @@
         "factors_applied": [
           [
             "statcast",
-            1.08
+            1.12
           ],
           [
             "pitcher_matchup",
-            1.07
+            0.93
           ],
           [
             "park",
@@ -35125,7 +35237,7 @@
           ],
           [
             "handedness",
-            0.99
+            1.03
           ],
           [
             "recency_woba",
@@ -35140,24 +35252,26 @@
             1.02
           ],
           [
+            "series_game",
+            0.995
+          ],
+          [
             "player_rest",
             1.01
           ]
         ],
-        "variance_adjustment": 1.016,
+        "variance_adjustment": 1.024,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
         "hit_rate_source": "historical_real",
         "low_sample": true,
         "low_sample_n": 3,
-        "correlated_group": [
-          "park_cluster:Citizens Bank Park:6@0.8"
-        ],
-        "park_cluster_size": 6,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 8.33,
-        "display_edge": 8.33,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 6.0,
+        "display_edge": 6.0,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -35175,10 +35289,10 @@
         ],
         "home_l20_nrfi_pct": 0.6,
         "away_l20_nrfi_pct": 0.65,
-        "system_heat": 75.2,
+        "system_heat": 67.4,
         "system_heat_breakdown": {
-          "base_from_rae": 76.2,
-          "tier_boost": 2.0,
+          "base_from_rae": 73.4,
+          "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
             "baseline_fallback": 0,
@@ -35188,45 +35302,45 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -3
         },
-        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +8.3pp, RAE +6.6). Driving factors: statcast trend supports (+8%). Caveats: thin historical sample (n=0)."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +6.0pp, RAE +5.9). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0)."
       },
       {
-        "rank": 17,
-        "player": "Nolan Gorman",
-        "team": "STL",
+        "rank": 14,
+        "player": "Jake Bauers",
+        "team": "MIL",
         "opp": null,
-        "home_abbr": "CIN",
-        "away_abbr": "STL",
-        "home_pp_name": "Chase Petty",
-        "away_pp_name": "Kyle Leahy",
+        "home_abbr": "MIL",
+        "away_abbr": "LAD",
+        "home_pp_name": "Brandon Sproat",
+        "away_pp_name": "Yoshinobu Yamamoto",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -180,
-        "tier": "SIDE",
-        "edge_pp": 6.57,
-        "rae": 5.796,
-        "v3_hot_boost": 0.0582,
-        "v3_final_boost": 0.0582,
-        "v3_combined_factor": 1.0,
+        "odds": -130,
+        "tier": "LOCK",
+        "edge_pp": 6.54,
+        "rae": 5.769,
+        "v3_hot_boost": 0.2762,
+        "v3_final_boost": 0.2541,
+        "v3_combined_factor": 0.92,
         "v3_route": "paper",
-        "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 3.88,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 0.349,
-        "combined_score": 6.789,
-        "combined_rank": 20,
-        "v2_rank_orig": 17,
+        "v3_rationale": "context_failed_gate",
+        "v3_elevation_pp": 18.41,
+        "v3_hot_status": "hot",
+        "v3_contribution": 1.525,
+        "combined_score": 7.935,
+        "combined_rank": 13,
+        "v2_rank_orig": 14,
         "live_eligible": true,
         "paper_eligible": true,
-        "hit_rate": 0.6,
+        "hit_rate": 0.66,
         "sample": 30,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.6429,
+        "start_time": "2026-05-24T18:10:00Z",
+        "base_prob": 0.5652,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7085,
-        "hit_rate_shrunk": 0.6,
+        "true_prob": 0.6306,
+        "hit_rate_shrunk": 0.66,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
@@ -35237,19 +35351,27 @@
           ],
           [
             "pitcher_matchup",
-            1.07
-          ],
-          [
-            "park",
-            1.04
+            0.98
           ],
           [
             "handedness",
-            1.02
+            1.03
+          ],
+          [
+            "player_performer",
+            1.1
+          ],
+          [
+            "bullpen",
+            1.013
           ],
           [
             "home_away",
-            0.98
+            1.02
+          ],
+          [
+            "series_game",
+            0.995
           ],
           [
             "player_rest",
@@ -35262,35 +35384,34 @@
         "lineup_unconfirmed": false,
         "hit_rate_source": "historical_real",
         "low_sample": true,
-        "low_sample_n": 2,
+        "low_sample_n": 1,
         "correlated_group": [
-          "same_player:nolan gorman@pk:824516:winner_of_2",
-          "park_cluster:Great American Ball Park:3@0.9"
+          "park_cluster:American Family Field:3@0.9"
         ],
         "park_cluster_size": 3,
         "park_cluster_penalty": 0.9,
-        "edge_raw": 6.57,
-        "display_edge": 6.57,
+        "edge_raw": 6.54,
+        "display_edge": 6.54,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
         "heat_l10_cover_factor": 1.0045,
         "heat_l10_raw_factor": 1.1,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 6,
+        "heat_l10_covers": 9,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.6,
-        "heat_l10_l30_baseline": 0.3,
-        "heat_l10_delta_pp": 30.0,
+        "heat_l10_cover_rate": 0.9,
+        "heat_l10_l30_baseline": 0.625,
+        "heat_l10_delta_pp": 27.5,
         "heat_l10_verdict": "HOT",
         "heat_l10_notes": [
-          "6\\10 covered O0.5 (60%) vs L30 baseline 30% \u2014 heat +30.0pp (HOT)"
+          "9\\10 covered O0.5 (90%) vs L30 baseline 62% \u2014 heat +27.5pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.7,
-        "away_l20_nrfi_pct": 0.6,
-        "system_heat": 72.2,
+        "home_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.4,
+        "system_heat": 72.1,
         "system_heat_breakdown": {
-          "base_from_rae": 73.2,
+          "base_from_rae": 73.1,
           "tier_boost": 2.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -35301,60 +35422,61 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -3
         },
-        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +6.6pp, RAE +5.8). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
+        "nrfi_extreme_matchup": "YRFI",
+        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +6.5pp, RAE +5.8). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
       },
       {
-        "rank": 15,
-        "player": "Brice Turang",
-        "team": "MIL",
+        "rank": 23,
+        "player": "Riley Greene",
+        "team": "DET",
         "opp": null,
-        "home_abbr": "MIL",
-        "away_abbr": "LAD",
-        "home_pp_name": "Robert Gasser",
-        "away_pp_name": "Roki Sasaki",
+        "home_abbr": "BAL",
+        "away_abbr": "DET",
+        "home_pp_name": "Trevor Rogers",
+        "away_pp_name": null,
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -190,
-        "tier": "LOCK",
-        "edge_pp": 6.97,
-        "rae": 5.496,
-        "v3_hot_boost": 0.0406,
-        "v3_final_boost": 0.0373,
+        "odds": -175,
+        "tier": "WATCH",
+        "edge_pp": 5.72,
+        "rae": 5.61,
+        "v3_hot_boost": 0.0688,
+        "v3_final_boost": 0.0633,
         "v3_combined_factor": 0.92,
-        "v3_route": "skip",
-        "v3_rationale": "boost_too_low",
-        "v3_elevation_pp": 2.71,
+        "v3_route": "paper",
+        "v3_rationale": "paper_only_modest_boost",
+        "v3_elevation_pp": 4.59,
         "v3_hot_status": "neutral",
-        "v3_contribution": 0.224,
-        "combined_score": 7.094,
-        "combined_rank": 16,
-        "v2_rank_orig": 15,
+        "v3_contribution": 0.38,
+        "combined_score": 5.99,
+        "combined_rank": 28,
+        "v2_rank_orig": 23,
         "live_eligible": true,
         "paper_eligible": true,
-        "hit_rate": 0.62,
+        "hit_rate": 0.7,
         "sample": 30,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.6552,
+        "start_time": "2026-05-24T22:05:00Z",
+        "base_prob": 0.6364,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7248,
-        "hit_rate_shrunk": 0.62,
+        "true_prob": 0.6935,
+        "hit_rate_shrunk": 0.7,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "statcast",
-            1.06
+            1.1
           ],
           [
             "pitcher_matchup",
-            1.07
+            1.04
           ],
           [
             "handedness",
-            1.03
+            1.01
           ],
           [
             "recency_woba",
@@ -35362,105 +35484,318 @@
           ],
           [
             "player_performer",
-            1.02
-          ],
-          [
-            "bullpen",
-            1.027
+            1.07
           ],
           [
             "home_away",
-            1.02
+            0.98
+          ],
+          [
+            "series_game",
+            0.995
           ],
           [
             "player_rest",
             1.01
           ]
         ],
-        "variance_adjustment": 1.014,
+        "variance_adjustment": 1.02,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
+        "hit_rate_source": "historical_real",
         "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:American Family Field:5@0.8"
-        ],
-        "park_cluster_size": 5,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 6.97,
-        "display_edge": 6.97,
+        "low_sample_n": 1,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 5.72,
+        "display_edge": 5.72,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
+        "heat_l10_cover_factor": 1.0045,
+        "heat_l10_raw_factor": 1.1,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 7,
+        "heat_l10_covers": 8,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.7,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_cover_rate": 0.8,
+        "heat_l10_l30_baseline": 0.625,
+        "heat_l10_delta_pp": 17.5,
+        "heat_l10_verdict": "HOT",
         "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Brice Turang\\HITS_ALT\\0.5 \u2014 heat signal idle"
+          "8\\10 covered O0.5 (80%) vs L30 baseline 62% \u2014 heat +17.5pp (HOT)"
         ],
         "home_l20_nrfi_pct": 0.4,
-        "away_l20_nrfi_pct": 0.4,
-        "system_heat": 66.0,
+        "away_l20_nrfi_pct": 0.55,
+        "system_heat": 66.4,
         "system_heat_breakdown": {
-          "base_from_rae": 72.0,
-          "tier_boost": 2.0,
+          "base_from_rae": 72.4,
+          "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
-            "baseline_fallback": -5,
+            "baseline_fallback": 0,
             "lineup_unconfirmed": 0,
             "experimental_blocked": 0
           },
           "caveats_capped_at": -10.0,
-          "caveats_applied": -8
+          "caveats_applied": -3
         },
-        "nrfi_extreme_matchup": "YRFI",
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +7.0pp, RAE +5.5). Driving factors: statcast trend supports (+6%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.7pp, RAE +5.6). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
       },
       {
-        "rank": 16,
-        "player": "Brandon Marsh",
-        "team": "PHI",
+        "rank": 28,
+        "player": "TOR ML (PIT@TOR)",
+        "team": null,
         "opp": null,
-        "home_abbr": "PHI",
-        "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
+        "home_abbr": "TOR",
+        "away_abbr": "PIT",
+        "home_pp_name": "Dylan Cease",
+        "away_pp_name": "Mitch Keller",
+        "market": "ML",
+        "strategy": "MLB Moneyline",
+        "line": null,
+        "side": "TOR",
+        "odds": -164,
+        "tier": "WATCH",
+        "edge_pp": 5.48,
+        "rae": 5.39,
+        "v3_hot_boost": null,
+        "v3_final_boost": null,
+        "v3_combined_factor": null,
+        "v3_route": "team_market_unscored",
+        "v3_rationale": null,
+        "v3_elevation_pp": null,
+        "v3_hot_status": null,
+        "v3_contribution": 0.0,
+        "combined_score": 5.39,
+        "combined_rank": 34,
+        "v2_rank_orig": 28,
+        "live_eligible": true,
+        "paper_eligible": true,
+        "hit_rate": 0.7,
+        "sample": 10,
+        "start_time": "2026-05-24T16:15:00Z",
+        "base_prob": 0.6212,
+        "tier_by_rae": "STRONG",
+        "true_prob": 0.676,
+        "hit_rate_shrunk": 0.7,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_handedness",
+            0.963
+          ],
+          [
+            "team_record",
+            1.06
+          ],
+          [
+            "team_home_road",
+            1.08
+          ],
+          [
+            "bullpen_fatigue",
+            0.989
+          ],
+          [
+            "bullpen_quality",
+            1.02
+          ],
+          [
+            "head_to_head",
+            1.08
+          ]
+        ],
+        "variance_adjustment": 1.016,
+        "edge_pp_clamped": false,
+        "historical_source": "team_record_l10",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": null,
+        "low_sample": false,
+        "low_sample_n": null,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 5.48,
+        "display_edge": 5.48,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": null,
+        "heat_l10_raw_factor": null,
+        "heat_l10_strength": null,
+        "heat_l10_covers": null,
+        "heat_l10_games": null,
+        "heat_l10_cover_rate": null,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": null,
+        "heat_l10_notes": null,
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.4,
+        "system_heat": 68.6,
+        "system_heat_breakdown": {
+          "base_from_rae": 71.6,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": 0,
+            "baseline_fallback": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": 0
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.5pp, RAE +5.4). No standout factor \u2014 pure market-vs-engine edge."
+      },
+      {
+        "rank": 29,
+        "player": "TB +1.5 RL (TB@NYY)",
+        "team": null,
+        "opp": null,
+        "home_abbr": "NYY",
+        "away_abbr": "TB",
+        "home_pp_name": "Ryan Weathers",
+        "away_pp_name": "Drew Rasmussen",
+        "market": "spread",
+        "strategy": "MLB Run Line",
+        "line": 1.5,
+        "side": "TB +1.5",
+        "odds": -110,
+        "tier": "WATCH",
+        "edge_pp": 5.37,
+        "rae": 5.28,
+        "v3_hot_boost": null,
+        "v3_final_boost": null,
+        "v3_combined_factor": null,
+        "v3_route": "team_market_unscored",
+        "v3_rationale": null,
+        "v3_elevation_pp": null,
+        "v3_hot_status": null,
+        "v3_contribution": 0.0,
+        "combined_score": 5.28,
+        "combined_rank": 35,
+        "v2_rank_orig": 29,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.75,
+        "sample": 10,
+        "start_time": "2026-05-24T17:35:00Z",
+        "base_prob": 0.5238,
+        "tier_by_rae": "STRONG",
+        "true_prob": 0.5775,
+        "hit_rate_shrunk": 0.75,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_handedness",
+            0.989
+          ],
+          [
+            "team_form",
+            1.09
+          ],
+          [
+            "team_record",
+            1.089
+          ],
+          [
+            "team_home_road",
+            1.056
+          ],
+          [
+            "bullpen_fatigue",
+            0.989
+          ],
+          [
+            "team_defense",
+            1.008
+          ]
+        ],
+        "variance_adjustment": 1.018,
+        "edge_pp_clamped": false,
+        "historical_source": "spread_run_diff_l10",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": null,
+        "low_sample": false,
+        "low_sample_n": null,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 5.37,
+        "display_edge": 5.37,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": null,
+        "heat_l10_raw_factor": null,
+        "heat_l10_strength": null,
+        "heat_l10_covers": null,
+        "heat_l10_games": null,
+        "heat_l10_cover_rate": null,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": null,
+        "heat_l10_notes": null,
+        "home_l20_nrfi_pct": 0.5,
+        "away_l20_nrfi_pct": 0.5,
+        "system_heat": 68.1,
+        "system_heat_breakdown": {
+          "base_from_rae": 71.1,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": 0,
+            "baseline_fallback": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": 0
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.4pp, RAE +5.3). Driving factors: team momentum supports (+9%)."
+      },
+      {
+        "rank": 15,
+        "player": "Nolan Gorman",
+        "team": "STL",
+        "opp": null,
+        "home_abbr": "CIN",
+        "away_abbr": "STL",
+        "home_pp_name": "Brady Singer",
+        "away_pp_name": "Matthew Liberatore",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -190,
+        "odds": -175,
         "tier": "SIDE",
-        "edge_pp": 6.89,
-        "rae": 5.432,
-        "v3_hot_boost": 0.0,
-        "v3_final_boost": 0.0,
+        "edge_pp": 6.46,
+        "rae": 5.096,
+        "v3_hot_boost": 0.0247,
+        "v3_final_boost": 0.0241,
         "v3_combined_factor": 0.9778,
         "v3_route": "skip",
-        "v3_rationale": "no_hot_signal",
-        "v3_elevation_pp": -8.97,
+        "v3_rationale": "boost_too_low",
+        "v3_elevation_pp": 1.65,
         "v3_hot_status": "neutral",
-        "v3_contribution": 0.0,
-        "combined_score": 6.79,
-        "combined_rank": 19,
-        "v2_rank_orig": 16,
-        "live_eligible": true,
+        "v3_contribution": 0.145,
+        "combined_score": 6.515,
+        "combined_rank": 21,
+        "v2_rank_orig": 15,
+        "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.68,
+        "hit_rate": 0.6,
         "sample": 30,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.6552,
+        "start_time": "2026-05-24T17:40:00Z",
+        "base_prob": 0.6364,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7241,
-        "hit_rate_shrunk": 0.68,
+        "true_prob": 0.701,
+        "hit_rate_shrunk": 0.6,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
@@ -35475,23 +35810,27 @@
           ],
           [
             "park",
-            1.02
-          ],
-          [
-            "handedness",
-            1.03
-          ],
-          [
-            "recency_woba",
-            0.975
-          ],
-          [
-            "player_performer",
             1.04
           ],
           [
-            "home_away",
+            "handedness",
             1.02
+          ],
+          [
+            "recency_woba",
+            0.99
+          ],
+          [
+            "bullpen",
+            1.053
+          ],
+          [
+            "home_away",
+            0.98
+          ],
+          [
+            "series_game",
+            0.995
           ],
           [
             "player_rest",
@@ -35504,34 +35843,34 @@
         "lineup_unconfirmed": false,
         "hit_rate_source": "historical_real",
         "low_sample": true,
-        "low_sample_n": 1,
+        "low_sample_n": 2,
         "correlated_group": [
-          "park_cluster:Citizens Bank Park:6@0.8"
+          "park_cluster:Great American Ball Park:7@0.8"
         ],
-        "park_cluster_size": 6,
+        "park_cluster_size": 7,
         "park_cluster_penalty": 0.8,
-        "edge_raw": 6.89,
-        "display_edge": 6.89,
+        "edge_raw": 6.46,
+        "display_edge": 6.46,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0024,
-        "heat_l10_raw_factor": 1.053,
+        "heat_l10_cover_factor": 1.0045,
+        "heat_l10_raw_factor": 1.1,
         "heat_l10_strength": 0.3,
         "heat_l10_covers": 7,
         "heat_l10_games": 10,
         "heat_l10_cover_rate": 0.7,
-        "heat_l10_l30_baseline": 0.625,
-        "heat_l10_delta_pp": 7.5,
+        "heat_l10_l30_baseline": 0.3,
+        "heat_l10_delta_pp": 40.0,
         "heat_l10_verdict": "HOT",
         "heat_l10_notes": [
-          "7\\10 covered O0.5 (70%) vs L30 baseline 62% \u2014 heat +7.5pp (HOT)"
+          "7\\10 covered O0.5 (70%) vs L30 baseline 30% \u2014 heat +40.0pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.6,
-        "away_l20_nrfi_pct": 0.65,
-        "system_heat": 70.7,
+        "home_l20_nrfi_pct": 0.7,
+        "away_l20_nrfi_pct": 0.6,
+        "system_heat": 69.4,
         "system_heat_breakdown": {
-          "base_from_rae": 71.7,
+          "base_from_rae": 70.4,
           "tier_boost": 2.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -35542,60 +35881,60 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -3
         },
-        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +6.9pp, RAE +5.4). Driving factors: statcast trend supports (+6%). Caveats: thin historical sample (n=0)."
+        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +6.5pp, RAE +5.1). Driving factors: statcast trend supports (+6%) \u00b7 soft opposing bullpen (+5%). Caveats: thin historical sample (n=0)."
       },
       {
-        "rank": 18,
-        "player": "Bryson Stott",
-        "team": "PHI",
+        "rank": 24,
+        "player": "Willy Adames",
+        "team": "SF",
         "opp": null,
-        "home_abbr": "PHI",
-        "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
+        "home_abbr": "SF",
+        "away_abbr": "CHW",
+        "home_pp_name": "Robbie Ray",
+        "away_pp_name": "Noah Schultz",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -180,
-        "tier": "SIDE",
-        "edge_pp": 5.84,
-        "rae": 4.608,
-        "v3_hot_boost": 0.2513,
-        "v3_final_boost": 0.2457,
-        "v3_combined_factor": 0.9778,
+        "odds": -170,
+        "tier": "WATCH",
+        "edge_pp": 5.68,
+        "rae": 5.013,
+        "v3_hot_boost": 0.2998,
+        "v3_final_boost": 0.2758,
+        "v3_combined_factor": 0.92,
         "v3_route": "paper",
         "v3_rationale": "context_failed_gate",
-        "v3_elevation_pp": 16.75,
+        "v3_elevation_pp": 19.99,
         "v3_hot_status": "hot",
-        "v3_contribution": 1.474,
-        "combined_score": 7.234,
-        "combined_rank": 15,
-        "v2_rank_orig": 18,
-        "live_eligible": true,
+        "v3_contribution": 1.655,
+        "combined_score": 7.225,
+        "combined_rank": 17,
+        "v2_rank_orig": 24,
+        "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.62,
+        "hit_rate": 0.56,
         "sample": 30,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.6429,
+        "start_time": "2026-05-24T20:05:00Z",
+        "base_prob": 0.6296,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7012,
-        "hit_rate_shrunk": 0.62,
+        "true_prob": 0.6864,
+        "hit_rate_shrunk": 0.56,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "statcast",
-            1.04
+            1.1
           ],
           [
             "pitcher_matchup",
-            1.07
+            1.02
           ],
           [
             "park",
-            1.02
+            0.97
           ],
           [
             "handedness",
@@ -35606,6 +35945,10 @@
             1.025
           ],
           [
+            "weather",
+            1.04
+          ],
+          [
             "home_away",
             1.02
           ],
@@ -35614,7 +35957,7 @@
             1.01
           ]
         ],
-        "variance_adjustment": 1.014,
+        "variance_adjustment": 1.02,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
@@ -35622,12 +35965,12 @@
         "low_sample": true,
         "low_sample_n": 0,
         "correlated_group": [
-          "park_cluster:Citizens Bank Park:6@0.8"
+          "park_cluster:Oracle Park:3@0.9"
         ],
-        "park_cluster_size": 6,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 5.84,
-        "display_edge": 5.84,
+        "park_cluster_size": 3,
+        "park_cluster_penalty": 0.9,
+        "edge_raw": 5.68,
+        "display_edge": 5.68,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -35641,14 +35984,13 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": "INSUFFICIENT_DATA",
         "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Bryson Stott\\HITS_ALT\\0.5 \u2014 heat signal idle"
+          "no L30 baseline in historical_hit_rates cache for Willy Adames\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.6,
-        "away_l20_nrfi_pct": 0.65,
-        "system_heat": 62.4,
+        "home_l20_nrfi_pct": 0.5,
+        "system_heat": 59.1,
         "system_heat_breakdown": {
-          "base_from_rae": 68.4,
-          "tier_boost": 2.0,
+          "base_from_rae": 70.1,
+          "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
             "baseline_fallback": -5,
@@ -35658,44 +36000,44 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -8
         },
-        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +5.8pp, RAE +4.6). Driving factors: statcast trend supports (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.7pp, RAE +5.0). Driving factors: statcast trend supports (+10%) \u00b7 weather tailwind (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
-        "rank": 22,
+        "rank": 20,
         "player": "Alec Burleson",
         "team": "STL",
         "opp": null,
         "home_abbr": "CIN",
         "away_abbr": "STL",
-        "home_pp_name": "Chase Petty",
-        "away_pp_name": "Kyle Leahy",
+        "home_pp_name": "Brady Singer",
+        "away_pp_name": "Matthew Liberatore",
         "market": "RBIS_ALT",
         "strategy": "MLB Batter RBIs Alt",
         "line": 0.5,
         "side": "O",
         "odds": 115,
-        "tier": "WATCH",
-        "edge_pp": 5.02,
-        "rae": 4.428,
-        "v3_hot_boost": 0.3401,
-        "v3_final_boost": 0.3401,
-        "v3_combined_factor": 1.0,
-        "v3_route": "live",
-        "v3_rationale": "live_qualified_underdog",
-        "v3_elevation_pp": 22.67,
+        "tier": "SIDE",
+        "edge_pp": 6.08,
+        "rae": 4.752,
+        "v3_hot_boost": 0.3411,
+        "v3_final_boost": 0.3335,
+        "v3_combined_factor": 0.9778,
+        "v3_route": "paper",
+        "v3_rationale": "context_failed_gate",
+        "v3_elevation_pp": 22.74,
         "v3_hot_status": "hot",
-        "v3_contribution": 2.041,
-        "combined_score": 6.961,
-        "combined_rank": 17,
-        "v2_rank_orig": 22,
+        "v3_contribution": 2.001,
+        "combined_score": 7.941,
+        "combined_rank": 11,
+        "v2_rank_orig": 20,
         "live_eligible": false,
         "paper_eligible": true,
         "hit_rate": 0.46,
         "sample": 30,
-        "start_time": "2026-05-23T23:15:00Z",
+        "start_time": "2026-05-24T17:40:00Z",
         "base_prob": 0.4651,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.5153,
+        "true_prob": 0.5259,
         "hit_rate_shrunk": 0.46,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -35703,7 +36045,7 @@
         "factors_applied": [
           [
             "statcast",
-            1.1
+            1.12
           ],
           [
             "pitcher_matchup",
@@ -35726,15 +36068,23 @@
             0.92
           ],
           [
+            "bullpen",
+            1.053
+          ],
+          [
             "home_away",
             0.98
           ],
           [
             "player_rest",
             1.01
+          ],
+          [
+            "bvp",
+            0.974
           ]
         ],
-        "variance_adjustment": 1.02,
+        "variance_adjustment": 1.024,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
@@ -35742,13 +36092,13 @@
         "low_sample": true,
         "low_sample_n": 0,
         "correlated_group": [
-          "same_player:alec burleson@pk:824516:winner_of_2",
-          "park_cluster:Great American Ball Park:3@0.9"
+          "same_player:alec burleson@pk:824514:winner_of_2",
+          "park_cluster:Great American Ball Park:7@0.8"
         ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 5.02,
-        "display_edge": 5.02,
+        "park_cluster_size": 7,
+        "park_cluster_penalty": 0.8,
+        "edge_raw": 6.08,
+        "display_edge": 6.08,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -35766,10 +36116,10 @@
         ],
         "home_l20_nrfi_pct": 0.7,
         "away_l20_nrfi_pct": 0.6,
-        "system_heat": 56.7,
+        "system_heat": 63.0,
         "system_heat_breakdown": {
-          "base_from_rae": 67.7,
-          "tier_boost": -3.0,
+          "base_from_rae": 69.0,
+          "tier_boost": 2.0,
           "caveats_individual": {
             "low_sample": -3,
             "baseline_fallback": -5,
@@ -35779,408 +36129,45 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -8
         },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.0pp, RAE +4.4). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 30,
-        "player": "Ketel Marte",
-        "team": "ARI",
-        "opp": null,
-        "home_abbr": "ARI",
-        "away_abbr": "COL",
-        "home_pp_name": "Zac Gallen",
-        "away_pp_name": "Michael Lorenzen",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 1.5,
-        "side": "O",
-        "odds": 145,
-        "tier": "WATCH",
-        "edge_pp": 4.35,
-        "rae": 4.25,
-        "v3_hot_boost": 0.305,
-        "v3_final_boost": 0.3254,
-        "v3_combined_factor": 1.0667,
-        "v3_route": "live",
-        "v3_rationale": "live_qualified_underdog",
-        "v3_elevation_pp": 20.33,
-        "v3_hot_status": "hot",
-        "v3_contribution": 1.952,
-        "combined_score": 6.202,
-        "combined_rank": 24,
-        "v2_rank_orig": 30,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.4,
-        "sample": 30,
-        "start_time": "2026-05-24T02:10:00Z",
-        "base_prob": 0.4082,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.4517,
-        "hit_rate_shrunk": 0.4,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.12
-          ],
-          [
-            "pitcher_matchup",
-            1.07
-          ],
-          [
-            "park",
-            1.01
-          ],
-          [
-            "handedness",
-            1.015
-          ],
-          [
-            "recency_woba",
-            1.025
-          ],
-          [
-            "player_performer",
-            0.97
-          ],
-          [
-            "home_away",
-            1.02
-          ]
-        ],
-        "variance_adjustment": 1.024,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "historical_real",
-        "low_sample": true,
-        "low_sample_n": 1,
-        "correlated_group": null,
-        "park_cluster_size": null,
-        "park_cluster_penalty": null,
-        "edge_raw": 4.35,
-        "display_edge": 4.35,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 0.9968,
-        "heat_l10_raw_factor": 0.929,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 5,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.5,
-        "heat_l10_l30_baseline": 0.625,
-        "heat_l10_delta_pp": -12.5,
-        "heat_l10_verdict": "COOLING",
-        "heat_l10_notes": [
-          "5\\10 covered O1.5 (50%) vs L30 baseline 62% \u2014 heat -12.5pp (COOLING)"
-        ],
-        "home_l20_nrfi_pct": 0.5,
-        "away_l20_nrfi_pct": 0.45,
-        "hot_player_l10_hits_per_game": 1.4,
-        "hot_player_l10_hrr_per_game": 2.9,
-        "hot_player_l10_tb_per_game": 2.4,
-        "system_heat": 66.0,
-        "system_heat_breakdown": {
-          "base_from_rae": 67.0,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -3
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.3pp, RAE +4.2). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0)."
-      },
-      {
-        "rank": 23,
-        "player": "Oswald Peraza",
-        "team": "LAA",
-        "opp": null,
-        "home_abbr": "LAA",
-        "away_abbr": "TEX",
-        "home_pp_name": "Walbert Ure\u00f1a",
-        "away_pp_name": "Nathan Eovaldi",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 0.5,
-        "side": "O",
-        "odds": -160,
-        "tier": "WATCH",
-        "edge_pp": 4.64,
-        "rae": 4.113,
-        "v3_hot_boost": 0.1515,
-        "v3_final_boost": 0.1394,
-        "v3_combined_factor": 0.92,
-        "v3_route": "paper",
-        "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 10.1,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 0.836,
-        "combined_score": 5.406,
-        "combined_rank": 28,
-        "v2_rank_orig": 23,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.56,
-        "sample": 30,
-        "start_time": "2026-05-24T02:05:00Z",
-        "base_prob": 0.6154,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.6618,
-        "hit_rate_shrunk": 0.56,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.06
-          ],
-          [
-            "park",
-            0.99
-          ],
-          [
-            "handedness",
-            0.99
-          ],
-          [
-            "recency_woba",
-            1.025
-          ],
-          [
-            "player_performer",
-            0.95
-          ],
-          [
-            "bullpen",
-            1.08
-          ],
-          [
-            "weather",
-            1.04
-          ],
-          [
-            "home_away",
-            1.02
-          ],
-          [
-            "player_rest",
-            1.01
-          ]
-        ],
-        "variance_adjustment": 1.016,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
-        "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:Angel Stadium:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 4.64,
-        "display_edge": 4.64,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 6,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.6,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Oswald Peraza\\HITS_ALT\\0.5 \u2014 heat signal idle"
-        ],
-        "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.3,
-        "system_heat": 55.5,
-        "system_heat_breakdown": {
-          "base_from_rae": 66.5,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": -5,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -8
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.6pp, RAE +4.1). Driving factors: soft opposing bullpen (+8%) \u00b7 statcast trend supports (+6%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 21,
-        "player": "CLE ML (CLE@PHI)",
-        "team": null,
-        "opp": null,
-        "home_abbr": "PHI",
-        "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
-        "market": "ML",
-        "strategy": "MLB Moneyline",
-        "line": null,
-        "side": "CLE",
-        "odds": 146,
-        "tier": "WATCH",
-        "edge_pp": 5.21,
-        "rae": 4.088,
-        "v3_hot_boost": null,
-        "v3_final_boost": null,
-        "v3_combined_factor": null,
-        "v3_route": "team_market_unscored",
-        "v3_rationale": null,
-        "v3_elevation_pp": null,
-        "v3_hot_status": null,
-        "v3_contribution": 0.0,
-        "combined_score": 5.11,
-        "combined_rank": 31,
-        "v2_rank_orig": 21,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.9,
-        "sample": 10,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.4065,
-        "tier_by_rae": "STRONG",
-        "true_prob": 0.4586,
-        "hit_rate_shrunk": 0.9,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "team_handedness",
-            0.966
-          ],
-          [
-            "team_form",
-            1.04
-          ],
-          [
-            "team_record",
-            1.078
-          ],
-          [
-            "team_home_road",
-            1.096
-          ],
-          [
-            "bullpen_fatigue",
-            0.994
-          ],
-          [
-            "bullpen_quality",
-            1.02
-          ],
-          [
-            "head_to_head",
-            1.08
-          ],
-          [
-            "travel",
-            0.97
-          ],
-          [
-            "line_movement",
-            1.03
-          ]
-        ],
-        "variance_adjustment": 1.0192,
-        "edge_pp_clamped": false,
-        "historical_source": "team_record_l10",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": null,
-        "low_sample": false,
-        "low_sample_n": null,
-        "correlated_group": [
-          "park_cluster:Citizens Bank Park:6@0.8"
-        ],
-        "park_cluster_size": 6,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 5.21,
-        "display_edge": 5.21,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": null,
-        "heat_l10_raw_factor": null,
-        "heat_l10_strength": null,
-        "heat_l10_covers": null,
-        "heat_l10_games": null,
-        "heat_l10_cover_rate": null,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": null,
-        "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.6,
-        "away_l20_nrfi_pct": 0.65,
-        "system_heat": 63.4,
-        "system_heat_breakdown": {
-          "base_from_rae": 66.4,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": 0,
-            "baseline_fallback": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": 0
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.2pp, RAE +4.1). No standout factor \u2014 pure market-vs-engine edge."
+        "ai_reasoning": "Engine reads this as GOOD-tier (solid edge) (edge +6.1pp, RAE +4.8). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
         "rank": 33,
-        "player": "Nick Kurtz",
-        "team": "ATH",
+        "player": "Coby Mayo",
+        "team": "BAL",
         "opp": null,
-        "home_abbr": "SD",
-        "away_abbr": "ATH",
-        "home_pp_name": "Lucas Giolito",
-        "away_pp_name": "J.T. Ginn",
+        "home_abbr": "BAL",
+        "away_abbr": "DET",
+        "home_pp_name": "Trevor Rogers",
+        "away_pp_name": null,
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -195,
+        "odds": -145,
         "tier": "WATCH",
-        "edge_pp": 4.05,
-        "rae": 3.573,
-        "v3_hot_boost": 0.2115,
-        "v3_final_boost": 0.2162,
-        "v3_combined_factor": 1.0222,
-        "v3_route": "paper",
-        "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 14.1,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 1.297,
-        "combined_score": 5.267,
-        "combined_rank": 30,
+        "edge_pp": 4.77,
+        "rae": 4.68,
+        "v3_hot_boost": 0.3886,
+        "v3_final_boost": 0.3886,
+        "v3_combined_factor": 1.0,
+        "v3_route": "live",
+        "v3_rationale": "live_qualified",
+        "v3_elevation_pp": 25.91,
+        "v3_hot_status": "hot",
+        "v3_contribution": 2.332,
+        "combined_score": 7.012,
+        "combined_rank": 18,
         "v2_rank_orig": 33,
         "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.66,
+        "hit_rate": 0.5,
         "sample": 30,
-        "start_time": "2026-05-24T01:40:00Z",
-        "base_prob": 0.661,
+        "start_time": "2026-05-24T22:05:00Z",
+        "base_prob": 0.5918,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7015,
-        "hit_rate_shrunk": 0.66,
+        "true_prob": 0.6396,
+        "hit_rate_shrunk": 0.5,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
@@ -36190,387 +36177,27 @@
             1.1
           ],
           [
-            "park",
-            0.96
+            "pitcher_matchup",
+            1.02
           ],
           [
             "handedness",
             1.03
           ],
           [
-            "player_performer",
-            1.05
-          ],
-          [
-            "bullpen",
-            1.036
-          ],
-          [
             "home_away",
-            0.98
+            1.02
+          ],
+          [
+            "series_game",
+            0.995
           ],
           [
             "player_rest",
-            0.98
+            1.01
           ]
         ],
         "variance_adjustment": 1.02,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "historical_real",
-        "low_sample": true,
-        "low_sample_n": 2,
-        "correlated_group": [
-          "park_cluster:Petco Park:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 4.05,
-        "display_edge": 4.05,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0045,
-        "heat_l10_raw_factor": 1.1,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 8,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.8,
-        "heat_l10_l30_baseline": 0.5,
-        "heat_l10_delta_pp": 30.0,
-        "heat_l10_verdict": "HOT",
-        "heat_l10_notes": [
-          "8\\10 covered O0.5 (80%) vs L30 baseline 50% \u2014 heat +30.0pp (HOT)"
-        ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.55,
-        "system_heat": 58.3,
-        "system_heat_breakdown": {
-          "base_from_rae": 64.3,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -3
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.0pp, RAE +3.6). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
-      },
-      {
-        "rank": 35,
-        "player": "Gavin Sheets",
-        "team": "SD",
-        "opp": null,
-        "home_abbr": "SD",
-        "away_abbr": "ATH",
-        "home_pp_name": "Lucas Giolito",
-        "away_pp_name": "J.T. Ginn",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 0.5,
-        "side": "O",
-        "odds": -195,
-        "tier": "WATCH",
-        "edge_pp": 4.02,
-        "rae": 3.537,
-        "v3_hot_boost": 0.34,
-        "v3_final_boost": 0.3128,
-        "v3_combined_factor": 0.92,
-        "v3_route": "paper",
-        "v3_rationale": "context_failed_gate",
-        "v3_elevation_pp": 22.67,
-        "v3_hot_status": "hot",
-        "v3_contribution": 1.877,
-        "combined_score": 5.807,
-        "combined_rank": 25,
-        "v2_rank_orig": 35,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.56,
-        "sample": 30,
-        "start_time": "2026-05-24T01:40:00Z",
-        "base_prob": 0.661,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.7012,
-        "hit_rate_shrunk": 0.56,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.12
-          ],
-          [
-            "pitcher_matchup",
-            0.98
-          ],
-          [
-            "park",
-            0.96
-          ],
-          [
-            "handedness",
-            1.02
-          ],
-          [
-            "recency_woba",
-            1.025
-          ],
-          [
-            "home_away",
-            1.02
-          ],
-          [
-            "player_rest",
-            1.01
-          ]
-        ],
-        "variance_adjustment": 1.024,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
-        "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:Petco Park:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 4.02,
-        "display_edge": 4.02,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 8,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.8,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Gavin Sheets\\HITS_ALT\\0.5 \u2014 heat signal idle"
-        ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.55,
-        "hot_player_l10_hits_per_game": 1.2,
-        "hot_player_l10_hrr_per_game": 2.9,
-        "hot_player_l10_tb_per_game": 2.5,
-        "system_heat": 58.1,
-        "system_heat_breakdown": {
-          "base_from_rae": 64.1,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": -5,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -8
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.0pp, RAE +3.5). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 25,
-        "player": "Kyle Schwarber",
-        "team": "PHI",
-        "opp": null,
-        "home_abbr": "PHI",
-        "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
-        "market": "RBIS_ALT",
-        "strategy": "MLB Batter RBIs Alt",
-        "line": 0.5,
-        "side": "O",
-        "odds": 135,
-        "tier": "WATCH",
-        "edge_pp": 4.46,
-        "rae": 3.512,
-        "v3_hot_boost": 0.0466,
-        "v3_final_boost": 0.0455,
-        "v3_combined_factor": 0.9778,
-        "v3_route": "skip",
-        "v3_rationale": "boost_too_low",
-        "v3_elevation_pp": 3.1,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 0.273,
-        "combined_score": 4.663,
-        "combined_rank": 34,
-        "v2_rank_orig": 25,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.46,
-        "sample": 30,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.4255,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.4701,
-        "hit_rate_shrunk": 0.46,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.08
-          ],
-          [
-            "pitcher_matchup",
-            1.07
-          ],
-          [
-            "park",
-            1.06
-          ],
-          [
-            "handedness",
-            1.01
-          ],
-          [
-            "recency_woba",
-            0.975
-          ],
-          [
-            "home_away",
-            1.02
-          ],
-          [
-            "player_rest",
-            1.01
-          ]
-        ],
-        "variance_adjustment": 1.016,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
-        "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "same_player:kyle schwarber@pk:823458:winner_of_2",
-          "park_cluster:Citizens Bank Park:6@0.8"
-        ],
-        "park_cluster_size": 6,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 4.46,
-        "display_edge": 4.46,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 7,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.7,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Kyle Schwarber\\RBIS_ALT\\0.5 \u2014 heat signal idle"
-        ],
-        "home_l20_nrfi_pct": 0.6,
-        "away_l20_nrfi_pct": 0.65,
-        "system_heat": 53.0,
-        "system_heat_breakdown": {
-          "base_from_rae": 64.0,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": -5,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -8
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.5pp, RAE +3.5). Driving factors: statcast trend supports (+8%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 42,
-        "player": "Corbin Carroll",
-        "team": "ARI",
-        "opp": null,
-        "home_abbr": "ARI",
-        "away_abbr": "COL",
-        "home_pp_name": "Zac Gallen",
-        "away_pp_name": "Michael Lorenzen",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 1.5,
-        "side": "O",
-        "odds": 175,
-        "tier": "WATCH",
-        "edge_pp": 3.51,
-        "rae": 3.43,
-        "v3_hot_boost": 0.5106,
-        "v3_final_boost": 0.5447,
-        "v3_combined_factor": 1.0667,
-        "v3_route": "live",
-        "v3_rationale": "live_qualified_underdog",
-        "v3_elevation_pp": 34.04,
-        "v3_hot_status": "hot",
-        "v3_contribution": 3.268,
-        "combined_score": 6.698,
-        "combined_rank": 21,
-        "v2_rank_orig": 42,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.36,
-        "sample": 30,
-        "start_time": "2026-05-24T02:10:00Z",
-        "base_prob": 0.3636,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.3987,
-        "hit_rate_shrunk": 0.36,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.12
-          ],
-          [
-            "pitcher_matchup",
-            1.07
-          ],
-          [
-            "park",
-            1.01
-          ],
-          [
-            "handedness",
-            1.01
-          ],
-          [
-            "recency_woba",
-            1.025
-          ],
-          [
-            "home_away",
-            1.02
-          ],
-          [
-            "player_rest",
-            1.01
-          ],
-          [
-            "bvp",
-            0.945
-          ]
-        ],
-        "variance_adjustment": 1.024,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
@@ -36580,135 +36207,8 @@
         "correlated_group": null,
         "park_cluster_size": null,
         "park_cluster_penalty": null,
-        "edge_raw": 3.51,
-        "display_edge": 3.51,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 4,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.4,
-        "heat_l10_l30_baseline": 0.375,
-        "heat_l10_delta_pp": 2.5,
-        "heat_l10_verdict": "NEUTRAL",
-        "heat_l10_notes": [
-          "4\\10 covered O1.5 (40%) vs L30 baseline 38% \u2014 heat +2.5pp (NEUTRAL)"
-        ],
-        "home_l20_nrfi_pct": 0.5,
-        "away_l20_nrfi_pct": 0.45,
-        "hot_player_l10_hits_per_game": 1.4,
-        "hot_player_l10_hrr_per_game": 3.0,
-        "hot_player_l10_tb_per_game": 2.7,
-        "system_heat": 62.7,
-        "system_heat_breakdown": {
-          "base_from_rae": 63.7,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": 0,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -3
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +3.5pp, RAE +3.4). Driving factors: statcast trend supports (+12%) \u00b7 poor career vs this pitcher (-6%). Caveats: thin historical sample (n=0)."
-      },
-      {
-        "rank": 39,
-        "player": "Justin Foscue",
-        "team": "TEX",
-        "opp": null,
-        "home_abbr": "LAA",
-        "away_abbr": "TEX",
-        "home_pp_name": "Walbert Ure\u00f1a",
-        "away_pp_name": "Nathan Eovaldi",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 0.5,
-        "side": "O",
-        "odds": -170,
-        "tier": "WATCH",
-        "edge_pp": 3.79,
-        "rae": 3.33,
-        "v3_hot_boost": 0.1977,
-        "v3_final_boost": 0.1977,
-        "v3_combined_factor": 1.0,
-        "v3_route": "paper",
-        "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 13.18,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 1.186,
-        "combined_score": 4.886,
-        "combined_rank": 32,
-        "v2_rank_orig": 39,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.5455,
-        "sample": 13,
-        "start_time": "2026-05-24T02:05:00Z",
-        "base_prob": 0.6296,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.6676,
-        "hit_rate_shrunk": 0.5455,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            1.12
-          ],
-          [
-            "pitcher_matchup",
-            0.98
-          ],
-          [
-            "park",
-            0.99
-          ],
-          [
-            "handedness",
-            0.98
-          ],
-          [
-            "recency_woba",
-            1.025
-          ],
-          [
-            "bullpen",
-            1.009
-          ],
-          [
-            "weather",
-            1.04
-          ],
-          [
-            "home_away",
-            0.98
-          ],
-          [
-            "player_rest",
-            1.01
-          ]
-        ],
-        "variance_adjustment": 1.024,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "historical_real",
-        "low_sample": true,
-        "low_sample_n": 1,
-        "correlated_group": [
-          "park_cluster:Angel Stadium:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 3.79,
-        "display_edge": 3.79,
+        "edge_raw": 4.77,
+        "display_edge": 4.77,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -36724,14 +36224,11 @@
         "heat_l10_notes": [
           "7\\10 covered O0.5 (70%) vs L30 baseline 62% \u2014 heat +7.5pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.3,
-        "hot_player_l10_hits_per_game": 1.2,
-        "hot_player_l10_hrr_per_game": 2.3,
-        "hot_player_l10_tb_per_game": 2.1,
-        "system_heat": 62.3,
+        "home_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.55,
+        "system_heat": 62.7,
         "system_heat_breakdown": {
-          "base_from_rae": 63.3,
+          "base_from_rae": 68.7,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -36742,274 +36239,166 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -3
         },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +3.8pp, RAE +3.3). Driving factors: statcast trend supports (+12%) \u00b7 weather tailwind (+4%). Caveats: thin historical sample (n=0)."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.8pp, RAE +4.7). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
       },
       {
         "rank": 32,
-        "player": "Bryce Harper",
-        "team": "PHI",
+        "player": "Willson Contreras",
+        "team": "BOS",
         "opp": null,
-        "home_abbr": "PHI",
-        "away_abbr": "CLE",
-        "home_pp_name": "Zack Wheeler",
-        "away_pp_name": "Slade Cecconi",
+        "home_abbr": "BOS",
+        "away_abbr": "MIN",
+        "home_pp_name": "Sonny Gray",
+        "away_pp_name": "Bailey Ober",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -210,
+        "odds": -175,
         "tier": "WATCH",
-        "edge_pp": 4.15,
-        "rae": 3.272,
-        "v3_hot_boost": 0.0,
-        "v3_final_boost": 0.0,
-        "v3_combined_factor": 0.9778,
-        "v3_route": "skip",
-        "v3_rationale": "player_is_cold",
-        "v3_elevation_pp": -12.68,
-        "v3_hot_status": "cold",
-        "v3_contribution": 0.0,
-        "combined_score": 4.09,
-        "combined_rank": 40,
+        "edge_pp": 4.79,
+        "rae": 4.68,
+        "v3_hot_boost": 0.2713,
+        "v3_final_boost": 0.2713,
+        "v3_combined_factor": 1.0,
+        "v3_route": "live",
+        "v3_rationale": "live_qualified",
+        "v3_elevation_pp": 18.08,
+        "v3_hot_status": "hot",
+        "v3_contribution": 1.628,
+        "combined_score": 6.308,
+        "combined_rank": 24,
         "v2_rank_orig": 32,
         "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.56,
+        "hit_rate": 0.62,
         "sample": 30,
-        "start_time": "2026-05-23T20:05:00Z",
-        "base_prob": 0.6774,
+        "start_time": "2026-05-24T17:35:00Z",
+        "base_prob": 0.6364,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7189,
-        "hit_rate_shrunk": 0.56,
+        "true_prob": 0.6842,
+        "hit_rate_shrunk": 0.62,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "statcast",
-            1.06
-          ],
-          [
-            "pitcher_matchup",
-            1.07
+            1.12
           ],
           [
             "park",
-            1.02
+            1.06
           ],
           [
             "handedness",
-            1.03
+            0.99
           ],
           [
             "recency_woba",
-            0.975
+            1.025
           ],
           [
-            "player_performer",
-            0.95
+            "bullpen",
+            1.027
           ],
           [
             "home_away",
             1.02
           ],
           [
+            "series_game",
+            0.995
+          ],
+          [
             "player_rest",
             1.01
+          ],
+          [
+            "bvp",
+            0.92
           ]
         ],
-        "variance_adjustment": 1.014,
+        "variance_adjustment": 1.024,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
+        "hit_rate_source": "historical_real",
         "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:Citizens Bank Park:6@0.8"
-        ],
-        "park_cluster_size": 6,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 4.15,
-        "display_edge": 4.15,
+        "low_sample_n": 1,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 4.79,
+        "display_edge": 4.79,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
+        "heat_l10_cover_factor": 1.0045,
+        "heat_l10_raw_factor": 1.1,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 5,
+        "heat_l10_covers": 8,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.5,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_cover_rate": 0.8,
+        "heat_l10_l30_baseline": 0.625,
+        "heat_l10_delta_pp": 17.5,
+        "heat_l10_verdict": "HOT",
         "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Bryce Harper\\HITS_ALT\\0.5 \u2014 heat signal idle"
+          "8\\10 covered O0.5 (80%) vs L30 baseline 62% \u2014 heat +17.5pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.6,
-        "away_l20_nrfi_pct": 0.65,
-        "system_heat": 52.1,
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.45,
+        "system_heat": 62.7,
         "system_heat_breakdown": {
-          "base_from_rae": 63.1,
+          "base_from_rae": 68.7,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
-            "baseline_fallback": -5,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -8
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.2pp, RAE +3.3). Driving factors: statcast trend supports (+6%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 43,
-        "player": "STL ML (STL@CIN)",
-        "team": null,
-        "opp": null,
-        "home_abbr": "CIN",
-        "away_abbr": "STL",
-        "home_pp_name": "Chase Petty",
-        "away_pp_name": "Kyle Leahy",
-        "market": "ML",
-        "strategy": "MLB Moneyline",
-        "line": null,
-        "side": "STL",
-        "odds": -110,
-        "tier": "WATCH",
-        "edge_pp": 3.47,
-        "rae": 3.078,
-        "v3_hot_boost": null,
-        "v3_final_boost": null,
-        "v3_combined_factor": null,
-        "v3_route": "team_market_unscored",
-        "v3_rationale": null,
-        "v3_elevation_pp": null,
-        "v3_hot_status": null,
-        "v3_contribution": 0.0,
-        "combined_score": 3.42,
-        "combined_rank": 48,
-        "v2_rank_orig": 43,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.5,
-        "sample": 10,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.5238,
-        "tier_by_rae": "SIDE",
-        "true_prob": 0.5585,
-        "hit_rate_shrunk": 0.5,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "team_handedness",
-            0.99
-          ],
-          [
-            "team_record",
-            0.99
-          ],
-          [
-            "team_home_road",
-            1.036
-          ],
-          [
-            "team_scoring_trend",
-            1.08
-          ],
-          [
-            "head_to_head",
-            1.08
-          ],
-          [
-            "travel",
-            0.97
-          ]
-        ],
-        "variance_adjustment": 1.016,
-        "edge_pp_clamped": false,
-        "historical_source": "team_record_l10",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": null,
-        "low_sample": false,
-        "low_sample_n": null,
-        "correlated_group": [
-          "park_cluster:Great American Ball Park:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 3.47,
-        "display_edge": 3.47,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": null,
-        "heat_l10_raw_factor": null,
-        "heat_l10_strength": null,
-        "heat_l10_covers": null,
-        "heat_l10_games": null,
-        "heat_l10_cover_rate": null,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": null,
-        "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.7,
-        "away_l20_nrfi_pct": 0.6,
-        "system_heat": 59.3,
-        "system_heat_breakdown": {
-          "base_from_rae": 62.3,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": 0,
             "baseline_fallback": 0,
             "lineup_unconfirmed": 0,
             "experimental_blocked": 0
           },
           "caveats_capped_at": -10.0,
-          "caveats_applied": 0
+          "caveats_applied": -3
         },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +3.5pp, RAE +3.1). No standout factor \u2014 pure market-vs-engine edge."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.8pp, RAE +4.7). Driving factors: statcast trend supports (+12%) \u00b7 poor career vs this pitcher (-8%). Caveats: thin historical sample (n=0)."
       },
       {
-        "rank": 46,
+        "rank": 34,
         "player": "Jake Burger",
         "team": "TEX",
         "opp": null,
         "home_abbr": "LAA",
         "away_abbr": "TEX",
-        "home_pp_name": "Walbert Ure\u00f1a",
-        "away_pp_name": "Nathan Eovaldi",
+        "home_pp_name": "Reid Detmers",
+        "away_pp_name": "MacKenzie Gore",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
         "odds": -200,
         "tier": "WATCH",
-        "edge_pp": 3.41,
-        "rae": 3.006,
-        "v3_hot_boost": 0.3337,
-        "v3_final_boost": 0.3337,
-        "v3_combined_factor": 1.0,
-        "v3_route": "live",
-        "v3_rationale": "live_qualified",
-        "v3_elevation_pp": 22.25,
+        "edge_pp": 4.7,
+        "rae": 4.61,
+        "v3_hot_boost": 0.2511,
+        "v3_final_boost": 0.231,
+        "v3_combined_factor": 0.92,
+        "v3_route": "paper",
+        "v3_rationale": "context_failed_gate",
+        "v3_elevation_pp": 16.74,
         "v3_hot_status": "hot",
-        "v3_contribution": 2.002,
-        "combined_score": 5.342,
-        "combined_rank": 29,
-        "v2_rank_orig": 46,
+        "v3_contribution": 1.386,
+        "combined_score": 5.996,
+        "combined_rank": 27,
+        "v2_rank_orig": 34,
         "live_eligible": false,
         "paper_eligible": true,
         "hit_rate": 0.54,
         "sample": 30,
-        "start_time": "2026-05-24T02:05:00Z",
+        "start_time": "2026-05-24T23:20:00Z",
         "base_prob": 0.6667,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.7008,
+        "true_prob": 0.7137,
         "hit_rate_shrunk": 0.54,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -37021,7 +36410,7 @@
           ],
           [
             "pitcher_matchup",
-            0.98
+            1.02
           ],
           [
             "park",
@@ -37029,7 +36418,7 @@
           ],
           [
             "handedness",
-            0.98
+            1.02
           ],
           [
             "recency_woba",
@@ -37038,10 +36427,6 @@
           [
             "bullpen",
             1.009
-          ],
-          [
-            "weather",
-            1.04
           ],
           [
             "home_away",
@@ -37059,13 +36444,11 @@
         "hit_rate_source": "baseline_fallback",
         "low_sample": true,
         "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:Angel Stadium:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 3.41,
-        "display_edge": 3.41,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 4.7,
+        "display_edge": 4.7,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
@@ -37083,9 +36466,9 @@
         ],
         "home_l20_nrfi_pct": 0.45,
         "away_l20_nrfi_pct": 0.3,
-        "system_heat": 51.0,
+        "system_heat": 57.4,
         "system_heat_breakdown": {
-          "base_from_rae": 62.0,
+          "base_from_rae": 68.4,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -37096,44 +36479,165 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -8
         },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +3.4pp, RAE +3.0). Driving factors: statcast trend supports (+10%) \u00b7 weather tailwind (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.7pp, RAE +4.6). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
-        "rank": 48,
-        "player": "Carlos Cortes",
-        "team": "ATH",
+        "rank": 35,
+        "player": "Justin Foscue",
+        "team": "TEX",
         "opp": null,
-        "home_abbr": "SD",
-        "away_abbr": "ATH",
-        "home_pp_name": "Lucas Giolito",
-        "away_pp_name": "J.T. Ginn",
+        "home_abbr": "LAA",
+        "away_abbr": "TEX",
+        "home_pp_name": "Reid Detmers",
+        "away_pp_name": "MacKenzie Gore",
         "market": "HITS_ALT",
         "strategy": "MLB Batter Hits Alt",
         "line": 0.5,
         "side": "O",
-        "odds": -175,
+        "odds": -190,
         "tier": "WATCH",
-        "edge_pp": 3.29,
-        "rae": 2.889,
-        "v3_hot_boost": 0.219,
-        "v3_final_boost": 0.2239,
-        "v3_combined_factor": 1.0222,
+        "edge_pp": 4.62,
+        "rae": 4.53,
+        "v3_hot_boost": 0.0818,
+        "v3_final_boost": 0.0753,
+        "v3_combined_factor": 0.92,
         "v3_route": "paper",
         "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 14.6,
+        "v3_elevation_pp": 5.45,
         "v3_hot_status": "neutral",
-        "v3_contribution": 1.343,
-        "combined_score": 4.553,
-        "combined_rank": 35,
-        "v2_rank_orig": 48,
+        "v3_contribution": 0.452,
+        "combined_score": 4.982,
+        "combined_rank": 37,
+        "v2_rank_orig": 35,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.5455,
+        "sample": 13,
+        "start_time": "2026-05-24T23:20:00Z",
+        "base_prob": 0.6552,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.7013,
+        "hit_rate_shrunk": 0.5455,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            1.02
+          ],
+          [
+            "park",
+            0.99
+          ],
+          [
+            "handedness",
+            1.02
+          ],
+          [
+            "recency_woba",
+            1.025
+          ],
+          [
+            "bullpen",
+            1.009
+          ],
+          [
+            "home_away",
+            0.98
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "historical_real",
+        "low_sample": true,
+        "low_sample_n": 1,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 4.62,
+        "display_edge": 4.62,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 6,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.6,
+        "heat_l10_l30_baseline": 0.625,
+        "heat_l10_delta_pp": -2.5,
+        "heat_l10_verdict": "NEUTRAL",
+        "heat_l10_notes": [
+          "6\\10 covered O0.5 (60%) vs L30 baseline 62% \u2014 heat -2.5pp (NEUTRAL)"
+        ],
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.3,
+        "hot_player_l10_hits_per_game": 1.2,
+        "hot_player_l10_hrr_per_game": 2.3,
+        "hot_player_l10_tb_per_game": 2.1,
+        "system_heat": 67.1,
+        "system_heat_breakdown": {
+          "base_from_rae": 68.1,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -3
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.6pp, RAE +4.5). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0)."
+      },
+      {
+        "rank": 36,
+        "player": "Michael Busch",
+        "team": "CHC",
+        "opp": null,
+        "home_abbr": "CHC",
+        "away_abbr": "HOU",
+        "home_pp_name": "Shota Imanaga",
+        "away_pp_name": "Peter Lambert",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -180,
+        "tier": "WATCH",
+        "edge_pp": 4.55,
+        "rae": 4.46,
+        "v3_hot_boost": 0.0,
+        "v3_final_boost": 0.0,
+        "v3_combined_factor": 0.9778,
+        "v3_route": "skip",
+        "v3_rationale": "player_is_cold",
+        "v3_elevation_pp": -11.72,
+        "v3_hot_status": "cold",
+        "v3_contribution": 0.0,
+        "combined_score": 4.46,
+        "combined_rank": 41,
+        "v2_rank_orig": 36,
         "live_eligible": false,
         "paper_eligible": true,
         "hit_rate": 0.62,
         "sample": 30,
-        "start_time": "2026-05-24T01:40:00Z",
-        "base_prob": 0.6364,
+        "start_time": "2026-05-24T18:20:00Z",
+        "base_prob": 0.6429,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.6693,
+        "true_prob": 0.6884,
         "hit_rate_shrunk": 0.62,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
@@ -37141,175 +36645,65 @@
         "factors_applied": [
           [
             "statcast",
-            1.12
+            1.1
           ],
           [
             "park",
-            0.96
-          ],
-          [
-            "handedness",
-            1.02
-          ],
-          [
-            "bullpen",
-            1.036
-          ],
-          [
-            "home_away",
-            0.98
-          ]
-        ],
-        "variance_adjustment": 1.024,
-        "edge_pp_clamped": false,
-        "historical_source": "espn_gamelog",
-        "lineup_unconfirmed": false,
-        "hit_rate_source": "baseline_fallback",
-        "low_sample": true,
-        "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:Petco Park:3@0.9"
-        ],
-        "park_cluster_size": 3,
-        "park_cluster_penalty": 0.9,
-        "edge_raw": 3.29,
-        "display_edge": 3.29,
-        "confidence_multiplier": 1.0,
-        "experimental_blocked_live": false,
-        "c4_gate_reason": null,
-        "heat_l10_cover_factor": 1.0,
-        "heat_l10_raw_factor": 1.0,
-        "heat_l10_strength": 0.3,
-        "heat_l10_covers": 8,
-        "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.8,
-        "heat_l10_l30_baseline": null,
-        "heat_l10_delta_pp": null,
-        "heat_l10_verdict": "INSUFFICIENT_DATA",
-        "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Carlos Cortes\\HITS_ALT\\0.5 \u2014 heat signal idle"
-        ],
-        "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.55,
-        "system_heat": 50.6,
-        "system_heat_breakdown": {
-          "base_from_rae": 61.6,
-          "tier_boost": -3.0,
-          "caveats_individual": {
-            "low_sample": -3,
-            "baseline_fallback": -5,
-            "lineup_unconfirmed": 0,
-            "experimental_blocked": 0
-          },
-          "caveats_capped_at": -10.0,
-          "caveats_applied": -8
-        },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +3.3pp, RAE +2.9). Driving factors: statcast trend supports (+12%) \u00b7 soft opposing bullpen (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
-      },
-      {
-        "rank": 47,
-        "player": "Sal Frelick",
-        "team": "MIL",
-        "opp": null,
-        "home_abbr": "MIL",
-        "away_abbr": "LAD",
-        "home_pp_name": "Robert Gasser",
-        "away_pp_name": "Roki Sasaki",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 0.5,
-        "side": "O",
-        "odds": -180,
-        "tier": "LOCK",
-        "edge_pp": 3.27,
-        "rae": 2.576,
-        "v3_hot_boost": 0.0273,
-        "v3_final_boost": 0.0251,
-        "v3_combined_factor": 0.92,
-        "v3_route": "skip",
-        "v3_rationale": "boost_too_low",
-        "v3_elevation_pp": 1.82,
-        "v3_hot_status": "neutral",
-        "v3_contribution": 0.151,
-        "combined_score": 3.371,
-        "combined_rank": 49,
-        "v2_rank_orig": 47,
-        "live_eligible": false,
-        "paper_eligible": true,
-        "hit_rate": 0.6,
-        "sample": 30,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.6429,
-        "tier_by_rae": "WATCH",
-        "true_prob": 0.6755,
-        "hit_rate_shrunk": 0.6,
-        "confidence_sample": 1.0,
-        "confidence_edge": 1.0,
-        "factor_quality_score": 1.0,
-        "factors_applied": [
-          [
-            "statcast",
-            0.98
-          ],
-          [
-            "pitcher_matchup",
-            1.07
+            1.03
           ],
           [
             "handedness",
             1.03
           ],
           [
-            "recency_woba",
-            0.975
-          ],
-          [
-            "bullpen",
-            1.027
+            "player_performer",
+            0.97
           ],
           [
             "home_away",
             1.02
           ],
           [
+            "series_game",
+            0.995
+          ],
+          [
             "player_rest",
             1.01
           ]
         ],
-        "variance_adjustment": 1.014,
+        "variance_adjustment": 1.02,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
         "hit_rate_source": "baseline_fallback",
         "low_sample": true,
         "low_sample_n": 0,
-        "correlated_group": [
-          "park_cluster:American Family Field:5@0.8"
-        ],
-        "park_cluster_size": 5,
-        "park_cluster_penalty": 0.8,
-        "edge_raw": 3.27,
-        "display_edge": 3.27,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 4.55,
+        "display_edge": 4.55,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
         "heat_l10_cover_factor": 1.0,
         "heat_l10_raw_factor": 1.0,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 7,
+        "heat_l10_covers": 5,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.7,
+        "heat_l10_cover_rate": 0.5,
         "heat_l10_l30_baseline": null,
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": "INSUFFICIENT_DATA",
         "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Sal Frelick\\HITS_ALT\\0.5 \u2014 heat signal idle"
+          "no L30 baseline in historical_hit_rates cache for Michael Busch\\HITS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.4,
-        "away_l20_nrfi_pct": 0.4,
-        "system_heat": 49.3,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.6,
+        "system_heat": 56.8,
         "system_heat_breakdown": {
-          "base_from_rae": 60.3,
+          "base_from_rae": 67.8,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -37320,84 +36714,87 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -8
         },
-        "nrfi_extreme_matchup": "YRFI",
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +3.3pp, RAE +2.6). No standout factor \u2014 pure market-vs-engine edge. Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.5pp, RAE +4.5). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
-        "rank": 50,
-        "player": "Andrew Vaughn",
-        "team": "MIL",
+        "rank": 30,
+        "player": "Jordan Walker",
+        "team": "STL",
         "opp": null,
-        "home_abbr": "MIL",
-        "away_abbr": "LAD",
-        "home_pp_name": "Robert Gasser",
-        "away_pp_name": "Roki Sasaki",
-        "market": "HITS_ALT",
-        "strategy": "MLB Batter Hits Alt",
-        "line": 1.5,
+        "home_abbr": "CIN",
+        "away_abbr": "STL",
+        "home_pp_name": "Brady Singer",
+        "away_pp_name": "Matthew Liberatore",
+        "market": "RBIS_ALT",
+        "strategy": "MLB Batter RBIs Alt",
+        "line": 0.5,
         "side": "O",
-        "odds": 220,
-        "tier": "LOCK",
-        "edge_pp": 3.21,
-        "rae": 2.504,
-        "v3_hot_boost": 0.0547,
-        "v3_final_boost": 0.0504,
-        "v3_combined_factor": 0.92,
-        "v3_route": "paper",
-        "v3_rationale": "paper_only_modest_boost",
-        "v3_elevation_pp": 3.65,
+        "odds": 110,
+        "tier": "WATCH",
+        "edge_pp": 5.34,
+        "rae": 4.192,
+        "v3_hot_boost": 0.0,
+        "v3_final_boost": 0.0,
+        "v3_combined_factor": 0.9778,
+        "v3_route": "skip",
+        "v3_rationale": "no_hot_signal",
+        "v3_elevation_pp": -1.01,
         "v3_hot_status": "neutral",
-        "v3_contribution": 0.302,
-        "combined_score": 3.432,
-        "combined_rank": 47,
-        "v2_rank_orig": 50,
+        "v3_contribution": 0.0,
+        "combined_score": 5.24,
+        "combined_rank": 36,
+        "v2_rank_orig": 30,
         "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.4242,
-        "sample": 13,
-        "start_time": "2026-05-23T23:15:00Z",
-        "base_prob": 0.3125,
+        "hit_rate": 0.42,
+        "sample": 30,
+        "start_time": "2026-05-24T17:40:00Z",
+        "base_prob": 0.4762,
         "tier_by_rae": "WATCH",
-        "true_prob": 0.3446,
-        "hit_rate_shrunk": 0.4242,
+        "true_prob": 0.5296,
+        "hit_rate_shrunk": 0.42,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "statcast",
-            1.12
+            1.1
           ],
           [
             "pitcher_matchup",
             1.07
           ],
           [
+            "park",
+            1.1
+          ],
+          [
             "handedness",
-            0.98
+            0.99
           ],
           [
             "recency_woba",
-            1.025
+            0.99
           ],
           [
             "player_performer",
-            0.97
+            0.95
           ],
           [
             "bullpen",
-            1.027
+            1.053
           ],
           [
             "home_away",
-            1.02
+            0.98
           ],
           [
             "player_rest",
             1.01
           ]
         ],
-        "variance_adjustment": 1.024,
+        "variance_adjustment": 1.02,
         "edge_pp_clamped": false,
         "historical_source": "espn_gamelog",
         "lineup_unconfirmed": false,
@@ -37405,35 +36802,32 @@
         "low_sample": true,
         "low_sample_n": 0,
         "correlated_group": [
-          "park_cluster:American Family Field:5@0.8"
+          "park_cluster:Great American Ball Park:7@0.8"
         ],
-        "park_cluster_size": 5,
+        "park_cluster_size": 7,
         "park_cluster_penalty": 0.8,
-        "edge_raw": 3.21,
-        "display_edge": 3.21,
+        "edge_raw": 5.34,
+        "display_edge": 5.34,
         "confidence_multiplier": 1.0,
         "experimental_blocked_live": false,
         "c4_gate_reason": null,
         "heat_l10_cover_factor": 1.0,
         "heat_l10_raw_factor": 1.0,
         "heat_l10_strength": 0.3,
-        "heat_l10_covers": 3,
+        "heat_l10_covers": 5,
         "heat_l10_games": 10,
-        "heat_l10_cover_rate": 0.3,
+        "heat_l10_cover_rate": 0.5,
         "heat_l10_l30_baseline": null,
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": "INSUFFICIENT_DATA",
         "heat_l10_notes": [
-          "no L30 baseline in historical_hit_rates cache for Andrew Vaughn\\HITS_ALT\\1.5 \u2014 heat signal idle"
+          "no L30 baseline in historical_hit_rates cache for Jordan Walker\\RBIS_ALT\\0.5 \u2014 heat signal idle"
         ],
-        "home_l20_nrfi_pct": 0.4,
-        "away_l20_nrfi_pct": 0.4,
-        "hot_player_l10_hits_per_game": 1.0,
-        "hot_player_l10_hrr_per_game": 2.0,
-        "hot_player_l10_tb_per_game": 1.4,
-        "system_heat": 49.0,
+        "home_l20_nrfi_pct": 0.7,
+        "away_l20_nrfi_pct": 0.6,
+        "system_heat": 55.8,
         "system_heat_breakdown": {
-          "base_from_rae": 60.0,
+          "base_from_rae": 66.8,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": -3,
@@ -37444,26 +36838,147 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": -8
         },
-        "nrfi_extreme_matchup": "YRFI",
-        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +3.2pp, RAE +2.5). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +5.3pp, RAE +4.2). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
       },
       {
-        "rank": 31,
-        "player": "TOR ML (PIT@TOR)",
+        "rank": 44,
+        "player": "Trevor Larnach",
+        "team": "MIN",
+        "opp": null,
+        "home_abbr": "BOS",
+        "away_abbr": "MIN",
+        "home_pp_name": "Sonny Gray",
+        "away_pp_name": "Bailey Ober",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -185,
+        "tier": "WATCH",
+        "edge_pp": 4.21,
+        "rae": 4.13,
+        "v3_hot_boost": 0.0,
+        "v3_final_boost": 0.0,
+        "v3_combined_factor": 0.92,
+        "v3_route": "skip",
+        "v3_rationale": "no_hot_signal",
+        "v3_elevation_pp": -9.5,
+        "v3_hot_status": "neutral",
+        "v3_contribution": 0.0,
+        "combined_score": 4.13,
+        "combined_rank": 46,
+        "v2_rank_orig": 44,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.58,
+        "sample": 30,
+        "start_time": "2026-05-24T17:35:00Z",
+        "base_prob": 0.6491,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.6912,
+        "hit_rate_shrunk": 0.58,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            0.98
+          ],
+          [
+            "park",
+            1.06
+          ],
+          [
+            "handedness",
+            1.02
+          ],
+          [
+            "player_performer",
+            0.95
+          ],
+          [
+            "bullpen",
+            1.049
+          ],
+          [
+            "home_away",
+            0.98
+          ],
+          [
+            "series_game",
+            0.995
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": null,
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 4.21,
+        "display_edge": 4.21,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 5,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.5,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for Trevor Larnach\\HITS_ALT\\0.5 \u2014 heat signal idle"
+        ],
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.45,
+        "system_heat": 55.5,
+        "system_heat_breakdown": {
+          "base_from_rae": 66.5,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": -5,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -8
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.2pp, RAE +4.1). Driving factors: statcast trend supports (+10%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+      },
+      {
+        "rank": 46,
+        "player": "CLE ML (CLE@PHI)",
         "team": null,
         "opp": null,
-        "home_abbr": "TOR",
-        "away_abbr": "PIT",
-        "home_pp_name": "Patrick Corbin",
-        "away_pp_name": "Paul Skenes",
+        "home_abbr": "PHI",
+        "away_abbr": "CLE",
+        "home_pp_name": "Andrew Painter",
+        "away_pp_name": "Parker Messick",
         "market": "ML",
         "strategy": "MLB Moneyline",
         "line": null,
-        "side": "TOR",
-        "odds": -280,
+        "side": "CLE",
+        "odds": -116,
         "tier": "WATCH",
         "edge_pp": 4.13,
-        "rae": 4.09,
+        "rae": 4.05,
         "v3_hot_boost": null,
         "v3_final_boost": null,
         "v3_combined_factor": null,
@@ -37472,52 +36987,44 @@
         "v3_elevation_pp": null,
         "v3_hot_status": null,
         "v3_contribution": 0.0,
-        "combined_score": 4.09,
-        "combined_rank": 39,
-        "v2_rank_orig": 31,
+        "combined_score": 4.05,
+        "combined_rank": 48,
+        "v2_rank_orig": 46,
         "live_eligible": false,
         "paper_eligible": true,
-        "hit_rate": 0.6,
+        "hit_rate": 0.8,
         "sample": 10,
-        "start_time": "2026-05-23T19:07:00Z",
-        "base_prob": 0.7368,
+        "start_time": "2026-05-24T17:35:00Z",
+        "base_prob": 0.537,
         "tier_by_rae": "SIDE",
-        "true_prob": 0.7782,
-        "hit_rate_shrunk": 0.6,
+        "true_prob": 0.5783,
+        "hit_rate_shrunk": 0.8,
         "confidence_sample": 1.0,
         "confidence_edge": 1.0,
         "factor_quality_score": 1.0,
         "factors_applied": [
           [
             "team_handedness",
-            0.963
+            0.966
+          ],
+          [
+            "team_form",
+            1.02
           ],
           [
             "team_record",
-            1.04
+            1.066
           ],
           [
             "team_home_road",
-            1.044
-          ],
-          [
-            "bullpen_fatigue",
-            0.986
+            1.096
           ],
           [
             "bullpen_quality",
             1.02
-          ],
-          [
-            "head_to_head",
-            1.04
-          ],
-          [
-            "line_movement",
-            1.03
           ]
         ],
-        "variance_adjustment": 1.0088,
+        "variance_adjustment": 1.0192,
         "edge_pp_clamped": false,
         "historical_source": "team_record_l10",
         "lineup_unconfirmed": false,
@@ -37542,11 +37049,11 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.4,
-        "system_heat": 63.4,
+        "home_l20_nrfi_pct": 0.6,
+        "away_l20_nrfi_pct": 0.65,
+        "system_heat": 63.2,
         "system_heat_breakdown": {
-          "base_from_rae": 66.4,
+          "base_from_rae": 66.2,
           "tier_boost": -3.0,
           "caveats_individual": {
             "low_sample": 0,
@@ -37557,13 +37064,617 @@
           "caveats_capped_at": -10.0,
           "caveats_applied": 0
         },
-        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.1pp, RAE +4.1). No standout factor \u2014 pure market-vs-engine edge."
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.1pp, RAE +4.0). No standout factor \u2014 pure market-vs-engine edge."
+      },
+      {
+        "rank": 39,
+        "player": "Casey Schmitt",
+        "team": "SF",
+        "opp": null,
+        "home_abbr": "SF",
+        "away_abbr": "CHW",
+        "home_pp_name": "Robbie Ray",
+        "away_pp_name": "Noah Schultz",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -195,
+        "tier": "WATCH",
+        "edge_pp": 4.36,
+        "rae": 3.843,
+        "v3_hot_boost": 0.0,
+        "v3_final_boost": 0.0,
+        "v3_combined_factor": 0.92,
+        "v3_route": "skip",
+        "v3_rationale": "no_hot_signal",
+        "v3_elevation_pp": -0.75,
+        "v3_hot_status": "neutral",
+        "v3_contribution": 0.0,
+        "combined_score": 4.27,
+        "combined_rank": 43,
+        "v2_rank_orig": 39,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.62,
+        "sample": 30,
+        "start_time": "2026-05-24T20:05:00Z",
+        "base_prob": 0.661,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.7046,
+        "hit_rate_shrunk": 0.62,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            1.02
+          ],
+          [
+            "park",
+            0.97
+          ],
+          [
+            "handedness",
+            1.01
+          ],
+          [
+            "recency_woba",
+            0.975
+          ],
+          [
+            "weather",
+            1.04
+          ],
+          [
+            "home_away",
+            1.02
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": [
+          "park_cluster:Oracle Park:3@0.9"
+        ],
+        "park_cluster_size": 3,
+        "park_cluster_penalty": 0.9,
+        "edge_raw": 4.36,
+        "display_edge": 4.36,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 6,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.6,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for Casey Schmitt\\HITS_ALT\\0.5 \u2014 heat signal idle"
+        ],
+        "home_l20_nrfi_pct": 0.5,
+        "system_heat": 54.4,
+        "system_heat_breakdown": {
+          "base_from_rae": 65.4,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": -5,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -8
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.4pp, RAE +3.8). Driving factors: statcast trend supports (+10%) \u00b7 weather tailwind (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+      },
+      {
+        "rank": 47,
+        "player": "Rafael Devers",
+        "team": "SF",
+        "opp": null,
+        "home_abbr": "SF",
+        "away_abbr": "CHW",
+        "home_pp_name": "Robbie Ray",
+        "away_pp_name": "Noah Schultz",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -165,
+        "tier": "WATCH",
+        "edge_pp": 4.1,
+        "rae": 3.618,
+        "v3_hot_boost": 0.0249,
+        "v3_final_boost": 0.0229,
+        "v3_combined_factor": 0.92,
+        "v3_route": "skip",
+        "v3_rationale": "boost_too_low",
+        "v3_elevation_pp": 1.66,
+        "v3_hot_status": "neutral",
+        "v3_contribution": 0.137,
+        "combined_score": 4.157,
+        "combined_rank": 45,
+        "v2_rank_orig": 47,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.62,
+        "sample": 30,
+        "start_time": "2026-05-24T20:05:00Z",
+        "base_prob": 0.6226,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.6637,
+        "hit_rate_shrunk": 0.62,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.1
+          ],
+          [
+            "pitcher_matchup",
+            1.02
+          ],
+          [
+            "park",
+            0.97
+          ],
+          [
+            "handedness",
+            0.99
+          ],
+          [
+            "recency_woba",
+            0.975
+          ],
+          [
+            "player_performer",
+            1.02
+          ],
+          [
+            "weather",
+            1.04
+          ],
+          [
+            "home_away",
+            1.02
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.02,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": [
+          "park_cluster:Oracle Park:3@0.9"
+        ],
+        "park_cluster_size": 3,
+        "park_cluster_penalty": 0.9,
+        "edge_raw": 4.1,
+        "display_edge": 4.1,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 7,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.7,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for Rafael Devers\\HITS_ALT\\0.5 \u2014 heat signal idle"
+        ],
+        "home_l20_nrfi_pct": 0.5,
+        "system_heat": 53.5,
+        "system_heat_breakdown": {
+          "base_from_rae": 64.5,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": -5,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -8
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.1pp, RAE +3.6). Driving factors: statcast trend supports (+10%) \u00b7 weather tailwind (+4%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+      },
+      {
+        "rank": 50,
+        "player": "William Contreras",
+        "team": "MIL",
+        "opp": null,
+        "home_abbr": "MIL",
+        "away_abbr": "LAD",
+        "home_pp_name": "Brandon Sproat",
+        "away_pp_name": "Yoshinobu Yamamoto",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -210,
+        "tier": "LOCK",
+        "edge_pp": 4.06,
+        "rae": 3.564,
+        "v3_hot_boost": 0.1315,
+        "v3_final_boost": 0.1209,
+        "v3_combined_factor": 0.92,
+        "v3_route": "paper",
+        "v3_rationale": "paper_only_modest_boost",
+        "v3_elevation_pp": 8.76,
+        "v3_hot_status": "neutral",
+        "v3_contribution": 0.725,
+        "combined_score": 4.685,
+        "combined_rank": 39,
+        "v2_rank_orig": 50,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.62,
+        "sample": 30,
+        "start_time": "2026-05-24T18:10:00Z",
+        "base_prob": 0.6774,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.718,
+        "hit_rate_shrunk": 0.62,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.12
+          ],
+          [
+            "pitcher_matchup",
+            0.98
+          ],
+          [
+            "handedness",
+            0.97
+          ],
+          [
+            "recency_woba",
+            1.025
+          ],
+          [
+            "bullpen",
+            1.013
+          ],
+          [
+            "home_away",
+            1.02
+          ],
+          [
+            "series_game",
+            0.995
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.024,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": [
+          "park_cluster:American Family Field:3@0.9"
+        ],
+        "park_cluster_size": 3,
+        "park_cluster_penalty": 0.9,
+        "edge_raw": 4.06,
+        "display_edge": 4.06,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 8,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.8,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for William Contreras\\HITS_ALT\\0.5 \u2014 heat signal idle"
+        ],
+        "home_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.4,
+        "hot_player_l10_hits_per_game": 1.4,
+        "hot_player_l10_hrr_per_game": 2.5,
+        "hot_player_l10_tb_per_game": 1.8,
+        "system_heat": 58.3,
+        "system_heat_breakdown": {
+          "base_from_rae": 64.3,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": -5,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -8
+        },
+        "nrfi_extreme_matchup": "YRFI",
+        "ai_reasoning": "Engine reads this as highest-conviction LOCK (edge +4.1pp, RAE +3.6). Driving factors: statcast trend supports (+12%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+      },
+      {
+        "rank": 40,
+        "player": "JJ Bleday",
+        "team": "CIN",
+        "opp": null,
+        "home_abbr": "CIN",
+        "away_abbr": "STL",
+        "home_pp_name": "Brady Singer",
+        "away_pp_name": "Matthew Liberatore",
+        "market": "HITS_ALT",
+        "strategy": "MLB Batter Hits Alt",
+        "line": 0.5,
+        "side": "O",
+        "odds": -170,
+        "tier": "WATCH",
+        "edge_pp": 4.28,
+        "rae": 3.384,
+        "v3_hot_boost": 0.0,
+        "v3_final_boost": 0.0,
+        "v3_combined_factor": 1.1,
+        "v3_route": "skip",
+        "v3_rationale": "player_is_cold",
+        "v3_elevation_pp": -17.69,
+        "v3_hot_status": "cold",
+        "v3_contribution": 0.0,
+        "combined_score": 4.23,
+        "combined_rank": 44,
+        "v2_rank_orig": 40,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.5952,
+        "sample": 22,
+        "start_time": "2026-05-24T17:40:00Z",
+        "base_prob": 0.6296,
+        "tier_by_rae": "WATCH",
+        "true_prob": 0.6724,
+        "hit_rate_shrunk": 0.5952,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "statcast",
+            1.06
+          ],
+          [
+            "pitcher_matchup",
+            1.04
+          ],
+          [
+            "park",
+            1.04
+          ],
+          [
+            "handedness",
+            0.99
+          ],
+          [
+            "recency_woba",
+            0.975
+          ],
+          [
+            "bullpen",
+            1.018
+          ],
+          [
+            "home_away",
+            1.02
+          ],
+          [
+            "series_game",
+            0.995
+          ],
+          [
+            "player_rest",
+            1.01
+          ]
+        ],
+        "variance_adjustment": 1.012,
+        "edge_pp_clamped": false,
+        "historical_source": "espn_gamelog",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": "baseline_fallback",
+        "low_sample": true,
+        "low_sample_n": 0,
+        "correlated_group": [
+          "park_cluster:Great American Ball Park:7@0.8"
+        ],
+        "park_cluster_size": 7,
+        "park_cluster_penalty": 0.8,
+        "edge_raw": 4.28,
+        "display_edge": 4.28,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": 1.0,
+        "heat_l10_raw_factor": 1.0,
+        "heat_l10_strength": 0.3,
+        "heat_l10_covers": 5,
+        "heat_l10_games": 10,
+        "heat_l10_cover_rate": 0.5,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": "INSUFFICIENT_DATA",
+        "heat_l10_notes": [
+          "no L30 baseline in historical_hit_rates cache for JJ Bleday\\HITS_ALT\\0.5 \u2014 heat signal idle"
+        ],
+        "home_l20_nrfi_pct": 0.7,
+        "away_l20_nrfi_pct": 0.6,
+        "system_heat": 52.5,
+        "system_heat_breakdown": {
+          "base_from_rae": 63.5,
+          "tier_boost": -3.0,
+          "caveats_individual": {
+            "low_sample": -3,
+            "baseline_fallback": -5,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": -8
+        },
+        "ai_reasoning": "Engine reads this as speculative \\ monitoring (edge +4.3pp, RAE +3.4). Driving factors: statcast trend supports (+6%). Caveats: thin historical sample (n=0), no real baseline \u2014 using league-average prior."
+      },
+      {
+        "rank": 8,
+        "player": "MIL ML (LAD@MIL)",
+        "team": null,
+        "opp": null,
+        "home_abbr": "MIL",
+        "away_abbr": "LAD",
+        "home_pp_name": "Brandon Sproat",
+        "away_pp_name": "Yoshinobu Yamamoto",
+        "market": "ML",
+        "strategy": "MLB Moneyline",
+        "line": null,
+        "side": "MIL",
+        "odds": 144,
+        "tier": "STRONG",
+        "edge_pp": 8.19,
+        "rae": 7.97,
+        "v3_hot_boost": null,
+        "v3_final_boost": null,
+        "v3_combined_factor": null,
+        "v3_route": "team_market_unscored",
+        "v3_rationale": null,
+        "v3_elevation_pp": null,
+        "v3_hot_status": null,
+        "v3_contribution": 0.0,
+        "combined_score": 7.97,
+        "combined_rank": 10,
+        "v2_rank_orig": 8,
+        "live_eligible": false,
+        "paper_eligible": true,
+        "hit_rate": 0.7,
+        "sample": 10,
+        "start_time": "2026-05-24T18:10:00Z",
+        "base_prob": 0.4098,
+        "tier_by_rae": "STRONG",
+        "true_prob": 0.4918,
+        "hit_rate_shrunk": 0.7,
+        "confidence_sample": 1.0,
+        "confidence_edge": 1.0,
+        "factor_quality_score": 1.0,
+        "factors_applied": [
+          [
+            "team_handedness",
+            1.013
+          ],
+          [
+            "team_form",
+            1.14
+          ],
+          [
+            "team_record",
+            1.076
+          ],
+          [
+            "team_home_road",
+            1.096
+          ],
+          [
+            "bullpen_fatigue",
+            0.989
+          ],
+          [
+            "bullpen_quality",
+            1.02
+          ],
+          [
+            "team_scoring_trend",
+            1.08
+          ]
+        ],
+        "variance_adjustment": 1.028,
+        "edge_pp_clamped": false,
+        "historical_source": "team_record_l10",
+        "lineup_unconfirmed": false,
+        "hit_rate_source": null,
+        "low_sample": false,
+        "low_sample_n": null,
+        "correlated_group": [
+          "same_game:pk:823786:demoted_to_winner_ML"
+        ],
+        "park_cluster_size": null,
+        "park_cluster_penalty": null,
+        "edge_raw": 8.19,
+        "display_edge": 8.19,
+        "confidence_multiplier": 1.0,
+        "experimental_blocked_live": false,
+        "c4_gate_reason": null,
+        "heat_l10_cover_factor": null,
+        "heat_l10_raw_factor": null,
+        "heat_l10_strength": null,
+        "heat_l10_covers": null,
+        "heat_l10_games": null,
+        "heat_l10_cover_rate": null,
+        "heat_l10_l30_baseline": null,
+        "heat_l10_delta_pp": null,
+        "heat_l10_verdict": null,
+        "heat_l10_notes": null,
+        "home_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.4,
+        "system_heat": 87.9,
+        "system_heat_breakdown": {
+          "base_from_rae": 81.9,
+          "tier_boost": 6.0,
+          "caveats_individual": {
+            "low_sample": 0,
+            "baseline_fallback": 0,
+            "lineup_unconfirmed": 0,
+            "experimental_blocked": 0
+          },
+          "caveats_capped_at": -10.0,
+          "caveats_applied": 0
+        },
+        "ai_reasoning": "Engine reads this as strong-conviction (edge +8.2pp, RAE +8.0). Driving factors: team momentum supports (+14%)."
       }
     ],
-    "source_file": "v2_scout_2026-05-23_evening.json",
+    "source_file": "v2_scout_2026-05-24.json",
     "total_in_cache": 52,
-    "is_today": false,
-    "daily_brief": "24 picks across 8 games today. Tier mix: 6 LOCK, 4 GOOD, 14 WATCH. Market mix: 19\u00d7 PROP, 5\u00d7 ML. \u26a0 Caveats: 11 picks on phantom baseline (no real history); 19 picks with thin n<20 sample."
+    "is_today": true,
+    "daily_brief": "25 picks across 12 games today. Tier mix: 3 LOCK, 2 STRONG, 4 GOOD, 16 WATCH. Market mix: 18\u00d7 PROP, 6\u00d7 ML, 1\u00d7 SPREAD. \u26a0 Caveats: 11 picks on phantom baseline (no real history); 18 picks with thin n<20 sample."
   },
   "lens_backtest": {
     "generated_at": "2026-05-24T14:47:53.885529Z",
@@ -54027,7 +54138,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-24 10:56 ET",
+  "built_at_et": "2026-05-24 11:01 ET",
   "counts": {
     "picks_total": 478,
     "settled": 188,
