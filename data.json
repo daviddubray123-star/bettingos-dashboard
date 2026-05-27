@@ -1,6 +1,6 @@
 {
-  "build_id": "260527-023410",
-  "generated_at": "2026-05-27T02:34:11.238120+00:00",
+  "build_id": "260527-023528",
+  "generated_at": "2026-05-27T02:35:33.316612+00:00",
   "today": "2026-05-26",
   "yesterday": "2026-05-25",
   "bankroll": {
@@ -11826,7 +11826,7 @@
       "notes": "[CHALLENGER rank-#1] \u00b7 [LATE_SLATE] \u00b7 heat 100% (LOCK-grade) \u00b7 edge +15.0pp \u00b7 rae +14.9 \u00b7 rank #1 \u00b7 factor x1.24 \u00b7 n=10  [auto-confirmed @ 21:04 ET]"
     }
   ],
-  "built_at": "2026-05-27T02:34:11.238294+00:00",
+  "built_at": "2026-05-27T02:35:33.316806+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -30484,10 +30484,10 @@
     },
     {
       "Name": "BettingOS - dashboard-refresh",
-      "State": "Ready",
-      "NextRun": "2026-05-26 22:35",
-      "LastRun": "2026-05-26 22:30",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-05-26 22:40",
+      "LastRun": "2026-05-26 22:35",
+      "LastResult": 267009,
       "WakeToRun": true
     },
     {
@@ -30532,10 +30532,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Running",
+      "State": "Ready",
       "NextRun": "2026-05-26 23:00",
       "LastRun": "2026-05-26 22:30",
-      "LastResult": 267009,
+      "LastResult": 0,
       "WakeToRun": true
     },
     {
@@ -32161,7 +32161,7 @@
             "home_hits": 4,
             "home_errors": 0,
             "away_runs": 15,
-            "away_hits": 22,
+            "away_hits": 23,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -32363,9 +32363,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 822898,
-            "status": "In Progress",
-            "abstract_state": "Live",
-            "status_code": "I",
+            "status": "Game Over",
+            "abstract_state": "Final",
+            "status_code": "O",
             "current_inning": 9,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -32478,8 +32478,8 @@
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
-            "away_runs": 3,
-            "away_hits": 6,
+            "away_runs": 4,
+            "away_hits": 8,
             "away_errors": 0,
             "home_innings": [
               0,
@@ -32491,7 +32491,7 @@
               0,
               3,
               0,
-              null
+              1
             ],
             "scheduled_innings": 9
           }
@@ -32515,7 +32515,7 @@
           "park_hr_factor": 0.96,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 61.3,
+          "weather_temp": 61.2,
           "weather_notes": [],
           "park_runs_factor": 0.92,
           "nrfi_prob": 56.0,
@@ -32562,7 +32562,7 @@
             "status_code": "I",
             "current_inning": 4,
             "inning_half": "Top",
-            "inning_state": "Top",
+            "inning_state": "Middle",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
@@ -32579,7 +32579,7 @@
               1,
               1,
               2,
-              null
+              0
             ],
             "scheduled_innings": 9
           }
@@ -32603,7 +32603,7 @@
           "park_hr_factor": 0.89,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 55.2,
+          "weather_temp": 55.0,
           "weather_notes": [],
           "park_runs_factor": 0.93,
           "nrfi_prob": 48.4,
@@ -32613,13 +32613,13 @@
             "p_top": 68.0,
             "p_bot": 69.8,
             "park_mult": 1.007,
-            "weather_adj": 0.0096,
+            "weather_adj": 0.01,
             "home_sp_rate": 0.6,
             "home_sp_sample": 10,
             "away_sp_rate": 0.6,
             "away_sp_sample": 10
           },
-          "nrfi_reasoning": "Tyler Mahle 60% 1st-inning scoreless over 10 starts (weak) \u00b7 Eduardo Rodriguez 60% 1st-inning scoreless over 10 starts (weak) \u00b7 pitcher park (0.93 runs factor) boosts NRFI",
+          "nrfi_reasoning": "Tyler Mahle 60% 1st-inning scoreless over 10 starts (weak) \u00b7 Eduardo Rodriguez 60% 1st-inning scoreless over 10 starts (weak) \u00b7 pitcher park (0.93 runs factor) boosts NRFI \u00b7 cold temp (55\u00b0F) boosts NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Rafael Devers",
@@ -37300,14 +37300,14 @@
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 215.0
+        "age_hours": 215.1
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 212.5
+        "age_hours": 212.6
       },
       {
         "name": "ai_learner_2026-05-19.md",
@@ -37335,28 +37335,28 @@
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 116.5
+        "age_hours": 116.6
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 76.5
+        "age_hours": 76.6
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 47.0
+        "age_hours": 47.1
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 23.0
+        "age_hours": 23.1
       },
       {
         "name": "ai_learner_2026-05-26.md",
@@ -37391,14 +37391,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 277.0
+        "age_hours": 277.1
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 276.8
+        "age_hours": 276.9
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -37440,7 +37440,7 @@
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 324.8
+        "age_hours": 324.9
       },
       {
         "name": "design_engine_v2.md",
@@ -37622,28 +37622,28 @@
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 236.5
+        "age_hours": 236.6
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 212.5
+        "age_hours": 212.6
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 164.5
+        "age_hours": 164.6
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 140.5
+        "age_hours": 140.6
       },
       {
         "name": "learning_journal_2026-05-21.md",
@@ -37713,7 +37713,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 168.5
+        "age_hours": 168.6
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -37881,7 +37881,7 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 334.8
+        "age_hours": 334.9
       },
       {
         "name": "system_test_2026-05-13.md",
@@ -37895,14 +37895,14 @@
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 334.1
+        "age_hours": 334.2
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 320.8
+        "age_hours": 320.9
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -38022,7 +38022,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-05-26.json",
         "latest_date": "2026-05-26",
-        "age_hours": 6.0,
+        "age_hours": 6.1,
         "bytes": 10183,
         "row_count": null,
         "last_refresh_iso": "2026-05-26T20:32:01.385306+00:00",
@@ -38072,12 +38072,12 @@
       {
         "label": "Weather snapshots",
         "status": "fresh",
-        "latest_file": "wx_ATH_2026-05-27T01.json",
+        "latest_file": "wx_SF_2026-05-27T01.json",
         "latest_date": "2026-05-27",
-        "age_hours": 0.1,
-        "bytes": 213,
+        "age_hours": 0.0,
+        "bytes": 207,
         "row_count": 30,
-        "last_refresh_iso": "2026-05-27T02:30:53.065933+00:00",
+        "last_refresh_iso": "2026-05-27T02:35:29.632674+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -46454,7 +46454,7 @@
       "pitcher_signal": 6.19,
       "park_nrfi_mult": 1.08,
       "park_signal": 2.0,
-      "temp_f": 61.3,
+      "temp_f": 61.2,
       "temp_signal": 0.0,
       "ump_name": "Nestor Ceja",
       "ump_k_pct_bias": null,
@@ -46578,12 +46578,12 @@
       "pitcher_signal": 1.63,
       "park_nrfi_mult": 1.07,
       "park_signal": 1.75,
-      "temp_f": 55.2,
-      "temp_signal": 2.4,
+      "temp_f": 55.0,
+      "temp_signal": 2.5,
       "ump_name": "Sean Barber",
       "ump_k_pct_bias": -0.3,
       "ump_signal": -0.45,
-      "confidence": 54.6,
+      "confidence": 54.7,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58649,7 +58649,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-05-26 22:34 ET",
+  "built_at_et": "2026-05-26 22:36 ET",
   "counts": {
     "picks_total": 593,
     "settled": 236,
