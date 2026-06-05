@@ -1,6 +1,6 @@
 {
-  "build_id": "260605-111033",
-  "generated_at": "2026-06-05T11:10:33.905226+00:00",
+  "build_id": "260605-111547",
+  "generated_at": "2026-06-05T11:16:25.113078+00:00",
   "today": "2026-06-05",
   "yesterday": "2026-06-04",
   "bankroll": {
@@ -13915,7 +13915,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-06-05T11:10:33.905602+00:00",
+  "built_at": "2026-06-05T11:16:25.122923+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -35923,188 +35923,7 @@
   },
   "wts_tasks": [
     {
-      "Name": "BettingOS - ai-advisor",
-      "State": "Ready",
-      "NextRun": "2026-06-06 07:00",
-      "LastRun": "2026-06-05 07:00",
-      "LastResult": 0,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - ai-learner-weekly",
-      "State": "Ready",
-      "NextRun": "2026-06-07 03:00",
-      "LastRun": "2026-05-31 03:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - auto-confirm-paper",
-      "State": "Ready",
-      "NextRun": "2026-06-05 13:05",
-      "LastRun": "2026-06-04 13:05",
-      "LastResult": 0,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - bankroll-check",
-      "State": "Ready",
-      "NextRun": "2026-06-05 08:30",
-      "LastRun": "2026-06-04 08:30",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - clv-capture",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-05-16 18:30",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - clv-capture-v2",
-      "State": "Ready",
-      "NextRun": "2026-06-05 12:30",
-      "LastRun": "2026-06-04 19:30",
-      "LastResult": 0,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - confirm-server",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-06-02 17:36",
-      "LastResult": 2147942402,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
-      "NextRun": "2026-06-05 07:15",
-      "LastRun": "2026-06-05 07:10",
-      "LastResult": 267009,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - eod-reconcile",
-      "State": "Ready",
-      "NextRun": "2026-06-05 23:55",
-      "LastRun": "2026-06-04 23:55",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - evening-scout",
-      "State": "Ready",
-      "NextRun": "2026-06-05 15:15",
-      "LastRun": "2026-06-03 15:15",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - evening-verify-and-fire",
-      "State": "Ready",
-      "NextRun": "2026-06-05 15:50",
-      "LastRun": "2026-06-03 15:50",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - form-discovery",
-      "State": "Ready",
-      "NextRun": "2026-06-05 11:30",
-      "LastRun": "2026-06-04 11:30",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - health-check",
-      "State": "Ready",
-      "NextRun": "2026-06-06 01:00",
-      "LastRun": "2026-06-05 01:00",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - intraday-settle",
-      "State": "Ready",
-      "NextRun": "2026-06-05 13:00",
-      "LastRun": "2026-06-05 03:00",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - late-slate-lock",
-      "State": "Disabled",
-      "NextRun": "2026-06-05 15:00",
-      "LastRun": "2026-06-01 16:41",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - morning-recap",
-      "State": "Ready",
-      "NextRun": "2026-06-06 06:00",
-      "LastRun": "2026-06-05 06:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - morning-scout",
-      "State": "Ready",
-      "NextRun": "2026-06-05 12:00",
-      "LastRun": "2026-06-04 12:00",
-      "LastResult": 267014,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - night-settle",
-      "State": "Ready",
-      "NextRun": "2026-06-06 02:00",
-      "LastRun": "2026-06-05 02:00",
-      "LastResult": 4294967295,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - odds-api-monitor",
-      "State": "Ready",
-      "NextRun": "2026-06-05 14:00",
-      "LastRun": "2026-06-05 06:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - tg-listener",
-      "State": "Running",
-      "NextRun": "2026-06-06 00:01",
-      "LastRun": "2026-06-05 00:01",
-      "LastResult": 267009,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - tg-listener-boot",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-06-02 17:36",
-      "LastResult": 2147942402,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - tripwire",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-05-18 06:48",
-      "LastResult": 2147942402,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - verify-and-fire",
-      "State": "Ready",
-      "NextRun": "2026-06-05 12:35",
-      "LastRun": "2026-06-04 12:35",
-      "LastResult": 0,
-      "WakeToRun": true
+      "error": "Command '['powershell', '-NoProfile', '-NonInteractive', '-Command', 'Get-ScheduledTask -TaskName \"BettingOS*\" -ErrorAction SilentlyContinue | ForEach-Object {   $info = Get-ScheduledTaskInfo $_;   [PSCustomObject]@{     Name = $_.TaskName;     State = $_.State.ToString();     NextRun = if ($info.NextRunTime) { $info.NextRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastRun = if ($info.LastRunTime) { $info.LastRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastResult = $info.LastTaskResult;     WakeToRun = $_.Settings.WakeToRun   } } | ConvertTo-Json -Compress']' timed out after 15 seconds"
     }
   ],
   "log_completes": {
@@ -36782,9 +36601,9 @@
           "park_hr_factor": 1.04,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 72.2,
+          "weather_temp": 72.7,
           "weather_notes": [
-            "Wind OUT 9 mph (+4%)"
+            "Wind OUT 10 mph (+4%)"
           ],
           "park_runs_factor": 1.06,
           "nrfi_prob": 61.2,
@@ -36868,25 +36687,25 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.02,
           "weather_wind": "cross",
-          "weather_temp": 86.9,
+          "weather_temp": 85.4,
           "weather_notes": [
-            "Temp 87F (+2% ball carries)"
+            "Temp 85F (+2% ball carries)"
           ],
           "park_runs_factor": 0.96,
-          "nrfi_prob": 49.1,
+          "nrfi_prob": 49.4,
           "nrfi_meta": {
             "base": 50.9,
             "min_sample": 12,
             "p_top": 69.1,
             "p_bot": 73.7,
             "park_mult": 1.004,
-            "weather_adj": -0.0178,
+            "weather_adj": -0.0148,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 12,
             "away_sp_rate": 0.8333,
             "away_sp_sample": 12
           },
-          "nrfi_reasoning": "Framber Valdez 67% 1st-inning scoreless over 12 starts (weak) \u00b7 Bryan Woo 83% 1st-inning scoreless over 12 starts (strong) \u00b7 warm temp (87\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Framber Valdez 67% 1st-inning scoreless over 12 starts (weak) \u00b7 Bryan Woo 83% 1st-inning scoreless over 12 starts (strong) \u00b7 warm temp (85\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [],
           "hot_away_batters": [],
           "bvp_notes": [],
@@ -36928,9 +36747,9 @@
           "park_hr_factor": 1.11,
           "weather_factor": 1.02,
           "weather_wind": "cross",
-          "weather_temp": 91.4,
+          "weather_temp": 91.7,
           "weather_notes": [
-            "Temp 91F (+2% ball carries)"
+            "Temp 92F (+2% ball carries)"
           ],
           "park_runs_factor": 1.06,
           "nrfi_prob": 47.7,
@@ -36946,7 +36765,7 @@
             "away_sp_rate": 0.5,
             "away_sp_sample": 10
           },
-          "nrfi_reasoning": "Jes\u00fas Luzardo 92% 1st-inning scoreless over 12 starts (elite) \u00b7 Anthony Kay 50% 1st-inning scoreless over 10 starts (weak) \u00b7 hitter park (1.06 runs factor) drops NRFI \u00b7 warm temp (91\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Jes\u00fas Luzardo 92% 1st-inning scoreless over 12 starts (elite) \u00b7 Anthony Kay 50% 1st-inning scoreless over 10 starts (weak) \u00b7 hitter park (1.06 runs factor) drops NRFI \u00b7 warm temp (92\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Bryce Harper",
@@ -37001,19 +36820,19 @@
           "park_hr_factor": 1.1,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 81.7,
+          "weather_temp": 81.9,
           "weather_notes": [
             "Wind OUT 9 mph (+4%)"
           ],
           "park_runs_factor": 1.05,
-          "nrfi_prob": 45.4,
+          "nrfi_prob": 45.3,
           "nrfi_meta": {
             "base": 46.1,
             "min_sample": 10,
             "p_top": 69.9,
             "p_bot": 65.9,
             "park_mult": 0.995,
-            "weather_adj": -0.0074,
+            "weather_adj": -0.0078,
             "home_sp_rate": 0.6364,
             "home_sp_sample": 11,
             "away_sp_rate": 0.6,
@@ -37235,19 +37054,19 @@
           "park_hr_factor": 1.07,
           "weather_factor": 1.02,
           "weather_wind": "cross",
-          "weather_temp": 85.3,
+          "weather_temp": 85.0,
           "weather_notes": [
             "Temp 85F (+2% ball carries)"
           ],
           "park_runs_factor": 1.02,
-          "nrfi_prob": 46.7,
+          "nrfi_prob": 46.8,
           "nrfi_meta": {
             "base": 48.2,
             "min_sample": 8,
             "p_top": 65.0,
             "p_bot": 74.2,
             "park_mult": 0.998,
-            "weather_adj": -0.0146,
+            "weather_adj": -0.014,
             "home_sp_rate": 0.625,
             "home_sp_sample": 8,
             "away_sp_rate": 0.8333,
@@ -37410,26 +37229,26 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.06,
           "weather_wind": "out",
-          "weather_temp": 85.9,
+          "weather_temp": 86.6,
           "weather_notes": [
             "Wind OUT 9 mph (+4%)",
-            "Temp 86F (+2% ball carries)"
+            "Temp 87F (+2% ball carries)"
           ],
           "park_runs_factor": 0.95,
-          "nrfi_prob": 52.0,
+          "nrfi_prob": 51.9,
           "nrfi_meta": {
             "base": 53.6,
             "min_sample": 11,
             "p_top": 81.9,
             "p_bot": 65.5,
             "park_mult": 1.005,
-            "weather_adj": -0.0158,
+            "weather_adj": -0.0172,
             "home_sp_rate": 0.9091,
             "home_sp_sample": 11,
             "away_sp_rate": 0.4545,
             "away_sp_sample": 11
           },
-          "nrfi_reasoning": "Kyle Leahy 91% 1st-inning scoreless over 11 starts (elite) \u00b7 Brady Singer 45% 1st-inning scoreless over 11 starts (weak) \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 warm temp (86\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Kyle Leahy 91% 1st-inning scoreless over 11 starts (elite) \u00b7 Brady Singer 45% 1st-inning scoreless over 11 starts (weak) \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 warm temp (87\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [],
           "hot_away_batters": [],
           "bvp_notes": [],
@@ -37542,21 +37361,19 @@
           "away_pp_throws": "R",
           "venue": "Target Field",
           "park_hr_factor": 0.99,
-          "weather_factor": 1.04,
-          "weather_wind": "out",
-          "weather_temp": 79.9,
-          "weather_notes": [
-            "Wind OUT 8 mph (+4%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": "cross",
+          "weather_temp": 71.0,
+          "weather_notes": [],
           "park_runs_factor": 1.02,
-          "nrfi_prob": 48.7,
+          "nrfi_prob": 49.1,
           "nrfi_meta": {
             "base": 49.1,
             "min_sample": 4,
             "p_top": 66.1,
             "p_bot": 74.2,
             "park_mult": 0.998,
-            "weather_adj": -0.0038,
+            "weather_adj": 0.0,
             "home_sp_rate": 0.5,
             "home_sp_sample": 4,
             "away_sp_rate": 0.8333,
@@ -37628,12 +37445,10 @@
           "away_pp_throws": "R",
           "venue": "Coors Field",
           "park_hr_factor": 1.15,
-          "weather_factor": 1.04,
-          "weather_wind": "out",
-          "weather_temp": 78.0,
-          "weather_notes": [
-            "Wind OUT 6 mph (+4%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": null,
+          "weather_temp": 76.1,
+          "weather_notes": [],
           "park_runs_factor": 1.15,
           "nrfi_prob": 49.5,
           "nrfi_meta": {
@@ -37642,7 +37457,7 @@
             "p_top": 67.2,
             "p_bot": 73.6,
             "park_mult": 0.985,
-            "weather_adj": -0.0,
+            "weather_adj": 0.0,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.7778,
@@ -42278,70 +42093,70 @@
         "tier": "other",
         "bytes": 5325,
         "mtime": 1780497202.3583422,
-        "age_hours": 44.6
+        "age_hours": 44.7
       },
       {
         "name": "ai_advisor_2026-06-05.md",
         "tier": "other",
         "bytes": 6077,
         "mtime": 1780657328.452361,
-        "age_hours": 0.1
+        "age_hours": 0.2
       },
       {
         "name": "ai_learner_2026-05-14.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 511.7
+        "age_hours": 511.8
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 509.4
+        "age_hours": 509.5
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 463.4
+        "age_hours": 463.5
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 439.6
+        "age_hours": 439.7
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 437.1
+        "age_hours": 437.2
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 391.7
+        "age_hours": 391.8
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 367.6
+        "age_hours": 367.7
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 343.7
+        "age_hours": 343.8
       },
       {
         "name": "ai_learner_2026-05-22.md",
@@ -42355,357 +42170,357 @@
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 301.1
+        "age_hours": 301.2
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 271.6
+        "age_hours": 271.7
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 247.6
+        "age_hours": 247.7
       },
       {
         "name": "ai_learner_2026-05-26.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779849197.7021859,
-        "age_hours": 224.6
+        "age_hours": 224.7
       },
       {
         "name": "ai_learner_2026-05-27.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779861796.020988,
-        "age_hours": 221.1
+        "age_hours": 221.2
       },
       {
         "name": "ai_learner_2026-05-29.md",
         "tier": "learner",
         "bytes": 12967,
         "mtime": 1780111941.5617077,
-        "age_hours": 151.6
+        "age_hours": 151.7
       },
       {
         "name": "ai_learner_2026-05-30.md",
         "tier": "learner",
         "bytes": 12392,
         "mtime": 1780198338.3981981,
-        "age_hours": 127.6
+        "age_hours": 127.7
       },
       {
         "name": "ai_learner_2026-05-31.md",
         "tier": "learner",
         "bytes": 11883,
         "mtime": 1780284682.342586,
-        "age_hours": 103.7
+        "age_hours": 103.8
       },
       {
         "name": "ai_learner_2026-06-02.md",
         "tier": "learner",
         "bytes": 12355,
         "mtime": 1780459176.4428823,
-        "age_hours": 55.2
+        "age_hours": 55.3
       },
       {
         "name": "ai_learner_2026-06-03.md",
         "tier": "learner",
         "bytes": 12225,
         "mtime": 1780511607.277131,
-        "age_hours": 40.6
+        "age_hours": 40.7
       },
       {
         "name": "ai_learner_2026-06-04.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780628595.1955137,
-        "age_hours": 8.1
+        "age_hours": 8.2
       },
       {
         "name": "ai_learner_2026-06-05.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780657234.2390995,
-        "age_hours": 0.2
+        "age_hours": 0.3
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 559.6
+        "age_hours": 559.7
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 508.3
+        "age_hours": 508.4
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 502.1
+        "age_hours": 502.2
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 501.7
+        "age_hours": 501.8
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 501.4
+        "age_hours": 501.5
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 497.3
+        "age_hours": 497.4
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 495.8
+        "age_hours": 495.9
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 558.5
+        "age_hours": 558.6
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 500.4
+        "age_hours": 500.5
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 544.6
+        "age_hours": 544.7
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 549.4
+        "age_hours": 549.5
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 563.7
+        "age_hours": 563.8
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 309.0
+        "age_hours": 309.1
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_last10_strategies.md",
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 540.8
+        "age_hours": 540.9
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 575.4
+        "age_hours": 575.5
       },
       {
         "name": "feedback_no_skipping_research.md",
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 585.2
+        "age_hours": 585.3
       },
       {
         "name": "feedback_v8_research_layer.md",
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "full_audit_2026-05-15.md",
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 507.6
+        "age_hours": 507.7
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 558.6
+        "age_hours": 558.7
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 550.9
+        "age_hours": 551.0
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 477.8
+        "age_hours": 477.9
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 477.7
+        "age_hours": 477.8
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 461.2
+        "age_hours": 461.3
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 437.1
+        "age_hours": 437.2
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 389.2
+        "age_hours": 389.3
       },
       {
         "name": "learning_journal_2026-05-20.md",
@@ -42719,357 +42534,357 @@
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 341.2
+        "age_hours": 341.3
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 310.3
+        "age_hours": 310.4
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 422,
         "mtime": 1779640394.6469948,
-        "age_hours": 282.6
+        "age_hours": 282.7
       },
       {
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779688867.894788,
-        "age_hours": 269.2
+        "age_hours": 269.3
       },
       {
         "name": "learning_journal_2026-05-25.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779775240.8566065,
-        "age_hours": 245.2
+        "age_hours": 245.3
       },
       {
         "name": "learning_journal_2026-05-26.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779861703.4445822,
-        "age_hours": 221.1
+        "age_hours": 221.2
       },
       {
         "name": "learning_journal_2026-05-29.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780120833.8156781,
-        "age_hours": 149.2
+        "age_hours": 149.3
       },
       {
         "name": "learning_journal_2026-05-30.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780207241.292551,
-        "age_hours": 125.2
+        "age_hours": 125.3
       },
       {
         "name": "learning_journal_2026-05-31.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780284639.8909457,
-        "age_hours": 103.7
+        "age_hours": 103.8
       },
       {
         "name": "learning_journal_2026-06-02.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780466442.415035,
-        "age_hours": 53.2
+        "age_hours": 53.3
       },
       {
         "name": "learning_journal_2026-06-03.md",
         "tier": "learner",
         "bytes": 247,
         "mtime": 1780589433.7189765,
-        "age_hours": 19.0
+        "age_hours": 19.1
       },
       {
         "name": "learning_journal_2026-06-04.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780630276.1920986,
-        "age_hours": 7.7
+        "age_hours": 7.8
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 367.2
+        "age_hours": 367.3
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 576.2
+        "age_hours": 576.3
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "project_factor_redesign_2026-05-19.md",
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 393.1
+        "age_hours": 393.2
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 509.7
+        "age_hours": 509.8
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 508.4
+        "age_hours": 508.5
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_daily_workflow_explained.md",
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 584.2
+        "age_hours": 584.3
       },
       {
         "name": "reference_deep_research_workflow.md",
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 585.2
+        "age_hours": 585.3
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 584.4
+        "age_hours": 584.5
       },
       {
         "name": "reference_sport_calendar.md",
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "reference_strategy_definitions.md",
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 559.5
+        "age_hours": 559.6
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 589.5
+        "age_hours": 589.6
       },
       {
         "name": "reference_working_scrape_sources.md",
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 590.2
+        "age_hours": 590.3
       },
       {
         "name": "roadmap.md",
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 560.2
+        "age_hours": 560.3
       },
       {
         "name": "silent_killers_2026-05-15.md",
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 508.3
+        "age_hours": 508.4
       },
       {
         "name": "state_snapshot_2026-05-13.md",
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 535.7
+        "age_hours": 535.8
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 559.4
+        "age_hours": 559.5
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 558.5
+        "age_hours": 558.6
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 558.7
+        "age_hours": 558.8
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 545.4
+        "age_hours": 545.5
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 545.7
+        "age_hours": 545.8
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 552.0
+        "age_hours": 552.1
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 559.1
+        "age_hours": 559.2
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 549.2
+        "age_hours": 549.3
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 552.3
+        "age_hours": 552.4
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 544.6
+        "age_hours": 544.7
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 543.5
+        "age_hours": 543.6
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 543.9
+        "age_hours": 544.0
       }
     ]
   },
@@ -43081,7 +42896,7 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-06-04_evening.json",
         "latest_date": "2026-06-04",
-        "age_hours": 14.4,
+        "age_hours": 14.5,
         "bytes": 1709506,
         "row_count": 150,
         "last_refresh_iso": "2026-06-04T20:44:39.131963+00:00",
@@ -43094,7 +42909,7 @@
         "status": "stale",
         "latest_file": "v2_form_2026-06-04.json",
         "latest_date": "2026-06-04",
-        "age_hours": 19.5,
+        "age_hours": 19.6,
         "bytes": 206145,
         "row_count": null,
         "last_refresh_iso": "2026-06-04T15:40:38.055993+00:00",
@@ -43107,7 +42922,7 @@
         "status": "stale",
         "latest_file": "v2_candidates_2026-06-04.json",
         "latest_date": "2026-06-04",
-        "age_hours": 14.5,
+        "age_hours": 14.6,
         "bytes": 192853,
         "row_count": null,
         "last_refresh_iso": "2026-06-04T20:43:03.679806+00:00",
@@ -43120,7 +42935,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-06-04.json",
         "latest_date": "2026-06-04",
-        "age_hours": 7.7,
+        "age_hours": 7.8,
         "bytes": 635,
         "row_count": null,
         "last_refresh_iso": "2026-06-05T03:30:12.060812+00:00",
@@ -43146,7 +42961,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-06-04.md",
         "latest_date": "2026-06-04",
-        "age_hours": 7.7,
+        "age_hours": 7.8,
         "bytes": 131,
         "row_count": null,
         "last_refresh_iso": "2026-06-05T03:31:16.192099+00:00",
@@ -43159,7 +42974,7 @@
         "status": "stale",
         "latest_file": "historical_hit_rates_2026-06-04.json",
         "latest_date": "2026-06-04",
-        "age_hours": 19.2,
+        "age_hours": 19.3,
         "bytes": 27265,
         "row_count": 89,
         "last_refresh_iso": "2026-06-04T16:00:39.744338+00:00",
@@ -43172,7 +42987,7 @@
         "status": "fresh",
         "latest_file": "lineup_823698.json",
         "latest_date": "2026-06-05",
-        "age_hours": 10.2,
+        "age_hours": 10.3,
         "bytes": 470,
         "row_count": 24,
         "last_refresh_iso": "2026-06-05T00:59:23.572885+00:00",
@@ -43185,10 +43000,10 @@
         "status": "fresh",
         "latest_file": "wx_SD_2026-06-06T01.json",
         "latest_date": "2026-06-06",
-        "age_hours": 0.9,
+        "age_hours": 0.0,
         "bytes": 206,
         "row_count": 23,
-        "last_refresh_iso": "2026-06-05T10:15:50.873467+00:00",
+        "last_refresh_iso": "2026-06-05T11:16:05.779479+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -43202,7 +43017,7 @@
     "bot_id": null,
     "channel_id": null,
     "authorized_count": 2,
-    "listener_running": true,
+    "listener_running": false,
     "listener_pid": null,
     "listener_last_log_line": null,
     "tunnel_running": false,
@@ -52101,7 +51916,7 @@
       "pitcher_signal": 9.21,
       "park_nrfi_mult": 0.96,
       "park_signal": -1.0,
-      "temp_f": 72.2,
+      "temp_f": 72.7,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -52175,6 +51990,37 @@
       "missing_pitcher_data": false
     },
     {
+      "matchup": "SEA @ DET",
+      "away_abbr": "SEA",
+      "home_abbr": "DET",
+      "home_pp_name": "Framber Valdez",
+      "away_pp_name": "Bryan Woo",
+      "home_nrfi": 0.45,
+      "away_nrfi": 0.5,
+      "home_pp_shrunk": 0.6022,
+      "away_pp_shrunk": 0.8106,
+      "home_pp_baseline": 0.62,
+      "away_pp_baseline": 0.72,
+      "home_pp_recent": 0.6,
+      "away_pp_recent": 1.0,
+      "home_pp_trend": "STABLE",
+      "away_pp_trend": "HEATING",
+      "team_signal": -0.75,
+      "pitcher_signal": 7.82,
+      "park_nrfi_mult": 1.02,
+      "park_signal": 0.5,
+      "temp_f": 85.4,
+      "temp_signal": -3.7,
+      "ump_name": null,
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 53.9,
+      "side": "none",
+      "band": "no_edge",
+      "recommendation": "No edge",
+      "missing_pitcher_data": false
+    },
+    {
       "matchup": "LAA @ LAD",
       "away_abbr": "LAA",
       "home_abbr": "LAD",
@@ -52225,43 +52071,12 @@
       "pitcher_signal": 3.25,
       "park_nrfi_mult": 0.93,
       "park_signal": -1.75,
-      "temp_f": 91.4,
+      "temp_f": 91.7,
       "temp_signal": -5.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
       "confidence": 46.5,
-      "side": "none",
-      "band": "no_edge",
-      "recommendation": "No edge",
-      "missing_pitcher_data": false
-    },
-    {
-      "matchup": "SEA @ DET",
-      "away_abbr": "SEA",
-      "home_abbr": "DET",
-      "home_pp_name": "Framber Valdez",
-      "away_pp_name": "Bryan Woo",
-      "home_nrfi": 0.45,
-      "away_nrfi": 0.5,
-      "home_pp_shrunk": 0.6022,
-      "away_pp_shrunk": 0.8106,
-      "home_pp_baseline": 0.62,
-      "away_pp_baseline": 0.72,
-      "home_pp_recent": 0.6,
-      "away_pp_recent": 1.0,
-      "home_pp_trend": "STABLE",
-      "away_pp_trend": "HEATING",
-      "team_signal": -0.75,
-      "pitcher_signal": 7.82,
-      "park_nrfi_mult": 1.02,
-      "park_signal": 0.5,
-      "temp_f": 86.9,
-      "temp_signal": -4.45,
-      "ump_name": null,
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 53.1,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -52318,12 +52133,12 @@
       "pitcher_signal": 4.75,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 85.9,
-      "temp_signal": -3.95,
+      "temp_f": 86.6,
+      "temp_signal": -4.3,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 52.3,
+      "confidence": 52.0,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -52349,12 +52164,12 @@
       "pitcher_signal": 7.26,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
-      "temp_f": 85.3,
-      "temp_signal": -3.65,
+      "temp_f": 85.0,
+      "temp_signal": -3.5,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 51.6,
+      "confidence": 51.8,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -52380,12 +52195,12 @@
       "pitcher_signal": 3.85,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 79.9,
-      "temp_signal": -0.95,
+      "temp_f": 71.0,
+      "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 48.4,
+      "confidence": 49.3,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -52442,12 +52257,43 @@
       "pitcher_signal": 6.86,
       "park_nrfi_mult": 0.78,
       "park_signal": -5.5,
-      "temp_f": 78.0,
-      "temp_signal": -0.0,
+      "temp_f": 76.1,
+      "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
       "confidence": 50.6,
+      "side": "none",
+      "band": "no_edge",
+      "recommendation": "No edge",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "BOS @ NYY",
+      "away_abbr": "BOS",
+      "home_abbr": "NYY",
+      "home_pp_name": "Ryan Weathers",
+      "away_pp_name": "Sonny Gray",
+      "home_nrfi": 0.65,
+      "away_nrfi": 0.25,
+      "home_pp_shrunk": 0.6731,
+      "away_pp_shrunk": 0.5826,
+      "home_pp_baseline": 0.6,
+      "away_pp_baseline": 0.5778,
+      "home_pp_recent": 0.8,
+      "away_pp_recent": 0.6,
+      "home_pp_trend": "HEATING",
+      "away_pp_trend": "STABLE",
+      "team_signal": -1.5,
+      "pitcher_signal": 3.89,
+      "park_nrfi_mult": 0.97,
+      "park_signal": -0.75,
+      "temp_f": 81.9,
+      "temp_signal": -1.95,
+      "ump_name": null,
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 49.7,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -52483,37 +52329,6 @@
       "band": "no_edge",
       "recommendation": "No edge",
       "missing_pitcher_data": true
-    },
-    {
-      "matchup": "BOS @ NYY",
-      "away_abbr": "BOS",
-      "home_abbr": "NYY",
-      "home_pp_name": "Ryan Weathers",
-      "away_pp_name": "Sonny Gray",
-      "home_nrfi": 0.65,
-      "away_nrfi": 0.25,
-      "home_pp_shrunk": 0.6731,
-      "away_pp_shrunk": 0.5826,
-      "home_pp_baseline": 0.6,
-      "away_pp_baseline": 0.5778,
-      "home_pp_recent": 0.8,
-      "away_pp_recent": 0.6,
-      "home_pp_trend": "HEATING",
-      "away_pp_trend": "STABLE",
-      "team_signal": -1.5,
-      "pitcher_signal": 3.89,
-      "park_nrfi_mult": 0.97,
-      "park_signal": -0.75,
-      "temp_f": 81.7,
-      "temp_signal": -1.85,
-      "ump_name": null,
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 49.8,
-      "side": "none",
-      "band": "no_edge",
-      "recommendation": "No edge",
-      "missing_pitcher_data": false
     }
   ],
   "nrfi_tracking": {
@@ -58672,7 +58487,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-06-05 07:10 ET",
+  "built_at_et": "2026-06-05 07:16 ET",
   "counts": {
     "picks_total": 721,
     "settled": 278,
