@@ -1,6 +1,6 @@
 {
-  "build_id": "260607-155537",
-  "generated_at": "2026-06-07T15:55:37.816649+00:00",
+  "build_id": "260607-160037",
+  "generated_at": "2026-06-07T16:00:38.098494+00:00",
   "today": "2026-06-07",
   "yesterday": "2026-06-06",
   "bankroll": {
@@ -16209,7 +16209,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-06-07T15:55:37.816842+00:00",
+  "built_at": "2026-06-07T16:00:38.098756+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -41512,8 +41512,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-06-07 12:00",
-      "LastRun": "2026-06-07 11:55",
+      "NextRun": "2026-06-07 12:05",
+      "LastRun": "2026-06-07 12:00",
       "LastResult": 267009,
       "WakeToRun": true
     },
@@ -41583,10 +41583,10 @@
     },
     {
       "Name": "BettingOS - morning-scout",
-      "State": "Ready",
-      "NextRun": "2026-06-07 12:00",
-      "LastRun": "2026-06-06 12:00",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-06-08 12:00",
+      "LastRun": "2026-06-07 12:00",
+      "LastResult": 267009,
       "WakeToRun": true
     },
     {
@@ -42990,17 +42990,21 @@
             "status": "Pre-Game",
             "abstract_state": "Preview",
             "status_code": "P",
-            "current_inning": null,
-            "inning_half": null,
-            "inning_state": null,
-            "home_runs": null,
-            "home_hits": null,
-            "home_errors": null,
-            "away_runs": null,
-            "away_hits": null,
-            "away_errors": null,
-            "home_innings": [],
-            "away_innings": [],
+            "current_inning": 1,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 0,
+            "home_hits": 0,
+            "home_errors": 0,
+            "away_runs": 0,
+            "away_hits": 0,
+            "away_errors": 0,
+            "home_innings": [
+              null
+            ],
+            "away_innings": [
+              null
+            ],
             "scheduled_innings": 9
           }
         },
@@ -48120,189 +48124,189 @@
         "tier": "other",
         "bytes": 5325,
         "mtime": 1780497202.3583422,
-        "age_hours": 97.4
+        "age_hours": 97.5
       },
       {
         "name": "ai_advisor_2026-06-05.md",
         "tier": "other",
         "bytes": 6077,
         "mtime": 1780657328.452361,
-        "age_hours": 52.9
+        "age_hours": 53.0
       },
       {
         "name": "ai_advisor_2026-06-06.md",
         "tier": "other",
         "bytes": 6553,
         "mtime": 1780743725.3083284,
-        "age_hours": 28.9
+        "age_hours": 29.0
       },
       {
         "name": "ai_advisor_2026-06-07.md",
         "tier": "other",
         "bytes": 5727,
         "mtime": 1780830130.8183205,
-        "age_hours": 4.9
+        "age_hours": 5.0
       },
       {
         "name": "ai_learner_2026-05-14.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 564.4
+        "age_hours": 564.5
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 562.1
+        "age_hours": 562.2
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 516.1
+        "age_hours": 516.2
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 492.4
+        "age_hours": 492.5
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 489.9
+        "age_hours": 490.0
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 444.4
+        "age_hours": 444.5
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 420.4
+        "age_hours": 420.5
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 396.4
+        "age_hours": 396.5
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 393.9
+        "age_hours": 394.0
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 353.9
+        "age_hours": 354.0
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 324.4
+        "age_hours": 324.5
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 300.4
+        "age_hours": 300.5
       },
       {
         "name": "ai_learner_2026-05-26.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779849197.7021859,
-        "age_hours": 277.4
+        "age_hours": 277.5
       },
       {
         "name": "ai_learner_2026-05-27.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779861796.020988,
-        "age_hours": 273.9
+        "age_hours": 274.0
       },
       {
         "name": "ai_learner_2026-05-29.md",
         "tier": "learner",
         "bytes": 12967,
         "mtime": 1780111941.5617077,
-        "age_hours": 204.4
+        "age_hours": 204.5
       },
       {
         "name": "ai_learner_2026-05-30.md",
         "tier": "learner",
         "bytes": 12392,
         "mtime": 1780198338.3981981,
-        "age_hours": 180.4
+        "age_hours": 180.5
       },
       {
         "name": "ai_learner_2026-05-31.md",
         "tier": "learner",
         "bytes": 11883,
         "mtime": 1780284682.342586,
-        "age_hours": 156.4
+        "age_hours": 156.5
       },
       {
         "name": "ai_learner_2026-06-02.md",
         "tier": "learner",
         "bytes": 12355,
         "mtime": 1780459176.4428823,
-        "age_hours": 107.9
+        "age_hours": 108.0
       },
       {
         "name": "ai_learner_2026-06-03.md",
         "tier": "learner",
         "bytes": 12225,
         "mtime": 1780511607.277131,
-        "age_hours": 93.4
+        "age_hours": 93.5
       },
       {
         "name": "ai_learner_2026-06-04.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780628595.1955137,
-        "age_hours": 60.9
+        "age_hours": 61.0
       },
       {
         "name": "ai_learner_2026-06-05.md",
         "tier": "learner",
         "bytes": 12864,
         "mtime": 1780716717.1324153,
-        "age_hours": 36.4
+        "age_hours": 36.5
       },
       {
         "name": "ai_learner_2026-06-06.md",
         "tier": "learner",
         "bytes": 13836,
         "mtime": 1780803133.0277936,
-        "age_hours": 12.4
+        "age_hours": 12.5
       },
       {
         "name": "ai_learner_2026-06-07.md",
         "tier": "learner",
         "bytes": 13668,
         "mtime": 1780830043.3858953,
-        "age_hours": 4.9
+        "age_hours": 5.0
       },
       {
         "name": "audit_2026-05-12.md",
@@ -48316,35 +48320,35 @@
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 561.0
+        "age_hours": 561.1
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 554.8
+        "age_hours": 554.9
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 554.4
+        "age_hours": 554.5
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 554.2
+        "age_hours": 554.3
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 550.0
+        "age_hours": 550.1
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -48358,42 +48362,42 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 611.2
+        "age_hours": 611.3
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 553.2
+        "age_hours": 553.3
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 597.3
+        "age_hours": 597.4
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 602.2
+        "age_hours": 602.3
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 616.4
+        "age_hours": 616.5
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 361.8
+        "age_hours": 361.9
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -48435,7 +48439,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 593.5
+        "age_hours": 593.6
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -48449,7 +48453,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 628.1
+        "age_hours": 628.2
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -48512,7 +48516,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 637.9
+        "age_hours": 638.0
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -48533,126 +48537,126 @@
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 611.3
+        "age_hours": 611.4
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 603.6
+        "age_hours": 603.7
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 530.6
+        "age_hours": 530.7
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 530.4
+        "age_hours": 530.5
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 513.9
+        "age_hours": 514.0
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 489.9
+        "age_hours": 490.0
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 441.9
+        "age_hours": 442.0
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 417.9
+        "age_hours": 418.0
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 393.9
+        "age_hours": 394.0
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 363.0
+        "age_hours": 363.1
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 422,
         "mtime": 1779640394.6469948,
-        "age_hours": 335.4
+        "age_hours": 335.5
       },
       {
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779688867.894788,
-        "age_hours": 321.9
+        "age_hours": 322.0
       },
       {
         "name": "learning_journal_2026-05-25.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779775240.8566065,
-        "age_hours": 297.9
+        "age_hours": 298.0
       },
       {
         "name": "learning_journal_2026-05-26.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779861703.4445822,
-        "age_hours": 273.9
+        "age_hours": 274.0
       },
       {
         "name": "learning_journal_2026-05-29.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780120833.8156781,
-        "age_hours": 201.9
+        "age_hours": 202.0
       },
       {
         "name": "learning_journal_2026-05-30.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780207241.292551,
-        "age_hours": 177.9
+        "age_hours": 178.0
       },
       {
         "name": "learning_journal_2026-05-31.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780284639.8909457,
-        "age_hours": 156.4
+        "age_hours": 156.5
       },
       {
         "name": "learning_journal_2026-06-02.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780466442.415035,
-        "age_hours": 105.9
+        "age_hours": 106.0
       },
       {
         "name": "learning_journal_2026-06-03.md",
@@ -48666,35 +48670,35 @@
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780630276.1920986,
-        "age_hours": 60.4
+        "age_hours": 60.5
       },
       {
         "name": "learning_journal_2026-06-05.md",
         "tier": "learner",
         "bytes": 130,
         "mtime": 1780725694.065848,
-        "age_hours": 33.9
+        "age_hours": 34.0
       },
       {
         "name": "learning_journal_2026-06-06.md",
         "tier": "learner",
         "bytes": 197,
         "mtime": 1780812096.5708408,
-        "age_hours": 9.9
+        "age_hours": 10.0
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 419.9
+        "age_hours": 420.0
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 629.0
+        "age_hours": 629.1
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -48708,7 +48712,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 445.9
+        "age_hours": 446.0
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -48764,7 +48768,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 636.9
+        "age_hours": 637.0
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -48806,14 +48810,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 638.0
+        "age_hours": 638.1
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 637.1
+        "age_hours": 637.2
       },
       {
         "name": "reference_sport_calendar.md",
@@ -48841,7 +48845,7 @@
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 642.2
+        "age_hours": 642.3
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -48869,63 +48873,63 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 588.4
+        "age_hours": 588.5
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 612.2
+        "age_hours": 612.3
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 611.3
+        "age_hours": 611.4
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 611.5
+        "age_hours": 611.6
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 598.2
+        "age_hours": 598.3
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 598.4
+        "age_hours": 598.5
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 604.7
+        "age_hours": 604.8
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 611.8
+        "age_hours": 611.9
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 602.0
+        "age_hours": 602.1
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -48939,21 +48943,21 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 597.3
+        "age_hours": 597.4
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 596.2
+        "age_hours": 596.3
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 596.7
+        "age_hours": 596.8
       }
     ]
   },
@@ -48965,7 +48969,7 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-06-06_evening.json",
         "latest_date": "2026-06-06",
-        "age_hours": 20.6,
+        "age_hours": 20.7,
         "bytes": 1700330,
         "row_count": 150,
         "last_refresh_iso": "2026-06-06T19:18:56.186152+00:00",
@@ -48978,7 +48982,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-06-07.json",
         "latest_date": "2026-06-07",
-        "age_hours": 0.2,
+        "age_hours": 0.3,
         "bytes": 343331,
         "row_count": null,
         "last_refresh_iso": "2026-06-07T15:44:51.879194+00:00",
@@ -49004,7 +49008,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-06-06.json",
         "latest_date": "2026-06-06",
-        "age_hours": 9.9,
+        "age_hours": 10.0,
         "bytes": 3906,
         "row_count": null,
         "last_refresh_iso": "2026-06-07T06:00:21.076808+00:00",
@@ -49017,7 +49021,7 @@
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-06-06.json",
         "latest_date": "2026-06-06",
-        "age_hours": 20.6,
+        "age_hours": 20.7,
         "bytes": 14212,
         "row_count": null,
         "last_refresh_iso": "2026-06-06T19:16:43.294832+00:00",
@@ -49030,7 +49034,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-06-06.md",
         "latest_date": "2026-06-06",
-        "age_hours": 9.9,
+        "age_hours": 10.0,
         "bytes": 197,
         "row_count": null,
         "last_refresh_iso": "2026-06-07T06:01:36.570841+00:00",
@@ -49043,7 +49047,7 @@
         "status": "stale",
         "latest_file": "historical_hit_rates_2026-06-06.json",
         "latest_date": "2026-06-06",
-        "age_hours": 23.6,
+        "age_hours": 23.7,
         "bytes": 174693,
         "row_count": 701,
         "last_refresh_iso": "2026-06-06T16:18:42.794294+00:00",
@@ -49056,7 +49060,7 @@
         "status": "fresh",
         "latest_file": "lineup_824186.json",
         "latest_date": "2026-06-07",
-        "age_hours": 20.1,
+        "age_hours": 20.2,
         "bytes": 469,
         "row_count": 55,
         "last_refresh_iso": "2026-06-06T19:50:24.596924+00:00",
@@ -49069,7 +49073,7 @@
         "status": "fresh",
         "latest_file": "wx_CHC_2026-06-08T00.json",
         "latest_date": "2026-06-08",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 206,
         "row_count": 28,
         "last_refresh_iso": "2026-06-07T15:35:56.483145+00:00",
@@ -49197,8 +49201,8 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.5,
-        "away_l20_nrfi_pct": 0.5,
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.45,
         "system_heat": 97.8,
         "system_heat_breakdown": {
           "base_from_rae": 85.8,
@@ -49414,7 +49418,7 @@
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.65,
+        "away_l20_nrfi_pct": 0.6,
         "system_heat": 79.6,
         "system_heat_breakdown": {
           "base_from_rae": 73.6,
@@ -49540,7 +49544,7 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.7,
+        "home_l20_nrfi_pct": 0.65,
         "system_heat": 70.8,
         "system_heat_breakdown": {
           "base_from_rae": 68.8,
@@ -49667,7 +49671,7 @@
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
         "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.4,
         "system_heat": 67.5,
         "system_heat_breakdown": {
           "base_from_rae": 65.5,
@@ -49999,7 +50003,7 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.25,
+        "home_l20_nrfi_pct": 0.3,
         "away_l20_nrfi_pct": 0.65,
         "system_heat": 58.9,
         "system_heat_breakdown": {
@@ -50113,7 +50117,7 @@
           "6\\10 covered O0.5 (60%) vs L30 baseline 62% \u2014 heat -2.5pp (NEUTRAL)"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.65,
+        "away_l20_nrfi_pct": 0.6,
         "system_heat": 55.8,
         "system_heat_breakdown": {
           "base_from_rae": 61.8,
@@ -50226,7 +50230,7 @@
           "7\\10 covered O0.5 (70%) vs L30 baseline 58% \u2014 heat +11.7pp (HOT)"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.65,
+        "away_l20_nrfi_pct": 0.6,
         "system_heat": 60.5,
         "system_heat_breakdown": {
           "base_from_rae": 61.5,
@@ -50442,7 +50446,7 @@
         "heat_l10_notes": [
           "8\\10 covered O0.5 (80%) vs L30 baseline 62% \u2014 heat +17.5pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.7,
+        "home_l20_nrfi_pct": 0.65,
         "system_heat": 53.8,
         "system_heat_breakdown": {
           "base_from_rae": 59.8,
@@ -50668,7 +50672,7 @@
           "10\\10 covered O0.5 (100%) vs L30 baseline 70% \u2014 heat +30.0pp (HOT)"
         ],
         "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.35,
         "system_heat": 58.4,
         "system_heat_breakdown": {
           "base_from_rae": 59.4,
@@ -51014,8 +51018,8 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.4,
-        "away_l20_nrfi_pct": 0.3,
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.35,
         "system_heat": 54.7,
         "system_heat_breakdown": {
           "base_from_rae": 57.7,
@@ -51124,7 +51128,7 @@
           "5\\10 covered O0.5 (50%) vs L30 baseline 50% \u2014 heat +0.0pp (NEUTRAL)"
         ],
         "home_l20_nrfi_pct": 0.45,
-        "away_l20_nrfi_pct": 0.4,
+        "away_l20_nrfi_pct": 0.35,
         "system_heat": 51.6,
         "system_heat_breakdown": {
           "base_from_rae": 57.6,
@@ -51350,7 +51354,7 @@
           "3\\10 covered O1.5 (30%) vs L30 baseline 38% \u2014 heat -7.5pp (COOLING)"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.65,
+        "away_l20_nrfi_pct": 0.6,
         "system_heat": 50.1,
         "system_heat_breakdown": {
           "base_from_rae": 56.1,
@@ -51457,7 +51461,7 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.4,
+        "home_l20_nrfi_pct": 0.45,
         "away_l20_nrfi_pct": 0.45,
         "system_heat": 53.1,
         "system_heat_breakdown": {
@@ -51561,7 +51565,7 @@
         "heat_l10_notes": [
           "8\\10 covered O0.5 (80%) vs L30 baseline 58% \u2014 heat +21.7pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.7,
+        "home_l20_nrfi_pct": 0.65,
         "system_heat": 50.0,
         "system_heat_breakdown": {
           "base_from_rae": 56.0,
@@ -51682,7 +51686,7 @@
           "0\\10 covered O1.5 (0%) vs L30 baseline 14% \u2014 heat -13.6pp (COOLING)"
         ],
         "home_l20_nrfi_pct": 0.55,
-        "away_l20_nrfi_pct": 0.65,
+        "away_l20_nrfi_pct": 0.6,
         "system_heat": 52.3,
         "system_heat_breakdown": {
           "base_from_rae": 55.3,
@@ -51790,8 +51794,8 @@
         "heat_l10_notes": [
           "5\\10 covered O1.5 (50%) vs L30 baseline 41% \u2014 heat +9.1pp (HOT)"
         ],
-        "home_l20_nrfi_pct": 0.5,
-        "away_l20_nrfi_pct": 0.5,
+        "home_l20_nrfi_pct": 0.45,
+        "away_l20_nrfi_pct": 0.45,
         "system_heat": 52.3,
         "system_heat_breakdown": {
           "base_from_rae": 55.3,
@@ -51896,7 +51900,7 @@
         "heat_l10_delta_pp": null,
         "heat_l10_verdict": null,
         "heat_l10_notes": null,
-        "home_l20_nrfi_pct": 0.7,
+        "home_l20_nrfi_pct": 0.65,
         "system_heat": 75.4,
         "system_heat_breakdown": {
           "base_from_rae": 73.4,
@@ -57691,15 +57695,6 @@
   ],
   "nrfi_form": [
     {
-      "name": "Philadelphia Phillies",
-      "team": "PHI",
-      "team_id": 143,
-      "nrfi_count": 14,
-      "yrfi_count": 6,
-      "l20_nrfi_pct": 0.7,
-      "l20_games": 20
-    },
-    {
       "name": "Cleveland Guardians",
       "team": "CLE",
       "team_id": 114,
@@ -57709,9 +57704,9 @@
       "l20_games": 20
     },
     {
-      "name": "Washington Nationals",
-      "team": "WSH",
-      "team_id": 120,
+      "name": "Philadelphia Phillies",
+      "team": "PHI",
+      "team_id": 143,
       "nrfi_count": 13,
       "yrfi_count": 7,
       "l20_nrfi_pct": 0.65,
@@ -57724,6 +57719,15 @@
       "nrfi_count": 13,
       "yrfi_count": 7,
       "l20_nrfi_pct": 0.65,
+      "l20_games": 20
+    },
+    {
+      "name": "Washington Nationals",
+      "team": "WSH",
+      "team_id": 120,
+      "nrfi_count": 12,
+      "yrfi_count": 8,
+      "l20_nrfi_pct": 0.6,
       "l20_games": 20
     },
     {
@@ -57754,45 +57758,27 @@
       "l20_games": 20
     },
     {
-      "name": "Los Angeles Angels",
-      "team": "LAA",
-      "team_id": 108,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
-      "l20_games": 20
-    },
-    {
-      "name": "Cincinnati Reds",
-      "team": "CIN",
-      "team_id": 113,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
-      "l20_games": 20
-    },
-    {
-      "name": "Los Angeles Dodgers",
-      "team": "LAD",
-      "team_id": 119,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
-      "l20_games": 20
-    },
-    {
       "name": "San Diego Padres",
       "team": "SD",
       "team_id": 135,
-      "nrfi_count": 10,
-      "yrfi_count": 10,
-      "l20_nrfi_pct": 0.5,
+      "nrfi_count": 11,
+      "yrfi_count": 9,
+      "l20_nrfi_pct": 0.55,
       "l20_games": 20
     },
     {
       "name": "Seattle Mariners",
       "team": "SEA",
       "team_id": 136,
+      "nrfi_count": 11,
+      "yrfi_count": 9,
+      "l20_nrfi_pct": 0.55,
+      "l20_games": 20
+    },
+    {
+      "name": "Cincinnati Reds",
+      "team": "CIN",
+      "team_id": 113,
       "nrfi_count": 10,
       "yrfi_count": 10,
       "l20_nrfi_pct": 0.5,
@@ -57808,6 +57794,24 @@
       "l20_games": 20
     },
     {
+      "name": "Los Angeles Angels",
+      "team": "LAA",
+      "team_id": 108,
+      "nrfi_count": 9,
+      "yrfi_count": 11,
+      "l20_nrfi_pct": 0.45,
+      "l20_games": 20
+    },
+    {
+      "name": "Chicago Cubs",
+      "team": "CHC",
+      "team_id": 112,
+      "nrfi_count": 9,
+      "yrfi_count": 11,
+      "l20_nrfi_pct": 0.45,
+      "l20_games": 20
+    },
+    {
       "name": "Houston Astros",
       "team": "HOU",
       "team_id": 117,
@@ -57817,9 +57821,9 @@
       "l20_games": 20
     },
     {
-      "name": "Pittsburgh Pirates",
-      "team": "PIT",
-      "team_id": 134,
+      "name": "Los Angeles Dodgers",
+      "team": "LAD",
+      "team_id": 119,
       "nrfi_count": 9,
       "yrfi_count": 11,
       "l20_nrfi_pct": 0.45,
@@ -57853,18 +57857,18 @@
       "l20_games": 20
     },
     {
-      "name": "Baltimore Orioles",
-      "team": "BAL",
-      "team_id": 110,
-      "nrfi_count": 8,
-      "yrfi_count": 12,
-      "l20_nrfi_pct": 0.4,
+      "name": "Miami Marlins",
+      "team": "MIA",
+      "team_id": 146,
+      "nrfi_count": 9,
+      "yrfi_count": 11,
+      "l20_nrfi_pct": 0.45,
       "l20_games": 20
     },
     {
-      "name": "Chicago Cubs",
-      "team": "CHC",
-      "team_id": 112,
+      "name": "Baltimore Orioles",
+      "team": "BAL",
+      "team_id": 110,
       "nrfi_count": 8,
       "yrfi_count": 12,
       "l20_nrfi_pct": 0.4,
@@ -57889,21 +57893,30 @@
       "l20_games": 20
     },
     {
-      "name": "Athletics",
-      "team": "ATH",
-      "team_id": 133,
+      "name": "Pittsburgh Pirates",
+      "team": "PIT",
+      "team_id": 134,
       "nrfi_count": 8,
       "yrfi_count": 12,
       "l20_nrfi_pct": 0.4,
       "l20_games": 20
     },
     {
-      "name": "Miami Marlins",
-      "team": "MIA",
-      "team_id": 146,
-      "nrfi_count": 8,
-      "yrfi_count": 12,
-      "l20_nrfi_pct": 0.4,
+      "name": "Athletics",
+      "team": "ATH",
+      "team_id": 133,
+      "nrfi_count": 7,
+      "yrfi_count": 13,
+      "l20_nrfi_pct": 0.35,
+      "l20_games": 20
+    },
+    {
+      "name": "Tampa Bay Rays",
+      "team": "TB",
+      "team_id": 139,
+      "nrfi_count": 7,
+      "yrfi_count": 13,
+      "l20_nrfi_pct": 0.35,
       "l20_games": 20
     },
     {
@@ -57925,9 +57938,9 @@
       "l20_games": 20
     },
     {
-      "name": "Tampa Bay Rays",
-      "team": "TB",
-      "team_id": 139,
+      "name": "Texas Rangers",
+      "team": "TEX",
+      "team_id": 140,
       "nrfi_count": 6,
       "yrfi_count": 14,
       "l20_nrfi_pct": 0.3,
@@ -57937,15 +57950,6 @@
       "name": "Minnesota Twins",
       "team": "MIN",
       "team_id": 142,
-      "nrfi_count": 6,
-      "yrfi_count": 14,
-      "l20_nrfi_pct": 0.3,
-      "l20_games": 20
-    },
-    {
-      "name": "Texas Rangers",
-      "team": "TEX",
-      "team_id": 140,
       "nrfi_count": 5,
       "yrfi_count": 15,
       "l20_nrfi_pct": 0.25,
@@ -58375,7 +58379,7 @@
       "home_abbr": "SD",
       "home_pp_name": "Randy V\u00e1squez",
       "away_pp_name": "Huascar Brazob\u00e1n",
-      "home_nrfi": 0.5,
+      "home_nrfi": 0.55,
       "away_nrfi": 0.6,
       "home_pp_shrunk": 0.6248,
       "away_pp_shrunk": 0.8,
@@ -58385,7 +58389,7 @@
       "away_pp_recent": 1.0,
       "home_pp_trend": "COOLING",
       "away_pp_trend": "STABLE",
-      "team_signal": 1.5,
+      "team_signal": 2.25,
       "pitcher_signal": 8.12,
       "park_nrfi_mult": 1.08,
       "park_signal": 2.0,
@@ -58394,7 +58398,7 @@
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 61.6,
+      "confidence": 62.4,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -58438,7 +58442,7 @@
       "home_pp_name": "Michael Soroka",
       "away_pp_name": "Cade Cavalli",
       "home_nrfi": 0.55,
-      "away_nrfi": 0.65,
+      "away_nrfi": 0.6,
       "home_pp_shrunk": 0.6838,
       "away_pp_shrunk": 0.7146,
       "home_pp_baseline": 0.62,
@@ -58447,7 +58451,7 @@
       "away_pp_recent": 0.8,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": 3.0,
+      "team_signal": 2.25,
       "pitcher_signal": 7.46,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
@@ -58456,10 +58460,41 @@
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 60.5,
+      "confidence": 59.7,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "KC @ MIN",
+      "away_abbr": "KC",
+      "home_abbr": "MIN",
+      "home_pp_name": "Connor Prielipp",
+      "away_pp_name": "Noah Cameron",
+      "home_nrfi": 0.25,
+      "away_nrfi": 0.3,
+      "home_pp_shrunk": 0.5871,
+      "away_pp_shrunk": 0.7215,
+      "home_pp_baseline": 0.5875,
+      "away_pp_baseline": 0.7053,
+      "home_pp_recent": 0.6,
+      "away_pp_recent": 0.8,
+      "home_pp_trend": "STABLE",
+      "away_pp_trend": "STABLE",
+      "team_signal": -6.75,
+      "pitcher_signal": 5.21,
+      "park_nrfi_mult": 1.0,
+      "park_signal": 0.0,
+      "temp_f": 86.9,
+      "temp_signal": -4.45,
+      "ump_name": null,
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 44.0,
+      "side": "none",
+      "band": "mild_yrfi",
+      "recommendation": "Mild YRFI tilt \u2014 no bet",
       "missing_pitcher_data": false
     },
     {
@@ -58469,7 +58504,7 @@
       "home_pp_name": "Bryce Elder",
       "away_pp_name": "Mason Montgomery",
       "home_nrfi": 0.45,
-      "away_nrfi": 0.45,
+      "away_nrfi": 0.4,
       "home_pp_shrunk": 0.819,
       "away_pp_shrunk": 0.7429,
       "home_pp_baseline": 0.7334,
@@ -58478,7 +58513,7 @@
       "away_pp_recent": 1.0,
       "home_pp_trend": "HEATING",
       "away_pp_trend": "STABLE",
-      "team_signal": -1.5,
+      "team_signal": -2.25,
       "pitcher_signal": 11.55,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
@@ -58487,7 +58522,7 @@
       "ump_name": "Quinn Wolcott",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 56.5,
+      "confidence": 55.7,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -58556,43 +58591,12 @@
       "missing_pitcher_data": false
     },
     {
-      "matchup": "KC @ MIN",
-      "away_abbr": "KC",
-      "home_abbr": "MIN",
-      "home_pp_name": "Connor Prielipp",
-      "away_pp_name": "Noah Cameron",
-      "home_nrfi": 0.3,
-      "away_nrfi": 0.3,
-      "home_pp_shrunk": 0.5871,
-      "away_pp_shrunk": 0.7215,
-      "home_pp_baseline": 0.5875,
-      "away_pp_baseline": 0.7053,
-      "home_pp_recent": 0.6,
-      "away_pp_recent": 0.8,
-      "home_pp_trend": "STABLE",
-      "away_pp_trend": "STABLE",
-      "team_signal": -6.0,
-      "pitcher_signal": 5.21,
-      "park_nrfi_mult": 1.0,
-      "park_signal": 0.0,
-      "temp_f": 86.9,
-      "temp_signal": -4.45,
-      "ump_name": null,
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 44.8,
-      "side": "none",
-      "band": "mild_yrfi",
-      "recommendation": "Mild YRFI tilt \u2014 no bet",
-      "missing_pitcher_data": false
-    },
-    {
       "matchup": "CLE @ TEX",
       "away_abbr": "CLE",
       "home_abbr": "TEX",
       "home_pp_name": "Jacob deGrom",
       "away_pp_name": "Joey Cantillo",
-      "home_nrfi": 0.25,
+      "home_nrfi": 0.3,
       "away_nrfi": 0.65,
       "home_pp_shrunk": 0.5568,
       "away_pp_shrunk": 0.819,
@@ -58602,7 +58606,7 @@
       "away_pp_recent": 1.0,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "HEATING",
-      "team_signal": -1.5,
+      "team_signal": -0.75,
       "pitcher_signal": 6.89,
       "park_nrfi_mult": 0.95,
       "park_signal": -1.25,
@@ -58611,7 +58615,7 @@
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 54.1,
+      "confidence": 54.9,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58623,7 +58627,7 @@
       "home_abbr": "CHC",
       "home_pp_name": "Jameson Taillon",
       "away_pp_name": "Trevor McDonald",
-      "home_nrfi": 0.4,
+      "home_nrfi": 0.45,
       "away_nrfi": 0.45,
       "home_pp_shrunk": 0.7064,
       "away_pp_shrunk": 0.6639,
@@ -58633,7 +58637,7 @@
       "away_pp_recent": 0.8,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": -2.25,
+      "team_signal": -1.5,
       "pitcher_signal": 6.76,
       "park_nrfi_mult": 0.96,
       "park_signal": -1.0,
@@ -58642,7 +58646,7 @@
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 53.5,
+      "confidence": 54.3,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58654,8 +58658,8 @@
       "home_abbr": "MIA",
       "home_pp_name": "Sandy Alcantara",
       "away_pp_name": "Griffin Jax",
-      "home_nrfi": 0.4,
-      "away_nrfi": 0.3,
+      "home_nrfi": 0.45,
+      "away_nrfi": 0.35,
       "home_pp_shrunk": 0.7146,
       "away_pp_shrunk": 0.6074,
       "home_pp_baseline": 0.6857,
@@ -58664,7 +58668,7 @@
       "away_pp_recent": 0.6,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": -4.5,
+      "team_signal": -3.0,
       "pitcher_signal": 5.55,
       "park_nrfi_mult": 1.06,
       "park_signal": 1.5,
@@ -58673,7 +58677,7 @@
       "ump_name": "Bruce Dreckman",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 52.5,
+      "confidence": 54.0,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58686,7 +58690,7 @@
       "home_pp_name": "Mike Burrows",
       "away_pp_name": "Gage Jump",
       "home_nrfi": 0.45,
-      "away_nrfi": 0.4,
+      "away_nrfi": 0.35,
       "home_pp_shrunk": 0.5794,
       "away_pp_shrunk": null,
       "home_pp_baseline": 0.57,
@@ -58695,7 +58699,7 @@
       "away_pp_recent": null,
       "home_pp_trend": "STABLE",
       "away_pp_trend": null,
-      "team_signal": -2.25,
+      "team_signal": -3.0,
       "pitcher_signal": 0.73,
       "park_nrfi_mult": 0.96,
       "park_signal": -1.0,
@@ -58704,7 +58708,7 @@
       "ump_name": "Ryan Blakney",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 47.5,
+      "confidence": 46.7,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58717,7 +58721,7 @@
       "home_pp_name": "Jack Flaherty",
       "away_pp_name": "Luis Castillo",
       "home_nrfi": 0.4,
-      "away_nrfi": 0.5,
+      "away_nrfi": 0.55,
       "home_pp_shrunk": 0.7146,
       "away_pp_shrunk": 0.687,
       "home_pp_baseline": 0.6857,
@@ -58726,7 +58730,7 @@
       "away_pp_recent": 0.8,
       "home_pp_trend": "STABLE",
       "away_pp_trend": "STABLE",
-      "team_signal": -1.5,
+      "team_signal": -0.75,
       "pitcher_signal": 7.54,
       "park_nrfi_mult": 1.02,
       "park_signal": 0.5,
@@ -58735,7 +58739,38 @@
       "ump_name": "Laz Diaz",
       "ump_k_pct_bias": -1.8,
       "ump_signal": -2.7,
-      "confidence": 52.4,
+      "confidence": 53.1,
+      "side": "none",
+      "band": "no_edge",
+      "recommendation": "No edge",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "LAA @ LAD",
+      "away_abbr": "LAA",
+      "home_abbr": "LAD",
+      "home_pp_name": "Emmet Sheehan",
+      "away_pp_name": "Jos\u00e9 Soriano",
+      "home_nrfi": 0.45,
+      "away_nrfi": 0.45,
+      "home_pp_shrunk": 0.6488,
+      "away_pp_shrunk": 0.4014,
+      "home_pp_baseline": 0.5474,
+      "away_pp_baseline": 0.5429,
+      "home_pp_recent": 0.8,
+      "away_pp_recent": 0.2,
+      "home_pp_trend": "HEATING",
+      "away_pp_trend": "ICE_COLD",
+      "team_signal": -1.5,
+      "pitcher_signal": -1.25,
+      "park_nrfi_mult": 1.02,
+      "park_signal": 0.5,
+      "temp_f": null,
+      "temp_signal": 0.0,
+      "ump_name": null,
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 47.8,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -58747,7 +58782,7 @@
       "home_abbr": "PHI",
       "home_pp_name": "Aaron Nola",
       "away_pp_name": "Tyler Gilbert",
-      "home_nrfi": 0.7,
+      "home_nrfi": 0.65,
       "away_nrfi": 0.35,
       "home_pp_shrunk": 0.8106,
       "away_pp_shrunk": null,
@@ -58757,7 +58792,7 @@
       "away_pp_recent": null,
       "home_pp_trend": "HEATING",
       "away_pp_trend": null,
-      "team_signal": 0.75,
+      "team_signal": 0.0,
       "pitcher_signal": 6.51,
       "park_nrfi_mult": 0.93,
       "park_signal": -1.75,
@@ -58766,42 +58801,11 @@
       "ump_name": "Alex MacKay",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 51.0,
+      "confidence": 50.3,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
       "missing_pitcher_data": true
-    },
-    {
-      "matchup": "LAA @ LAD",
-      "away_abbr": "LAA",
-      "home_abbr": "LAD",
-      "home_pp_name": "Emmet Sheehan",
-      "away_pp_name": "Jos\u00e9 Soriano",
-      "home_nrfi": 0.5,
-      "away_nrfi": 0.5,
-      "home_pp_shrunk": 0.6488,
-      "away_pp_shrunk": 0.4014,
-      "home_pp_baseline": 0.5474,
-      "away_pp_baseline": 0.5429,
-      "home_pp_recent": 0.8,
-      "away_pp_recent": 0.2,
-      "home_pp_trend": "HEATING",
-      "away_pp_trend": "ICE_COLD",
-      "team_signal": 0.0,
-      "pitcher_signal": -1.25,
-      "park_nrfi_mult": 1.02,
-      "park_signal": 0.5,
-      "temp_f": null,
-      "temp_signal": 0.0,
-      "ump_name": null,
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 49.3,
-      "side": "none",
-      "band": "no_edge",
-      "recommendation": "No edge",
-      "missing_pitcher_data": false
     },
     {
       "matchup": "CIN @ STL",
@@ -65455,7 +65459,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-06-07 11:55 ET",
+  "built_at_et": "2026-06-07 12:00 ET",
   "counts": {
     "picks_total": 783,
     "settled": 328,
