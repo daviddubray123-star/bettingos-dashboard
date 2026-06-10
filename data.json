@@ -1,6 +1,6 @@
 {
-  "build_id": "260610-105846",
-  "generated_at": "2026-06-10T10:58:47.430294+00:00",
+  "build_id": "260610-121122",
+  "generated_at": "2026-06-10T12:11:31.733969+00:00",
   "today": "2026-06-10",
   "yesterday": "2026-06-09",
   "bankroll": {
@@ -16363,7 +16363,7 @@
     }
   ],
   "today_picks": [],
-  "built_at": "2026-06-10T10:58:47.430541+00:00",
+  "built_at": "2026-06-10T12:11:31.757934+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -45921,188 +45921,7 @@
   },
   "wts_tasks": [
     {
-      "Name": "BettingOS - ai-advisor",
-      "State": "Ready",
-      "NextRun": "2026-06-10 07:00",
-      "LastRun": "2026-06-09 07:00",
-      "LastResult": 0,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - ai-learner-weekly",
-      "State": "Ready",
-      "NextRun": "2026-06-14 03:00",
-      "LastRun": "2026-06-07 03:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - auto-confirm-paper",
-      "State": "Ready",
-      "NextRun": "2026-06-10 13:05",
-      "LastRun": "2026-06-09 13:05",
-      "LastResult": 1,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - bankroll-check",
-      "State": "Ready",
-      "NextRun": "2026-06-10 08:30",
-      "LastRun": "2026-06-09 08:30",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - clv-capture",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-05-16 18:30",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - clv-capture-v2",
-      "State": "Ready",
-      "NextRun": "2026-06-10 12:30",
-      "LastRun": "2026-06-09 19:00",
-      "LastResult": 2,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - confirm-server",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-06-02 17:36",
-      "LastResult": 2147942402,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - dashboard-refresh",
-      "State": "Running",
-      "NextRun": "2026-06-10 07:00",
-      "LastRun": "2026-06-10 06:55",
-      "LastResult": 267009,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - eod-reconcile",
-      "State": "Ready",
-      "NextRun": "2026-06-10 23:55",
-      "LastRun": "2026-06-09 23:55",
-      "LastResult": 267014,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - evening-scout",
-      "State": "Ready",
-      "NextRun": "2026-06-10 15:15",
-      "LastRun": "2026-06-09 15:15",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - evening-verify-and-fire",
-      "State": "Ready",
-      "NextRun": "2026-06-10 15:50",
-      "LastRun": "2026-06-09 15:50",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - form-discovery",
-      "State": "Ready",
-      "NextRun": "2026-06-10 11:30",
-      "LastRun": "2026-06-09 11:30",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - health-check",
-      "State": "Ready",
-      "NextRun": "2026-06-11 01:00",
-      "LastRun": "2026-06-10 01:00",
-      "LastResult": 267014,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - intraday-settle",
-      "State": "Ready",
-      "NextRun": "2026-06-10 13:00",
-      "LastRun": "2026-06-10 01:30",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - late-slate-lock",
-      "State": "Disabled",
-      "NextRun": "2026-06-10 15:00",
-      "LastRun": "2026-06-01 16:41",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - morning-recap",
-      "State": "Ready",
-      "NextRun": "2026-06-11 06:00",
-      "LastRun": "2026-06-10 06:00",
-      "LastResult": 267014,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - morning-scout",
-      "State": "Ready",
-      "NextRun": "2026-06-10 12:00",
-      "LastRun": "2026-06-09 12:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - night-settle",
-      "State": "Ready",
-      "NextRun": "2026-06-11 02:00",
-      "LastRun": "2026-06-10 02:00",
-      "LastResult": 1,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - odds-api-monitor",
-      "State": "Ready",
-      "NextRun": "2026-06-10 14:00",
-      "LastRun": "2026-06-10 06:00",
-      "LastResult": 0,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - tg-listener",
-      "State": "Running",
-      "NextRun": "2026-06-11 00:01",
-      "LastRun": "2026-06-10 00:01",
-      "LastResult": 267009,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - tg-listener-boot",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-06-02 17:36",
-      "LastResult": 2147942402,
-      "WakeToRun": false
-    },
-    {
-      "Name": "BettingOS - tripwire",
-      "State": "Ready",
-      "NextRun": "",
-      "LastRun": "2026-05-18 06:48",
-      "LastResult": 2147942402,
-      "WakeToRun": true
-    },
-    {
-      "Name": "BettingOS - verify-and-fire",
-      "State": "Ready",
-      "NextRun": "2026-06-10 12:35",
-      "LastRun": "2026-06-09 12:35",
-      "LastResult": 1,
-      "WakeToRun": true
+      "error": "Command '['powershell', '-NoProfile', '-NonInteractive', '-Command', 'Get-ScheduledTask -TaskName \"BettingOS*\" -ErrorAction SilentlyContinue | ForEach-Object {   $info = Get-ScheduledTaskInfo $_;   [PSCustomObject]@{     Name = $_.TaskName;     State = $_.State.ToString();     NextRun = if ($info.NextRunTime) { $info.NextRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastRun = if ($info.LastRunTime) { $info.LastRunTime.ToString(\"yyyy-MM-dd HH:mm\") } else { \"\" };     LastResult = $info.LastTaskResult;     WakeToRun = $_.Settings.WakeToRun   } } | ConvertTo-Json -Compress']' timed out after 15 seconds"
     }
   ],
   "log_completes": {
@@ -46868,23 +46687,23 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 78.3,
+          "weather_temp": 81.1,
           "weather_notes": [],
           "park_runs_factor": 0.97,
-          "nrfi_prob": 58.7,
+          "nrfi_prob": 58.1,
           "nrfi_meta": {
             "base": 58.7,
             "min_sample": 5,
             "p_top": 82.7,
             "p_bot": 71.0,
             "park_mult": 1.003,
-            "weather_adj": -0.0006,
+            "weather_adj": -0.0062,
             "home_sp_rate": 1.0,
             "home_sp_sample": 13,
             "away_sp_rate": 0.6,
             "away_sp_sample": 5
           },
-          "nrfi_reasoning": "Parker Messick 100% 1st-inning scoreless over 13 starts (elite) \u00b7 Carlos Rod\u00f3n 60% 1st-inning scoreless over 5 starts (weak)",
+          "nrfi_reasoning": "Parker Messick 100% 1st-inning scoreless over 13 starts (elite) \u00b7 Carlos Rod\u00f3n 60% 1st-inning scoreless over 5 starts (weak) \u00b7 warm temp (81\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Jos\u00e9 Ram\u00edrez",
@@ -46954,19 +46773,19 @@
           "park_hr_factor": 0.89,
           "weather_factor": 1.08,
           "weather_wind": "out",
-          "weather_temp": 78.8,
+          "weather_temp": 79.0,
           "weather_notes": [
-            "Wind OUT 16 mph (+8% HR\\runs)"
+            "Wind OUT 15 mph (+8% HR\\runs)"
           ],
           "park_runs_factor": 0.93,
-          "nrfi_prob": 56.4,
+          "nrfi_prob": 56.3,
           "nrfi_meta": {
             "base": 56.5,
             "min_sample": 13,
             "p_top": 75.2,
             "p_bot": 75.2,
             "park_mult": 1.007,
-            "weather_adj": -0.0016,
+            "weather_adj": -0.002,
             "home_sp_rate": 0.7692,
             "home_sp_sample": 13,
             "away_sp_rate": 0.7692,
@@ -47038,12 +46857,10 @@
           "away_pp_throws": "R",
           "venue": "Petco Park",
           "park_hr_factor": 0.96,
-          "weather_factor": 1.04,
-          "weather_wind": "out",
-          "weather_temp": 71.3,
-          "weather_notes": [
-            "Wind OUT 8 mph (+4%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": "cross",
+          "weather_temp": 70.7,
+          "weather_notes": [],
           "park_runs_factor": 0.92,
           "nrfi_prob": 53.2,
           "nrfi_meta": {
@@ -47128,7 +46945,7 @@
           "park_hr_factor": 0.92,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 77.5,
+          "weather_temp": 76.5,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 49.3,
@@ -47212,12 +47029,12 @@
           "away_pp_throws": "R",
           "venue": "PNC Park",
           "park_hr_factor": 0.94,
-          "weather_factor": 1.06,
+          "weather_factor": 1.1,
           "weather_wind": "out",
-          "weather_temp": 90.1,
+          "weather_temp": 90.8,
           "weather_notes": [
-            "Wind OUT 11 mph (+4%)",
-            "Temp 90F (+2% ball carries)"
+            "Wind OUT 12 mph (+8% HR\\runs)",
+            "Temp 91F (+2% ball carries)"
           ],
           "park_runs_factor": 0.95,
           "nrfi_prob": 54.1,
@@ -47233,7 +47050,7 @@
             "away_sp_rate": 1.0,
             "away_sp_sample": 10
           },
-          "nrfi_reasoning": "Jared Jones thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Shohei Ohtani 100% 1st-inning scoreless over 10 starts (elite) \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 warm temp (90\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Jared Jones thin sample (2) \u2014 model leans on 0.73 prior \u00b7 Shohei Ohtani 100% 1st-inning scoreless over 10 starts (elite) \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 warm temp (91\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [],
           "hot_away_batters": [],
           "bvp_notes": [],
@@ -47275,9 +47092,9 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.02,
           "weather_wind": null,
-          "weather_temp": 88.0,
+          "weather_temp": 89.4,
           "weather_notes": [
-            "Temp 88F (+2% ball carries)"
+            "Temp 89F (+2% ball carries)"
           ],
           "park_runs_factor": 0.96,
           "nrfi_prob": null,
@@ -47472,9 +47289,9 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 76.6,
+          "weather_temp": 78.0,
           "weather_notes": [
-            "Wind OUT 10 mph (+4%)"
+            "Wind OUT 11 mph (+4%)"
           ],
           "park_runs_factor": 0.97,
           "nrfi_prob": 48.9,
@@ -47484,7 +47301,7 @@
             "p_top": 75.0,
             "p_bot": 65.2,
             "park_mult": 1.003,
-            "weather_adj": 0.0,
+            "weather_adj": -0.0,
             "home_sp_rate": null,
             "home_sp_sample": 1,
             "away_sp_rate": 0.5,
@@ -47532,26 +47349,26 @@
           "park_hr_factor": 0.95,
           "weather_factor": 1.1,
           "weather_wind": "out",
-          "weather_temp": 85.7,
+          "weather_temp": 85.4,
           "weather_notes": [
-            "Wind OUT 20 mph (+8% HR\\runs)",
-            "Temp 86F (+2% ball carries)"
+            "Wind OUT 19 mph (+8% HR\\runs)",
+            "Temp 85F (+2% ball carries)"
           ],
           "park_runs_factor": 0.98,
-          "nrfi_prob": 43.0,
+          "nrfi_prob": 43.1,
           "nrfi_meta": {
             "base": 44.6,
             "min_sample": 13,
             "p_top": 65.5,
             "p_bot": 68.0,
             "park_mult": 1.002,
-            "weather_adj": -0.0154,
+            "weather_adj": -0.0148,
             "home_sp_rate": 0.5385,
             "home_sp_sample": 13,
             "away_sp_rate": 0.6923,
             "away_sp_sample": 13
           },
-          "nrfi_reasoning": "Seth Lugo 54% 1st-inning scoreless over 13 starts (weak) \u00b7 MacKenzie Gore 69% 1st-inning scoreless over 13 starts (weak) \u00b7 warm temp (86\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Seth Lugo 54% 1st-inning scoreless over 13 starts (weak) \u00b7 MacKenzie Gore 69% 1st-inning scoreless over 13 starts (weak) \u00b7 warm temp (85\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [],
           "hot_away_batters": [],
           "bvp_notes": [],
@@ -47592,8 +47409,8 @@
           "venue": "Rate Field",
           "park_hr_factor": 1.08,
           "weather_factor": 1.0,
-          "weather_wind": null,
-          "weather_temp": 72.5,
+          "weather_wind": "cross",
+          "weather_temp": 73.5,
           "weather_notes": [],
           "park_runs_factor": 1.03,
           "nrfi_prob": null,
@@ -47638,12 +47455,10 @@
           "away_pp_throws": "L",
           "venue": "Coors Field",
           "park_hr_factor": 1.15,
-          "weather_factor": 0.97,
-          "weather_wind": "in",
-          "weather_temp": 75.8,
-          "weather_notes": [
-            "Wind IN 6 mph (-3%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": null,
+          "weather_temp": 76.6,
+          "weather_notes": [],
           "park_runs_factor": 1.15,
           "nrfi_prob": 51.8,
           "nrfi_meta": {
@@ -52228,882 +52043,889 @@
         "tier": "other",
         "bytes": 5325,
         "mtime": 1780497202.3583422,
-        "age_hours": 164.4
+        "age_hours": 165.6
       },
       {
         "name": "ai_advisor_2026-06-05.md",
         "tier": "other",
         "bytes": 6077,
         "mtime": 1780657328.452361,
-        "age_hours": 119.9
+        "age_hours": 121.2
       },
       {
         "name": "ai_advisor_2026-06-06.md",
         "tier": "other",
         "bytes": 6553,
         "mtime": 1780743725.3083284,
-        "age_hours": 95.9
+        "age_hours": 97.2
       },
       {
         "name": "ai_advisor_2026-06-07.md",
         "tier": "other",
         "bytes": 5727,
         "mtime": 1780830130.8183205,
-        "age_hours": 71.9
+        "age_hours": 73.2
       },
       {
         "name": "ai_advisor_2026-06-08.md",
         "tier": "other",
         "bytes": 6292,
         "mtime": 1780916552.2517648,
-        "age_hours": 47.9
+        "age_hours": 49.1
       },
       {
         "name": "ai_advisor_2026-06-09.md",
         "tier": "other",
         "bytes": 5816,
         "mtime": 1781002950.7159538,
-        "age_hours": 23.9
+        "age_hours": 25.2
+      },
+      {
+        "name": "ai_advisor_2026-06-10.md",
+        "tier": "other",
+        "bytes": 5814,
+        "mtime": 1781089524.891371,
+        "age_hours": 1.1
       },
       {
         "name": "ai_learner_2026-05-14.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 631.5
+        "age_hours": 632.7
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 629.2
+        "age_hours": 630.4
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 583.2
+        "age_hours": 584.4
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 559.5
+        "age_hours": 560.7
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 556.9
+        "age_hours": 558.2
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 511.5
+        "age_hours": 512.7
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 487.4
+        "age_hours": 488.6
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 463.5
+        "age_hours": 464.7
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 461.0
+        "age_hours": 462.2
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 420.9
+        "age_hours": 422.2
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 391.4
+        "age_hours": 392.7
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 367.5
+        "age_hours": 368.7
       },
       {
         "name": "ai_learner_2026-05-26.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779849197.7021859,
-        "age_hours": 344.4
+        "age_hours": 345.6
       },
       {
         "name": "ai_learner_2026-05-27.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779861796.020988,
-        "age_hours": 340.9
+        "age_hours": 342.1
       },
       {
         "name": "ai_learner_2026-05-29.md",
         "tier": "learner",
         "bytes": 12967,
         "mtime": 1780111941.5617077,
-        "age_hours": 271.4
+        "age_hours": 272.7
       },
       {
         "name": "ai_learner_2026-05-30.md",
         "tier": "learner",
         "bytes": 12392,
         "mtime": 1780198338.3981981,
-        "age_hours": 247.4
+        "age_hours": 248.7
       },
       {
         "name": "ai_learner_2026-05-31.md",
         "tier": "learner",
         "bytes": 11883,
         "mtime": 1780284682.342586,
-        "age_hours": 223.5
+        "age_hours": 224.7
       },
       {
         "name": "ai_learner_2026-06-02.md",
         "tier": "learner",
         "bytes": 12355,
         "mtime": 1780459176.4428823,
-        "age_hours": 175.0
+        "age_hours": 176.2
       },
       {
         "name": "ai_learner_2026-06-03.md",
         "tier": "learner",
         "bytes": 12225,
         "mtime": 1780511607.277131,
-        "age_hours": 160.4
+        "age_hours": 161.6
       },
       {
         "name": "ai_learner_2026-06-04.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780628595.1955137,
-        "age_hours": 127.9
+        "age_hours": 129.1
       },
       {
         "name": "ai_learner_2026-06-05.md",
         "tier": "learner",
         "bytes": 12864,
         "mtime": 1780716717.1324153,
-        "age_hours": 103.4
+        "age_hours": 104.7
       },
       {
         "name": "ai_learner_2026-06-06.md",
         "tier": "learner",
         "bytes": 13836,
         "mtime": 1780803133.0277936,
-        "age_hours": 79.4
+        "age_hours": 80.7
       },
       {
         "name": "ai_learner_2026-06-07.md",
         "tier": "learner",
         "bytes": 12837,
         "mtime": 1780889555.2725718,
-        "age_hours": 55.4
+        "age_hours": 56.6
       },
       {
         "name": "ai_learner_2026-06-08.md",
         "tier": "learner",
         "bytes": 12588,
         "mtime": 1780975936.7945259,
-        "age_hours": 31.4
+        "age_hours": 32.7
       },
       {
         "name": "ai_learner_2026-06-09.md",
         "tier": "learner",
         "bytes": 12844,
         "mtime": 1781002853.305923,
-        "age_hours": 24.0
+        "age_hours": 25.2
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 679.4
+        "age_hours": 680.6
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 628.1
+        "age_hours": 629.3
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 621.9
+        "age_hours": 623.1
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 621.5
+        "age_hours": 622.7
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 621.2
+        "age_hours": 622.5
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 617.1
+        "age_hours": 618.3
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 615.6
+        "age_hours": 616.8
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 678.3
+        "age_hours": 679.5
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 620.2
+        "age_hours": 621.4
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 664.4
+        "age_hours": 665.6
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 669.2
+        "age_hours": 670.5
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 683.5
+        "age_hours": 684.7
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 428.8
+        "age_hours": 430.0
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_last10_strategies.md",
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 660.6
+        "age_hours": 661.8
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 695.2
+        "age_hours": 696.4
       },
       {
         "name": "feedback_no_skipping_research.md",
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 705.0
+        "age_hours": 706.2
       },
       {
         "name": "feedback_v8_research_layer.md",
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "full_audit_2026-05-15.md",
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 627.4
+        "age_hours": 628.6
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 678.4
+        "age_hours": 679.6
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 670.7
+        "age_hours": 671.9
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 597.6
+        "age_hours": 598.8
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 597.5
+        "age_hours": 598.7
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 581.0
+        "age_hours": 582.2
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 557.0
+        "age_hours": 558.2
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 509.0
+        "age_hours": 510.2
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 485.0
+        "age_hours": 486.2
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 461.0
+        "age_hours": 462.2
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 430.1
+        "age_hours": 431.3
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 422,
         "mtime": 1779640394.6469948,
-        "age_hours": 402.4
+        "age_hours": 403.6
       },
       {
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779688867.894788,
-        "age_hours": 389.0
+        "age_hours": 390.2
       },
       {
         "name": "learning_journal_2026-05-25.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779775240.8566065,
-        "age_hours": 365.0
+        "age_hours": 366.2
       },
       {
         "name": "learning_journal_2026-05-26.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779861703.4445822,
-        "age_hours": 341.0
+        "age_hours": 342.2
       },
       {
         "name": "learning_journal_2026-05-29.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780120833.8156781,
-        "age_hours": 269.0
+        "age_hours": 270.2
       },
       {
         "name": "learning_journal_2026-05-30.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780207241.292551,
-        "age_hours": 245.0
+        "age_hours": 246.2
       },
       {
         "name": "learning_journal_2026-05-31.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780284639.8909457,
-        "age_hours": 223.5
+        "age_hours": 224.7
       },
       {
         "name": "learning_journal_2026-06-02.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780466442.415035,
-        "age_hours": 173.0
+        "age_hours": 174.2
       },
       {
         "name": "learning_journal_2026-06-03.md",
         "tier": "learner",
         "bytes": 247,
         "mtime": 1780589433.7189765,
-        "age_hours": 138.8
+        "age_hours": 140.0
       },
       {
         "name": "learning_journal_2026-06-04.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780630276.1920986,
-        "age_hours": 127.5
+        "age_hours": 128.7
       },
       {
         "name": "learning_journal_2026-06-05.md",
         "tier": "learner",
         "bytes": 130,
         "mtime": 1780725694.065848,
-        "age_hours": 101.0
+        "age_hours": 102.2
       },
       {
         "name": "learning_journal_2026-06-06.md",
         "tier": "learner",
         "bytes": 197,
         "mtime": 1780812096.5708408,
-        "age_hours": 77.0
+        "age_hours": 78.2
       },
       {
         "name": "learning_journal_2026-06-07.md",
         "tier": "learner",
         "bytes": 132,
         "mtime": 1780898504.1897461,
-        "age_hours": 53.0
+        "age_hours": 54.2
       },
       {
         "name": "learning_journal_2026-06-08.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780984889.632218,
-        "age_hours": 29.0
+        "age_hours": 30.2
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 487.0
+        "age_hours": 488.2
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 696.0
+        "age_hours": 697.2
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "project_factor_redesign_2026-05-19.md",
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 512.9
+        "age_hours": 514.2
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 629.5
+        "age_hours": 630.7
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 628.2
+        "age_hours": 629.4
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_daily_workflow_explained.md",
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 704.0
+        "age_hours": 705.2
       },
       {
         "name": "reference_deep_research_workflow.md",
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 705.0
+        "age_hours": 706.2
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 704.2
+        "age_hours": 705.4
       },
       {
         "name": "reference_sport_calendar.md",
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "reference_strategy_definitions.md",
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 679.3
+        "age_hours": 680.5
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 709.3
+        "age_hours": 710.5
       },
       {
         "name": "reference_working_scrape_sources.md",
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 710.0
+        "age_hours": 711.2
       },
       {
         "name": "roadmap.md",
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 680.0
+        "age_hours": 681.2
       },
       {
         "name": "silent_killers_2026-05-15.md",
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 628.1
+        "age_hours": 629.3
       },
       {
         "name": "state_snapshot_2026-05-13.md",
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 655.5
+        "age_hours": 656.7
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 679.3
+        "age_hours": 680.5
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 678.3
+        "age_hours": 679.5
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 678.5
+        "age_hours": 679.8
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 665.3
+        "age_hours": 666.5
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 665.5
+        "age_hours": 666.7
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 671.8
+        "age_hours": 673.0
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 678.9
+        "age_hours": 680.1
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 669.0
+        "age_hours": 670.2
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 672.1
+        "age_hours": 673.3
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 664.4
+        "age_hours": 665.6
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 663.3
+        "age_hours": 664.5
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 663.7
+        "age_hours": 664.9
       }
     ]
   },
@@ -53115,7 +52937,7 @@
         "status": "stale",
         "latest_file": "v2_scout_2026-06-09.json",
         "latest_date": "2026-06-09",
-        "age_hours": 10.4,
+        "age_hours": 11.6,
         "bytes": 1041,
         "row_count": 0,
         "last_refresh_iso": "2026-06-10T00:37:46.442434+00:00",
@@ -53128,7 +52950,7 @@
         "status": "stale",
         "latest_file": "v2_form_2026-06-08.json",
         "latest_date": "2026-06-08",
-        "age_hours": 43.4,
+        "age_hours": 44.6,
         "bytes": 182911,
         "row_count": null,
         "last_refresh_iso": "2026-06-08T15:36:46.396930+00:00",
@@ -53141,7 +52963,7 @@
         "status": "stale",
         "latest_file": "v2_candidates_2026-06-09.json",
         "latest_date": "2026-06-09",
-        "age_hours": 10.4,
+        "age_hours": 11.6,
         "bytes": 457,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T00:37:46.400901+00:00",
@@ -53154,7 +52976,7 @@
         "status": "stale",
         "latest_file": "v2_settle_summary_2026-06-08.json",
         "latest_date": "2026-06-08",
-        "age_hours": 29.0,
+        "age_hours": 30.2,
         "bytes": 3406,
         "row_count": null,
         "last_refresh_iso": "2026-06-09T06:00:19.789389+00:00",
@@ -53167,7 +52989,7 @@
         "status": "stale",
         "latest_file": "v2_line_snapshots_2026-06-08.json",
         "latest_date": "2026-06-08",
-        "age_hours": 39.7,
+        "age_hours": 40.9,
         "bytes": 5280,
         "row_count": null,
         "last_refresh_iso": "2026-06-08T19:15:57.849763+00:00",
@@ -53180,7 +53002,7 @@
         "status": "stale",
         "latest_file": "learning_journal_2026-06-08.md",
         "latest_date": "2026-06-08",
-        "age_hours": 29.0,
+        "age_hours": 30.2,
         "bytes": 131,
         "row_count": null,
         "last_refresh_iso": "2026-06-09T06:01:29.632218+00:00",
@@ -53193,7 +53015,7 @@
         "status": "stale",
         "latest_file": "historical_hit_rates_2026-06-09.json",
         "latest_date": "2026-06-09",
-        "age_hours": 10.3,
+        "age_hours": 11.6,
         "bytes": 2,
         "row_count": 0,
         "last_refresh_iso": "2026-06-10T00:37:49.473755+00:00",
@@ -53206,7 +53028,7 @@
         "status": "unknown",
         "latest_file": "lineup_824268.json",
         "latest_date": null,
-        "age_hours": 39.1,
+        "age_hours": 40.4,
         "bytes": 482,
         "row_count": 70,
         "last_refresh_iso": "2026-06-08T19:50:26.307045+00:00",
@@ -53219,10 +53041,10 @@
         "status": "fresh",
         "latest_file": "wx_LAA_2026-06-11T01.json",
         "latest_date": "2026-06-11",
-        "age_hours": 0.7,
+        "age_hours": 0.1,
         "bytes": 208,
         "row_count": 26,
-        "last_refresh_iso": "2026-06-10T10:17:41.128463+00:00",
+        "last_refresh_iso": "2026-06-10T12:05:48.167476+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -53236,7 +53058,7 @@
     "bot_id": null,
     "channel_id": null,
     "authorized_count": 2,
-    "listener_running": true,
+    "listener_running": false,
     "listener_pid": null,
     "listener_last_log_line": null,
     "tunnel_running": false,
@@ -57565,18 +57387,9 @@
     ],
     "markdown_latest": "# AI Learner Report \u2014 2026-06-09\n\n**Sample:** 712 settled picks since None\n**Generated:** 2026-06-09T11:00:53.302618+00:00\n\n## Recommendations\n\n1. \ud83d\udd34 **clv_pipeline_dead** (severity: high, n=373)\n   [PERSISTED 24 RUNS] CLV PIPELINE DEAD: 373 picks have a fallback close (close=open) and ZERO real closing-line captures \u2014 the clv-capture job is not running. Real CLV is always noisy \u00b12-5%; this means the closing-line lookup isn't writing back to picks. Per CLAUDE.md, CLV+ is our PRIMARY edge signal \u2014 without it we can't tell good picks from lucky ones. Re-register\\verify the clv-capture scheduled task.\n\n2. \ud83d\udd34 **factor_overweight** (severity: high, n=75)\n   [PERSISTED 23 RUNS] Factor 'statcast' DEMOTE: when bullish (>1.05), hit-rate 46.7% vs neutral 66.7% (lift -20.0pp on n=75). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n3. \ud83d\udd34 **tier_underdog_paying** (severity: high, n=69)\n   [PERSISTED 24 RUNS] Tier LOCK UNDERDOG-PAYS: hit rate 53.6% below expected 70% (delta -16.4pp) BUT ROI +18.4% on n=69. Bigger underdogs are landing \u2014 don't tighten this gate. Lens working as intended; the calibration table just expects too high a hit rate for this tier's odds mix.\n\n4. \ud83d\udd34 **strategy_promote** (severity: high, n=57)\n   [PERSISTED 23 RUNS] Strategy 'MLB Run Line' PROMOTE candidate: 70.2% hit rate and +15.9% ROI on n=57. If pattern holds another week, consider unlocking LIVE access (currently paper-only?).\n\n5. \ud83d\udd34 **factor_overweight** (severity: high, n=31)\n   [PERSISTED 24 RUNS] Factor 'handedness' DEMOTE: when bullish (>1.05), hit-rate 38.7% vs neutral 53.7% (lift -15.0pp on n=31). This factor is currently anti-predictive \u2014 consider halving its strength weight or moving to status='partial'.\n\n6. \ud83d\udd34 **accountant_finding** (severity: high, n=29)\n   [PERSISTED 23 RUNS] [ACCOUNTANT] 29 LIVE pick(s) staked off-table. Example: STRONG tier @ $3.00 vs table expects $4.50. Likely operator manually adjusted stake at FD \u2014 track in \\bankroll correction notes.\n\n7. \ud83d\udd34 **tier_broken** (severity: high, n=24)\n   [PERSISTED 24 RUNS] Tier WATCH BROKEN: hit rate 16.7% (expected 45%, delta -28.3pp) AND ROI -34.2% on n=24. Both metrics negative \u2014 tier is structurally losing. Tighten the edge_pp gate or kill the tier entirely.\n\n8. \ud83d\udd34 **strategy_demote** (severity: high, n=22)\n   [PERSISTED 24 RUNS] Strategy 'MLB Batter Total Bases Alt' DEMOTE candidate: 27.3% hit rate on n=22. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n9. \ud83d\udd34 **tier_slack** (severity: high, n=21)\n   [PERSISTED 24 RUNS] Tier SIDE TRUE SLACK: hit rate 66.7% AND ROI +8.3% both beat expectations on n=21. Loosening the edge_pp gate here would likely ship more profitable picks.\n\n10. \ud83d\udd34 **strategy_demote** (severity: high, n=14)\n   [PERSISTED 20 RUNS] Strategy 'MLB Batter RBIs Alt' DEMOTE candidate: 28.6% hit rate on n=14. Either model assumptions are wrong on this market or book has tightened. Pause and audit factor weights for this strategy.\n\n11. \ud83d\udd34 **player_weak** (severity: high, n=12)\n   [PERSISTED 24 RUNS] Player TJ Rumfield WEAK track record: 17% hit (shrunk to 31.8% w\\ prior) \\ -39.7% ROI on n=12. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n12. \ud83d\udd34 **coverage_gaps** (severity: high, n=10)\n   [PERSISTED 24 RUNS] COVERAGE GAPS: 10 engine strategies have ZERO picks since the 5\\14 reset. team-markets: MLB F5 Moneyline, MLB F5 Total, MLB NRFI \u00b7 batter-props: MLB Batter H+R+RBI, MLB Batter HR, MLB Batter Hits, MLB Batter RBIs, MLB Batter Runs, MLB Batter Total Bases, MLB Batter Walks. Either the strategy_match table is mis-wired (engine code can't actually fire these), or upstream gates (\u00a7111 demand, edge_pp, sample) are too tight. Audit lib\\v2_scorer.py STRATEGY_BY_SPORT_MARKET vs what's reaching the lock.\n\n13. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=10)\n   [PERSISTED 23 RUNS] [ELECTRICIAN] 10 Odds API market(s) have no engine strategy mapping in STRATEGY_BY_SPORT_MARKET: (nba, ASSISTS), (nba, POINTS), (nba, REBOUNDS), (nba, THREES_MADE), (nhl, ASSISTS)... +5 more. Candidates from these markets get scored but get strategy_match=None and may be filtered out downstream.\n\n14. \ud83d\udd34 **family_working** (severity: high, n=9)\n   [PERSISTED 7 RUNS] Market family PITCHER PROP WORKING: hit rate 55.6% AND ROI +9.5% on n=9. Consider increasing volume here.\n\n15. \ud83d\udd34 **player_strong** (severity: high, n=8)\n   [PERSISTED 5 RUNS] Player Zack Gelof STRONG track record: 100% hit (shrunk to 72.2% w\\ prior) \\ +32.8% ROI on n=8. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n16. \ud83d\udd34 **player_weak** (severity: high, n=8)\n   [PERSISTED 5 RUNS] Player Corbin Carroll WEAK track record: 25% hit (shrunk to 38.9% w\\ prior) \\ -22.5% ROI on n=8. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n17. \ud83d\udd34 **player_strong** (severity: high, n=7)\n   [PERSISTED 7 RUNS] Player Willson Contreras STRONG track record: 71% hit (shrunk to 58.8% w\\ prior) \\ +74.4% ROI on n=7. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n18. \ud83d\udd34 **calibration_overconfidence** (severity: high, n=6)\n   [PERSISTED 24 RUNS] 6 HIGH-edge (\u22658pp) losers in the postmortem journal. Calibration is over-confident \u2014 engine reports high edges that don't materialize. Tighten LOCK gate to edge\u226510pp + sample\u226530.\n\n19. \ud83d\udd34 **player_weak** (severity: high, n=6)\n   [PERSISTED 17 RUNS] Player Ceddanne Rafaela WEAK track record: 0% hit (shrunk to 31.2% w\\ prior) \\ -50.0% ROI on n=6. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n20. \ud83d\udd34 **player_strong** (severity: high, n=6)\n   [PERSISTED 24 RUNS] Player Miguel Vargas STRONG track record: 100% hit (shrunk to 68.8% w\\ prior) \\ +24.8% ROI on n=6. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n21. \ud83d\udd34 **player_strong** (severity: high, n=5)\n   [PERSISTED 7 RUNS] Player Coby Mayo STRONG track record: 80% hit (shrunk to 60.0% w\\ prior) \\ +38.4% ROI on n=5. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n22. \ud83d\udd34 **player_weak** (severity: high, n=5)\n   [PERSISTED 14 RUNS] Player Josh Naylor WEAK track record: 20% hit (shrunk to 40.0% w\\ prior) \\ -33.3% ROI on n=5. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n23. \ud83d\udd34 **player_weak** (severity: high, n=5)\n   [PERSISTED 16 RUNS] Player Nolan Gorman WEAK track record: 0% hit (shrunk to 33.3% w\\ prior) \\ -40.0% ROI on n=5. Engine has been wrong on him \u2014 consider stake reduction or fade when he reappears.\n\n24. \ud83d\udd34 **player_strong** (severity: high, n=5)\n   [PERSISTED 16 RUNS] Player Jake Bauers STRONG track record: 100% hit (shrunk to 66.7% w\\ prior) \\ +26.0% ROI on n=5. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n25. \ud83d\udd34 **player_strong** (severity: high, n=5)\n   [PERSISTED 15 RUNS] Player Travis Bazzana STRONG track record: 100% hit (shrunk to 66.7% w\\ prior) \\ +23.0% ROI on n=5. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n26. \ud83d\udd34 **player_strong** (severity: high, n=5)\n   [PERSISTED 16 RUNS] Player Riley Greene STRONG track record: 80% hit (shrunk to 60.0% w\\ prior) \\ +23.0% ROI on n=5. Engine reliably picks this player \u2014 consider tier-boost when he reappears.\n\n27. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 23 RUNS] [ELECTRICIAN] verify-and-fire.log has recent exception: UnicodeEncodeError: 'charmap' codec can't encode character '\\u2192'. Likely wiring bug \u2014 variable rename, missing import, or config drift. Tail full log to root-cause.\n\n28. \ud83d\udd34 **wiring_diagnostic** (severity: high, n=1)\n   [PERSISTED 23 RUNS] [ELECTRICIAN] WTS task \\BettingOS - late-slate-lock is DISABLED. If it's a production cron (settle\\scout\\lock), this is wrongful wiring \u2014 re-enable or remove from BettingOS namespace.\n\n29. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 23 RUNS] [ACCOUNTANT] 2026-05-16: engine running $167.12, operator confirmed $154.40, gap $-12.72. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n30. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 23 RUNS] [ACCOUNTANT] 2026-05-19: engine running $167.12, operator confirmed $145.45, gap $-21.67. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n31. \ud83d\udd34 **accountant_finding** (severity: high, n=1)\n   [PERSISTED 23 RUNS] [ACCOUNTANT] 2026-05-20: engine running $190.98, operator confirmed $152.83, gap $-38.15. Engine math doesn't match reality on this day \u2014 likely stake-size mismatch between recorded and real FD placement.\n\n32. \ud83d\udfe1 **factor_strong_signal** (severity: med, n=95)\n   Factor 'player_performer' PROMOTE: bullish picks hit 62.1% vs 46.4% neutral (lift +15.7pp, n=95). Consider bumping strength weight 10% \u2014 this is doing more work than the calibration assumes.\n\n## Bankroll Context\n\n| Account | Start | Current | Change | Tier-1u stake |\n|---------|-------|---------|--------|---------------|\n| LIVE  | $150.00 | $151.77 | +1.18% | $3.00 |\n| PAPER | $500.00 | $431.36 | -13.73% | $5.00 |\n\n_Reset baseline: 2026-05-14_\n\n## Per-Account Tier Performance\n\n### LIVE (72 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 25 | 60.0% | 70% | -10.0pp | +13.7% |\n| STRONG | 20 | 85.0% | 60% | +25.0pp | +23.0% |\n| GOOD | 24 | 41.7% | 55% | -13.3pp | -9.4% |\n| SIDE | 2 | 100.0% | 50% | +50.0pp | +94.7% |\n\n### PAPER (640 picks analyzed)\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 44 | 50.0% | 70% | -20.0pp | +19.2% |\n| STRONG | 70 | 71.4% | 60% | +11.4pp | -11.3% |\n| GOOD | 483 | 52.4% | 55% | -2.6pp | -3.7% |\n| SIDE | 19 | 63.2% | 50% | +13.2pp | +6.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n## Factor Performance\n\n| Factor | Bullish (>1.05) | Bearish (<0.95) | Neutral | Lift |\n|--------|-----------------|------------------|---------|------|\n| pitcher_matchup | 53.8% (n=132) | 33.3% (n=12) | 57.1% (n=63) | -3.3pp |\n| player_performer | 62.1% (n=95) | 37.3% (n=51) | 46.4% (n=28) | +15.7pp |\n| park | 55.7% (n=88) | 33.3% (n=3) | 50.4% (n=131) | +5.3pp |\n| statcast | 46.7% (n=75) | \u2014 | 66.7% (n=9) | -20.0pp |\n| bullpen | 54.7% (n=64) | \u2014 | 60.9% (n=87) | -6.2pp |\n| handedness | 38.7% (n=31) | 0.0% (n=1) | 53.7% (n=54) | -15.0pp |\n| bvp | 80.0% (n=5) | 69.2% (n=13) | 27.3% (n=11) | +52.7pp |\n| weather | 50.0% (n=4) | 100.0% (n=2) | 65.2% (n=23) | -15.2pp |\n| pitcher_rest | 50.0% (n=2) | \u2014 | 66.7% (n=3) | -16.7pp |\n\n## Strategy Performance \u2014 engine-reproducible\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| MLB Batter Hits Alt | 410 | 222-188 | 54.1% | -3.9% |\n| MLB Moneyline | 101 | 50-51 | 49.5% | -7.4% |\n| MLB Run Line | 57 | 40-17 | 70.2% | +15.9% |\n| MLB Total Runs | 57 | 33-24 | 57.9% | +5.7% |\n| MLB Batter Total Bases Alt | 22 | 6-16 | 27.3% | -11.4% |\n| MLB Batter RBIs Alt | 14 | 4-10 | 28.6% | -8.6% |\n| MLB Pitcher Strikeouts | 9 | 5-4 | 55.6% | +9.5% |\n| MLB NRFI Parlay | 2 | 0-2 | 0.0% | -50.0% |\n\n## Strategy Performance \u2014 legacy \\ manually-tagged\n\n_These strategies exist only as historical Notion labels \u2014 current engine cannot reproduce them. Promote\\demote recommendations DO NOT operate on this table._\n\n| Strategy | n | W-L | Hit Rate | ROI |\n|----------|---|-----|----------|-----|\n| Boring Lock | 14 | 10-4 | 71.4% | +37.7% |\n| Stable Edge Parlay | 7 | 4-3 | 57.1% | +59.5% |\n| O A+ Auto-Lock | 4 | 2-2 | 50.0% | -82.8% |\n| Discretionary | 3 | 2-1 | 66.7% | +35.4% |\n| I v2 baseline | 1 | 1-0 | 100.0% | +60.2% |\n| J Kelly | 1 | 1-0 | 100.0% | +60.2% |\n| C NBA Pts | 1 | 0-1 | 0.0% | -100.0% |\n| D NHL SOG | 1 | 0-1 | 0.0% | -100.0% |\n| N Alvarez Hits | 1 | 1-0 | 100.0% | +55.6% |\n| B Hot Hits | 1 | 1-0 | 100.0% | +29.4% |\n| A K-NRFI | 1 | 1-0 | 100.0% | +98.7% |\n\n## Tier Calibration\n\n| Tier | n | Hit Rate | Expected | Delta | ROI |\n|------|---|----------|----------|-------|-----|\n| LOCK | 69 | 53.6% | 70% | -16.4pp | +18.4% |\n| STRONG | 90 | 74.4% | 60% | +14.4pp | -7.6% |\n| SIDE | 21 | 66.7% | 50% | +16.7pp | +8.3% |\n| WATCH | 24 | 16.7% | 45% | -28.3pp | -34.2% |\n\n---\n_Auto-generated by `scripts\\v2_ai_learner.py`. Recommendations are PROPOSALS \u2014 operator reviews and hand-applies factor weight changes._",
     "status": {
-      "state": "idle",
-      "updated_at": "2026-06-09T11:00:53.315255+00:00",
-      "last_run_at": "2026-06-09T11:00:53.315132+00:00",
-      "last_run_picks": 712,
-      "last_run_recommendations": 32,
-      "last_run_severity": {
-        "high": 31,
-        "med": 1,
-        "low": 0
-      },
-      "last_run_md": "memory\\ai_learner_2026-06-09.md",
-      "last_run_json": "props_cache\\v2_ai_learner_2026-06-09.json"
+      "state": "running",
+      "updated_at": "2026-06-10T11:00:08.282696+00:00",
+      "started_at": "2026-06-10T11:00:08.282634+00:00"
     }
   },
   "target_strategies": [
@@ -60220,12 +60033,12 @@
       "pitcher_signal": 8.48,
       "park_nrfi_mult": 1.05,
       "park_signal": 1.25,
-      "temp_f": 78.3,
-      "temp_signal": -0.15,
+      "temp_f": 81.1,
+      "temp_signal": -1.55,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 63.3,
+      "confidence": 61.9,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -60251,12 +60064,12 @@
       "pitcher_signal": -0.13,
       "park_nrfi_mult": 1.01,
       "park_signal": 0.25,
-      "temp_f": 85.7,
-      "temp_signal": -3.85,
+      "temp_f": 85.4,
+      "temp_signal": -3.7,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 39.5,
+      "confidence": 39.7,
       "side": "none",
       "band": "mild_yrfi",
       "recommendation": "Mild YRFI tilt \u2014 no bet",
@@ -60282,12 +60095,12 @@
       "pitcher_signal": 6.15,
       "park_nrfi_mult": 1.07,
       "park_signal": 1.75,
-      "temp_f": 78.8,
-      "temp_signal": -0.4,
+      "temp_f": 79.0,
+      "temp_signal": -0.5,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 58.3,
+      "confidence": 58.2,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -60344,7 +60157,7 @@
       "pitcher_signal": 0.97,
       "park_nrfi_mult": 1.02,
       "park_signal": 0.5,
-      "temp_f": 88.0,
+      "temp_f": 89.4,
       "temp_signal": -5.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -60437,8 +60250,8 @@
       "pitcher_signal": 0.17,
       "park_nrfi_mult": 1.07,
       "park_signal": 1.75,
-      "temp_f": 76.6,
-      "temp_signal": 0.0,
+      "temp_f": 78.0,
+      "temp_signal": -0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
@@ -60468,7 +60281,7 @@
       "pitcher_signal": 2.74,
       "park_nrfi_mult": 1.08,
       "park_signal": 2.0,
-      "temp_f": 71.3,
+      "temp_f": 70.7,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -60499,7 +60312,7 @@
       "pitcher_signal": 2.02,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
-      "temp_f": 77.5,
+      "temp_f": 76.5,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -60530,7 +60343,7 @@
       "pitcher_signal": 4.47,
       "park_nrfi_mult": 1.01,
       "park_signal": 0.25,
-      "temp_f": 72.5,
+      "temp_f": 73.5,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -60623,7 +60436,7 @@
       "pitcher_signal": 7.34,
       "park_nrfi_mult": 1.03,
       "park_signal": 0.75,
-      "temp_f": 90.1,
+      "temp_f": 90.8,
       "temp_signal": -5.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -60654,7 +60467,7 @@
       "pitcher_signal": 7.69,
       "park_nrfi_mult": 0.78,
       "park_signal": -5.5,
-      "temp_f": 75.8,
+      "temp_f": 76.6,
       "temp_signal": 0.0,
       "ump_name": null,
       "ump_k_pct_bias": null,
@@ -64274,6 +64087,14 @@
   },
   "activity_feed": [
     {
+      "timestamp_utc": "2026-06-10T11:00:08.282696+00:00",
+      "type": "ai-learner",
+      "icon": "\ud83e\udde0",
+      "title": "learner: running",
+      "detail": "0 picks analyzed \u00b7 0 recommendations",
+      "success": true
+    },
+    {
       "timestamp_utc": "2026-06-10T10:00:07.058373+00:00",
       "type": "api-monitor",
       "icon": "\ud83d\udd11",
@@ -64286,16 +64107,8 @@
       "type": "tg-listener-restart",
       "icon": "\ud83d\udce1",
       "title": "tg-listener",
-      "detail": "[listener] poll error: The read operation timed out",
+      "detail": "[listener] poll error: <urlopen error [Errno 11001] getaddrinfo failed>",
       "success": false
-    },
-    {
-      "timestamp_utc": "2026-06-09T11:00:53.315255+00:00",
-      "type": "ai-learner",
-      "icon": "\ud83e\udde0",
-      "title": "learner: idle",
-      "detail": "712 picks analyzed \u00b7 32 recommendations",
-      "success": true
     },
     {
       "timestamp_utc": "2026-06-09T06:01:31.053944+00:00",
@@ -64307,12 +64120,12 @@
     }
   ],
   "ai_learner_status": {
-    "state": "idle",
+    "state": "running",
     "kill_switch": false,
     "kill_reason": null,
-    "last_run_at": "2026-06-09T11:00:53.315132+00:00",
-    "last_run_picks": 712,
-    "last_run_recommendations": 32,
+    "last_run_at": null,
+    "last_run_picks": 0,
+    "last_run_recommendations": 0,
     "guardrails": [
       "Never modifies engine code automatically",
       "Requires n\u22655 (factor), n\u22658 (strategy\\tier) before flagging",
@@ -64336,14 +64149,8 @@
       "strategy_min_n": 10,
       "tier_drift_threshold_pp": -15
     },
-    "updated_at": "2026-06-09T11:00:53.315255+00:00",
-    "last_run_severity": {
-      "high": 31,
-      "med": 1,
-      "low": 0
-    },
-    "last_run_md": "memory\\ai_learner_2026-06-09.md",
-    "last_run_json": "props_cache\\v2_ai_learner_2026-06-09.json"
+    "updated_at": "2026-06-10T11:00:08.282696+00:00",
+    "started_at": "2026-06-10T11:00:08.282634+00:00"
   },
   "odds_api_monitor": {
     "available": true,
@@ -67752,7 +67559,7 @@
     ],
     "available": true
   },
-  "built_at_et": "2026-06-10 06:58 ET",
+  "built_at_et": "2026-06-10 08:11 ET",
   "counts": {
     "picks_total": 849,
     "settled": 374,
