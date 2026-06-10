@@ -1,6 +1,6 @@
 {
-  "build_id": "260610-192046",
-  "generated_at": "2026-06-10T19:20:47.859248+00:00",
+  "build_id": "260610-192545",
+  "generated_at": "2026-06-10T19:25:46.608267+00:00",
   "today": "2026-06-10",
   "yesterday": "2026-06-09",
   "bankroll": {
@@ -57,8 +57,40 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "HEAT: 85% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10"
+      "true_prob": 0.5963,
+      "notes": "HEAT: 85% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10",
+      "combined_factor": 1.1384,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.039
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.064
+        ],
+        [
+          "team_home_road",
+          1.06
+        ],
+        [
+          "bullpen_fatigue",
+          0.989
+        ],
+        [
+          "bullpen_quality",
+          1.02
+        ],
+        [
+          "head_to_head",
+          1.08
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-818d-82cb-dcfa4e197506",
@@ -133,8 +165,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 52% (neutral) \u00b7 edge +2.1pp \u00b7 rae +2.1 \u00b7 rank #71 \u00b7 factor x1.04 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O1.5 line, gap +0.10) \u00b7 vs Jack Perkins  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5088,
+      "notes": "heat 52% (neutral) \u00b7 edge +2.1pp \u00b7 rae +2.1 \u00b7 rank #71 \u00b7 factor x1.04 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O1.5 line, gap +0.10) \u00b7 vs Jack Perkins  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0431,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.05
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.02
+        ],
+        [
+          "bullpen",
+          1.04
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          0.98
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8101-937e-cff3b61f78c6",
@@ -171,8 +231,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 50% (neutral) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #55 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O1.5 line, gap -0.70) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.4454,
+      "notes": "heat 50% (neutral) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #55 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O1.5 line, gap -0.70) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0691,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          0.99
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81cd-b770-cc0b00fdf677",
@@ -209,8 +301,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #52 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.4296,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #52 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0739,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81ab-96b5-fa48378d74ef",
@@ -247,8 +367,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #50 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3935,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #50 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0822,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81b2-9021-c93bae4e0680",
@@ -266,8 +414,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.1pp \u00b7 rae +2.5 \u00b7 rank #45 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3949,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.1pp \u00b7 rae +2.5 \u00b7 rank #45 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.086,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8106-8646-cccb3863dd3e",
@@ -361,8 +541,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 53% (neutral) \u00b7 edge +3.5pp \u00b7 rae +3.1 \u00b7 rank #40 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs MacKenzie Gore  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.6897,
+      "notes": "heat 53% (neutral) \u00b7 edge +3.5pp \u00b7 rae +3.1 \u00b7 rank #40 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs MacKenzie Gore  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0527,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "park",
+          1.01
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.05
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-812a-80f0-f83f655a8dab",
@@ -380,8 +584,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 64% (cautious) \u00b7 edge +5.0pp \u00b7 rae +4.0 \u00b7 rank #25 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 17 hits L10 (avg 1.70 vs O1.5 line, gap +0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.505,
+      "notes": "heat 64% (cautious) \u00b7 edge +5.0pp \u00b7 rae +4.0 \u00b7 rank #25 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 17 hits L10 (avg 1.70 vs O1.5 line, gap +0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.111,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8142-9e1d-e4c1e28ce39c",
@@ -399,8 +631,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 64% (cautious) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #29 \u00b7 factor x1.08 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5672,
+      "notes": "heat 64% (cautious) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #29 \u00b7 factor x1.08 \u00b7 n=10  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81c8-beb1-fc6b7593bbbc",
@@ -494,8 +750,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 55% (cautious) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #56 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3413,
+      "notes": "heat 55% (cautious) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #56 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0922,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.97
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81a1-93d2-c318995bc788",
@@ -589,8 +873,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 85% (real-edge) \u00b7 edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5963,
+      "notes": "heat 85% (real-edge) \u00b7 edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.1384,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.039
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.064
+        ],
+        [
+          "team_home_road",
+          1.06
+        ],
+        [
+          "bullpen_fatigue",
+          0.989
+        ],
+        [
+          "bullpen_quality",
+          1.02
+        ],
+        [
+          "head_to_head",
+          1.08
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-8168-9f24-d2cf77f34abb",
@@ -684,8 +1000,32 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "HEAT: 58% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +2.9pp \u00b7 rae +2.2 \u00b7 rank #9 \u00b7 factor x1.06 \u00b7 n=10"
+      "true_prob": 0.5672,
+      "notes": "HEAT: 58% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +2.9pp \u00b7 rae +2.2 \u00b7 rank #9 \u00b7 factor x1.06 \u00b7 n=10",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-815d-acee-d7759df3a559",
@@ -722,8 +1062,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#2]\n[LATE_SLATE]\nHEAT: 88% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.6pp \u00b7 rae +5.9 \u00b7 rank #2 \u00b7 factor x1.13 \u00b7 n=10"
+      "true_prob": 0.6139,
+      "notes": "[CHALLENGER rank-#2]\n[LATE_SLATE]\nHEAT: 88% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.6pp \u00b7 rae +5.9 \u00b7 rank #2 \u00b7 factor x1.13 \u00b7 n=10",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-8154-bcde-c8c4701f4fca",
@@ -882,8 +1242,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] Bryce Eldridge HITS_ALT 2 O0.5 -> WON. Net +$3.33 at -150."
+      "true_prob": 0.634,
+      "notes": "[auto-confirmed] Bryce Eldridge HITS_ALT 2 O0.5 -> WON. Net +$3.33 at -150.",
+      "combined_factor": 1.0567,
+      "sample_size": 27,
+      "factors_applied": [
+        [
+          "park",
+          0.97
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.05
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          0.98
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-8141-8e37-d7e403af9269",
@@ -901,8 +1289,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] HOU 5 vs opp 4 (spread -1.5, adj 3.5) -> NOT COVERED. Net -$5.00 at -110."
+      "true_prob": 0.5672,
+      "notes": "[auto-confirmed] HOU 5 vs opp 4 (spread -1.5, adj 3.5) -> NOT COVERED. Net -$5.00 at -110.",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-81f7-9b27-dcbf83a80196",
@@ -1148,8 +1560,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] BAL 3 vs opp 6 (spread +1.5, adj 4.5) -> NOT COVERED. Net -$5.00 at -110."
+      "true_prob": 0.5369,
+      "notes": "[auto-confirmed] BAL 3 vs opp 6 (spread +1.5, adj 4.5) -> NOT COVERED. Net -$5.00 at -110.",
+      "combined_factor": 1.0249,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.017
+        ],
+        [
+          "team_form",
+          1.02
+        ],
+        [
+          "team_record",
+          1.026
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "379315a3-aab3-81db-a02f-f404df03c260",
@@ -1224,8 +1656,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 87% (LOCK-grade) \u00b7 edge +6.5pp \u00b7 rae +5.8 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.6139,
+      "notes": "heat 87% (LOCK-grade) \u00b7 edge +6.5pp \u00b7 rae +5.8 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "378315a3-aab3-811a-811f-ee25fca9f053",
@@ -1699,8 +2151,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] HOU 0 vs opp 5 (spread +1.5, adj 1.5) -> NOT COVERED. Net -$2.50 at -110."
+      "true_prob": 0.5672,
+      "notes": "[auto-confirmed] HOU 0 vs opp 5 (spread +1.5, adj 1.5) -> NOT COVERED. Net -$2.50 at -110.",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "378315a3-aab3-8128-938f-e7d03043ab72",
@@ -1969,8 +2445,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#4]\n[LATE_SLATE]\nHEAT: 87% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.8pp \u00b7 rae +5.4 \u00b7 rank #4 \u00b7 factor x1.15 \u00b7 n=10"
+      "true_prob": 0.6139,
+      "notes": "[CHALLENGER rank-#4]\n[LATE_SLATE]\nHEAT: 87% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.8pp \u00b7 rae +5.4 \u00b7 rank #4 \u00b7 factor x1.15 \u00b7 n=10",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "377315a3-aab3-8111-89b1-e9a608ac2ae3",
@@ -2106,8 +2602,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] Jackson Chourio HITS_ALT 0 O1.5 -> LOST. Net -$0.00 at 105."
+      "true_prob": 0.5088,
+      "notes": "[auto-confirmed] Jackson Chourio HITS_ALT 0 O1.5 -> LOST. Net -$0.00 at 105.",
+      "combined_factor": 1.0431,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.05
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.02
+        ],
+        [
+          "bullpen",
+          1.04
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          0.98
+        ]
+      ]
     },
     {
       "id": "377315a3-aab3-8149-8987-fb9bf5e0f525",
@@ -2144,8 +2668,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] Victor Caratini HITS_ALT 1 O0.5 -> WON. Net +$1.47 at -170."
+      "true_prob": 0.6415,
+      "notes": "[auto-confirmed] Victor Caratini HITS_ALT 1 O0.5 -> WON. Net +$1.47 at -170.",
+      "combined_factor": 1.0188,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          0.98
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "bullpen",
+          1.027
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "377315a3-aab3-81d7-9c34-cfddb54f635b",
@@ -2410,8 +2962,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] MIL 7 vs opp 1 (spread -1.5, adj 5.5) -> COVERED. Net +$3.41 at -110."
+      "true_prob": 0.6139,
+      "notes": "[auto-confirmed] MIL 7 vs opp 1 (spread -1.5, adj 5.5) -> COVERED. Net +$3.41 at -110.",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "377315a3-aab3-81d6-91d3-e968d2a79dc4",
@@ -2543,8 +3115,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "HEAT: 81% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.4pp \u00b7 rae +4.6 \u00b7 rank #10 \u00b7 factor x1.14 \u00b7 n=10"
+      "true_prob": 0.6139,
+      "notes": "HEAT: 81% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.4pp \u00b7 rae +4.6 \u00b7 rank #10 \u00b7 factor x1.14 \u00b7 n=10",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "376315a3-aab3-8118-b87c-ef8e4bec33b9",
@@ -3037,8 +3629,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] MIL 9 vs opp 7 (spread -1.5, adj 7.5) -> COVERED. Net +$4.55 at -110."
+      "true_prob": 0.6139,
+      "notes": "[auto-confirmed] MIL 9 vs opp 7 (spread -1.5, adj 7.5) -> COVERED. Net +$4.55 at -110.",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "375315a3-aab3-8190-9f3c-d0173417a731",
@@ -3075,8 +3687,20 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#14]\n[LATE_SLATE]\nHEAT: 59% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +2.9pp \u00b7 rae +1.9 \u00b7 rank #14 \u00b7 factor x1.06 \u00b7 n=10"
+      "true_prob": 0.5304,
+      "notes": "[CHALLENGER rank-#14]\n[LATE_SLATE]\nHEAT: 59% (cautious)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +2.9pp \u00b7 rae +1.9 \u00b7 rank #14 \u00b7 factor x1.06 \u00b7 n=10",
+      "combined_factor": 1.0125,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.036
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "375315a3-aab3-8145-abce-d3afd741b2c5",
@@ -3322,8 +3946,20 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] PIT 5 vs opp 1 (spread -1.5, adj 3.5) -> COVERED. Net +$2.27 at -110."
+      "true_prob": 0.5304,
+      "notes": "[auto-confirmed] PIT 5 vs opp 1 (spread -1.5, adj 3.5) -> COVERED. Net +$2.27 at -110.",
+      "combined_factor": 1.0125,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.036
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "375315a3-aab3-8115-89a5-d175eae4d524",
@@ -3721,8 +4357,20 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#14] \u00b7 [LATE_SLATE] \u00b7 heat 62% (cautious) \u00b7 edge +2.7pp \u00b7 rae +2.6 \u00b7 rank #14 \u00b7 factor x1.05 \u00b7 n=10"
+      "true_prob": 0.5304,
+      "notes": "[CHALLENGER rank-#14] \u00b7 [LATE_SLATE] \u00b7 heat 62% (cautious) \u00b7 edge +2.7pp \u00b7 rae +2.6 \u00b7 rank #14 \u00b7 factor x1.05 \u00b7 n=10",
+      "combined_factor": 1.0125,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.036
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "374315a3-aab3-81f9-ba1e-e659d0893c72",
@@ -4405,8 +5053,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "HEAT: 47% (neutral)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +0.8pp \u00b7 rae +0.1 \u00b7 rank #1 \u00b7 factor x1.02"
+      "true_prob": 0.5369,
+      "notes": "HEAT: 47% (neutral)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +0.8pp \u00b7 rae +0.1 \u00b7 rank #1 \u00b7 factor x1.02",
+      "combined_factor": 1.0249,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.017
+        ],
+        [
+          "team_form",
+          1.02
+        ],
+        [
+          "team_record",
+          1.026
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "371315a3-aab3-813e-8be6-e2cd3f4817d7",
@@ -4690,8 +5358,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 47% (neutral) \u00b7 edge +0.8pp \u00b7 rae +0.1 \u00b7 rank #1 \u00b7 factor x1.02"
+      "true_prob": 0.5369,
+      "notes": "heat 47% (neutral) \u00b7 edge +0.8pp \u00b7 rae +0.1 \u00b7 rank #1 \u00b7 factor x1.02",
+      "combined_factor": 1.0249,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.017
+        ],
+        [
+          "team_form",
+          1.02
+        ],
+        [
+          "team_record",
+          1.026
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "370315a3-aab3-8178-9e90-ce146a8d5cf1",
@@ -4899,8 +5587,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 47% (neutral) \u00b7 edge +0.0pp \u00b7 rae +0.0 \u00b7 rank #29"
+      "true_prob": 0.5672,
+      "notes": "heat 47% (neutral) \u00b7 edge +0.0pp \u00b7 rae +0.0 \u00b7 rank #29",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "370315a3-aab3-81b3-8aeb-de26198e5106",
@@ -4994,8 +5706,20 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 47% (neutral) \u00b7 edge +0.0pp \u00b7 rae +0.0 \u00b7 rank #10"
+      "true_prob": 0.5304,
+      "notes": "heat 47% (neutral) \u00b7 edge +0.0pp \u00b7 rae +0.0 \u00b7 rank #10",
+      "combined_factor": 1.0125,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.036
+        ],
+        [
+          "team_home_road",
+          0.992
+        ]
+      ]
     },
     {
       "id": "370315a3-aab3-8140-8955-caf5b66aa66d",
@@ -5165,8 +5889,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#2]\n[LATE_SLATE]\nHEAT: 85% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.5pp \u00b7 rae +6.3 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10"
+      "true_prob": 0.5465,
+      "notes": "[CHALLENGER rank-#2]\n[LATE_SLATE]\nHEAT: 85% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +6.5pp \u00b7 rae +6.3 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10",
+      "combined_factor": 1.0432,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          0.965
+        ],
+        [
+          "team_record",
+          1.037
+        ],
+        [
+          "team_home_road",
+          1.104
+        ],
+        [
+          "bullpen_fatigue",
+          0.991
+        ]
+      ]
     },
     {
       "id": "36f315a3-aab3-8116-9402-d644601b6324",
@@ -5184,8 +5928,28 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#1]\n[LATE_SLATE]\nHEAT: 88% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.0 \u00b7 rank #1 \u00b7 factor x1.14 \u00b7 n=10"
+      "true_prob": 0.6139,
+      "notes": "[CHALLENGER rank-#1]\n[LATE_SLATE]\nHEAT: 88% (LOCK-grade)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.0 \u00b7 rank #1 \u00b7 factor x1.14 \u00b7 n=10",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "36f315a3-aab3-8154-8569-cf0934b15f21",
@@ -5450,8 +6214,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#2] \u00b7 [LATE_SLATE] \u00b7 heat 85% (LOCK-grade) \u00b7 edge +6.5pp \u00b7 rae +6.3 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10"
+      "true_prob": 0.5465,
+      "notes": "[CHALLENGER rank-#2] \u00b7 [LATE_SLATE] \u00b7 heat 85% (LOCK-grade) \u00b7 edge +6.5pp \u00b7 rae +6.3 \u00b7 rank #2 \u00b7 factor x1.12 \u00b7 n=10",
+      "combined_factor": 1.0432,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          0.965
+        ],
+        [
+          "team_record",
+          1.037
+        ],
+        [
+          "team_home_road",
+          1.104
+        ],
+        [
+          "bullpen_fatigue",
+          0.991
+        ]
+      ]
     },
     {
       "id": "36f315a3-aab3-8136-afe9-d6c9b08b50c9",
@@ -5469,8 +6253,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[CHALLENGER rank-#1] \u00b7 [LATE_SLATE] \u00b7 heat 88% (LOCK-grade) \u00b7 edge +7.2pp \u00b7 rae +7.0 \u00b7 rank #1 \u00b7 factor x1.14 \u00b7 n=10"
+      "true_prob": 0.6139,
+      "notes": "[CHALLENGER rank-#1] \u00b7 [LATE_SLATE] \u00b7 heat 88% (LOCK-grade) \u00b7 edge +7.2pp \u00b7 rae +7.0 \u00b7 rank #1 \u00b7 factor x1.14 \u00b7 n=10",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "36c315a3-aab3-8161-90c3-d81c93f4b38f",
@@ -7378,8 +8182,48 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
+      "true_prob": 0.7116,
       "notes": "[AUTO-ARCHIVED] Stale, duplicate, or beyond top 25",
+      "combined_factor": 1.021,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          0.99
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.05
+        ],
+        [
+          "bullpen",
+          1.04
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "series_game",
+          0.995
+        ],
+        [
+          "player_rest",
+          0.98
+        ],
+        [
+          "bvp",
+          0.92
+        ]
+      ],
       "_original_result": "Auto-Archived",
       "_was_engine_graded": true,
       "engine_grade": "Lost",
@@ -9300,8 +10144,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Troy Johnston HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260."
+      "true_prob": 0.8248,
+      "notes": "Troy Johnston HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260.",
+      "combined_factor": 1.142,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          1.07
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "366315a3-aab3-8114-b9d6-c92867807960",
@@ -14477,8 +15349,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Re-archived: not part of operator's morning 25 PAPER slate."
+      "true_prob": 0.6139,
+      "notes": "Re-archived: not part of operator's morning 25 PAPER slate.",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "362315a3-aab3-81b9-bf5d-fb96e75dadbc",
@@ -15047,8 +15939,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[AUTO-ARCHIVED] Stale, duplicate, or beyond top 25"
+      "true_prob": 0.6139,
+      "notes": "[AUTO-ARCHIVED] Stale, duplicate, or beyond top 25",
+      "combined_factor": 1.172,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.031
+        ],
+        [
+          "team_form",
+          1.12
+        ],
+        [
+          "team_record",
+          1.09
+        ],
+        [
+          "team_home_road",
+          1.12
+        ]
+      ]
     },
     {
       "id": "362315a3-aab3-8199-ba13-c6660272f426",
@@ -15275,8 +16187,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Re-archived: not part of operator's morning 25 PAPER slate."
+      "true_prob": 0.5465,
+      "notes": "Re-archived: not part of operator's morning 25 PAPER slate.",
+      "combined_factor": 1.0432,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          0.965
+        ],
+        [
+          "team_record",
+          1.037
+        ],
+        [
+          "team_home_road",
+          1.104
+        ],
+        [
+          "bullpen_fatigue",
+          0.991
+        ]
+      ]
     },
     {
       "id": "362315a3-aab3-81c7-b145-cf78f06ed8ff",
@@ -15693,8 +16625,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Auto-archived 2026-05-16: odds -340 violated the -300 cap. Bug: DIRECT RANK ROUTING filter in lib\\v2_slate_run.py was missing the cap check. Fixed for next fire. Operator never confirmed\\placed this pick."
+      "true_prob": 0.7832,
+      "notes": "Auto-archived 2026-05-16: odds -340 violated the -300 cap. Bug: DIRECT RANK ROUTING filter in lib\\v2_slate_run.py was missing the cap check. Fixed for next fire. Operator never confirmed\\placed this pick.",
+      "combined_factor": 1.0135,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "park",
+          1.01
+        ],
+        [
+          "recency_woba",
+          0.99
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "362315a3-aab3-812b-bac7-e7c7e59b313d",
@@ -15788,8 +16740,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "[auto-confirmed] Alec Burleson HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260."
+      "true_prob": 0.7395,
+      "notes": "[auto-confirmed] Alec Burleson HITS_ALT 1 O0.5 -> WON. Net +$1.92 at -260.",
+      "combined_factor": 1.024,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          0.95
+        ],
+        [
+          "park",
+          0.98
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.07
+        ],
+        [
+          "bullpen",
+          1.04
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "362315a3-aab3-81e8-921c-cdc1f20ff0a7",
@@ -16529,8 +17513,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Auto-archived 2026-05-16: operator confirmed they did not place this pick at sportsbook. PAPER counterpart Won (+$4.41) but LIVE was never placed \u2192 no bankroll impact."
+      "true_prob": 0.7832,
+      "notes": "Auto-archived 2026-05-16: operator confirmed they did not place this pick at sportsbook. PAPER counterpart Won (+$4.41) but LIVE was never placed \u2192 no bankroll impact.",
+      "combined_factor": 1.0135,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "park",
+          1.01
+        ],
+        [
+          "recency_woba",
+          0.99
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "361315a3-aab3-813c-96f7-ced71e5cdb25",
@@ -16909,8 +17913,28 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "Bobby Witt Jr. HITS_ALT 1 O0.5 -> WON. Net +$4.41 at -340."
+      "true_prob": 0.7832,
+      "notes": "Bobby Witt Jr. HITS_ALT 1 O0.5 -> WON. Net +$4.41 at -340.",
+      "combined_factor": 1.0135,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "park",
+          1.01
+        ],
+        [
+          "recency_woba",
+          0.99
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "360315a3-aab3-81be-be5e-d5121ac4aea9",
@@ -16968,8 +17992,40 @@
       "era": "Live.v.2",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "HEAT: 85% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10"
+      "true_prob": 0.5963,
+      "notes": "HEAT: 85% (real-edge)\n[LIVE-Pending \u2014 manual operator approval required]\nTo confirm: change Result from 'Pending-Unconfirmed' to 'Pending'.\nTo skip: leave it \u2014 picks roll off without firing.\n\nEngine: edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10",
+      "combined_factor": 1.1384,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.039
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.064
+        ],
+        [
+          "team_home_road",
+          1.06
+        ],
+        [
+          "bullpen_fatigue",
+          0.989
+        ],
+        [
+          "bullpen_quality",
+          1.02
+        ],
+        [
+          "head_to_head",
+          1.08
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-818d-82cb-dcfa4e197506",
@@ -17044,8 +18100,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 52% (neutral) \u00b7 edge +2.1pp \u00b7 rae +2.1 \u00b7 rank #71 \u00b7 factor x1.04 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O1.5 line, gap +0.10) \u00b7 vs Jack Perkins  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5088,
+      "notes": "heat 52% (neutral) \u00b7 edge +2.1pp \u00b7 rae +2.1 \u00b7 rank #71 \u00b7 factor x1.04 \u00b7 n=30 \u00b7 16 hits L10 (avg 1.60 vs O1.5 line, gap +0.10) \u00b7 vs Jack Perkins  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0431,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.05
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.02
+        ],
+        [
+          "bullpen",
+          1.04
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          0.98
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8101-937e-cff3b61f78c6",
@@ -17082,8 +18166,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 50% (neutral) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #55 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O1.5 line, gap -0.70) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.4454,
+      "notes": "heat 50% (neutral) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #55 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 8 hits L10 (avg 0.80 vs O1.5 line, gap -0.70) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0691,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          0.99
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81cd-b770-cc0b00fdf677",
@@ -17120,8 +18236,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #52 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.4296,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #52 \u00b7 factor x1.07 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0739,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81ab-96b5-fa48378d74ef",
@@ -17158,8 +18302,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #50 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3935,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.0pp \u00b7 rae +2.3 \u00b7 rank #50 \u00b7 factor x1.08 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0822,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81b2-9021-c93bae4e0680",
@@ -17177,8 +18349,40 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 51% (neutral) \u00b7 edge +3.1pp \u00b7 rae +2.5 \u00b7 rank #45 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3949,
+      "notes": "heat 51% (neutral) \u00b7 edge +3.1pp \u00b7 rae +2.5 \u00b7 rank #45 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 7 hits L10 (avg 0.70 vs O1.5 line, gap -0.80) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.086,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          0.95
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8106-8646-cccb3863dd3e",
@@ -17272,8 +18476,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 53% (neutral) \u00b7 edge +3.5pp \u00b7 rae +3.1 \u00b7 rank #40 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs MacKenzie Gore  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.6897,
+      "notes": "heat 53% (neutral) \u00b7 edge +3.5pp \u00b7 rae +3.1 \u00b7 rank #40 \u00b7 factor x1.05 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O0.5 line, gap +0.80) \u00b7 vs MacKenzie Gore  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0527,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "park",
+          1.01
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "player_performer",
+          1.05
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-812a-80f0-f83f655a8dab",
@@ -17291,8 +18519,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 64% (cautious) \u00b7 edge +5.0pp \u00b7 rae +4.0 \u00b7 rank #25 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 17 hits L10 (avg 1.70 vs O1.5 line, gap +0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.505,
+      "notes": "heat 64% (cautious) \u00b7 edge +5.0pp \u00b7 rae +4.0 \u00b7 rank #25 \u00b7 factor x1.11 \u00b7 n=30 \u00b7 17 hits L10 (avg 1.70 vs O1.5 line, gap +0.20) \u00b7 vs Michael Lorenzen  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.111,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.07
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "recency_woba",
+          1.025
+        ],
+        [
+          "bullpen",
+          1.053
+        ],
+        [
+          "home_away",
+          0.98
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-8142-9e1d-e4c1e28ce39c",
@@ -17310,8 +18566,32 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 64% (cautious) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #29 \u00b7 factor x1.08 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5672,
+      "notes": "heat 64% (cautious) \u00b7 edge +4.3pp \u00b7 rae +4.3 \u00b7 rank #29 \u00b7 factor x1.08 \u00b7 n=10  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0829,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.045
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.014
+        ],
+        [
+          "team_home_road",
+          1.072
+        ],
+        [
+          "team_defense",
+          1.008
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81c8-beb1-fc6b7593bbbc",
@@ -17405,8 +18685,36 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 55% (cautious) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #56 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.3413,
+      "notes": "heat 55% (cautious) \u00b7 edge +2.9pp \u00b7 rae +2.3 \u00b7 rank #56 \u00b7 factor x1.09 \u00b7 n=30 \u00b7 13 hits L10 (avg 1.30 vs O1.5 line, gap -0.20) \u00b7 vs Shota Imanaga  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.0922,
+      "sample_size": 30,
+      "factors_applied": [
+        [
+          "pitcher_matchup",
+          1.02
+        ],
+        [
+          "park",
+          1.1
+        ],
+        [
+          "player_performer",
+          0.97
+        ],
+        [
+          "bullpen",
+          1.08
+        ],
+        [
+          "home_away",
+          1.02
+        ],
+        [
+          "player_rest",
+          1.01
+        ]
+      ]
     },
     {
       "id": "37b315a3-aab3-81a1-93d2-c318995bc788",
@@ -17500,11 +18808,43 @@
       "era": "Live.v.2-paper",
       "ccs": null,
       "clv": null,
-      "true_prob": null,
-      "notes": "heat 85% (real-edge) \u00b7 edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
+      "true_prob": 0.5963,
+      "notes": "heat 85% (real-edge) \u00b7 edge +7.2pp \u00b7 rae +7.3 \u00b7 rank #15 \u00b7 factor x1.14 \u00b7 n=10  [auto-confirmed @ 13:05 ET]",
+      "combined_factor": 1.1384,
+      "sample_size": 10,
+      "factors_applied": [
+        [
+          "team_handedness",
+          1.039
+        ],
+        [
+          "team_form",
+          1.04
+        ],
+        [
+          "team_record",
+          1.064
+        ],
+        [
+          "team_home_road",
+          1.06
+        ],
+        [
+          "bullpen_fatigue",
+          0.989
+        ],
+        [
+          "bullpen_quality",
+          1.02
+        ],
+        [
+          "head_to_head",
+          1.08
+        ]
+      ]
     }
   ],
-  "built_at": "2026-06-10T19:20:47.859577+00:00",
+  "built_at": "2026-06-10T19:25:46.608727+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -44613,13 +45953,13 @@
       "pick": "[PAPER] Jhonny Pereda O0.5 HITS_ALT @ -1"
     },
     {
-      "prob": 0.6,
+      "prob": 0.634,
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Bryce Eldridge O0.5 HITS_ALT @ -"
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.5672,
       "outcome": 0,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD HOU -1.5 [HOU@LAA] @ -110"
@@ -44685,7 +46025,7 @@
       "pick": "[PAPER] SPREAD WSH +1.5 [WSH@SF] @ -110 "
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.5369,
       "outcome": 0,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD BAL +1.5 [SEA@BAL] @ -110"
@@ -44805,7 +46145,7 @@
       "pick": "[PAPER] Jake McCarthy O1.5 HITS_ALT @ +1"
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.5672,
       "outcome": 0,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD HOU +1.5 [ATH@HOU] @ -110"
@@ -44895,7 +46235,7 @@
       "pick": "[PAPER] Kyle Karros O0.5 HITS_ALT @ -165"
     },
     {
-      "prob": 0.4878048780487805,
+      "prob": 0.5088,
       "outcome": 0,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Jackson Chourio O1.5 HITS_ALT @ "
@@ -44907,7 +46247,7 @@
       "pick": "[PAPER] Ezequiel Tovar O0.5 HITS_ALT @ -"
     },
     {
-      "prob": 0.6296296296296297,
+      "prob": 0.6415,
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Victor Caratini O0.5 HITS_ALT @ "
@@ -44991,7 +46331,7 @@
       "pick": "[PAPER] ML WSH [WSH@ARI] @ +126 (Washing"
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.6139,
       "outcome": 1,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD MIL -1.5 [MIL@COL] @ -110"
@@ -45153,7 +46493,7 @@
       "pick": "[PAPER] TOTAL Under 8.5 [CHW@PHI] @ -110"
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.6139,
       "outcome": 1,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD MIL -1.5 [MIL@COL] @ -110"
@@ -45195,7 +46535,7 @@
       "pick": "[PAPER] Coby Mayo O0.5 HITS_ALT @ -150 ("
     },
     {
-      "prob": 0.5238095238095238,
+      "prob": 0.5304,
       "outcome": 1,
       "strategy": "MLB Run Line",
       "pick": "[PAPER] SPREAD PIT -1.5 [PIT@HOU] @ -110"
@@ -45609,7 +46949,7 @@
       "pick": "[PAPER] Jordan Walker O0.5 HITS_ALT @ -2"
     },
     {
-      "prob": 0.696969696969697,
+      "prob": 0.7116,
       "outcome": 0,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Alec Bohm O0.5 HITS_ALT @ -230 ("
@@ -46053,7 +47393,7 @@
       "pick": "[PAPER] Jake McCarthy O0.5 HITS_ALT @ -1"
     },
     {
-      "prob": 0.7222222222222222,
+      "prob": 0.8248,
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Troy Johnston O0.5 HITS_ALT @ -2"
@@ -46503,7 +47843,7 @@
       "pick": "[PAPER] Vinnie Pasquantino O0.5 HITS_ALT"
     },
     {
-      "prob": 0.7222222222222222,
+      "prob": 0.7395,
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Alec Burleson O0.5 HITS_ALT @ -2"
@@ -46815,7 +48155,7 @@
       "pick": "[PAPER] Brandon Marsh O0.5 HITS_ALT @ -1"
     },
     {
-      "prob": 0.7727272727272727,
+      "prob": 0.7832,
       "outcome": 1,
       "strategy": "MLB Batter Hits Alt",
       "pick": "[PAPER] Bobby Witt Jr. O0.5 HITS_ALT @ -"
@@ -46912,56 +48252,56 @@
     {
       "low": 45,
       "high": 50,
-      "n": 13,
+      "n": 12,
       "wins": 5,
       "predicted_mid": 47.5,
-      "actual_hit": 38.46153846153847,
-      "delta": -9.038461538461533
+      "actual_hit": 41.66666666666667,
+      "delta": -5.833333333333329
     },
     {
       "low": 50,
       "high": 55,
-      "n": 73,
-      "wins": 47,
+      "n": 70,
+      "wins": 45,
       "predicted_mid": 52.5,
-      "actual_hit": 64.38356164383562,
-      "delta": 11.88356164383562
+      "actual_hit": 64.28571428571429,
+      "delta": 11.785714285714292
     },
     {
       "low": 55,
       "high": 60,
-      "n": 30,
+      "n": 32,
       "wins": 12,
       "predicted_mid": 57.5,
-      "actual_hit": 40.0,
-      "delta": -17.5
+      "actual_hit": 37.5,
+      "delta": -20.0
     },
     {
       "low": 60,
       "high": 65,
-      "n": 67,
-      "wins": 37,
+      "n": 69,
+      "wins": 39,
       "predicted_mid": 62.5,
-      "actual_hit": 55.223880597014926,
-      "delta": -7.276119402985074
+      "actual_hit": 56.52173913043478,
+      "delta": -5.978260869565219
     },
     {
       "low": 65,
       "high": 70,
-      "n": 80,
+      "n": 79,
       "wins": 52,
       "predicted_mid": 67.5,
-      "actual_hit": 65.0,
-      "delta": -2.5
+      "actual_hit": 65.82278481012658,
+      "delta": -1.6772151898734222
     },
     {
       "low": 70,
       "high": 75,
       "n": 37,
-      "wins": 21,
+      "wins": 20,
       "predicted_mid": 72.5,
-      "actual_hit": 56.75675675675676,
-      "delta": -15.743243243243242
+      "actual_hit": 54.054054054054056,
+      "delta": -18.445945945945944
     },
     {
       "low": 75,
@@ -46975,11 +48315,11 @@
     {
       "low": 80,
       "high": 85,
-      "n": 4,
-      "wins": 3,
+      "n": 5,
+      "wins": 4,
       "predicted_mid": 82.5,
-      "actual_hit": 75.0,
-      "delta": -7.5
+      "actual_hit": 80.0,
+      "delta": -2.5
     },
     {
       "low": 85,
@@ -47013,9 +48353,9 @@
     {
       "strategy": "MLB Batter Hits Alt",
       "n": 225,
-      "predicted_avg": 62.08606936970159,
+      "predicted_avg": 62.180213404448324,
       "actual_hit": 54.666666666666664,
-      "delta": -7.419402703034926
+      "delta": -7.51354673778166
     },
     {
       "strategy": "MLB Moneyline",
@@ -47027,9 +48367,9 @@
     {
       "strategy": "MLB Run Line",
       "n": 34,
-      "predicted_avg": 52.87250870670965,
+      "predicted_avg": 53.71557593360041,
       "actual_hit": 70.58823529411765,
-      "delta": 17.715726587408
+      "delta": 16.87265936051724
     },
     {
       "strategy": "MLB Total Runs",
@@ -47153,8 +48493,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-06-10 15:25",
-      "LastRun": "2026-06-10 15:20",
+      "NextRun": "2026-06-10 15:30",
+      "LastRun": "2026-06-10 15:25",
       "LastResult": 267009,
       "WakeToRun": true
     },
@@ -48010,8 +49350,8 @@
             "current_inning": 8,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 5,
-            "home_hits": 10,
+            "home_runs": 7,
+            "home_hits": 12,
             "home_errors": 0,
             "away_runs": 4,
             "away_hits": 5,
@@ -48024,7 +49364,7 @@
               3,
               1,
               0,
-              null
+              2
             ],
             "away_innings": [
               0,
@@ -48112,10 +49452,10 @@
             "abstract_state": "Live",
             "status_code": "I",
             "current_inning": 7,
-            "inning_half": "Top",
-            "inning_state": "Middle",
+            "inning_half": "Bottom",
+            "inning_state": "Bottom",
             "home_runs": 3,
-            "home_hits": 4,
+            "home_hits": 5,
             "home_errors": 2,
             "away_runs": 8,
             "away_hits": 9,
@@ -48210,9 +49550,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 823215,
-            "status": "Pre-Game",
-            "abstract_state": "Preview",
-            "status_code": "P",
+            "status": "Warmup",
+            "abstract_state": "Live",
+            "status_code": "PW",
             "current_inning": 1,
             "inning_half": "Top",
             "inning_state": "Top",
@@ -49069,9 +50409,9 @@
           "bvp_notes": [],
           "scoreboard": {
             "game_pk": 824348,
-            "status": "Scheduled",
+            "status": "Pre-Game",
             "abstract_state": "Preview",
-            "status_code": "S",
+            "status_code": "P",
             "current_inning": null,
             "inning_half": null,
             "inning_state": null,
@@ -53714,42 +55054,42 @@
         "tier": "other",
         "bytes": 5325,
         "mtime": 1780497202.3583422,
-        "age_hours": 172.8
+        "age_hours": 172.9
       },
       {
         "name": "ai_advisor_2026-06-05.md",
         "tier": "other",
         "bytes": 6077,
         "mtime": 1780657328.452361,
-        "age_hours": 128.3
+        "age_hours": 128.4
       },
       {
         "name": "ai_advisor_2026-06-06.md",
         "tier": "other",
         "bytes": 6553,
         "mtime": 1780743725.3083284,
-        "age_hours": 104.3
+        "age_hours": 104.4
       },
       {
         "name": "ai_advisor_2026-06-07.md",
         "tier": "other",
         "bytes": 5727,
         "mtime": 1780830130.8183205,
-        "age_hours": 80.3
+        "age_hours": 80.4
       },
       {
         "name": "ai_advisor_2026-06-08.md",
         "tier": "other",
         "bytes": 6292,
         "mtime": 1780916552.2517648,
-        "age_hours": 56.3
+        "age_hours": 56.4
       },
       {
         "name": "ai_advisor_2026-06-09.md",
         "tier": "other",
         "bytes": 5816,
         "mtime": 1781002950.7159538,
-        "age_hours": 32.3
+        "age_hours": 32.4
       },
       {
         "name": "ai_advisor_2026-06-10.md",
@@ -53763,14 +55103,14 @@
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 639.8
+        "age_hours": 639.9
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 637.5
+        "age_hours": 637.6
       },
       {
         "name": "ai_learner_2026-05-16.md",
@@ -53784,98 +55124,98 @@
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 567.8
+        "age_hours": 567.9
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 565.3
+        "age_hours": 565.4
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 519.8
+        "age_hours": 519.9
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 495.8
+        "age_hours": 495.9
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 471.8
+        "age_hours": 471.9
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 469.3
+        "age_hours": 469.4
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 429.3
+        "age_hours": 429.4
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 399.8
+        "age_hours": 399.9
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 375.8
+        "age_hours": 375.9
       },
       {
         "name": "ai_learner_2026-05-26.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779849197.7021859,
-        "age_hours": 352.8
+        "age_hours": 352.9
       },
       {
         "name": "ai_learner_2026-05-27.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779861796.020988,
-        "age_hours": 349.3
+        "age_hours": 349.4
       },
       {
         "name": "ai_learner_2026-05-29.md",
         "tier": "learner",
         "bytes": 12967,
         "mtime": 1780111941.5617077,
-        "age_hours": 279.8
+        "age_hours": 279.9
       },
       {
         "name": "ai_learner_2026-05-30.md",
         "tier": "learner",
         "bytes": 12392,
         "mtime": 1780198338.3981981,
-        "age_hours": 255.8
+        "age_hours": 255.9
       },
       {
         "name": "ai_learner_2026-05-31.md",
         "tier": "learner",
         "bytes": 11883,
         "mtime": 1780284682.342586,
-        "age_hours": 231.8
+        "age_hours": 231.9
       },
       {
         "name": "ai_learner_2026-06-02.md",
@@ -53889,63 +55229,63 @@
         "tier": "learner",
         "bytes": 12225,
         "mtime": 1780511607.277131,
-        "age_hours": 168.8
+        "age_hours": 168.9
       },
       {
         "name": "ai_learner_2026-06-04.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780628595.1955137,
-        "age_hours": 136.3
+        "age_hours": 136.4
       },
       {
         "name": "ai_learner_2026-06-05.md",
         "tier": "learner",
         "bytes": 12864,
         "mtime": 1780716717.1324153,
-        "age_hours": 111.8
+        "age_hours": 111.9
       },
       {
         "name": "ai_learner_2026-06-06.md",
         "tier": "learner",
         "bytes": 13836,
         "mtime": 1780803133.0277936,
-        "age_hours": 87.8
+        "age_hours": 87.9
       },
       {
         "name": "ai_learner_2026-06-07.md",
         "tier": "learner",
         "bytes": 12837,
         "mtime": 1780889555.2725718,
-        "age_hours": 63.8
+        "age_hours": 63.9
       },
       {
         "name": "ai_learner_2026-06-08.md",
         "tier": "learner",
         "bytes": 12588,
         "mtime": 1780975936.7945259,
-        "age_hours": 39.8
+        "age_hours": 39.9
       },
       {
         "name": "ai_learner_2026-06-09.md",
         "tier": "learner",
         "bytes": 12844,
         "mtime": 1781002853.305923,
-        "age_hours": 32.3
+        "age_hours": 32.4
       },
       {
         "name": "ai_learner_2026-06-10.md",
         "tier": "learner",
         "bytes": 12557,
         "mtime": 1781118161.3171637,
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "name": "audit_2026-05-12.md",
         "tier": "audit",
         "bytes": 20664,
         "mtime": 1778643265.9195821,
-        "age_hours": 687.8
+        "age_hours": 687.9
       },
       {
         "name": "audit_roadmap_2026-05-15.md",
@@ -53966,14 +55306,14 @@
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 629.8
+        "age_hours": 629.9
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 629.6
+        "age_hours": 629.7
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
@@ -53987,7 +55327,7 @@
         "tier": "audit",
         "bytes": 12956,
         "mtime": 1778872924.2391274,
-        "age_hours": 624.0
+        "age_hours": 624.1
       },
       {
         "name": "backtest_mlb_2026-05-13.md",
@@ -54001,21 +55341,21 @@
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 628.6
+        "age_hours": 628.7
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 672.7
+        "age_hours": 672.8
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 677.6
+        "age_hours": 677.7
       },
       {
         "name": "design_engine_v2.md",
@@ -54029,42 +55369,42 @@
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 437.2
+        "age_hours": 437.3
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
         "tier": "feedback",
         "bytes": 3730,
         "mtime": 1778533083.7303417,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_combined_output_format.md",
         "tier": "feedback",
         "bytes": 2080,
         "mtime": 1778533083.7463422,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_dashboard_sync_realtime.md",
         "tier": "feedback",
         "bytes": 1251,
         "mtime": 1778533083.7644908,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_engine_fixes_5_8.md",
         "tier": "feedback",
         "bytes": 7437,
         "mtime": 1778533083.7835815,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_hit_streak_props.md",
         "tier": "feedback",
         "bytes": 2596,
         "mtime": 1778533083.8012128,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_last10_strategies.md",
@@ -54078,70 +55418,70 @@
         "tier": "feedback",
         "bytes": 7656,
         "mtime": 1778533083.82268,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_mcp_browser_blocked.md",
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 703.5
+        "age_hours": 703.6
       },
       {
         "name": "feedback_no_skipping_research.md",
         "tier": "feedback",
         "bytes": 1866,
         "mtime": 1778533083.8413434,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_paid_tools_thresholds.md",
         "tier": "feedback",
         "bytes": 1883,
         "mtime": 1778533083.8596117,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_placement_data_loss.md",
         "tier": "feedback",
         "bytes": 2294,
         "mtime": 1778533083.8811903,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_quant_strategy.md",
         "tier": "feedback",
         "bytes": 5564,
         "mtime": 1778533083.8987613,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_self_audit_directive.md",
         "tier": "feedback",
         "bytes": 5818,
         "mtime": 1778533083.9189413,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_strategy_improvements.md",
         "tier": "feedback",
         "bytes": 3698,
         "mtime": 1778533083.937253,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_trader_analyst_persona.md",
         "tier": "feedback",
         "bytes": 4632,
         "mtime": 1778533083.957584,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_v81_refinements.md",
         "tier": "feedback",
         "bytes": 9308,
         "mtime": 1778533083.9766202,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "feedback_v8_baseline_adjustments.md",
@@ -54155,189 +55495,189 @@
         "tier": "feedback",
         "bytes": 7333,
         "mtime": 1778533083.9920776,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "full_audit_2026-05-15.md",
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 635.8
+        "age_hours": 635.9
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 686.7
+        "age_hours": 686.8
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 679.0
+        "age_hours": 679.1
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 606.0
+        "age_hours": 606.1
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 605.8
+        "age_hours": 605.9
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 589.3
+        "age_hours": 589.4
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 565.3
+        "age_hours": 565.4
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 517.3
+        "age_hours": 517.4
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 493.3
+        "age_hours": 493.4
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 469.3
+        "age_hours": 469.4
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 438.4
+        "age_hours": 438.5
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 422,
         "mtime": 1779640394.6469948,
-        "age_hours": 410.8
+        "age_hours": 410.9
       },
       {
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779688867.894788,
-        "age_hours": 397.3
+        "age_hours": 397.4
       },
       {
         "name": "learning_journal_2026-05-25.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779775240.8566065,
-        "age_hours": 373.3
+        "age_hours": 373.4
       },
       {
         "name": "learning_journal_2026-05-26.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779861703.4445822,
-        "age_hours": 349.3
+        "age_hours": 349.4
       },
       {
         "name": "learning_journal_2026-05-29.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780120833.8156781,
-        "age_hours": 277.3
+        "age_hours": 277.4
       },
       {
         "name": "learning_journal_2026-05-30.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780207241.292551,
-        "age_hours": 253.3
+        "age_hours": 253.4
       },
       {
         "name": "learning_journal_2026-05-31.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780284639.8909457,
-        "age_hours": 231.8
+        "age_hours": 231.9
       },
       {
         "name": "learning_journal_2026-06-02.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780466442.415035,
-        "age_hours": 181.3
+        "age_hours": 181.4
       },
       {
         "name": "learning_journal_2026-06-03.md",
         "tier": "learner",
         "bytes": 247,
         "mtime": 1780589433.7189765,
-        "age_hours": 147.2
+        "age_hours": 147.3
       },
       {
         "name": "learning_journal_2026-06-04.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780630276.1920986,
-        "age_hours": 135.8
+        "age_hours": 135.9
       },
       {
         "name": "learning_journal_2026-06-05.md",
         "tier": "learner",
         "bytes": 130,
         "mtime": 1780725694.065848,
-        "age_hours": 109.3
+        "age_hours": 109.4
       },
       {
         "name": "learning_journal_2026-06-06.md",
         "tier": "learner",
         "bytes": 197,
         "mtime": 1780812096.5708408,
-        "age_hours": 85.3
+        "age_hours": 85.4
       },
       {
         "name": "learning_journal_2026-06-07.md",
         "tier": "learner",
         "bytes": 132,
         "mtime": 1780898504.1897461,
-        "age_hours": 61.3
+        "age_hours": 61.4
       },
       {
         "name": "learning_journal_2026-06-08.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780984889.632218,
-        "age_hours": 37.3
+        "age_hours": 37.4
       },
       {
         "name": "learning_journal_2026-06-10.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1781118077.1380222,
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "name": "project_current_state.md",
@@ -54351,70 +55691,70 @@
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 704.4
+        "age_hours": 704.5
       },
       {
         "name": "project_engine_spec_v7_1.md",
         "tier": "project",
         "bytes": 31816,
         "mtime": 1778533084.1361141,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "project_factor_redesign_2026-05-19.md",
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 521.3
+        "age_hours": 521.4
       },
       {
         "name": "project_polymarket_roadmap.md",
         "tier": "project",
         "bytes": 2391,
         "mtime": 1778533084.1532798,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "project_strategy_tournament.md",
         "tier": "project",
         "bytes": 3579,
         "mtime": 1778533084.1675363,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "proposed_factors_2026-05-15.md",
         "tier": "other",
         "bytes": 4582,
         "mtime": 1778822882.9527557,
-        "age_hours": 637.9
+        "age_hours": 638.0
       },
       {
         "name": "recommendation_log.md",
         "tier": "audit",
         "bytes": 1937,
         "mtime": 1778827550.9958186,
-        "age_hours": 636.6
+        "age_hours": 636.7
       },
       {
         "name": "reference_calibration_table.md",
         "tier": "reference",
         "bytes": 5933,
         "mtime": 1778533084.1992342,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_chrome_dashboard.md",
         "tier": "reference",
         "bytes": 3106,
         "mtime": 1778533084.2140942,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_clv_tracking.md",
         "tier": "reference",
         "bytes": 1743,
         "mtime": 1778533084.2325714,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_daily_workflow_explained.md",
@@ -54428,42 +55768,42 @@
         "tier": "reference",
         "bytes": 4791,
         "mtime": 1778533084.248364,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_lineup_timing.md",
         "tier": "reference",
         "bytes": 3103,
         "mtime": 1778533084.262294,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_memory_execution_order.md",
         "tier": "reference",
         "bytes": 5362,
         "mtime": 1778533084.2777753,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_paper_engine_recipe.md",
         "tier": "reference",
         "bytes": 4870,
         "mtime": 1778533084.2925081,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_post_placement_sync.md",
         "tier": "reference",
         "bytes": 2677,
         "mtime": 1778533084.3049393,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_prop_catalog.md",
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 713.4
+        "age_hours": 713.5
       },
       {
         "name": "reference_runbook.md",
@@ -54477,21 +55817,21 @@
         "tier": "reference",
         "bytes": 2800,
         "mtime": 1778533084.319582,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_sportsbook_accounts.md",
         "tier": "reference",
         "bytes": 1074,
         "mtime": 1778533084.334131,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "reference_strategy_definitions.md",
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 687.7
+        "age_hours": 687.8
       },
       {
         "name": "reference_trigger_prompts.md",
@@ -54505,21 +55845,21 @@
         "tier": "reference",
         "bytes": 3459,
         "mtime": 1778533084.3895137,
-        "age_hours": 718.4
+        "age_hours": 718.5
       },
       {
         "name": "roadmap.md",
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 688.4
+        "age_hours": 688.5
       },
       {
         "name": "silent_killers_2026-05-15.md",
         "tier": "audit",
         "bytes": 16108,
         "mtime": 1778827925.0722303,
-        "age_hours": 636.5
+        "age_hours": 636.6
       },
       {
         "name": "state_snapshot_2026-05-13.md",
@@ -54533,28 +55873,28 @@
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 687.6
+        "age_hours": 687.7
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 686.7
+        "age_hours": 686.8
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 686.9
+        "age_hours": 687.0
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 673.6
+        "age_hours": 673.7
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
@@ -54568,35 +55908,35 @@
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 680.1
+        "age_hours": 680.2
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 687.2
+        "age_hours": 687.3
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 677.4
+        "age_hours": 677.5
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
         "tier": "other",
         "bytes": 3269,
         "mtime": 1778669540.7642126,
-        "age_hours": 680.5
+        "age_hours": 680.6
       },
       {
         "name": "v2_simplification_2026-05-13.md",
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 672.7
+        "age_hours": 672.8
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
@@ -54610,7 +55950,7 @@
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 672.1
+        "age_hours": 672.2
       }
     ]
   },
@@ -54622,7 +55962,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-06-10_evening.json",
         "latest_date": "2026-06-10",
-        "age_hours": 0.0,
+        "age_hours": 0.1,
         "bytes": 1744992,
         "row_count": 150,
         "last_refresh_iso": "2026-06-10T19:20:29.929296+00:00",
@@ -54635,7 +55975,7 @@
         "status": "fresh",
         "latest_file": "v2_form_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 3.6,
+        "age_hours": 3.7,
         "bytes": 341764,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T15:42:12.702660+00:00",
@@ -54648,7 +55988,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 480052,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T19:15:40.038677+00:00",
@@ -54661,7 +56001,7 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 4773,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T19:00:12.786997+00:00",
@@ -54674,7 +56014,7 @@
         "status": "fresh",
         "latest_file": "v2_line_snapshots_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 12299,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T19:16:32.887063+00:00",
@@ -54687,7 +56027,7 @@
         "status": "degraded",
         "latest_file": "learning_journal_2026-06-10.md",
         "latest_date": "2026-06-10",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 126,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T19:01:17.138022+00:00",
@@ -54700,7 +56040,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 3.0,
+        "age_hours": 3.1,
         "bytes": 149305,
         "row_count": 588,
         "last_refresh_iso": "2026-06-10T16:21:50.897365+00:00",
@@ -54726,7 +56066,7 @@
         "status": "fresh",
         "latest_file": "wx_LAA_2026-06-11T01.json",
         "latest_date": "2026-06-11",
-        "age_hours": 0.1,
+        "age_hours": 0.2,
         "bytes": 208,
         "row_count": 26,
         "last_refresh_iso": "2026-06-10T19:16:03.520039+00:00",
@@ -72674,7 +74014,7 @@
     "latest_settled_at": null,
     "error": null
   },
-  "built_at_et": "2026-06-10 15:20 ET",
+  "built_at_et": "2026-06-10 15:25 ET",
   "counts": {
     "picks_total": 879,
     "settled": 374,
