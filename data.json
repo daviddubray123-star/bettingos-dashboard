@@ -1,6 +1,6 @@
 {
-  "build_id": "260612-232531",
-  "generated_at": "2026-06-12T23:25:32.146879+00:00",
+  "build_id": "260612-233029",
+  "generated_at": "2026-06-12T23:30:41.671033+00:00",
   "today": "2026-06-12",
   "yesterday": "2026-06-11",
   "bankroll": {
@@ -19140,7 +19140,7 @@
       "notes": "heat 66% (cautious) \u00b7 edge +4.9pp \u00b7 rae +3.9 \u00b7 rank #7 \u00b7 factor x1.09 \u00b7 n=10  [auto-confirmed @ 13:05 ET]"
     }
   ],
-  "built_at": "2026-06-12T23:25:32.147095+00:00",
+  "built_at": "2026-06-12T23:30:41.671379+00:00",
   "lock_demote_watchlist": [
     {
       "strategy": "MLB Batter Hits Alt",
@@ -50182,8 +50182,8 @@
     {
       "Name": "BettingOS - dashboard-refresh",
       "State": "Running",
-      "NextRun": "2026-06-12 19:30",
-      "LastRun": "2026-06-12 19:25",
+      "NextRun": "2026-06-12 19:35",
+      "LastRun": "2026-06-12 19:30",
       "LastResult": 267009,
       "WakeToRun": true
     },
@@ -50229,10 +50229,10 @@
     },
     {
       "Name": "BettingOS - intraday-settle",
-      "State": "Ready",
-      "NextRun": "2026-06-12 19:30",
-      "LastRun": "2026-06-12 19:08",
-      "LastResult": 0,
+      "State": "Running",
+      "NextRun": "2026-06-12 20:00",
+      "LastRun": "2026-06-12 19:30",
+      "LastResult": 267009,
       "WakeToRun": true
     },
     {
@@ -50973,7 +50973,7 @@
           "game_pk": 823370,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T22:40:00Z",
-          "status": "Warmup",
+          "status": "In Progress",
           "home_team": "Pittsburgh Pirates",
           "home_team_id": 134,
           "away_team": "Miami Marlins",
@@ -50988,25 +50988,25 @@
           "park_hr_factor": 0.94,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 81.0,
+          "weather_temp": 79.8,
           "weather_notes": [
-            "Wind OUT 8 mph (+4%)"
+            "Wind OUT 7 mph (+4%)"
           ],
           "park_runs_factor": 0.95,
-          "nrfi_prob": 58.0,
+          "nrfi_prob": 58.2,
           "nrfi_meta": {
             "base": 58.6,
             "min_sample": 13,
             "p_top": 81.3,
             "p_bot": 72.1,
             "park_mult": 1.005,
-            "weather_adj": -0.006,
+            "weather_adj": -0.0036,
             "home_sp_rate": 0.9231,
             "home_sp_sample": 13,
             "away_sp_rate": 0.7857,
             "away_sp_sample": 14
           },
-          "nrfi_reasoning": "Braxton Ashcraft 92% 1st-inning scoreless over 13 starts (elite) \u00b7 Sandy Alcantara 79% 1st-inning scoreless over 14 starts (strong) \u00b7 pitcher park (0.95 runs factor) boosts NRFI \u00b7 warm temp (81\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Braxton Ashcraft 92% 1st-inning scoreless over 13 starts (elite) \u00b7 Sandy Alcantara 79% 1st-inning scoreless over 14 starts (strong) \u00b7 pitcher park (0.95 runs factor) boosts NRFI",
           "hot_home_batters": [
             {
               "name": "Nick Gonzales",
@@ -51044,8 +51044,8 @@
             "current_inning": 3,
             "inning_half": "Bottom",
             "inning_state": "Bottom",
-            "home_runs": 0,
-            "home_hits": 1,
+            "home_runs": 1,
+            "home_hits": 2,
             "home_errors": 1,
             "away_runs": 0,
             "away_hits": 3,
@@ -51053,7 +51053,7 @@
             "home_innings": [
               0,
               0,
-              null
+              1
             ],
             "away_innings": [
               0,
@@ -51080,28 +51080,25 @@
           "away_pp_throws": "R",
           "venue": "Nationals Park",
           "park_hr_factor": 1.04,
-          "weather_factor": 1.06,
-          "weather_wind": "out",
-          "weather_temp": 88.3,
-          "weather_notes": [
-            "Wind OUT 6 mph (+4%)",
-            "Temp 88F (+2% ball carries)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": null,
+          "weather_temp": 84.2,
+          "weather_notes": [],
           "park_runs_factor": 1.01,
-          "nrfi_prob": 55.4,
+          "nrfi_prob": 56.1,
           "nrfi_meta": {
             "base": 57.4,
             "min_sample": 4,
             "p_top": 71.9,
             "p_bot": 79.8,
             "park_mult": 0.999,
-            "weather_adj": -0.02,
+            "weather_adj": -0.0124,
             "home_sp_rate": 0.7778,
             "home_sp_sample": 9,
             "away_sp_rate": 1.0,
             "away_sp_sample": 4
           },
-          "nrfi_reasoning": "Zack Littell 78% 1st-inning scoreless over 9 starts (strong) \u00b7 Bryce Miller 100% 1st-inning scoreless over 4 starts (elite) \u00b7 warm temp (88\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Zack Littell 78% 1st-inning scoreless over 9 starts (strong) \u00b7 Bryce Miller 100% 1st-inning scoreless over 4 starts (elite) \u00b7 warm temp (84\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Dylan Crews",
@@ -51160,7 +51157,7 @@
           "game_pk": 824826,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:05:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Baltimore Orioles",
           "home_team_id": 110,
           "away_team": "San Diego Padres",
@@ -51175,7 +51172,7 @@
           "park_hr_factor": 0.92,
           "weather_factor": 1.02,
           "weather_wind": "cross",
-          "weather_temp": 91.6,
+          "weather_temp": 92.4,
           "weather_notes": [
             "Temp 92F (+2% ball carries)"
           ],
@@ -51228,20 +51225,22 @@
             "status": "In Progress",
             "abstract_state": "Live",
             "status_code": "I",
-            "current_inning": 1,
-            "inning_half": "Bottom",
-            "inning_state": "Bottom",
-            "home_runs": 1,
-            "home_hits": 1,
+            "current_inning": 2,
+            "inning_half": "Top",
+            "inning_state": "Top",
+            "home_runs": 3,
+            "home_hits": 2,
             "home_errors": 1,
             "away_runs": 1,
             "away_hits": 2,
             "away_errors": 0,
             "home_innings": [
-              1
+              3,
+              null
             ],
             "away_innings": [
-              1
+              1,
+              null
             ],
             "scheduled_innings": 9
           }
@@ -51250,7 +51249,7 @@
           "game_pk": 824425,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:10:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Cleveland Guardians",
           "home_team_id": 114,
           "away_team": "Detroit Tigers",
@@ -51265,7 +51264,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 75.0,
+          "weather_temp": 74.9,
           "weather_notes": [],
           "park_runs_factor": 0.97,
           "nrfi_prob": 50.4,
@@ -51320,7 +51319,7 @@
             "status_code": "I",
             "current_inning": 1,
             "inning_half": "Bottom",
-            "inning_state": "Bottom",
+            "inning_state": "End",
             "home_runs": 0,
             "home_hits": 0,
             "home_errors": 0,
@@ -51328,7 +51327,7 @@
             "away_hits": 0,
             "away_errors": 0,
             "home_innings": [
-              null
+              0
             ],
             "away_innings": [
               0
@@ -51340,7 +51339,7 @@
           "game_pk": 824752,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:10:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Boston Red Sox",
           "home_team_id": 111,
           "away_team": "Texas Rangers",
@@ -51353,25 +51352,27 @@
           "away_pp_throws": "R",
           "venue": "Fenway Park",
           "park_hr_factor": 0.96,
-          "weather_factor": 1.0,
+          "weather_factor": 1.02,
           "weather_wind": null,
-          "weather_temp": 82.1,
-          "weather_notes": [],
+          "weather_temp": 89.5,
+          "weather_notes": [
+            "Temp 90F (+2% ball carries)"
+          ],
           "park_runs_factor": 1.08,
-          "nrfi_prob": 46.0,
+          "nrfi_prob": 44.9,
           "nrfi_meta": {
             "base": 46.9,
             "min_sample": 11,
             "p_top": 64.7,
             "p_bot": 72.4,
             "park_mult": 0.992,
-            "weather_adj": -0.0082,
+            "weather_adj": -0.02,
             "home_sp_rate": 0.5455,
             "home_sp_sample": 11,
             "away_sp_rate": 0.6923,
             "away_sp_sample": 13
           },
-          "nrfi_reasoning": "Sonny Gray 55% 1st-inning scoreless over 11 starts (weak) \u00b7 Jack Leiter 69% 1st-inning scoreless over 13 starts (weak) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 warm temp (82\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Sonny Gray 55% 1st-inning scoreless over 11 starts (weak) \u00b7 Jack Leiter 69% 1st-inning scoreless over 13 starts (weak) \u00b7 hitter park (1.08 runs factor) drops NRFI \u00b7 warm temp (90\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Caleb Durbin",
@@ -51416,7 +51417,7 @@
             "home_errors": 0,
             "away_runs": 1,
             "away_hits": 3,
-            "away_errors": 0,
+            "away_errors": 1,
             "home_innings": [
               null
             ],
@@ -51430,7 +51431,7 @@
           "game_pk": 824507,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:15:00Z",
-          "status": "Pre-Game",
+          "status": "In Progress",
           "home_team": "Cincinnati Reds",
           "home_team_id": 113,
           "away_team": "Arizona Diamondbacks",
@@ -51445,7 +51446,7 @@
           "park_hr_factor": 1.15,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 80.4,
+          "weather_temp": 80.5,
           "weather_notes": [],
           "park_runs_factor": 1.1,
           "nrfi_prob": 47.0,
@@ -51455,7 +51456,7 @@
             "p_top": 70.6,
             "p_bot": 67.3,
             "park_mult": 0.99,
-            "weather_adj": -0.0048,
+            "weather_adj": -0.005,
             "home_sp_rate": 0.6667,
             "home_sp_sample": 6,
             "away_sp_rate": 0.5385,
@@ -51518,7 +51519,7 @@
           "game_pk": 823617,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:15:00Z",
-          "status": "Pre-Game",
+          "status": "Delayed Start",
           "home_team": "New York Mets",
           "home_team_id": 121,
           "away_team": "Atlanta Braves",
@@ -51531,27 +51532,27 @@
           "away_pp_throws": "R",
           "venue": "Citi Field",
           "park_hr_factor": 0.94,
-          "weather_factor": 0.94,
-          "weather_wind": "in",
-          "weather_temp": 84.6,
+          "weather_factor": 1.02,
+          "weather_wind": "cross",
+          "weather_temp": 91.2,
           "weather_notes": [
-            "Wind IN 19 mph (-6%)"
+            "Temp 91F (+2% ball carries)"
           ],
           "park_runs_factor": 0.97,
-          "nrfi_prob": 45.7,
+          "nrfi_prob": 45.0,
           "nrfi_meta": {
             "base": 47.0,
             "min_sample": 7,
             "p_top": 68.7,
             "p_bot": 68.5,
             "park_mult": 1.003,
-            "weather_adj": -0.0132,
+            "weather_adj": -0.02,
             "home_sp_rate": 0.6923,
             "home_sp_sample": 13,
             "away_sp_rate": 0.5714,
             "away_sp_sample": 7
           },
-          "nrfi_reasoning": "Nolan McLean 69% 1st-inning scoreless over 13 starts (weak) \u00b7 Spencer Strider 57% 1st-inning scoreless over 7 starts (weak) \u00b7 warm temp (85\u00b0F) drops NRFI ~2pp",
+          "nrfi_reasoning": "Nolan McLean 69% 1st-inning scoreless over 13 starts (weak) \u00b7 Spencer Strider 57% 1st-inning scoreless over 7 starts (weak) \u00b7 warm temp (91\u00b0F) drops NRFI ~2pp",
           "hot_home_batters": [
             {
               "name": "Juan Soto",
@@ -51610,7 +51611,7 @@
           "game_pk": 822803,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:37:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "home_team": "Toronto Blue Jays",
           "home_team_id": 141,
           "away_team": "New York Yankees",
@@ -51700,7 +51701,7 @@
           "game_pk": 824588,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:40:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "home_team": "Chicago White Sox",
           "home_team_id": 145,
           "away_team": "Los Angeles Dodgers",
@@ -51790,7 +51791,7 @@
           "game_pk": 823778,
           "date": "2026-06-12",
           "game_time_utc": "2026-06-12T23:40:00Z",
-          "status": "Pre-Game",
+          "status": "Warmup",
           "home_team": "Milwaukee Brewers",
           "home_team_id": 158,
           "away_team": "Philadelphia Phillies",
@@ -51895,7 +51896,7 @@
           "park_hr_factor": 0.95,
           "weather_factor": 1.0,
           "weather_wind": "cross",
-          "weather_temp": 81.4,
+          "weather_temp": 81.1,
           "weather_notes": [],
           "park_runs_factor": 0.98,
           "nrfi_prob": 48.5,
@@ -51905,7 +51906,7 @@
             "p_top": 66.2,
             "p_bot": 74.3,
             "park_mult": 1.002,
-            "weather_adj": -0.0068,
+            "weather_adj": -0.0062,
             "home_sp_rate": 0.3333,
             "home_sp_sample": 3,
             "away_sp_rate": 0.875,
@@ -51981,12 +51982,10 @@
           "away_pp_throws": "R",
           "venue": "Target Field",
           "park_hr_factor": 0.99,
-          "weather_factor": 1.04,
-          "weather_wind": "out",
-          "weather_temp": 76.6,
-          "weather_notes": [
-            "Wind OUT 7 mph (+4%)"
-          ],
+          "weather_factor": 1.0,
+          "weather_wind": null,
+          "weather_temp": 76.9,
+          "weather_notes": [],
           "park_runs_factor": 1.02,
           "nrfi_prob": 54.1,
           "nrfi_meta": {
@@ -52073,7 +52072,7 @@
           "park_hr_factor": 0.99,
           "weather_factor": 1.0,
           "weather_wind": null,
-          "weather_temp": 68.3,
+          "weather_temp": 68.2,
           "weather_notes": [],
           "park_runs_factor": 0.99,
           "nrfi_prob": 53.8,
@@ -52156,9 +52155,9 @@
           "home_pp_name": "Gage Jump",
           "home_pp_id": 695611,
           "home_pp_throws": "L",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Sean Sullivan",
+          "away_pp_id": 807743,
+          "away_pp_throws": "L",
           "venue": "Las Vegas Ballpark",
           "park_hr_factor": 1.0,
           "weather_factor": 1.0,
@@ -52166,9 +52165,20 @@
           "weather_temp": null,
           "weather_notes": [],
           "park_runs_factor": 1.0,
-          "nrfi_prob": null,
-          "nrfi_meta": null,
-          "nrfi_reasoning": null,
+          "nrfi_prob": 50.0,
+          "nrfi_meta": {
+            "base": 50.0,
+            "min_sample": 0,
+            "p_top": 71.0,
+            "p_bot": 70.3,
+            "park_mult": 1.0,
+            "weather_adj": 0.0,
+            "home_sp_rate": 0.6667,
+            "home_sp_sample": 3,
+            "away_sp_rate": null,
+            "away_sp_sample": 0
+          },
+          "nrfi_reasoning": "Gage Jump 67% 1st-inning scoreless over 3 starts (weak) \u00b7 Sean Sullivan thin sample (0) \u2014 model leans on 0.73 prior",
           "hot_home_batters": [
             {
               "name": "Nick Kurtz",
@@ -52240,19 +52250,19 @@
           "park_hr_factor": 0.89,
           "weather_factor": 1.04,
           "weather_wind": "out",
-          "weather_temp": 55.6,
+          "weather_temp": 55.9,
           "weather_notes": [
-            "Wind OUT 7 mph (+4%)"
+            "Wind OUT 6 mph (+4%)"
           ],
           "park_runs_factor": 0.93,
-          "nrfi_prob": 59.7,
+          "nrfi_prob": 59.6,
           "nrfi_meta": {
             "base": 58.8,
             "min_sample": 3,
             "p_top": 81.1,
             "p_bot": 72.5,
             "park_mult": 1.007,
-            "weather_adj": 0.0088,
+            "weather_adj": 0.0082,
             "home_sp_rate": 0.8462,
             "home_sp_sample": 13,
             "away_sp_rate": 0.6667,
@@ -52669,9 +52679,9 @@
           "home_pp_name": "Gavin Williams",
           "home_pp_id": 668909,
           "home_pp_throws": "R",
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Casey Mize",
+          "away_pp_id": 663554,
+          "away_pp_throws": "R",
           "venue": "Progressive Field"
         },
         {
@@ -53183,9 +53193,9 @@
           "home_pp_name": null,
           "home_pp_id": null,
           "home_pp_throws": null,
-          "away_pp_name": null,
-          "away_pp_id": null,
-          "away_pp_throws": null,
+          "away_pp_name": "Framber Valdez",
+          "away_pp_id": 664285,
+          "away_pp_throws": "L",
           "venue": "Daikin Park"
         },
         {
@@ -56771,238 +56781,238 @@
         "tier": "other",
         "bytes": 5325,
         "mtime": 1780497202.3583422,
-        "age_hours": 224.9
+        "age_hours": 225.0
       },
       {
         "name": "ai_advisor_2026-06-05.md",
         "tier": "other",
         "bytes": 6077,
         "mtime": 1780657328.452361,
-        "age_hours": 180.4
+        "age_hours": 180.5
       },
       {
         "name": "ai_advisor_2026-06-06.md",
         "tier": "other",
         "bytes": 6553,
         "mtime": 1780743725.3083284,
-        "age_hours": 156.4
+        "age_hours": 156.5
       },
       {
         "name": "ai_advisor_2026-06-07.md",
         "tier": "other",
         "bytes": 5727,
         "mtime": 1780830130.8183205,
-        "age_hours": 132.4
+        "age_hours": 132.5
       },
       {
         "name": "ai_advisor_2026-06-08.md",
         "tier": "other",
         "bytes": 6292,
         "mtime": 1780916552.2517648,
-        "age_hours": 108.4
+        "age_hours": 108.5
       },
       {
         "name": "ai_advisor_2026-06-09.md",
         "tier": "other",
         "bytes": 5816,
         "mtime": 1781002950.7159538,
-        "age_hours": 84.4
+        "age_hours": 84.5
       },
       {
         "name": "ai_advisor_2026-06-10.md",
         "tier": "other",
         "bytes": 5814,
         "mtime": 1781089524.891371,
-        "age_hours": 60.3
+        "age_hours": 60.4
       },
       {
         "name": "ai_learner_2026-05-14.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778815804.0385919,
-        "age_hours": 691.9
+        "age_hours": 692.0
       },
       {
         "name": "ai_learner_2026-05-15.md",
         "tier": "learner",
         "bytes": 3623,
         "mtime": 1778824099.143971,
-        "age_hours": 689.6
+        "age_hours": 689.7
       },
       {
         "name": "ai_learner_2026-05-16.md",
         "tier": "learner",
         "bytes": 8044,
         "mtime": 1778989642.5169747,
-        "age_hours": 643.6
+        "age_hours": 643.7
       },
       {
         "name": "ai_learner_2026-05-17.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779075104.5726755,
-        "age_hours": 619.9
+        "age_hours": 620.0
       },
       {
         "name": "ai_learner_2026-05-18.md",
         "tier": "learner",
         "bytes": 13893,
         "mtime": 1779084128.9571655,
-        "age_hours": 617.4
+        "age_hours": 617.5
       },
       {
         "name": "ai_learner_2026-05-19.md",
         "tier": "learner",
         "bytes": 12918,
         "mtime": 1779247867.9227889,
-        "age_hours": 571.9
+        "age_hours": 572.0
       },
       {
         "name": "ai_learner_2026-05-20.md",
         "tier": "learner",
         "bytes": 14773,
         "mtime": 1779334353.5665348,
-        "age_hours": 547.9
+        "age_hours": 548.0
       },
       {
         "name": "ai_learner_2026-05-21.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779420669.9877782,
-        "age_hours": 523.9
+        "age_hours": 524.0
       },
       {
         "name": "ai_learner_2026-05-22.md",
         "tier": "learner",
         "bytes": 11249,
         "mtime": 1779429685.9707122,
-        "age_hours": 521.4
+        "age_hours": 521.5
       },
       {
         "name": "ai_learner_2026-05-23.md",
         "tier": "learner",
         "bytes": 11642,
         "mtime": 1779573737.8361797,
-        "age_hours": 481.4
+        "age_hours": 481.5
       },
       {
         "name": "ai_learner_2026-05-24.md",
         "tier": "learner",
         "bytes": 15942,
         "mtime": 1779679926.5626245,
-        "age_hours": 451.9
+        "age_hours": 452.0
       },
       {
         "name": "ai_learner_2026-05-25.md",
         "tier": "learner",
         "bytes": 15008,
         "mtime": 1779766296.094525,
-        "age_hours": 427.9
+        "age_hours": 428.0
       },
       {
         "name": "ai_learner_2026-05-26.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779849197.7021859,
-        "age_hours": 404.9
+        "age_hours": 405.0
       },
       {
         "name": "ai_learner_2026-05-27.md",
         "tier": "learner",
         "bytes": 15527,
         "mtime": 1779861796.020988,
-        "age_hours": 401.4
+        "age_hours": 401.5
       },
       {
         "name": "ai_learner_2026-05-29.md",
         "tier": "learner",
         "bytes": 12967,
         "mtime": 1780111941.5617077,
-        "age_hours": 331.9
+        "age_hours": 332.0
       },
       {
         "name": "ai_learner_2026-05-30.md",
         "tier": "learner",
         "bytes": 12392,
         "mtime": 1780198338.3981981,
-        "age_hours": 307.9
+        "age_hours": 308.0
       },
       {
         "name": "ai_learner_2026-05-31.md",
         "tier": "learner",
         "bytes": 11883,
         "mtime": 1780284682.342586,
-        "age_hours": 283.9
+        "age_hours": 284.0
       },
       {
         "name": "ai_learner_2026-06-02.md",
         "tier": "learner",
         "bytes": 12355,
         "mtime": 1780459176.4428823,
-        "age_hours": 235.4
+        "age_hours": 235.5
       },
       {
         "name": "ai_learner_2026-06-03.md",
         "tier": "learner",
         "bytes": 12225,
         "mtime": 1780511607.277131,
-        "age_hours": 220.9
+        "age_hours": 221.0
       },
       {
         "name": "ai_learner_2026-06-04.md",
         "tier": "learner",
         "bytes": 12696,
         "mtime": 1780628595.1955137,
-        "age_hours": 188.4
+        "age_hours": 188.5
       },
       {
         "name": "ai_learner_2026-06-05.md",
         "tier": "learner",
         "bytes": 12864,
         "mtime": 1780716717.1324153,
-        "age_hours": 163.9
+        "age_hours": 164.0
       },
       {
         "name": "ai_learner_2026-06-06.md",
         "tier": "learner",
         "bytes": 13836,
         "mtime": 1780803133.0277936,
-        "age_hours": 139.9
+        "age_hours": 140.0
       },
       {
         "name": "ai_learner_2026-06-07.md",
         "tier": "learner",
         "bytes": 12837,
         "mtime": 1780889555.2725718,
-        "age_hours": 115.9
+        "age_hours": 116.0
       },
       {
         "name": "ai_learner_2026-06-08.md",
         "tier": "learner",
         "bytes": 12588,
         "mtime": 1780975936.7945259,
-        "age_hours": 91.9
+        "age_hours": 92.0
       },
       {
         "name": "ai_learner_2026-06-09.md",
         "tier": "learner",
         "bytes": 12844,
         "mtime": 1781002853.305923,
-        "age_hours": 84.4
+        "age_hours": 84.5
       },
       {
         "name": "ai_learner_2026-06-10.md",
         "tier": "learner",
         "bytes": 12839,
         "mtime": 1781148772.2738,
-        "age_hours": 43.9
+        "age_hours": 44.0
       },
       {
         "name": "ai_learner_2026-06-11.md",
         "tier": "learner",
         "bytes": 12839,
         "mtime": 1781157762.804521,
-        "age_hours": 41.4
+        "age_hours": 41.5
       },
       {
         "name": "ai_learner_2026-06-12.md",
@@ -57023,35 +57033,35 @@
         "tier": "audit",
         "bytes": 10991,
         "mtime": 1778827972.4234543,
-        "age_hours": 688.5
+        "age_hours": 688.6
       },
       {
         "name": "audit_round2_2026-05-15.md",
         "tier": "audit",
         "bytes": 23099,
         "mtime": 1778850326.4230602,
-        "age_hours": 682.3
+        "age_hours": 682.4
       },
       {
         "name": "audit_round3_2026-05-15.md",
         "tier": "audit",
         "bytes": 10413,
         "mtime": 1778851882.6027272,
-        "age_hours": 681.9
+        "age_hours": 682.0
       },
       {
         "name": "audit_round4_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 13726,
         "mtime": 1778852643.198778,
-        "age_hours": 681.7
+        "age_hours": 681.8
       },
       {
         "name": "audit_round5_electrician_2026-05-15.md",
         "tier": "audit",
         "bytes": 12759,
         "mtime": 1778867620.1906874,
-        "age_hours": 677.5
+        "age_hours": 677.6
       },
       {
         "name": "audit_round6_focused_2026-05-15.md",
@@ -57065,42 +57075,42 @@
         "tier": "other",
         "bytes": 446,
         "mtime": 1778647304.2054543,
-        "age_hours": 738.7
+        "age_hours": 738.8
       },
       {
         "name": "before_after_2026-05-15.md",
         "tier": "other",
         "bytes": 6218,
         "mtime": 1778856318.0933902,
-        "age_hours": 680.7
+        "age_hours": 680.8
       },
       {
         "name": "BettingOS_System_Bible.md",
         "tier": "other",
         "bytes": 13523,
         "mtime": 1778697372.486336,
-        "age_hours": 724.8
+        "age_hours": 724.9
       },
       {
         "name": "dashboard_url_2026-05-13.md",
         "tier": "other",
         "bytes": 2497,
         "mtime": 1778679856.0691957,
-        "age_hours": 729.7
+        "age_hours": 729.8
       },
       {
         "name": "design_engine_v2.md",
         "tier": "other",
         "bytes": 8706,
         "mtime": 1778628543.1180096,
-        "age_hours": 743.9
+        "age_hours": 744.0
       },
       {
         "name": "feedback_auto_archive_fix_2026-05-23.md",
         "tier": "feedback",
         "bytes": 2908,
         "mtime": 1779545350.2148924,
-        "age_hours": 489.3
+        "age_hours": 489.4
       },
       {
         "name": "feedback_autonomous_fix_5_9.md",
@@ -57142,7 +57152,7 @@
         "tier": "feedback",
         "bytes": 3180,
         "mtime": 1778710998.3518775,
-        "age_hours": 721.0
+        "age_hours": 721.1
       },
       {
         "name": "feedback_lessons_5_6_to_5_8.md",
@@ -57156,7 +57166,7 @@
         "tier": "feedback",
         "bytes": 6107,
         "mtime": 1778586474.533178,
-        "age_hours": 755.6
+        "age_hours": 755.7
       },
       {
         "name": "feedback_no_skipping_research.md",
@@ -57219,7 +57229,7 @@
         "tier": "feedback",
         "bytes": 4008,
         "mtime": 1778551148.8267314,
-        "age_hours": 765.4
+        "age_hours": 765.5
       },
       {
         "name": "feedback_v8_research_layer.md",
@@ -57233,203 +57243,203 @@
         "tier": "other",
         "bytes": 19166,
         "mtime": 1778830472.3273828,
-        "age_hours": 687.8
+        "age_hours": 687.9
       },
       {
         "name": "journal_cleanup_2026-05-13.md",
         "tier": "other",
         "bytes": 1157,
         "mtime": 1778647029.2789114,
-        "age_hours": 738.8
+        "age_hours": 738.9
       },
       {
         "name": "learning_journal_2026-05-12.md",
         "tier": "learner",
         "bytes": 11043,
         "mtime": 1778674688.282775,
-        "age_hours": 731.1
+        "age_hours": 731.2
       },
       {
         "name": "learning_journal_2026-05-14.md",
         "tier": "learner",
         "bytes": 53561,
         "mtime": 1778937667.0118718,
-        "age_hours": 658.1
+        "age_hours": 658.2
       },
       {
         "name": "learning_journal_2026-05-15.md",
         "tier": "learner",
         "bytes": 103316,
         "mtime": 1778938214.9282985,
-        "age_hours": 657.9
+        "age_hours": 658.0
       },
       {
         "name": "learning_journal_2026-05-16.md",
         "tier": "learner",
         "bytes": 222200,
         "mtime": 1778997684.7649033,
-        "age_hours": 641.4
+        "age_hours": 641.5
       },
       {
         "name": "learning_journal_2026-05-17.md",
         "tier": "learner",
         "bytes": 117983,
         "mtime": 1779084096.0145683,
-        "age_hours": 617.4
+        "age_hours": 617.5
       },
       {
         "name": "learning_journal_2026-05-19.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779256873.782778,
-        "age_hours": 569.4
+        "age_hours": 569.5
       },
       {
         "name": "learning_journal_2026-05-20.md",
         "tier": "learner",
         "bytes": 255,
         "mtime": 1779343290.4735308,
-        "age_hours": 545.4
+        "age_hours": 545.5
       },
       {
         "name": "learning_journal_2026-05-21.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779429642.254753,
-        "age_hours": 521.4
+        "age_hours": 521.5
       },
       {
         "name": "learning_journal_2026-05-22.md",
         "tier": "learner",
         "bytes": 198,
         "mtime": 1779540864.2390244,
-        "age_hours": 490.5
+        "age_hours": 490.6
       },
       {
         "name": "learning_journal_2026-05-23.md",
         "tier": "learner",
         "bytes": 422,
         "mtime": 1779640394.6469948,
-        "age_hours": 462.9
+        "age_hours": 463.0
       },
       {
         "name": "learning_journal_2026-05-24.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779688867.894788,
-        "age_hours": 449.4
+        "age_hours": 449.5
       },
       {
         "name": "learning_journal_2026-05-25.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779775240.8566065,
-        "age_hours": 425.4
+        "age_hours": 425.5
       },
       {
         "name": "learning_journal_2026-05-26.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1779861703.4445822,
-        "age_hours": 401.4
+        "age_hours": 401.5
       },
       {
         "name": "learning_journal_2026-05-29.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780120833.8156781,
-        "age_hours": 329.4
+        "age_hours": 329.5
       },
       {
         "name": "learning_journal_2026-05-30.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780207241.292551,
-        "age_hours": 305.4
+        "age_hours": 305.5
       },
       {
         "name": "learning_journal_2026-05-31.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780284639.8909457,
-        "age_hours": 283.9
+        "age_hours": 284.0
       },
       {
         "name": "learning_journal_2026-06-02.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1780466442.415035,
-        "age_hours": 233.4
+        "age_hours": 233.5
       },
       {
         "name": "learning_journal_2026-06-03.md",
         "tier": "learner",
         "bytes": 247,
         "mtime": 1780589433.7189765,
-        "age_hours": 199.2
+        "age_hours": 199.3
       },
       {
         "name": "learning_journal_2026-06-04.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780630276.1920986,
-        "age_hours": 187.9
+        "age_hours": 188.0
       },
       {
         "name": "learning_journal_2026-06-05.md",
         "tier": "learner",
         "bytes": 130,
         "mtime": 1780725694.065848,
-        "age_hours": 161.4
+        "age_hours": 161.5
       },
       {
         "name": "learning_journal_2026-06-06.md",
         "tier": "learner",
         "bytes": 197,
         "mtime": 1780812096.5708408,
-        "age_hours": 137.4
+        "age_hours": 137.5
       },
       {
         "name": "learning_journal_2026-06-07.md",
         "tier": "learner",
         "bytes": 132,
         "mtime": 1780898504.1897461,
-        "age_hours": 113.4
+        "age_hours": 113.5
       },
       {
         "name": "learning_journal_2026-06-08.md",
         "tier": "learner",
         "bytes": 131,
         "mtime": 1780984889.632218,
-        "age_hours": 89.4
+        "age_hours": 89.5
       },
       {
         "name": "learning_journal_2026-06-10.md",
         "tier": "learner",
         "bytes": 331,
         "mtime": 1781157695.8689358,
-        "age_hours": 41.4
+        "age_hours": 41.5
       },
       {
         "name": "learning_journal_2026-06-12.md",
         "tier": "learner",
         "bytes": 126,
         "mtime": 1781305748.985402,
-        "age_hours": 0.3
+        "age_hours": 0.4
       },
       {
         "name": "project_current_state.md",
         "tier": "project",
         "bytes": 12872,
         "mtime": 1779335973.189105,
-        "age_hours": 547.4
+        "age_hours": 547.5
       },
       {
         "name": "project_engine_spec_live_v1.md",
         "tier": "project",
         "bytes": 32673,
         "mtime": 1778583438.6027343,
-        "age_hours": 756.5
+        "age_hours": 756.6
       },
       {
         "name": "project_engine_spec_v7_1.md",
@@ -57443,7 +57453,7 @@
         "tier": "project",
         "bytes": 18392,
         "mtime": 1779242542.319991,
-        "age_hours": 573.4
+        "age_hours": 573.5
       },
       {
         "name": "project_polymarket_roadmap.md",
@@ -57499,7 +57509,7 @@
         "tier": "reference",
         "bytes": 22046,
         "mtime": 1778554732.5926926,
-        "age_hours": 764.4
+        "age_hours": 764.5
       },
       {
         "name": "reference_deep_research_workflow.md",
@@ -57541,14 +57551,14 @@
         "tier": "reference",
         "bytes": 3307,
         "mtime": 1778550993.6067204,
-        "age_hours": 765.5
+        "age_hours": 765.6
       },
       {
         "name": "reference_runbook.md",
         "tier": "reference",
         "bytes": 5340,
         "mtime": 1778554043.44955,
-        "age_hours": 764.6
+        "age_hours": 764.7
       },
       {
         "name": "reference_sport_calendar.md",
@@ -57569,14 +57579,14 @@
         "tier": "reference",
         "bytes": 13242,
         "mtime": 1778643637.062575,
-        "age_hours": 739.7
+        "age_hours": 739.8
       },
       {
         "name": "reference_trigger_prompts.md",
         "tier": "reference",
         "bytes": 14866,
         "mtime": 1778535682.7226694,
-        "age_hours": 769.7
+        "age_hours": 769.8
       },
       {
         "name": "reference_working_scrape_sources.md",
@@ -57590,7 +57600,7 @@
         "tier": "other",
         "bytes": 4886,
         "mtime": 1778641115.1976926,
-        "age_hours": 740.4
+        "age_hours": 740.5
       },
       {
         "name": "silent_killers_2026-05-15.md",
@@ -57604,63 +57614,63 @@
         "tier": "other",
         "bytes": 2522,
         "mtime": 1778729349.5667772,
-        "age_hours": 715.9
+        "age_hours": 716.0
       },
       {
         "name": "strategy_consolidation_2026-05-12.md",
         "tier": "other",
         "bytes": 7218,
         "mtime": 1778643814.311989,
-        "age_hours": 739.7
+        "age_hours": 739.8
       },
       {
         "name": "system_test_2026-05-13.md",
         "tier": "other",
         "bytes": 779,
         "mtime": 1778647148.7258456,
-        "age_hours": 738.8
+        "age_hours": 738.9
       },
       {
         "name": "v1_disabled_2026-05-13.md",
         "tier": "other",
         "bytes": 4712,
         "mtime": 1778646390.7205143,
-        "age_hours": 739.0
+        "age_hours": 739.1
       },
       {
         "name": "v2_4part_patch_2026-05-13.md",
         "tier": "other",
         "bytes": 5379,
         "mtime": 1778694217.436605,
-        "age_hours": 725.7
+        "age_hours": 725.8
       },
       {
         "name": "v2_confidence_fix_2026-05-13.md",
         "tier": "other",
         "bytes": 4150,
         "mtime": 1778693357.9705667,
-        "age_hours": 725.9
+        "age_hours": 726.0
       },
       {
         "name": "v2_emergency_stress_test_2026-05-13.md",
         "tier": "other",
         "bytes": 6811,
         "mtime": 1778670715.6632414,
-        "age_hours": 732.2
+        "age_hours": 732.3
       },
       {
         "name": "v2_final_arch_2026-05-12.md",
         "tier": "other",
         "bytes": 5817,
         "mtime": 1778645213.8328843,
-        "age_hours": 739.3
+        "age_hours": 739.4
       },
       {
         "name": "v2_quick_wins_2026-05-13.md",
         "tier": "other",
         "bytes": 4814,
         "mtime": 1778680617.435616,
-        "age_hours": 729.5
+        "age_hours": 729.6
       },
       {
         "name": "v2_scout_patches_2026-05-13.md",
@@ -57674,21 +57684,21 @@
         "tier": "other",
         "bytes": 4958,
         "mtime": 1778697403.2383537,
-        "age_hours": 724.8
+        "age_hours": 724.9
       },
       {
         "name": "v2_sprint1_partial_2026-05-13.md",
         "tier": "other",
         "bytes": 6839,
         "mtime": 1778701259.749824,
-        "age_hours": 723.7
+        "age_hours": 723.8
       },
       {
         "name": "v2_state_discovery_2026-05-13.md",
         "tier": "other",
         "bytes": 7450,
         "mtime": 1778699704.4161997,
-        "age_hours": 724.2
+        "age_hours": 724.3
       }
     ]
   },
@@ -57700,7 +57710,7 @@
         "status": "fresh",
         "latest_file": "v2_scout_2026-06-12_evening.json",
         "latest_date": "2026-06-12",
-        "age_hours": 4.1,
+        "age_hours": 4.2,
         "bytes": 1690509,
         "row_count": 150,
         "last_refresh_iso": "2026-06-12T19:18:04.118560+00:00",
@@ -57713,7 +57723,7 @@
         "status": "stale",
         "latest_file": "v2_form_2026-06-10.json",
         "latest_date": "2026-06-10",
-        "age_hours": 55.7,
+        "age_hours": 55.8,
         "bytes": 341764,
         "row_count": null,
         "last_refresh_iso": "2026-06-10T15:42:12.702660+00:00",
@@ -57726,7 +57736,7 @@
         "status": "fresh",
         "latest_file": "v2_candidates_2026-06-12.json",
         "latest_date": "2026-06-12",
-        "age_hours": 4.2,
+        "age_hours": 4.3,
         "bytes": 320441,
         "row_count": null,
         "last_refresh_iso": "2026-06-12T19:15:31.811627+00:00",
@@ -57739,10 +57749,10 @@
         "status": "fresh",
         "latest_file": "v2_settle_summary_2026-06-12.json",
         "latest_date": "2026-06-12",
-        "age_hours": 0.3,
-        "bytes": 4816,
+        "age_hours": 0.0,
+        "bytes": 4789,
         "row_count": null,
-        "last_refresh_iso": "2026-06-12T23:08:18.982251+00:00",
+        "last_refresh_iso": "2026-06-12T23:30:08.652766+00:00",
         "issue": null,
         "min_bytes": 500,
         "min_count": null
@@ -57765,7 +57775,7 @@
         "status": "degraded",
         "latest_file": "learning_journal_2026-06-12.md",
         "latest_date": "2026-06-12",
-        "age_hours": 0.3,
+        "age_hours": 0.4,
         "bytes": 126,
         "row_count": null,
         "last_refresh_iso": "2026-06-12T23:09:08.985402+00:00",
@@ -57778,7 +57788,7 @@
         "status": "fresh",
         "latest_file": "historical_hit_rates_2026-06-12.json",
         "latest_date": "2026-06-12",
-        "age_hours": 6.8,
+        "age_hours": 6.9,
         "bytes": 200170,
         "row_count": 798,
         "last_refresh_iso": "2026-06-12T16:38:11.606086+00:00",
@@ -57791,7 +57801,7 @@
         "status": "fresh",
         "latest_file": "lineup_823371.json",
         "latest_date": "2026-06-12",
-        "age_hours": 3.6,
+        "age_hours": 3.7,
         "bytes": 462,
         "row_count": 104,
         "last_refresh_iso": "2026-06-12T19:50:20.989288+00:00",
@@ -57804,10 +57814,10 @@
         "status": "fresh",
         "latest_file": "wx_SF_2026-06-13T02.json",
         "latest_date": "2026-06-13",
-        "age_hours": 1.0,
+        "age_hours": 0.0,
         "bytes": 206,
         "row_count": 14,
-        "last_refresh_iso": "2026-06-12T22:25:41.838058+00:00",
+        "last_refresh_iso": "2026-06-12T23:30:39.145337+00:00",
         "issue": null,
         "min_bytes": 50,
         "min_count": 1
@@ -68004,37 +68014,6 @@
   ],
   "nrfi_candidates": [
     {
-      "matchup": "CHC @ SF",
-      "away_abbr": "CHC",
-      "home_abbr": "SF",
-      "home_pp_name": "Landen Roupp",
-      "away_pp_name": "Javier Assad",
-      "home_nrfi": 0.5,
-      "away_nrfi": 0.5,
-      "home_pp_shrunk": 0.6528,
-      "away_pp_shrunk": 0.6,
-      "home_pp_baseline": 0.7334,
-      "away_pp_baseline": 0.5818,
-      "home_pp_recent": 0.6,
-      "away_pp_recent": 0.6667,
-      "home_pp_trend": "COOLING",
-      "away_pp_trend": "STABLE",
-      "team_signal": 0.0,
-      "pitcher_signal": 3.82,
-      "park_nrfi_mult": 1.07,
-      "park_signal": 1.75,
-      "temp_f": 55.6,
-      "temp_signal": 2.2,
-      "ump_name": "Todd Tichenor",
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 57.8,
-      "side": "none",
-      "band": "mild_nrfi",
-      "recommendation": "Mild NRFI tilt \u2014 no bet",
-      "missing_pitcher_data": false
-    },
-    {
       "matchup": "TEX @ BOS",
       "away_abbr": "TEX",
       "home_abbr": "BOS",
@@ -68054,12 +68033,12 @@
       "pitcher_signal": 2.05,
       "park_nrfi_mult": 0.97,
       "park_signal": -0.75,
-      "temp_f": 82.1,
-      "temp_signal": -2.05,
+      "temp_f": 89.5,
+      "temp_signal": -5.0,
       "ump_name": "Brian Walsh",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 43.2,
+      "confidence": 40.3,
       "side": "none",
       "band": "mild_yrfi",
       "recommendation": "Mild YRFI tilt \u2014 no bet",
@@ -68085,12 +68064,43 @@
       "pitcher_signal": 9.46,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 88.3,
-      "temp_signal": -5.0,
+      "temp_f": 84.2,
+      "temp_signal": -3.1,
       "ump_name": "Cory Blaser",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 56.7,
+      "confidence": 58.6,
+      "side": "none",
+      "band": "mild_nrfi",
+      "recommendation": "Mild NRFI tilt \u2014 no bet",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "CHC @ SF",
+      "away_abbr": "CHC",
+      "home_abbr": "SF",
+      "home_pp_name": "Landen Roupp",
+      "away_pp_name": "Javier Assad",
+      "home_nrfi": 0.5,
+      "away_nrfi": 0.5,
+      "home_pp_shrunk": 0.6528,
+      "away_pp_shrunk": 0.6,
+      "home_pp_baseline": 0.7334,
+      "away_pp_baseline": 0.5818,
+      "home_pp_recent": 0.6,
+      "away_pp_recent": 0.6667,
+      "home_pp_trend": "COOLING",
+      "away_pp_trend": "STABLE",
+      "team_signal": 0.0,
+      "pitcher_signal": 3.82,
+      "park_nrfi_mult": 1.07,
+      "park_signal": 1.75,
+      "temp_f": 55.9,
+      "temp_signal": 2.05,
+      "ump_name": "Todd Tichenor",
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 57.6,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -68116,7 +68126,7 @@
       "pitcher_signal": 5.48,
       "park_nrfi_mult": 1.05,
       "park_signal": 1.25,
-      "temp_f": 75.0,
+      "temp_f": 74.9,
       "temp_signal": 0.0,
       "ump_name": "Gabe Morales",
       "ump_k_pct_bias": null,
@@ -68178,12 +68188,12 @@
       "pitcher_signal": 9.47,
       "park_nrfi_mult": 1.03,
       "park_signal": 0.75,
-      "temp_f": 81.0,
-      "temp_signal": -1.5,
+      "temp_f": 79.8,
+      "temp_signal": -0.9,
       "ump_name": "Junior Valentine",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 55.7,
+      "confidence": 56.3,
       "side": "none",
       "band": "mild_nrfi",
       "recommendation": "Mild NRFI tilt \u2014 no bet",
@@ -68209,7 +68219,7 @@
       "pitcher_signal": -0.25,
       "park_nrfi_mult": 0.98,
       "park_signal": -0.5,
-      "temp_f": 91.6,
+      "temp_f": 92.4,
       "temp_signal": -5.0,
       "ump_name": "Ben May",
       "ump_k_pct_bias": null,
@@ -68240,7 +68250,7 @@
       "pitcher_signal": 7.08,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 68.3,
+      "temp_f": 68.2,
       "temp_signal": 0.0,
       "ump_name": "Chris Guccione",
       "ump_k_pct_bias": null,
@@ -68333,7 +68343,7 @@
       "pitcher_signal": 6.16,
       "park_nrfi_mult": 1.0,
       "park_signal": 0.0,
-      "temp_f": 76.6,
+      "temp_f": 76.9,
       "temp_signal": 0.0,
       "ump_name": "Dan Iassogna",
       "ump_k_pct_bias": -0.5,
@@ -68364,12 +68374,12 @@
       "pitcher_signal": -0.53,
       "park_nrfi_mult": 0.92,
       "park_signal": -2.0,
-      "temp_f": 80.4,
-      "temp_signal": -1.2,
+      "temp_f": 80.5,
+      "temp_signal": -1.25,
       "ump_name": "Alex MacKay",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 47.8,
+      "confidence": 47.7,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -68380,7 +68390,7 @@
       "away_abbr": "COL",
       "home_abbr": "ATH",
       "home_pp_name": "Gage Jump",
-      "away_pp_name": null,
+      "away_pp_name": "Sean Sullivan",
       "home_nrfi": 0.25,
       "away_nrfi": 0.45,
       "home_pp_shrunk": 0.6,
@@ -68407,37 +68417,6 @@
       "missing_pitcher_data": true
     },
     {
-      "matchup": "ATL @ NYM",
-      "away_abbr": "ATL",
-      "home_abbr": "NYM",
-      "home_pp_name": "Nolan McLean",
-      "away_pp_name": "Spencer Strider",
-      "home_nrfi": 0.5,
-      "away_nrfi": 0.45,
-      "home_pp_shrunk": 0.6932,
-      "away_pp_shrunk": 0.5732,
-      "home_pp_baseline": 0.6381,
-      "away_pp_baseline": 0.56,
-      "home_pp_recent": 0.8,
-      "away_pp_recent": 0.6,
-      "home_pp_trend": "STABLE",
-      "away_pp_trend": "STABLE",
-      "team_signal": -0.75,
-      "pitcher_signal": 4.16,
-      "park_nrfi_mult": 1.07,
-      "park_signal": 1.75,
-      "temp_f": 84.6,
-      "temp_signal": -3.3,
-      "ump_name": "John Bacon",
-      "ump_k_pct_bias": null,
-      "ump_signal": 0.0,
-      "confidence": 51.9,
-      "side": "none",
-      "band": "no_edge",
-      "recommendation": "No edge",
-      "missing_pitcher_data": false
-    },
-    {
       "matchup": "HOU @ KC",
       "away_abbr": "HOU",
       "home_abbr": "KC",
@@ -68457,12 +68436,43 @@
       "pitcher_signal": 3.87,
       "park_nrfi_mult": 1.01,
       "park_signal": 0.25,
-      "temp_f": 81.4,
-      "temp_signal": -1.7,
+      "temp_f": 81.1,
+      "temp_signal": -1.55,
       "ump_name": "Bruce Dreckman",
       "ump_k_pct_bias": null,
       "ump_signal": 0.0,
-      "confidence": 48.7,
+      "confidence": 48.8,
+      "side": "none",
+      "band": "no_edge",
+      "recommendation": "No edge",
+      "missing_pitcher_data": false
+    },
+    {
+      "matchup": "ATL @ NYM",
+      "away_abbr": "ATL",
+      "home_abbr": "NYM",
+      "home_pp_name": "Nolan McLean",
+      "away_pp_name": "Spencer Strider",
+      "home_nrfi": 0.5,
+      "away_nrfi": 0.45,
+      "home_pp_shrunk": 0.6932,
+      "away_pp_shrunk": 0.5732,
+      "home_pp_baseline": 0.6381,
+      "away_pp_baseline": 0.56,
+      "home_pp_recent": 0.8,
+      "away_pp_recent": 0.6,
+      "home_pp_trend": "STABLE",
+      "away_pp_trend": "STABLE",
+      "team_signal": -0.75,
+      "pitcher_signal": 4.16,
+      "park_nrfi_mult": 1.07,
+      "park_signal": 1.75,
+      "temp_f": 91.2,
+      "temp_signal": -5.0,
+      "ump_name": "John Bacon",
+      "ump_k_pct_bias": null,
+      "ump_signal": 0.0,
+      "confidence": 50.2,
       "side": "none",
       "band": "no_edge",
       "recommendation": "No edge",
@@ -75453,7 +75463,7 @@
     "latest_settled_at": "2026-06-11T06:00:14.256057+00:00",
     "error": null
   },
-  "built_at_et": "2026-06-12 19:25 ET",
+  "built_at_et": "2026-06-12 19:30 ET",
   "counts": {
     "picks_total": 910,
     "settled": 399,
